@@ -14,7 +14,7 @@ using System.Reflection;
 
 namespace CosmicHorror
 {
-    public class Building_PitChthonian : Building, IThingContainerOwner
+    public class Building_PitChthonian : Building, IThingHolder
     {
         protected int age;
         
@@ -34,20 +34,18 @@ namespace CosmicHorror
         private static HashSet<IntVec3> reachableCells = new HashSet<IntVec3>();
 
         #region Container Values
-        protected ThingContainer container;
+        protected ThingOwner container;
 
-        public Map GetMap()
+        public void GetChildHolders(List<IThingHolder> outChildren)
         {
-            return base.MapHeld;
+            ThingOwnerUtility.AppendThingHoldersFromThings(outChildren, this.GetDirectlyHeldThings());
         }
-        public ThingContainer GetInnerContainer()
+
+        public ThingOwner GetDirectlyHeldThings()
         {
             return this.container;
         }
-        public IntVec3 GetPosition()
-        {
-            return base.PositionHeld;
-        }
+
         #endregion Container Values
 
         public bool GaveSacrifice
@@ -139,13 +137,8 @@ namespace CosmicHorror
 
         public Building_PitChthonian()
         {
-            this.container = new ThingContainer(this, false, LookMode.Deep);
+            this.container = new ThingOwner<Thing>(this, false, LookMode.Deep);
             this.rareTicks = 250;
-        }
-
-        public override void SpawnSetup(Map map)
-        {
-            base.SpawnSetup(map);
         }
 
 
@@ -196,7 +189,7 @@ namespace CosmicHorror
                 pawn = listeners[i];
                 if (pawn.Faction == Faction.OfPlayer)
                 {
-                    if (pawn.CurJob.def.defName == "HaulSacrifice")
+                    if (pawn.CurJob.def.defName == "ROM_HaulChthonianSacrifice")
                     {
                         pawn.jobs.StopAll();
                     }
@@ -227,10 +220,11 @@ namespace CosmicHorror
             isSacrificing = true;
             
             Cthulhu.Utility.DebugReport("Force Sacrifice called");
-            Job job = new Job(DefDatabase<JobDef>.GetNamed("HaulSacrifice"), sacrifice, this);
+            Job job = new Job(DefDatabase<JobDef>.GetNamed("ROM_HaulChthonianSacrifice"), sacrifice, this);
             job.count = 1;
-            executioner.QueueJob(job);
-            executioner.jobs.EndCurrentJob(JobCondition.InterruptForced);
+            executioner.jobs.TryTakeOrderedJob(job);
+            //executioner.QueueJob(job);
+            //executioner.jobs.EndCurrentJob(JobCondition.InterruptForced);
 
             Cthulhu.Utility.DebugReport("Sacrifice state set to gathering");
         }
@@ -273,7 +267,7 @@ namespace CosmicHorror
                 Pawn toRemove = null;
                 foreach (Pawn t in this.container)
                 {
-                    if (toRemove == null && t.kindDef.defName == "CosmicHorror_Chthonian")
+                    if (toRemove == null && t.kindDef.defName == "ROM_Chthonian")
                     {
                         toRemove = t;
                     }
@@ -285,14 +279,14 @@ namespace CosmicHorror
                 Thing temp = null;
                 this.container.TryDrop(pawn, ThingPlaceMode.Near, out temp);
 
-                Hediff wormsHediff = HediffMaker.MakeHediff(DefDatabase<HediffDef>.GetNamed("CosmicHorror_GutWorms"), pawn, null);
+                Hediff wormsHediff = HediffMaker.MakeHediff(DefDatabase<HediffDef>.GetNamed("ROM_GutWorms"), pawn, null);
                 wormsHediff.Part = pawn.health.hediffSet.GetBrain();
                 wormsHediff.Severity = 0.05f;
                 pawn.health.AddHediff(wormsHediff, null, null);
 
                 Building_PitChthonian.GiveInjuriesToForceDowned(pawn);
 
-                Find.LetterStack.ReceiveLetter("ChthonianSacrificeReturnedLabel".Translate(), "ChthonianSacrificeReturnedDesc".Translate(), LetterType.BadNonUrgent, new TargetInfo(pawn), null);
+                Find.LetterStack.ReceiveLetter("ChthonianSacrificeReturnedLabel".Translate(), "ChthonianSacrificeReturnedDesc".Translate(), LetterDefOf.BadNonUrgent, new TargetInfo(pawn), null);
                 //TaleRecorder.RecordTale(TaleDefOf.RaidArrived, new object[0]);
 
             }
@@ -314,7 +308,7 @@ namespace CosmicHorror
                     {
                         TryReturnSacrifice();
                     }
-                    Cthulhu.Utility.DebugReport("returnedTicks :: " + ticksToReturn.ToString() + " :: gameTicks :: " + Find.TickManager.TicksGame.ToString());
+                    //Cthulhu.Utility.DebugReport("returnedTicks :: " + ticksToReturn.ToString() + " :: gameTicks :: " + Find.TickManager.TicksGame.ToString());
                 }
             }
             if (this.spawnedChthonian != null && this.isActive)
@@ -330,11 +324,11 @@ namespace CosmicHorror
             bool flag2 = false;
             foreach (Pawn current in this.Map.mapPawns.FreeColonistsSpawned)
             {
-                if (current.CurJob.def.defName == "HaulSacrifice")
+                if (current.CurJob.def.defName == "ROM_HaulChthonianSacrifice")
                 {
                     flag1 = true;
                 }
-                if (current.CurJob.def.defName == "FillChthonianPit")
+                if (current.CurJob.def.defName == "ROM_FillChthonianPit")
                 {
                     flag2 = true;
                 }
@@ -350,7 +344,7 @@ namespace CosmicHorror
                 if (this.spawnedChthonian.Map == null) return;
                 if (this.spawnedChthonian.Dead) return;
                 if (this.spawnedChthonian.Downed) return;
-                if (this.spawnedChthonian.holdingContainer == this.container) return;
+                if (this.spawnedChthonian.ParentHolder == this.container) return;
             
 
                 if (ticksToDeSpawn == -999) ticksToDeSpawn = 16000;
@@ -361,6 +355,7 @@ namespace CosmicHorror
                 ticksToDeSpawn--;
                 if (ticksToDeSpawn < 0)
                 {
+                    this.spawnedChthonian.DeSpawn();
                     this.container.TryAdd(this.spawnedChthonian);
                     this.IsActive = true;
                 }
@@ -369,7 +364,7 @@ namespace CosmicHorror
         
         public void TrySpawnChthonian()
         {
-            PawnKindDef kindDef = PawnKindDef.Named("CosmicHorror_Chthonian");
+            PawnKindDef kindDef = PawnKindDef.Named("ROM_Chthonian");
             Faction pawnFaction = Find.FactionManager.FirstFactionOfDef(kindDef.defaultFactionType);
             if (this.lord == null)
             {
@@ -402,13 +397,13 @@ namespace CosmicHorror
                 }
                 if (base.Map == Find.VisibleMap)
                 {
-                    SoundDef.Named("Pawn_CosmicHorror_Chthonian_Scream").PlayOneShotOnCamera();
+                    SoundDef.Named("Pawn_ROM_Chthonian_Scream").PlayOneShotOnCamera();
                 }
                 return;
             }
             else
             {
-                if (!this.spawnedChthonian.Dead && this.spawnedChthonian.holdingContainer == this.container)
+                if (!this.spawnedChthonian.Dead && this.spawnedChthonian.ParentHolder == this.container)
                 {
                     Thing temp = null;
                     this.container.TryDrop(this.spawnedChthonian, this.Position.RandomAdjacentCell8Way(), this.Map, ThingPlaceMode.Near, out temp);
@@ -456,7 +451,7 @@ namespace CosmicHorror
                 pawn = listeners[i];
                 if (pawn.Faction == Faction.OfPlayer)
                 {
-                    if (pawn.CurJob.def.defName == "FillChthonianPit")
+                    if (pawn.CurJob.def.defName == "ROM_FillChthonianPit")
                     {
                         pawn.jobs.StopAll();
                     }
@@ -476,7 +471,7 @@ namespace CosmicHorror
                 pawn = listeners[i];
                 if (pawn.Faction == Faction.OfPlayer)
                 {
-                    if (pawn.CurJob.def.defName == "FillChthonianPit")
+                    if (pawn.CurJob.def.defName == "ROM_FillChthonianPit")
                     {
                         pawn.jobs.StopAll();
                     }
@@ -503,9 +498,10 @@ namespace CosmicHorror
             isFilling = true;
 
             Cthulhu.Utility.DebugReport("Force Sacrifice called");
-            Job job = new Job(DefDatabase<JobDef>.GetNamed("FillChthonianPit"), this);
-            actor.QueueJob(job);
-            actor.jobs.EndCurrentJob(JobCondition.InterruptForced);
+            Job job = new Job(DefDatabase<JobDef>.GetNamed("ROM_FillChthonianPit"), this);
+            actor.jobs.TryTakeOrderedJob(job);
+            //actor.QueueJob(job);
+            //actor.jobs.EndCurrentJob(JobCondition.InterruptForced);
 
             Cthulhu.Utility.DebugReport("Actor is going to fill the Chthonian pit.");
 
@@ -566,7 +562,7 @@ namespace CosmicHorror
             while (num < 300 && !p.Downed && Building_PitChthonian.HittablePartsViolence(hediffSet).Any<BodyPartRecord>())
             {
                 num++;
-                BodyPartRecord bodyPartRecord = Building_PitChthonian.HittablePartsViolence(hediffSet).RandomElementByWeight((BodyPartRecord x) => x.absoluteFleshCoverage);
+                BodyPartRecord bodyPartRecord = Building_PitChthonian.HittablePartsViolence(hediffSet).RandomElementByWeight((BodyPartRecord x) => x.coverageAbs);
                 int num2 = Mathf.RoundToInt(hediffSet.GetPartHealth(bodyPartRecord)) - 3;
                 if (num2 >= 8)
                 {
@@ -658,17 +654,17 @@ namespace CosmicHorror
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.LookValue<bool>(ref this.isActive, "isActive", true, false);
-            Scribe_Values.LookValue<bool>(ref this.isFilling, "isFilling", true, false);
-            Scribe_Values.LookValue<bool>(ref this.gaveSacrifice, "gaveSacrificing", false, false);
-            Scribe_Values.LookValue<bool>(ref this.isSacrificing, "isSacrificing", true, false);
-            Scribe_Values.LookValue<int>(ref this.age, "age", 0, false);
-            Scribe_Values.LookValue<int>(ref this.rareTicks, "rareTicks", 250, false);
-            Scribe_Values.LookValue<int>(ref this.ticksToReturn, "ticksToReturn", -999, false);
-            Scribe_Values.LookValue<int>(ref this.ticksToDeSpawn, "ticksToDeSpawn", -999, false);
-            Scribe_References.LookReference<Lord>(ref this.lord, "defenseLord", false);
-            Scribe_References.LookReference<CosmicHorrorPawn>(ref this.spawnedChthonian, "spawnedChthonian", false);
-            Scribe_Deep.LookDeep<ThingContainer>(ref this.container, "container", new object[]
+            Scribe_Values.Look<bool>(ref this.isActive, "isActive", true, false);
+            Scribe_Values.Look<bool>(ref this.isFilling, "isFilling", true, false);
+            Scribe_Values.Look<bool>(ref this.gaveSacrifice, "gaveSacrificing", false, false);
+            Scribe_Values.Look<bool>(ref this.isSacrificing, "isSacrificing", true, false);
+            Scribe_Values.Look<int>(ref this.age, "age", 0, false);
+            Scribe_Values.Look<int>(ref this.rareTicks, "rareTicks", 250, false);
+            Scribe_Values.Look<int>(ref this.ticksToReturn, "ticksToReturn", -999, false);
+            Scribe_Values.Look<int>(ref this.ticksToDeSpawn, "ticksToDeSpawn", -999, false);
+            Scribe_References.Look<Lord>(ref this.lord, "defenseLord", false);
+            Scribe_References.Look<CosmicHorrorPawn>(ref this.spawnedChthonian, "spawnedChthonian", false);
+            Scribe_Deep.Look<ThingOwner>(ref this.container, "container", new object[]
             {
                 this
             });
@@ -686,7 +682,7 @@ namespace CosmicHorror
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine(base.GetInspectString());
+            if (base.GetInspectString() != "") stringBuilder.AppendLine(base.GetInspectString());
             stringBuilder.AppendLine("DiscoveredDaysAgo".Translate(new object[]
             {
                 this.age.TicksToDays().ToString("F1")
@@ -753,7 +749,6 @@ namespace CosmicHorror
                 yield return command_Cancel;
             }
         }
-
         #endregion Overrides
     }
 }

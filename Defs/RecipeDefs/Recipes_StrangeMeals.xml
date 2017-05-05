@@ -2,7 +2,7 @@
 <RecipeDefs>
 
   <RecipeDef Name="CookStrangeMealSimple">
-    <defName>CookStrangeMealSimple</defName>
+    <defName>ROM_CookStrangeMealSimple</defName>
     <label>cook simple strange meal</label>
     <description>Cooks a straightforward... meal?</description>
     <jobString>Cooking simple meal.</jobString>
@@ -16,23 +16,23 @@
       <li>
         <filter>
           <categories>
-            <li>CosmicHorror_StrangeMeatRaw</li>
+            <li>ROM_StrangeMeatRaw</li>
           </categories>
         </filter>
         <count>0.5</count>
       </li>
     </ingredients>
     <products>
-      <StrangeMealSimple>1</StrangeMealSimple>
+      <ROM_StrangeMealSimple>1</ROM_StrangeMealSimple>
     </products>
     <fixedIngredientFilter>
       <categories>
-        <li>CosmicHorror_StrangeMeatRaw</li>
+        <li>ROM_StrangeMeatRaw</li>
       </categories>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
       <categories>
-        <li>CosmicHorror_StrangeMeatRaw</li>
+        <li>ROM_StrangeMeatRaw</li>
       </categories>
 	  <exceptedCategories>
 		<li>MeatRaw</li>
@@ -49,7 +49,7 @@
   </RecipeDef>
 
   <RecipeDef>
-	<defName>CookStrangeMealSimpleCampfire</defName>
+	<defName>ROM_CookStrangeMealSimpleCampfire</defName>
 	<label>cook strange simple meal</label>		
     <jobString>Cooking simple meal.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
@@ -62,23 +62,23 @@
       <li>
         <filter>
           <categories>
-            <li>CosmicHorror_StrangeMeatRaw</li>
+            <li>ROM_StrangeMeatRaw</li>
           </categories>
         </filter>
         <count>0.5</count>
       </li>
     </ingredients>
     <products>
-      <StrangeMealSimple>1</StrangeMealSimple>
+      <ROM_StrangeMealSimple>1</ROM_StrangeMealSimple>
     </products>
     <fixedIngredientFilter>
       <categories>
-        <li>CosmicHorror_StrangeMeatRaw</li>
+        <li>ROM_StrangeMeatRaw</li>
       </categories>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
       <categories>
-        <li>CosmicHorror_StrangeMeatRaw</li>
+        <li>ROM_StrangeMeatRaw</li>
       </categories>
 	  <exceptedCategories>
 		<li>MeatRaw</li>
@@ -95,7 +95,7 @@
 	</RecipeDef>
 
   <RecipeDef>
-	<defName>CookStrangeMealFine</defName>
+	<defName>ROM_CookStrangeMealFine</defName>
 	<label>cook strange fine meal</label>
 	<description>Cooks a somewhat complex meal from a combination of raw ingredients...?</description>
 	<jobString>Cooking fine meal.</jobString>
@@ -108,7 +108,7 @@
 		<li>
 			<filter>
 				<categories>
-					<li>CosmicHorror_StrangeMeatRaw</li>
+					<li>ROM_StrangeMeatRaw</li>
 				</categories>
 			</filter>
 			<count>0.25</count>
@@ -124,11 +124,11 @@
 		</li>
 	</ingredients>
 	<products>
-      <StrangeMealFine>1</StrangeMealFine>
+      <ROM_StrangeMealFine>1</ROM_StrangeMealFine>
     </products>
 	<fixedIngredientFilter>
 		<categories>
-			<li>CosmicHorror_StrangeMeatRaw</li>
+			<li>ROM_StrangeMeatRaw</li>
 			<li>PlantFoodRaw</li>
 			<li>AnimalProductRaw</li>			
 		</categories>
@@ -138,7 +138,7 @@
 	</fixedIngredientFilter>
 	<defaultIngredientFilter>
 		<categories>
-			<li>CosmicHorror_StrangeMeatRaw</li>
+			<li>ROM_StrangeMeatRaw</li>
 			<li>PlantFoodRaw</li>
 			<li>AnimalProductRaw</li>
 		</categories>
@@ -164,7 +164,7 @@
   </RecipeDef>
 
 	<RecipeDef>
-	<defName>CookStrangeMealLavish</defName>
+	<defName>ROM_CookStrangeMealLavish</defName>
 	<label>cook strange lavish meal</label>
 	<description>Cooks a very complex meal from a combination of raw meat and raw plant ingredients...?</description>
 	<jobString>Cooking lavish meal.</jobString>
@@ -177,7 +177,7 @@
 		<li>
 			<filter>
 				<categories>
-					<li>CosmicHorror_StrangeMeatRaw</li>
+					<li>ROM_StrangeMeatRaw</li>
 				</categories>
 			</filter>
 			<count>0.5</count>
@@ -193,11 +193,11 @@
 		</li>
 	</ingredients>
 	<products>
-      <StrangeMealLavish>1</StrangeMealLavish>
+      <ROM_StrangeMealLavish>1</ROM_StrangeMealLavish>
     </products>
 	<fixedIngredientFilter>
 		<categories>
-			<li>CosmicHorror_StrangeMeatRaw</li>
+			<li>ROM_StrangeMeatRaw</li>
 			<li>PlantFoodRaw</li>
 			<li>AnimalProductRaw</li>
 		</categories>
@@ -207,7 +207,7 @@
 	</fixedIngredientFilter>
 	<defaultIngredientFilter>
 		<categories>
-			<li>CosmicHorror_StrangeMeatRaw</li>
+			<li>ROM_StrangeMeatRaw</li>
 			<li>PlantFoodRaw</li>
 			<li>AnimalProductRaw</li>			
 		</categories>
@@ -234,7 +234,7 @@
 
 
   <RecipeDef>
-    <defName>MakeStrangeKibble</defName>
+    <defName>ROM_MakeStrangeKibble</defName>
     <label>make strange kibble</label>
     <description>Make animal kibble by using strange meat and plant matter.</description>
     <jobString>Making kibble.</jobString>
@@ -248,7 +248,7 @@
       <li>
         <filter>
           <categories>
-            <li>CosmicHorror_StrangeMeatRaw</li>
+            <li>ROM_StrangeMeatRaw</li>
           </categories>
         </filter>
         <count>1</count>
@@ -266,11 +266,11 @@
       </li>
     </ingredients>
     <products>
-      <StrangeKibble>50</StrangeKibble>
+      <ROM_StrangeKibble>50</ROM_StrangeKibble>
     </products>
     <fixedIngredientFilter>
       <categories>
-        <li>CosmicHorror_StrangeMeatRaw</li>
+        <li>ROM_StrangeMeatRaw</li>
         <li>PlantFoodRaw</li>		
       </categories>
       <thingDefs>
@@ -296,7 +296,7 @@
   
 
   <RecipeDef>
-    <defName>BurnStrangeMeat</defName>
+    <defName>ROM_BurnStrangeMeat</defName>
     <label>burn strange meat (1)</label>
     <description>Burn strange meat to completely destroy it.</description>
     <jobString>Burning strange meat.</jobString>
@@ -308,7 +308,7 @@
       <li>
         <filter>
           <categories>
-            <li>CosmicHorror_StrangeMeatRaw</li>
+            <li>ROM_StrangeMeatRaw</li>
           </categories>
         </filter>
         <count>1</count>
@@ -316,7 +316,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <categories>
-        <li>CosmicHorror_StrangeMeatRaw</li>
+        <li>ROM_StrangeMeatRaw</li>
       </categories>
     </fixedIngredientFilter>
 	<recipeUsers>
@@ -327,7 +327,7 @@
 
   
   <RecipeDef>
-    <defName>BurnStrangeMeat25</defName>
+    <defName>ROM_BurnStrangeMeat25</defName>
     <label>burn strange meat (25)</label>
     <description>Burn strange meat to completely destroy it.</description>
     <jobString>Burning strange meat.</jobString>
@@ -339,7 +339,7 @@
       <li>
         <filter>
           <categories>
-            <li>CosmicHorror_StrangeMeatRaw</li>
+            <li>ROM_StrangeMeatRaw</li>
           </categories>
         </filter>
         <count>25</count>
@@ -347,7 +347,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <categories>
-        <li>CosmicHorror_StrangeMeatRaw</li>
+        <li>ROM_StrangeMeatRaw</li>
       </categories>
     </fixedIngredientFilter>
 	<recipeUsers>
@@ -357,7 +357,7 @@
   </RecipeDef>
   
   <RecipeDef>
-    <defName>BurnStrangeMeat75</defName>
+    <defName>ROM_BurnStrangeMeat75</defName>
     <label>burn strange meat (75)</label>
     <description>Burn strange meat to completely destroy it.</description>
     <jobString>Burning strange meat.</jobString>
@@ -369,7 +369,7 @@
       <li>
         <filter>
           <categories>
-            <li>CosmicHorror_StrangeMeatRaw</li>
+            <li>ROM_StrangeMeatRaw</li>
           </categories>
         </filter>
         <count>75</count>
@@ -377,7 +377,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <categories>
-        <li>CosmicHorror_StrangeMeatRaw</li>
+        <li>ROM_StrangeMeatRaw</li>
       </categories>
     </fixedIngredientFilter>
 	<recipeUsers>

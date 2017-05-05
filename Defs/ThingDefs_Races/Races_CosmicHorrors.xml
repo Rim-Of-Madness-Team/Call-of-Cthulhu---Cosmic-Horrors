@@ -40,7 +40,7 @@
       <LeatherAmount>20</LeatherAmount>	  
     </statBases>
     <race>
-      <bloodDef>FilthBloodCosmicHorror</bloodDef>	
+      <bloodDef>ROM_FilthBloodCosmicHorror</bloodDef>	
       <meatColor>(160,150,140)</meatColor>
       <foodType>None</foodType>
       <useMeatFrom>GrizzlyBear</useMeatFrom>	  
@@ -52,7 +52,7 @@
       <leatherInsulation>0.70</leatherInsulation>
       <leatherMarketValueFactor>3</leatherMarketValueFactor>
 	  <hediffGiverSets>
-		<li>CosmicHorrorStandard</li>
+		<li>ROM_CosmicHorrorStandard</li>
 	  </hediffGiverSets>
     </race>
   </ThingDef>

@@ -15,7 +15,7 @@ namespace Cthulhu.Detour
         [Detour(typeof(MassUtility), bindingFlags = (BindingFlags.Static | BindingFlags.Public))]
         public static bool CanEverCarryAnything(Pawn p)
         {
-            return p.RaceProps.ToolUser || p.RaceProps.packAnimal || p.def.defName == "CosmicHorror_DarkYoung";
+            return p.RaceProps.ToolUser || p.RaceProps.packAnimal || p.def.defName == "ROM_DarkYoung";
         }
 
     }
@@ -48,9 +48,9 @@ namespace Cthulhu.Detour
                 if (transferables[i].HasAnyThing)
                 {
                     if (transferables[i].AnyThing is Pawn ||
-                        transferables[i].AnyThing.def.defName == "CosmicHorror_DarkYoung")
+                        transferables[i].AnyThing.def.defName == "ROM_DarkYoung")
                     {
-                        TransferableUtility.TransferNoSplit(transferables[i].things, transferables[i].countToTransfer, delegate (Thing originalThing, int toTake)
+                        TransferableUtility.TransferNoSplit(transferables[i].things, transferables[i].CountToTransfer, delegate (Thing originalThing, int toTake)
                         {
                             GetTmpThingStackParts().Add(new ThingStackPart(originalThing, toTake));
                         }, false, false);

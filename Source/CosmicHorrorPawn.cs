@@ -28,44 +28,49 @@ namespace CosmicHorror
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.LookValue<IntVec3>(ref this.lastSpot, "lastSpot", default(IntVec3), false);
-            Scribe_Values.LookValue<bool>(ref this.isCosmicHorror, "isCosmicHorror", true, false);
-            Scribe_Values.LookValue<bool>(ref this.isInvisible, "isInvisible", false, false);
-            Scribe_Values.LookValue<float>(ref this.sanityLossRate, "sanityLossRate", 0.03f, false);
-            Scribe_Values.LookValue<float>(ref this.sanityLossMax, "sanityLossMax", 0.3f, false);
+            Scribe_Values.Look<IntVec3>(ref this.lastSpot, "lastSpot", default(IntVec3), false);
+            Scribe_Values.Look<bool>(ref this.isCosmicHorror, "isCosmicHorror", true, false);
+            Scribe_Values.Look<bool>(ref this.isInvisible, "isInvisible", false, false);
+            Scribe_Values.Look<float>(ref this.sanityLossRate, "sanityLossRate", 0.03f, false);
+            Scribe_Values.Look<float>(ref this.sanityLossMax, "sanityLossMax", 0.3f, false);
         }
 
         #region SpawnSetup
+
         /// <summary>
         /// Check for initial startup.
         /// If Star Vampire, then hide.
         /// </summary>
         /// 
-        public override void SpawnSetup(Map map)
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
-            base.SpawnSetup(map);
+            base.SpawnSetup(map, respawningAfterLoad);
 
-            if (this.kindDef.ToString() == "CosmicHorror_StarVampire")
+            if (this.kindDef.ToString() == "ROM_StarVampire")
             {
                 this.isInvisible = true;
             }
             //How much sanity will each monster cause to lose?
             Cthulhu.Utility.GetSanityLossRate(this.kindDef);
+
+            //Give immunities.
+            this.health.AddHediff(HediffDef.Named("ROM_CosmicHorrorImmunities"));
         }
         #endregion SpawnSetup
+        
 
         #region Invisibility
         /// <summary>
         /// Overriding the drawer for the Pawn
         /// </summary>
         /// <param name="drawLoc"></param>
-        public override void DrawAt(Vector3 drawLoc)
+        public override void DrawAt(Vector3 drawLoc, bool flip)
         {
             if (this.isInvisible)
             {
                 return;
             }
-            base.DrawAt(drawLoc);
+            base.DrawAt(drawLoc, flip);
         }
 
         /// <summary>
@@ -88,7 +93,7 @@ namespace CosmicHorror
                         return false;
                     }
                     Pawn pawn1 = t as Pawn;
-                    if (((pawn1 == null)) || (!t.Spawned || (pawn1.kindDef.ToString() == "CosmicHorror_StarVampire")))
+                    if (((pawn1 == null)) || (!t.Spawned || (pawn1.kindDef.ToString() == "ROM_StarVampire")))
                     {
                         return false;
                     }
@@ -131,7 +136,7 @@ namespace CosmicHorror
             {
                 if (dinfo.Instigator is Pawn)
                 {
-                    if (this.def.defName == "CosmicHorror_Chthonian")
+                    if (this.def.defName == "ROM_Chthonian")
                     {
                         if (this.jobs != null)
                         {
@@ -163,6 +168,24 @@ namespace CosmicHorror
             }
             ResolveSpecialEffects();
             DownedCheck();
+            ResolveBleeding();
+        }
+
+        public void ResolveBleeding()
+        {
+            if (Find.TickManager.TicksGame % 1000 == 0)
+            {
+                if (this.health != null)
+                {
+                    if (this.health.hediffSet.GetInjuriesTendable() != null && this.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
+                    {
+                        foreach (Hediff_Injury injury in this.health.hediffSet.GetInjuriesTendable())
+                        {
+                            injury.Severity = Mathf.Clamp(injury.Severity - 0.1f, 0.0f, 1.0f);
+                        }
+                    }
+                }
+            }
         }
 
         public void DownedCheck()
@@ -171,7 +194,7 @@ namespace CosmicHorror
             {
                 if (!Utility.IsTameable(this.kindDef))
                 {
-                    this.health.Kill(null, null);
+                    this.Kill(null);
                 }
             }
         }
@@ -184,12 +207,12 @@ namespace CosmicHorror
             if (!this.Dead && this.Spawned && this.pather.Moving)
             {
 
-                if (this.def.defName == "CosmicHorror_Chthonian")
+                if (this.def.defName == "ROM_Chthonian")
                 {
                     if (movingSound == null)
                     {
                         SoundInfo info = SoundInfo.InMap(this, MaintenanceType.PerTick);
-                        this.movingSound = SoundDef.Named("Pawn_CosmicHorror_Chthonian_Moving").TrySpawnSustainer(info);
+                        this.movingSound = SoundDef.Named("Pawn_ROM_Chthonian_Moving").TrySpawnSustainer(info);
                     }
                     if (lastSpot != IntVec3.Invalid)
                     {
@@ -300,7 +323,7 @@ namespace CosmicHorror
                     Thought_MemoryObservation thought_MemoryObservation;
                     thought_MemoryObservation = (Thought_MemoryObservation)ThoughtMaker.MakeThought(DefDatabase<ThoughtDef>.GetNamed("Observed" + def.ToString()));
                     thought_MemoryObservation.Target = this;
-                    target.needs.mood.thoughts.memories.TryGainMemoryThought(thought_MemoryObservation);
+                    target.needs.mood.thoughts.memories.TryGainMemory(thought_MemoryObservation);
                 }
 
                 ///This area gives sanity loss, if the witness sees a living cosmic horror.
@@ -328,7 +351,7 @@ namespace CosmicHorror
                     Thought_MemoryObservation thought_MemoryObservation;
                     thought_MemoryObservation = (Thought_MemoryObservation)ThoughtMaker.MakeThought(defToImplement);
                     thought_MemoryObservation.Target = this;
-                    target.needs.mood.thoughts.memories.TryGainMemoryThought(thought_MemoryObservation);
+                    target.needs.mood.thoughts.memories.TryGainMemory(thought_MemoryObservation);
                 }
             }
             catch (NullReferenceException)
@@ -343,7 +366,6 @@ namespace CosmicHorror
         {
             try
             {
-
 
                 //This finds a suitable target pawn.
                 Predicate<Thing> predicate = GetPredicate();

@@ -2,7 +2,7 @@
 <Defs>
 
   <HediffGiverSetDef>
-    <defName>CosmicHorrorStandard</defName>
+    <defName>ROM_CosmicHorrorStandard</defName>
     <hediffGivers>
       
       <!-- Environmental -->
@@ -14,7 +14,7 @@
   
 
   <HediffGiverSetDef>
-    <defName>CosmicHorrorNonBleeder</defName>
+    <defName>ROM_NonBleeder</defName>
     <hediffGivers>
       
     </hediffGivers>

@@ -24,7 +24,7 @@ using System.Reflection;
 
 /// <summary>
 /// Utility File for use between Cthulhu mods.
-/// Last Update: 2/21/2017
+/// Last Update: 5/5/2017
 /// </summary>
 namespace Cthulhu
 {
@@ -47,7 +47,7 @@ namespace Cthulhu
     static public class Utility
     {
         public enum SanLossSev { None = 0, Hidden, Initial, Minor, Major, Extreme };
-        public const string SanityLossDef = "CosmicHorror_SanityLoss";
+        public const string SanityLossDef = "ROM_SanityLoss";
         public const string AltSanityLossDef = "Cults_SanityLoss";
 
         public static bool modCheck = false;
@@ -57,9 +57,20 @@ namespace Cthulhu
         public static bool loadedFactions = false;
 
 
-        public static bool IsMorning(Map map) { return GenLocalDate.HourInt(map) > 6 && GenLocalDate.HourInt(map) < 10; }
-        public static bool IsEvening(Map map) { return GenLocalDate.HourInt(map) > 18 && GenLocalDate.HourInt(map) < 22; }
-        public static bool IsNight(Map map) { return GenLocalDate.HourInt(map) > 22; }
+        public static bool IsMorning(Map map) { return GenLocalDate.HourInteger(map) > 6 && GenLocalDate.HourInteger(map) < 10; }
+        public static bool IsEvening(Map map) { return GenLocalDate.HourInteger(map) > 18 && GenLocalDate.HourInteger(map) < 22; }
+        public static bool IsNight(Map map) { return GenLocalDate.HourInteger(map) > 22; }
+
+        public static T GetMod<T>(string s) where T: Mod
+        {
+            //Call of Cthulhu - Cosmic Horrors
+            var result = default(T);
+            foreach (Mod ResolvedMod in LoadedModManager.ModHandles)
+            {
+                if (ResolvedMod.Content.Name == s) result = ResolvedMod as T;
+            }
+            return result;
+        }
 
         public static bool isCosmicHorror(Pawn thing)
         {
@@ -79,7 +90,7 @@ namespace Cthulhu
         public static float GetSanityLossRate(PawnKindDef kindDef)
         {
             float sanityLossRate = 0f;
-            if (kindDef.ToString() == "CosmicHorror_StarVampire")
+            if (kindDef.ToString() == "ROM_StarVampire")
                 sanityLossRate = 0.04f;
             if (kindDef.ToString() == "StarSpawnOfCthulhu")
                 sanityLossRate = 0.02f;
@@ -367,9 +378,9 @@ namespace Cthulhu
         {
             foreach (BodyPartRecord current in set.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined))
             {
-                for (int i = 0; i < current.def.Activities.Count; i++)
+                for (int i = 0; i < current.def.tags.Count; i++)
                 {
-                    if (current.def.Activities[i].First == PawnCapacityDefOf.BloodPumping)
+                    if (current.def.tags[i] == "BloodPumpingSource")
                     {
                         return current;
                     }
@@ -548,7 +559,7 @@ namespace Cthulhu
 
         public static int GetResearchSkill(Pawn p)
         {
-            return p.skills.GetSkill(SkillDefOf.Research).Level;
+            return p.skills.GetSkill(SkillDefOf.Intellectual).Level;
         }
 
         public static bool IsCosmicHorrorsLoaded()

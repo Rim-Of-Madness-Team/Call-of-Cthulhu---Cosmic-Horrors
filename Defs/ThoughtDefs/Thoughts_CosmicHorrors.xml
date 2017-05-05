@@ -2,7 +2,7 @@
 <ThoughtDefs>
 
 	<ThoughtDef>
-		<defName>ObservedCosmicHorror_DeepOne</defName>
+		<defName>ObservedROM_DeepOne</defName>
 		<thoughtClass>Thought_MemoryObservation</thoughtClass>
 		<durationDays>0.1</durationDays>
 		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
@@ -21,7 +21,7 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>ObservedCosmicHorror_DeepOneGreat</defName>
+		<defName>ObservedROM_DeepOneGreat</defName>
 		<thoughtClass>Thought_MemoryObservation</thoughtClass>
 		<durationDays>0.1</durationDays>
 		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
@@ -40,7 +40,7 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>ObservedCosmicHorror_MiGo</defName>
+		<defName>ObservedROM_MiGo</defName>
 		<thoughtClass>Thought_MemoryObservation</thoughtClass>
 		<durationDays>0.1</durationDays>
 		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
@@ -58,7 +58,7 @@
 		</stages>
 	</ThoughtDef>
 	<ThoughtDef>
-		<defName>ObservedCosmicHorror_Shoggoth</defName>
+		<defName>ObservedROM_Shoggoth</defName>
 		<thoughtClass>Thought_MemoryObservation</thoughtClass>
 		<durationDays>0.1</durationDays>
 		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
@@ -76,7 +76,7 @@
 		</stages>
 	</ThoughtDef>
 	<ThoughtDef>
-		<defName>ObservedCosmicHorror_StarVampire</defName>
+		<defName>ObservedROM_StarVampire</defName>
 		<thoughtClass>Thought_MemoryObservation</thoughtClass>
 		<durationDays>0.1</durationDays>
 		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
@@ -94,7 +94,7 @@
 		</stages>
 	</ThoughtDef>
 	<ThoughtDef>
-		<defName>ObservedCosmicHorror_Cthulhid</defName>
+		<defName>ObservedROM_Cthulhid</defName>
 		<thoughtClass>Thought_MemoryObservation</thoughtClass>
 		<durationDays>0.1</durationDays>
 		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
@@ -112,7 +112,7 @@
 		</stages>
 	</ThoughtDef>
 	<ThoughtDef>
-		<defName>ObservedCosmicHorror_DarkYoung</defName>
+		<defName>ObservedROM_DarkYoung</defName>
 		<thoughtClass>Thought_MemoryObservation</thoughtClass>
 		<durationDays>0.1</durationDays>
 		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
@@ -131,7 +131,7 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>ObservedCosmicHorror_ChthonianLarva</defName>
+		<defName>ObservedROM_ChthonianLarva</defName>
 		<thoughtClass>Thought_MemoryObservation</thoughtClass>
 		<durationDays>0.1</durationDays>
 		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
@@ -150,7 +150,7 @@
 	</ThoughtDef>	
 	
 	<ThoughtDef>
-		<defName>ObservedCosmicHorror_Chthonian</defName>
+		<defName>ObservedROM_Chthonian</defName>
 		<thoughtClass>Thought_MemoryObservation</thoughtClass>
 		<durationDays>0.1</durationDays>
 		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
@@ -168,9 +168,9 @@
 		</stages>
 	</ThoughtDef>
 	<ThoughtDef>
-		<defName>CosmicHorror_SanityLoss</defName>
+		<defName>ROM_SanityLoss</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>CosmicHorror_SanityLoss</hediff>
+		<hediff>ROM_SanityLoss</hediff>
 		<stages>
 			<li>
 				<label>tense-hidden</label>
@@ -205,7 +205,7 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>CosmicHorror_SawMonster</defName>
+		<defName>ROM_SawMonster</defName>
 		<durationDays>7</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>

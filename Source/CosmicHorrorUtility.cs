@@ -12,8 +12,8 @@ namespace CosmicHorror
 
         public static bool IsTameable(PawnKindDef kindDef)
         {
-            if (kindDef.defName == "CosmicHorror_ChthonianLarva" ||
-                kindDef.defName == "DarkYoung")
+            if (kindDef.defName == "ROM_ChthonianLarva" ||
+                kindDef.defName == "ROM_DarkYoung")
                 return true;
             return false;
         }
@@ -30,7 +30,7 @@ namespace CosmicHorror
                     CosmicHorrorPawn pawn = null;
                     if (fac != Faction.OfPlayer)
                     {
-                        PawnGenerationRequest request = new PawnGenerationRequest(kindDef, fac, PawnGenerationContext.NonPlayer, map, false, false, false, false, true, false, 1f, false, true, true, null, null, null, null, null, null);
+                        PawnGenerationRequest request = new PawnGenerationRequest(kindDef, fac, PawnGenerationContext.NonPlayer, map.Tile);
                         pawn = (CosmicHorrorPawn)GenSpawn.Spawn(PawnGenerator.GeneratePawn(request), at, map);
                     }
                     else

@@ -30,10 +30,10 @@ namespace CosmicHorror
         public bool IsCosmicHorrorFaction(Faction f)
         {
             List<string> factions = new List<string> {
-                "StarSpawn",
-                "Shoggoth",
-                "MiGo",
-                "DeepOne",
+                "ROM_StarSpawn",
+                "ROM_Shoggoth",
+                "ROM_MiGo",
+                "ROM_DeepOne",
             };
             foreach (string s in factions)
             {
@@ -49,11 +49,11 @@ namespace CosmicHorror
         {
             List<CosmicHorrorFaction> factionList = new List<CosmicHorrorFaction>
             {
-                new CosmicHorrorFaction("DeepOne", 4)
+                new CosmicHorrorFaction("ROM_DeepOne", 4)
             };
-            if (points > 1400f) factionList.Add(new CosmicHorrorFaction("StarSpawn", 1));
-            if (points > 700f) factionList.Add(new CosmicHorrorFaction("Shoggoth", 2));
-            if (points > 350f) factionList.Add(new CosmicHorrorFaction("MiGo", 4));
+            if (points > 1400f) factionList.Add(new CosmicHorrorFaction("ROM_StarSpawn", 1));
+            if (points > 700f) factionList.Add(new CosmicHorrorFaction("ROM_Shoggoth", 2));
+            if (points > 350f) factionList.Add(new CosmicHorrorFaction("ROM_MiGo", 4));
             CosmicHorrorFaction f = GenCollection.RandomElementByWeight<CosmicHorrorFaction>(factionList, GetWeight);
             Faction resolvedFaction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named(f.defName));
 
@@ -61,13 +61,13 @@ namespace CosmicHorror
             //If the player has the Cults mod.
             //If they are working with Dagon.
             //Then let's do something different...
-            if (Cthulhu.Utility.IsCultsLoaded() && f.defName == "DeepOne")
+            if (Cthulhu.Utility.IsCultsLoaded() && f.defName == "ROM_DeepOne")
             {
                 if (resolvedFaction.RelationWith(Faction.OfPlayer, false).hostile == false)
                 {
                     //Do MiGo instead.
                     Cthulhu.Utility.DebugReport("Cosmic Horror Raid Report: Special Cult Case Handled");
-                    resolvedFaction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("MiGo"));
+                    resolvedFaction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("ROM_MiGo"));
                 }
             }
             attackingFaction = resolvedFaction.def;
@@ -119,12 +119,12 @@ namespace CosmicHorror
                 return false;
             }
 
-            if (GenDate.DaysPassed < (HugsModOptionalCode.cosmicHorrorEventsDelay() + this.def.earliestDay))
+            if (GenDate.DaysPassed < ( ModInfo.cosmicHorrorRaidDelay + this.def.earliestDay))
             {
                 return false;
             }
 
-            if (map.mapConditionManager.ConditionIsActive(MapConditionDefOf.Eclipse))
+            if (map.gameConditionManager.ConditionIsActive(GameConditionDefOf.Eclipse))
             {
                 Cthulhu.Utility.DebugReport("Cosmic Horror Raid Report: Firing accepted - Eclipse");
                 return true;
@@ -139,7 +139,7 @@ namespace CosmicHorror
                 return true;
             }
 
-            if (!(GenLocalDate.HourInt(map) >= 6 && GenLocalDate.HourInt(map) <= 17))
+            if (!(GenLocalDate.HourInteger(map) >= 6 && GenLocalDate.HourInteger(map) <= 17))
             {
                 Cthulhu.Utility.DebugReport("Cosmic Horror Raid Report: Firing accepted - Nighttime");
                 return true;
@@ -153,9 +153,9 @@ namespace CosmicHorror
             return parms.raidStrategy.letterLabelEnemy;
         }
 
-        protected override LetterType GetLetterType()
+        protected override LetterDef GetLetterDef()
         {
-            return LetterType.BadUrgent;
+            return LetterDefOf.BadUrgent;
         }
 
         protected override void ResolveRaidStrategy(IncidentParms parms)
@@ -231,26 +231,26 @@ namespace CosmicHorror
             string letterLabel = this.GetLetterLabel(parms);
             string letterText = this.GetLetterText(parms, list);
             PawnRelationUtility.Notify_PawnsSeenByPlayer(list, ref letterLabel, ref letterText, this.GetRelatedPawnsInfoLetterText(parms), true);
-            Find.LetterStack.ReceiveLetter(letterLabel, letterText, this.GetLetterType(), target, stringBuilder.ToString());
-            if (this.GetLetterType() == LetterType.BadUrgent)
+            Find.LetterStack.ReceiveLetter(letterLabel, letterText, this.GetLetterDef(), target, stringBuilder.ToString());
+            if (this.GetLetterDef() == LetterDefOf.BadUrgent)
             {
                 TaleRecorder.RecordTale(TaleDefOf.RaidArrived, new object[0]);
             }
             Lord lord = LordMaker.MakeNewLord(parms.faction, parms.raidStrategy.Worker.MakeLordJob(parms, map), map, list);
             AvoidGridMaker.RegenerateAvoidGridsFor(parms.faction, map);
             LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
-            if (!PlayerKnowledgeDatabase.IsComplete(ConceptDefOf.PersonalShields))
-            {
-                for (int i = 0; i < list.Count; i++)
-                {
-                    Pawn pawn = list[i];
-                    if (pawn.apparel.WornApparel.Any((Apparel ap) => ap is PersonalShield))
-                    {
-                        LessonAutoActivator.TeachOpportunity(ConceptDefOf.PersonalShields, OpportunityType.Critical);
-                        break;
-                    }
-                }
-            }
+            //if (!PlayerKnowledgeDatabase.IsComplete(ConceptDefOf.PersonalShields))
+            //{
+            //    for (int i = 0; i < list.Count; i++)
+            //    {
+            //        Pawn pawn = list[i];
+            //        if (pawn.apparel.WornApparel.Any((Apparel ap) => ap is PersonalShield))
+            //        {
+            //            LessonAutoActivator.TeachOpportunity(ConceptDefOf.PersonalShields, OpportunityType.Critical);
+            //            break;
+            //        }
+            //    }
+            //}
             if (DebugViewSettings.drawStealDebug && parms.faction.HostileTo(Faction.OfPlayer))
             {
                 Log.Message(string.Concat(new object[]

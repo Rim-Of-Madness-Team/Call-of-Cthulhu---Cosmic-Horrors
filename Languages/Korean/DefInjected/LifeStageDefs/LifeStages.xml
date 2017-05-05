@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-    <CosmicHorror_Spawn.label>알</CosmicHorror_Spawn.label>
+    <ROM_Spawn.label>알</ROM_Spawn.label>
 
-    <CosmicHorror_FullyFormed.label>완전이 형성된</CosmicHorror_FullyFormed.label>
+    <ROM_FullyFormed.label>완전이 형성된</ROM_FullyFormed.label>
 
-    <CosmicHorror_Ancient.label>고대의</CosmicHorror_Ancient.label>
+    <ROM_Ancient.label>고대의</ROM_Ancient.label>
 
-    <CosmicHorror_Eldritch.label>엘드리치</CosmicHorror_Eldritch.label>
+    <ROM_Eldritch.label>엘드리치</ROM_Eldritch.label>
 
 </LanguageData>

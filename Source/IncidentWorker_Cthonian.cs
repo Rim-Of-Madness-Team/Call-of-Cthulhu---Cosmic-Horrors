@@ -21,7 +21,7 @@ namespace CosmicHorror
         protected override bool CanFireNowSub(IIncidentTarget target)
         {
             Map map = (Map)target;
-            if (GenDate.DaysPassed < (HugsModOptionalCode.cosmicHorrorEventsDelay() + this.def.earliestDay))
+            if (GenDate.DaysPassed < (ModInfo.cosmicHorrorRaidDelay + this.def.earliestDay))
             {
                 return false;
             }
@@ -64,7 +64,7 @@ namespace CosmicHorror
                 }
                 //GenExplosion.DoExplosion(intVec, map, 3f, DamageDefOf.Flame, null, null, null, null, null, 0f, 1, false, null, 0f, 1);
                 Building_PitChthonian building_CrashedShipPart = (Building_PitChthonian)GenSpawn.Spawn(this.def.shipPart, intVec, map);
-                building_CrashedShipPart.SetFaction(Find.FactionManager.FirstFactionOfDef(FactionDef.Named("CosmicHorror_Chthonian")), null);
+                building_CrashedShipPart.SetFaction(Find.FactionManager.FirstFactionOfDef(FactionDef.Named("ROM_Chthonian")), null);
                
                 cell = intVec;
              
@@ -72,7 +72,7 @@ namespace CosmicHorror
                 {
                     Find.CameraDriver.shaker.DoShake(1f);
                 }
-                Find.LetterStack.ReceiveLetter(this.def.letterLabel, this.def.letterText, this.def.letterType, new TargetInfo(cell, map, false), null);
+                Find.LetterStack.ReceiveLetter(this.def.letterLabel, this.def.letterText, this.def.letterDef, new TargetInfo(cell, map, false), null);
             return true;
         }
     }

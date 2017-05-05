@@ -138,7 +138,8 @@ namespace CosmicHorror
             this.Takee.Notify_Teleported(false);
             this.Takee.stances.CancelBusyStanceHard();
             //....the pit
-            this.DropAltar.GetInnerContainer().TryAdd(Takee);
+            this.Takee.DeSpawn();
+            this.DropAltar.GetDirectlyHeldThings().TryAdd(Takee);
             
             //Quiet the pit.
             this.DropAltar.IsActive = false;

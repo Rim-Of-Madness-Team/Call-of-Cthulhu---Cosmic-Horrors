@@ -4,7 +4,7 @@
 	<!-- DARK YOUNG -->
 	
 	<!-- PAWN KIND DEFS -->
-	<PawnKindDef Name="DarkYoung" Abstract="True">
+	<PawnKindDef Name="ROM_DarkYoung" Abstract="True">
 		<bodyGraphicData>
 			<shaderType>Cutout</shaderType>
 		</bodyGraphicData>
@@ -14,9 +14,9 @@
 	</PawnKindDef>
 
 	<PawnKindDef>
-		<defName>DarkYoung</defName>
+		<defName>ROM_DarkYoung</defName>
 		<label>Dark Young</label>
-		<race>CosmicHorror_DarkYoung</race>
+		<race>ROM_DarkYoung</race>
 		<combatPower>100</combatPower>
 		<aiAvoidCover>true</aiAvoidCover>
 		<lifeStages>
@@ -65,7 +65,7 @@
 
 	<!-- RACE DEFS -->
 	<ThingDef ParentName="BaseCosmicHorrorRace">
-		<defName>CosmicHorror_DarkYoung</defName>
+		<defName>ROM_DarkYoung</defName>
 		<label>Dark Young</label>
 		<description>A tree-like being, whose hooved roots carries an enormous black mass of branched tentacles, writhing around drooling mouths. They are the spawn of Shub-niggurath, the Black Goat with a Thousand Young and master of the woods. They act in its stead and come to worshippers in dark forests to accept sacrifice and reverence.  </description>
 		<statBases>
@@ -80,14 +80,14 @@
 				<defaultCooldownTime>1.5</defaultCooldownTime>
 				<meleeDamageBaseAmount>12</meleeDamageBaseAmount>
 				<meleeDamageDef>Blunt</meleeDamageDef>
-				<linkedBodyPartsGroup>CosmicHorror_Hooves</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>ROM_Hooves</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<verbClass>Verb_MeleeAttack</verbClass>
 				<defaultCooldownTime>0.9</defaultCooldownTime>
 				<meleeDamageBaseAmount>14</meleeDamageBaseAmount>
 				<meleeDamageDef>Blunt</meleeDamageDef>
-				<linkedBodyPartsGroup>CosmicHorror_Tentacles</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<verbClass>Verb_MeleeAttack</verbClass>
@@ -101,9 +101,9 @@
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
 			<packAnimal>true</packAnimal>			
-			<body>CosmicHorror_DarkYoungBody</body>
-			<thinkTreeMain>CosmicHorror_DarkYoung</thinkTreeMain>
-			<thinkTreeConstant>CosmicHorror_DarkYoungConstant</thinkTreeConstant>
+			<body>ROM_DarkYoungBody</body>
+			<thinkTreeMain>ROM_DarkYoung</thinkTreeMain>
+			<thinkTreeConstant>ROM_DarkYoungConstant</thinkTreeConstant>
 			<nameGenerator>NamerAnimalGenericMale</nameGenerator>
 			<baseBodySize>3.5</baseBodySize>
 			<baseHungerRate>3.0</baseHungerRate>
@@ -129,22 +129,22 @@
 			<leatherMarketValueFactor>7.5</leatherMarketValueFactor>	  
 			<lifeStageAges>
 				<li>
-					<def>CosmicHorror_Spawn</def>
+					<def>ROM_Spawn</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>CosmicHorror_FullyFormed</def>
+					<def>ROM_FullyFormed</def>
 					<minAge>100</minAge>
-					<soundWounded>Pawn_CosmicHorror_DarkYoung_Wounded</soundWounded>
-					<soundDeath>Pawn_CosmicHorror_DarkYoung_Death</soundDeath>
-					<soundCall>Pawn_CosmicHorror_DarkYoung_Call</soundCall>  
+					<soundWounded>Pawn_ROM_DarkYoung_Wounded</soundWounded>
+					<soundDeath>Pawn_ROM_DarkYoung_Death</soundDeath>
+					<soundCall>Pawn_ROM_DarkYoung_Call</soundCall>  
 				</li>
 				<li>
-					<def>CosmicHorror_Ancient</def>
+					<def>ROM_Ancient</def>
 					<minAge>500</minAge>
 				</li>
 				<li>
-					<def>CosmicHorror_Eldritch</def>
+					<def>ROM_Eldritch</def>
 					<minAge>1000</minAge>
 				</li>
 			</lifeStageAges>
@@ -152,14 +152,14 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 			  <hediffGiverSets>
-				<li>CosmicHorrorNonBleeder</li>
+				<li>ROM_NonBleeder</li>
 			  </hediffGiverSets>			
 		</race>
 		<tradeTags>
 			<li>ExoticAnimal</li>
 		</tradeTags>
 		<butcherProducts>
-			<RawCHFood_DarkYoungMeat>50</RawCHFood_DarkYoungMeat>
+			<ROM_RawCHFood_DarkYoungMeat>50</ROM_RawCHFood_DarkYoungMeat>
 		</butcherProducts>				
 		<recipes>
 			<li>ExciseCarcinoma</li>

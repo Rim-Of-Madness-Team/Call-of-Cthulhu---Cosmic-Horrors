@@ -13,7 +13,7 @@
   </HediffDef>
 
    <HediffDef ParentName="InfectionBase">
-    <defName>CosmicHorror_GutWorms</defName>
+    <defName>ROM_GutWorms</defName>
 	<label>strange worms</label>
     <initialSeverity>0.001</initialSeverity>
     <hediffClass>CosmicHorror.HediffWithComps_GutWorms</hediffClass> 

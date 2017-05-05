@@ -5,7 +5,7 @@
 <!-- Deep One - Innsmouth Monsters -->
 <!-- 2 claws, 2 flippers -->
   <BodyDef>
-    <defName>CosmicHorror_DeepOneBody</defName>
+    <defName>ROM_DeepOneBody</defName>
     <label>Deep One anatomy</label>
    <corePart>
       <def>Torso</def>
@@ -16,7 +16,7 @@
       </groups>
       <parts>
         <li>
-          <def>CosmicHorror_DorsalFin</def>
+          <def>ROM_DorsalFin</def>
           <coverage>0.01</coverage>
           <height>Top</height>
           <depth>Outside</depth>
@@ -271,7 +271,7 @@
                   </groups>
                 </li>
                 <li>
-                  <def>Internal_LeftEar</def>
+                  <def>ROM_Internal_LeftEar</def>
                   <coverage>0.015</coverage>
                   <groups>
                     <li>UpperHead</li>
@@ -279,7 +279,7 @@
                   </groups>
                 </li>
                 <li>
-                  <def>Internal_RightEar</def>
+                  <def>ROM_Internal_RightEar</def>
                   <coverage>0.015</coverage>
                   <groups>
                     <li>UpperHead</li>
@@ -287,7 +287,7 @@
                   </groups>
                 </li>
                 <li>
-                  <def>CosmicHorror_Gills</def>
+                  <def>ROM_Gills</def>
                   <coverage>0.025</coverage>
                   <groups>
                     <li>UpperHead</li>
@@ -295,7 +295,7 @@
                   </groups>
                 </li>
                 <li>
-                  <def>CosmicHorror_Gills</def>
+                  <def>ROM_Gills</def>
                   <coverage>0.025</coverage>
                   <groups>
                     <li>UpperHead</li>
@@ -352,11 +352,11 @@
                   </groups>
                 </li>
                 <li>
-                  <def>CosmicHorror_LeftClaw</def>
+                  <def>ROM_LeftClaw</def>
                   <coverage>0.2</coverage>
                   <height>Bottom</height>
                   <groups>
-                    <li>CosmicHorror_Claws</li>
+                    <li>ROM_Claws</li>
                   </groups>
                 </li>
               </parts>
@@ -394,11 +394,11 @@
                   </groups>
                 </li>
                 <li>
-                  <def>CosmicHorror_RightClaw</def>
+                  <def>ROM_RightClaw</def>
                   <coverage>0.2</coverage>
                   <height>Bottom</height>
                   <groups>
-                    <li>CosmicHorror_Claws</li>
+                    <li>ROM_Claws</li>
                   </groups>
                 </li>
               </parts>
@@ -430,7 +430,7 @@
               </groups>
             </li>
             <li>
-              <def>CosmicHorror_LeftFlipper</def>
+              <def>ROM_LeftFlipper</def>
               <coverage>0.2</coverage>
               <groups>
                 <li>Feet</li>
@@ -463,7 +463,7 @@
               </groups>
             </li>
             <li>
-              <def>CosmicHorror_RightFlipper</def>
+              <def>ROM_RightFlipper</def>
               <coverage>0.2</coverage>
               <groups>
                 <li>Feet</li>

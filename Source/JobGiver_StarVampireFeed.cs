@@ -50,7 +50,7 @@ namespace CosmicHorror
             if (Find.TickManager.TicksGame > (startTicks / 2) && showedMessage == false)
             {
                 showedMessage = true;
-                SoundDef warnSound = SoundDef.Named("Pawn_CosmicHorror_StarVampire_Warning");
+                SoundDef warnSound = SoundDef.Named("Pawn_ROM_StarVampire_Warning");
                 warnSound.PlayOneShotOnCamera();
                 Messages.Message("StarVampireIncidentMessage2".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, pawn.Map), MessageSound.Standard);
             }
@@ -85,7 +85,7 @@ namespace CosmicHorror
                         return false;
                     }
                     Pawn pawn1 = t as Pawn;
-                    if ((pawn1 == null) || (!t.Spawned) || (pawn1.kindDef.ToString() == "CosmicHorror_StarVampire"))
+                    if ((pawn1 == null) || (!t.Spawned) || (pawn1.kindDef.ToString() == "ROM_StarVampire"))
                     {
                         return false;
                     }

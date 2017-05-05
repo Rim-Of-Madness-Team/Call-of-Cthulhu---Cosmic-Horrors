@@ -10,25 +10,25 @@ namespace CosmicHorror
     [DefOf]
     public static class MonsterDefOf
     {
-        public static PawnKindDef CosmicHorror_ChthonianLarva;
+        public static PawnKindDef ROM_ChthonianLarva;
         
-        public static PawnKindDef CosmicHorror_Chthonian;
+        public static PawnKindDef ROM_Chthonian;
 
-        public static PawnKindDef DeepOne;
+        public static PawnKindDef ROM_DeepOne;
 
-        public static PawnKindDef DeepOneGreat;
+        public static PawnKindDef ROM_DeepOneGreat;
 
-        public static PawnKindDef DarkYoung;
+        public static PawnKindDef ROM_DarkYoung;
 
-        public static PawnKindDef MiGo;
+        public static PawnKindDef ROM_MiGo;
 
-        public static PawnKindDef MiGoCaster;
+        public static PawnKindDef ROM_MiGoCaster;
 
-        public static PawnKindDef Shoggoth;
+        public static PawnKindDef ROM_Shoggoth;
 
-        public static PawnKindDef StarSpawnOfCthulhu;
+        public static PawnKindDef ROM_StarSpawnOfCthulhu;
 
-        public static PawnKindDef CosmicHorror_StarVampire;
+        public static PawnKindDef ROM_StarVampire;
 
     }
 }

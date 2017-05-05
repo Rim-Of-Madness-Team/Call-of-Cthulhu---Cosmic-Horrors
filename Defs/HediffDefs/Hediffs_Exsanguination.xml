@@ -9,7 +9,7 @@
   </HediffDef>
 
   <HediffDef ParentName="InjuryBase">
-    <defName>CosmicHorror_Exsanguination</defName>
+    <defName>ROM_Exsanguination</defName>
     <label>vampiric</label>
     <displayWound>false</displayWound>
     <comps>

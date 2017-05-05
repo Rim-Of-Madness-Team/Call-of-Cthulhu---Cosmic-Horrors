@@ -3,9 +3,9 @@
 
 
 <!-- Star Vampire - Mysterious space organism -->
-<!-- 10 CosmicHorror_Tentacles with flight, 8 feelers, 1 massive maw, flight organs -->
+<!-- 10 ROM_Tentacles with flight, 8 feelers, 1 massive maw, flight organs -->
   <BodyDef>
-    <defName>CosmicHorror_StarVampireBody</defName>
+    <defName>ROM_StarVampireBody</defName>
     <label>star vampire anatomy</label>
     <corePart>
       <def>Body</def>
@@ -28,12 +28,12 @@
           <depth>Inside</depth>
         </li>
         <li>
-          <def>CosmicHorror_Lung</def>
+          <def>ROM_Lung</def>
           <coverage>0.025</coverage>
           <depth>Inside</depth>
         </li>
         <li>
-          <def>CosmicHorror_Lung</def>
+          <def>ROM_Lung</def>
           <coverage>0.025</coverage>
           <depth>Inside</depth>
         </li>
@@ -43,160 +43,160 @@
           <depth>Inside</depth>
         </li>
         <li>
-          <def>CosmicHorror_FlightOrgan</def>
+          <def>ROM_FlightOrgan</def>
           <coverage>0.025</coverage>
           <depth>Inside</depth>
         </li>
         <li>
-          <def>CosmicHorror_FlightOrgan</def>
+          <def>ROM_FlightOrgan</def>
           <coverage>0.025</coverage>
           <depth>Inside</depth>
         </li>
         <li>
-          <def>CosmicHorror_Kidney</def>
+          <def>ROM_Kidney</def>
           <coverage>0.025</coverage>
           <depth>Inside</depth>
 		</li>
 		<li>
-		  <def>CosmicHorror_TentacleFlight</def>
+		  <def>ROM_TentacleFlight</def>
 		  <coverage>0.025</coverage>
 		  <groups>
-			<li>CosmicHorror_Tentacles</li>
+			<li>ROM_Tentacles</li>
 		  </groups>
 		</li>
 		<li>
-		  <def>CosmicHorror_TentacleFlight</def>
+		  <def>ROM_TentacleFlight</def>
 		  <coverage>0.025</coverage>
 		  <groups>
-			<li>CosmicHorror_Tentacles</li>
+			<li>ROM_Tentacles</li>
 		  </groups>
 		</li>
 		<li>
-		  <def>CosmicHorror_TentacleFlight</def>
+		  <def>ROM_TentacleFlight</def>
 		  <coverage>0.025</coverage>
 		  <groups>
-			<li>CosmicHorror_Tentacles</li>
+			<li>ROM_Tentacles</li>
 		  </groups>
 		</li>
 		<li>
-		  <def>CosmicHorror_TentacleFlight</def>
+		  <def>ROM_TentacleFlight</def>
 		  <coverage>0.025</coverage>
 		  <groups>
-			<li>CosmicHorror_Tentacles</li>
+			<li>ROM_Tentacles</li>
 		  </groups>
 		</li>
 		<li>
-		  <def>CosmicHorror_TentacleFlight</def>
+		  <def>ROM_TentacleFlight</def>
 		  <coverage>0.025</coverage>
 		  <groups>
-			<li>CosmicHorror_Tentacles</li>
+			<li>ROM_Tentacles</li>
 		  </groups>
 		</li>
 		<li>
-		  <def>CosmicHorror_TentacleFlight</def>
+		  <def>ROM_TentacleFlight</def>
 		  <coverage>0.025</coverage>
 		  <groups>
-			<li>CosmicHorror_Tentacles</li>
+			<li>ROM_Tentacles</li>
 		  </groups>
 		</li>
 		<li>
-		  <def>CosmicHorror_TentacleFlight</def>
+		  <def>ROM_TentacleFlight</def>
 		  <coverage>0.025</coverage>
 		  <groups>
-			<li>CosmicHorror_Tentacles</li>
+			<li>ROM_Tentacles</li>
 		  </groups>
 		  <parts>
 		  <li>
-			  <def>CosmicHorror_Sucker</def>
+			  <def>ROM_Sucker</def>
 			  <coverage>0.025</coverage>
 			  <groups>
-				<li>CosmicHorror_Tentacles</li>
+				<li>ROM_Tentacles</li>
 			  </groups>			
 		  </li>
 		  </parts>
 		</li>
 		<li>
-		  <def>CosmicHorror_TentacleFlight</def>
+		  <def>ROM_TentacleFlight</def>
 		  <coverage>0.025</coverage>
 		  <groups>
-			<li>CosmicHorror_Tentacles</li>
+			<li>ROM_Tentacles</li>
 		  </groups>
 		  <parts>
 		  <li>
-			  <def>CosmicHorror_Sucker</def>
+			  <def>ROM_Sucker</def>
 			  <coverage>0.025</coverage>
 			  <groups>
-				<li>CosmicHorror_Tentacles</li>
+				<li>ROM_Tentacles</li>
 			  </groups>			
 		  </li>
 		  </parts>
 		</li>
 		<li>
-		  <def>CosmicHorror_TentacleFlight</def>
+		  <def>ROM_TentacleFlight</def>
 		  <coverage>0.025</coverage>
 		  <groups>
-			<li>CosmicHorror_Tentacles</li>
+			<li>ROM_Tentacles</li>
 		  </groups>
 		  <parts>
 		  <li>
-			  <def>CosmicHorror_Sucker</def>
+			  <def>ROM_Sucker</def>
 			  <coverage>0.025</coverage>
 			  <groups>
-				<li>CosmicHorror_Tentacles</li>
+				<li>ROM_Tentacles</li>
 			  </groups>			
 		  </li>
 		  </parts>
 		</li>
 		<li>
-		  <def>CosmicHorror_TentacleFlight</def>
+		  <def>ROM_TentacleFlight</def>
 		  <coverage>0.025</coverage>
 		  <groups>
-			<li>CosmicHorror_Tentacles</li>
+			<li>ROM_Tentacles</li>
 		  </groups>
 		  <parts>
 		  <li>
-			  <def>CosmicHorror_Sucker</def>
+			  <def>ROM_Sucker</def>
 			  <coverage>0.025</coverage>
 			  <groups>
-				<li>CosmicHorror_Tentacles</li>
+				<li>ROM_Tentacles</li>
 			  </groups>			
 		  </li>
 		  </parts>
 		</li>
 		<li>
-		  <def>CosmicHorror_Feeler</def>
+		  <def>ROM_Feeler</def>
 		  <coverage>0.01</coverage>
 		</li>
 		<li>
-		  <def>CosmicHorror_Feeler</def>
+		  <def>ROM_Feeler</def>
 		  <coverage>0.01</coverage>
 		</li>
 		<li>
-		  <def>CosmicHorror_Feeler</def>
+		  <def>ROM_Feeler</def>
 		  <coverage>0.01</coverage>
 		</li>
 		<li>
-		  <def>CosmicHorror_Feeler</def>
+		  <def>ROM_Feeler</def>
 		  <coverage>0.01</coverage>
 		</li>
 		<li>
-		  <def>CosmicHorror_Feeler</def>
+		  <def>ROM_Feeler</def>
 		  <coverage>0.01</coverage>
 		</li>
 		<li>
-		  <def>CosmicHorror_Feeler</def>
+		  <def>ROM_Feeler</def>
 		  <coverage>0.01</coverage>
 		</li>
 		<li>
-		  <def>CosmicHorror_Feeler</def>
+		  <def>ROM_Feeler</def>
 		  <coverage>0.01</coverage>
 		</li>
 		<li>
-		  <def>CosmicHorror_Feeler</def>
+		  <def>ROM_Feeler</def>
 		  <coverage>0.01</coverage>
 		</li>
 		<li>
-		  <def>CosmicHorror_MawHuge</def>
+		  <def>ROM_MawHuge</def>
 		  <coverage>0.15</coverage>
 		  <groups>
 			<li>Teeth</li>

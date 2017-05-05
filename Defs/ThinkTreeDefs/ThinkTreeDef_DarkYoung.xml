@@ -2,7 +2,7 @@
 <ThinkTrees>
 
 	<ThinkTreeDef>
-		<defName>CosmicHorror_DarkYoung</defName>
+		<defName>ROM_DarkYoung</defName>
 		<thinkRoot Class="ThinkNode_Priority">
       <subNodes>
         <!-- Keep lying down if we have to -->
@@ -47,9 +47,14 @@
         <!-- Leave if timed out -->
         <li Class="ThinkNode_ConditionalExitTimedOut">
           <subNodes>
-            <li Class="JobGiver_ExitMapRandom">
-              <defaultLocomotion>Walk</defaultLocomotion>     
-          </li>
+            <li Class="ThinkNode_Tagger">
+              <tagToGive>Misc</tagToGive>
+              <subNodes>
+                <li Class="JobGiver_ExitMapRandom">
+                  <defaultLocomotion>Walk</defaultLocomotion>     
+                </li>
+              </subNodes>
+            </li>
           </subNodes>
         </li>
 
@@ -61,7 +66,12 @@
         <!-- Forced goto -->
         <li Class="ThinkNode_ConditionalForcedGoto">
           <subNodes>
-            <li Class="JobGiver_ForcedGoto" />
+            <li Class="ThinkNode_Tagger">
+              <tagToGive>Misc</tagToGive>
+              <subNodes>
+                <li Class="JobGiver_ForcedGoto" />
+              </subNodes>
+            </li>
           </subNodes>
         </li>
         
@@ -94,44 +104,68 @@
         <!-- Tame animal -->
         <li Class="ThinkNode_ConditionalColonyFaction">
           <subNodes>
-            <!-- Trained behavior: obedience: Follow and defend master -->
-            <li Class="ThinkNode_ConditionalTrainableCompleted">
-              <trainable>Obedience</trainable>
+            <li Class="ThinkNode_Tagger">
+              <tagToGive>TrainedAnimalBehavior</tagToGive>
               <subNodes>
-                <li Class="ThinkNode_ConditionalShouldFollowMaster" >
+                <!-- Trained behavior: obedience: Follow and defend master -->
+                <li Class="ThinkNode_ConditionalTrainableCompleted">
+                  <trainable>Obedience</trainable>
                   <subNodes>
-                    <li Class="JobGiver_AIFollowMaster"/>
-                    <li Class="JobGiver_AIDefendMaster" />
-                    <li Class="JobGiver_WanderNearMaster" />
+                    <li Class="ThinkNode_ConditionalShouldFollowMaster" >
+                      <subNodes>
+                        <li Class="JobGiver_AIDefendMaster">
+                          <attackMeleeThreatEvenIfNotHostile>true</attackMeleeThreatEvenIfNotHostile>
+                        </li>
+                        <li Class="JobGiver_AIFollowMaster"/>
+                        <li Class="JobGiver_WanderNearMaster" />
+                      </subNodes>
+                    </li>
+                  </subNodes>
+                </li>
+
+                <!-- Trained behavior: Rescue-->
+                <li Class="ThinkNode_ConditionalTrainableCompleted">
+                  <trainable>Rescue</trainable>
+                  <subNodes>
+                    <li Class="JobGiver_RescueNearby">
+                      <radius>30</radius>
+                    </li>
                   </subNodes>
                 </li>
               </subNodes>
             </li>
 
-            <!-- Trained behavior: Rescue-->
-            <li Class="ThinkNode_ConditionalTrainableCompleted">
-              <trainable>Rescue</trainable>
+            <!-- Take care of critical needs (below rescue - so heroic!)-->
+            
+            <li Class="ThinkNode_Tagger">
+              <tagToGive>RestingForMedicalReasons</tagToGive>
               <subNodes>
-                <li Class="JobGiver_RescueNearby">
-                  <radius>30</radius>
-                </li>
+                <li Class="JobGiver_PatientGoToBed" />
               </subNodes>
             </li>
-
-            <!-- Take care of critical needs (below rescue - so heroic!)-->
-            <li Class="JobGiver_PatientGoToBed" />
+            
             <li Class="JobGiver_SeekAllowedArea" />
             <li Class="JobGiver_SeekSafeTemperature" />
             
           </subNodes>
         </li>
         
-        <li Class="ThinkNode_PrioritySorter">
-          <subNodes>
-            <li Class="JobGiver_GetFood"/>
-            <li Class="JobGiver_GetRest"/>
-            <li Class="JobGiver_SatisfyChemicalNeed"/>
-          </subNodes>
+				<!-- Eat random things out of curiosity -->
+				<li Class="ThinkNode_ChancePerHour_Constant">
+					<mtbHours>600</mtbHours>
+					<subNodes>
+            <li Class="ThinkNode_Tagger">
+              <tagToGive>SatisfyingNeeds</tagToGive>
+              <subNodes>
+                <li Class="JobGiver_EatRandom"/>
+              </subNodes>
+            </li>
+					</subNodes>
+				</li>
+				
+        <!-- Satisfy basic needs -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>SatisfyBasicNeeds</treeDef>
         </li>
 
         <!-- Tame animal: do useful things for the colony-->
@@ -141,14 +175,24 @@
             <!-- Try to mate -->
             <li Class="ThinkNode_ChancePerHour_Mate">
               <subNodes>
-                <li Class="JobGiver_Mate" />
+                <li Class="ThinkNode_Tagger">
+                  <tagToGive>SatisfyingNeeds</tagToGive>
+                  <subNodes>
+                    <li Class="JobGiver_Mate" />
+                  </subNodes>
+                </li>
               </subNodes>
             </li>
 
             <!-- Nuzzle randoms -->
             <li Class="ThinkNode_ChancePerHour_Nuzzle">
               <subNodes>
-                <li Class="JobGiver_Nuzzle" />
+                <li Class="ThinkNode_Tagger">
+                  <tagToGive>Misc</tagToGive>
+                  <subNodes>
+                    <li Class="JobGiver_Nuzzle" />
+                  </subNodes>
+                </li>
               </subNodes>
             </li>
 
@@ -159,12 +203,21 @@
                 <li Class="ThinkNode_ConditionalTrainableCompleted">
                   <trainable>Haul</trainable>
                   <subNodes>
-                    <li Class="JobGiver_Haul" />
+                    <li Class="ThinkNode_Tagger">
+                      <tagToGive>TrainedAnimalBehavior</tagToGive>
+                      <subNodes>
+                        <li Class="JobGiver_Haul" />
+                      </subNodes>
+                    </li>
                   </subNodes>
                 </li>
               </subNodes>
             </li>
 
+            <!-- Join auto joinable caravan -->
+            <li Class="ThinkNode_Subtree">
+              <treeDef>JoinAutoJoinableCaravan</treeDef>
+            </li>
           </subNodes>
         </li>
 
@@ -176,12 +229,17 @@
         <!-- Tame animal: wander colony -->
         <li Class="ThinkNode_ConditionalColonyFaction">
           <subNodes>
-            <li Class="JobGiver_WanderColony">
-              <maxDanger>None</maxDanger>
-              <ticksBetweenWandersRange>
-                <min>120</min>
-                <max>240</max>
-              </ticksBetweenWandersRange>
+            <li Class="ThinkNode_Tagger">
+              <tagToGive>Idle</tagToGive>
+              <subNodes>
+                <li Class="JobGiver_WanderColony">
+                  <maxDanger>None</maxDanger>
+                  <ticksBetweenWandersRange>
+                    <min>120</min>
+                    <max>240</max>
+                  </ticksBetweenWandersRange>
+                </li>
+              </subNodes>
             </li>
           </subNodes>
         </li>
@@ -189,21 +247,57 @@
         <!-- Of neutral faction: rest and then exit the map -->
         <li Class="ThinkNode_ConditionalNeutralFaction">
           <subNodes>
-            <li Class="JobGiver_PatientGoToBed" />
-            <li Class="JobGiver_ExitMapBest">
-              <defaultLocomotion>Walk</defaultLocomotion>
+            <li Class="ThinkNode_Tagger">
+              <tagToGive>RestingForMedicalReasons</tagToGive>
+              <subNodes>
+                <li Class="JobGiver_PatientGoToBed" />
+              </subNodes>
+            </li>
+            
+            <li Class="ThinkNode_Tagger">
+              <tagToGive>Misc</tagToGive>
+              <subNodes>
+                <li Class="JobGiver_ExitMapBest">
+                  <defaultLocomotion>Walk</defaultLocomotion>
+                </li>
+              </subNodes>
             </li>
           </subNodes>
         </li>
         
+        <!-- Wander -->
+        <li Class="ThinkNode_Tagger">
+          <tagToGive>Idle</tagToGive>
+          <subNodes>
+            <li Class="ThinkNode_ConditionalHerdAnimal">
+              <subNodes>
+                <li Class="JobGiver_WanderHerd">
+                  <maxDanger>Deadly</maxDanger>
+                  <ticksBetweenWandersRange>
+                    <min>120</min>
+                    <max>240</max>
+                  </ticksBetweenWandersRange>
+                </li>
+              </subNodes>
+            </li>
+            
+            <li Class="JobGiver_WanderAnywhere">
+              <maxDanger>Deadly</maxDanger>
+              <ticksBetweenWandersRange>
+                <min>120</min>
+                <max>240</max>
+              </ticksBetweenWandersRange>    
+            </li>
+          </subNodes>
+        </li>
 
-        <li Class="JobGiver_Idle"/>
+        <li Class="JobGiver_IdleError"/>
       </subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>
 
 	<ThinkTreeDef>
-		<defName>CosmicHorror_DarkYoungConstant</defName>
+		<defName>ROM_DarkYoungConstant</defName>
 		<thinkRoot Class="ThinkNode_Priority">
 			<subNodes>
         <li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">

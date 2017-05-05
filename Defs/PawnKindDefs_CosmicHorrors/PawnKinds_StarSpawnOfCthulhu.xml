@@ -3,7 +3,7 @@
   <!-- STAR SPAWN OF CTHULHU -->
   <!-- CTHULHIDS -->
   <!-- KIND DEFS -->
-  <PawnKindDef Name="StarSpawnBase" Abstract="True">
+  <PawnKindDef Name="ROM_StarSpawnBase" Abstract="True">
     <bodyGraphicData>
       <shaderType>Cutout</shaderType>
     </bodyGraphicData>
@@ -12,11 +12,11 @@
     </dessicatedBodyGraphicData>
   </PawnKindDef>
   <PawnKindDef>
-    <defName>StarSpawnOfCthulhu</defName>
+    <defName>ROM_StarSpawnOfCthulhu</defName>
     <label>Star-Spawn of Cthulhu</label>
-    <race>CosmicHorror_Cthulhid</race>
+    <race>ROM_Cthulhid</race>
     <combatPower>700</combatPower>
-    <defaultFactionType>StarSpawn</defaultFactionType>
+    <defaultFactionType>ROM_StarSpawn</defaultFactionType>
     <aiAvoidCover>true</aiAvoidCover>
     <lifeStages>
       <li>
@@ -63,7 +63,7 @@
   </PawnKindDef>
   <!-- RACE DEFS -->
   <ThingDef ParentName="BaseCosmicHorrorRace">
-    <defName>CosmicHorror_Cthulhid</defName>
+    <defName>ROM_Cthulhid</defName>
     <label>cthulhid</label>
     <description>Octopoidal humanoids, cast in in the image of great Cthulhu himself and bound to his will. They make a mockery of the human form, with a tentacled head, scaly body and vestigial bat-like wings. While insignificant in size, in comparison to their master, they stand many times taller than a man. They serve the Great Old Ones will while he remains sleeping. </description>
     <statBases>
@@ -84,14 +84,14 @@
         <defaultCooldownTime>1.0</defaultCooldownTime>
         <meleeDamageBaseAmount>20</meleeDamageBaseAmount>
         <meleeDamageDef>Blunt</meleeDamageDef>
-        <linkedBodyPartsGroup>CosmicHorror_Tentacles</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
         <defaultCooldownTime>1.0</defaultCooldownTime>
         <meleeDamageBaseAmount>60</meleeDamageBaseAmount>
-        <meleeDamageDef>CosmicHorror_Psychic</meleeDamageDef>
-        <linkedBodyPartsGroup>CosmicHorror_Mind</linkedBodyPartsGroup>
+        <meleeDamageDef>ROM_Psychic</meleeDamageDef>
+        <linkedBodyPartsGroup>ROM_Mind</linkedBodyPartsGroup>
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
@@ -112,13 +112,13 @@
         <defaultCooldownTime>3</defaultCooldownTime>
         <meleeDamageBaseAmount>15</meleeDamageBaseAmount>
         <meleeDamageDef>Blunt</meleeDamageDef>
-        <linkedBodyPartsGroup>CosmicHorror_Wings</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>ROM_Wings</linkedBodyPartsGroup>
       </li>
     </verbs>
     <race>
       <intelligence>ToolUser</intelligence>
-      <thinkTreeMain>CosmicHorror</thinkTreeMain>
-      <body>CosmicHorror_CthulhidBody</body>
+      <thinkTreeMain>ROM_CosmicHorror</thinkTreeMain>
+      <body>ROM_CthulhidBody</body>
       <leatherColor>(54,125,54)</leatherColor>      <leatherCommonalityFactor>0.1</leatherCommonalityFactor>
       <leatherLabel>star spawn skin</leatherLabel>
       <leatherStatFactors>
@@ -136,22 +136,22 @@
       <lifeExpectancy>9999999</lifeExpectancy>
       <lifeStageAges>
         <li>
-          <def>CosmicHorror_Spawn</def>
+          <def>ROM_Spawn</def>
           <minAge>0</minAge>
         </li>
         <li>
-          <def>CosmicHorror_FullyFormed</def>
+          <def>ROM_FullyFormed</def>
           <minAge>100</minAge>
           <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
           <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
-          <soundCall>Pawn_CosmicHorror_Cthulhid_Call</soundCall>
+          <soundCall>Pawn_ROM_Cthulhid_Call</soundCall>
         </li>
         <li>
-          <def>CosmicHorror_Ancient</def>
+          <def>ROM_Ancient</def>
           <minAge>10000</minAge>
         </li>
         <li>
-          <def>CosmicHorror_Eldritch</def>
+          <def>ROM_Eldritch</def>
           <minAge>1000000</minAge>
         </li>
       </lifeStageAges>
@@ -164,7 +164,7 @@
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
     <butcherProducts>
-      <RawCHFood_CthulhidMeat>60</RawCHFood_CthulhidMeat>
+      <ROM_RawCHFood_CthulhidMeat>60</ROM_RawCHFood_CthulhidMeat>
     </butcherProducts>
     <recipes>
       <li>Euthanize</li>

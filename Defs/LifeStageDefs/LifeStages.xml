@@ -2,7 +2,7 @@
 <Defs>
 
   <LifeStageDef>
-    <defName>CosmicHorror_Spawn</defName>
+    <defName>ROM_Spawn</defName>
     <label>spawn</label>
     <voxPitch>1.6</voxPitch>
     <voxVolume>0.8</voxVolume>
@@ -16,14 +16,14 @@
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>CosmicHorror_FullyFormed</defName>
+    <defName>ROM_FullyFormed</defName>
     <label>fully formed</label>
     <visible>false</visible>
     <reproductive>true</reproductive>
   </LifeStageDef>
   
   <LifeStageDef>
-    <defName>CosmicHorror_Ancient</defName>
+    <defName>ROM_Ancient</defName>
     <label>ancient</label>
     <voxPitch>0.8</voxPitch>
     <voxVolume>1.2</voxVolume>
@@ -37,7 +37,7 @@
   </LifeStageDef>
   
   <LifeStageDef>
-    <defName>CosmicHorror_Eldritch</defName>
+    <defName>ROM_Eldritch</defName>
     <label>eldritch</label>
     <voxPitch>0.6</voxPitch>
     <voxVolume>1.5</voxVolume>

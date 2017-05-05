@@ -2,7 +2,7 @@
 <ThinkTrees>
 
 	<ThinkTreeDef>
-		<defName>CosmicHorror_StarVampireFeed</defName>
+		<defName>ROM_StarVampireFeed</defName>
 		<thinkRoot Class="ThinkNode_Priority">
 		<subNodes>
 			<li Class="CosmicHorror.JobGiver_StarVampireFeed" />

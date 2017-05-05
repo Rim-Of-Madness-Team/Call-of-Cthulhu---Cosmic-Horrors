@@ -11,10 +11,10 @@
     </dessicatedBodyGraphicData>
   </PawnKindDef>
   <PawnKindDef>
-    <defName>CosmicHorror_StarVampire</defName>
+    <defName>ROM_StarVampire</defName>
     <label>Star Vampire</label>
-    <race>CosmicHorror_StarVampire</race>
-    <defaultFactionType>StarVampire</defaultFactionType>
+    <race>ROM_StarVampire</race>
+    <defaultFactionType>ROM_StarVampire</defaultFactionType>
     <combatPower>80</combatPower>
     <aiAvoidCover>true</aiAvoidCover>
     <lifeStages>
@@ -80,7 +80,7 @@
   </PawnKindDef>
   <!-- RACE DEFS -->
   <ThingDef ParentName="BaseCosmicHorrorRace">
-    <defName>CosmicHorror_StarVampire</defName>
+    <defName>ROM_StarVampire</defName>
     <label>Star Vampire</label>
     <description>It is invisible until it feeds - the devoured blood slowly reveals its bloated form as its veins are filled. Its obscene maw is surrounded by tentacles, each tipped with either talons or hungry suckers. It descends from the stars to feed and returns with a tittering laugh.</description>
     <statBases>
@@ -96,13 +96,13 @@
         <defaultCooldownTime>2.0</defaultCooldownTime>
         <meleeDamageBaseAmount>12</meleeDamageBaseAmount>
         <meleeDamageDef>Cut</meleeDamageDef>
-        <linkedBodyPartsGroup>CosmicHorror_Tentacles</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
         <defaultCooldownTime>1.1</defaultCooldownTime>
         <meleeDamageBaseAmount>7</meleeDamageBaseAmount>
-        <meleeDamageDef>CosmicHorror_Exsanguination</meleeDamageDef>
+        <meleeDamageDef>ROM_Exsanguination</meleeDamageDef>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
@@ -118,8 +118,8 @@
       <bloodDef>FilthBlood</bloodDef>
       <hasGenders>false</hasGenders>
       <intelligence>ToolUser</intelligence>
-      <thinkTreeMain>StarVampire</thinkTreeMain>
-      <body>CosmicHorror_StarVampireBody</body>
+      <thinkTreeMain>ROM_StarVampire</thinkTreeMain>
+      <body>ROM_StarVampireBody</body>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.5</baseHealthScale>
@@ -138,22 +138,22 @@
       <lifeExpectancy>1200</lifeExpectancy>
       <lifeStageAges>
         <li>
-          <def>CosmicHorror_Spawn</def>
+          <def>ROM_Spawn</def>
           <minAge>0</minAge>
         </li>
         <li>
-          <def>CosmicHorror_FullyFormed</def>
+          <def>ROM_FullyFormed</def>
           <minAge>100</minAge>
-          <soundWounded>Pawn_CosmicHorror_StarVampire_Wounded</soundWounded>
-          <soundDeath>Pawn_CosmicHorror_StarVampire_Death</soundDeath>
-          <soundCall>Pawn_CosmicHorror_StarVampire_Call</soundCall>
+          <soundWounded>Pawn_ROM_StarVampire_Wounded</soundWounded>
+          <soundDeath>Pawn_ROM_StarVampire_Death</soundDeath>
+          <soundCall>Pawn_ROM_StarVampire_Call</soundCall>
         </li>
         <li>
-          <def>CosmicHorror_Ancient</def>
+          <def>ROM_Ancient</def>
           <minAge>500</minAge>
         </li>
         <li>
-          <def>CosmicHorror_Eldritch</def>
+          <def>ROM_Eldritch</def>
           <minAge>1000</minAge>
         </li>
       </lifeStageAges>
@@ -166,7 +166,7 @@
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
     <butcherProducts>
-      <RawCHFood_StarVampireMeat>70</RawCHFood_StarVampireMeat>
+      <ROM_RawCHFood_StarVampireMeat>70</ROM_RawCHFood_StarVampireMeat>
     </butcherProducts>
     <recipes>
       <li>Euthanize</li>

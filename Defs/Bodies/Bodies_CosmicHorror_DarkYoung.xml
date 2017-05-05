@@ -1,6 +1,6 @@
 <BodyDefs>
 	<BodyDef>
-		<defName>CosmicHorror_DarkYoungBody</defName>
+		<defName>ROM_DarkYoungBody</defName>
 		<label>dark young anatomy</label>
 		<corePart>
 			<def>Body</def>
@@ -24,22 +24,22 @@
 					<depth>Inside</depth>
 				</li>
 				<li>
-					<def>CosmicHorror_Lung</def>
+					<def>ROM_Lung</def>
 					<coverage>0.01</coverage>
 					<depth>Inside</depth>
 				</li>
 				<li>
-					<def>CosmicHorror_Lung</def>
+					<def>ROM_Lung</def>
 					<coverage>0.01</coverage>
 					<depth>Inside</depth>
 				</li>
 				<li>
-					<def>CosmicHorror_Kidney</def>
+					<def>ROM_Kidney</def>
 					<coverage>0.01</coverage>
 					<depth>Inside</depth>
 				</li>
 				<li>
-					<def>CosmicHorror_Kidney</def>
+					<def>ROM_Kidney</def>
 					<coverage>0.01</coverage>
 					<depth>Inside</depth>
 				</li>
@@ -49,39 +49,39 @@
 					<depth>Inside</depth>
 				</li>
 				<li>
-					<def>CosmicHorror_Maw</def>
+					<def>ROM_Maw</def>
 					<coverage>0.1</coverage>
 				</li>
 				<li>
-					<def>CosmicHorror_Maw</def>
+					<def>ROM_Maw</def>
 					<coverage>0.02</coverage>
 				</li>
 				<li>
-					<def>CosmicHorror_Eye</def>
+					<def>ROM_Eye</def>
 					<coverage>0.01</coverage>
 				</li>
 				<li>
-					<def>CosmicHorror_Eye</def>
+					<def>ROM_Eye</def>
 					<coverage>0.01</coverage>
 				</li>
 				<li>
-					<def>CosmicHorror_Eye</def>
+					<def>ROM_Eye</def>
 					<coverage>0.01</coverage>
 				</li>
 				<!-- 56 -->
 				<li>
-					<def>CosmicHorror_Tentacle</def>
+					<def>ROM_TentacleFirst</def>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>CosmicHorror_Tentacles</li>
+						<li>ROM_Tentacles</li>
 					</groups>
 					<parts>
 						<li>
-							<def>CosmicHorror_Eye</def>
+							<def>ROM_Eye</def>
 							<coverage>0.01</coverage>
 						</li>
 						<li>
-							<def>CosmicHorror_Maw</def>
+							<def>ROM_Maw</def>
 							<coverage>0.02</coverage>
 							<groups>
 								<li>Teeth</li>
@@ -90,18 +90,18 @@
 					</parts>
 				</li>
 				<li>
-					<def>CosmicHorror_Tentacle</def>
+					<def>ROM_TentacleSecond</def>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>CosmicHorror_Tentacles</li>
+						<li>ROM_Tentacles</li>
 					</groups>
 					<parts>
 						<li>
-							<def>CosmicHorror_Eye</def>
+							<def>ROM_Eye</def>
 							<coverage>0.01</coverage>
 						</li>
 						<li>
-							<def>CosmicHorror_Maw</def>
+							<def>ROM_Maw</def>
 							<coverage>0.02</coverage>
 							<groups>
 								<li>Teeth</li>
@@ -110,18 +110,18 @@
 					</parts>
 				</li>
 				<li>
-					<def>CosmicHorror_Tentacle</def>
+					<def>ROM_TentacleThird</def>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>CosmicHorror_Tentacles</li>
+						<li>ROM_Tentacles</li>
 					</groups>
 					<parts>
 						<li>
-							<def>CosmicHorror_Eye</def>
+							<def>ROM_Eye</def>
 							<coverage>0.01</coverage>
 						</li>
 						<li>
-							<def>CosmicHorror_Maw</def>
+							<def>ROM_Maw</def>
 							<coverage>0.02</coverage>
 							<groups>
 								<li>Teeth</li>
@@ -130,18 +130,18 @@
 					</parts>
 				</li>
 				<li>
-					<def>CosmicHorror_Tentacle</def>
+					<def>ROM_TentacleFourth</def>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>CosmicHorror_Tentacles</li>
+						<li>ROM_Tentacles</li>
 					</groups>
 					<parts>
 						<li>
-							<def>CosmicHorror_Eye</def>
+							<def>ROM_Eye</def>
 							<coverage>0.01</coverage>
 						</li>
 						<li>
-							<def>CosmicHorror_Maw</def>
+							<def>ROM_Maw</def>
 							<coverage>0.02</coverage>
 							<groups>
 								<li>Teeth</li>
@@ -150,18 +150,18 @@
 					</parts>
 				</li>
 				<li>
-					<def>CosmicHorror_Tentacle</def>
+					<def>ROM_TentacleFifth</def>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>CosmicHorror_Tentacles</li>
+						<li>ROM_Tentacles</li>
 					</groups>
 					<parts>
 						<li>
-							<def>CosmicHorror_Eye</def>
+							<def>ROM_Eye</def>
 							<coverage>0.01</coverage>
 						</li>
 						<li>
-							<def>CosmicHorror_Maw</def>
+							<def>ROM_Maw</def>
 							<coverage>0.02</coverage>
 							<groups>
 								<li>Teeth</li>
@@ -170,18 +170,18 @@
 					</parts>
 				</li>
 				<li>
-					<def>CosmicHorror_Tentacle</def>
+					<def>ROM_TentacleSixth</def>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>CosmicHorror_Tentacles</li>
+						<li>ROM_Tentacles</li>
 					</groups>
 					<parts>
 						<li>
-							<def>CosmicHorror_Eye</def>
+							<def>ROM_Eye</def>
 							<coverage>0.01</coverage>
 						</li>
 						<li>
-							<def>CosmicHorror_Maw</def>
+							<def>ROM_Maw</def>
 							<coverage>0.02</coverage>
 							<groups>
 								<li>Teeth</li>
@@ -190,18 +190,18 @@
 					</parts>
 				</li>
 				<li>
-					<def>CosmicHorror_Tentacle</def>
+					<def>ROM_TentacleSeventh</def>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>CosmicHorror_Tentacles</li>
+						<li>ROM_Tentacles</li>
 					</groups>
 					<parts>
 						<li>
-							<def>CosmicHorror_Eye</def>
+							<def>ROM_Eye</def>
 							<coverage>0.01</coverage>
 						</li>
 						<li>
-							<def>CosmicHorror_Maw</def>
+							<def>ROM_Maw</def>
 							<coverage>0.02</coverage>
 							<groups>
 								<li>Teeth</li>
@@ -211,43 +211,43 @@
 				</li>
 				<!-- (79 so far) 20 x 3 = 60  -->
 				<li>
-					<def>CosmicHorror_Leg</def>
+					<def>ROM_LegFirst</def>
 					<coverage>0.03</coverage>
 					<height>Bottom</height>
 					<groups>
-						<li>CosmicHorror_Hooves</li>
+						<li>ROM_Hooves</li>
 					</groups>
 					<parts>
 						<li>
-							<def>CosmicHorror_Hoof</def>
+							<def>ROM_Hoof</def>
 							<coverage>0.03</coverage>
 						</li>
 					</parts>
 				</li>
 				<li>
-					<def>CosmicHorror_Leg</def>
+					<def>ROM_LegSecond</def>
 					<coverage>0.03</coverage>
 					<height>Bottom</height>
 					<groups>
-						<li>CosmicHorror_Hooves</li>
+						<li>ROM_Hooves</li>
 					</groups>
 					<parts>
 						<li>
-							<def>CosmicHorror_Hoof</def>
+							<def>ROM_Hoof</def>
 							<coverage>0.03</coverage>
 						</li>
 					</parts>
 				</li>
 				<li>
-					<def>CosmicHorror_Leg</def>
+					<def>ROM_LegThird</def>
 					<coverage>0.03</coverage>
 					<height>Bottom</height>
 					<groups>
-						<li>CosmicHorror_Hooves</li>
+						<li>ROM_Hooves</li>
 					</groups>
 					<parts>
 						<li>
-							<def>CosmicHorror_Hoof</def>
+							<def>ROM_Hoof</def>
 							<coverage>0.03</coverage>
 						</li>
 					</parts>

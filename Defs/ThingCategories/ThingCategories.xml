@@ -2,10 +2,10 @@
 <ThingCategoryDefs>
 
         <ThingCategoryDef>
-          <defName>CosmicHorror_StrangeMeatRaw</defName>
+          <defName>ROM_StrangeMeatRaw</defName>
           <label>raw strange meat</label>
           <parent>Foods</parent>
-          <iconPath>Ui/Icons/ThingCategories/StrangeMeatRaw/CosmicHorror_StrangeMeatRaw</iconPath>
+          <iconPath>Ui/Icons/ThingCategories/StrangeMeatRaw/ROM_StrangeMeatRaw</iconPath>
         </ThingCategoryDef>
 
 </ThingCategoryDefs>

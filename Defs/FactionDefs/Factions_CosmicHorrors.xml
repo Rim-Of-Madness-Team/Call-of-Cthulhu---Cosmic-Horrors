@@ -2,7 +2,7 @@
 <Defs>
 
   <FactionDef>
-    <defName>StarSpawn</defName>
+    <defName>ROM_StarSpawn</defName>
     <label>StarSpawn of Cthulhu</label>
     <description>A race birthed from the Old One, Cthulhu, laying dead and dreaming at the bottom of the sunken city of R'lyeh.</description>
     <pawnsPlural>StarSpawn of Cthulhu</pawnsPlural>
@@ -27,7 +27,7 @@
     <pawnGroupMakers>
 	<li><kindDef>Normal</kindDef>
         <options>
-		  <StarSpawnOfCthulhu>100</StarSpawnOfCthulhu>	  
+		  <ROM_StarSpawnOfCthulhu>100</ROM_StarSpawnOfCthulhu>	  
         </options>
       </li>
     </pawnGroupMakers> 
@@ -38,7 +38,7 @@
   </FactionDef>
 
   <FactionDef>
-    <defName>Shoggoth</defName>
+    <defName>ROM_Shoggoth</defName>
     <label>Shoggoths</label>
     <description>Shoggoths are gigantic amorphous protoplasmic entities capable of shapeshifting new limbs, organs, mouths, and tentacles at will.</description>
     <pawnsPlural>Shoggoths</pawnsPlural>
@@ -63,7 +63,7 @@
     <pawnGroupMakers>
 	<li><kindDef>Normal</kindDef>
         <options>
-		  <Shoggoth>100</Shoggoth>		  
+		  <ROM_Shoggoth>100</ROM_Shoggoth>		  
         </options>
       </li>
     </pawnGroupMakers> 
@@ -75,7 +75,7 @@
   </FactionDef>
 
   <FactionDef>
-    <defName>MiGo</defName>
+    <defName>ROM_MiGo</defName>
     <label>MiGo Outpost</label>
     <description>MiGo are flying headless carapace-wrapped fungoid aliens that specialize in extraterrestrial brain surgery. Beware that flying enemies will avoid traps!</description>
     <pawnsPlural>MiGo</pawnsPlural>
@@ -100,8 +100,8 @@
     <pawnGroupMakers>
 	<li><kindDef>Normal</kindDef>
         <options>
-		  <MiGo>250</MiGo>
-		  <MiGoCaster>100</MiGoCaster>
+		  <ROM_MiGo>250</ROM_MiGo>
+		  <ROM_MiGoCaster>100</ROM_MiGoCaster>
         </options>
       </li>
     </pawnGroupMakers> 
@@ -113,7 +113,7 @@
   </FactionDef>
 
   <FactionDef>
-    <defName>DeepOne</defName>
+    <defName>ROM_DeepOne</defName>
     <label>Deep Ones</label>
     <description>Deep Ones are humanoid-fish-frog hybrid monstrosities that like to claw their prey before biting their heads off using massive jaws.</description>
     <pawnsPlural>Deep Ones</pawnsPlural>
@@ -138,8 +138,8 @@
     <pawnGroupMakers>
 	<li><kindDef>Normal</kindDef>
         <options>
-		  <DeepOne>100</DeepOne>		  
-		  <DeepOneGreat>100</DeepOneGreat>		  
+		  <ROM_DeepOne>100</ROM_DeepOne>		  
+		  <ROM_DeepOneGreat>100</ROM_DeepOneGreat>		  
         </options>
       </li>
     </pawnGroupMakers> 
@@ -151,7 +151,7 @@
   </FactionDef>
   
   <FactionDef>
-    <defName>StarVampire</defName>
+    <defName>ROM_StarVampire</defName>
     <label>Star Vampires</label>
     <description>...</description>
     <pawnsPlural>Star Vampires</pawnsPlural>
@@ -177,7 +177,7 @@
     <pawnGroupMakers>
 	<li><kindDef>Normal</kindDef>
         <options>
-		  <CosmicHorror_StarVampire>100</CosmicHorror_StarVampire>
+		  <ROM_StarVampire>100</ROM_StarVampire>
         </options>
       </li>
     </pawnGroupMakers> 
@@ -189,7 +189,7 @@
   </FactionDef>
 
   <FactionDef>
-    <defName>CosmicHorror_Chthonian</defName>
+    <defName>ROM_Chthonian</defName>
     <label>Chthonian</label>
     <description>Chthonians are described as resembling immense squids, with elongated worm-like bodies coated with slime. Despite their squid-like appearance, chthonians are actually land-dwellers and are even harmed by water. Chthonians are powerful burrowers which can live for more than a thousand years, and are protective of their young. It is said that a chanting sound accompanies every chthonian, and that by such they can be detected while underground and unseen.\n\nThe most important individual chthonian is the gigantic Shudde M'ell, which is worshiped by the rest, the largest and most malignant of this dread race. It is featured prominently in the aforementioned novel.</description>
     <pawnsPlural>Chthonians</pawnsPlural>
@@ -214,8 +214,8 @@
     <pawnGroupMakers>
 	<li><kindDef>Normal</kindDef>
         <options>
-		  <DeepOne>100</DeepOne>		  
-		  <DeepOneGreat>100</DeepOneGreat>		  
+		  <ROM_DeepOne>100</ROM_DeepOne>		  
+		  <ROM_DeepOneGreat>100</ROM_DeepOneGreat>		  
         </options>
       </li>
     </pawnGroupMakers> 
@@ -231,7 +231,7 @@
 <!-- Cosmic Horror Player Sightable Faction -->
   
   <FactionDef>
-    <defName>CosmicHorrors</defName>
+    <defName>ROM_CosmicHorrors</defName>
     <label>Cosmic Horrors</label>
     <description>Creatures out of time and space bent on purging mankind from the universe.</description>
     <pawnsPlural>horrors</pawnsPlural>
@@ -256,8 +256,8 @@
     <pawnGroupMakers>
 	<li><kindDef>Normal</kindDef>
         <options>
-		  <DeepOne>100</DeepOne>		  
-		  <DeepOneGreat>100</DeepOneGreat>		  
+		  <ROM_DeepOne>100</ROM_DeepOne>		  
+		  <ROM_DeepOneGreat>100</ROM_DeepOneGreat>		  
         </options>
       </li>
     </pawnGroupMakers> 

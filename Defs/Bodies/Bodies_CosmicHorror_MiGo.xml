@@ -5,24 +5,24 @@
 <!-- MiGo - Fungi of Yuggoth -->
 <!-- 2 Wings, Spore structure, Psionic brain, 6 legs -->
   <BodyDef>
-    <defName>CosmicHorror_MiGoBody</defName>
+    <defName>ROM_MiGoBody</defName>
     <label>MiGo anatomy</label>
    <corePart>
       <def>Body</def>
       <height>Middle</height>
       <parts>
         <li>
-          <def>CosmicHorror_LeftWing</def>
+          <def>ROM_LeftWing</def>
           <coverage>0.05</coverage>
 		  <groups>
-			<li>CosmicHorror_Wings</li>
+			<li>ROM_Wings</li>
 		  </groups>
         </li>
         <li>
-          <def>CosmicHorror_RightWing</def>
+          <def>ROM_RightWing</def>
           <coverage>0.05</coverage>
 		  <groups>
-			<li>CosmicHorror_Wings</li>
+			<li>ROM_Wings</li>
 		  </groups>
         </li>
         <li>
@@ -41,55 +41,55 @@
           <height>Top</height>
           <parts>
             <li>
-              <def>CosmicHorror_SporeHead</def>
+              <def>ROM_SporeHead</def>
               <coverage>0.65</coverage>
               <parts>
                 <li>
-                  <def>CosmicHorror_PsionicLobe</def>
+                  <def>ROM_PsionicLobe</def>
                   <coverage>0.05</coverage>
                   <depth>Inside</depth>
 				  <groups>
-					<li>CosmicHorror_Mind</li>
+					<li>ROM_Mind</li>
 				  </groups>
 				</li>
                 <li>
-                  <def>CosmicHorror_FrontalLobe</def>
+                  <def>ROM_FrontalLobe</def>
                   <coverage>0.05</coverage>
                   <depth>Inside</depth>
 				  <groups>
-					<li>CosmicHorror_Mind</li>
+					<li>ROM_Mind</li>
 				  </groups>
 				</li>
                 <li>
-                  <def>CosmicHorror_ParietalLobe</def>
+                  <def>ROM_ParietalLobe</def>
                   <coverage>0.05</coverage>
                   <depth>Inside</depth>
 				  <groups>
-					<li>CosmicHorror_Mind</li>
+					<li>ROM_Mind</li>
 				  </groups>
 				</li>
                 <li>
-                  <def>CosmicHorror_OccipitalLobe</def>
+                  <def>ROM_OccipitalLobe</def>
                   <coverage>0.05</coverage>
                   <depth>Inside</depth>
 				  <groups>
-					<li>CosmicHorror_Mind</li>
+					<li>ROM_Mind</li>
 				  </groups>
 				</li>
                 <li>
-                  <def>CosmicHorror_TemporalLobe</def>
+                  <def>ROM_TemporalLobe</def>
                   <coverage>0.05</coverage>
                   <depth>Inside</depth>
 				  <groups>
-					<li>CosmicHorror_Mind</li>
+					<li>ROM_Mind</li>
 				  </groups>				  
                 </li>
                 <li>
-                  <def>CosmicHorror_BrainStem</def>
+                  <def>ROM_BrainStem</def>
                   <coverage>0.05</coverage>
                   <depth>Inside</depth>
 				  <groups>
-					<li>CosmicHorror_Mind</li>
+					<li>ROM_Mind</li>
 				  </groups>
                 </li>
               </parts>

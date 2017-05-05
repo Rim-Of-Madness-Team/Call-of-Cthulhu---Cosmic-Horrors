@@ -15,19 +15,25 @@ namespace CosmicHorror
     internal class IncidentWorker_DarkYoung : IncidentWorker
     {
 
+        protected override bool CanFireNowSub(IIncidentTarget target)
+        {
+            Map map = (Map)target;
+            if (GenDate.DaysPassed < (ModInfo.cosmicHorrorRaidDelay + this.def.earliestDay))
+            {
+                return false;
+            }
+            return base.CanFireNowSub(target);
+        }
+
         public override bool TryExecute(IncidentParms parms)
         {
             Map map = (Map)parms.target;
             IntVec3 intVec;
-            if (!RCellFinder.TryFindRandomPawnEntryCell(out intVec, map))
+            if (!RCellFinder.TryFindRandomPawnEntryCell(out intVec, map, 0.5f))
             {
                 return false;
             }
-            if (GenDate.DaysPassed < (HugsModOptionalCode.cosmicHorrorEventsDelay() + this.def.earliestDay))
-            {
-                return false;
-            }
-            Find.LetterStack.ReceiveLetter("DarkYoungIncidentLabel".Translate(), "DarkYoungIncidentDesc".Translate(), LetterType.BadNonUrgent, new TargetInfo(intVec, map), null);
+            Find.LetterStack.ReceiveLetter("DarkYoungIncidentLabel".Translate(), "DarkYoungIncidentDesc".Translate(), LetterDefOf.BadNonUrgent, new TargetInfo(intVec, map), null);
 
             SpawnDarkYoung(parms, intVec);
 
@@ -38,7 +44,7 @@ namespace CosmicHorror
             int iwCount = 1;
             IntVec3 intVec = vecparms;
             Map map = (Map)parms.target;
-            PawnKindDef DarkYoung = PawnKindDef.Named("DarkYoung");
+            PawnKindDef DarkYoung = PawnKindDef.Named("ROM_DarkYoung");
 
             if (parms.points <= 200f)
             {

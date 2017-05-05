@@ -28,9 +28,9 @@ namespace CosmicHorror
 
         protected override bool CanFireNowSub(IIncidentTarget target)
         {
-            if (GenDate.DaysPassed < (HugsModOptionalCode.cosmicHorrorEventsDelay() + this.def.earliestDay))
+            if (GenDate.DaysPassed < (ModInfo.cosmicHorrorRaidDelay + this.def.earliestDay))
             {
-                Log.Message("Cosmic Horrors :: CantFireDueTo Time :: " + GenDate.DaysPassed + " days passed, but we need " + HugsModOptionalCode.cosmicHorrorEventsDelay().ToString() + " days + " + this.def.earliestDay);
+                Log.Message("Cosmic Horrors :: CantFireDueTo Time :: " + GenDate.DaysPassed + " days passed, but we need " + ModInfo.cosmicHorrorRaidDelay.ToString() + " days + " + this.def.earliestDay);
                 return false;
             }
             return true;
@@ -43,9 +43,9 @@ namespace CosmicHorror
             ResolveSpawnCenter(parms);
             
             //Initialize variables.
-            iwKind      = PawnKindDef.Named("CosmicHorror_StarVampire");
-            iwFac       = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("StarVampire"));
-            iwWarn      = SoundDef.Named("Pawn_CosmicHorror_StarVampire_Warning");
+            iwKind      = PawnKindDef.Named("ROM_StarVampire");
+            iwFac       = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("ROM_StarVampire"));
+            iwWarn      = SoundDef.Named("Pawn_ROM_StarVampire_Warning");
             iwPawn      = null; //PawnGenerator.GeneratePawn(iwKind, iwFac);
             iwVampire   = null; //iwPawn as CosmicHorrorPawn;
             iwLoc       = CellFinder.RandomClosewalkCellNear(parms.spawnCenter, (Map)parms.target, 8);
@@ -84,7 +84,7 @@ namespace CosmicHorror
             }
             else
             {
-                RCellFinder.TryFindRandomPawnEntryCell(out parms.spawnCenter, iwMap);
+                RCellFinder.TryFindRandomPawnEntryCell(out parms.spawnCenter, iwMap, 0.0f);
             }
         }
 

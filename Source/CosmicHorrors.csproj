@@ -38,11 +38,7 @@
       <HintPath>..\..\..\Harmony19\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>Source-DLLs\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="HugsLib">
-      <HintPath>..\..\HugsLib\Assemblies\HugsLib.dll</HintPath>
+      <HintPath>..\..\..\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -64,7 +60,8 @@
     <Compile Include="DetourAttribute.cs" />
     <Compile Include="HediffWithComps_GutWorms.cs" />
     <Compile Include="HediffWithComps_SanityLoss.cs" />
-    <Compile Include="HugsLibOptionalCode.cs" />
+    <Compile Include="ModInfo.cs" />
+    <Compile Include="ModSettings.cs" />
     <Compile Include="IncidentWorker_Cthonian.cs" />
     <Compile Include="IncidentWorker_DarkYoung.cs" />
     <Compile Include="IncidentWorker_RaidCosmicHorrors.cs" />

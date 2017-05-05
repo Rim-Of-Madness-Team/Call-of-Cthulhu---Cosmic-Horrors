@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><DefPackage-SoundDef>
 
   <SoundDef>
-    <defName>Pawn_CosmicHorror_Cthulhid_Call</defName> 
+    <defName>Pawn_ROM_Cthulhid_Call</defName> 
     <context>MapOnly</context>	
     <eventNames />
     <subSounds>
@@ -25,7 +25,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_Shoggoth_Call</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_Shoggoth_Call</defName><context>MapOnly</context>  
     <eventNames />
     <subSounds>
       <li>
@@ -48,7 +48,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_Shoggoth_Wounded</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_Shoggoth_Wounded</defName><context>MapOnly</context>  
     <eventNames />
     <maxVoices>1</maxVoices>  	
     <subSounds>
@@ -73,7 +73,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_Shoggoth_Death</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_Shoggoth_Death</defName><context>MapOnly</context>  
     <eventNames />
     <subSounds>
       <li>
@@ -96,7 +96,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_MiGo_Call</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_MiGo_Call</defName><context>MapOnly</context>  
     <eventNames />
     <subSounds>
       <li>
@@ -119,7 +119,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_MiGo_Wounded</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_MiGo_Wounded</defName><context>MapOnly</context>  
     <eventNames />
     <maxVoices>1</maxVoices>  	
     <subSounds>
@@ -144,7 +144,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_MiGo_Death</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_MiGo_Death</defName><context>MapOnly</context>  
     <eventNames />
     <subSounds>
       <li>
@@ -167,7 +167,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_DeepOne_Death</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_DeepOne_Death</defName><context>MapOnly</context>  
     <eventNames />
     <subSounds>
       <li>
@@ -190,7 +190,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_DeepOne_Call</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_DeepOne_Call</defName><context>MapOnly</context>  
     <eventNames />
     <subSounds>
       <li>
@@ -213,7 +213,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_DeepOne_Wounded</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_DeepOne_Wounded</defName><context>MapOnly</context>  
     <eventNames />
     <maxVoices>1</maxVoices>  	
     <subSounds>
@@ -239,7 +239,7 @@
   
    
   <SoundDef>
-    <defName>Pawn_CosmicHorror_StarVampire_Death</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_StarVampire_Death</defName><context>MapOnly</context>  
     <eventNames />
     <subSounds>
       <li>
@@ -262,7 +262,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_StarVampire_Call</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_StarVampire_Call</defName><context>MapOnly</context>  
     <eventNames />
     <subSounds>
       <li>
@@ -285,7 +285,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_StarVampire_Wounded</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_StarVampire_Wounded</defName><context>MapOnly</context>  
     <eventNames />
     <maxVoices>1</maxVoices>  	
     <subSounds>
@@ -310,7 +310,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_StarVampire_Warning</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_StarVampire_Warning</defName><context>MapOnly</context>  
     <eventNames />
     <maxVoices>1</maxVoices>  	
     <subSounds>
@@ -336,7 +336,7 @@
   </SoundDef>
     
   <SoundDef>
-    <defName>Pawn_CosmicHorror_DarkYoung_Call</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_DarkYoung_Call</defName><context>MapOnly</context>  
     <eventNames />
     <subSounds>
       <li>
@@ -360,7 +360,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_DarkYoung_Wounded</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_DarkYoung_Wounded</defName><context>MapOnly</context>  
     <eventNames />
     <maxVoices>1</maxVoices>  	
     <subSounds>
@@ -385,7 +385,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_DarkYoung_Death</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_DarkYoung_Death</defName><context>MapOnly</context>  
     <eventNames />
     <subSounds>
       <li>
@@ -409,7 +409,7 @@
   
 
   <SoundDef>
-    <defName>Pawn_CosmicHorror_Chthonian_Call</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_Chthonian_Call</defName><context>MapOnly</context>  
     <eventNames />
     <subSounds>
       <li>
@@ -433,7 +433,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_Chthonian_Pit</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_Chthonian_Pit</defName><context>MapOnly</context>  
 	<sustain>True</sustain>
 	<maxSimultaneous>1</maxSimultaneous>
 	<priorityMode>PrioritizeNearest</priorityMode>
@@ -464,7 +464,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_Chthonian_Moving</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_Chthonian_Moving</defName><context>MapOnly</context>  
 	<sustain>True</sustain>
 	<maxSimultaneous>1</maxSimultaneous>
 	<priorityMode>PrioritizeNearest</priorityMode>
@@ -496,7 +496,7 @@
 
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_Chthonian_Wounded</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_Chthonian_Wounded</defName><context>MapOnly</context>  
     <eventNames />
     <maxVoices>1</maxVoices>  	
     <subSounds>
@@ -521,7 +521,7 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>Pawn_CosmicHorror_Chthonian_Death</defName><context>MapOnly</context>  
+    <defName>Pawn_ROM_Chthonian_Death</defName><context>MapOnly</context>  
     <eventNames />
     <subSounds>
       <li>

@@ -9,7 +9,7 @@
 
 
   <HediffDef ParentName="DiseaseBase">
-    <defName>CosmicHorror_SanityLoss</defName>
+    <defName>ROM_SanityLoss</defName>
 	<label>sanity loss</label>
     <initialSeverity>0.001</initialSeverity>
     <hediffClass>CosmicHorror.HediffWithComps_SanityLoss</hediffClass> 

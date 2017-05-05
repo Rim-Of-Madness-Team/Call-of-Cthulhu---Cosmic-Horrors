@@ -22,7 +22,7 @@
       <ingestSound>RawMeat_Eat</ingestSound>
 		<outcomeDoers>
 			<li Class="IngestionOutcomeDoer_GiveHediff">
-			  <hediffDef>CosmicHorror_SanityLoss</hediffDef>
+			  <hediffDef>ROM_SanityLoss</hediffDef>
 			  <severity>0.25</severity>
 			</li>
 		</outcomeDoers>	
@@ -30,7 +30,7 @@
   </ThingDef>
 
   <ThingDef ParentName="RawCHFoodDummy">
-    <defName>CosmicHorror_Cthulhid_Meat</defName>
+    <defName>ROM_Cthulhid_Meat</defName>
     <label>cthulhid meat</label>
     <description>Raw meat from a Star-Spawn of Cthulhu.
 	
@@ -45,7 +45,7 @@ Cthulhid flesh is a putrid soupy mess of meat, more liquids than solids and exud
   </ThingDef>
 
   <ThingDef ParentName="RawCHFoodDummy">
-    <defName>CosmicHorror_DeepOne_Meat</defName>
+    <defName>ROM_DeepOne_Meat</defName>
     <label>Deep One meat</label>
     <description>Raw meat from a Deep One.
 	
@@ -61,7 +61,7 @@ To dine upon Deep One flesh is to experience something rigid and gelatinous simu
 
 
   <ThingDef ParentName="RawCHFoodDummy">
-    <defName>CosmicHorror_DeepOneGreat_Meat</defName>
+    <defName>ROM_DeepOneGreat_Meat</defName>
     <label>Deep One meat</label>
     <description>Raw meat from a Deep One.
 	
@@ -77,7 +77,7 @@ To dine upon Deep One flesh is to experience something rigid and gelatinous simu
   
   
   <ThingDef ParentName="RawCHFoodDummy">
-    <defName>CosmicHorror_MiGo_Meat</defName>
+    <defName>ROM_MiGo_Meat</defName>
     <label>MiGo meat</label>
     <description>Raw meat from a MiGo.
 	
@@ -92,7 +92,7 @@ MiGo meat is not actually meat. In actuality, it is a fungus with a meaty thickn
   </ThingDef>
 
   <ThingDef ParentName="RawCHFoodDummy">
-    <defName>CosmicHorror_Shoggoth_Meat</defName>
+    <defName>ROM_Shoggoth_Meat</defName>
     <label>Shoggoth meat</label>
     <description>Raw meat from a Shoggoth.
 	
@@ -107,7 +107,7 @@ The flesh of the Shoggoth is chewy and salty, rubbery like a mussel and imbued i
   </ThingDef>
 
   <ThingDef ParentName="RawCHFoodDummy">
-    <defName>CosmicHorror_StarVampire_Meat</defName>
+    <defName>ROM_StarVampire_Meat</defName>
     <label>Star Vampire meat</label>
     <description>Raw meat from a Star Vampire.
 	
@@ -122,7 +122,7 @@ Star Vampire meat's marbling ranges from an uncomfortable amount of intramuscula
   </ThingDef>
 
   <ThingDef ParentName="RawCHFoodDummy">
-    <defName>RawCHFood_DarkYoungMeat</defName>
+    <defName>ROM_RawCHFood_DarkYoungMeat</defName>
     <label>Dark Young meat</label>
     <description>Raw meat from the Dark Young.
 	</description>

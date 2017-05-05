@@ -5,7 +5,7 @@
   <!--============= Item hauling ===============-->
 
   <JobDef>
-    <defName>HaulSacrifice</defName>
+    <defName>ROM_HaulChthonianSacrifice</defName>
     <driverClass>CosmicHorror.JobDriver_HaulSacrifice</driverClass>
     <reportString>sacrificing TargetB.</reportString>
 	<joyDuration>1600</joyDuration>
@@ -15,7 +15,7 @@
   </JobDef>
  
   <JobDef>
-    <defName>FillChthonianPit</defName>
+    <defName>ROM_FillChthonianPit</defName>
     <driverClass>CosmicHorror.JobDriver_FillChthonianPit</driverClass>
     <reportString>filling pit.</reportString>
 	<joyDuration>1600</joyDuration>

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-    <FilthBloodCosmicHorror.label>사악한 피</FilthBloodCosmicHorror.label>
+    <ROM_FilthBloodCosmicHorror.label>사악한 피</ROM_FilthBloodCosmicHorror.label>
 
-    <FilthBloodShoggoth.label>원형질</FilthBloodShoggoth.label>
+    <ROM_FilthBloodShoggoth.label>원형질</ROM_FilthBloodShoggoth.label>
 
-    <FilthBloodMiGo.label>진균류</FilthBloodMiGo.label>
+    <ROM_FilthBloodMiGo.label>진균류</ROM_FilthBloodMiGo.label>
 
-    <FilthBloodDeepOne.label>슬라임</FilthBloodDeepOne.label>
+    <ROM_FilthBloodDeepOne.label>슬라임</ROM_FilthBloodDeepOne.label>
 
 </LanguageData>

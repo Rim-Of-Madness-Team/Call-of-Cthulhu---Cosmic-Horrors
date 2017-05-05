@@ -2,7 +2,7 @@
 <Defs>
   <!-- SHOGGOTH -->
   <!-- KIND DEFS -->
-  <PawnKindDef Name="Shoggoth" Abstract="True">
+  <PawnKindDef Name="ROM_Shoggoth" Abstract="True">
     <bodyGraphicData>
       <shaderType>Cutout</shaderType>
     </bodyGraphicData>
@@ -11,11 +11,11 @@
     </dessicatedBodyGraphicData>
   </PawnKindDef>
   <PawnKindDef>
-    <defName>Shoggoth</defName>
+    <defName>ROM_Shoggoth</defName>
     <label>Shoggoth</label>
-    <race>CosmicHorror_Shoggoth</race>
+    <race>ROM_Shoggoth</race>
     <combatPower>525</combatPower>
-    <defaultFactionType>Shoggoth</defaultFactionType>
+    <defaultFactionType>ROM_Shoggoth</defaultFactionType>
     <aiAvoidCover>true</aiAvoidCover>
     <lifeStages>
       <li>
@@ -62,7 +62,7 @@
   </PawnKindDef>
   <!-- RACE DEFS-->
   <ThingDef ParentName="BaseCosmicHorrorRace">
-    <defName>CosmicHorror_Shoggoth</defName>
+    <defName>ROM_Shoggoth</defName>
     <label>shoggoth</label>
     <description>Large and oily masses that shift and change shape according to their needs. Eyes, mouth and tentacles appear, then just as swifty, are reabsorbed into the luminescent black protoplasm. They are reluctant servants to those that are willing to risk their rebellious nature.</description>
     <statBases>
@@ -84,7 +84,7 @@
         <defaultCooldownTime>0.3</defaultCooldownTime>
         <meleeDamageBaseAmount>20</meleeDamageBaseAmount>
         <meleeDamageDef>Blunt</meleeDamageDef>
-        <linkedBodyPartsGroup>CosmicHorror_Tentacles</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
       </li>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
@@ -102,11 +102,11 @@
       </li>
     </verbs>
     <race>
-      <bloodDef>FilthBloodShoggoth</bloodDef>
+      <bloodDef>ROM_FilthBloodShoggoth</bloodDef>
       <hasGenders>false</hasGenders>
       <intelligence>ToolUser</intelligence>
-      <thinkTreeMain>CosmicHorror</thinkTreeMain>
-      <body>CosmicHorror_ShoggothBody</body>
+      <thinkTreeMain>ROM_CosmicHorror</thinkTreeMain>
+      <body>ROM_ShoggothBody</body>
       <leatherColor>(58,96,136)</leatherColor>      
 	  <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
       <baseBodySize>3.0</baseBodySize>
@@ -114,22 +114,22 @@
       <lifeExpectancy>1200</lifeExpectancy>
       <lifeStageAges>
         <li>
-          <def>CosmicHorror_Spawn</def>
+          <def>ROM_Spawn</def>
           <minAge>0</minAge>
         </li>
         <li>
-          <def>CosmicHorror_FullyFormed</def>
+          <def>ROM_FullyFormed</def>
           <minAge>100</minAge>
-          <soundWounded>Pawn_CosmicHorror_Shoggoth_Wounded</soundWounded>
-          <soundDeath>Pawn_CosmicHorror_Shoggoth_Death</soundDeath>
-          <soundCall>Pawn_CosmicHorror_Shoggoth_Call</soundCall>
+          <soundWounded>Pawn_ROM_Shoggoth_Wounded</soundWounded>
+          <soundDeath>Pawn_ROM_Shoggoth_Death</soundDeath>
+          <soundCall>Pawn_ROM_Shoggoth_Call</soundCall>
         </li>
         <li>
-          <def>CosmicHorror_Ancient</def>
+          <def>ROM_Ancient</def>
           <minAge>500</minAge>
         </li>
         <li>
-          <def>CosmicHorror_Eldritch</def>
+          <def>ROM_Eldritch</def>
           <minAge>1000</minAge>
         </li>
       </lifeStageAges>
@@ -142,7 +142,7 @@
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
     <butcherProducts>
-      <RawCHFood_ShoggothMeat>50</RawCHFood_ShoggothMeat>
+      <ROM_RawCHFood_ShoggothMeat>50</ROM_RawCHFood_ShoggothMeat>
     </butcherProducts>
     <recipes>
       <li>Euthanize</li>

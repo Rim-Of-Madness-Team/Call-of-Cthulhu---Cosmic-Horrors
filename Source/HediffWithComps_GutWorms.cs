@@ -19,13 +19,13 @@ namespace CosmicHorror
         public override void PostMake()
         {
             base.PostMake();
-            chthonianFaction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("CosmicHorror_Chthonian"));
+            chthonianFaction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("ROM_Chthonian"));
         }
 
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_References.LookReference<Faction>(ref this.chthonianFaction, "chthonianFaction", false);
+            Scribe_References.Look<Faction>(ref this.chthonianFaction, "chthonianFaction", false);
         }
 
         public override void PostTick()
@@ -46,7 +46,7 @@ namespace CosmicHorror
                                 if (this.pawn.health.hediffSet != null)
                                 {
                                     Cthulhu.Utility.DebugReport("CurStage :: " + this.CurStageIndex.ToString());
-                                    Hediff hediff = this.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("CosmicHorror_GutWorms"));
+                                    Hediff hediff = this.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("ROM_GutWorms"));
                                     if (hediff != null)
                                     {
                                         hediff.Severity = 1f;
@@ -58,7 +58,7 @@ namespace CosmicHorror
                                     }
                                     else
                                     {
-                                        hediff = HediffMaker.MakeHediff(HediffDef.Named("CosmicHorror_GutWorms"), this.pawn, null);
+                                        hediff = HediffMaker.MakeHediff(HediffDef.Named("ROM_GutWorms"), this.pawn, null);
                                         hediff.Severity = 1f;
                                         this.pawn.health.AddHediff(hediff, null, null);
                                     }
@@ -81,9 +81,9 @@ namespace CosmicHorror
 
             //Spawn Larva
             List<CosmicHorrorPawn> pawns = new List<CosmicHorrorPawn>();
-            pawns.AddRange(Utility.SpawnHorrorsOfCountAt(MonsterDefOf.CosmicHorror_ChthonianLarva, intVec, map, Rand.Range(3, 5), null, false, false));
+            //pawns.AddRange(Utility.SpawnHorrorsOfCountAt(MonsterDefOf.ROM_ChthonianLarva, intVec, map, Rand.Range(3, 5), null, false, false));
             
-            pawns.AddRange(Utility.SpawnHorrorsOfCountAt(MonsterDefOf.CosmicHorror_ChthonianLarva, intVec, map, Rand.Range(1, 2), Faction.OfPlayer, false, false));
+            pawns.AddRange(Utility.SpawnHorrorsOfCountAt(MonsterDefOf.ROM_ChthonianLarva, intVec, map, Rand.Range(2, 3), Faction.OfPlayer, false, false));
 
             foreach (CosmicHorrorPawn pawn in pawns)
             {
