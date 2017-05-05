@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <CosmicHorror_Psychic.label>정신 공격</CosmicHorror_Psychic.label>
+    <CosmicHorror_Psychic.deathMessage>{0}(는)은 정신 공격을 버티지 못하고 사망했습니다.</CosmicHorror_Psychic.deathMessage>
+
+    <CosmicHorror_Exsanguination.label>출혈</CosmicHorror_Exsanguination.label>
+    <CosmicHorror_Exsanguination.deathMessage>{0}(는)은 과다 출혈로 사망했습니다.</CosmicHorror_Exsanguination.deathMessage>
+
+</LanguageData>

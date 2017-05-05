@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <CosmicHorror_DeepOne.label>딥 원</CosmicHorror_DeepOne.label>
+    <CosmicHorror_DeepOne.description>큰 불룩한 눈과 물갈퀴가 있는 인간형 물고기입니다. 그들은 바다의 압력에 견딜 수 있도록 설계된 강력한 비늘 모양의 몸체를 가지고 있습니다.</CosmicHorror_DeepOne.description>
+    <CosmicHorror_DeepOne.race.leatherLabel>질긴 가죽</CosmicHorror_DeepOne.race.leatherLabel>
+
+    <CosmicHorror_DeepOneGreat.label>그레이트 딥 원</CosmicHorror_DeepOneGreat.label>
+    <CosmicHorror_DeepOneGreat.description>큰 불룩한 눈과 물갈퀴가 있는 인간형 물고기입니다. 그들은 바다의 압력에 견딜 수 있도록 설계된 강력한 비늘 모양의 몸체를 가지고 있습니다. 일반 딥 원보다 거대합니다.</CosmicHorror_DeepOneGreat.description>
+    <CosmicHorror_DeepOneGreat.race.leatherLabel>튼튼한 질긴 가죽</CosmicHorror_DeepOneGreat.race.leatherLabel>
+
+</LanguageData>

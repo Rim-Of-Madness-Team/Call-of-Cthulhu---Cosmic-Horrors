@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <StarSpawn.label>크툴루의 스타스폰</StarSpawn.label>
+    <StarSpawn.description>르뤼에의 침몰한 도시에 죽은 듯이 누워있는 올드 원, 크툴루의 후손입니다.</StarSpawn.description>
+    <StarSpawn.pawnsPlural>크툴루의 스타스폰</StarSpawn.pawnsPlural>
+    <StarSpawn.fixedName>리뤼에의 침몰한 도시</StarSpawn.fixedName>
+
+    <Shoggoth.label>쇼고스</Shoggoth.label>
+    <Shoggoth.description>쇼고스는 사지, 기관, 입, 촉수를 자유로이 변형시킬 수 있는 거대하한 몸을 가지고 있습니다.</Shoggoth.description>
+    <Shoggoth.pawnsPlural>쇼고스</Shoggoth.pawnsPlural>
+    <Shoggoth.fixedName>광기의 산</Shoggoth.fixedName>
+
+    <MiGo.label>미고 아웃포스트</MiGo.label>
+    <MiGo.description>미고는 외계인 뇌 수술을 전문으로 하는 머리가 없는 갑각생물로, 그들은 함정을 피할 수 있으니 조심하세요.</MiGo.description>
+    <MiGo.pawnsPlural>미고</MiGo.pawnsPlural>
+    <MiGo.fixedName>미고의 전초기지</MiGo.fixedName>
+
+    <DeepOne.label>딥 원</DeepOne.label>
+    <DeepOne.description>딥 원들은 턱 뼈를 이용하 머리를 물어 뜯기 전에 먼저 빨아들이는 것을 좋아합니다.</DeepOne.description>
+    <DeepOne.pawnsPlural>딥 원</DeepOne.pawnsPlural>
+    <DeepOne.fixedName>데빌 리프</DeepOne.fixedName>
+
+    <StarVampire.label>스타 뱀파이어</StarVampire.label>
+    <StarVampire.description>...</StarVampire.description>
+    <StarVampire.pawnsPlural>스타 뱀파이어</StarVampire.pawnsPlural>
+    <StarVampire.fixedName>아우터 스페이스</StarVampire.fixedName>
+
+    <CosmicHorror_Chthonian.label>크토니안</CosmicHorror_Chthonian.label>
+    <CosmicHorror_Chthonian.description>크토니안은 얇은 껍질로 덮인 굴찍훈 버레 모양의 몸으로, 거대한 오징어를 닮은 것으로 묘사됩니다. 그들은 오징어와 비슷한 외형에도 불구하고, 육지에서 살며 물에 닿으면 피해를 입는 몸을 가지고 있습니다. 그들은 천년이상 살 수 있으며, 자신들의 젊은 개체들을 보호합니다. 그들이 내는 소리는 각 개체마다 고유의 음색을 가졌으며 그것을 이용해 깊은 지하에서 의사소통 하는 것으로 알려져 있습니다. 가장 강력하고 큰 슈드뮤엘을 신으로써 섬깁니다.</CosmicHorror_Chthonian.description>
+    <CosmicHorror_Chthonian.pawnsPlural>크토니안</CosmicHorror_Chthonian.pawnsPlural>
+    <CosmicHorror_Chthonian.fixedName>그하른의 잃어버린 도시</CosmicHorror_Chthonian.fixedName>
+
+    <CosmicHorrors.label>코즈믹 호러</CosmicHorrors.label>
+    <CosmicHorrors.description>우주에서 인간을 제거하려고 하지만, 시간과 공간이 부족합니다.</CosmicHorrors.description>
+    <CosmicHorrors.pawnsPlural>호러</CosmicHorrors.pawnsPlural>
+    <CosmicHorrors.fixedName>Unknown</CosmicHorrors.fixedName>
+
+</LanguageData>

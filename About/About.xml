@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Call of Cthulhu - Cosmic Horrors A16</name>
+	<author>Jecrell</author>
+	<targetVersion>0.16.1393</targetVersion>
+	<description>
+	V1.5.15
+Contributors:
+Junkyard Joe (Writer)
+drynyn (Writer)
+spoonshortage (Artist)
+Want to contribute? Get in touch with us in the workshop or Ludeon forums.
+	
+This is an attempt to create the minor races of H.P. Lovecraft's weird fiction mythos in the RimWorld engine. They behave the same as hostile factions that raid colonies such as mechanoids or insectoids. They are deadlier, however.
+	
+	Currently Included Monsters:
+	   *Star-Spawn of Cthulhu
+	   *Shoggoths
+	   *Mi-Go
+	   *Deep Ones
+	   *Star Vampire
+	   *Dark Young
+	   *NEW - Chthonian
+	
+	Incidents:
+	   *Monster Raids
+	   *Dark Young Herd
+	   *Invisible Star Vampire Attack
+	   *Chthonian Pit
+	
+	Notes:
+	Each monster has its own unique anatomical skeletons, organs, and body parts. Some special powers were given to psionic beasts.
+	Each monster has special sound effects.
+	More creatures will be added in updates in the future.
+	Since I am one person, I can't attest to how balanced the monsters are, and I am definitely looking for feedback from player experiences. Let me know how they are in your game.
+	
+	V1.5 Update:
+		*Chthonians
+	
+	V1.4 Update:
+		*A16 Update
+	
+	V1.3 Update:
+	    *Cosmic Horror Life Cycles
+		*Cosmic Horror Insanity Loss Aura
+		*Cosmic Horror Observed Moodlet
+		*Greater Deep Ones
+	V1.2 Update:
+		*Star Vampires added as well as a Star Vampire incident.
+	
+	V1.1 Update:
+		*Added strange meats to the game. These can be crafted from the butchers and cooked into strange meals. These meals are not recommended to be consumed by sane individuals wanting to keep their sanity intact.
+		*Added leathers for all cosmic horrors.
+	
+	Have fun!
+	</description>
+</ModMetaData>

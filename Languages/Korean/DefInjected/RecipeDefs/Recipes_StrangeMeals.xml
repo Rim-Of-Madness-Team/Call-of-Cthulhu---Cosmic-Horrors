@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <CookStrangeMealSimple.label>이상한 간단한 식사 준비</CookStrangeMealSimple.label>
+    <CookStrangeMealSimple.description>똑똑한 음식을 요리하는 거야?</CookStrangeMealSimple.description>
+    <CookStrangeMealSimple.jobString>간단한 식사 조리 중.</CookStrangeMealSimple.jobString>
+
+    <CookStrangeMealSimpleCampfire.label>이상한 간단한 식사를 준비</CookStrangeMealSimpleCampfire.label>
+    <CookStrangeMealSimpleCampfire.jobString>간단한 식사 조리 중.</CookStrangeMealSimpleCampfire.jobString>
+
+    <CookStrangeMealFine.label>이상한 좋은 식사를 준비</CookStrangeMealFine.label>
+    <CookStrangeMealFine.description>좋은 식사를 요리하는 것은 좋지만... 재료가 너무 노골적이지 않아?</CookStrangeMealFine.description>
+    <CookStrangeMealFine.jobString>좋은 식사 조리 중.</CookStrangeMealFine.jobString>
+
+    <CookStrangeMealLavish.label>이상한 호화로운 식사를 준비</CookStrangeMealLavish.label>
+    <CookStrangeMealLavish.description>훌륭한 식사를 조리하는 것은 좋지만, 재료가 너무 노골적으로 않아?</CookStrangeMealLavish.description>
+    <CookStrangeMealLavish.jobString>호화로운 식사 조리 중.</CookStrangeMealLavish.jobString>
+
+    <MakeStrangeKibble.label>기괴한 빻은 가루 제작</MakeStrangeKibble.label>
+    <MakeStrangeKibble.description>기괴한 고기와 식물 물질을 사용하여 동물을 마비시세요.</MakeStrangeKibble.description>
+    <MakeStrangeKibble.jobString>빻은 가루 제작 중.</MakeStrangeKibble.jobString>
+
+    <BurnStrangeMeat.label>기괴한 고기 소각 (1)</BurnStrangeMeat.label>
+    <BurnStrangeMeat.description>기괴한 고기를 태워서 완전히 파괴하세요.</BurnStrangeMeat.description>
+    <BurnStrangeMeat.jobString>기괴한 고기 소각 중.</BurnStrangeMeat.jobString>
+
+    <BurnStrangeMeat25.label>기괴한 고기 소각 (25)</BurnStrangeMeat25.label>
+    <BurnStrangeMeat25.description>기괴한 고기를 태워서 완전히 파괴하세요.</BurnStrangeMeat25.description>
+    <BurnStrangeMeat25.jobString>기괴한 고기 소각 중.</BurnStrangeMeat25.jobString>
+
+    <BurnStrangeMeat75.label>기괴한 고기 소각 (75)</BurnStrangeMeat75.label>
+    <BurnStrangeMeat75.description>기괴한 고기를 태워서 완전히 파괴하세요.</BurnStrangeMeat75.description>
+    <BurnStrangeMeat75.jobString>기괴한 고기 소각 중.</BurnStrangeMeat75.jobString>
+
+</LanguageData>

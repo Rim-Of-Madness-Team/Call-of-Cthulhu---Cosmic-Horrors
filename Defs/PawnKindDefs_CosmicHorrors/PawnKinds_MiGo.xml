@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- MIGO -->
+
+	<!-- KIND DEFS -->
+	<PawnKindDef Name="MiGo" Abstract="True">
+		<bodyGraphicData>
+			<shaderType>Cutout</shaderType>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+			<shaderType>Cutout</shaderType>
+		</dessicatedBodyGraphicData>		
+	</PawnKindDef>
+
+	<PawnKindDef>
+		<defName>MiGo</defName>
+		<label>MiGo Drone</label>
+		<race>CosmicHorror_MiGo</race>
+		<combatPower>80</combatPower>
+		<defaultFactionType>MiGo</defaultFactionType>
+		<aiAvoidCover>true</aiAvoidCover>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.0</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.4</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+	<PawnKindDef>
+		<defName>MiGoCaster</defName>
+		<label>MiGo Caster</label>
+		<race>CosmicHorror_MiGo</race>
+		<combatPower>315</combatPower>
+		<defaultFactionType>MiGo</defaultFactionType>
+		<aiAvoidCover>true</aiAvoidCover>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.0</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.4</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>
+			<min>5000</min>
+			<max>5000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>MiGoGunLow</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Bullet</thingClass>
+		<label>bullet</label>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+	</ThingDef>
+	<ThingDef Name="BaseGun" Abstract="True">
+		<category>Item</category>
+		<thingClass>ThingWithComps</thingClass>
+		<equipmentType>Primary</equipmentType>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<selectable>True</selectable>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<SellPriceFactor>0.5</SellPriceFactor>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+			<li>WeaponsRanged</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>ArtName_WeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- RACE DEFS -->
+
+	<ThingDef ParentName="BaseCosmicHorrorRace">
+		<defName>CosmicHorror_MiGo</defName>
+		<label>MiGo</label>
+		<description>An insectile fungus with vast membranous wings, numerous segmented limbs and a forest of stubby antenna for a head. They are of a inquisitive mind and seek the brains of lesser species to further their understanding. They are known to search out planets that contain minerals their own world lacks.
+		</description>
+		<statBases>
+			<Mass>70</Mass>	
+			<MoveSpeed>5.0</MoveSpeed>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<defaultCooldownTime>0.4</defaultCooldownTime>
+				<meleeDamageBaseAmount>7</meleeDamageBaseAmount>
+				<meleeDamageDef>Cut</meleeDamageDef>
+				<linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<defaultCooldownTime>0.4</defaultCooldownTime>
+				<meleeDamageBaseAmount>3</meleeDamageBaseAmount>
+				<meleeDamageDef>CosmicHorror_Psychic</meleeDamageDef>
+				<linkedBodyPartsGroup>CosmicHorror_Mind</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<defaultCooldownTime>1.5</defaultCooldownTime>
+				<meleeDamageBaseAmount>10</meleeDamageBaseAmount>
+				<meleeDamageDef>Blunt</meleeDamageDef>
+				<linkedBodyPartsGroup>CosmicHorror_Wings</linkedBodyPartsGroup>
+			</li>	  
+		</verbs>
+		<race>
+			<bloodDef>FilthBloodMiGo</bloodDef>		
+			<hasGenders>false</hasGenders>	
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>CosmicHorror</thinkTreeMain>
+			<body>CosmicHorror_MiGoBody</body>
+			<leatherColor>(150,57,88)</leatherColor>  <foodType>OmnivoreAnimal, AnimalProduct</foodType>     
+			<leatherCommonalityFactor>0.01</leatherCommonalityFactor>
+			<baseBodySize>1.0</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<lifeExpectancy>1200</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>CosmicHorror_Spawn</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>CosmicHorror_FullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_CosmicHorror_MiGo_Wounded</soundWounded>
+					<soundDeath>Pawn_CosmicHorror_MiGo_Death</soundDeath>
+					<soundCall>Pawn_CosmicHorror_MiGo_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+				<li>
+					<def>CosmicHorror_Ancient</def>
+					<minAge>500</minAge>
+				</li>
+				<li>
+					<def>CosmicHorror_Eldritch</def>
+					<minAge>1000</minAge>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>1000</min>
+				<max>2000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<RawCHFood_MiGoMeat>30</RawCHFood_MiGoMeat>
+		</butcherProducts>	
+		<recipes>
+			<li>Euthanize</li>
+		</recipes>
+	</ThingDef>
+
+
+
+	<!-- WEAPONS -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MiGoCastingWeapon</defName>
+		<label>Rhombohedral Energy blast</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(10,10)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>27</damageAmountBase>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseGun">
+		<defName>Gun_MiGoCastingWeapon</defName>
+		<label>Rhombohedral Energy Weapon</label>
+		<description>Mysterious diamond-shaped crystalline artifact.</description>
+		<graphicData>
+			<texPath>Item/Weapon/MiGoCasterWeapon</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>  
+		</graphicData>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<AccuracyTouch>0.8</AccuracyTouch>
+			<AccuracyShort>0.8</AccuracyShort>
+			<AccuracyMedium>0.92</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
+		</statBases>
+		<tradeability>Never</tradeability>
+		<techLevel>Spacer</techLevel>
+		<menuHidden>True</menuHidden>
+		<destroyOnDrop>True</destroyOnDrop>
+		<weaponTags>
+			<li>MiGoGunLow</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_MiGoCastingWeapon</projectileDef>
+				<warmupTime>1.5</warmupTime>
+				<range>40</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>ShotChargeBlaster</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>18</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>  
+
+</Defs>

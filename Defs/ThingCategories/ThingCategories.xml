@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+
+        <ThingCategoryDef>
+          <defName>CosmicHorror_StrangeMeatRaw</defName>
+          <label>raw strange meat</label>
+          <parent>Foods</parent>
+          <iconPath>Ui/Icons/ThingCategories/StrangeMeatRaw/CosmicHorror_StrangeMeatRaw</iconPath>
+        </ThingCategoryDef>
+
+</ThingCategoryDefs>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- STAR SPAWN OF CTHULHU -->
+  <!-- CTHULHIDS -->
+  <!-- KIND DEFS -->
+  <PawnKindDef Name="StarSpawnBase" Abstract="True">
+    <bodyGraphicData>
+      <shaderType>Cutout</shaderType>
+    </bodyGraphicData>
+    <dessicatedBodyGraphicData>
+      <shaderType>Cutout</shaderType>
+    </dessicatedBodyGraphicData>
+  </PawnKindDef>
+  <PawnKindDef>
+    <defName>StarSpawnOfCthulhu</defName>
+    <label>Star-Spawn of Cthulhu</label>
+    <race>CosmicHorror_Cthulhid</race>
+    <combatPower>700</combatPower>
+    <defaultFactionType>StarSpawn</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarSpawn</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarSpawn</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarSpawn</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5.2</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarSpawn</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5.3</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  <!-- RACE DEFS -->
+  <ThingDef ParentName="BaseCosmicHorrorRace">
+    <defName>CosmicHorror_Cthulhid</defName>
+    <label>cthulhid</label>
+    <description>Octopoidal humanoids, cast in in the image of great Cthulhu himself and bound to his will. They make a mockery of the human form, with a tentacled head, scaly body and vestigial bat-like wings. While insignificant in size, in comparison to their master, they stand many times taller than a man. They serve the Great Old Ones will while he remains sleeping. </description>
+    <statBases>
+      <MoveSpeed>1.5</MoveSpeed>
+      <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.5</defaultCooldownTime>
+        <meleeDamageBaseAmount>20</meleeDamageBaseAmount>
+        <meleeDamageDef>ToxicBite</meleeDamageDef>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.0</defaultCooldownTime>
+        <meleeDamageBaseAmount>20</meleeDamageBaseAmount>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+        <linkedBodyPartsGroup>CosmicHorror_Tentacles</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.0</defaultCooldownTime>
+        <meleeDamageBaseAmount>60</meleeDamageBaseAmount>
+        <meleeDamageDef>CosmicHorror_Psychic</meleeDamageDef>
+        <linkedBodyPartsGroup>CosmicHorror_Mind</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.0</defaultCooldownTime>
+        <meleeDamageBaseAmount>30</meleeDamageBaseAmount>
+        <meleeDamageDef>Cut</meleeDamageDef>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.0</defaultCooldownTime>
+        <meleeDamageBaseAmount>30</meleeDamageBaseAmount>
+        <meleeDamageDef>Cut</meleeDamageDef>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>3</defaultCooldownTime>
+        <meleeDamageBaseAmount>15</meleeDamageBaseAmount>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+        <linkedBodyPartsGroup>CosmicHorror_Wings</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>CosmicHorror</thinkTreeMain>
+      <body>CosmicHorror_CthulhidBody</body>
+      <leatherColor>(54,125,54)</leatherColor>      <leatherCommonalityFactor>0.1</leatherCommonalityFactor>
+      <leatherLabel>star spawn skin</leatherLabel>
+      <leatherStatFactors>
+        <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+        <ArmorRating_Blunt>2.0</ArmorRating_Blunt>
+        <ArmorRating_Heat>1.5</ArmorRating_Heat>
+        <ArmorRating_Electric>4.0</ArmorRating_Electric>
+        <Insulation_Cold>1.8</Insulation_Cold>
+        <Insulation_Heat>1.0</Insulation_Heat>
+      </leatherStatFactors>
+      <leatherMarketValueFactor>3.5</leatherMarketValueFactor>
+      <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
+      <baseBodySize>3.0</baseBodySize>
+      <baseHealthScale>4.0</baseHealthScale>
+      <lifeExpectancy>9999999</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>CosmicHorror_Spawn</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>CosmicHorror_FullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_CosmicHorror_Cthulhid_Call</soundCall>
+        </li>
+        <li>
+          <def>CosmicHorror_Ancient</def>
+          <minAge>10000</minAge>
+        </li>
+        <li>
+          <def>CosmicHorror_Eldritch</def>
+          <minAge>1000000</minAge>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>
+        <min>1000</min>
+        <max>2000</max>
+      </soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <RawCHFood_CthulhidMeat>60</RawCHFood_CthulhidMeat>
+    </butcherProducts>
+    <recipes>
+      <li>Euthanize</li>
+    </recipes>
+  </ThingDef>
+</Defs>

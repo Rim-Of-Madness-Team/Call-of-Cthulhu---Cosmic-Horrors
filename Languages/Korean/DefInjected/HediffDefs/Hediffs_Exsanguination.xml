@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <CosmicHorror_Exsanguination.label>흡혈</CosmicHorror_Exsanguination.label>
+    <CosmicHorror_Exsanguination.comps.0.labelTendedWell>붕대를 감음</CosmicHorror_Exsanguination.comps.0.labelTendedWell>
+    <CosmicHorror_Exsanguination.comps.0.labelTendedWellInner>봉합 함</CosmicHorror_Exsanguination.comps.0.labelTendedWellInner>
+    <CosmicHorror_Exsanguination.comps.0.labelSolidTendedWell>결합 함</CosmicHorror_Exsanguination.comps.0.labelSolidTendedWell>
+    <CosmicHorror_Exsanguination.injuryProps.destroyedLabel>빠져 나옴</CosmicHorror_Exsanguination.injuryProps.destroyedLabel>
+
+</LanguageData>

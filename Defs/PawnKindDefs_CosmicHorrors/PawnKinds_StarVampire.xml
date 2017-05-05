@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- STAR VAMPIRE -->
+  <!-- KIND DEFS -->
+  <PawnKindDef Name="StarVampire" Abstract="True">
+    <bodyGraphicData>
+      <shaderType>Cutout</shaderType>
+    </bodyGraphicData>
+    <dessicatedBodyGraphicData>
+      <shaderType>Cutout</shaderType>
+    </dessicatedBodyGraphicData>
+  </PawnKindDef>
+  <PawnKindDef>
+    <defName>CosmicHorror_StarVampire</defName>
+    <label>Star Vampire</label>
+    <race>CosmicHorror_StarVampire</race>
+    <defaultFactionType>StarVampire</defaultFactionType>
+    <combatPower>80</combatPower>
+    <aiAvoidCover>true</aiAvoidCover>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.0</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.8</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.2</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <apparelTags>
+      <li>Spacer</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>0</min>
+      <max>0</max>
+    </apparelMoney>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelAllowHeadwearChance>0</apparelAllowHeadwearChance>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <forceNormalGearQuality>false</forceNormalGearQuality>
+  </PawnKindDef>
+  <!-- RACE DEFS -->
+  <ThingDef ParentName="BaseCosmicHorrorRace">
+    <defName>CosmicHorror_StarVampire</defName>
+    <label>Star Vampire</label>
+    <description>It is invisible until it feeds - the devoured blood slowly reveals its bloated form as its veins are filled. Its obscene maw is surrounded by tentacles, each tipped with either talons or hungry suckers. It descends from the stars to feed and returns with a tittering laugh.</description>
+    <statBases>
+      <MoveSpeed>11.0</MoveSpeed>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ComfyTemperatureMin>-80</ComfyTemperatureMin>
+      <ComfyTemperatureMax>80</ComfyTemperatureMax>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>2.0</defaultCooldownTime>
+        <meleeDamageBaseAmount>12</meleeDamageBaseAmount>
+        <meleeDamageDef>Cut</meleeDamageDef>
+        <linkedBodyPartsGroup>CosmicHorror_Tentacles</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.1</defaultCooldownTime>
+        <meleeDamageBaseAmount>7</meleeDamageBaseAmount>
+        <meleeDamageDef>CosmicHorror_Exsanguination</meleeDamageDef>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </verbs>
+    <race>
+      <bloodDef>FilthBlood</bloodDef>
+      <hasGenders>false</hasGenders>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>StarVampire</thinkTreeMain>
+      <body>CosmicHorror_StarVampireBody</body>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>1.5</baseHealthScale>
+      <leatherColor>(176,39,39)</leatherColor>
+	  <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
+      <leatherLabel>star vampire leather</leatherLabel>
+      <leatherStatFactors>
+        <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+        <ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+        <ArmorRating_Heat>1.7</ArmorRating_Heat>
+        <ArmorRating_Electric>4.0</ArmorRating_Electric>
+        <Insulation_Cold>1.1</Insulation_Cold>
+        <Insulation_Heat>1.1</Insulation_Heat>
+      </leatherStatFactors>
+      <leatherMarketValueFactor>5</leatherMarketValueFactor>
+      <lifeExpectancy>1200</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>CosmicHorror_Spawn</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>CosmicHorror_FullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_CosmicHorror_StarVampire_Wounded</soundWounded>
+          <soundDeath>Pawn_CosmicHorror_StarVampire_Death</soundDeath>
+          <soundCall>Pawn_CosmicHorror_StarVampire_Call</soundCall>
+        </li>
+        <li>
+          <def>CosmicHorror_Ancient</def>
+          <minAge>500</minAge>
+        </li>
+        <li>
+          <def>CosmicHorror_Eldritch</def>
+          <minAge>1000</minAge>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>
+        <min>1000</min>
+        <max>2000</max>
+      </soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <RawCHFood_StarVampireMeat>70</RawCHFood_StarVampireMeat>
+    </butcherProducts>
+    <recipes>
+      <li>Euthanize</li>
+    </recipes>
+  </ThingDef>
+</Defs>

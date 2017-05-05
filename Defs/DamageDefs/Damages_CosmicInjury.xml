@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef Name="LocalInjuryBase" Abstract="True">
+    <workerClass>DamageWorker_AddInjury</workerClass>
+  </DamageDef>
+
+  <DamageDef ParentName="LocalInjuryBase">
+    <defName>CosmicHorror_Psychic</defName>
+    <label>pscychic attack</label>
+    <externalViolence>true</externalViolence>	
+    <makesBlood>false</makesBlood>
+    <harmsHealth>false</harmsHealth>	
+    <deathMessage>{0} has died from psychic shock.</deathMessage>
+    <hediff>CosmicHorror_Psionic</hediff>
+    <impactSoundType>Electric</impactSoundType>
+    <armorCategory>Electric</armorCategory>
+    <additionalHediffs>
+      <li>
+        <hediff>IntracranialPressureBuildup</hediff>
+        <severityPerDamageDealt>0.005</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>	
+  </DamageDef>
+  
+  <DamageDef ParentName="LocalInjuryBase">
+    <defName>CosmicHorror_Exsanguination</defName>
+    <label>exsanguination</label>
+    <externalViolence>true</externalViolence>	
+    <makesBlood>false</makesBlood>
+    <harmsHealth>false</harmsHealth>	
+    <deathMessage>{0} has died from exsanguination.</deathMessage>
+    <hediff>CosmicHorror_Exsanguination</hediff>
+    <impactSoundType>Electric</impactSoundType>
+    <armorCategory>Electric</armorCategory>
+    <additionalHediffs>
+      <li>
+        <hediff>BloodLoss</hediff>
+        <severityPerDamageDealt>0.05</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>	
+  </DamageDef>
+  
+</Defs>

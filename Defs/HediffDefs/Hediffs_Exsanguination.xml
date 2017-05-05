@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<HediffDefs>
+
+  <HediffDef Name="InjuryBase" Abstract="True">
+    <hediffClass>Hediff_Injury</hediffClass>
+    <displayWound>true</displayWound>
+	<tendable>true</tendable>
+  </HediffDef>
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>CosmicHorror_Exsanguination</defName>
+    <label>vampiric</label>
+    <displayWound>false</displayWound>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.10</infectionChance>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0125</painPerSeverity>
+      <averagePainPerSeverityOld>0.00625</averagePainPerSeverityOld>
+      <bleedRate>0.1</bleedRate>
+      <canMerge>true</canMerge>
+      <destroyedLabel>sucked out</destroyedLabel>
+    </injuryProps>
+  </HediffDef>
+
+</HediffDefs>

@@ -1,0 +1,36 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.3h A15\Assemblies\CosmicHorrors.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.3h A15\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.3h A15\Source\obj\Debug\CosmicHorrors.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.3i A15\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.3i A15\Source\obj\Debug\CosmicHorrors.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.3i A15\Assemblies\CosmicHorrors.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.4 A16\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.4 A16\Source\obj\Debug\CosmicHorrors.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.4 A16\Assemblies\CosmicHorrors.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5 A16\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[Unreleased] Call of Cthulhu - Cosmic Horrors V1.5 A16\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[Unreleased] Call of Cthulhu - Cosmic Horrors V1.5 A16\Assemblies\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[Unreleased] Call of Cthulhu - Cosmic Horrors V1.5 A16\Source\obj\Debug\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[Release Candidate] Call of Cthulhu - Cosmic Horrors V1.5 A16\Assemblies\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[Release Candidate] Call of Cthulhu - Cosmic Horrors V1.5 A16\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[Release Candidate] Call of Cthulhu - Cosmic Horrors V1.5 A16\Source\obj\Debug\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5a A16\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5a A16\Source\obj\Debug\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5a A16\Assemblies\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[Unreleased] Call of Cthulhu - Cosmic Horrors V1.5b A16\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[Unreleased] Call of Cthulhu - Cosmic Horrors V1.5b A16\Source\obj\Debug\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[Unreleased] Call of Cthulhu - Cosmic Horrors V1.5b A16\Assemblies\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5b A16\Assemblies\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5b A16\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5b A16\Source\obj\Debug\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5.4 A16\Assemblies\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5.4 A16\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5.4 A16\Source\obj\Debug\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5.5 A16\Assemblies\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5.5 A16\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5.5 A16\Source\obj\Debug\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5.7 A16\Assemblies\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5.7 A16\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5.7 A16\Source\obj\Debug\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5 A16\Assemblies\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Cosmic Horrors V1.5 A16\Source\obj\Debug\CosmicHorror.dll

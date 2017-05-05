@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+  <RecipeDef Name="CookStrangeMealSimple">
+    <defName>CookStrangeMealSimple</defName>
+    <label>cook simple strange meal</label>
+    <description>Cooks a straightforward... meal?</description>
+    <jobString>Cooking simple meal.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>CosmicHorror_StrangeMeatRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <StrangeMealSimple>1</StrangeMealSimple>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>CosmicHorror_StrangeMeatRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>CosmicHorror_StrangeMeatRaw</li>
+      </categories>
+	  <exceptedCategories>
+		<li>MeatRaw</li>
+	  </exceptedCategories>
+	  <exceptedThingDefs>
+		<li>Human_Meat</li>
+	  </exceptedThingDefs>		  
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+	  <li>ElectricStove</li>
+	  <li>FueledStove</li>
+	</recipeUsers>	
+  </RecipeDef>
+
+  <RecipeDef>
+	<defName>CookStrangeMealSimpleCampfire</defName>
+	<label>cook strange simple meal</label>		
+    <jobString>Cooking simple meal.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>CosmicHorror_StrangeMeatRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <StrangeMealSimple>1</StrangeMealSimple>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>CosmicHorror_StrangeMeatRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>CosmicHorror_StrangeMeatRaw</li>
+      </categories>
+	  <exceptedCategories>
+		<li>MeatRaw</li>
+	  </exceptedCategories>
+	  <exceptedThingDefs>
+		<li>Human_Meat</li>
+	  </exceptedThingDefs>		  
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+	  <li>Campfire</li>
+	</recipeUsers>	
+    <workAmount>1000</workAmount> <!-- other meals use WorkToMake stat -->
+	</RecipeDef>
+
+  <RecipeDef>
+	<defName>CookStrangeMealFine</defName>
+	<label>cook strange fine meal</label>
+	<description>Cooks a somewhat complex meal from a combination of raw ingredients...?</description>
+	<jobString>Cooking fine meal.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>CosmicHorror_StrangeMeatRaw</li>
+				</categories>
+			</filter>
+			<count>0.25</count>
+		</li>
+		<li>
+			<filter>
+				<categories>
+					<li>PlantFoodRaw</li>
+					<li>AnimalProductRaw</li>					
+				</categories>
+			</filter>
+			<count>0.25</count>
+		</li>
+	</ingredients>
+	<products>
+      <StrangeMealFine>1</StrangeMealFine>
+    </products>
+	<fixedIngredientFilter>
+		<categories>
+			<li>CosmicHorror_StrangeMeatRaw</li>
+			<li>PlantFoodRaw</li>
+			<li>AnimalProductRaw</li>			
+		</categories>
+        <disallowedSpecialFilters>
+          <li>AllowPlantFood</li>
+        </disallowedSpecialFilters>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<categories>
+			<li>CosmicHorror_StrangeMeatRaw</li>
+			<li>PlantFoodRaw</li>
+			<li>AnimalProductRaw</li>
+		</categories>
+		<exceptedCategories>
+			<li>EggsFertilized</li>
+			<li>MeatRaw</li>
+		</exceptedCategories>
+		<exceptedThingDefs>
+			<li>Human_Meat</li>
+		</exceptedThingDefs>
+	</defaultIngredientFilter>
+	<skillRequirements>
+		<li>
+			<skill>Cooking</skill>
+			<minLevel>6</minLevel>
+		</li>
+	</skillRequirements>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+	  <li>ElectricStove</li>
+	  <li>FueledStove</li>
+	</recipeUsers>	
+  </RecipeDef>
+
+	<RecipeDef>
+	<defName>CookStrangeMealLavish</defName>
+	<label>cook strange lavish meal</label>
+	<description>Cooks a very complex meal from a combination of raw meat and raw plant ingredients...?</description>
+	<jobString>Cooking lavish meal.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>CosmicHorror_StrangeMeatRaw</li>
+				</categories>
+			</filter>
+			<count>0.5</count>
+		</li>
+		<li>
+			<filter>
+				<categories>
+					<li>PlantFoodRaw</li>
+					<li>AnimalProductRaw</li>					
+				</categories>
+			</filter>
+			<count>0.5</count>
+		</li>
+	</ingredients>
+	<products>
+      <StrangeMealLavish>1</StrangeMealLavish>
+    </products>
+	<fixedIngredientFilter>
+		<categories>
+			<li>CosmicHorror_StrangeMeatRaw</li>
+			<li>PlantFoodRaw</li>
+			<li>AnimalProductRaw</li>
+		</categories>
+		<disallowedSpecialFilters>
+			<li>AllowPlantFood</li>
+		</disallowedSpecialFilters>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<categories>
+			<li>CosmicHorror_StrangeMeatRaw</li>
+			<li>PlantFoodRaw</li>
+			<li>AnimalProductRaw</li>			
+		</categories>
+        <exceptedCategories>
+			<li>MeatRaw</li>
+			<li>EggsFertilized</li>
+		</exceptedCategories>
+		<exceptedThingDefs>
+			<li>Human_Meat</li>
+		</exceptedThingDefs>
+	</defaultIngredientFilter>
+	<skillRequirements>
+		<li>
+			<skill>Cooking</skill>
+			<minLevel>10</minLevel>
+		</li>
+	</skillRequirements>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+	  <li>ElectricStove</li>
+	  <li>FueledStove</li>
+	</recipeUsers>	
+  </RecipeDef>
+
+
+  <RecipeDef>
+    <defName>MakeStrangeKibble</defName>
+    <label>make strange kibble</label>
+    <description>Make animal kibble by using strange meat and plant matter.</description>
+    <jobString>Making kibble.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>CosmicHorror_StrangeMeatRaw</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+          <thingDefs>
+            <li>Hay</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <StrangeKibble>50</StrangeKibble>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>CosmicHorror_StrangeMeatRaw</li>
+        <li>PlantFoodRaw</li>		
+      </categories>
+      <thingDefs>
+        <li>Hay</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Foods</li>
+      </categories>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+        <li>InsectJelly</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+	  <li>TableButcher</li>
+	</recipeUsers>		
+  </RecipeDef>
+  
+
+  <RecipeDef>
+    <defName>BurnStrangeMeat</defName>
+    <label>burn strange meat (1)</label>
+    <description>Burn strange meat to completely destroy it.</description>
+    <jobString>Burning strange meat.</jobString>
+    <workAmount>40</workAmount>
+    <requiredGiverWorkType>Hauling</requiredGiverWorkType>
+    <effectWorking>BurnDrug</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>CosmicHorror_StrangeMeatRaw</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>CosmicHorror_StrangeMeatRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+	<recipeUsers>
+	  <li>Campfire</li>
+      <li>ElectricCrematorium</li>		  
+	</recipeUsers>	
+  </RecipeDef>
+
+  
+  <RecipeDef>
+    <defName>BurnStrangeMeat25</defName>
+    <label>burn strange meat (25)</label>
+    <description>Burn strange meat to completely destroy it.</description>
+    <jobString>Burning strange meat.</jobString>
+    <workAmount>40</workAmount>
+    <requiredGiverWorkType>Hauling</requiredGiverWorkType>
+    <effectWorking>BurnDrug</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>CosmicHorror_StrangeMeatRaw</li>
+          </categories>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>CosmicHorror_StrangeMeatRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+	<recipeUsers>
+	  <li>Campfire</li>
+      <li>ElectricCrematorium</li>		  
+	</recipeUsers>	
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>BurnStrangeMeat75</defName>
+    <label>burn strange meat (75)</label>
+    <description>Burn strange meat to completely destroy it.</description>
+    <jobString>Burning strange meat.</jobString>
+    <workAmount>40</workAmount>
+    <requiredGiverWorkType>Hauling</requiredGiverWorkType>
+    <effectWorking>BurnDrug</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>CosmicHorror_StrangeMeatRaw</li>
+          </categories>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>CosmicHorror_StrangeMeatRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+	<recipeUsers>
+	  <li>Campfire</li>
+      <li>ElectricCrematorium</li>	  
+	</recipeUsers>	
+  </RecipeDef>
+
+  
+</RecipeDefs>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <ObservedCosmicHorror_DeepOne.stages.0.label>딥 원을 목격함</ObservedCosmicHorror_DeepOne.stages.0.label>
+    <ObservedCosmicHorror_DeepOne.stages.0.description>저게 뭐야?!</ObservedCosmicHorror_DeepOne.stages.0.description>
+
+    <ObservedCosmicHorror_DeepOneGreat.stages.0.label>그레이트 딥 원을 목격함</ObservedCosmicHorror_DeepOneGreat.stages.0.label>
+    <ObservedCosmicHorror_DeepOneGreat.stages.0.description>저게 뭐야?!</ObservedCosmicHorror_DeepOneGreat.stages.0.description>
+
+    <ObservedCosmicHorror_MiGo.stages.0.label>미고 목격</ObservedCosmicHorror_MiGo.stages.0.label>
+    <ObservedCosmicHorror_MiGo.stages.0.description>저게 뭐야?!</ObservedCosmicHorror_MiGo.stages.0.description>
+
+    <ObservedCosmicHorror_Shoggoth.stages.0.label>쇼고스 목격</ObservedCosmicHorror_Shoggoth.stages.0.label>
+    <ObservedCosmicHorror_Shoggoth.stages.0.description>저게 뭐야?!</ObservedCosmicHorror_Shoggoth.stages.0.description>
+
+    <ObservedCosmicHorror_StarVampire.stages.0.label>스타 뱀파이어 목격</ObservedCosmicHorror_StarVampire.stages.0.label>
+    <ObservedCosmicHorror_StarVampire.stages.0.description>저게 뭐야?!</ObservedCosmicHorror_StarVampire.stages.0.description>
+
+    <ObservedCosmicHorror_Cthulhid.stages.0.label>크툴루의 스타-스폰 목격</ObservedCosmicHorror_Cthulhid.stages.0.label>
+    <ObservedCosmicHorror_Cthulhid.stages.0.description>저게 뭐야?!</ObservedCosmicHorror_Cthulhid.stages.0.description>
+
+    <ObservedCosmicHorror_DarkYoung.stages.0.label>다크 영 목격</ObservedCosmicHorror_DarkYoung.stages.0.label>
+    <ObservedCosmicHorror_DarkYoung.stages.0.description>그들은... 그들은 진짜일까?</ObservedCosmicHorror_DarkYoung.stages.0.description>
+
+    <ObservedCosmicHorror_ChthonianLarva.stages.0.label>크토니안 유충 목격</ObservedCosmicHorror_ChthonianLarva.stages.0.label>
+    <ObservedCosmicHorror_ChthonianLarva.stages.0.description>이것보다 더 두려운 것이 있을까?</ObservedCosmicHorror_ChthonianLarva.stages.0.description>
+
+    <ObservedCosmicHorror_Chthonian.stages.0.label>observed Chthonian</ObservedCosmicHorror_Chthonian.stages.0.label>
+    <ObservedCosmicHorror_Chthonian.stages.0.description>이건 현실이 아니야.</ObservedCosmicHorror_Chthonian.stages.0.description>
+
+    <CosmicHorror_SanityLoss.stages.0.label>긴장함-감춰짐</CosmicHorror_SanityLoss.stages.0.label>
+    <CosmicHorror_SanityLoss.stages.0.description>나타나지 말아야 합니다.</CosmicHorror_SanityLoss.stages.0.description>
+    <CosmicHorror_SanityLoss.stages.1.label>긴장함</CosmicHorror_SanityLoss.stages.1.label>
+    <CosmicHorror_SanityLoss.stages.1.description>뭔가 잘못 됬어.</CosmicHorror_SanityLoss.stages.1.description>
+    <CosmicHorror_SanityLoss.stages.2.label>불안함</CosmicHorror_SanityLoss.stages.2.label>
+    <CosmicHorror_SanityLoss.stages.2.description>근본부터 잘못된 존재들이 있어.</CosmicHorror_SanityLoss.stages.2.description>
+    <CosmicHorror_SanityLoss.stages.3.label>편집증</CosmicHorror_SanityLoss.stages.3.label>
+    <CosmicHorror_SanityLoss.stages.3.description>나는 여기서 나가야 해.</CosmicHorror_SanityLoss.stages.3.description>
+    <CosmicHorror_SanityLoss.stages.4.label>미쳤음</CosmicHorror_SanityLoss.stages.4.label>
+    <CosmicHorror_SanityLoss.stages.4.description>Iä! Iä!</CosmicHorror_SanityLoss.stages.4.description>
+    <CosmicHorror_SanityLoss.stages.5.label>정신 나감</CosmicHorror_SanityLoss.stages.5.label>
+    <CosmicHorror_SanityLoss.stages.5.description>mglw'nafh fhthagn-ngah cf'ayak 'vulgtmm vugtlag'n</CosmicHorror_SanityLoss.stages.5.description>
+
+    <CosmicHorror_SawMonster.stages.0.label>괴물울 목격함</CosmicHorror_SawMonster.stages.0.label>
+    <CosmicHorror_SawMonster.stages.0.description>내가 본 것을 뭐라 말 할 수 없어.</CosmicHorror_SawMonster.stages.0.description>
+
+</LanguageData>

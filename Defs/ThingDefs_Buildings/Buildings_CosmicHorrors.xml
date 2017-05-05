@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef Name="HorrorBuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+
+  <ThingDef ParentName="HorrorBuildingBase" Name="HorrorShipPartBase" Abstract="True">
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>150</pathCost>
+    <blockWind>true</blockWind>
+    <passability>Impassable</passability>
+    <fillPercent>1.0</fillPercent>
+    <size>(5,5)</size>
+    <statBases>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>-100</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <drawerType>MapMeshOnly</drawerType>
+    <repairEffect>ConstructMetal</repairEffect>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <building>
+			<claimable>false</claimable>
+			<soundAmbient>Pawn_CosmicHorror_Chthonian_Pit</soundAmbient>
+      <roofCollapseDamageMultiplier>0.2</roofCollapseDamageMultiplier>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="HorrorShipPartBase">
+    <defName>CosmicHorror_PitChthonian</defName>
+    <label>strange sinkhole</label>
+    <description>A spinetingling tunnel that burrows deep beneath the earth.</description>
+    <thingClass>CosmicHorror.Building_PitChthonian</thingClass>
+    <graphicData>
+      <texPath>Pawn/CosmicHorrors/CallOfCthulhu_Chthonian_pit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(6,6)</drawSize>
+    </graphicData>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>	
+  </ThingDef>
+
+</Defs>

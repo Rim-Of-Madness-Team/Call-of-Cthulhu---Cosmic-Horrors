@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef>
+    <defName>StarSpawn</defName>
+    <label>StarSpawn of Cthulhu</label>
+    <description>A race birthed from the Old One, Cthulhu, laying dead and dreaming at the bottom of the sunken city of R'lyeh.</description>
+    <pawnsPlural>StarSpawn of Cthulhu</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>Sunken city of R'lyeh</fixedName>
+    <raidCommonality>0</raidCommonality>
+    <canMakeRandomly>false</canMakeRandomly>	
+    <humanlikeFaction>false</humanlikeFaction>
+    <hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>true</canUseAvoidGrid>
+    <techLevel>Animal</techLevel>
+	<earliestRaidDays>12</earliestRaidDays>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <pawnGroupMakers>
+	<li><kindDef>Normal</kindDef>
+        <options>
+		  <StarSpawnOfCthulhu>100</StarSpawnOfCthulhu>	  
+        </options>
+      </li>
+    </pawnGroupMakers> 
+    <allowedArrivalTemperatureRange>
+      <min>-255</min>
+      <max>255</max>
+    </allowedArrivalTemperatureRange>
+  </FactionDef>
+
+  <FactionDef>
+    <defName>Shoggoth</defName>
+    <label>Shoggoths</label>
+    <description>Shoggoths are gigantic amorphous protoplasmic entities capable of shapeshifting new limbs, organs, mouths, and tentacles at will.</description>
+    <pawnsPlural>Shoggoths</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>Mountains of Madness</fixedName>
+    <raidCommonality>0</raidCommonality>
+    <canMakeRandomly>false</canMakeRandomly>	
+    <humanlikeFaction>false</humanlikeFaction>
+    <hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>false</canUseAvoidGrid>
+    <techLevel>Animal</techLevel>
+	<earliestRaidDays>5</earliestRaidDays>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <pawnGroupMakers>
+	<li><kindDef>Normal</kindDef>
+        <options>
+		  <Shoggoth>100</Shoggoth>		  
+        </options>
+      </li>
+    </pawnGroupMakers> 
+     
+    <allowedArrivalTemperatureRange>
+      <min>-255</min>
+      <max>255</max>
+    </allowedArrivalTemperatureRange>
+  </FactionDef>
+
+  <FactionDef>
+    <defName>MiGo</defName>
+    <label>MiGo Outpost</label>
+    <description>MiGo are flying headless carapace-wrapped fungoid aliens that specialize in extraterrestrial brain surgery. Beware that flying enemies will avoid traps!</description>
+    <pawnsPlural>MiGo</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>Outpost of the MiGo</fixedName>
+    <raidCommonality>0</raidCommonality>
+    <canMakeRandomly>false</canMakeRandomly>	
+    <humanlikeFaction>false</humanlikeFaction>
+    <hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>true</canUseAvoidGrid>
+    <techLevel>Ultra</techLevel>
+	<earliestRaidDays>3</earliestRaidDays>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <pawnGroupMakers>
+	<li><kindDef>Normal</kindDef>
+        <options>
+		  <MiGo>250</MiGo>
+		  <MiGoCaster>100</MiGoCaster>
+        </options>
+      </li>
+    </pawnGroupMakers> 
+     
+    <allowedArrivalTemperatureRange>
+      <min>-255</min>
+      <max>255</max>
+    </allowedArrivalTemperatureRange>
+  </FactionDef>
+
+  <FactionDef>
+    <defName>DeepOne</defName>
+    <label>Deep Ones</label>
+    <description>Deep Ones are humanoid-fish-frog hybrid monstrosities that like to claw their prey before biting their heads off using massive jaws.</description>
+    <pawnsPlural>Deep Ones</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>Devil Reef</fixedName>
+    <canMakeRandomly>false</canMakeRandomly>	
+    <raidCommonality>0</raidCommonality>
+    <humanlikeFaction>false</humanlikeFaction>
+    <hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>true</canUseAvoidGrid>
+    <techLevel>Animal</techLevel>
+	<earliestRaidDays>0</earliestRaidDays>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <pawnGroupMakers>
+	<li><kindDef>Normal</kindDef>
+        <options>
+		  <DeepOne>100</DeepOne>		  
+		  <DeepOneGreat>100</DeepOneGreat>		  
+        </options>
+      </li>
+    </pawnGroupMakers> 
+     
+    <allowedArrivalTemperatureRange>
+      <min>-255</min>
+      <max>255</max>
+    </allowedArrivalTemperatureRange>
+  </FactionDef>
+  
+  <FactionDef>
+    <defName>StarVampire</defName>
+    <label>Star Vampires</label>
+    <description>...</description>
+    <pawnsPlural>Star Vampires</pawnsPlural>
+    <canMakeRandomly>false</canMakeRandomly>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>Outer Space</fixedName>
+    <raidCommonality>0</raidCommonality>
+    <humanlikeFaction>false</humanlikeFaction>
+    <hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>true</canUseAvoidGrid>
+    <techLevel>Animal</techLevel>
+	<earliestRaidDays>99</earliestRaidDays>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <mustStartOneEnemy>true</mustStartOneEnemy>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <pawnGroupMakers>
+	<li><kindDef>Normal</kindDef>
+        <options>
+		  <CosmicHorror_StarVampire>100</CosmicHorror_StarVampire>
+        </options>
+      </li>
+    </pawnGroupMakers> 
+     
+    <allowedArrivalTemperatureRange>
+      <min>-255</min>
+      <max>255</max>
+    </allowedArrivalTemperatureRange>
+  </FactionDef>
+
+  <FactionDef>
+    <defName>CosmicHorror_Chthonian</defName>
+    <label>Chthonian</label>
+    <description>Chthonians are described as resembling immense squids, with elongated worm-like bodies coated with slime. Despite their squid-like appearance, chthonians are actually land-dwellers and are even harmed by water. Chthonians are powerful burrowers which can live for more than a thousand years, and are protective of their young. It is said that a chanting sound accompanies every chthonian, and that by such they can be detected while underground and unseen.\n\nThe most important individual chthonian is the gigantic Shudde M'ell, which is worshiped by the rest, the largest and most malignant of this dread race. It is featured prominently in the aforementioned novel.</description>
+    <pawnsPlural>Chthonians</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>Lost City of G'harne</fixedName>
+    <canMakeRandomly>false</canMakeRandomly>	
+    <raidCommonality>0</raidCommonality>
+    <humanlikeFaction>false</humanlikeFaction>
+    <hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>true</canUseAvoidGrid>
+    <techLevel>Animal</techLevel>
+	<earliestRaidDays>0</earliestRaidDays>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <pawnGroupMakers>
+	<li><kindDef>Normal</kindDef>
+        <options>
+		  <DeepOne>100</DeepOne>		  
+		  <DeepOneGreat>100</DeepOneGreat>		  
+        </options>
+      </li>
+    </pawnGroupMakers> 
+     
+    <allowedArrivalTemperatureRange>
+      <min>-255</min>
+      <max>255</max>
+    </allowedArrivalTemperatureRange>
+  </FactionDef>
+  
+  
+
+<!-- Cosmic Horror Player Sightable Faction -->
+  
+  <FactionDef>
+    <defName>CosmicHorrors</defName>
+    <label>Cosmic Horrors</label>
+    <description>Creatures out of time and space bent on purging mankind from the universe.</description>
+    <pawnsPlural>horrors</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>Unknown</fixedName>
+    <raidCommonality>0</raidCommonality>
+    <humanlikeFaction>false</humanlikeFaction>
+    <hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>true</canUseAvoidGrid>
+    <techLevel>Animal</techLevel>
+	<earliestRaidDays>999999</earliestRaidDays>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <mustStartOneEnemy>true</mustStartOneEnemy>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <pawnGroupMakers>
+	<li><kindDef>Normal</kindDef>
+        <options>
+		  <DeepOne>100</DeepOne>		  
+		  <DeepOneGreat>100</DeepOneGreat>		  
+        </options>
+      </li>
+    </pawnGroupMakers> 
+     
+    <allowedArrivalTemperatureRange>
+      <min>-255</min>
+      <max>255</max>
+    </allowedArrivalTemperatureRange>
+  </FactionDef>  
+    
+  
+</Defs>
