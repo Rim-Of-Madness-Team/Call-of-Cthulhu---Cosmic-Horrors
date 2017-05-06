@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<FleshTypeDefs>
+  <FleshTypeDef>
+    <defName>ROM_StrangeFlesh</defName>
+    <ateDirect>ROM_AteStrangeMeatAsIngredient</ateDirect>
+    <ateAsIngredient>ROM_AteStrangeMeatDirect</ateAsIngredient>
+    <corpseCategory>ROM_CosmicHorrorCorpses</corpseCategory>
+  </FleshTypeDef>
+  
+</FleshTypeDefs>

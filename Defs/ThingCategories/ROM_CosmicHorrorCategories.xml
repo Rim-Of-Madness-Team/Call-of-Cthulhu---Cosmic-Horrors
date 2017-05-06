@@ -7,5 +7,11 @@
           <parent>Foods</parent>
           <iconPath>Ui/Icons/ThingCategories/StrangeMeatRaw/ROM_StrangeMeatRaw</iconPath>
         </ThingCategoryDef>
+		
+	  <ThingCategoryDef>
+        <defName>ROM_CosmicHorrorCorpses</defName>
+        <label>monstrous corpses</label>
+        <parent>Corpses</parent>
+      </ThingCategoryDef>
 
 </ThingCategoryDefs>

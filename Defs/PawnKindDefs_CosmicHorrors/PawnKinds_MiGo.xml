@@ -261,6 +261,14 @@
 		<recipes>
 			<li>Euthanize</li>
 		</recipes>
+	<modExtensions>
+	  <li Class = "CosmicHorror.PawnExtension">
+	    <invisible>false</invisible>
+		<regenRate>0.0</regenRate>
+		<regenInterval>0</regenInterval>
+		<sanityLossRate>0.008</sanityLossRate>
+	  </li>
+	</modExtensions>			
 	</ThingDef>
 
 

@@ -43,6 +43,7 @@
       <bloodDef>ROM_FilthBloodCosmicHorror</bloodDef>	
       <meatColor>(160,150,140)</meatColor>
       <foodType>None</foodType>
+	  <fleshType>ROM_StrangeFlesh</fleshType>
       <useMeatFrom>GrizzlyBear</useMeatFrom>	  
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <manhunterOnTameFailChance>1</manhunterOnTameFailChance>	  
@@ -55,6 +56,15 @@
 		<li>ROM_CosmicHorrorStandard</li>
 	  </hediffGiverSets>
     </race>
+	<modExtensions>
+	  <li Class="CosmicHorror.PawnExtension">
+	    <invisible>false</invisible>
+		<regenRate>0.0</regenRate>
+		<regenInterval>0</regenInterval>
+		<sanityLossRate>0.03</sanityLossRate>
+		<sanityLossMax>0.3</sanityLossMax>		
+	  </li>
+	</modExtensions>
   </ThingDef>
  
 

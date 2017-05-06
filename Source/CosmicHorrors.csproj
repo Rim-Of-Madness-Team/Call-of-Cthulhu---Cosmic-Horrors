@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Building_PitChthonian.cs" />
+    <Compile Include="CosmicHorrorPawnExtension.cs" />
     <Compile Include="CosmicHorrorUtility.cs" />
     <Compile Include="CthulhuNoCCL.cs" />
     <Compile Include="CthulhuUtility.cs" />

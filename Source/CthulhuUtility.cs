@@ -87,25 +87,25 @@ namespace Cthulhu
             return false;
         }
 
-        public static float GetSanityLossRate(PawnKindDef kindDef)
-        {
-            float sanityLossRate = 0f;
-            if (kindDef.ToString() == "ROM_StarVampire")
-                sanityLossRate = 0.04f;
-            if (kindDef.ToString() == "StarSpawnOfCthulhu")
-                sanityLossRate = 0.02f;
-            if (kindDef.ToString() == "DarkYoung")
-                sanityLossRate = 0.004f;
-            if (kindDef.ToString() == "DeepOne")
-                sanityLossRate = 0.008f;
-            if (kindDef.ToString() == "DeepOneGreat")
-                sanityLossRate = 0.012f;
-            if (kindDef.ToString() == "MiGo")
-                sanityLossRate = 0.008f;
-            if (kindDef.ToString() == "Shoggoth")
-                sanityLossRate = 0.012f;
-            return sanityLossRate;
-        }
+        //public static float GetSanityLossRate(PawnKindDef kindDef)
+        //{
+        //    float sanityLossRate = 0f;
+        //    if (kindDef.ToString() == "ROM_StarVampire")
+        //        sanityLossRate = 0.04f;
+        //    if (kindDef.ToString() == "StarSpawnOfCthulhu")
+        //        sanityLossRate = 0.02f;
+        //    if (kindDef.ToString() == "DarkYoung")
+        //        sanityLossRate = 0.004f;
+        //    if (kindDef.ToString() == "DeepOne")
+        //        sanityLossRate = 0.008f;
+        //    if (kindDef.ToString() == "DeepOneGreat")
+        //        sanityLossRate = 0.012f;
+        //    if (kindDef.ToString() == "MiGo")
+        //        sanityLossRate = 0.008f;
+        //    if (kindDef.ToString() == "Shoggoth")
+        //        sanityLossRate = 0.012f;
+        //    return sanityLossRate;
+        //}
 
         public static bool CapableOfViolence(Pawn pawn, bool allowDowned = false)
         {

@@ -16,8 +16,6 @@ namespace CosmicHorror
     internal class CosmicHorrorPawn : Pawn
     {
         //Fields
-        public bool isCosmicHorror = true;
-        public bool isInvisible = false;
         public float sanityLossRate = 0.03f;
         public float sanityLossMax = 0.3f;
 
@@ -25,16 +23,28 @@ namespace CosmicHorror
         private IntVec3 lastFoggedSpot = IntVec3.Invalid;
         private Sustainer movingSound = null;
 
+        private bool isInvisible = false;
+
+        public PawnExtension PawnExtension()
+        {
+            PawnExtension result = null;
+            if (this.def != null)
+            {
+                result = this.def.GetModExtension<PawnExtension>();
+            }
+            if (result == null) Log.Warning("PawnExtension is missing for Cosmic Horror");
+            return result;
+        }
+
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Values.Look<IntVec3>(ref this.lastSpot, "lastSpot", default(IntVec3), false);
-            Scribe_Values.Look<bool>(ref this.isCosmicHorror, "isCosmicHorror", true, false);
             Scribe_Values.Look<bool>(ref this.isInvisible, "isInvisible", false, false);
             Scribe_Values.Look<float>(ref this.sanityLossRate, "sanityLossRate", 0.03f, false);
             Scribe_Values.Look<float>(ref this.sanityLossMax, "sanityLossMax", 0.3f, false);
         }
-
+         
         #region SpawnSetup
 
         /// <summary>
@@ -45,20 +55,19 @@ namespace CosmicHorror
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
+            Log.Message("isInvisible" + isInvisible.ToString());
 
-            if (this.kindDef.ToString() == "ROM_StarVampire")
-            {
-                this.isInvisible = true;
-            }
-            //How much sanity will each monster cause to lose?
-            Cthulhu.Utility.GetSanityLossRate(this.kindDef);
+            this.isInvisible = PawnExtension().invisible;
+            this.sanityLossRate = PawnExtension().sanityLossRate;
+            this.sanityLossMax = PawnExtension().sanityLossMax;
+
+            Log.Message("isInvisible" + isInvisible.ToString());
 
             //Give immunities.
             this.health.AddHediff(HediffDef.Named("ROM_CosmicHorrorImmunities"));
         }
         #endregion SpawnSetup
         
-
         #region Invisibility
         /// <summary>
         /// Overriding the drawer for the Pawn
@@ -66,11 +75,20 @@ namespace CosmicHorror
         /// <param name="drawLoc"></param>
         public override void DrawAt(Vector3 drawLoc, bool flip)
         {
+                if (this.isInvisible)
+                {
+                    return;
+                }
+            base.DrawAt(drawLoc, flip);
+        }
+
+        public override void Draw()
+        {
             if (this.isInvisible)
             {
                 return;
             }
-            base.DrawAt(drawLoc, flip);
+            base.Draw();
         }
 
         /// <summary>
@@ -83,9 +101,7 @@ namespace CosmicHorror
         {
             if (this.isInvisible)
             {
-
                 IntVec3 position = this.Position;
-
                 Predicate<Thing> predicate2 = delegate (Thing t)
                 {
                     if (t == this)
@@ -93,7 +109,7 @@ namespace CosmicHorror
                         return false;
                     }
                     Pawn pawn1 = t as Pawn;
-                    if (((pawn1 == null)) || (!t.Spawned || (pawn1.kindDef.ToString() == "ROM_StarVampire")))
+                    if (((pawn1 == null)) || (!t.Spawned || PawnExtension().invisible))
                     {
                         return false;
                     }
@@ -108,7 +124,6 @@ namespace CosmicHorror
                 {
                     return true;
                 }
-
             }
             return false;
         }
@@ -123,10 +138,8 @@ namespace CosmicHorror
             }
 
         }
-
         #endregion Invisibility
         
-
         public override void PreApplyDamage(DamageInfo dinfo, out bool absorbed)
         {
             base.PreApplyDamage(dinfo, out absorbed);
@@ -173,15 +186,18 @@ namespace CosmicHorror
 
         public void ResolveBleeding()
         {
-            if (Find.TickManager.TicksGame % 1000 == 0)
+            if (PawnExtension() != null && PawnExtension().regenInterval != 0 && PawnExtension().regenRate != 0)
             {
-                if (this.health != null)
+                if (Find.TickManager.TicksGame % PawnExtension().regenInterval == PawnExtension().regenRate)
                 {
-                    if (this.health.hediffSet.GetInjuriesTendable() != null && this.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
+                    if (this.health != null)
                     {
-                        foreach (Hediff_Injury injury in this.health.hediffSet.GetInjuriesTendable())
+                        if (this.health.hediffSet.GetInjuriesTendable() != null && this.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
                         {
-                            injury.Severity = Mathf.Clamp(injury.Severity - 0.1f, 0.0f, 1.0f);
+                            foreach (Hediff_Injury injury in this.health.hediffSet.GetInjuriesTendable())
+                            {
+                                injury.Severity = Mathf.Clamp(injury.Severity - 0.1f, 0.0f, 1.0f);
+                            }
                         }
                     }
                 }
@@ -206,7 +222,6 @@ namespace CosmicHorror
 
             if (!this.Dead && this.Spawned && this.pather.Moving)
             {
-
                 if (this.def.defName == "ROM_Chthonian")
                 {
                     if (movingSound == null)
@@ -231,7 +246,6 @@ namespace CosmicHorror
                                 if (map.terrainGrid.TerrainAt(intVec).layerable)
                                     map.terrainGrid.RemoveTopLayer(intVec, false);
 
-
                                 TerrainDef richSoil = TerrainDef.Named("SoilRich");
 
                                 //If it's not sand, change to fertile soil
@@ -243,7 +257,6 @@ namespace CosmicHorror
                             }
                         }
                     }
-
                 }
             }
             if (movingSound != null) movingSound.End();
@@ -265,7 +278,6 @@ namespace CosmicHorror
             if (this.isInvisible)
             {
                 this.isInvisible = false;
-
                 MoteMaker.ThrowAirPuffUp(Gen.TrueCenter(this), this.MapHeld);
             }
             return;
@@ -337,7 +349,6 @@ namespace CosmicHorror
         {
             try
             {
-
                 Corpse ourBody = this.Corpse;
                 if (ourBody == null) return;
 
@@ -366,11 +377,9 @@ namespace CosmicHorror
         {
             try
             {
-
                 //This finds a suitable target pawn.
                 Predicate<Thing> predicate = GetPredicate();
-
-
+                
                 Thing thing2 = GenClosest.ClosestThingReachable(this.PositionHeld, this.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.Pawn), PathEndMode.OnCell, TraverseParms.For(this, Danger.Deadly, TraverseMode.PassDoors, false), 15, predicate, null, 50, true);
                 if (thing2 != null && thing2.Position != IntVec3.Invalid)
                 {
