@@ -322,49 +322,50 @@ namespace Cthulhu
         /// <param name="maxDist"></param>
         /// <param name="pos"></param>
         /// <returns></returns>
-        public static bool TryFindSpawnCell(ThingDef def, IntVec3 nearLoc, Map map, int maxDist, out IntVec3 pos) => CellFinder.TryFindRandomCellNear(nearLoc, map, maxDist, delegate (IntVec3 x)
-                                                                                                                               {
-                ///Check if the entire area is safe based on the size of the object definition.
-                foreach (IntVec3 current in GenAdj.OccupiedRect(x, Rot4.North, new IntVec2(def.size.x + 2, def.size.z + 2)))
-                                                                                                                                   {
-                                                                                                                                       if (!current.InBounds(map) || current.Fogged(map) || !current.Standable(map) || (current.Roofed(map) && current.GetRoof(map).isThickRoof))
-                                                                                                                                       {
-                                                                                                                                           return false;
-                                                                                                                                       }
-                                                                                                                                       if (!current.SupportsStructureType(map, def.terrainAffordanceNeeded))
-                                                                                                                                       {
-                                                                                                                                           return false;
-                                                                                                                                       }
+        public static bool TryFindSpawnCell(ThingDef def, IntVec3 nearLoc, Map map, int maxDist, out IntVec3 pos) => 
+            CellFinder.TryFindRandomCellNear(nearLoc, map, maxDist, delegate (IntVec3 x)
+            {
+            ///Check if the entire area is safe based on the size of the object definition.
+            foreach (IntVec3 current in GenAdj.OccupiedRect(x, Rot4.North, new IntVec2(def.size.x + 2, def.size.z + 2)))
+            {
+            if (!current.InBounds(map) || current.Fogged(map) || !current.Standable(map) || (current.Roofed(map) && current.GetRoof(map).isThickRoof))
+            {
+                return false;
+            }
+            if (!current.SupportsStructureType(map, def.terrainAffordanceNeeded))
+            {
+                return false;
+            }
 
-                    ///
-                    //  If it has an interaction cell, check to see if it can be reached by colonists.
-                    //
-                    bool intCanBeReached = true;
-                                                                                                                                       if (def.interactionCellOffset != IntVec3.Zero)
-                                                                                                                                       {
-                                                                                                                                           foreach (Pawn colonist in map.mapPawns.FreeColonistsSpawned)
-                                                                                                                                           {
-                                                                                                                                               if (!colonist.CanReach(current + def.interactionCellOffset, PathEndMode.ClosestTouch, Danger.Deadly))
-                                                                                                                                                   intCanBeReached = false;
-                                                                                                                                           }
-                                                                                                                                       }
-                                                                                                                                       if (!intCanBeReached)
-                                                                                                                                           return false;
-                    //
+            ///
+            //  If it has an interaction cell, check to see if it can be reached by colonists.
+            //
+            bool intCanBeReached = true;
+            if (def.interactionCellOffset != IntVec3.Zero)
+            {
+                foreach (Pawn colonist in map.mapPawns.FreeColonistsSpawned)
+                {
+                    if (!colonist.CanReach(current + def.interactionCellOffset, PathEndMode.ClosestTouch, Danger.Deadly))
+                        intCanBeReached = false;
+                }
+            }
+            if (!intCanBeReached)
+                return false;
+            //
 
-                    //Don't wipe existing objets...
-                    List<Thing> thingList = current.GetThingList(map);
-                                                                                                                                       for (int i = 0; i < thingList.Count; i++)
-                                                                                                                                       {
-                                                                                                                                           Thing thing = thingList[i];
-                                                                                                                                           if (thing.def.category != ThingCategory.Plant && GenSpawn.SpawningWipes(def, thing.def))
-                                                                                                                                           {
-                                                                                                                                               return false;
-                                                                                                                                           }
-                                                                                                                                       }
-                                                                                                                                   }
-                                                                                                                                   return true;
-                                                                                                                               }, out pos);
+            //Don't wipe existing objets...
+            List<Thing> thingList = current.GetThingList(map);
+            for (int i = 0; i < thingList.Count; i++)
+            {
+                Thing thing = thingList[i];
+                if (thing.def.category != ThingCategory.Plant && GenSpawn.SpawningWipes(def, thing.def))
+                {
+                    return false;
+                }
+            }
+            }
+            return true;
+            }, out pos);
 
         public static BodyPartRecord GetHeart(HediffSet set)
         {
