@@ -100,7 +100,7 @@ namespace CosmicHorror
                             return false;
                         }
                         Pawn pawn1 = t as Pawn;
-                        if (((pawn1 == null)) || (!t.Spawned || this.PawnExtension.invisible))
+                        if (pawn1 == null || !t.Spawned || !this.PawnExtension.invisible)
                         {
                             return false;
                         }
