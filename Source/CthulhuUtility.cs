@@ -53,11 +53,12 @@ namespace Cthulhu
         public static bool loadedFactions = false;
 
 
-        public static bool IsMorning(Map map) => GenLocalDate.HourInteger(map) > 6 && GenLocalDate.HourInteger(map) < 10; public static bool IsEvening(Map map) => GenLocalDate.HourInteger(map) > 18 && GenLocalDate.HourInteger(map) < 22; public static bool IsNight(Map map) => GenLocalDate.HourInteger(map) > 22;
+        public static bool IsMorning(Map map) => 
+            GenLocalDate.HourInteger(map) > 6 && GenLocalDate.HourInteger(map) < 10; public static bool IsEvening(Map map) => GenLocalDate.HourInteger(map) > 18 && GenLocalDate.HourInteger(map) < 22; public static bool IsNight(Map map) => GenLocalDate.HourInteger(map) > 22;
         public static T GetMod<T>(string s) where T: Mod
         {
             //Call of Cthulhu - Cosmic Horrors
-            var result = default(T);
+            T result = default(T);
             foreach (Mod ResolvedMod in LoadedModManager.ModHandles)
             {
                 if (ResolvedMod.Content.Name == s) result = ResolvedMod as T;
@@ -65,11 +66,11 @@ namespace Cthulhu
             return result;
         }
 
-        public static bool isCosmicHorror(Pawn thing)
+        public static bool IsCosmicHorror(Pawn thing)
         {
             if (!IsCosmicHorrorsLoaded()) return false;
 
-            var type = Type.GetType("CosmicHorror.CosmicHorrorPawn");
+            Type type = Type.GetType("CosmicHorror.CosmicHorrorPawn");
             if (type != null)
             {
                 if (thing.GetType() == type)
@@ -474,7 +475,7 @@ namespace Cthulhu
         public static void ChangeResearchProgress(ResearchProjectDef projectDef, float progressValue, bool deselectCurrentResearch = false)
         {
             FieldInfo researchProgressInfo = typeof(ResearchManager).GetField("progress", BindingFlags.Instance | BindingFlags.NonPublic);
-            var researchProgress = researchProgressInfo.GetValue(Find.ResearchManager);
+            object researchProgress = researchProgressInfo.GetValue(Find.ResearchManager);
             PropertyInfo itemPropertyInfo = researchProgress.GetType().GetProperty("Item");
             itemPropertyInfo.SetValue(researchProgress, progressValue, new[] { projectDef });
             if (deselectCurrentResearch) Find.ResearchManager.currentProj = null;
