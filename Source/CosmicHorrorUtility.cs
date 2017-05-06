@@ -20,9 +20,14 @@ namespace CosmicHorror
             harmony.Patch(AccessTools.Method(typeof(AttackTargetFinder), nameof(AttackTargetFinder.BestAttackTarget)),
                 new HarmonyMethod(typeof(Utility), nameof(BestAttackTargetPrefix)), null);
             harmony.Patch(AccessTools.Constructor(AccessTools.TypeByName("Wound"), new Type[] { typeof(Pawn) }), null, null, new HarmonyMethod(typeof(Utility), nameof(WoundConstructorTranspiler)));
+            harmony.Patch(AccessTools.Method(typeof(ThingSelectionUtility), nameof(ThingSelectionUtility.SelectableByMapClick)), null, new HarmonyMethod(typeof(Utility), nameof(SelectableByMapClickPostfix)));
         }
 
-        
+        static void SelectableByMapClickPostfix(Thing t, ref bool __result)
+        {
+            if (__result)
+                __result = t is CosmicHorrorPawn cosmicPawn ? !cosmicPawn.IsInvisible : true;
+        }
 
         static IEnumerable<CodeInstruction> WoundConstructorTranspiler(IEnumerable<CodeInstruction> instructions, ILGenerator il)
         {
