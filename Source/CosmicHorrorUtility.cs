@@ -2,11 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
+using Harmony;
+using Verse.AI;
+using System;
 
 namespace CosmicHorror
 {
+    [StaticConstructorOnStartup]
     static class Utility
     {
+        static Utility() => HarmonyInstance.Create("rimworld.cosmic_Horrors").Patch(AccessTools.Method(typeof(AttackTargetFinder), nameof(AttackTargetFinder.BestAttackTarget)),
+                new HarmonyMethod(typeof(Utility), nameof(BestAttackTargetPrefix)), null);
+
+        static void BestAttackTargetPrefix(ref Predicate<Thing> validator)
+        {
+            Predicate<Thing> validatorCopy = validator;
+            validator = new Predicate<Thing>(delegate (Thing t)
+            {
+                return (validatorCopy != null ? validatorCopy(t) : true) && (t is CosmicHorrorPawn cosmicPawn ? !cosmicPawn.IsInvisible : true);
+            });
+        }
 
         public static bool IsTameable(PawnKindDef kindDef)
         {

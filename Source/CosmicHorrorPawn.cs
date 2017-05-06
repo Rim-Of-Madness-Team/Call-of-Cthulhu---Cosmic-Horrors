@@ -21,6 +21,7 @@ namespace CosmicHorror
         private Sustainer movingSound = null;
 
         private bool isInvisible = false;
+        public bool IsInvisible { get => this.isInvisible; set => this.isInvisible = value; }
 
         private PawnExtension pawnExtension;
 
@@ -47,7 +48,7 @@ namespace CosmicHorror
         {
             base.SpawnSetup(map, respawningAfterLoad);
 
-            this.isInvisible = this.PawnExtension.invisible;
+            this.IsInvisible = this.PawnExtension.invisible;
             this.sanityLossRate = this.PawnExtension.sanityLossRate;
             this.sanityLossMax = this.PawnExtension.sanityLossMax;
 
@@ -63,7 +64,7 @@ namespace CosmicHorror
         /// <param name="drawLoc"></param>
         public override void DrawAt(Vector3 drawLoc, bool flip)
         {
-                if (this.isInvisible)
+                if (this.IsInvisible)
                 {
                     return;
                 }
@@ -72,7 +73,7 @@ namespace CosmicHorror
 
         public override void Draw()
         {
-            if (this.isInvisible)
+            if (this.IsInvisible)
             {
                 return;
             }
@@ -89,7 +90,7 @@ namespace CosmicHorror
         {
             get
             {
-                if (this.isInvisible)
+                if (this.IsInvisible)
                 {
                     IntVec3 position = this.Position;
                     Predicate<Thing> predicate2 = delegate (Thing t)
@@ -122,7 +123,7 @@ namespace CosmicHorror
         public void ResolveInvisibility(DamageInfo dinfo, bool inAbsorbed, out bool absorbed)
         {
             absorbed = inAbsorbed;
-            if (this.isInvisible)
+            if (this.IsInvisible)
             {
                 dinfo.SetAmount(0); //No damage if it's invisible
                 absorbed = true;
@@ -269,9 +270,9 @@ namespace CosmicHorror
         /// </summary>
         public void Reveal()
         {
-            if (this.isInvisible)
+            if (this.IsInvisible)
             {
-                this.isInvisible = false;
+                this.IsInvisible = false;
                 MoteMaker.ThrowAirPuffUp(Gen.TrueCenter(this), this.MapHeld);
             }
             return;
@@ -282,9 +283,9 @@ namespace CosmicHorror
         /// </summary>
         public void Hide()
         {
-            if (!this.isInvisible)
+            if (!this.IsInvisible)
             {
-                this.isInvisible = true;
+                this.IsInvisible = true;
             }
             return;
         }

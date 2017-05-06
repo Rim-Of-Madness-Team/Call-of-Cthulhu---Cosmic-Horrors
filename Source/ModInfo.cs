@@ -6,6 +6,6 @@ namespace CosmicHorror
     public static class ModInfo
     {
         public static int cosmicHorrorRaidDelay = 0;
-        
+
     }
 }
