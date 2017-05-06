@@ -189,7 +189,7 @@ namespace CosmicHorror
                 pawn = listeners[i];
                 if (pawn.Faction == Faction.OfPlayer)
                 {
-                    if (pawn.CurJob.def.defName == "ROM_HaulChthonianSacrifice")
+                    if (pawn.CurJob.def == MonsterDefOf.ROM_HaulChthonianSacrifice)
                     {
                         pawn.jobs.StopAll();
                     }
@@ -220,7 +220,7 @@ namespace CosmicHorror
             isSacrificing = true;
             
             Cthulhu.Utility.DebugReport("Force Sacrifice called");
-            Job job = new Job(DefDatabase<JobDef>.GetNamed("ROM_HaulChthonianSacrifice"), sacrifice, this);
+            Job job = new Job(MonsterDefOf.ROM_HaulChthonianSacrifice, sacrifice, this);
             job.count = 1;
             executioner.jobs.TryTakeOrderedJob(job);
             //executioner.QueueJob(job);
@@ -324,11 +324,11 @@ namespace CosmicHorror
             bool flag2 = false;
             foreach (Pawn current in this.Map.mapPawns.FreeColonistsSpawned)
             {
-                if (current.CurJob.def.defName == "ROM_HaulChthonianSacrifice")
+                if (current.CurJob.def == MonsterDefOf.ROM_HaulChthonianSacrifice)
                 {
                     flag1 = true;
                 }
-                if (current.CurJob.def.defName == "ROM_FillChthonianPit")
+                if (current.CurJob.def == MonsterDefOf.ROM_FillChthonianPit)
                 {
                     flag2 = true;
                 }
@@ -451,7 +451,7 @@ namespace CosmicHorror
                 pawn = listeners[i];
                 if (pawn.Faction == Faction.OfPlayer)
                 {
-                    if (pawn.CurJob.def.defName == "ROM_FillChthonianPit")
+                    if (pawn.CurJob.def == MonsterDefOf.ROM_FillChthonianPit)
                     {
                         pawn.jobs.StopAll();
                     }
@@ -471,7 +471,7 @@ namespace CosmicHorror
                 pawn = listeners[i];
                 if (pawn.Faction == Faction.OfPlayer)
                 {
-                    if (pawn.CurJob.def.defName == "ROM_FillChthonianPit")
+                    if (pawn.CurJob.def == MonsterDefOf.ROM_FillChthonianPit)
                     {
                         pawn.jobs.StopAll();
                     }
@@ -498,7 +498,7 @@ namespace CosmicHorror
             isFilling = true;
 
             Cthulhu.Utility.DebugReport("Force Sacrifice called");
-            Job job = new Job(DefDatabase<JobDef>.GetNamed("ROM_FillChthonianPit"), this);
+            Job job = new Job(MonsterDefOf.ROM_FillChthonianPit, this);
             actor.jobs.TryTakeOrderedJob(job);
             //actor.QueueJob(job);
             //actor.jobs.EndCurrentJob(JobCondition.InterruptForced);
