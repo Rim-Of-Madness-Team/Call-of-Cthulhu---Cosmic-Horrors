@@ -10,13 +10,7 @@ namespace CosmicHorror
 
 
 
-        protected virtual int CountToSpawn
-        {
-            get
-            {
-                return 1;
-            }
-        }
+        protected virtual int CountToSpawn => 1;
 
         protected override bool CanFireNowSub(IIncidentTarget target)
         {
@@ -57,13 +51,12 @@ namespace CosmicHorror
                     }
                     return map.reachability.CanReachColony(c);
                 };
-                IntVec3 intVec;
-                if (!CellFinderLoose.TryFindRandomNotEdgeCellWith(14, validator, map, out intVec))
-                {
-                    return false;
-                }
-                //GenExplosion.DoExplosion(intVec, map, 3f, DamageDefOf.Flame, null, null, null, null, null, 0f, 1, false, null, 0f, 1);
-                Building_PitChthonian building_CrashedShipPart = (Building_PitChthonian)GenSpawn.Spawn(this.def.shipPart, intVec, map);
+            if (!CellFinderLoose.TryFindRandomNotEdgeCellWith(14, validator, map, out IntVec3 intVec))
+            {
+                return false;
+            }
+            //GenExplosion.DoExplosion(intVec, map, 3f, DamageDefOf.Flame, null, null, null, null, null, 0f, 1, false, null, 0f, 1);
+            Building_PitChthonian building_CrashedShipPart = (Building_PitChthonian)GenSpawn.Spawn(this.def.shipPart, intVec, map);
                 building_CrashedShipPart.SetFaction(Find.FactionManager.FirstFactionOfDef(FactionDef.Named("ROM_Chthonian")), null);
                
                 cell = intVec;

@@ -1,22 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Reflection;
 using Verse;
 using RimWorld;
-using UnityEngine;
-using RimWorld.Planet;
 
 namespace Cthulhu.Detour
 {
     internal static class _MassUtility
     {
         [Detour(typeof(MassUtility), bindingFlags = (BindingFlags.Static | BindingFlags.Public))]
-        public static bool CanEverCarryAnything(Pawn p)
-        {
-            return p.RaceProps.ToolUser || p.RaceProps.packAnimal || p.def.defName == "ROM_DarkYoung";
-        }
+        public static bool CanEverCarryAnything(Pawn p) => p.RaceProps.ToolUser || p.RaceProps.packAnimal || p.def.defName == "ROM_DarkYoung";
 
     }
 

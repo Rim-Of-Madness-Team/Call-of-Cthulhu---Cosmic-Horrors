@@ -37,3 +37,6 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Co
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\Call-of-Cthulhu---Cosmic Horrors\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\Call-of-Cthulhu---Cosmic Horrors\Source\obj\Debug\CosmicHorror.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\Call-of-Cthulhu---Cosmic Horrors\Assemblies\CosmicHorror.dll
+D:\Games\Steam\steamapps\common\RimWorld\Mods\Call-of-Cthulhu---Cosmic-Horrors\Assemblies\CosmicHorror.dll
+D:\Games\Steam\steamapps\common\RimWorld\Mods\Call-of-Cthulhu---Cosmic-Horrors\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
+D:\Games\Steam\steamapps\common\RimWorld\Mods\Call-of-Cthulhu---Cosmic-Horrors\Source\obj\Debug\CosmicHorror.dll

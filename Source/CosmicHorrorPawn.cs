@@ -1,11 +1,8 @@
 ﻿//What I need
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 //Maybe?
 using RimWorld;
-using RimWorld.Planet;
 using Verse.AI;
 using UnityEngine;
 using Verse;
@@ -25,16 +22,10 @@ namespace CosmicHorror
 
         private bool isInvisible = false;
 
-        public PawnExtension PawnExtension()
-        {
-            PawnExtension result = null;
-            if (this.def != null)
-            {
-                result = this.def.GetModExtension<PawnExtension>();
-            }
-            if (result == null) Log.Warning("PawnExtension is missing for Cosmic Horror");
-            return result;
-        }
+        private PawnExtension pawnExtension;
+
+        public PawnExtension PawnExtension =>
+            this.pawnExtension ?? (this.pawnExtension = this.def.HasModExtension<PawnExtension>() ? this.def.GetModExtension<PawnExtension>() : null);
 
         public override void ExposeData()
         {
@@ -55,13 +46,10 @@ namespace CosmicHorror
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            Log.Message("isInvisible" + isInvisible.ToString());
 
-            this.isInvisible = PawnExtension().invisible;
-            this.sanityLossRate = PawnExtension().sanityLossRate;
-            this.sanityLossMax = PawnExtension().sanityLossMax;
-
-            Log.Message("isInvisible" + isInvisible.ToString());
+            this.isInvisible = this.PawnExtension.invisible;
+            this.sanityLossRate = this.PawnExtension.sanityLossRate;
+            this.sanityLossMax = this.PawnExtension.sanityLossMax;
 
             //Give immunities.
             this.health.AddHediff(HediffDef.Named("ROM_CosmicHorrorImmunities"));
@@ -97,35 +85,38 @@ namespace CosmicHorror
         /// Reveal the Star Vampire.
         /// </summary>
         /// <returns></returns>
-        public bool canReveal()
+        public bool CanReveal
         {
-            if (this.isInvisible)
+            get
             {
-                IntVec3 position = this.Position;
-                Predicate<Thing> predicate2 = delegate (Thing t)
+                if (this.isInvisible)
                 {
-                    if (t == this)
+                    IntVec3 position = this.Position;
+                    Predicate<Thing> predicate2 = delegate (Thing t)
                     {
-                        return false;
-                    }
-                    Pawn pawn1 = t as Pawn;
-                    if (((pawn1 == null)) || (!t.Spawned || PawnExtension().invisible))
+                        if (t == this)
+                        {
+                            return false;
+                        }
+                        Pawn pawn1 = t as Pawn;
+                        if (((pawn1 == null)) || (!t.Spawned || this.PawnExtension.invisible))
+                        {
+                            return false;
+                        }
+                        if (pawn1.RaceProps.Animal)
+                        {
+                            return false;
+                        }
+                        return true;
+                    };
+                    Thing thing2 = GenClosest.ClosestThingReachable(this.Position, this.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.Pawn), PathEndMode.OnCell, TraverseParms.For(this, Danger.Deadly, TraverseMode.PassDoors, false), 3, predicate2, null, 50, true);
+                    if (thing2 != null)
                     {
-                        return false;
+                        return true;
                     }
-                    if (pawn1.RaceProps.Animal)
-                    {
-                        return false;
-                    }
-                    return true;
-                };
-                Thing thing2 = GenClosest.ClosestThingReachable(this.Position, this.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.Pawn), PathEndMode.OnCell, TraverseParms.For(this, Danger.Deadly, TraverseMode.PassDoors, false), 3, predicate2, null, 50, true);
-                if (thing2 != null)
-                {
-                    return true;
                 }
+                return false;
             }
-            return false;
         }
 
         public void ResolveInvisibility(DamageInfo dinfo, bool inAbsorbed, out bool absorbed)
@@ -133,7 +124,7 @@ namespace CosmicHorror
             absorbed = inAbsorbed;
             if (this.isInvisible)
             {
-                dinfo.SetAmount((int)(0)); //No damage if it's invisible
+                dinfo.SetAmount(0); //No damage if it's invisible
                 absorbed = true;
             }
 
@@ -155,10 +146,12 @@ namespace CosmicHorror
                         {
                             if (this.jobs.curJob.def != JobDefOf.AttackMelee)
                             {
-                                Job j = new Job(JobDefOf.AttackMelee, dinfo.Instigator);
-                                j.expiryInterval = 1000;
-                                j.checkOverrideOnExpire = true;
-                                j.expireRequiresEnemiesNearby = true;
+                                Job j = new Job(JobDefOf.AttackMelee, dinfo.Instigator)
+                                {
+                                    expiryInterval = 1000,
+                                    checkOverrideOnExpire = true,
+                                    expireRequiresEnemiesNearby = true
+                                };
                                 this.jobs.EndCurrentJob(JobCondition.Incompletable);
                                 this.jobs.TryTakeOrderedJob(j);
                             }
@@ -175,7 +168,7 @@ namespace CosmicHorror
         public override void Tick()
         {
             base.Tick();
-            if (this.canReveal() || this.Downed || this.Dead)
+            if (this.CanReveal|| this.Downed || this.Dead)
             {
                 this.Reveal();
             }
@@ -186,9 +179,9 @@ namespace CosmicHorror
 
         public void ResolveBleeding()
         {
-            if (PawnExtension() != null && PawnExtension().regenInterval != 0 && PawnExtension().regenRate != 0)
+            if (this.PawnExtension != null && this.PawnExtension.regenInterval != 0 && this.PawnExtension.regenRate != 0)
             {
-                if (Find.TickManager.TicksGame % PawnExtension().regenInterval == PawnExtension().regenRate)
+                if (Find.TickManager.TicksGame % this.PawnExtension.regenInterval == this.PawnExtension.regenRate)
                 {
                     if (this.health != null)
                     {
@@ -222,17 +215,17 @@ namespace CosmicHorror
 
             if (!this.Dead && this.Spawned && this.pather.Moving)
             {
-                if (this.def.defName == "ROM_Chthonian")
+                if (this.def == MonsterDefOf.ROM_Chthonian.race)
                 {
-                    if (movingSound == null)
+                    if (this.movingSound == null)
                     {
                         SoundInfo info = SoundInfo.InMap(this, MaintenanceType.PerTick);
                         this.movingSound = SoundDef.Named("Pawn_ROM_Chthonian_Moving").TrySpawnSustainer(info);
                     }
-                    if (lastSpot != IntVec3.Invalid)
+                    if (this.lastSpot != IntVec3.Invalid)
                     {
                         //Standing still? No smoke needed
-                        if (lastSpot != this.Position)
+                        if (this.lastSpot != this.Position)
                         {
                             //Do this... inside the map, obviously.
                             if (intVec.InBounds(map))
@@ -240,7 +233,7 @@ namespace CosmicHorror
                                 //Throw some smoke
                                 MoteMaker.ThrowSmoke(intVec.ToVector3(), map, 1f);
                                 MoteMaker.ThrowDustPuff(intVec, map, 1f);
-                                MoteMaker.ThrowDustPuff(lastSpot, map, 0.5f);
+                                MoteMaker.ThrowDustPuff(this.lastSpot, map, 0.5f);
 
                                 //Break the floor
                                 if (map.terrainGrid.TerrainAt(intVec).layerable)
@@ -252,15 +245,16 @@ namespace CosmicHorror
                                 if (map.terrainGrid.TerrainAt(intVec).fertility > 0.06 &&
                                     map.terrainGrid.TerrainAt(intVec) != richSoil)
                                 {
-                                    base.Map.terrainGrid.SetTerrain(intVec, richSoil);
+                                    this.Map.terrainGrid.SetTerrain(intVec, richSoil);
                                 }
                             }
                         }
                     }
                 }
             }
-            if (movingSound != null) movingSound.End();
-            lastSpot = this.Position;
+            if (this.movingSound != null)
+                this.movingSound.End();
+            this.lastSpot = this.Position;
         }
 
         public override void TickRare()
@@ -298,33 +292,41 @@ namespace CosmicHorror
 
         public static bool ManhunterMessageSent = false;
 
-
-        public Predicate<Thing> GetPredicate()
+        public Predicate<Thing> Predicate => delegate (Thing t)
         {
-            Predicate<Thing> predicate = delegate (Thing t)
+            if (t == null)
+                return false;
+            if (t == this)
+                return false;
+            if (!t.Spawned)
+                return false;
+            Pawn pawn1 = t as Pawn;
+            if (pawn1 == null)
+                return false;
+            if (pawn1.Dead)
+                return false;
+            if (pawn1 is CosmicHorrorPawn)
+                return false;
+            if (pawn1.Faction == null)
+                return false;
+            if (this.Faction != null && pawn1.Faction != null)
             {
-                if (t == null) return false;
-                if (t == this) return false;
-                if (!t.Spawned) return false;
-                Pawn pawn1 = t as Pawn;
-                if (pawn1 == null) return false;
-                if (pawn1.Dead) return false;
-                if (pawn1 is CosmicHorrorPawn) return false;
-                if (pawn1.Faction == null) return false;
-                if (this.Faction != null && pawn1.Faction != null)
-                {
-                    if (this.Faction == pawn1.Faction) return false;
-                    if (!this.Faction.HostileTo(pawn1.Faction)) return false;
-                }
+                if (this.Faction == pawn1.Faction)
+                    return false;
+                if (!this.Faction.HostileTo(pawn1.Faction))
+                    return false;
+            }
 
-                if (pawn1.needs == null) return false;
-                if (pawn1.needs.mood == null) return false;
-                if (pawn1.needs.mood.thoughts == null) return false;
-                if (pawn1.needs.mood.thoughts.memories == null) return false;
-                return true;
-            };
-            return predicate;
-        }
+            if (pawn1.needs == null)
+                return false;
+            if (pawn1.needs.mood == null)
+                return false;
+            if (pawn1.needs.mood.thoughts == null)
+                return false;
+            if (pawn1.needs.mood.thoughts.memories == null)
+                return false;
+            return true;
+        };
 
         public void ObservationEffectLive(Pawn target)
         {
@@ -333,13 +335,13 @@ namespace CosmicHorror
                 if (this.StoringBuilding() == null && target.RaceProps.Humanlike)
                 {
                     Thought_MemoryObservation thought_MemoryObservation;
-                    thought_MemoryObservation = (Thought_MemoryObservation)ThoughtMaker.MakeThought(DefDatabase<ThoughtDef>.GetNamed("Observed" + def.ToString()));
+                    thought_MemoryObservation = (Thought_MemoryObservation)ThoughtMaker.MakeThought(DefDatabase<ThoughtDef>.GetNamed("Observed" + this.def.ToString()));
                     thought_MemoryObservation.Target = this;
                     target.needs.mood.thoughts.memories.TryGainMemory(thought_MemoryObservation);
                 }
 
                 ///This area gives sanity loss, if the witness sees a living cosmic horror.
-                Cthulhu.Utility.ApplySanityLoss(target, sanityLossRate, sanityLossMax);
+                Cthulhu.Utility.ApplySanityLoss(target, this.sanityLossRate, this.sanityLossMax);
             }
             catch (NullReferenceException)
             { }
@@ -357,7 +359,7 @@ namespace CosmicHorror
                 if (!ourBody.Spawned) return;
                 if (ourBody.StoringBuilding() == null)
                 {
-                    ThoughtDef defToImplement = DefDatabase<ThoughtDef>.GetNamedSilentFail("Observed" + def.ToString());
+                    ThoughtDef defToImplement = DefDatabase<ThoughtDef>.GetNamedSilentFail("Observed" + this.def.ToString());
                     if (defToImplement == null) return;
                     Thought_MemoryObservation thought_MemoryObservation;
                     thought_MemoryObservation = (Thought_MemoryObservation)ThoughtMaker.MakeThought(defToImplement);
@@ -378,15 +380,14 @@ namespace CosmicHorror
             try
             {
                 //This finds a suitable target pawn.
-                Predicate<Thing> predicate = GetPredicate();
+                Predicate<Thing> predicate = this.Predicate;
                 
                 Thing thing2 = GenClosest.ClosestThingReachable(this.PositionHeld, this.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.Pawn), PathEndMode.OnCell, TraverseParms.For(this, Danger.Deadly, TraverseMode.PassDoors, false), 15, predicate, null, 50, true);
                 if (thing2 != null && thing2.Position != IntVec3.Invalid)
                 {
                     if (GenSight.LineOfSight(thing2.Position, this.PositionHeld, this.MapHeld))
                     {
-                        Pawn target = thing2 as Pawn;
-                        if (target != null)
+                        if (thing2 is Pawn target)
                         {
                             if (target.RaceProps != null)
                             {

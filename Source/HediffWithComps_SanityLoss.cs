@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UnityEngine;
-using Verse;
+﻿using Verse;
 
 namespace CosmicHorror
 {
@@ -13,11 +8,11 @@ namespace CosmicHorror
         {
             base.PostTick();
 
-            if (pawn != null)
+            if (this.pawn != null)
             {
-                if (pawn.RaceProps != null)
+                if (this.pawn.RaceProps != null)
                 {
-                    if (pawn.RaceProps.IsMechanoid ||
+                    if (this.pawn.RaceProps.IsMechanoid ||
                         base.pawn is CosmicHorrorPawn)
                     {
                         MakeSane();

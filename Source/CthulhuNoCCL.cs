@@ -9,34 +9,19 @@ namespace Cthulhu.NoCCL
     [StaticConstructorOnStartup]
     internal static class DetourInjector
     {
-        private static Assembly Assembly
-        {
-            get
-            {
-                return Assembly.GetAssembly(typeof(DetourInjector));
-            }
-        }
+        private static Assembly Assembly => Assembly.GetAssembly(typeof(DetourInjector));
 
-        private static string AssemblyName
-        {
-            get
-            {
-                return DetourInjector.Assembly.FullName.Split(new char[]
+        private static string AssemblyName => DetourInjector.Assembly.FullName.Split(new char[]
                 {
                     ','
                 }).First<string>();
-            }
-        }
 
-        static DetourInjector()
-        {
-            LongEventHandler.QueueLongEvent(new Action(DetourInjector.Inject), "Initializing", true, null);
-        }
+        static DetourInjector() => LongEventHandler.QueueLongEvent(new Action(DetourInjector.Inject), "Initializing", true, null);
 
         private static void Inject()
         {
             Cthulhu_SpecialInjector cthulhu_SpecialInjector = new Cthulhu_SpecialInjector();
-            bool flag = cthulhu_SpecialInjector.Inject();
+            bool flag = cthulhu_SpecialInjector.Inject;
             if (flag)
             {
                 Log.Message(DetourInjector.AssemblyName + " injected.");
@@ -50,10 +35,13 @@ namespace Cthulhu.NoCCL
 
     public class SpecialInjector
     {
-        public virtual bool Inject()
+        public virtual bool Inject
         {
-            Log.Error("This should never be called.");
-            return false;
+            get
+            {
+                Log.Error("This should never be called.");
+                return false;
+            }
         }
     }
 
@@ -140,54 +128,51 @@ namespace Cthulhu.NoCCL
             BindingFlags.Static | BindingFlags.NonPublic
         };
 
-        private static Assembly Assembly
+        private static Assembly Assembly => Assembly.GetAssembly(typeof(DetourInjector));
+
+        public override bool Inject
         {
             get
             {
-                return Assembly.GetAssembly(typeof(DetourInjector));
-            }
-        }
-
-        public override bool Inject()
-        {
-            Type[] types = Cthulhu_SpecialInjector.Assembly.GetTypes();
-            bool result;
-            for (int i = 0; i < types.Length; i++)
-            {
-                Type type = types[i];
-                BindingFlags[] array = Cthulhu_SpecialInjector.bindingFlagCombos;
-                for (int j = 0; j < array.Length; j++)
+                Type[] types = Assembly.GetTypes();
+                bool result;
+                for (int i = 0; i < types.Length; i++)
                 {
-                    BindingFlags bindingFlags = array[j];
-                    MethodInfo[] methods = type.GetMethods(bindingFlags);
-                    for (int k = 0; k < methods.Length; k++)
+                    Type type = types[i];
+                    BindingFlags[] array = Cthulhu_SpecialInjector.bindingFlagCombos;
+                    for (int j = 0; j < array.Length; j++)
                     {
-                        MethodInfo methodInfo = methods[k];
-                        object[] customAttributes = methodInfo.GetCustomAttributes(typeof(DetourAttribute), true);
-                        for (int l = 0; l < customAttributes.Length; l++)
+                        BindingFlags bindingFlags = array[j];
+                        MethodInfo[] methods = type.GetMethods(bindingFlags);
+                        for (int k = 0; k < methods.Length; k++)
                         {
-                            DetourAttribute detourAttribute = (DetourAttribute)customAttributes[l];
-                            BindingFlags bindingFlags2 = (detourAttribute.bindingFlags != BindingFlags.Default) ? detourAttribute.bindingFlags : bindingFlags;
-                            MethodInfo method = detourAttribute.source.GetMethod(methodInfo.Name, bindingFlags2);
-                            bool flag = method == null;
-                            if (flag)
+                            MethodInfo methodInfo = methods[k];
+                            object[] customAttributes = methodInfo.GetCustomAttributes(typeof(DetourAttribute), true);
+                            for (int l = 0; l < customAttributes.Length; l++)
                             {
-                                Log.Error(string.Format("Cthulhu :: Detours :: Can't find source method '{0} with bindingflags {1}", methodInfo.Name, bindingFlags2));
-                                result = false;
-                                return result;
-                            }
-                            bool flag2 = !Detours.TryDetourFromTo(method, methodInfo);
-                            if (flag2)
-                            {
-                                result = false;
-                                return result;
+                                DetourAttribute detourAttribute = (DetourAttribute)customAttributes[l];
+                                BindingFlags bindingFlags2 = (detourAttribute.bindingFlags != BindingFlags.Default) ? detourAttribute.bindingFlags : bindingFlags;
+                                MethodInfo method = detourAttribute.source.GetMethod(methodInfo.Name, bindingFlags2);
+                                bool flag = method == null;
+                                if (flag)
+                                {
+                                    Log.Error(string.Format("Cthulhu :: Detours :: Can't find source method '{0} with bindingflags {1}", methodInfo.Name, bindingFlags2));
+                                    result = false;
+                                    return result;
+                                }
+                                bool flag2 = !Detours.TryDetourFromTo(method, methodInfo);
+                                if (flag2)
+                                {
+                                    result = false;
+                                    return result;
+                                }
                             }
                         }
                     }
                 }
+                result = true;
+                return result;
             }
-            result = true;
-            return result;
         }
     }
 }

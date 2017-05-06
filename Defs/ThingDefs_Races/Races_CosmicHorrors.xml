@@ -56,15 +56,15 @@
 		<li>ROM_CosmicHorrorStandard</li>
 	  </hediffGiverSets>
     </race>
-	<modExtensions>
+	<!--modExtensions>
 	  <li Class="CosmicHorror.PawnExtension">
-	    <invisible>false</invisible>
-		<regenRate>0.0</regenRate>
-		<regenInterval>0</regenInterval>
-		<sanityLossRate>0.03</sanityLossRate>
-		<sanityLossMax>0.3</sanityLossMax>		
+      <invisible>false</invisible>
+      <regenRate>0.0</regenRate>
+      <regenInterval>0</regenInterval>
+      <sanityLossRate>0.03</sanityLossRate>
+      <sanityLossMax>0.3</sanityLossMax>		
 	  </li>
-	</modExtensions>
+	</modExtensions-->
   </ThingDef>
  
 

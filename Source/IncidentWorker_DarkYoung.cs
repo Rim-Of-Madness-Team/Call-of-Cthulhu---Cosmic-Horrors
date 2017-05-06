@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
 using RimWorld;
-using RimWorld.Planet;
-using Verse.AI;
-using UnityEngine;
 using Verse;
 
 
@@ -28,8 +21,7 @@ namespace CosmicHorror
         public override bool TryExecute(IncidentParms parms)
         {
             Map map = (Map)parms.target;
-            IntVec3 intVec;
-            if (!RCellFinder.TryFindRandomPawnEntryCell(out intVec, map, 0.5f))
+            if (!RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 intVec, map, 0.5f))
             {
                 return false;
             }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Verse;
 using RimWorld;
@@ -11,14 +10,14 @@ namespace CosmicHorror
 {
     public class CosmicHorrorFaction
     {
-        public string defName { get; set; }
-        public float weight { get; set; }
+        public string DefName { get; set; }
+        public float Weight { get; set; }
 
 
-        public CosmicHorrorFaction(String newName, float newWeight)
+        public CosmicHorrorFaction(string newName, float newWeight)
         {
-            defName = newName;
-            weight = newWeight;
+            this.DefName = newName;
+            this.Weight = newWeight;
         }
     }
 
@@ -55,13 +54,13 @@ namespace CosmicHorror
             if (points > 700f) factionList.Add(new CosmicHorrorFaction("ROM_Shoggoth", 2));
             if (points > 350f) factionList.Add(new CosmicHorrorFaction("ROM_MiGo", 4));
             CosmicHorrorFaction f = GenCollection.RandomElementByWeight<CosmicHorrorFaction>(factionList, GetWeight);
-            Faction resolvedFaction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named(f.defName));
+            Faction resolvedFaction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named(f.DefName));
 
             //This is a special case.
             //If the player has the Cults mod.
             //If they are working with Dagon.
             //Then let's do something different...
-            if (Cthulhu.Utility.IsCultsLoaded() && f.defName == "ROM_DeepOne")
+            if (Cthulhu.Utility.IsCultsLoaded() && f.DefName == "ROM_DeepOne")
             {
                 if (resolvedFaction.RelationWith(Faction.OfPlayer, false).hostile == false)
                 {
@@ -70,17 +69,14 @@ namespace CosmicHorror
                     resolvedFaction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("ROM_MiGo"));
                 }
             }
-            attackingFaction = resolvedFaction.def;
-            Cthulhu.Utility.DebugReport("Cosmic Horror Raid Report: " + attackingFaction.ToString() + "selected");
-            return FactionDef.Named(attackingFaction.defName);
+            this.attackingFaction = resolvedFaction.def;
+            Cthulhu.Utility.DebugReport("Cosmic Horror Raid Report: " + this.attackingFaction.ToString() + "selected");
+            return FactionDef.Named(this.attackingFaction.defName);
         }
 
-        public static float GetWeight(CosmicHorrorFaction f)
-        {
-            return f.weight;
-        }
+        public static float GetWeight(CosmicHorrorFaction f) => f.Weight;
 
-        private enum raidTypes
+        private enum RaidTypes
         {
             One = 175,
             Two = 350,
@@ -101,13 +97,10 @@ namespace CosmicHorror
             return text;
         }
 
-        protected override string GetRelatedPawnsInfoLetterText(IncidentParms parms)
-        {
-            return Translator.Translate(attackingFaction.LabelCap + "" + "CosmicHorrorRaid".Translate(), new object[]
+        protected override string GetRelatedPawnsInfoLetterText(IncidentParms parms) => Translator.Translate(this.attackingFaction.LabelCap + "" + "CosmicHorrorRaid".Translate(), new object[]
             {
                 parms.faction.def.pawnsPlural
             });
-        }
 
         protected override bool CanFireNowSub(IIncidentTarget target)
         {
@@ -148,15 +141,9 @@ namespace CosmicHorror
 
         }
 
-        protected override string GetLetterLabel(IncidentParms parms)
-        {
-            return parms.raidStrategy.letterLabelEnemy;
-        }
+        protected override string GetLetterLabel(IncidentParms parms) => parms.raidStrategy.letterLabelEnemy;
 
-        protected override LetterDef GetLetterDef()
-        {
-            return LetterDefOf.BadUrgent;
-        }
+        protected override LetterDef GetLetterDef() => LetterDefOf.BadUrgent;
 
         protected override void ResolveRaidStrategy(IncidentParms parms)
         {
@@ -174,7 +161,7 @@ namespace CosmicHorror
             {
                 return;
             }
-            parms.points = (float)Rand.Range(70, 350);
+            parms.points = Rand.Range(70, 350);
         }
 
         protected override bool TryResolveRaidFaction(IncidentParms parms)
@@ -265,9 +252,6 @@ namespace CosmicHorror
             return true;
         }
 
-        protected override void ResolveRaidArriveMode(IncidentParms parms)
-        {
-            parms.raidArrivalMode = PawnsArriveMode.EdgeWalkIn;
-        }
+        protected override void ResolveRaidArriveMode(IncidentParms parms) => parms.raidArrivalMode = PawnsArriveMode.EdgeWalkIn;
     }
 }

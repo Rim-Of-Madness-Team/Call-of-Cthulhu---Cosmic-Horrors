@@ -1,9 +1,4 @@
 ﻿///Always required
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UnityEngine;
 ///Possible libraries
 using RimWorld;
 using Verse;
@@ -41,25 +36,25 @@ namespace CosmicHorror
 
             //Resolve parameters.
             ResolveSpawnCenter(parms);
-            
+
             //Initialize variables.
-            iwKind      = PawnKindDef.Named("ROM_StarVampire");
-            iwFac       = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("ROM_StarVampire"));
-            iwWarn      = SoundDef.Named("Pawn_ROM_StarVampire_Warning");
-            iwPawn      = null; //PawnGenerator.GeneratePawn(iwKind, iwFac);
-            iwVampire   = null; //iwPawn as CosmicHorrorPawn;
-            iwLoc       = CellFinder.RandomClosewalkCellNear(parms.spawnCenter, (Map)parms.target, 8);
+            this.iwKind      = PawnKindDef.Named("ROM_StarVampire");
+            this.iwFac       = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("ROM_StarVampire"));
+            this.iwWarn      = SoundDef.Named("Pawn_ROM_StarVampire_Warning");
+            this.iwPawn      = null; //PawnGenerator.GeneratePawn(iwKind, iwFac);
+            this.iwVampire   = null; //iwPawn as CosmicHorrorPawn;
+            this.iwLoc       = CellFinder.RandomClosewalkCellNear(parms.spawnCenter, (Map)parms.target, 8);
 
             //In-case there's something silly happening...
-            if (iwFac == null)
+            if (this.iwFac == null)
             {
-                iwFac = Find.FactionManager.FirstFactionOfDef(FactionDefOf.SpacerHostile);
+                this.iwFac = Find.FactionManager.FirstFactionOfDef(FactionDefOf.SpacerHostile);
             }
 
             //Slow down time
             Find.TickManager.slower.SignalForceNormalSpeed();
             //Play a sound.
-            iwWarn.PlayOneShotOnCamera();
+            this.iwWarn.PlayOneShotOnCamera();
             //Show the warning message.
             Messages.Message("StarVampireIncidentMessage".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, (Map)parms.target), MessageSound.Standard);
             //Spawn the Star Vampire.
@@ -116,17 +111,17 @@ namespace CosmicHorror
             for (int i = 0; i < iwCount; i++)
             {
                 CosmicHorrorPawn temp = null;
-                iwPawn = null;
-                iwVampire = null;
-                iwPawn = PawnGenerator.GeneratePawn(iwKind, iwFac);
-                iwVampire = iwPawn as CosmicHorrorPawn;
+                this.iwPawn = null;
+                this.iwVampire = null;
+                this.iwPawn = PawnGenerator.GeneratePawn(this.iwKind, this.iwFac);
+                this.iwVampire = this.iwPawn as CosmicHorrorPawn;
 
                 if (this.lord == null)
                 {
-                    LordJob_StarVampire lordJob = new LordJob_StarVampire(iwFac, iwLoc);
-                    this.lord = LordMaker.MakeNewLord(iwFac, lordJob, iwMap, null);
+                    LordJob_StarVampire lordJob = new LordJob_StarVampire(this.iwFac, this.iwLoc);
+                    this.lord = LordMaker.MakeNewLord(this.iwFac, lordJob, iwMap, null);
                 }
-                temp = (CosmicHorrorPawn)GenSpawn.Spawn(iwVampire, iwLoc, iwMap);
+                temp = (CosmicHorrorPawn)GenSpawn.Spawn(this.iwVampire, this.iwLoc, iwMap);
                 this.lord.AddPawn(temp);
             }
         }

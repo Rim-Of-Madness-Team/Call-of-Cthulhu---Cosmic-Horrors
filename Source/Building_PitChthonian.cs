@@ -1,5 +1,4 @@
-﻿using RimWorld.Planet;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +6,6 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 using Verse.AI.Group;
-using Verse.Noise;
 using Verse.Sound;
 using RimWorld;
 using System.Reflection;
@@ -36,104 +34,66 @@ namespace CosmicHorror
         #region Container Values
         protected ThingOwner container;
 
-        public void GetChildHolders(List<IThingHolder> outChildren)
-        {
-            ThingOwnerUtility.AppendThingHoldersFromThings(outChildren, this.GetDirectlyHeldThings());
-        }
+        public void GetChildHolders(List<IThingHolder> outChildren) => ThingOwnerUtility.AppendThingHoldersFromThings(outChildren, this.GetDirectlyHeldThings());
 
-        public ThingOwner GetDirectlyHeldThings()
-        {
-            return this.container;
-        }
+        public ThingOwner GetDirectlyHeldThings() => this.container;
 
         #endregion Container Values
 
         public bool GaveSacrifice
         {
-            get
-            {
-                return gaveSacrifice;
-            }
+            get => this.gaveSacrifice;
             set
             {
-                if (gaveSacrifice != value)
+                if (this.gaveSacrifice != value)
                 {
-                    if (!gaveSacrifice && value)
+                    if (!this.gaveSacrifice && value)
                     {
                         Messages.Message("ChthonianPitActivityStopped".Translate(), MessageSound.Standard);
                     }
                 }
-                gaveSacrifice = value;
-
+                this.gaveSacrifice = value;
             }
         }
         public bool IsSacrificing
         {
-            get
-            {
-                return isSacrificing;
-            }
-            set
-            {
-                isSacrificing = value;
-            }
+            get => this.isSacrificing;
+            set => this.isSacrificing = value;
         }
         public bool IsFilling
         {
-            get
-            {
-                return isFilling;
-            }
-            set
-            {
-                isFilling = value;
-            }
+            get => this.isFilling;
+            set => this.isFilling = value;
         }
         public bool IsActive
         {
-            get
-            {
-                return isActive;
-            }
+            get => this.isActive;
             set
             {
-                if (isActive == value)
+                if (this.isActive == value)
                 {
-                    isActive = value;
+                    this.isActive = value;
                 }
                 else
                 {
-                    if (isActive && value == false)
+                    if (this.isActive && value == false)
                     {
                         Messages.Message("ChthonianPitActivityStopped".Translate(), MessageSound.Standard);
                         Sustainer sustainer = (Sustainer)typeof(Building).GetField("sustainerAmbient", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(this);
                         sustainer.End();
-                        isActive = value;
+                        this.isActive = value;
                     }
                     else
                     {
                         Messages.Message("ChthonianPitActivityStarted".Translate(), MessageSound.Standard);
-                        isActive = value;
+                        this.isActive = value;
                     }
                 }
             }
         }
 
-        protected float SanityLossRange
-        {
-            get
-            {
-                return sanityLossRange;
-            }
-        }
-        protected int SanityLossInterval
-        {
-            get
-            {
-                float f = 4f - 0.6f * (float)this.age / 60000f;
-                return Mathf.Clamp(Mathf.RoundToInt(f), 2, 4);
-            }
-        }
+        protected float SanityLossRange => this.sanityLossRange;
+        protected int SanityLossInterval => Mathf.Clamp(Mathf.RoundToInt(4f - 0.6f * this.age / 60000f), 2, 4);
 
         public Building_PitChthonian()
         {
@@ -144,7 +104,7 @@ namespace CosmicHorror
 
         public void ProcessInput()
         {
-            if (!isSacrificing)
+            if (!this.isSacrificing)
             {
                 List<FloatMenuOption> list = new List<FloatMenuOption>();
                 Map map = this.Map;
@@ -182,7 +142,7 @@ namespace CosmicHorror
         private void TryCancelSacrifice(string reason ="")
         {
             Pawn pawn = null;
-            List<Pawn> listeners = Map.mapPawns.AllPawnsSpawned.FindAll(x => x.RaceProps.intelligence == Intelligence.Humanlike);
+            List<Pawn> listeners = this.Map.mapPawns.AllPawnsSpawned.FindAll(x => x.RaceProps.intelligence == Intelligence.Humanlike);
             bool[] flag = new bool[listeners.Count];
             for (int i = 0; i < listeners.Count; i++)
             {
@@ -195,7 +155,7 @@ namespace CosmicHorror
                     }
                 }
             }
-            isSacrificing = false;
+            this.isSacrificing = false;
             Messages.Message("Cancelling sacrifice. " + reason, MessageSound.Negative);
         }
         private void StartSacrifice(Pawn executioner, Pawn sacrifice)
@@ -217,11 +177,13 @@ namespace CosmicHorror
             }
 
             Messages.Message("A sacrifice is starting.", TargetInfo.Invalid, MessageSound.Standard);
-            isSacrificing = true;
+            this.isSacrificing = true;
             
             Cthulhu.Utility.DebugReport("Force Sacrifice called");
-            Job job = new Job(MonsterDefOf.ROM_HaulChthonianSacrifice, sacrifice, this);
-            job.count = 1;
+            Job job = new Job(MonsterDefOf.ROM_HaulChthonianSacrifice, sacrifice, this)
+            {
+                count = 1
+            };
             executioner.jobs.TryTakeOrderedJob(job);
             //executioner.QueueJob(job);
             //executioner.jobs.EndCurrentJob(JobCondition.InterruptForced);
@@ -276,8 +238,7 @@ namespace CosmicHorror
                 if (toRemove != null) { this.container.Remove(toRemove); toRemove = null; }
                 if (pawn == null) return;
 
-                Thing temp = null;
-                this.container.TryDrop(pawn, ThingPlaceMode.Near, out temp);
+                this.container.TryDrop(pawn, ThingPlaceMode.Near, out Thing temp);
 
                 Hediff wormsHediff = HediffMaker.MakeHediff(DefDatabase<HediffDef>.GetNamed("ROM_GutWorms"), pawn, null);
                 wormsHediff.Part = pawn.health.hediffSet.GetBrain();
@@ -295,16 +256,16 @@ namespace CosmicHorror
         public void CheckStatus()
         {
 
-            if (gaveSacrifice)
+            if (this.gaveSacrifice)
             {
                 if (this.container.Count != 0)
                 {
-                    if (ticksToReturn == -999)
+                    if (this.ticksToReturn == -999)
                     {
                         int ran = Rand.Range(1, 2);
-                        ticksToReturn = Find.TickManager.TicksGame + (GenDate.TicksPerDay * ran);
+                        this.ticksToReturn = Find.TickManager.TicksGame + (GenDate.TicksPerDay * ran);
                     }
-                    if (ticksToReturn < Find.TickManager.TicksGame)
+                    if (this.ticksToReturn < Find.TickManager.TicksGame)
                     {
                         TryReturnSacrifice();
                     }
@@ -347,13 +308,14 @@ namespace CosmicHorror
                 if (this.spawnedChthonian.ParentHolder == this.container) return;
             
 
-                if (ticksToDeSpawn == -999) ticksToDeSpawn = 16000;
+                if (this.ticksToDeSpawn == -999)
+                    this.ticksToDeSpawn = 16000;
                 if (GenAI.InDangerousCombat(this.spawnedChthonian) || GenAI.EnemyIsNear(this.spawnedChthonian, 5f))
                 {
-                    ticksToDeSpawn += 10;
+                    this.ticksToDeSpawn += 10;
                 }
-                ticksToDeSpawn--;
-                if (ticksToDeSpawn < 0)
+                this.ticksToDeSpawn--;
+                if (this.ticksToDeSpawn < 0)
                 {
                     this.spawnedChthonian.DeSpawn();
                     this.container.TryAdd(this.spawnedChthonian);
@@ -368,26 +330,24 @@ namespace CosmicHorror
             Faction pawnFaction = Find.FactionManager.FirstFactionOfDef(kindDef.defaultFactionType);
             if (this.lord == null)
             {
-                IntVec3 invalid;
-                if (!CellFinder.TryFindRandomCellNear(base.Position, base.Map, 5, (IntVec3 c) => c.Standable(base.Map) && base.Map.reachability.CanReach(c, this, PathEndMode.Touch, TraverseParms.For(TraverseMode.PassDoors, Danger.Deadly, false)), out invalid))
+                if (!CellFinder.TryFindRandomCellNear(this.Position, this.Map, 5, (IntVec3 c) => c.Standable(this.Map) && this.Map.reachability.CanReach(c, this, PathEndMode.Touch, TraverseParms.For(TraverseMode.PassDoors, Danger.Deadly, false)), out IntVec3 invalid))
                 {
                     Cthulhu.Utility.ErrorReport("Found no place for the Chthonian to spawn " + this);
                     invalid = IntVec3.Invalid;
                 }
                 LordJob_DefendPoint lordJob = new LordJob_DefendPoint(this.Position);
-                this.lord = LordMaker.MakeNewLord(pawnFaction, lordJob, base.Map, null);
+                this.lord = LordMaker.MakeNewLord(pawnFaction, lordJob, this.Map, null);
             }
 
 
             if (this.spawnedChthonian == null)
             {
-                IntVec3 center;
                 if ((from cell in GenAdj.CellsAdjacent8Way(this)
-                     where cell.Walkable(base.Map)
-                     select cell).TryRandomElement(out center))
+                     where cell.Walkable(Map)
+                     select cell).TryRandomElement(out IntVec3 center))
                 {
                     Pawn pawn = PawnGenerator.GeneratePawn(kindDef, pawnFaction);
-                    if (GenPlace.TryPlaceThing(pawn, center, base.Map, ThingPlaceMode.Near, null))
+                    if (GenPlace.TryPlaceThing(pawn, center, this.Map, ThingPlaceMode.Near, null))
                     {
                         this.spawnedChthonian = (CosmicHorrorPawn)pawn;
                         this.lord.AddPawn(pawn);
@@ -395,7 +355,7 @@ namespace CosmicHorror
                     }
                     //Find.WorldPawns.PassToWorld(pawn, PawnDiscardDecideMode.Discard);
                 }
-                if (base.Map == Find.VisibleMap)
+                if (this.Map == Find.VisibleMap)
                 {
                     SoundDef.Named("Pawn_ROM_Chthonian_Scream").PlayOneShotOnCamera();
                 }
@@ -405,8 +365,7 @@ namespace CosmicHorror
             {
                 if (!this.spawnedChthonian.Dead && this.spawnedChthonian.ParentHolder == this.container)
                 {
-                    Thing temp = null;
-                    this.container.TryDrop(this.spawnedChthonian, this.Position.RandomAdjacentCell8Way(), this.Map, ThingPlaceMode.Near, out temp);
+                    this.container.TryDrop(this.spawnedChthonian, this.Position.RandomAdjacentCell8Way(), this.Map, ThingPlaceMode.Near, out Thing temp);
                     if (!this.lord.ownedPawns.Contains(this.spawnedChthonian)) this.lord.AddPawn(this.spawnedChthonian);
                     this.isActive = false;
                     this.ticksToDeSpawn += 16000;
@@ -427,11 +386,11 @@ namespace CosmicHorror
             Vector3 point = Vector3.forward * num;
             Vector3 v = rotation * point;
             IntVec3 b = IntVec3.FromVector3(v);
-            IntVec3 c = base.Position + b;
-            if (base.Map == null) return;
-            if (c.InBounds(base.Map))
+            IntVec3 c = this.Position + b;
+            if (this.Map == null) return;
+            if (c.InBounds(this.Map))
             {
-                Pawn victim = c.GetFirstPawn(base.Map);
+                Pawn victim = c.GetFirstPawn(this.Map);
                 if (victim != null)
                 {
                     Cthulhu.Utility.ApplySanityLoss(victim, 0.1f);
@@ -444,7 +403,7 @@ namespace CosmicHorror
         private void TryCancelFillHole(string reason = "")
         {
             Pawn pawn = null;
-            List<Pawn> listeners = Map.mapPawns.AllPawnsSpawned.FindAll(x => x.RaceProps.intelligence == Intelligence.Humanlike);
+            List<Pawn> listeners = this.Map.mapPawns.AllPawnsSpawned.FindAll(x => x.RaceProps.intelligence == Intelligence.Humanlike);
             bool[] flag = new bool[listeners.Count];
             for (int i = 0; i < listeners.Count; i++)
             {
@@ -457,14 +416,14 @@ namespace CosmicHorror
                     }
                 }
             }
-            isSacrificing = false;
+            this.isSacrificing = false;
             Messages.Message("Cancelling filling the hole. " + reason, MessageSound.Negative);
         }
 
         private void TryCancelFillHole()
         {
             Pawn pawn = null;
-            List<Pawn> listeners = Map.mapPawns.AllPawnsSpawned.FindAll(x => x.RaceProps.intelligence == Intelligence.Humanlike);
+            List<Pawn> listeners = this.Map.mapPawns.AllPawnsSpawned.FindAll(x => x.RaceProps.intelligence == Intelligence.Humanlike);
             bool[] flag = new bool[listeners.Count];
             for (int i = 0; i < listeners.Count; i++)
             {
@@ -477,7 +436,7 @@ namespace CosmicHorror
                     }
                 }
             }
-            isSacrificing = false;
+            this.isSacrificing = false;
             Messages.Message("Cancelling filling the hole.", MessageSound.Negative);
         }
 
@@ -495,7 +454,7 @@ namespace CosmicHorror
             }
 
             Messages.Message(actor.LabelShort + " is going to fill the pit.", TargetInfo.Invalid, MessageSound.Standard);
-            isFilling = true;
+            this.isFilling = true;
 
             Cthulhu.Utility.DebugReport("Force Sacrifice called");
             Job job = new Job(MonsterDefOf.ROM_FillChthonianPit, this);
@@ -541,12 +500,9 @@ namespace CosmicHorror
         }
 
         // Verse.HealthUtility
-        private static IEnumerable<BodyPartRecord> HittablePartsViolence(HediffSet bodyModel)
-        {
-            return from x in bodyModel.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined)
-                   where x.depth == BodyPartDepth.Outside || (x.depth == BodyPartDepth.Inside && x.def.IsSolid(x, bodyModel.hediffs))
-                   select x;
-        }
+        private static IEnumerable<BodyPartRecord> HittablePartsViolence(HediffSet bodyModel) => from x in bodyModel.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined)
+                                                                                                 where x.depth == BodyPartDepth.Outside || (x.depth == BodyPartDepth.Inside && x.def.IsSolid(x, bodyModel.hediffs))
+                                                                                                 select x;
 
 
         // Verse.HealthUtility
@@ -575,7 +531,7 @@ namespace CosmicHorror
                     {
                         def = DamageDefOf.Blunt;
                     }
-                    int amount = Rand.RangeInclusive(Mathf.RoundToInt((float)num2 * 0.65f), num2);
+                    int amount = Rand.RangeInclusive(Mathf.RoundToInt(num2 * 0.65f), num2);
                     BodyPartRecord forceHitPart = bodyPartRecord;
                     DamageInfo dinfo = new DamageInfo(def, amount, -1f, null, forceHitPart, null);
                     dinfo.SetAllowDamagePropagation(false);
@@ -608,9 +564,9 @@ namespace CosmicHorror
                 this.GiveSanityLoss();
             }
             this.rareTicks--;
-            if (rareTicks < 0)
+            if (this.rareTicks < 0)
             {
-                rareTicks = 250;
+                this.rareTicks = 250;
                 CheckStatus();
             }
             TryReturnChthonian();
@@ -631,8 +587,8 @@ namespace CosmicHorror
             }
             if (dinfo.Def.harmsHealth)
             {
-                float num = (float)(this.HitPoints - dinfo.Amount);
-                if ((num < (float)base.MaxHitPoints * 0.98f && dinfo.Instigator != null && dinfo.Instigator.Faction != null) || num < (float)base.MaxHitPoints * 0.9f)
+                float num = this.HitPoints - dinfo.Amount;
+                if ((num < this.MaxHitPoints * 0.98f && dinfo.Instigator != null && dinfo.Instigator.Faction != null) || num < this.MaxHitPoints * 0.9f)
                 {
                     this.TrySpawnChthonian();
                 }
@@ -644,9 +600,9 @@ namespace CosmicHorror
         public override void DrawExtraSelectionOverlays()
         {
             float range = this.sanityLossRange;
-            if (range < 90f && isActive)
+            if (range < 90f && this.isActive)
             {
-                GenDraw.DrawRadiusRing(base.Position, range);
+                GenDraw.DrawRadiusRing(this.Position, range);
             }
         }
 
@@ -687,7 +643,7 @@ namespace CosmicHorror
             {
                 this.age.TicksToDays().ToString("F1")
             }));
-            if (isActive) stringBuilder.AppendLine("CausingSanityLoss".Translate());
+            if (this.isActive) stringBuilder.AppendLine("CausingSanityLoss".Translate());
             else stringBuilder.AppendLine("NotCausingSanityLoss".Translate());
             return stringBuilder.ToString();
         }
@@ -703,36 +659,42 @@ namespace CosmicHorror
                 yield return current;
             }
 
-            if (isActive)
+            if (this.isActive)
             {
-                if (!isSacrificing && !isFilling)
+                if (!this.isSacrificing && !this.isFilling)
                 {
-                    Command_Action command_Action = new Command_Action();
-                    command_Action.action = new Action(this.ProcessInput);
-                    command_Action.defaultLabel = "CommandPitSacrifice".Translate();
-                    command_Action.defaultDesc = "CommandPitSacrificeDesc".Translate();
-                    command_Action.hotKey = KeyBindingDefOf.Misc1;
-                    command_Action.icon = ContentFinder<Texture2D>.Get("UI/Commands/ForPrisoners", true);
+                    Command_Action command_Action = new Command_Action()
+                    {
+                        action = new Action(this.ProcessInput),
+                        defaultLabel = "CommandPitSacrifice".Translate(),
+                        defaultDesc = "CommandPitSacrificeDesc".Translate(),
+                        hotKey = KeyBindingDefOf.Misc1,
+                        icon = ContentFinder<Texture2D>.Get("UI/Commands/ForPrisoners", true)
+                    };
                     yield return command_Action;
                 }
                 else
                 {
-                    Command_Action command_Cancel = new Command_Action();
-                    command_Cancel.action = new Action(this.ProcessInput);
-                    command_Cancel.defaultLabel = "CommandCancelConstructionLabel".Translate();
-                    command_Cancel.defaultDesc = "CommandCancelPitSacrificeDesc".Translate();
-                    command_Cancel.hotKey = KeyBindingDefOf.DesignatorCancel;
-                    command_Cancel.icon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel", true);
+                    Command_Action command_Cancel = new Command_Action()
+                    {
+                        action = new Action(this.ProcessInput),
+                        defaultLabel = "CommandCancelConstructionLabel".Translate(),
+                        defaultDesc = "CommandCancelPitSacrificeDesc".Translate(),
+                        hotKey = KeyBindingDefOf.DesignatorCancel,
+                        icon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel", true)
+                    };
                     yield return command_Cancel;
                 }
             }
-            if (!isFilling && !isSacrificing)
+            if (!this.isFilling && !this.isSacrificing)
             {
 
-                Command_Action command_FillHole = new Command_Action();
-                command_FillHole.action = new Action(this.TryFillHole);
-                command_FillHole.defaultLabel = "CommandFillHole".Translate();
-                if (isActive) command_FillHole.defaultDesc = "CommandFillHoleActiveDesc".Translate();
+                Command_Action command_FillHole = new Command_Action()
+                {
+                    action = new Action(this.TryFillHole),
+                    defaultLabel = "CommandFillHole".Translate()
+                };
+                if (this.isActive) command_FillHole.defaultDesc = "CommandFillHoleActiveDesc".Translate();
                 else command_FillHole.defaultDesc = "CommandFillHoleDesc".Translate();
                 command_FillHole.hotKey = KeyBindingDefOf.Misc1;
                 command_FillHole.icon = ContentFinder<Texture2D>.Get("Ui/Icons/FillHole", true);
@@ -740,12 +702,14 @@ namespace CosmicHorror
             }
             else
             {
-                Command_Action command_Cancel = new Command_Action();
-                command_Cancel.action = new Action(this.TryCancelFillHole);
-                command_Cancel.defaultLabel = "CommandCancelConstructionLabel".Translate();
-                command_Cancel.defaultDesc = "CommandCancelFillHoleDesc".Translate();
-                command_Cancel.hotKey = KeyBindingDefOf.DesignatorCancel;
-                command_Cancel.icon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel", true);
+                Command_Action command_Cancel = new Command_Action()
+                {
+                    action = new Action(this.TryCancelFillHole),
+                    defaultLabel = "CommandCancelConstructionLabel".Translate(),
+                    defaultDesc = "CommandCancelFillHoleDesc".Translate(),
+                    hotKey = KeyBindingDefOf.DesignatorCancel,
+                    icon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel", true)
+                };
                 yield return command_Cancel;
             }
         }

@@ -1,5 +1,4 @@
-﻿using System;
-using Verse;
+﻿using Verse;
 using Verse.AI.Group;
 
 namespace RimWorld
@@ -29,7 +28,7 @@ namespace RimWorld
             stateGraph.StartingToil = lordToil_Stage;
             LordToil startingToil = stateGraph.AttachSubgraph(new LordJob_AssaultColony(this.faction, true, true, false, false, true).CreateGraph()).StartingToil;
             Transition transition = new Transition(lordToil_Stage, startingToil);
-            transition.AddTrigger(new Trigger_TicksPassed(ticksUntilAssault));
+            transition.AddTrigger(new Trigger_TicksPassed(this.ticksUntilAssault));
             transition.AddTrigger(new Trigger_FractionPawnsLost(0.3f));
             transition.AddPreAction(new TransitionAction_WakeAll());
             stateGraph.AddTransition(transition);

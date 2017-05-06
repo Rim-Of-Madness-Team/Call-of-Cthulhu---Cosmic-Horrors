@@ -3,7 +3,6 @@
 // ----------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -14,9 +13,6 @@ using UnityEngine;         // Always needed
 //using VerseBase;         // Material/Graphics handling functions are found here
 using Verse;               // RimWorld universal objects are here (like 'Building')
 using Verse.AI;          // Needed when you do something with the AI
-using Verse.AI.Group;
-using Verse.Sound;       // Needed when you do something with Sound
-using Verse.Noise;       // Needed when you do something with Noises
 using RimWorld;            // RimWorld specific functions are found here (like 'Building_Battery')
 using RimWorld.Planet;   // RimWorld specific functions for world creation
 using System.Reflection;
@@ -57,10 +53,7 @@ namespace Cthulhu
         public static bool loadedFactions = false;
 
 
-        public static bool IsMorning(Map map) { return GenLocalDate.HourInteger(map) > 6 && GenLocalDate.HourInteger(map) < 10; }
-        public static bool IsEvening(Map map) { return GenLocalDate.HourInteger(map) > 18 && GenLocalDate.HourInteger(map) < 22; }
-        public static bool IsNight(Map map) { return GenLocalDate.HourInteger(map) > 22; }
-
+        public static bool IsMorning(Map map) => GenLocalDate.HourInteger(map) > 6 && GenLocalDate.HourInteger(map) < 10; public static bool IsEvening(Map map) => GenLocalDate.HourInteger(map) > 18 && GenLocalDate.HourInteger(map) < 22; public static bool IsNight(Map map) => GenLocalDate.HourInteger(map) > 22;
         public static T GetMod<T>(string s) where T: Mod
         {
             //Call of Cthulhu - Cosmic Horrors
@@ -286,7 +279,7 @@ namespace Cthulhu
             IL_95:
             Log.Error("Tried 100 times to generate age for " + pawn);
             IL_A5:
-            pawn.ageTracker.AgeBiologicalTicks = ((long)((float)num2 * 3600000f) + (long)Rand.Range(0, 3600000));
+            pawn.ageTracker.AgeBiologicalTicks = ((long)(num2 * 3600000f) + Rand.Range(0, 3600000));
             int num3;
             if (Rand.Value < pawn.kindDef.backstoryCryptosleepCommonality)
             {
@@ -309,8 +302,8 @@ namespace Cthulhu
             {
                 num3 = 0;
             }
-            long num5 = (long)GenTicks.TicksAbs - pawn.ageTracker.AgeBiologicalTicks;
-            num5 -= (long)num3 * 3600000L;
+            long num5 = GenTicks.TicksAbs - pawn.ageTracker.AgeBiologicalTicks;
+            num5 -= num3 * 3600000L;
             pawn.ageTracker.BirthAbsTicks = num5;
             if (pawn.ageTracker.AgeBiologicalTicks > pawn.ageTracker.AgeChronologicalTicks)
             {
@@ -328,51 +321,49 @@ namespace Cthulhu
         /// <param name="maxDist"></param>
         /// <param name="pos"></param>
         /// <returns></returns>
-        public static bool TryFindSpawnCell(ThingDef def, IntVec3 nearLoc, Map map, int maxDist, out IntVec3 pos)
-        {
-            ///Find a random cell.
-            return CellFinder.TryFindRandomCellNear(nearLoc, map, maxDist, delegate (IntVec3 x)
-            {
+        public static bool TryFindSpawnCell(ThingDef def, IntVec3 nearLoc, Map map, int maxDist, out IntVec3 pos) => CellFinder.TryFindRandomCellNear(nearLoc, map, maxDist, delegate (IntVec3 x)
+                                                                                                                               {
                 ///Check if the entire area is safe based on the size of the object definition.
                 foreach (IntVec3 current in GenAdj.OccupiedRect(x, Rot4.North, new IntVec2(def.size.x + 2, def.size.z + 2)))
-                {
-                    if (!current.InBounds(map) || current.Fogged(map) || !current.Standable(map) || (current.Roofed(map) && current.GetRoof(map).isThickRoof))
-                    {
-                        return false;
-                    }
-                    if (!current.SupportsStructureType(map, def.terrainAffordanceNeeded))
-                    {
-                        return false;
-                    }
+                                                                                                                                   {
+                                                                                                                                       if (!current.InBounds(map) || current.Fogged(map) || !current.Standable(map) || (current.Roofed(map) && current.GetRoof(map).isThickRoof))
+                                                                                                                                       {
+                                                                                                                                           return false;
+                                                                                                                                       }
+                                                                                                                                       if (!current.SupportsStructureType(map, def.terrainAffordanceNeeded))
+                                                                                                                                       {
+                                                                                                                                           return false;
+                                                                                                                                       }
 
                     ///
                     //  If it has an interaction cell, check to see if it can be reached by colonists.
                     //
                     bool intCanBeReached = true;
-                    if (def.interactionCellOffset != IntVec3.Zero)
-                    {
-                        foreach (Pawn colonist in map.mapPawns.FreeColonistsSpawned)
-                        {
-                            if (!colonist.CanReach(current + def.interactionCellOffset, PathEndMode.ClosestTouch, Danger.Deadly)) intCanBeReached = false;
-                        }
-                    }
-                    if (!intCanBeReached) return false;
+                                                                                                                                       if (def.interactionCellOffset != IntVec3.Zero)
+                                                                                                                                       {
+                                                                                                                                           foreach (Pawn colonist in map.mapPawns.FreeColonistsSpawned)
+                                                                                                                                           {
+                                                                                                                                               if (!colonist.CanReach(current + def.interactionCellOffset, PathEndMode.ClosestTouch, Danger.Deadly))
+                                                                                                                                                   intCanBeReached = false;
+                                                                                                                                           }
+                                                                                                                                       }
+                                                                                                                                       if (!intCanBeReached)
+                                                                                                                                           return false;
                     //
 
                     //Don't wipe existing objets...
                     List<Thing> thingList = current.GetThingList(map);
-                    for (int i = 0; i < thingList.Count; i++)
-                    {
-                        Thing thing = thingList[i];
-                        if (thing.def.category != ThingCategory.Plant && GenSpawn.SpawningWipes(def, thing.def))
-                        {
-                            return false;
-                        }
-                    }
-                }
-                return true;
-            }, out pos);
-        }
+                                                                                                                                       for (int i = 0; i < thingList.Count; i++)
+                                                                                                                                       {
+                                                                                                                                           Thing thing = thingList[i];
+                                                                                                                                           if (thing.def.category != ThingCategory.Plant && GenSpawn.SpawningWipes(def, thing.def))
+                                                                                                                                           {
+                                                                                                                                               return false;
+                                                                                                                                           }
+                                                                                                                                       }
+                                                                                                                                   }
+                                                                                                                                   return true;
+                                                                                                                               }, out pos);
 
         public static BodyPartRecord GetHeart(HediffSet set)
         {
@@ -552,15 +543,9 @@ namespace Cthulhu
             }
         }
 
-        public static int GetSocialSkill(Pawn p)
-        {
-            return p.skills.GetSkill(SkillDefOf.Social).Level;
-        }
+        public static int GetSocialSkill(Pawn p) => p.skills.GetSkill(SkillDefOf.Social).Level;
 
-        public static int GetResearchSkill(Pawn p)
-        {
-            return p.skills.GetSkill(SkillDefOf.Intellectual).Level;
-        }
+        public static int GetResearchSkill(Pawn p) => p.skills.GetSkill(SkillDefOf.Intellectual).Level;
 
         public static bool IsCosmicHorrorsLoaded()
         {
@@ -659,13 +644,7 @@ namespace Cthulhu
             return;
         }
 
-        public static string Prefix
-        {
-            get
-            {
-                return ModProps.main + " :: " + ModProps.mod + " " + ModProps.version + " :: ";
-            }
-        }
+        public static string Prefix => ModProps.main + " :: " + ModProps.mod + " " + ModProps.version + " :: ";
 
         public static void DebugReport(string x)
         {
@@ -675,10 +654,7 @@ namespace Cthulhu
             }
         }
 
-        public static void ErrorReport(string x)
-        {
-            Log.Error(Prefix + x);
-        }
+        public static void ErrorReport(string x) => Log.Error(Prefix + x);
 
 
     }

@@ -1,13 +1,8 @@
 ﻿
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 //Maybe?
 using RimWorld;
-using RimWorld.Planet;
 using Verse.AI;
-using UnityEngine;
 using Verse;
 using Verse.Sound;
 
@@ -41,20 +36,20 @@ namespace CosmicHorror
             if (pawn.Downed) return null;
             if (pawn.Dead) return null;
             if (!pawn.Spawned) return null;
-            if (!setStartTicks)
+            if (!this.setStartTicks)
             {
-                startTicks = Find.TickManager.TicksGame + ticksUntilStartingAttack.RandomInRange;
-                setStartTicks = true;
+                this.startTicks = Find.TickManager.TicksGame + this.ticksUntilStartingAttack.RandomInRange;
+                this.setStartTicks = true;
                 return new Job(JobDefOf.WaitWander) { expiryInterval = 90 };
             }
-            if (Find.TickManager.TicksGame > (startTicks / 2) && showedMessage == false)
+            if (Find.TickManager.TicksGame > (this.startTicks / 2) && this.showedMessage == false)
             {
-                showedMessage = true;
+                this.showedMessage = true;
                 SoundDef warnSound = SoundDef.Named("Pawn_ROM_StarVampire_Warning");
                 warnSound.PlayOneShotOnCamera();
                 Messages.Message("StarVampireIncidentMessage2".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, pawn.Map), MessageSound.Standard);
             }
-            if (Find.TickManager.TicksGame < startTicks)
+            if (Find.TickManager.TicksGame < this.startTicks)
             {
                 return new Job(JobDefOf.WaitWander) { expiryInterval = 90 };
             }
@@ -102,8 +97,7 @@ namespace CosmicHorror
                     Thing thing3;
                     using (PawnPath path = pawn.Map.pathFinder.FindPath(pawn.Position, thing2.Position, TraverseParms.For(pawn, Danger.Deadly, TraverseMode.PassDoors, false), PathEndMode.OnCell))
                     {
-                        IntVec3 vec;
-                        thing3 = path.FirstBlockingBuilding(out vec, pawn);
+                        thing3 = path.FirstBlockingBuilding(out IntVec3 vec, pawn);
                     }
                     if (thing3 != null)
                     {

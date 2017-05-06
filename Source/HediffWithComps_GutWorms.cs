@@ -1,12 +1,7 @@
 ﻿using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UnityEngine;
 using Verse;
-using Verse.AI;
-using Verse.AI.Group;
 
 namespace CosmicHorror
 {
@@ -19,7 +14,7 @@ namespace CosmicHorror
         public override void PostMake()
         {
             base.PostMake();
-            chthonianFaction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("ROM_Chthonian"));
+            this.chthonianFaction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("ROM_Chthonian"));
         }
 
         public override void ExposeData()
