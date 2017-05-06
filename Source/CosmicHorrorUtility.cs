@@ -5,14 +5,52 @@ using Verse;
 using Harmony;
 using Verse.AI;
 using System;
+using UnityEngine;
+using System.Reflection.Emit;
+using System.Reflection;
 
 namespace CosmicHorror
 {
     [StaticConstructorOnStartup]
     static class Utility
     {
-        static Utility() => HarmonyInstance.Create("rimworld.cosmic_Horrors").Patch(AccessTools.Method(typeof(AttackTargetFinder), nameof(AttackTargetFinder.BestAttackTarget)),
+        static Utility()
+        {
+            HarmonyInstance harmony = HarmonyInstance.Create("rimworld.cosmic_Horrors");
+            harmony.Patch(AccessTools.Method(typeof(AttackTargetFinder), nameof(AttackTargetFinder.BestAttackTarget)),
                 new HarmonyMethod(typeof(Utility), nameof(BestAttackTargetPrefix)), null);
+            harmony.Patch(AccessTools.Constructor(AccessTools.TypeByName("Wound"), new Type[] { typeof(Pawn) }), null, null, new HarmonyMethod(typeof(Utility), nameof(WoundConstructorTranspiler)));
+        }
+
+        
+
+        static IEnumerable<CodeInstruction> WoundConstructorTranspiler(IEnumerable<CodeInstruction> instructions, ILGenerator il)
+        {
+            FieldInfo pawnDefInfo = AccessTools.Field(typeof(Thing), nameof(Thing.def));
+            FieldInfo defNameInfo = AccessTools.Field(typeof(Def), nameof(Def.defName));
+            MethodInfo startsWithInfo = AccessTools.Method(typeof(String), nameof(String.StartsWith), new Type[] { typeof(string) });
+            bool didIt = false;
+            List<CodeInstruction> instructionList = instructions.ToList();
+            for (int i=0; i<instructionList.Count; i++)
+            {
+                CodeInstruction instruction = instructionList[i];
+                
+                if(!didIt && instruction.opcode == OpCodes.Bne_Un)
+                {
+                    Label label = il.DefineLabel();
+                    instructionList[i + 1].labels = new List<Label>() { label };
+                    yield return new CodeInstruction(OpCodes.Beq_S, label);
+                    yield return new CodeInstruction(OpCodes.Ldarg_1);
+                    yield return new CodeInstruction(OpCodes.Ldfld, pawnDefInfo);
+                    yield return new CodeInstruction(OpCodes.Ldfld, defNameInfo);
+                    yield return new CodeInstruction(OpCodes.Ldstr, "ROM_");
+                    yield return new CodeInstruction(OpCodes.Callvirt, startsWithInfo);
+                    instruction.opcode = OpCodes.Brfalse_S;
+                    didIt = true;
+                }
+                yield return instruction;
+            }
+        }
 
         static void BestAttackTargetPrefix(ref Predicate<Thing> validator)
         {
