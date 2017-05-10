@@ -30,5 +30,7 @@ namespace CosmicHorror
 
         public static JobDef ROM_FillChthonianPit;
 
+        public static HediffDef ROM_IntracranialPressure;
+
     }
 }

@@ -5,22 +5,17 @@
     <workerClass>DamageWorker_AddInjury</workerClass>
   </DamageDef>
 
-  <DamageDef ParentName="LocalInjuryBase">
+  <DamageDef>
     <defName>ROM_Psychic</defName>
     <label>pscychic attack</label>
-    <externalViolence>true</externalViolence>	
+    <externalViolence>false</externalViolence>	
     <makesBlood>false</makesBlood>
     <harmsHealth>false</harmsHealth>	
     <deathMessage>{0} has died from psychic shock.</deathMessage>
     <hediff>ROM_Psionic</hediff>
     <impactSoundType>Electric</impactSoundType>
     <armorCategory>Electric</armorCategory>
-    <additionalHediffs>
-      <li>
-        <hediff>ROM_IntracranialPressure</hediff>
-        <severityPerDamageDealt>0.005</severityPerDamageDealt>
-      </li>
-    </additionalHediffs>	
+	<workerClass>CosmicHorror.DamageWorker_CranialPressure</workerClass>
   </DamageDef>
   
   <DamageDef ParentName="LocalInjuryBase">
@@ -36,7 +31,7 @@
     <additionalHediffs>
       <li>
         <hediff>BloodLoss</hediff>
-        <severityPerDamageDealt>0.05</severityPerDamageDealt>
+        <severityPerDamageDealt>0.025</severityPerDamageDealt>
       </li>
     </additionalHediffs>	
   </DamageDef>

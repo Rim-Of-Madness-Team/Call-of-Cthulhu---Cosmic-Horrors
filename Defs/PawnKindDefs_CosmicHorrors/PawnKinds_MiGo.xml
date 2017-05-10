@@ -267,6 +267,7 @@
 		<regenRate>0.0</regenRate>
 		<regenInterval>0</regenInterval>
 		<sanityLossRate>0.008</sanityLossRate>
+		<painFactor>1</painFactor>		
 	  </li>
 	</modExtensions>			
 	</ThingDef>

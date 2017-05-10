@@ -59,6 +59,7 @@
     <Compile Include="CosmicHorrorUtility.cs" />
     <Compile Include="CthulhuNoCCL.cs" />
     <Compile Include="CthulhuUtility.cs" />
+    <Compile Include="DamageWorker_CranialPressure.cs" />
     <Compile Include="DetourAttribute.cs" />
     <Compile Include="HarmonyCosmicHorrors.cs" />
     <Compile Include="HediffWithComps_GutWorms.cs" />

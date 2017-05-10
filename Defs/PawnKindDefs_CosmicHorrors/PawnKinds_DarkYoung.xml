@@ -172,6 +172,7 @@
 		<regenRate>0.0125</regenRate>
 		<regenInterval>1000</regenInterval>
 		<sanityLossRate>0.004</sanityLossRate>
+		<painFactor>0.25</painFactor>
 	  </li>
 	</modExtensions>		
 	</ThingDef>

@@ -160,7 +160,16 @@
     </butcherProducts>
     <recipes>
       <li>Euthanize</li>
-    </recipes>	
+    </recipes>
+	<modExtensions>
+	  <li Class = "CosmicHorror.PawnExtension">
+	    <invisible>false</invisible>
+		<regenRate>0.0</regenRate>
+		<regenInterval>0</regenInterval>
+		<sanityLossRate>0.04</sanityLossRate>
+		<painFactor>0.3</painFactor>		
+	  </li>
+	</modExtensions>	
   </ThingDef>
   
   <!-- CHTHONIAN LARVA -->

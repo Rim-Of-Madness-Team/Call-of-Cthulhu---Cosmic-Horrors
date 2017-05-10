@@ -143,6 +143,7 @@
       <bloodDef>ROM_FilthBloodDeepOne</bloodDef>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>ROM_CosmicHorror</thinkTreeMain>
+	  <thinkTreeConstant>ROM_CosmicHorrorConstant</thinkTreeConstant>	  
       <body>ROM_DeepOneBody</body>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.05</baseHealthScale>
@@ -194,6 +195,15 @@
     <recipes>
       <li>Euthanize</li>
     </recipes>
+	<modExtensions>
+	  <li Class = "CosmicHorror.PawnExtension">
+	    <invisible>false</invisible>
+		<regenRate>0.0</regenRate>
+		<regenInterval>0</regenInterval>
+		<sanityLossRate>0.008</sanityLossRate>
+		<painFactor>1</painFactor>		
+	  </li>
+	</modExtensions>	
   </ThingDef>
   <ThingDef ParentName="BaseCosmicHorrorRace">
     <defName>ROM_DeepOneGreat</defName>
@@ -227,6 +237,7 @@
       <bloodDef>ROM_FilthBloodDeepOne</bloodDef>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>ROM_CosmicHorror</thinkTreeMain>
+	  <thinkTreeConstant>ROM_CosmicHorrorConstant</thinkTreeConstant>
       <body>ROM_DeepOneBody</body>
       <baseBodySize>1.5</baseBodySize>
       <baseHealthScale>3.0</baseHealthScale>
@@ -283,6 +294,7 @@
 		<regenRate>0.0</regenRate>
 		<regenInterval>0</regenInterval>
 		<sanityLossRate>0.008</sanityLossRate>
+		<painFactor>1</painFactor>		
 	  </li>
 	</modExtensions>		
   </ThingDef>

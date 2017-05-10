@@ -394,13 +394,16 @@ namespace CosmicHorror
                             {
                                 if (!target.RaceProps.IsMechanoid)
                                 {
-                                    if (!this.Dead && this.MapHeld != null)
+                                    if (!this.isInvisible)
                                     {
-                                        ObservationEffectLive(target);
-                                    }
-                                    else
-                                    {
-                                        ObservationEffectDead(target);
+                                        if (!this.Dead && this.MapHeld != null)
+                                        {
+                                            ObservationEffectLive(target);
+                                        }
+                                        else
+                                        {
+                                            ObservationEffectDead(target);
+                                        }
                                     }
                                 }
                             }
