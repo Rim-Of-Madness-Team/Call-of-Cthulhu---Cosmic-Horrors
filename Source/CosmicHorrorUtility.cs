@@ -83,9 +83,14 @@ namespace CosmicHorror
                      where at.Walkable(map) && !at.Fogged(map) && at.InBounds(map)
                      select cell).TryRandomElement(out at))
                 {
+                    
                     CosmicHorrorPawn pawn = null;
                     if (fac != Faction.OfPlayer)
                     {
+                        //PawnGenerationRequest request = new PawnGenerationRequest(kindDef, fac, PawnGenerationContext.NonPlayer, map.Tile);
+                        //Pawn item = PawnGenerator.GeneratePawn(request);
+                        //list.Add(item);
+
                         PawnGenerationRequest request = new PawnGenerationRequest(kindDef, fac, PawnGenerationContext.NonPlayer, map.Tile);
                         pawn = (CosmicHorrorPawn)GenSpawn.Spawn(PawnGenerator.GeneratePawn(request), at, map);
                     }

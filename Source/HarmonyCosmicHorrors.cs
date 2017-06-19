@@ -22,30 +22,86 @@ namespace CosmicHorror
             harmony.Patch(AccessTools.Constructor(AccessTools.TypeByName("Wound"), new Type[] { typeof(Pawn) }), null, null, new HarmonyMethod(typeof(HarmonyPatches), nameof(WoundConstructorTranspiler)));
             harmony.Patch(AccessTools.Method(typeof(ThingSelectionUtility), nameof(ThingSelectionUtility.SelectableByMapClick)), null, new HarmonyMethod(typeof(HarmonyPatches), nameof(SelectableByMapClickPostfix)));
             harmony.Patch(AccessTools.Method(typeof(HediffSet), "CalculatePain"), new HarmonyMethod(typeof(HarmonyPatches), "CalculatePain_PreFix"), null);
+            harmony.Patch(AccessTools.Method(AccessTools.TypeByName("RimWorld.TrashUtility"), "TrashJob"), new HarmonyMethod(typeof(HarmonyPatches), "TrashJob_PreFix"), null);
+            harmony.Patch(AccessTools.Method(typeof(CollectionsMassCalculator), "CapacityTransferables"), new HarmonyMethod(typeof(HarmonyPatches), "CapacityTransferables_PreFix"), null);
         }
 
+        // RimWorld.CollectionsMassCalculator
+        public static bool CapacityTransferables_PreFix(List<TransferableOneWay> transferables, ref float __result)
+        {
+            Cthulhu.Utility.DebugReport("Detour Called: CollectionMassCalc");
+            //List<ThingStackPart> tmpThingStackParts
+            bool detour = false;
+            for (int i = 0; i < transferables.Count; i++)
+            {
+                if (transferables[i].HasAnyThing)
+                {
+                    if (transferables[i].AnyThing.def.defName == "ROM_DarkYoung") { detour = true; break; }
+                }
+            }
+            if (detour)
+            {
+                ((List<ThingStackPart>)AccessTools.Field(typeof(CollectionsMassCalculator), "tmpThingStackParts").GetValue(null)).Clear();
+                for (int i = 0; i < transferables.Count; i++)
+                {
+                    if (transferables[i].HasAnyThing)
+                    {
+                        if (transferables[i].AnyThing is Pawn ||
+                            transferables[i].AnyThing.def.defName == "ROM_DarkYoung")
+                        {
+                            TransferableUtility.TransferNoSplit(transferables[i].things, transferables[i].CountToTransfer, delegate (Thing originalThing, int toTake)
+                            {
+                                ((List<ThingStackPart>)AccessTools.Field(typeof(CollectionsMassCalculator), "tmpThingStackParts").GetValue(null)).Add(new ThingStackPart(originalThing, toTake));
+
+                            }, false, false);
+                        }
+                    }
+                }
+                float result = CollectionsMassCalculator.Capacity(((List<ThingStackPart>)AccessTools.Field(typeof(CollectionsMassCalculator), "tmpThingStackParts").GetValue(null)));
+                ((List<ThingStackPart>)AccessTools.Field(typeof(CollectionsMassCalculator), "tmpThingStackParts").GetValue(null)).Clear();
+                __result = result;
+                return false;
+            }
+            return true;
+        }
+
+        // RimWorld.TrashUtility
+        public static bool TrashJob_Prefix(Pawn pawn, Thing t, ref Job __result)
+        {
+            if (pawn is CosmicHorrorPawn)
+            {
+                Job job3 = new Job(JobDefOf.AttackMelee, t);
+                AccessTools.Method(AccessTools.TypeByName("RimWorld.TrashUtility"), "FinalizeTrashJob").Invoke(null, new object[] { job3 });
+                __result = job3;
+                return false;
+            }
+            return true;
+        }
 
         // Verse.HediffSet
         static bool CalculatePain_PreFix(HediffSet __instance, ref float __result)
         {
-            CosmicHorrorPawn p = __instance.pawn as CosmicHorrorPawn;
-            if (p != null)
+            if (__instance?.pawn is CosmicHorrorPawn p)
             {
-                if (p.Dead)
+                if (p?.Dead ?? false)
                 {
                     __result = 0f;
                     return false;
                 }
                 float num = 0f;
-                for (int i = 0; i < __instance.hediffs.Count; i++)
+                float num2 = 0f;
+                if (__instance.hediffs != null && __instance.hediffs.Count > 0)
                 {
-                    num += __instance.hediffs[i].PainOffset;
-                }
-                float num2 = num / p.HealthScale;
-                num2 *= p.PawnExtension.painFactor;
-                for (int j = 0; j < __instance.hediffs.Count; j++)
-                {
-                    num2 *= __instance.hediffs[j].PainFactor;
+                    foreach (Hediff hediff in __instance.hediffs)
+                    {
+                        num += hediff?.PainOffset ?? 0;
+                    }
+                    num2 = num / p?.HealthScale ?? 1;
+                    num2 *= p?.PawnExtension?.painFactor ?? 1;
+                    foreach (Hediff hedifft in __instance.hediffs)
+                    {
+                        num2 *= hedifft?.PainFactor ?? 1;
+                    }
                 }
                 __result = Mathf.Clamp(num2, 0f, 1f);
                 return false;

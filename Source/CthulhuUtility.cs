@@ -106,18 +106,7 @@ namespace Cthulhu
             if (pawn == null) return false;
             if (pawn.Dead) return false;
             if (pawn.Downed && !allowDowned) return false;
-            List<WorkTags> list = pawn.story.DisabledWorkTags.ToList<WorkTags>();
-            if (list.Count == 0)
-            {
-                return true;
-            }
-            else
-            {
-                foreach (WorkTags current in list)
-                {
-                    if (current == WorkTags.Violent) return false;
-                }
-            }
+            if (pawn.story.WorkTagIsDisabled(WorkTags.Violent)) return false;
             return true;
         }
 
@@ -519,23 +508,31 @@ namespace Cthulhu
                 });
             }
         }
+
+
+        public static bool HasSanityLoss(Pawn pawn)
+        {
+            string sanityLossDef = (!IsCosmicHorrorsLoaded()) ? AltSanityLossDef : SanityLossDef;
+            var pawnSanityHediff = pawn.health.hediffSet.GetFirstHediffOfDef(DefDatabase<HediffDef>.GetNamed(sanityLossDef));
+
+            return pawnSanityHediff != null;
+        }
+
         public static void ApplySanityLoss(Pawn pawn, float sanityLoss = 0.3f, float sanityLossMax = 1.0f)
         {
             if (pawn == null) return;
-            string sanityLossDef;
-            sanityLossDef = SanityLossDef;
-            if (!IsCosmicHorrorsLoaded()) sanityLossDef = AltSanityLossDef;
-            Hediff pawnSanityHediff = pawn.health.hediffSet.GetFirstHediffOfDef(DefDatabase<HediffDef>.GetNamed(sanityLossDef));
-            float trueMax = sanityLossMax;
+            string sanityLossDef = (!IsCosmicHorrorsLoaded()) ? AltSanityLossDef : SanityLossDef;
+
+            var pawnSanityHediff = pawn.health.hediffSet.GetFirstHediffOfDef(DefDatabase<HediffDef>.GetNamed(sanityLossDef));
             if (pawnSanityHediff != null)
             {
-                if (pawnSanityHediff.Severity > trueMax) trueMax = pawnSanityHediff.Severity;
+                if (pawnSanityHediff.Severity > sanityLossMax) sanityLossMax = pawnSanityHediff.Severity;
                 float result = pawnSanityHediff.Severity;
                 result += sanityLoss;
-                result = Mathf.Clamp(result, 0.0f, trueMax);
+                result = Mathf.Clamp(result, 0.0f, sanityLossMax);
                 pawnSanityHediff.Severity = result;
             }
-            else
+            else if (sanityLoss > 0)
             {
                 Hediff sanityLossHediff = HediffMaker.MakeHediff(DefDatabase<HediffDef>.GetNamed(sanityLossDef), pawn, null);
 
@@ -544,6 +541,7 @@ namespace Cthulhu
 
             }
         }
+
 
         public static int GetSocialSkill(Pawn p) => p.skills.GetSkill(SkillDefOf.Social).Level;
 

@@ -2,7 +2,7 @@
 <Defs>
   <!-- Chthonian -->
   <!-- KIND DEFS -->
-  
+
   <!-- ADULT CHTHONIAN -->
   <PawnKindDef Name="ROM_Chthonian" Abstract="True">
     <bodyGraphicData>
@@ -12,7 +12,7 @@
       <shaderType>Cutout</shaderType>
     </dessicatedBodyGraphicData>
   </PawnKindDef>
-  
+
   <PawnKindDef>
     <defName>ROM_Chthonian</defName>
     <label>Chthonian</label>
@@ -95,7 +95,7 @@
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
-      </li>	  
+      </li>
     </verbs>
     <race>
       <body>ROM_ChthonianBody</body>
@@ -108,21 +108,21 @@
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>ROM_CosmicHorror</thinkTreeMain>
       <leatherColor>(78,60,61)</leatherColor>
-      <leatherInsulation>1.35</leatherInsulation>	  
+      <leatherInsulation>1.35</leatherInsulation>
       <leatherLabel>chthonian chitin</leatherLabel>
-      <leatherCommonalityFactor>0.01</leatherCommonalityFactor>	  
-      <leatherMarketValueFactor>8</leatherMarketValueFactor>	  
+      <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
+      <leatherMarketValueFactor>8</leatherMarketValueFactor>
       <leatherStatFactors>
         <ArmorRating_Sharp>3.4</ArmorRating_Sharp>
         <ArmorRating_Blunt>3.9</ArmorRating_Blunt>
         <ArmorRating_Heat>4.0</ArmorRating_Heat>
         <ArmorRating_Electric>4.2</ArmorRating_Electric>
       </leatherStatFactors>
-      <trainableIntelligence>Advanced</trainableIntelligence>	
+      <trainableIntelligence>Advanced</trainableIntelligence>
       <gestationPeriodDays>100</gestationPeriodDays>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.035</manhunterOnTameFailChance>
-      <wildness>0.989</wildness>	  
+      <wildness>0.989</wildness>
       <lifeExpectancy>2500</lifeExpectancy>
       <lifeStageAges>
         <li>
@@ -137,14 +137,14 @@
           <minAge>500</minAge>
           <soundWounded>Pawn_ROM_Chthonian_Wounded</soundWounded>
           <soundDeath>Pawn_ROM_Chthonian_Death</soundDeath>
-          <soundCall>Pawn_ROM_Chthonian_Call</soundCall>		  
+          <soundCall>Pawn_ROM_Chthonian_Call</soundCall>
         </li>
         <li>
           <def>ROM_Eldritch</def>
           <minAge>2000</minAge>
           <soundWounded>Pawn_ROM_Chthonian_Wounded</soundWounded>
           <soundDeath>Pawn_ROM_Chthonian_Death</soundDeath>
-          <soundCall>Pawn_ROM_Chthonian_Call</soundCall>		  
+          <soundCall>Pawn_ROM_Chthonian_Call</soundCall>
         </li>
       </lifeStageAges>
       <soundCallIntervalRange>
@@ -167,11 +167,11 @@
 		<regenRate>0.0</regenRate>
 		<regenInterval>0</regenInterval>
 		<sanityLossRate>0.04</sanityLossRate>
-		<painFactor>0.3</painFactor>		
+		<painFactor>0.3</painFactor>
 	  </li>
-	</modExtensions>	
+	</modExtensions>
   </ThingDef>
-  
+
   <!-- CHTHONIAN LARVA -->
   <PawnKindDef Name="ROM_ChthonianLarva" Abstract="True">
     <bodyGraphicData>
@@ -181,8 +181,8 @@
       <shaderType>Cutout</shaderType>
     </dessicatedBodyGraphicData>
   </PawnKindDef>
-    
-  
+
+
   <PawnKindDef>
     <defName>ROM_ChthonianLarva</defName>
     <label>Chthonian larva</label>
@@ -192,7 +192,7 @@
     <aiAvoidCover>true</aiAvoidCover>
     <lifeStages>
       <li>
-        <label>chthonian larva</label>	  
+        <label>chthonian larva</label>
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_ChthonianLarva</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
@@ -203,9 +203,9 @@
           </shadowData>
         </bodyGraphicData>
       </li>
-    </lifeStages>	
+    </lifeStages>
   </PawnKindDef>
-  
+
   <ThingDef ParentName="BaseCosmicHorrorRace">
     <defName>ROM_ChthonianLarva</defName>
     <label>Chthonian Larva</label>
@@ -247,7 +247,7 @@
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
-      </li>	  
+      </li>
     </verbs>
     <race>
       <body>ROM_ChthonianBody</body>
@@ -263,7 +263,7 @@
       <trainableIntelligence>Advanced</trainableIntelligence>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.035</manhunterOnTameFailChance>
-      <wildness>0.95</wildness>	  
+      <wildness>0.95</wildness>
       <lifeExpectancy>2500</lifeExpectancy>
       <lifeStageAges>
         <li>
@@ -288,6 +288,16 @@
     <recipes>
       <li>Euthanize</li>
     </recipes>
-  </ThingDef>  
-  
+
+	<modExtensions>
+	  <li Class = "CosmicHorror.PawnExtension">
+	    <invisible>false</invisible>
+		<regenRate>0.0</regenRate>
+		<regenInterval>0</regenInterval>
+		<sanityLossRate>0.04</sanityLossRate>
+		<painFactor>0.3</painFactor>
+	  </li>
+	</modExtensions>	
+  </ThingDef>
+
 </Defs>

@@ -9,7 +9,7 @@ namespace CosmicHorror
     class HediffWithComps_GutWorms : HediffWithComps
     {
         private Faction chthonianFaction;
-
+        private bool triggered = false;
 
         public override void PostMake()
         {
@@ -17,54 +17,24 @@ namespace CosmicHorror
             this.chthonianFaction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("ROM_Chthonian"));
         }
 
-        public override void ExposeData()
-        {
-            base.ExposeData();
-            Scribe_References.Look<Faction>(ref this.chthonianFaction, "chthonianFaction", false);
-        }
-
         public override void PostTick()
         {
             base.PostTick();
-
-            try
-            {
-
-                if (this.pawn != null)
+            
+                if (!triggered &&
+                    (pawn?.Spawned ?? false) &&
+                    CurStageIndex >= 3 &&
+                    (this?.pawn?.IsHashIntervalTick(300) ?? false) &&
+                    (this?.pawn?.health?.hediffSet != null))
                 {
-                    if (this.pawn.Spawned)
-                    {
-                        if (this.CurStageIndex >= 3 && this.pawn.IsHashIntervalTick(300))
-                        {
-                            if (this.pawn.health != null)
-                            {
-                                if (this.pawn.health.hediffSet != null)
-                                {
-                                    Cthulhu.Utility.DebugReport("CurStage :: " + this.CurStageIndex.ToString());
-                                    Hediff hediff = this.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("ROM_GutWorms"));
-                                    if (hediff != null)
-                                    {
-                                        hediff.Severity = 1f;
-                                        Cthulhu.Utility.DebugReport("GutWorms Triggered");
-                                        TrySpawningLarva();
-                                        DamageInfo dinfo = new DamageInfo(DamageDefOf.Bite, 99999, -1f, null, this.pawn.health.hediffSet.GetBrain(), null);
-                                        this.pawn.health.RemoveHediff(hediff);
-                                        this.pawn.TakeDamage(dinfo);
-                                    }
-                                    else
-                                    {
-                                        hediff = HediffMaker.MakeHediff(HediffDef.Named("ROM_GutWorms"), this.pawn, null);
-                                        hediff.Severity = 1f;
-                                        this.pawn.health.AddHediff(hediff, null, null);
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    triggered = true;
+                    Cthulhu.Utility.DebugReport("CurStage :: " + this.CurStageIndex.ToString());
+                    this.Severity = 1f;
+                    Cthulhu.Utility.DebugReport("GutWorms Triggered");
+                    TrySpawningLarva();
+                    this.pawn.TakeDamage(new DamageInfo(DamageDefOf.Bite, 9999, -1f, this.pawn, this.pawn.health.hediffSet.GetBrain(), null));
+                    this.pawn.health.RemoveHediff(this);
                 }
-            }
-            catch (NullReferenceException)
-            { }
         }
 
         public void TrySpawningLarva()
@@ -75,21 +45,30 @@ namespace CosmicHorror
             IntVec3 intVec = this.pawn.Position;
 
             //Spawn Larva
-            List<CosmicHorrorPawn> pawns = new List<CosmicHorrorPawn>();
-            //pawns.AddRange(Utility.SpawnHorrorsOfCountAt(MonsterDefOf.ROM_ChthonianLarva, intVec, map, Rand.Range(3, 5), null, false, false));
-            
-            pawns.AddRange(Utility.SpawnHorrorsOfCountAt(MonsterDefOf.ROM_ChthonianLarva, intVec, map, Rand.Range(2, 3), Faction.OfPlayer, false, false));
-
-            foreach (CosmicHorrorPawn pawn in pawns)
+            var pawns = new List<CosmicHorrorPawn>(
+                Utility.SpawnHorrorsOfCountAt(MonsterDefOf.ROM_ChthonianLarva, intVec, map, Rand.Range(2, 3), Faction.OfPlayer, false, false)
+                );
+            if (pawns.Count > 0)
             {
-                pawn.ageTracker.AgeBiologicalTicks = 0;
-                pawn.ageTracker.AgeChronologicalTicks = 0;
+                foreach (CosmicHorrorPawn pawn in pawns)
+                {
+                    pawn.ageTracker.AgeBiologicalTicks = 0;
+                    pawn.ageTracker.AgeChronologicalTicks = 0;
+                }
             }
-
             Messages.Message("ChthonianLarvaSpawned".Translate(new object[]
             {
                 this.pawn.NameStringShort
             }), MessageSound.Benefit);
         }
+
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_References.Look<Faction>(ref this.chthonianFaction, "chthonianFaction", false);
+            Scribe_Values.Look<bool>(ref this.triggered, "triggered", false);
+        }
+
     }
 }

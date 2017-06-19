@@ -62,7 +62,7 @@ namespace CosmicHorror
             {
                 Predicate<Thing> validator = t => ((t != pawn) && t.Spawned) && (t is Building_Turret);
                 CosmicHorrorPawn pawn2 = pawn as CosmicHorrorPawn;
-                Thing targetA = GenClosest.ClosestThingReachable(pawn.Position, pawn.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial), PathEndMode.ClosestTouch, TraverseParms.For(pawn2, Danger.Deadly, TraverseMode.PassDoors, true), 999f, validator, null, 5, false);
+                Thing targetA = GenClosest.ClosestThingReachable(pawn.Position, pawn.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial), PathEndMode.ClosestTouch, TraverseParms.For(pawn2, Danger.Deadly, TraverseMode.PassDoors, true), 999f, validator, null);
                 if (targetA != null)
                 {
 
@@ -90,7 +90,7 @@ namespace CosmicHorror
                     }
                     return true;
                 };
-                Thing thing2 = GenClosest.ClosestThingReachable(pawn.Position, pawn.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.Pawn), PathEndMode.OnCell, TraverseParms.For(pawn2, Danger.Deadly, TraverseMode.PassDoors, false), notRaidingAttackRange, predicate2, null, 50, true);
+                Thing thing2 = GenClosest.ClosestThingReachable(pawn.Position, pawn.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.Pawn), PathEndMode.OnCell, TraverseParms.For(pawn2, Danger.Deadly, TraverseMode.PassDoors, false), notRaidingAttackRange, predicate2);
                 Pawn pawnTarget = thing2 as Pawn;
                 if (thing2 != null)
                 {

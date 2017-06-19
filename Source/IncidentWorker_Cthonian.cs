@@ -8,8 +8,6 @@ namespace CosmicHorror
     {
         private const int IncidentMinimumPoints = 300;
 
-
-
         protected virtual int CountToSpawn => 1;
 
         protected override bool CanFireNowSub(IIncidentTarget target)

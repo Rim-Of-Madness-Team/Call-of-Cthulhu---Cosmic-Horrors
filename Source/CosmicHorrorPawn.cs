@@ -110,7 +110,7 @@ namespace CosmicHorror
                         }
                         return true;
                     };
-                    Thing thing2 = GenClosest.ClosestThingReachable(this.Position, this.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.Pawn), PathEndMode.OnCell, TraverseParms.For(this, Danger.Deadly, TraverseMode.PassDoors, false), 3, predicate2, null, 50, true);
+                    Thing thing2 = GenClosest.ClosestThingReachable(this.Position, this.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.Pawn), PathEndMode.OnCell, TraverseParms.For(this, Danger.Deadly, TraverseMode.PassDoors, false), 3, predicate2);
                     if (thing2 != null)
                     {
                         return true;
@@ -383,7 +383,7 @@ namespace CosmicHorror
                 //This finds a suitable target pawn.
                 Predicate<Thing> predicate = this.Predicate;
                 
-                Thing thing2 = GenClosest.ClosestThingReachable(this.PositionHeld, this.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.Pawn), PathEndMode.OnCell, TraverseParms.For(this, Danger.Deadly, TraverseMode.PassDoors, false), 15, predicate, null, 50, true);
+                Thing thing2 = GenClosest.ClosestThingReachable(this.PositionHeld, this.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.Pawn), PathEndMode.OnCell, TraverseParms.For(this, Danger.Deadly, TraverseMode.PassDoors, false), 15, predicate);
                 if (thing2 != null && thing2.Position != IntVec3.Invalid)
                 {
                     if (GenSight.LineOfSight(thing2.Position, this.PositionHeld, this.MapHeld))
