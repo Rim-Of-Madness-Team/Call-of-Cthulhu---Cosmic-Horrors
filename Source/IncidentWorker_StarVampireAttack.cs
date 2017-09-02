@@ -14,8 +14,7 @@ namespace CosmicHorror
     public class IncidentWorker_StarVampireAttack : IncidentWorker
     {
         private CosmicHorrorPawn iwVampire;   //The Star Vampire Pawn
-        private PawnKindDef iwKind;           //For the PawnType
-        private Pawn iwPawn;                  //For the PawnGenerator
+        private ThingDef iwDef;           //For the custom Spawner from JecsTools
         private Faction iwFac;                //The Star Vampire Faction
         private IntVec3 iwLoc;                //The Star Vampire location
         private SoundDef iwWarn;              //The Star Vampire Warning Noise
@@ -38,12 +37,10 @@ namespace CosmicHorror
             ResolveSpawnCenter(parms);
 
             //Initialize variables.
-            this.iwKind      = PawnKindDef.Named("ROM_StarVampire");
-            this.iwFac       = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("ROM_StarVampire"));
-            this.iwWarn      = SoundDef.Named("Pawn_ROM_StarVampire_Warning");
-            this.iwPawn      = null; //PawnGenerator.GeneratePawn(iwKind, iwFac);
-            this.iwVampire   = null; //iwPawn as CosmicHorrorPawn;
-            this.iwLoc       = CellFinder.RandomClosewalkCellNear(parms.spawnCenter, (Map)parms.target, 8);
+            this.iwDef        = MonsterDefOf.ROM_StarVampireSpawner;
+            this.iwWarn       = MonsterDefOf.Pawn_ROM_StarVampire_Warning;
+            this.iwVampire    = null; //iwPawn as CosmicHorrorPawn;
+            this.iwLoc        = CellFinder.RandomClosewalkCellNear(parms.spawnCenter, (Map)parms.target, 8);
 
             //In-case there's something silly happening...
             if (this.iwFac == null)
@@ -110,19 +107,20 @@ namespace CosmicHorror
 
             for (int i = 0; i < iwCount; i++)
             {
-                CosmicHorrorPawn temp = null;
-                this.iwPawn = null;
-                this.iwVampire = null;
-                this.iwPawn = PawnGenerator.GeneratePawn(this.iwKind, this.iwFac);
-                this.iwVampire = this.iwPawn as CosmicHorrorPawn;
+                Thing iwSpawner = ThingMaker.MakeThing(iwDef, null);
+                GenPlace.TryPlaceThing(iwSpawner, iwLoc, iwMap, ThingPlaceMode.Near);
+            //    CosmicHorrorPawn temp = null;
+            //    this.iwVampire = null;
+            //    this.iwSpawner = ThingMaker.MakeThing(this.iwKind, this.iwFac);
+            //    this.iwVampire = this.iwPawn as CosmicHorrorPawn;
 
-                if (this.lord == null)
-                {
-                    LordJob_StarVampire lordJob = new LordJob_StarVampire(this.iwFac, this.iwLoc);
-                    this.lord = LordMaker.MakeNewLord(this.iwFac, lordJob, iwMap, null);
-                }
-                temp = (CosmicHorrorPawn)GenSpawn.Spawn(this.iwVampire, this.iwLoc, iwMap);
-                this.lord.AddPawn(temp);
+                //if (this.lord == null)
+                //{
+                //    LordJob_StarVampire lordJob = new LordJob_StarVampire(this.iwFac, this.iwLoc);
+                //    this.lord = LordMaker.MakeNewLord(this.iwFac, lordJob, iwMap, null);
+                //}
+                //temp = (CosmicHorrorPawn)GenSpawn.Spawn(this.iwVampire, this.iwLoc, iwMap);
+                //this.lord.AddPawn(temp);
             }
         }
     }

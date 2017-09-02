@@ -10,7 +10,7 @@ using Verse.Sound;
 
 namespace CosmicHorror
 {
-    internal class CosmicHorrorPawn : Pawn
+    public class CosmicHorrorPawn : Pawn
     {
         //Fields
         public float sanityLossRate = 0.03f;

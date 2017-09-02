@@ -26,6 +26,10 @@ namespace CosmicHorror
 
         public static PawnKindDef ROM_StarVampire;
 
+        public static ThingDef ROM_StarVampireSpawner;
+
+        public static SoundDef Pawn_ROM_StarVampire_Warning;
+
         public static JobDef ROM_HaulChthonianSacrifice;
 
         public static JobDef ROM_FillChthonianPit;

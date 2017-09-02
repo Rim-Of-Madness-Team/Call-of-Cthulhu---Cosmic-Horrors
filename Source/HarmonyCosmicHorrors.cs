@@ -24,7 +24,21 @@ namespace CosmicHorror
             harmony.Patch(AccessTools.Method(typeof(HediffSet), "CalculatePain"), new HarmonyMethod(typeof(HarmonyPatches), "CalculatePain_PreFix"), null);
             harmony.Patch(AccessTools.Method(AccessTools.TypeByName("RimWorld.TrashUtility"), "TrashJob"), new HarmonyMethod(typeof(HarmonyPatches), "TrashJob_PreFix"), null);
             harmony.Patch(AccessTools.Method(typeof(CollectionsMassCalculator), "CapacityTransferables"), new HarmonyMethod(typeof(HarmonyPatches), "CapacityTransferables_PreFix"), null);
+            harmony.Patch(AccessTools.Method(typeof(LordToil_AssaultColony), "UpdateAllDuties"), null, 
+                new HarmonyMethod(typeof(HarmonyPatches), "UpdateAllDuties_PostFix"), null);
         }
+
+        // RimWorld.LordToil_AssaultColony
+        public static void UpdateAllDuties_PostFix(LordToil_AssaultColony __instance)
+        {
+            for (int i = 0; i < __instance.lord.ownedPawns.Count; i++)
+            {
+                if (__instance.lord.ownedPawns[i] is CosmicHorrorPawn cPawn && cPawn.def.defName != "ROM_Shoggoth")
+                    cPawn.mindState.duty = new PawnDuty(DefDatabase<DutyDef>.GetNamed("ROM_AssaultAndKidnap"));
+            }
+
+        }
+
 
         // RimWorld.CollectionsMassCalculator
         public static bool CapacityTransferables_PreFix(List<TransferableOneWay> transferables, ref float __result)

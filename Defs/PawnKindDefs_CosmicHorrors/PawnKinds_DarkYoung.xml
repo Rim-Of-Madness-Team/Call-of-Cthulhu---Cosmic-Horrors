@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- DARK YOUNG -->
-	
+
 	<!-- PAWN KIND DEFS -->
 	<PawnKindDef Name="ROM_DarkYoung" Abstract="True">
 		<bodyGraphicData>
@@ -10,7 +10,7 @@
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
 			<shaderType>Cutout</shaderType>
-		</dessicatedBodyGraphicData>		
+		</dessicatedBodyGraphicData>
 	</PawnKindDef>
 
 	<PawnKindDef>
@@ -100,11 +100,11 @@
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
-			<packAnimal>true</packAnimal>			
+			<packAnimal>true</packAnimal>
 			<body>ROM_DarkYoungBody</body>
 			<thinkTreeMain>ROM_DarkYoung</thinkTreeMain>
 			<thinkTreeConstant>ROM_DarkYoungConstant</thinkTreeConstant>
-			<nameGenerator>NamerAnimalGenericMale</nameGenerator>
+			<nameGenerator>HPLovecraft_NamerAuthorMale</nameGenerator>
 			<baseBodySize>3.5</baseBodySize>
 			<baseHungerRate>3.0</baseHungerRate>
 			<baseHealthScale>3.6</baseHealthScale>
@@ -114,7 +114,7 @@
 			<lifeExpectancy>1200</lifeExpectancy>
 			<trainableIntelligence>Advanced</trainableIntelligence>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<manhunterOnTameFailChance>0.025</manhunterOnTameFailChance> 
+			<manhunterOnTameFailChance>0.025</manhunterOnTameFailChance>
 			<leatherColor>(47,34,75)</leatherColor>
 			<leatherLabel>dark young barkskin</leatherLabel>
 			<leatherCommonalityFactor>0.01</leatherCommonalityFactor>
@@ -124,9 +124,9 @@
 				<ArmorRating_Heat>1.0</ArmorRating_Heat>
 				<ArmorRating_Electric>4.0</ArmorRating_Electric>
 				<Insulation_Cold>0.65</Insulation_Cold>
-				<Insulation_Heat>0.65</Insulation_Heat>		
+				<Insulation_Heat>0.65</Insulation_Heat>
 			</leatherStatFactors>
-			<leatherMarketValueFactor>7.5</leatherMarketValueFactor>	  
+			<leatherMarketValueFactor>7.5</leatherMarketValueFactor>
 			<lifeStageAges>
 				<li>
 					<def>ROM_Spawn</def>
@@ -137,7 +137,7 @@
 					<minAge>100</minAge>
 					<soundWounded>Pawn_ROM_DarkYoung_Wounded</soundWounded>
 					<soundDeath>Pawn_ROM_DarkYoung_Death</soundDeath>
-					<soundCall>Pawn_ROM_DarkYoung_Call</soundCall>  
+					<soundCall>Pawn_ROM_DarkYoung_Call</soundCall>
 				</li>
 				<li>
 					<def>ROM_Ancient</def>
@@ -153,19 +153,19 @@
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 			  <hediffGiverSets>
 				<li>ROM_NonBleeder</li>
-			  </hediffGiverSets>			
+			  </hediffGiverSets>
 		</race>
 		<tradeTags>
 			<li>ExoticAnimal</li>
 		</tradeTags>
 		<butcherProducts>
 			<ROM_RawCHFood_DarkYoungMeat>50</ROM_RawCHFood_DarkYoungMeat>
-		</butcherProducts>				
+		</butcherProducts>
 		<recipes>
 			<li>ExciseCarcinoma</li>
 			<li>RemoveBodyPart</li>
 			<li>Euthanize</li>
-		</recipes>	  
+		</recipes>
 	<modExtensions>
 	  <li Class = "CosmicHorror.PawnExtension">
 	    <invisible>false</invisible>
@@ -174,7 +174,7 @@
 		<sanityLossRate>0.004</sanityLossRate>
 		<painFactor>0.25</painFactor>
 	  </li>
-	</modExtensions>		
+	</modExtensions>
 	</ThingDef>
 
 </Defs>

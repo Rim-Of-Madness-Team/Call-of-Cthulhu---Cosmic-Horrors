@@ -29,7 +29,7 @@
 					<depth>Inside</depth>
 				</li>
 				<li>
-					<def>ROM_Lung</def>
+					<def>ROM_LungSecond</def>
 					<coverage>0.01</coverage>
 					<depth>Inside</depth>
 				</li>
@@ -39,7 +39,7 @@
 					<depth>Inside</depth>
 				</li>
 				<li>
-					<def>ROM_Kidney</def>
+					<def>ROM_KidneySecond</def>
 					<coverage>0.01</coverage>
 					<depth>Inside</depth>
 				</li>
@@ -53,7 +53,7 @@
 					<coverage>0.1</coverage>
 				</li>
 				<li>
-					<def>ROM_Maw</def>
+					<def>ROM_MawSecond</def>
 					<coverage>0.02</coverage>
 				</li>
 				<li>
@@ -61,11 +61,11 @@
 					<coverage>0.01</coverage>
 				</li>
 				<li>
-					<def>ROM_Eye</def>
+					<def>ROM_EyeSecond</def>
 					<coverage>0.01</coverage>
 				</li>
 				<li>
-					<def>ROM_Eye</def>
+					<def>ROM_EyeThird</def>
 					<coverage>0.01</coverage>
 				</li>
 				<!-- 56 -->
@@ -77,15 +77,15 @@
 					</groups>
 					<parts>
 						<li>
-							<def>ROM_Eye</def>
+							<def>ROM_EyeFourth</def>
 							<coverage>0.01</coverage>
 						</li>
 						<li>
-							<def>ROM_Maw</def>
+							<def>ROM_MawThird</def>
 							<coverage>0.02</coverage>
 							<groups>
 								<li>Teeth</li>
-							</groups>							
+							</groups>
 						</li>
 					</parts>
 				</li>
@@ -97,15 +97,15 @@
 					</groups>
 					<parts>
 						<li>
-							<def>ROM_Eye</def>
+							<def>ROM_EyeFifth</def>
 							<coverage>0.01</coverage>
 						</li>
 						<li>
-							<def>ROM_Maw</def>
+							<def>ROM_MawFourth</def>
 							<coverage>0.02</coverage>
 							<groups>
 								<li>Teeth</li>
-							</groups>						
+							</groups>
 						</li>
 					</parts>
 				</li>
@@ -117,15 +117,15 @@
 					</groups>
 					<parts>
 						<li>
-							<def>ROM_Eye</def>
+							<def>ROM_EyeSixth</def>
 							<coverage>0.01</coverage>
 						</li>
 						<li>
-							<def>ROM_Maw</def>
+							<def>ROM_MawFifth</def>
 							<coverage>0.02</coverage>
 							<groups>
 								<li>Teeth</li>
-							</groups>							
+							</groups>
 						</li>
 					</parts>
 				</li>
@@ -137,15 +137,15 @@
 					</groups>
 					<parts>
 						<li>
-							<def>ROM_Eye</def>
+							<def>ROM_EyeSeventh</def>
 							<coverage>0.01</coverage>
 						</li>
 						<li>
-							<def>ROM_Maw</def>
+							<def>ROM_MawSixth</def>
 							<coverage>0.02</coverage>
 							<groups>
 								<li>Teeth</li>
-							</groups>							
+							</groups>
 						</li>
 					</parts>
 				</li>
@@ -157,11 +157,11 @@
 					</groups>
 					<parts>
 						<li>
-							<def>ROM_Eye</def>
+							<def>ROM_EyeEighth</def>
 							<coverage>0.01</coverage>
 						</li>
 						<li>
-							<def>ROM_Maw</def>
+							<def>ROM_MawSeventh</def>
 							<coverage>0.02</coverage>
 							<groups>
 								<li>Teeth</li>
@@ -177,11 +177,11 @@
 					</groups>
 					<parts>
 						<li>
-							<def>ROM_Eye</def>
+							<def>ROM_EyeNinth</def>
 							<coverage>0.01</coverage>
 						</li>
 						<li>
-							<def>ROM_Maw</def>
+							<def>ROM_MawEighth</def>
 							<coverage>0.02</coverage>
 							<groups>
 								<li>Teeth</li>
@@ -197,11 +197,11 @@
 					</groups>
 					<parts>
 						<li>
-							<def>ROM_Eye</def>
+							<def>ROM_EyeTenth</def>
 							<coverage>0.01</coverage>
 						</li>
 						<li>
-							<def>ROM_Maw</def>
+							<def>ROM_MawNinth</def>
 							<coverage>0.02</coverage>
 							<groups>
 								<li>Teeth</li>
@@ -233,7 +233,7 @@
 					</groups>
 					<parts>
 						<li>
-							<def>ROM_Hoof</def>
+							<def>ROM_HoofSecond</def>
 							<coverage>0.03</coverage>
 						</li>
 					</parts>
@@ -247,7 +247,7 @@
 					</groups>
 					<parts>
 						<li>
-							<def>ROM_Hoof</def>
+							<def>ROM_HoofThird</def>
 							<coverage>0.03</coverage>
 						</li>
 					</parts>

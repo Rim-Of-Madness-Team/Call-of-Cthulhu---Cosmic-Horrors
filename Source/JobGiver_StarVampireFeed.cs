@@ -15,18 +15,18 @@ namespace CosmicHorror
         private const float WaitChance = 0.5f;
         private const int WaitTicks = 90;
         private const float notRaidingAttackRange = 999.9f;
-        protected IntRange ticksUntilStartingAttack = new IntRange(2000, 4000);
-        protected int startTicks;
-        protected bool setStartTicks = false;
-        protected bool showedMessage = false;
+        //protected IntRange ticksUntilStartingAttack = new IntRange(2000, 4000);
+        //protected int startTicks;
+        //protected bool setStartTicks = false;
+        //protected bool showedMessage = false;
         
         public override ThinkNode DeepCopy(bool resolve = true)
         {
             JobGiver_StarVampireFeed jobGiver_StarVampireFeed = (JobGiver_StarVampireFeed)base.DeepCopy(resolve);
             //jobGiver_StarVampireFeed.ticksUntilStartingAttack = this.ticksUntilStartingAttack;
-            jobGiver_StarVampireFeed.startTicks = this.startTicks;
-            jobGiver_StarVampireFeed.setStartTicks = this.setStartTicks;
-            jobGiver_StarVampireFeed.showedMessage = this.showedMessage;
+            //jobGiver_StarVampireFeed.startTicks = this.startTicks;
+            //jobGiver_StarVampireFeed.setStartTicks = this.setStartTicks;
+            //jobGiver_StarVampireFeed.showedMessage = this.showedMessage;
             return jobGiver_StarVampireFeed;
         }
 
@@ -36,23 +36,23 @@ namespace CosmicHorror
             if (pawn.Downed) return null;
             if (pawn.Dead) return null;
             if (!pawn.Spawned) return null;
-            if (!this.setStartTicks)
-            {
-                this.startTicks = Find.TickManager.TicksGame + this.ticksUntilStartingAttack.RandomInRange;
-                this.setStartTicks = true;
-                return new Job(JobDefOf.WaitWander) { expiryInterval = 90 };
-            }
-            if (Find.TickManager.TicksGame > (this.startTicks / 2) && this.showedMessage == false)
-            {
-                this.showedMessage = true;
-                SoundDef warnSound = SoundDef.Named("Pawn_ROM_StarVampire_Warning");
-                warnSound.PlayOneShotOnCamera();
-                Messages.Message("StarVampireIncidentMessage2".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, pawn.Map), MessageSound.Standard);
-            }
-            if (Find.TickManager.TicksGame < this.startTicks)
-            {
-                return new Job(JobDefOf.WaitWander) { expiryInterval = 90 };
-            }
+            //if (!this.setStartTicks)
+            //{
+            //    this.startTicks = Find.TickManager.TicksGame + this.ticksUntilStartingAttack.RandomInRange;
+            //    this.setStartTicks = true;
+            //    return new Job(JobDefOf.WaitWander) { expiryInterval = 90 };
+            //}
+            //if (Find.TickManager.TicksGame > (this.startTicks / 2) && this.showedMessage == false)
+            //{
+            //    this.showedMessage = true;
+            //    SoundDef warnSound = SoundDef.Named("Pawn_ROM_StarVampire_Warning");
+            //    warnSound.PlayOneShotOnCamera();
+            //    Messages.Message("StarVampireIncidentMessage2".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, pawn.Map), MessageSound.Standard);
+            //}
+            //if (Find.TickManager.TicksGame < this.startTicks)
+            //{
+            //    return new Job(JobDefOf.WaitWander) { expiryInterval = 90 };
+            //}
 
             if (Rand.Value < 0.5f)
             {

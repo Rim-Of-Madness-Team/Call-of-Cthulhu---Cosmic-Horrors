@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-    <RaidCosmicHorrors.label>공포 습격</RaidCosmicHorrors.label>
+    <ROM_RaidCosmicHorrors.label>공포 습격</ROM_RaidCosmicHorrors.label>
 
-    <StarVampireAttack.label>스타 뱀파이어 공격</StarVampireAttack.label>
-    <StarVampireAttack.letterLabel>냉기</StarVampireAttack.letterLabel>
-    <StarVampireAttack.letterText>기분나쁜 침묵이 땅으로부터 밀려옵니다. 뭔가 다가오고 있습니다.</StarVampireAttack.letterText>
+    <ROM_StarVampireAttack.label>스타 뱀파이어 공격</ROM_StarVampireAttack.label>
+    <ROM_StarVampireAttack.letterLabel>냉기</ROM_StarVampireAttack.letterLabel>
+    <ROM_StarVampireAttack.letterText>기분나쁜 침묵이 땅으로부터 밀려옵니다. 뭔가 다가오고 있습니다.</ROM_StarVampireAttack.letterText>
 
-    <DarkYoung.label>다크 영</DarkYoung.label>
+    <ROM_DarkYoung.label>다크 영</ROM_DarkYoung.label>
 
     <ROM_ChthonianPit.label>기괴한 싱크 홀 (크토니안)</ROM_ChthonianPit.label>
     <ROM_ChthonianPit.letterLabel>기괴한 싱크 홀</ROM_ChthonianPit.letterLabel>

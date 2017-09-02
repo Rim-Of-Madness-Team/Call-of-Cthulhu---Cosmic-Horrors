@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="Building_PitChthonian.cs" />
     <Compile Include="CosmicHorrorPawnExtension.cs" />
+    <Compile Include="CosmicHorrorPawn_StarVampire.cs" />
     <Compile Include="CosmicHorrorUtility.cs" />
     <Compile Include="CthulhuUtility.cs" />
     <Compile Include="DamageWorker_CranialPressure.cs" />

@@ -79,9 +79,39 @@
     <forceNormalGearQuality>false</forceNormalGearQuality>
   </PawnKindDef>
   <!-- RACE DEFS -->
+  <ThingDef>
+    <defName>ROM_StarVampireSpawner</defName>
+    <label>Star Vampire Spawner</label>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>BlankTex</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <selectable>false</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Normal</tickerType>
+    <alwaysHaulable>false</alwaysHaulable>
+    <comps>
+      <li Class="CompDelayedSpawner.CompProperties_DelayedSpawner">
+        <spawnList>
+          <li>
+            <pawnKind>ROM_StarVampire</pawnKind>
+            <faction>ROM_StarVampire</faction>
+          </li>
+        </spawnList>
+        <tickRate>60</tickRate>
+        <ticksUntilSpawning>35</ticksUntilSpawning>
+        <spawnsOnce>true</spawnsOnce>
+        <destroyAfterSpawn>true</destroyAfterSpawn>
+      </li>
+    </comps>
+  </ThingDef>
   <ThingDef ParentName="BaseCosmicHorrorRace">
     <defName>ROM_StarVampire</defName>
     <label>Star Vampire</label>
+    <thingClass>CosmicHorror.CosmicHorrorPawn_StarVampire</thingClass>
     <description>It is invisible until it feeds - the devoured blood slowly reveals its bloated form as its veins are filled. Its obscene maw is surrounded by tentacles, each tipped with either talons or hungry suckers. It descends from the stars to feed and returns with a tittering laugh.</description>
     <statBases>
       <MoveSpeed>11.0</MoveSpeed>
@@ -179,6 +209,6 @@
 		<sanityLossRate>0.04</sanityLossRate>
 		<painFactor>0.5</painFactor>
 	  </li>
-	</modExtensions>	
+	</modExtensions>
   </ThingDef>
 </Defs>

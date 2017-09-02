@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-    <MiGo.label>미고 드론</MiGo.label>
+    <ROM_MiGo.label>미고 드론</ROM_MiGo.label>
 
-    <MiGoCaster.label>미고 캐스터</MiGoCaster.label>
+    <ROM_MiGoCaster.label>미고 캐스터</ROM_MiGoCaster.label>
 
 </LanguageData>

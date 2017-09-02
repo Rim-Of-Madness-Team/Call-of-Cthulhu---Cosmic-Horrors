@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-    <HaulSacrifice.reportString>TargetB(을)를 제물로 바침.</HaulSacrifice.reportString>
+    <ROM_HaulChthonianSacrifice.reportString>TargetB(을)를 제물로 바침.</ROM_HaulChthonianSacrifice.reportString>
 
-    <FillChthonianPit.reportString>구덩이를 채움.</FillChthonianPit.reportString>
+    <ROM_FillChthonianPit.reportString>구덩이를 채움.</ROM_FillChthonianPit.reportString>
 
 </LanguageData>
