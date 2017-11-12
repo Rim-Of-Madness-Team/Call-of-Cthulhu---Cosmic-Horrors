@@ -233,6 +233,7 @@
               <groups>
                 <li>UpperHead</li>
                 <li>FullHead</li>
+				<li>HeadAttackTool</li>
               </groups>
               <parts>
                 <li>
@@ -356,7 +357,7 @@
                   <coverage>0.2</coverage>
                   <height>Bottom</height>
                   <groups>
-                    <li>ROM_Claws</li>
+                    <li>ROM_LeftClaws</li>
                   </groups>
                 </li>
               </parts>
@@ -398,7 +399,7 @@
                   <coverage>0.2</coverage>
                   <height>Bottom</height>
                   <groups>
-                    <li>ROM_Claws</li>
+                    <li>ROM_RightClaws</li>
                   </groups>
                 </li>
               </parts>

@@ -49,7 +49,7 @@ namespace CosmicHorror
                 {
                     if (!this.gaveSacrifice && value)
                     {
-                        Messages.Message("ChthonianPitActivityStopped".Translate(), MessageSound.Standard);
+                        Messages.Message("ChthonianPitActivityStopped".Translate(), MessageTypeDefOf.SituationResolved);
                     }
                 }
                 this.gaveSacrifice = value;
@@ -78,14 +78,14 @@ namespace CosmicHorror
                 {
                     if (this.isActive && value == false)
                     {
-                        Messages.Message("ChthonianPitActivityStopped".Translate(), MessageSound.Standard);
+                        Messages.Message("ChthonianPitActivityStopped".Translate(), MessageTypeDefOf.SituationResolved);
                         Sustainer sustainer = (Sustainer)typeof(Building).GetField("sustainerAmbient", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(this);
                         sustainer.End();
                         this.isActive = value;
                     }
                     else
                     {
-                        Messages.Message("ChthonianPitActivityStarted".Translate(), MessageSound.Standard);
+                        Messages.Message("ChthonianPitActivityStarted".Translate(), MessageTypeDefOf.SituationResolved);
                         this.isActive = value;
                     }
                 }
@@ -156,7 +156,7 @@ namespace CosmicHorror
                 }
             }
             this.isSacrificing = false;
-            Messages.Message("Cancelling sacrifice. " + reason, MessageSound.Negative);
+            Messages.Message("Cancelling sacrifice. " + reason, MessageTypeDefOf.NegativeEvent);
         }
         private void StartSacrifice(Pawn executioner, Pawn sacrifice)
         {
@@ -176,7 +176,7 @@ namespace CosmicHorror
                 return;
             }
 
-            Messages.Message("A sacrifice is starting.", TargetInfo.Invalid, MessageSound.Standard);
+            Messages.Message("A sacrifice is starting.", TargetInfo.Invalid, MessageTypeDefOf.SituationResolved);
             this.isSacrificing = true;
             
             Cthulhu.Utility.DebugReport("Force Sacrifice called");
@@ -217,7 +217,7 @@ namespace CosmicHorror
             }
             else
             {
-                Messages.Message("Cannot find executioner to carry out sacrifice", MessageSound.RejectInput);
+                Messages.Message("Cannot find executioner to carry out sacrifice", MessageTypeDefOf.RejectInput);
             }
         }
         private void TryReturnSacrifice()
@@ -247,7 +247,7 @@ namespace CosmicHorror
 
                 Building_PitChthonian.GiveInjuriesToForceDowned(pawn);
 
-                Find.LetterStack.ReceiveLetter("ChthonianSacrificeReturnedLabel".Translate(), "ChthonianSacrificeReturnedDesc".Translate(), LetterDefOf.BadNonUrgent, new TargetInfo(pawn), null);
+                Find.LetterStack.ReceiveLetter("ChthonianSacrificeReturnedLabel".Translate(), "ChthonianSacrificeReturnedDesc".Translate(), LetterDefOf.ThreatSmall, new TargetInfo(pawn), null);
                 //TaleRecorder.RecordTale(TaleDefOf.RaidArrived, new object[0]);
 
             }
@@ -417,7 +417,7 @@ namespace CosmicHorror
                 }
             }
             this.isSacrificing = false;
-            Messages.Message("Cancelling filling the hole. " + reason, MessageSound.Negative);
+            Messages.Message("Cancelling filling the hole. " + reason, MessageTypeDefOf.NegativeEvent);
         }
 
         private void TryCancelFillHole()
@@ -437,7 +437,7 @@ namespace CosmicHorror
                 }
             }
             this.isSacrificing = false;
-            Messages.Message("Cancelling filling the hole.", MessageSound.Negative);
+            Messages.Message("Cancelling filling the hole.", MessageTypeDefOf.NegativeEvent);
         }
 
         private void StartFillHole(Pawn actor)
@@ -453,7 +453,7 @@ namespace CosmicHorror
                 return;
             }
 
-            Messages.Message(actor.LabelShort + " is going to fill the pit.", TargetInfo.Invalid, MessageSound.Standard);
+            Messages.Message(actor.LabelShort + " is going to fill the pit.", TargetInfo.Invalid, MessageTypeDefOf.SituationResolved);
             this.isFilling = true;
 
             Cthulhu.Utility.DebugReport("Force Sacrifice called");
@@ -638,14 +638,14 @@ namespace CosmicHorror
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            if (base.GetInspectString() != "") stringBuilder.AppendLine(base.GetInspectString());
+            if (base.GetInspectString() != "") stringBuilder.Append(base.GetInspectString());
             stringBuilder.AppendLine("DiscoveredDaysAgo".Translate(new object[]
             {
                 this.age.TicksToDays().ToString("F1")
             }));
             if (this.isActive) stringBuilder.AppendLine("CausingSanityLoss".Translate());
             else stringBuilder.AppendLine("NotCausingSanityLoss".Translate());
-            return stringBuilder.ToString();
+            return stringBuilder.ToString().TrimEndNewlines();
         }
 
 

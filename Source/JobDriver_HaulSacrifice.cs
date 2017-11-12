@@ -11,6 +11,7 @@ using System.Diagnostics;
 using Verse;               // RimWorld universal objects are here (like 'Building')
 using Verse.AI;          // Needed when you do something with the AI
 using RimWorld;            // RimWorld specific functions are found here (like 'Building_Battery')
+using System;
 //using RimWorld.SquadAI;  // RimWorld specific functions for squad brains 
 
 namespace CosmicHorror
@@ -21,9 +22,9 @@ namespace CosmicHorror
         private const TargetIndex AltarIndex = TargetIndex.B;
         private string customString = "";
 
-        protected Pawn Takee => (Pawn)base.CurJob.GetTarget(TargetIndex.A).Thing;
+        protected Pawn Takee => (Pawn)base.job.GetTarget(TargetIndex.A).Thing;
 
-        protected Building_PitChthonian DropAltar => (Building_PitChthonian)base.CurJob.GetTarget(TargetIndex.B).Thing;
+        protected Building_PitChthonian DropAltar => (Building_PitChthonian)base.job.GetTarget(TargetIndex.B).Thing;
 
         [DebuggerHidden]
         protected override IEnumerable<Toil> MakeNewToils()
@@ -134,6 +135,11 @@ namespace CosmicHorror
                         this.pawn,
                         this.Takee
             });
+        }
+
+        public override bool TryMakePreToilReservations()
+        {
+            return true;
         }
     }
 }

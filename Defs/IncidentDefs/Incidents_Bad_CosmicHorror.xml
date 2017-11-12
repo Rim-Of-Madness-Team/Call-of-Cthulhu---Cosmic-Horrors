@@ -5,7 +5,7 @@
   <IncidentDef>
     <defName>ROM_RaidCosmicHorrors</defName>
     <label>horror assault</label>
-    <targetType>MapPlayerHome</targetType>
+    <targetTypes><li>MapPlayerHome</li></targetTypes>
     <workerClass>CosmicHorror.IncidentWorker_RaidCosmicHorrors</workerClass>
     <baseChance>5.0</baseChance>
     <category>ThreatBig</category>
@@ -15,12 +15,12 @@
   <IncidentDef>
     <defName>ROM_StarVampireAttack</defName>
 	<label>star vampire attack</label>
-    <targetType>MapPlayerHome</targetType>
+    <targetTypes><li>MapPlayerHome</li></targetTypes>
     <workerClass>CosmicHorror.IncidentWorker_StarVampireAttack</workerClass>
     <category>ThreatBig</category>
 	<letterLabel>A chill</letterLabel>
 	<letterText>An eerie calm has washed over the land. Something is coming.</letterText>
-	<letterDef>BadUrgent</letterDef>
+	<letterDef>ThreatBig</letterDef>
 	<baseChance>2.3</baseChance>
     <pointsScaleable>true</pointsScaleable>
     <minThreatPoints>450</minThreatPoints>
@@ -31,7 +31,7 @@
   <IncidentDef>
     <defName>ROM_DarkYoung</defName>
     <label>dark young</label>
-    <targetType>MapPlayerHome</targetType>
+    <targetTypes><li>MapPlayerHome</li></targetTypes>
     <workerClass>CosmicHorror.IncidentWorker_DarkYoung</workerClass>
 	<category>ThreatSmall</category>
 	<earliestDay>10</earliestDay>
@@ -45,12 +45,12 @@
   <IncidentDef>
     <defName>ROM_ChthonianPit</defName>
     <label>strange sinkhole (chthonian)</label>
-    <targetType>MapPlayerHome</targetType>
+    <targetTypes><li>MapPlayerHome</li></targetTypes>
     <workerClass>CosmicHorror.IncidentWorker_PitChthonian</workerClass>
 	<earliestDay>14</earliestDay>
     <letterLabel>Strange Sinkhole</letterLabel>
     <letterText>A massive sinkhole has opened up near your colony.\n\nA colossal beast writhes beneath, clawing at the minds of your colony with unseen fingers.\n\nIt demands a sacrifice. Feed it or destroy it quickly.</letterText>
-    <letterDef>BadNonUrgent</letterDef>
+    <letterDef>ThreatBig</letterDef>
     <baseChance>1.5</baseChance>
     <minRefireDays>14</minRefireDays>
     <tags>

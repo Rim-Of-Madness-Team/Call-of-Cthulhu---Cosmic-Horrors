@@ -74,29 +74,47 @@
 			<ComfyTemperatureMax>65</ComfyTemperatureMax>
 			<MarketValue>2400</MarketValue>
 		</statBases>
-		<verbs>
-			<li>
-				<verbClass>Verb_MeleeAttack</verbClass>
-				<defaultCooldownTime>1.5</defaultCooldownTime>
-				<meleeDamageBaseAmount>12</meleeDamageBaseAmount>
-				<meleeDamageDef>Blunt</meleeDamageDef>
-				<linkedBodyPartsGroup>ROM_Hooves</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<verbClass>Verb_MeleeAttack</verbClass>
-				<defaultCooldownTime>0.9</defaultCooldownTime>
-				<meleeDamageBaseAmount>14</meleeDamageBaseAmount>
-				<meleeDamageDef>Blunt</meleeDamageDef>
-				<linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<verbClass>Verb_MeleeAttack</verbClass>
-				<defaultCooldownTime>1.5</defaultCooldownTime>
-				<meleeDamageBaseAmount>12</meleeDamageBaseAmount>
-				<meleeDamageDef>ToxicBite</meleeDamageDef>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			</li>
-		</verbs>
+		<tools>
+		  <li>
+			<label>hooves</label>
+			<capacities>
+			  <li>ROM_BluntMonstrous</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>1.65</cooldownTime>
+			<linkedBodyPartsGroup>ROM_Hooves</linkedBodyPartsGroup>
+			<commonality>0.2</commonality>
+		  </li>
+		  <li>
+			<label>tentacles</label>
+			<capacities>
+			  <li>ROM_BluntMonstrous</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>1.65</cooldownTime>
+			<linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
+		  </li>
+		  <li>
+			<label>coiling tentacles</label>
+			<capacities>
+			  <li>ROM_ConstrictMonstrous</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>1.65</cooldownTime>
+			<linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
+			<commonality>0.25</commonality>
+		  </li>
+		  <li>
+			<label>maws</label>
+			<capacities>
+			  <li>ToxicBite</li>
+			</capacities>
+			<power>12</power>
+			<cooldownTime>1.65</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<commonality>0.33</commonality>
+		  </li>
+		</tools>
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>

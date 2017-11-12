@@ -172,6 +172,9 @@
         <li>
           <def>ROM_ChthonianSecondRing</def>
           <coverage>0.75</coverage>
+		  <groups>
+		    <li>ROM_BodyAttackTool</li>
+		  </groups>
           <parts>
             <li>
               <def>ROM_ChthonianThirdRing</def>

@@ -183,7 +183,7 @@
 	<ThingDef ParentName="BaseCosmicHorrorRace">
 		<defName>ROM_MiGo</defName>
 		<label>MiGo</label>
-		<description>An insectile fungus with vast membranous wings, numerous segmented limbs and a forest of stubby antenna for a head. They are of a inquisitive mind and seek the brains of lesser species to further their understanding. They are known to search out planets that contain minerals their own world lacks.
+		<description>An insectile fungus with vast membranous wings, numerous segmented limbs and a forest of stubby antenna for a head. They are of an inquisitive mind and seek the brains of lesser species to further their understanding. They are known to search out planets that contain minerals their own worlds lack.
 		</description>
 		<statBases>
 			<Mass>70</Mass>	
@@ -191,29 +191,36 @@
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 		</statBases>
-		<verbs>
-			<li>
-				<verbClass>Verb_MeleeAttack</verbClass>
-				<defaultCooldownTime>0.4</defaultCooldownTime>
-				<meleeDamageBaseAmount>7</meleeDamageBaseAmount>
-				<meleeDamageDef>Cut</meleeDamageDef>
-				<linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<verbClass>Verb_MeleeAttack</verbClass>
-				<defaultCooldownTime>0.4</defaultCooldownTime>
-				<meleeDamageBaseAmount>3</meleeDamageBaseAmount>
-				<meleeDamageDef>ROM_Psychic</meleeDamageDef>
-				<linkedBodyPartsGroup>ROM_Mind</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<verbClass>Verb_MeleeAttack</verbClass>
-				<defaultCooldownTime>1.5</defaultCooldownTime>
-				<meleeDamageBaseAmount>10</meleeDamageBaseAmount>
-				<meleeDamageDef>Blunt</meleeDamageDef>
-				<linkedBodyPartsGroup>ROM_Wings</linkedBodyPartsGroup>
-			</li>	  
-		</verbs>
+		<tools>
+		  <li>
+			<label>legs</label>
+			<capacities>
+			  <li>ROM_ScratchMonstrous</li>
+			</capacities>
+			<power>7</power>
+			<cooldownTime>0.55</cooldownTime>
+			<linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
+		  </li>
+		  <li>
+			<label>overwhelming mind</label>
+			<capacities>
+			  <li>ROM_Psychic</li>
+			</capacities>
+			<power>6</power>
+			<cooldownTime>1.65</cooldownTime>
+			<linkedBodyPartsGroup>ROM_Mind</linkedBodyPartsGroup>
+		  </li>
+		  <li>
+			<label>body</label>
+			<capacities>
+			  <li>ROM_BluntMonstrous</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>1.65</cooldownTime>
+			<linkedBodyPartsGroup>ROM_Wings</linkedBodyPartsGroup>
+			<commonality>0.33</commonality>
+		  </li>
+		</tools>
 		<race>
 			<bloodDef>ROM_FilthBloodMiGo</bloodDef>		
 			<hasGenders>false</hasGenders>	
@@ -289,6 +296,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>27</damageAmountBase>
 			<speed>120</speed>
+			<flyOverhead>false</flyOverhead>
 		</projectile>
 	</ThingDef>
 	<ThingDef ParentName="BaseGun">
@@ -318,7 +326,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<projectileDef>ROM_Bullet_MiGoCastingWeapon</projectileDef>
+				<defaultProjectile>ROM_Bullet_MiGoCastingWeapon</defaultProjectile>
 				<warmupTime>1.5</warmupTime>
 				<range>40</range>
 				<burstShotCount>1</burstShotCount>

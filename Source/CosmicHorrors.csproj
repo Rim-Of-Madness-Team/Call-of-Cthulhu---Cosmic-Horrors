@@ -42,6 +42,10 @@
       <HintPath>..\..\..\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="JecsTools">
+      <HintPath>..\..\JecsTools\Assemblies\JecsTools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,10 +60,12 @@
   <ItemGroup>
     <Compile Include="Building_PitChthonian.cs" />
     <Compile Include="CosmicHorrorPawnExtension.cs" />
+    <Compile Include="CosmicHorrorPawn_Shoggoth.cs" />
     <Compile Include="CosmicHorrorPawn_StarVampire.cs" />
     <Compile Include="CosmicHorrorUtility.cs" />
     <Compile Include="CthulhuUtility.cs" />
     <Compile Include="DamageWorker_CranialPressure.cs" />
+    <Compile Include="DamageWorker_Constrict.cs" />
     <Compile Include="HarmonyCosmicHorrors.cs" />
     <Compile Include="HediffWithComps_GutWorms.cs" />
     <Compile Include="HediffWithComps_SanityLoss.cs" />

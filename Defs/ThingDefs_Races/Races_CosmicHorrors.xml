@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
   <ThingDef Name="BaseCosmicHorrorRaceInit" Abstract="True">
     <thingClass>CosmicHorror.CosmicHorrorPawn</thingClass>
@@ -10,6 +10,9 @@
     <useHitPoints>false</useHitPoints>
     <hasTooltip>true</hasTooltip>
     <soundImpactDefault>BulletImpactFlesh</soundImpactDefault>
+	<statBases>
+      <Mass>70</Mass>
+    </statBases>
     <inspectorTabs>
       <li>ITab_Pawn_Health</li>
       <li>ITab_Pawn_Needs</li>
@@ -19,6 +22,7 @@
       <li>ITab_Pawn_Guest</li>
       <li>ITab_Pawn_Prisoner</li>
       <li>ITab_Pawn_Social</li>
+      <li>ITab_Pawn_Combat</li>
     </inspectorTabs>
     <comps>
       <li>
@@ -68,4 +72,4 @@
   </ThingDef>
  
 
-</ThingDefs>
+</Defs>

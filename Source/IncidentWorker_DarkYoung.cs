@@ -18,14 +18,14 @@ namespace CosmicHorror
             return base.CanFireNowSub(target);
         }
 
-        public override bool TryExecute(IncidentParms parms)
+        protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map map = (Map)parms.target;
             if (!RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 intVec, map, 0.5f))
             {
                 return false;
             }
-            Find.LetterStack.ReceiveLetter("DarkYoungIncidentLabel".Translate(), "DarkYoungIncidentDesc".Translate(), LetterDefOf.BadNonUrgent, new TargetInfo(intVec, map), null);
+            Find.LetterStack.ReceiveLetter("DarkYoungIncidentLabel".Translate(), "DarkYoungIncidentDesc".Translate(), LetterDefOf.ThreatSmall, new TargetInfo(intVec, map), null);
 
             SpawnDarkYoung(parms, intVec);
 
@@ -46,17 +46,9 @@ namespace CosmicHorror
             {
                 iwCount = Rand.RangeInclusive(2, 3);
             }
-            else if (parms.points <= 700f)
-            {
-                iwCount = Rand.RangeInclusive(4, 5);
-            }
             else if (parms.points <= 1400f)
             {
-                iwCount = Rand.RangeInclusive(4, 6);
-            }
-            else if (parms.points <= 2500f)
-            {
-                iwCount = Rand.RangeInclusive(4, 8);
+                iwCount = Rand.RangeInclusive(4, 5);
             }
             
             for (int i = 0; i < iwCount; i++)

@@ -66,37 +66,46 @@
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
       <ComfyTemperatureMax>100</ComfyTemperatureMax>
     </statBases>
-    <verbs>
+	<tools>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>1.85</defaultCooldownTime>
-        <meleeDamageBaseAmount>20</meleeDamageBaseAmount>
-        <meleeDamageDef>Blunt</meleeDamageDef>
+        <label>tentacles</label>
+        <capacities>
+          <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
       </li>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>3.0</defaultCooldownTime>
-        <meleeDamageBaseAmount>5</meleeDamageBaseAmount>
-        <meleeDamageDef>ROM_Psychic</meleeDamageDef>
+        <label>coiling tentacles</label>
+        <capacities>
+		  <li>ROM_ConstrictMonstrous</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
+        <commonality>0.25</commonality>
+      </li>
+	  <li>
+        <label>overwhelming mind</label>
+        <capacities>
+          <li>ROM_Psychic</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>ROM_Mind</linkedBodyPartsGroup>
       </li>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>3.0</defaultCooldownTime>
-        <meleeDamageBaseAmount>9</meleeDamageBaseAmount>
-        <meleeDamageDef>Cut</meleeDamageDef>
-        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>8</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
+	  <li>
+        <label>body</label>
+        <capacities>
+          <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_BodyAttackTool</linkedBodyPartsGroup>
+        <commonality>0.33</commonality>
       </li>
-    </verbs>
+    </tools>
     <race>
       <body>ROM_ChthonianBody</body>
       <herdAnimal>false</herdAnimal>
@@ -218,37 +227,37 @@
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
       <ComfyTemperatureMax>100</ComfyTemperatureMax>
     </statBases>
-    <verbs>
+	<tools>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>1.5</defaultCooldownTime>
-        <meleeDamageBaseAmount>16</meleeDamageBaseAmount>
-        <meleeDamageDef>Blunt</meleeDamageDef>
+        <label>tentacles</label>
+        <capacities>
+          <li>ROM_BluntMonstrous</li>
+		  <li>ROM_ConstrictMonstrous</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
       </li>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>3.0</defaultCooldownTime>
-        <meleeDamageBaseAmount>13</meleeDamageBaseAmount>
-        <meleeDamageDef>ROM_Psychic</meleeDamageDef>
+	  <li>
+        <label>overwhelming mind</label>
+        <capacities>
+          <li>ROM_Psychic</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>ROM_Mind</linkedBodyPartsGroup>
       </li>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>2.0</defaultCooldownTime>
-        <meleeDamageBaseAmount>9</meleeDamageBaseAmount>
-        <meleeDamageDef>Cut</meleeDamageDef>
-        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>8</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
+	  <li>
+        <label>body</label>
+        <capacities>
+          <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_BodyAttackTool</linkedBodyPartsGroup>
+        <commonality>0.33</commonality>
       </li>
-    </verbs>
+    </tools>
     <race>
       <body>ROM_ChthonianBody</body>
       <baseBodySize>1.2</baseBodySize>

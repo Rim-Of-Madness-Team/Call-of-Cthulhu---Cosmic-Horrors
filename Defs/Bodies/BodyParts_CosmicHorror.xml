@@ -9,6 +9,13 @@
    ██████  ██   ██  ██████   ██████  ██      ███████
  -->
 
+ 
+  <BodyPartGroupDef>
+    <defName>ROM_BodyAttackTool</defName>
+    <label>body</label>
+  </BodyPartGroupDef>
+
+ 
   <BodyPartGroupDef>
     <defName>ROM_Wings</defName>
     <label>both wings</label>
@@ -18,7 +25,17 @@
     <defName>ROM_Claws</defName>
     <label>claws</label>
   </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>ROM_LeftClaws</defName>
+    <label>left claw</label>
+  </BodyPartGroupDef>
 
+  <BodyPartGroupDef>
+    <defName>ROM_RightClaws</defName>
+    <label>right claw</label>
+  </BodyPartGroupDef>
+  
   <BodyPartGroupDef>
     <defName>ROM_Hooves</defName>
     <label>hooves</label>

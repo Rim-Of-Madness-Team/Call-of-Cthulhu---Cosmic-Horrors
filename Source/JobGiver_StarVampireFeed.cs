@@ -47,7 +47,7 @@ namespace CosmicHorror
             //    this.showedMessage = true;
             //    SoundDef warnSound = SoundDef.Named("Pawn_ROM_StarVampire_Warning");
             //    warnSound.PlayOneShotOnCamera();
-            //    Messages.Message("StarVampireIncidentMessage2".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, pawn.Map), MessageSound.Standard);
+            //    Messages.Message("StarVampireIncidentMessage2".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, pawn.Map), MessageTypeDefOf.SituationResolved);
             //}
             //if (Find.TickManager.TicksGame < this.startTicks)
             //{

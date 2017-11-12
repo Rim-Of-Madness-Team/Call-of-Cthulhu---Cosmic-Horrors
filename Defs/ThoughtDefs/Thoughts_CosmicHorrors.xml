@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThoughtDefs>
+<Defs>
 
 	<ThoughtDef>
 		<defName>ObservedROM_DeepOne</defName>
@@ -217,4 +217,4 @@
 		</stages>
 	</ThoughtDef>
 	
-</ThoughtDefs>
+</Defs>

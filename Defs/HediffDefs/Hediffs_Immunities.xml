@@ -15,7 +15,7 @@
     </comps-->
       <stages>
         <li>
-		  <everVisible>false</everVisible>
+		  <becomeVisible>false</becomeVisible>
           <makeImmuneTo>
 						<li>ROM_SanityLoss</li>
 						<li>WoundInfection</li>

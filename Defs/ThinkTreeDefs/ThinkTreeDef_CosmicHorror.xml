@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThinkTrees>
+<Defs>
 
 	<ThinkTreeDef>
 		<defName>ROM_CosmicHorror</defName>
@@ -317,7 +317,7 @@
 				<li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
 					<subNodes>
             <!-- Flee explosion -->
-            <li Class="JobGiver_FleeExplosion" />
+            <li Class="JobGiver_FleePotentialExplosion" />
         
             <!-- Hostility response -->
             <li Class="JobGiver_ConfigurableHostilityResponse" />
@@ -332,4 +332,4 @@
 		</thinkRoot>
 	</ThinkTreeDef>
   
-</ThinkTrees>
+</Defs>

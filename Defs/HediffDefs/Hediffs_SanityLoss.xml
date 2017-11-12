@@ -22,8 +22,8 @@
     </comps>	
     <stages>
       <li>
-        <label>tense-hidden</label>
-		<everVisible>false</everVisible>
+        <label>initial</label>
+		<becomeVisible>false</becomeVisible>
       </li>
       <li>
         <label>initial</label>

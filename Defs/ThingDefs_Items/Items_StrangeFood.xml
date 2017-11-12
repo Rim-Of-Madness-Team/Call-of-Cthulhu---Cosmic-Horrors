@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Resources>
+<Defs>
 
   
   <ThingDef Name="ResourceBase" Abstract="True">
@@ -103,7 +103,7 @@
     <ingestible>
       <foodType>Meal, Processed</foodType>
       <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-      <optimalityOffset>16</optimalityOffset>
+      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
     </ingestible>
   </ThingDef> 
   
@@ -364,4 +364,4 @@ Star Vampire meat's marbling ranges from an uncomfortable amount of intramuscula
     </ingestible>
   </ThingDef>  
 
-</Resources>
+</Defs>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThinkTrees>
+<Defs>
 
 	<ThinkTreeDef>
 		<defName>ROM_StarVampire</defName>
@@ -106,7 +106,7 @@
         <li Class="JobGiver_LayEgg" />
 
         <!-- Tame animal -->
-        <li Class="ThinkNode_ConditionalColonyFaction">
+        <li Class="ThinkNode_ConditionalOfPlayerFaction">
           <subNodes>
             <li Class="ThinkNode_Tagger">
               <tagToGive>TrainedAnimalBehavior</tagToGive>
@@ -231,7 +231,7 @@
         </li>
         
         <!-- Tame animal: wander colony -->
-        <li Class="ThinkNode_ConditionalColonyFaction">
+        <li Class="ThinkNode_ConditionalOfPlayerFaction">
           <subNodes>
             <li Class="ThinkNode_Tagger">
               <tagToGive>Idle</tagToGive>
@@ -317,4 +317,4 @@
 		</thinkRoot>
 	</ThinkTreeDef>
 
-</ThinkTrees>
+</Defs>

@@ -9,8 +9,8 @@ namespace CosmicHorror
 {
     public class DamageWorker_CranialPressure : DamageWorker
     {
-        
-        public override float Apply(DamageInfo dinfo, Thing thing)
+
+        public override DamageWorker.DamageResult Apply(DamageInfo dinfo, Thing thing)
         {
             Pawn pawn = thing as Pawn;
             if (pawn == null)
@@ -20,15 +20,16 @@ namespace CosmicHorror
             return this.ApplyToPawn(dinfo, pawn);
         }
 
-        private float ApplyToPawn(DamageInfo dinfo, Pawn pawn)
+        private DamageWorker.DamageResult ApplyToPawn(DamageInfo dinfo, Pawn pawn)
         {
+            DamageResult result = DamageResult.MakeNew();
             if (dinfo.Amount <= 0)
             {
-                return 0f;
+                return result;
             }
             if (!DebugSettings.enablePlayerDamage && pawn.Faction == Faction.OfPlayer)
             {
-                return 0f;
+                return result;
             }
             Map mapHeld = pawn.MapHeld;
             bool spawnedOrAnyParentSpawned = pawn.SpawnedOrAnyParentSpawned;
@@ -42,11 +43,12 @@ namespace CosmicHorror
                     pressure.Severity = 0.01f;
                     pawn.health.AddHediff(pressure, consciousnessSource, null);
                 }
-                float result = pressure.Severity + Rand.Range(0.1f, 0.3f);
-                pressure.Severity = Mathf.Clamp(result, 0.0f, 1.0f);
-                return 0f;
+                float resultDMG = pressure.Severity + Rand.Range(0.1f, 0.3f);
+                pressure.Severity = Mathf.Clamp(resultDMG, 0.0f, 1.0f);
+                result.totalDamageDealt += resultDMG;
+                return result;
             }
-            return 0f;
+            return result;
             
         }
         

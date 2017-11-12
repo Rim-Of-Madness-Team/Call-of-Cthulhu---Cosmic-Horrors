@@ -1,4 +1,4 @@
-<Resources>
+<Defs>
 
   <ThingDef Name="RawCHFoodDummy" Abstract="True" ParentName="RawCHMeatBase">
     <label>Base strange food properties</label>
@@ -135,4 +135,4 @@ Star Vampire meat's marbling ranges from an uncomfortable amount of intramuscula
     </ingestible>
   </ThingDef>
 
-</Resources>
+</Defs>

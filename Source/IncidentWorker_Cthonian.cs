@@ -22,7 +22,7 @@ namespace CosmicHorror
             
         }
 
-        public override bool TryExecute(IncidentParms parms)
+        protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map map = (Map)parms.target;
             int countToSpawn = this.CountToSpawn;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +25,7 @@ namespace CosmicHorror
                 alertedPlayer = true;
                 SoundDef warnSound = SoundDef.Named("Pawn_ROM_StarVampire_Warning");
                 warnSound.PlayOneShotOnCamera();
-                Messages.Message("StarVampireIncidentMessage2".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, Map), MessageSound.Standard);
+                Messages.Message("StarVampireIncidentMessage2".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, Map), MessageTypeDefOf.SituationResolved);
             }
         }
 

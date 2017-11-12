@@ -71,36 +71,46 @@
       <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
     </statBases>
-    <verbs>
+	<tools>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>1.0</defaultCooldownTime>
-        <meleeDamageBaseAmount>20</meleeDamageBaseAmount>
-        <meleeDamageDef>ToxicBite</meleeDamageDef>
+        <label>maws</label>
+        <capacities>
+          <li>ToxicBite</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
       </li>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>0.3</defaultCooldownTime>
-        <meleeDamageBaseAmount>20</meleeDamageBaseAmount>
-        <meleeDamageDef>Blunt</meleeDamageDef>
+        <label>tentacles</label>
+        <capacities>
+		  <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
       </li>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>0.7</defaultCooldownTime>
-        <meleeDamageBaseAmount>30</meleeDamageBaseAmount>
-        <meleeDamageDef>Cut</meleeDamageDef>
-        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <label>right claw</label>
+        <capacities>
+		  <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <commonality>0.25</commonality>
       </li>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>0.7</defaultCooldownTime>
-        <meleeDamageBaseAmount>30</meleeDamageBaseAmount>
-        <meleeDamageDef>Cut</meleeDamageDef>
-        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <label>left claw</label>
+        <capacities>
+		  <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <commonality>0.25</commonality>
       </li>
-    </verbs>
+    </tools>
     <race>
       <bloodDef>ROM_FilthBloodShoggoth</bloodDef>
       <hasGenders>false</hasGenders>

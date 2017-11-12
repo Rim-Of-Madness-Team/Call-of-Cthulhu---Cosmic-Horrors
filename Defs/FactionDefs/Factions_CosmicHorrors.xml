@@ -8,7 +8,6 @@
     <pawnsPlural>StarSpawn of Cthulhu</pawnsPlural>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Sunken city of R'lyeh</fixedName>
-    <raidCommonality>0</raidCommonality>
     <canMakeRandomly>false</canMakeRandomly>	
     <humanlikeFaction>false</humanlikeFaction>
     <hidden>true</hidden>
@@ -44,7 +43,6 @@
     <pawnsPlural>Shoggoths</pawnsPlural>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Mountains of Madness</fixedName>
-    <raidCommonality>0</raidCommonality>
     <canMakeRandomly>false</canMakeRandomly>	
     <humanlikeFaction>false</humanlikeFaction>
     <hidden>true</hidden>
@@ -81,7 +79,6 @@
     <pawnsPlural>MiGo</pawnsPlural>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Outpost of the MiGo</fixedName>
-    <raidCommonality>0</raidCommonality>
     <canMakeRandomly>false</canMakeRandomly>	
     <humanlikeFaction>false</humanlikeFaction>
     <hidden>true</hidden>
@@ -120,7 +117,6 @@
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Devil Reef</fixedName>
     <canMakeRandomly>false</canMakeRandomly>	
-    <raidCommonality>0</raidCommonality>
     <humanlikeFaction>false</humanlikeFaction>
     <hidden>true</hidden>
     <autoFlee>false</autoFlee>
@@ -158,7 +154,6 @@
     <canMakeRandomly>false</canMakeRandomly>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Outer Space</fixedName>
-    <raidCommonality>0</raidCommonality>
     <humanlikeFaction>false</humanlikeFaction>
     <hidden>true</hidden>
     <autoFlee>false</autoFlee>
@@ -196,7 +191,6 @@
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Lost City of G'harne</fixedName>
     <canMakeRandomly>false</canMakeRandomly>	
-    <raidCommonality>0</raidCommonality>
     <humanlikeFaction>false</humanlikeFaction>
     <hidden>true</hidden>
     <autoFlee>false</autoFlee>
@@ -237,7 +231,6 @@
     <pawnsPlural>horrors</pawnsPlural>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Unknown</fixedName>
-    <raidCommonality>0</raidCommonality>
     <humanlikeFaction>false</humanlikeFaction>
     <hidden>true</hidden>
     <autoFlee>false</autoFlee>

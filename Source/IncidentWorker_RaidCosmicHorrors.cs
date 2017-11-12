@@ -143,7 +143,7 @@ namespace CosmicHorror
 
         protected override string GetLetterLabel(IncidentParms parms) => parms.raidStrategy.letterLabelEnemy;
 
-        protected override LetterDef GetLetterDef() => LetterDefOf.BadUrgent;
+        protected override LetterDef GetLetterDef() => LetterDefOf.ThreatBig;
 
         protected override void ResolveRaidStrategy(IncidentParms parms)
         {
@@ -170,7 +170,7 @@ namespace CosmicHorror
             return parms.faction != null;
         }
 
-        public override bool TryExecute(IncidentParms parms)
+        protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map map = (Map)parms.target;
 
@@ -217,9 +217,10 @@ namespace CosmicHorror
             }
             string letterLabel = this.GetLetterLabel(parms);
             string letterText = this.GetLetterText(parms, list);
-            PawnRelationUtility.Notify_PawnsSeenByPlayer(list, ref letterLabel, ref letterText, this.GetRelatedPawnsInfoLetterText(parms), true);
+            string lalalal = this.GetRelatedPawnsInfoLetterText(parms);
+            PawnRelationUtility.Notify_PawnsSeenByPlayer(list, out lalalal, true);
             Find.LetterStack.ReceiveLetter(letterLabel, letterText, this.GetLetterDef(), target, stringBuilder.ToString());
-            if (this.GetLetterDef() == LetterDefOf.BadUrgent)
+            if (this.GetLetterDef() == LetterDefOf.ThreatSmall)
             {
                 TaleRecorder.RecordTale(TaleDefOf.RaidArrived, new object[0]);
             }

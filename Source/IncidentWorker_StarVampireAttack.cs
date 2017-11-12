@@ -30,7 +30,7 @@ namespace CosmicHorror
             return true;
         }
 
-        public override bool TryExecute(IncidentParms parms)
+        protected override bool TryExecuteWorker(IncidentParms parms)
         {
 
             //Resolve parameters.
@@ -53,7 +53,7 @@ namespace CosmicHorror
             //Play a sound.
             this.iwWarn.PlayOneShotOnCamera();
             //Show the warning message.
-            Messages.Message("StarVampireIncidentMessage".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, (Map)parms.target), MessageSound.Standard);
+            Messages.Message("StarVampireIncidentMessage".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, (Map)parms.target), MessageTypeDefOf.SituationResolved);
             //Spawn the Star Vampire.
             SpawnStarVampires(parms);
             return true;

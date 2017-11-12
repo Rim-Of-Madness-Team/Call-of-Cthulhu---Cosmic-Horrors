@@ -120,30 +120,45 @@
       <ComfyTemperatureMin>-80</ComfyTemperatureMin>
       <ComfyTemperatureMax>80</ComfyTemperatureMax>
     </statBases>
-    <verbs>
+	<tools>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>2.0</defaultCooldownTime>
-        <meleeDamageBaseAmount>12</meleeDamageBaseAmount>
-        <meleeDamageDef>Cut</meleeDamageDef>
+        <label>needles</label>
+        <capacities>
+          <li>ROM_ScratchMonstrous</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
       </li>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>1.1</defaultCooldownTime>
-        <meleeDamageBaseAmount>7</meleeDamageBaseAmount>
-        <meleeDamageDef>ROM_Exsanguination</meleeDamageDef>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>8</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
+        <label>tentacles</label>
+        <capacities>
+          <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
       </li>
-    </verbs>
+      <li>
+        <label>coiling tentacles</label>
+        <capacities>
+		  <li>ROM_ConstrictMonstrous</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
+        <commonality>0.25</commonality>
+      </li>
+	  <li>
+        <label>teeth</label>
+        <capacities>
+          <li>ROM_Exsanguination</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      </li>
+    </tools>
     <race>
       <bloodDef>FilthBlood</bloodDef>
       <hasGenders>false</hasGenders>

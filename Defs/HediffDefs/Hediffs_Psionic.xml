@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<HediffDefs>
+<Defs>
 
   <HediffDef ParentName="InjuryBase">
     <defName>ROM_Psionic</defName>
@@ -41,7 +41,7 @@
     <stages>
       <li>
         <label>initial-hidden</label>
-        <everVisible>false</everVisible>
+        <becomeVisible>false</becomeVisible>
       </li>
       <li>
         <label>initial</label>
@@ -143,4 +143,4 @@
   </HediffDef>
 
 
-</HediffDefs>
+</Defs>
