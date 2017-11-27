@@ -1,28 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <FactionDef>
-    <defName>ROM_StarSpawn</defName>
-    <label>StarSpawn of Cthulhu</label>
-    <description>A race birthed from the Old One, Cthulhu, laying dead and dreaming at the bottom of the sunken city of R'lyeh.</description>
-    <pawnsPlural>StarSpawn of Cthulhu</pawnsPlural>
+  <FactionDef Name="ROMCH_HiddenFaction" Abstract="True">
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
-    <fixedName>Sunken city of R'lyeh</fixedName>
-    <canMakeRandomly>false</canMakeRandomly>	
-    <humanlikeFaction>false</humanlikeFaction>
+	<raidCommonalityFromPointsCurve>
+		<points>
+			<li>(0, 0)</li>
+		</points>
+	</raidCommonalityFromPointsCurve>
+    <humanlikeFaction>false</humanlikeFaction>  
     <hidden>true</hidden>
     <autoFlee>false</autoFlee>
     <canUseAvoidGrid>true</canUseAvoidGrid>
-    <techLevel>Animal</techLevel>
-	<earliestRaidDays>12</earliestRaidDays>
-    <startingGoodwill>
+	<techLevel>Animal</techLevel>
+	<startingGoodwill>
       <min>-100</min>
       <max>-100</max>
     </startingGoodwill>
+	<mustStartOneEnemy>true</mustStartOneEnemy>
     <naturalColonyGoodwill>
       <min>-100</min>
       <max>-100</max>
     </naturalColonyGoodwill>
+    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+    <allowedArrivalTemperatureRange>
+      <min>-255</min>
+      <max>255</max>
+    </allowedArrivalTemperatureRange>
+  </FactionDef>
+
+  <FactionDef ParentName="ROMCH_HiddenFaction">
+    <defName>ROM_StarSpawn</defName>
+    <label>StarSpawn of Cthulhu</label>
+    <description>A race birthed from the Old One, Cthulhu, laying dead and dreaming at the bottom of the sunken city of R'lyeh.</description>
+    <pawnsPlural>StarSpawn of Cthulhu</pawnsPlural>
+    <fixedName>Sunken city of R'lyeh</fixedName>
     <pawnGroupMakers>
 	<li><kindDef>Normal</kindDef>
         <options>
@@ -30,34 +42,15 @@
         </options>
       </li>
     </pawnGroupMakers> 
-    <allowedArrivalTemperatureRange>
-      <min>-255</min>
-      <max>255</max>
-    </allowedArrivalTemperatureRange>
   </FactionDef>
 
-  <FactionDef>
+  <FactionDef ParentName="ROMCH_HiddenFaction">
     <defName>ROM_Shoggoth</defName>
     <label>Shoggoths</label>
     <description>Shoggoths are gigantic amorphous protoplasmic entities capable of shapeshifting new limbs, organs, mouths, and tentacles at will.</description>
     <pawnsPlural>Shoggoths</pawnsPlural>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Mountains of Madness</fixedName>
-    <canMakeRandomly>false</canMakeRandomly>	
-    <humanlikeFaction>false</humanlikeFaction>
-    <hidden>true</hidden>
-    <autoFlee>false</autoFlee>
     <canUseAvoidGrid>false</canUseAvoidGrid>
-    <techLevel>Animal</techLevel>
-	<earliestRaidDays>5</earliestRaidDays>
-    <startingGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </startingGoodwill>
-    <naturalColonyGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </naturalColonyGoodwill>
     <pawnGroupMakers>
 	<li><kindDef>Normal</kindDef>
         <options>
@@ -65,35 +58,14 @@
         </options>
       </li>
     </pawnGroupMakers> 
-     
-    <allowedArrivalTemperatureRange>
-      <min>-255</min>
-      <max>255</max>
-    </allowedArrivalTemperatureRange>
   </FactionDef>
 
-  <FactionDef>
+  <FactionDef ParentName="ROMCH_HiddenFaction">
     <defName>ROM_MiGo</defName>
     <label>MiGo Outpost</label>
     <description>MiGo are flying headless carapace-wrapped fungoid aliens that specialize in extraterrestrial brain surgery. Beware that flying enemies will avoid traps!</description>
     <pawnsPlural>MiGo</pawnsPlural>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Outpost of the MiGo</fixedName>
-    <canMakeRandomly>false</canMakeRandomly>	
-    <humanlikeFaction>false</humanlikeFaction>
-    <hidden>true</hidden>
-    <autoFlee>false</autoFlee>
-    <canUseAvoidGrid>true</canUseAvoidGrid>
-    <techLevel>Ultra</techLevel>
-	<earliestRaidDays>3</earliestRaidDays>
-    <startingGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </startingGoodwill>
-    <naturalColonyGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </naturalColonyGoodwill>
     <pawnGroupMakers>
 	<li><kindDef>Normal</kindDef>
         <options>
@@ -102,35 +74,14 @@
         </options>
       </li>
     </pawnGroupMakers> 
-     
-    <allowedArrivalTemperatureRange>
-      <min>-255</min>
-      <max>255</max>
-    </allowedArrivalTemperatureRange>
   </FactionDef>
 
-  <FactionDef>
+  <FactionDef ParentName="ROMCH_HiddenFaction">
     <defName>ROM_DeepOne</defName>
     <label>Deep Ones</label>
     <description>Deep Ones are humanoid-fish-frog hybrid monstrosities that like to claw their prey before biting their heads off using massive jaws.</description>
     <pawnsPlural>Deep Ones</pawnsPlural>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Devil Reef</fixedName>
-    <canMakeRandomly>false</canMakeRandomly>	
-    <humanlikeFaction>false</humanlikeFaction>
-    <hidden>true</hidden>
-    <autoFlee>false</autoFlee>
-    <canUseAvoidGrid>true</canUseAvoidGrid>
-    <techLevel>Animal</techLevel>
-	<earliestRaidDays>0</earliestRaidDays>
-    <startingGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </startingGoodwill>
-    <naturalColonyGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </naturalColonyGoodwill>
     <pawnGroupMakers>
 	<li><kindDef>Normal</kindDef>
         <options>
@@ -139,36 +90,14 @@
         </options>
       </li>
     </pawnGroupMakers> 
-     
-    <allowedArrivalTemperatureRange>
-      <min>-255</min>
-      <max>255</max>
-    </allowedArrivalTemperatureRange>
   </FactionDef>
   
-  <FactionDef>
+  <FactionDef ParentName="ROMCH_HiddenFaction">
     <defName>ROM_StarVampire</defName>
     <label>Star Vampires</label>
     <description>...</description>
     <pawnsPlural>Star Vampires</pawnsPlural>
-    <canMakeRandomly>false</canMakeRandomly>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Outer Space</fixedName>
-    <humanlikeFaction>false</humanlikeFaction>
-    <hidden>true</hidden>
-    <autoFlee>false</autoFlee>
-    <canUseAvoidGrid>true</canUseAvoidGrid>
-    <techLevel>Animal</techLevel>
-	<earliestRaidDays>99</earliestRaidDays>
-    <startingGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </startingGoodwill>
-    <mustStartOneEnemy>true</mustStartOneEnemy>
-    <naturalColonyGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </naturalColonyGoodwill>
     <pawnGroupMakers>
 	<li><kindDef>Normal</kindDef>
         <options>
@@ -176,89 +105,42 @@
         </options>
       </li>
     </pawnGroupMakers> 
-     
-    <allowedArrivalTemperatureRange>
-      <min>-255</min>
-      <max>255</max>
-    </allowedArrivalTemperatureRange>
   </FactionDef>
 
-  <FactionDef>
+  <FactionDef ParentName="ROMCH_HiddenFaction">
     <defName>ROM_Chthonian</defName>
     <label>Chthonian</label>
     <description>Chthonians are described as resembling immense squids, with elongated worm-like bodies coated with slime. Despite their squid-like appearance, chthonians are actually land-dwellers and are even harmed by water. Chthonians are powerful burrowers which can live for more than a thousand years, and are protective of their young. It is said that a chanting sound accompanies every chthonian, and that by such they can be detected while underground and unseen.\n\nThe most important individual chthonian is the gigantic Shudde M'ell, which is worshiped by the rest, the largest and most malignant of this dread race. It is featured prominently in the aforementioned novel.</description>
     <pawnsPlural>Chthonians</pawnsPlural>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Lost City of G'harne</fixedName>
-    <canMakeRandomly>false</canMakeRandomly>	
-    <humanlikeFaction>false</humanlikeFaction>
-    <hidden>true</hidden>
-    <autoFlee>false</autoFlee>
-    <canUseAvoidGrid>true</canUseAvoidGrid>
-    <techLevel>Animal</techLevel>
-	<earliestRaidDays>0</earliestRaidDays>
-    <startingGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </startingGoodwill>
-    <naturalColonyGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </naturalColonyGoodwill>
     <pawnGroupMakers>
 	<li><kindDef>Normal</kindDef>
         <options>
 		  <ROM_DeepOne>100</ROM_DeepOne>		  
-		  <ROM_DeepOneGreat>100</ROM_DeepOneGreat>		  
+		  <ROM_DeepOneGreat>100</ROM_DeepOneGreat>
         </options>
       </li>
-    </pawnGroupMakers> 
-     
-    <allowedArrivalTemperatureRange>
-      <min>-255</min>
-      <max>255</max>
-    </allowedArrivalTemperatureRange>
+    </pawnGroupMakers>   
   </FactionDef>
   
   
 
 <!-- Cosmic Horror Player Sightable Faction -->
   
-  <FactionDef>
+  <FactionDef ParentName="ROMCH_HiddenFaction">
     <defName>ROM_CosmicHorrors</defName>
     <label>Cosmic Horrors</label>
     <description>Creatures out of time and space bent on purging mankind from the universe.</description>
     <pawnsPlural>horrors</pawnsPlural>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Unknown</fixedName>
-    <humanlikeFaction>false</humanlikeFaction>
-    <hidden>true</hidden>
-    <autoFlee>false</autoFlee>
-    <canUseAvoidGrid>true</canUseAvoidGrid>
-    <techLevel>Animal</techLevel>
-	<earliestRaidDays>999999</earliestRaidDays>
-    <startingGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </startingGoodwill>
-    <mustStartOneEnemy>true</mustStartOneEnemy>
-    <naturalColonyGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </naturalColonyGoodwill>
     <pawnGroupMakers>
 	<li><kindDef>Normal</kindDef>
         <options>
 		  <ROM_DeepOne>100</ROM_DeepOne>		  
-		  <ROM_DeepOneGreat>100</ROM_DeepOneGreat>		  
+		  <ROM_DeepOneGreat>100</ROM_DeepOneGreat>
         </options>
       </li>
     </pawnGroupMakers> 
-     
-    <allowedArrivalTemperatureRange>
-      <min>-255</min>
-      <max>255</max>
-    </allowedArrivalTemperatureRange>
   </FactionDef>  
     
   
