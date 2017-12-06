@@ -2,7 +2,7 @@
 <Defs>
 
   
-  <ThingDef Name="ResourceBase" Abstract="True">
+  <ThingDef Name="ROM_ResourceBase" Abstract="True">
     <thingClass>ThingWithComps</thingClass>
     <category>Item</category>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
@@ -22,7 +22,7 @@
 		<pathCost>15</pathCost>
 	</ThingDef>
 
-  <ThingDef Abstract="True" Name="OrganicProductBase" ParentName="ResourceBase">
+  <ThingDef Abstract="True" Name="ROM_OrganicProductBase" ParentName="ROM_ResourceBase">
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
@@ -36,7 +36,7 @@
     <tickerType>Rare</tickerType>
   </ThingDef>
 
-  <ThingDef Name="RawCHMeatBase" Abstract="True" ParentName="OrganicProductBase"> 
+  <ThingDef Name="ROM_RawCHMeatBase" Abstract="True" ParentName="ROM_OrganicProductBase"> 
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
@@ -49,7 +49,7 @@
   </ThingDef>
 
   
-  <ThingDef Name="RawCHFoodBase" Abstract="True" ParentName="RawCHMeatBase">
+  <ThingDef Name="ROM_RawCHFoodBase" Abstract="True" ParentName="ROM_RawCHMeatBase">
     <label>Base strange food properties</label>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -75,7 +75,7 @@
     </thingCategories>
   </ThingDef>
   
-   <ThingDef Name="MealBase" Abstract="True">
+   <ThingDef Name="ROM_MealBase" Abstract="True">
     <thingClass>ThingWithComps</thingClass>
     <category>Item</category>
     <useHitPoints>true</useHitPoints>
@@ -107,7 +107,7 @@
     </ingestible>
   </ThingDef> 
   
-  <ThingDef ParentName="MealBase" Name="ROM_CHMealRottable" Abstract="True">
+  <ThingDef ParentName="ROM_MealBase" Name="ROM_CHMealRottable" Abstract="True">
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>4</daysToRotStart>
@@ -192,7 +192,7 @@
     </ingestible>
   </ThingDef>
 
-  <ThingDef ParentName="OrganicProductBase">
+  <ThingDef ParentName="ROM_OrganicProductBase">
     <defName>ROM_StrangeKibble</defName>
     <label>strange kibble</label>
     <thingCategories>
@@ -222,7 +222,7 @@
   </ThingDef>
   
 
-  <ThingDef ParentName="RawCHFoodBase">
+  <ThingDef ParentName="ROM_RawCHFoodBase">
     <defName>ROM_RawCHFood_Meat</defName>
     <label>untouchable meat</label>
     <description>Placeholder</description>
@@ -241,7 +241,7 @@
   </ThingDef>
 
   
-  <ThingDef ParentName="RawCHFoodBase">
+  <ThingDef ParentName="ROM_RawCHFoodBase">
     <defName>ROM_RawCHFood_CthulhidMeat</defName>
     <label>cthulhid meat</label>
     <description>Raw meat from a Star-Spawn of Cthulhu.
@@ -259,7 +259,7 @@ Cthulhid flesh is a putrid soupy mess of meat, more liquids than solids and exud
     </ingestible>
   </ThingDef>
 
-  <ThingDef ParentName="RawCHFoodBase">
+  <ThingDef ParentName="ROM_RawCHFoodBase">
     <defName>ROM_RawCHFood_DeepOneMeat</defName>
     <label>Deep One meat</label>
     <description>Raw meat from a Deep One.
@@ -277,7 +277,7 @@ To dine upon Deep One flesh is to experience something rigid and gelatinous simu
     </ingestible>
   </ThingDef>
 
-  <ThingDef ParentName="RawCHFoodBase">
+  <ThingDef ParentName="ROM_RawCHFoodBase">
     <defName>ROM_RawCHFood_MiGoMeat</defName>
     <label>MiGo meat</label>
     <description>Raw meat from a MiGo.
@@ -295,7 +295,7 @@ MiGo meat is not actually meat. In actuality, it is a fungus with a meaty thickn
     </ingestible>
   </ThingDef>
 
-  <ThingDef ParentName="RawCHFoodBase">
+  <ThingDef ParentName="ROM_RawCHFoodBase">
     <defName>ROM_RawCHFood_ShoggothMeat</defName>
     <label>Shoggoth meat</label>
     <description>Raw meat from a Shoggoth.
@@ -313,7 +313,7 @@ The flesh of the Shoggoth is chewy and salty, rubbery like a mussel and imbued i
     </ingestible>
   </ThingDef>
 
-  <ThingDef ParentName="RawCHFoodBase">
+  <ThingDef ParentName="ROM_RawCHFoodBase">
     <defName>ROM_RawCHFood_StarVampireMeat</defName>
     <label>Star Vampire meat</label>
     <description>Raw meat from a Star Vampire.
@@ -331,7 +331,7 @@ Star Vampire meat's marbling ranges from an uncomfortable amount of intramuscula
     </ingestible>
   </ThingDef>
 
-  <ThingDef ParentName="RawCHFoodBase">
+  <ThingDef ParentName="ROM_RawCHFoodBase">
     <defName>ROM_RawCHFood_DarkYoungMeat</defName>
     <label>Dark Young meat</label>
     <description>Raw meat from the Dark Young.
@@ -348,7 +348,7 @@ Star Vampire meat's marbling ranges from an uncomfortable amount of intramuscula
     </ingestible>
   </ThingDef>
   
-  <ThingDef ParentName="RawCHFoodBase">
+  <ThingDef ParentName="ROM_RawCHFoodBase">
     <defName>ROM_RawCHFood_ChthonianMeat</defName>
     <label>Chthonian strips</label>
     <description>Raw meat strips from a Chthonian.</description>
