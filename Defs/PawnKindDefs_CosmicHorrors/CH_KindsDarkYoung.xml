@@ -17,7 +17,8 @@
 		<defName>ROM_DarkYoung</defName>
 		<label>Dark Young</label>
 		<race>ROM_DarkYoung</race>
-		<combatPower>100</combatPower>
+		<combatPower>200</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
 		<aiAvoidCover>true</aiAvoidCover>
 		<lifeStages>
 			<li>
@@ -80,7 +81,7 @@
 			<capacities>
 			  <li>ROM_BluntMonstrous</li>
 			</capacities>
-			<power>10</power>
+			<power>14</power>
 			<cooldownTime>1.65</cooldownTime>
 			<linkedBodyPartsGroup>ROM_Hooves</linkedBodyPartsGroup>
 			<commonality>0.2</commonality>
@@ -90,7 +91,7 @@
 			<capacities>
 			  <li>ROM_BluntMonstrous</li>
 			</capacities>
-			<power>10</power>
+			<power>14</power>
 			<cooldownTime>1.65</cooldownTime>
 			<linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
 		  </li>
@@ -99,7 +100,7 @@
 			<capacities>
 			  <li>ROM_ConstrictMonstrous</li>
 			</capacities>
-			<power>5</power>
+			<power>10</power>
 			<cooldownTime>1.65</cooldownTime>
 			<linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
 			<commonality>0.25</commonality>
