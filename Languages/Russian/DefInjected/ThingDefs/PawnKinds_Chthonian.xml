@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <ROM_Chthonian.label>Хтонианин</ROM_Chthonian.label>
+    <ROM_Chthonian.description>Каттиане - мощные существа, которые могут жить более тысячи лет и защищать своих личинок. Они различаются по диапазону издаваемых звуков, которые используют для тайного общения между собой.</ROM_Chthonian.description>
+    <ROM_Chthonian.race.leatherLabel>Каттианскй хитин</ROM_Chthonian.race.leatherLabel>
+
+    <ROM_ChthonianLarva.label>личинка Хтонианина</ROM_ChthonianLarva.label>
+    <ROM_ChthonianLarva.description>Каттиане - мощные существа, которые могут жить более тысячи лет и защищать своих личинок. Они различаются по диапазону издаваемых звуков, которые используют для тайного общения между собой.</ROM_ChthonianLarva.description>
+
+</LanguageData>
