@@ -17,22 +17,19 @@
 <!-- Star Vampire Incident #2 -->
 <StarVampireIncidentMessage2>Нечеловеческй ужасный хохот приближается. Подготовьтесь быстро!</StarVampireIncidentMessage2>
 
-
 <!-- Dark Young Incident -->
 <DarkYoungIncidentLabel>Странные чудовища</DarkYoungIncidentLabel>
 <DarkYoungIncidentDesc>Прибыло несколько причудливых тварей.</DarkYoungIncidentDesc>
-
 
 <!-- Chthonian Pit -->
 <DiscoveredDaysAgo>Открыто {0} дней назад</DiscoveredDaysAgo>
 <CausingSanityLoss>Активно вызывает потерю здравомыслия.</CausingSanityLoss>
 <NotCausingSanityLoss>Неактивно</NotCausingSanityLoss>
 
-
 <!-- Chthonian Pit Buttons -->
-<CommandPitSacrifice>Жертвоприношение заключенного</CommandPitSacrifice>
+<CommandPitSacrifice>Жертвоприношение заключённого</CommandPitSacrifice>
 <CommandPitSacrificeDesc>Бросьте заключенного в яму, чтобы надежно удовлетворить монстра.</CommandPitSacrificeDesc>
-<NoPrisoners>No prisoners available to sacrifice</NoPrisoners>
+<NoPrisoners>нет жертвы</NoPrisoners>
 <CommandCancelPitSacrificeDesc>Нет заключенных, доступных для жертвоприношения.</CommandCancelPitSacrificeDesc>  
 <PitSacrificeCancelled>Жертвоприношение отменено.</PitSacrificeCancelled>
 <CommandFillHole>Заполнить яму</CommandFillHole>
