@@ -32,109 +32,78 @@ namespace CosmicHorror
 
         protected override Job TryGiveJob(Pawn pawn)
         {
-            //CosmicHorrorPawn pawnSelf = pawn as CosmicHorrorPawn;
-            if (pawn.Downed) return null;
-            if (pawn.Dead) return null;
-            if (!pawn.Spawned) return null;
-            //if (!this.setStartTicks)
-            //{
-            //    this.startTicks = Find.TickManager.TicksGame + this.ticksUntilStartingAttack.RandomInRange;
-            //    this.setStartTicks = true;
-            //    return new Job(JobDefOf.WaitWander) { expiryInterval = 90 };
-            //}
-            //if (Find.TickManager.TicksGame > (this.startTicks / 2) && this.showedMessage == false)
-            //{
-            //    this.showedMessage = true;
-            //    SoundDef warnSound = SoundDef.Named("Pawn_ROM_StarVampire_Warning");
-            //    warnSound.PlayOneShotOnCamera();
-            //    Messages.Message("StarVampireIncidentMessage2".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, pawn.Map), MessageTypeDefOf.SituationResolved);
-            //}
-            //if (Find.TickManager.TicksGame < this.startTicks)
-            //{
-            //    return new Job(JobDefOf.WaitWander) { expiryInterval = 90 };
-            //}
-
-            if (Rand.Value < 0.5f)
+            if (pawn.Downed || pawn.Dead || !pawn.Spawned) return null;
+            if (pawn.TryGetAttackVerb() == null)
             {
-                return new Job(JobDefOf.WaitCombat) { expiryInterval = 90 };
+                return null;
             }
-            if (!pawn.health.Downed && !pawn.health.Dead)
+            Predicate<Thing> validator = t => ((t != pawn) && t.Spawned) && (t is Building_Turret);
+            var pawn2 = pawn as CosmicHorrorPawn;
+            var targetA = GenClosest.ClosestThingReachable(pawn.Position, pawn.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial), PathEndMode.ClosestTouch, TraverseParms.For(pawn2, Danger.Deadly, TraverseMode.PassDoors, true), 999f, validator, null);
+            if (targetA != null)
             {
-                Predicate<Thing> validator = t => ((t != pawn) && t.Spawned) && (t is Building_Turret);
-                CosmicHorrorPawn pawn2 = pawn as CosmicHorrorPawn;
-                Thing targetA = GenClosest.ClosestThingReachable(pawn.Position, pawn.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial), PathEndMode.ClosestTouch, TraverseParms.For(pawn2, Danger.Deadly, TraverseMode.PassDoors, true), 999f, validator, null);
-                if (targetA != null)
-                {
 
-                    //if (pawnSelf.canReveal()) { pawnSelf.Reveal(); }
-                    return new Job(JobDefOf.AttackMelee, targetA)
-                    {
-                        //maxNumMeleeAttacks = 1,
-                        expiryInterval = Rand.Range(420, 900)
-                    };
-                }
-                Predicate<Thing> predicate2 = delegate (Thing t)
+                //if (pawnSelf.canReveal()) { pawnSelf.Reveal(); }
+                return new Job(JobDefOf.AttackMelee, targetA)
                 {
-                    if (t == pawn)
-                    {
-                        return false;
-                    }
-                    Pawn pawn1 = t as Pawn;
-                    if ((pawn1 == null) || (!t.Spawned) || (pawn1.kindDef.ToString() == "ROM_StarVampire"))
-                    {
-                        return false;
-                    }
-                    if (pawn1.RaceProps.Animal)
-                    {
-                        return false;
-                    }
-                    return true;
+                    //maxNumMeleeAttacks = 1,
+                    expiryInterval = Rand.Range(420, 900)
                 };
-                Thing thing2 = GenClosest.ClosestThingReachable(pawn.Position, pawn.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.Pawn), PathEndMode.OnCell, TraverseParms.For(pawn2, Danger.Deadly, TraverseMode.PassDoors, false), notRaidingAttackRange, predicate2);
-                Pawn pawnTarget = thing2 as Pawn;
-                if (thing2 != null)
-                {
-                    Thing thing3;
-                    using (PawnPath path = pawn.Map.pathFinder.FindPath(pawn.Position, thing2.Position, TraverseParms.For(pawn, Danger.Deadly, TraverseMode.PassDoors, false), PathEndMode.OnCell))
-                    {
-                        thing3 = path.FirstBlockingBuilding(out IntVec3 vec, pawn);
-                    }
-                    if (thing3 != null)
-                    {
-                        return new Job(JobDefOf.AttackMelee, thing3)
-                        {
-
-                            //maxNumMeleeAttacks = 1,
-                            expiryInterval = Rand.Range(420, 900),
-                            locomotionUrgency = LocomotionUrgency.Sprint
-                        };
-                    }
-                    if (thing2 != null)
-                    {
-                        if (pawnTarget.Dead)
-                        {
-                            //if (pawnSelf.canReveal()) { pawnSelf.Reveal(); }
-                            return new Job(JobDefOf.Ingest, thing2)
-                            {
-                                //maxNumMeleeAttacks = 1,
-                                expiryInterval = Rand.Range(57420, 57900),
-                                locomotionUrgency = LocomotionUrgency.Sprint
-                            };
-                        }
-
-                        //if (pawnSelf.canReveal()) { pawnSelf.Reveal(); }
-                        return new Job(JobDefOf.PredatorHunt, thing2)
-                        {
-                            //maxNumMeleeAttacks = 1,
-                            expiryInterval = Rand.Range(57420, 57900),
-                            locomotionUrgency = LocomotionUrgency.Sprint,
-                            killIncappedTarget = true
-                        };
-                    }
-                }
             }
+
+            bool Predicate2(Thing t)
+            {
+                if (t == pawn)
+                {
+                    return false;
+                }
+                Pawn pawn1 = t as Pawn;
+                if ((pawn1 == null) || (!t.Spawned) || (pawn1.kindDef.ToString() == "ROM_StarVampire"))
+                {
+                    return false;
+                }
+                if (pawn1.RaceProps.Animal)
+                {
+                    return false;
+                }
+                return true;
+            }
+
+            var thing2 = GenClosest.ClosestThingReachable(pawn.Position, pawn.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.Pawn), PathEndMode.OnCell, TraverseParms.For(pawn2, Danger.Deadly, TraverseMode.PassDoors, false), notRaidingAttackRange, Predicate2);
+            var pawnTarget = thing2 as Pawn;
+            if (thing2 == null) return null;
+            Thing thing3;
+            using (var path = pawn.Map.pathFinder.FindPath(pawn.Position, thing2.Position, TraverseParms.For(pawn, Danger.Deadly, TraverseMode.PassDoors, false), PathEndMode.OnCell))
+            {
+                thing3 = path.FirstBlockingBuilding(out IntVec3 vec, pawn);
+            }
+            if (thing3 != null)
+            {
+                return new Job(JobDefOf.AttackMelee, thing3)
+                {
+
+                    //maxNumMeleeAttacks = 1,
+                    expiryInterval = Rand.Range(420, 900),
+                    locomotionUrgency = LocomotionUrgency.Sprint
+                };
+            }
+            return pawnTarget.Dead
+                ? new Job(JobDefOf.Ingest, thing2)
+                {
+                    //maxNumMeleeAttacks = 1,
+                    expiryInterval = Rand.Range(57420, 57900),
+                    locomotionUrgency = LocomotionUrgency.Sprint
+                }
+                : new Job(JobDefOf.PredatorHunt, thing2)
+                {
+                    //maxNumMeleeAttacks = 1,
+                    expiryInterval = Rand.Range(57420, 57900),
+                    locomotionUrgency = LocomotionUrgency.Sprint,
+                    killIncappedTarget = true
+                };
+
+            //if (pawnSelf.canReveal()) { pawnSelf.Reveal(); }
             //pawnSelf.Hide();
-            return null;
         }
     }
 

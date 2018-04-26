@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+	<success>Always</success>
+	<operations>
+	  <!--This ensures the patch will only be applied IF Giddy-Up is loaded-->
+	  <li Class="JecsTools.PatchOperationModLoaded">
+	    <modName>Giddy-up! Core</modName>
+	  </li>
+	  <li Class="PatchOperationAddModExtension">
+		<xpath>*/ThingDef[ defName = "ROM_DarkYoung"]</xpath> 
+		<value>
+		  <li Class="GiddyUpCore.DrawingOffsetPatch">
+			<northOffsetCSV>0,0,-1.25</northOffsetCSV>
+			<southOffsetCSV>0,0,-1.25</southOffsetCSV>	
+			<eastOffsetCSV>-0.5,0,-1.25</eastOffsetCSV>	
+			<westOffsetCSV>0.5,0,-1.25</westOffsetCSV>	
+		  </li>
+		  <li Class="GiddyUpCore.AllowedLifeStagesPatch">
+		    <allowedLifeStagesCSV>1,2,3</allowedLifeStagesCSV>
+		  </li>
+		</value>
+	  </li>
+	</operations>
+  </Operation>
+
+
+</Patch>

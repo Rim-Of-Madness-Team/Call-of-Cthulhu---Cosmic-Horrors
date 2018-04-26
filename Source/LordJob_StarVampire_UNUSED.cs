@@ -3,7 +3,7 @@ using Verse.AI.Group;
 
 namespace RimWorld
 {
-    public class LordJob_StarVampire : LordJob
+    public class LordJob_StarVampire_UNUSED : LordJob
     {
         private Faction faction;
 
@@ -11,11 +11,11 @@ namespace RimWorld
 
         private int ticksUntilAssault = Rand.Range(3000, 6000);
 
-        public LordJob_StarVampire()
+        public LordJob_StarVampire_UNUSED()
         {
         }
 
-        public LordJob_StarVampire(Faction faction, IntVec3 stageLoc)
+        public LordJob_StarVampire_UNUSED(Faction faction, IntVec3 stageLoc)
         {
             this.faction = faction;
             this.stageLoc = stageLoc;

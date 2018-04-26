@@ -25,7 +25,8 @@ namespace CosmicHorror
                 alertedPlayer = true;
                 SoundDef warnSound = SoundDef.Named("Pawn_ROM_StarVampire_Warning");
                 warnSound.PlayOneShotOnCamera();
-                Messages.Message("StarVampireIncidentMessage2".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, Map), MessageTypeDefOf.SituationResolved);
+                Messages.Message("StarVampireIncidentMessage2".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, Map), MessageTypeDefOf.ThreatBig);
+                HealthUtility.AdjustSeverity(this as Pawn, HediffDef.Named("ROM_StarVampireDescent"), 1.0f);
             }
         }
 

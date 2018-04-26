@@ -20,6 +20,8 @@
     <label>fully formed</label>
     <visible>false</visible>
     <reproductive>true</reproductive>
+    <milkable>true</milkable>
+    <shearable>true</shearable>
   </LifeStageDef>
   
   <LifeStageDef>
@@ -34,6 +36,8 @@
     <statFactors>
       <MoveSpeed>1.25</MoveSpeed>
     </statFactors>
+    <milkable>true</milkable>
+    <shearable>true</shearable>
   </LifeStageDef>
   
   <LifeStageDef>
@@ -48,6 +52,8 @@
     <statFactors>
       <MoveSpeed>1.30</MoveSpeed>
     </statFactors>
+    <milkable>true</milkable>
+    <shearable>true</shearable>
   </LifeStageDef>
   
   

@@ -363,5 +363,45 @@ Star Vampire meat's marbling ranges from an uncomfortable amount of intramuscula
       <specialThoughtDirect>AteRawFood</specialThoughtDirect>
     </ingestible>
   </ThingDef>  
+  
+
+  <ThingDef ParentName="ROM_OrganicProductBase">
+    <defName>ROM_DarkYoungSap</defName>
+    <label>dark young sap</label>
+    <description>Sweet sap squeezed from an orifice of one of the foul children of Shub-Niggurath.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Milk</texPath>
+	  <color>(20,40,20)</color>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>3.2</MarketValue>
+      <Mass>0.05</Mass>
+			<MaxHitPoints>70</MaxHitPoints>
+    </statBases>
+    <comps>
+			<li Class="CompProperties_FoodPoisoningChance">
+				<humanlikeOnly>true</humanlikeOnly>
+			</li>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>22</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <foodType>AnimalProduct, Fluid</foodType>
+      <nutrition>0.045</nutrition>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			  <hediffDef>ROM_SanityLoss</hediffDef>
+			  <severity>0.05</severity>
+			</li>
+		</outcomeDoers>	
+    </ingestible>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+  </ThingDef>
 
 </Defs>

@@ -111,6 +111,12 @@
         <commonality>0.25</commonality>
       </li>
     </tools>
+	<comps>
+	  <li Class="CompLumbering.CompProperties_Lumbering">
+		<secondsPerStep>1.4</secondsPerStep>
+		<secondsBetweenSteps>0.5</secondsBetweenSteps>
+	  </li>
+	</comps>
     <race>
       <bloodDef>ROM_FilthBloodShoggoth</bloodDef>
       <hasGenders>false</hasGenders>

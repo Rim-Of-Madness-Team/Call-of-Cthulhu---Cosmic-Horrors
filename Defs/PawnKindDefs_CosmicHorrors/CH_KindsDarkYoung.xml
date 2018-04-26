@@ -116,6 +116,22 @@
 			<commonality>0.33</commonality>
 		  </li>
 		</tools>
+		<comps>
+		  <li Class="CompProperties_Milkable">
+			<milkDef>ROM_DarkYoungSap</milkDef>
+			<milkIntervalDays>3</milkIntervalDays>
+			<milkAmount>13</milkAmount>
+		  </li>
+		  <li Class="CompProperties_Shearable">
+			<woolDef>ROM_DarkYoung_Leather</woolDef>
+			<shearIntervalDays>25</shearIntervalDays>
+			<woolAmount>100</woolAmount>
+		  </li>
+	      <li Class="CompLumbering.CompProperties_Lumbering">
+		    <secondsPerStep>1.15</secondsPerStep>
+		    <secondsBetweenSteps>0.5</secondsBetweenSteps>
+	      </li>
+		</comps>
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
@@ -185,6 +201,7 @@
 			<li>RemoveBodyPart</li>
 			<li>Euthanize</li>
 		</recipes>
+		
 	<modExtensions>
 	  <li Class = "CosmicHorror.PawnExtension">
 	    <invisible>false</invisible>

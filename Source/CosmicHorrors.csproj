@@ -79,7 +79,7 @@
     <Compile Include="JobDriver_HaulSacrifice.cs" />
     <Compile Include="JobGiver_StarVampireFeed.cs" />
     <Compile Include="CosmicHorrorPawn.cs" />
-    <Compile Include="LordJob_StarVampire.cs" />
+    <Compile Include="LordJob_StarVampire_UNUSED.cs" />
     <Compile Include="MonsterDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

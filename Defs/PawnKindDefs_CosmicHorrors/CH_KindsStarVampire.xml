@@ -167,7 +167,7 @@
       <body>ROM_StarVampireBody</body>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
       <baseBodySize>1.0</baseBodySize>
-      <baseHealthScale>1.5</baseHealthScale>
+      <baseHealthScale>1.8</baseHealthScale>
       <leatherColor>(176,39,39)</leatherColor>
 	  <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
       <leatherLabel>star vampire leather</leatherLabel>
