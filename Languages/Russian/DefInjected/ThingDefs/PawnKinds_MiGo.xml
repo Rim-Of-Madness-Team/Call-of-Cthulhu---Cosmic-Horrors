@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <ROM_MiGo.label>Ми-Го</ROM_MiGo.label>
+    <ROM_MiGo.description>Крылья летуей мыши, многочисленные сегментированные конечности и голова с антенной. Они любопытны, ищут мозги маленьких видов для приобретения знаний. Известно, что они исследуют планеты, содержащие недостающие ресурсы для их родины.
+		</ROM_MiGo.description>
+
+    <ROM_Bullet_MiGoCastingWeapon.label>Тетраэдрический энергетический взрыв</ROM_Bullet_MiGoCastingWeapon.label>
+
+    <ROM_MiGoCastingWeapon.label>Тетраэдрическое энергетическое оружие</ROM_MiGoCastingWeapon.label>
+    <ROM_MiGoCastingWeapon.description>Таинственный ромбовидный хрустальный артефакт.</ROM_MiGoCastingWeapon.description>
+
+</LanguageData>
