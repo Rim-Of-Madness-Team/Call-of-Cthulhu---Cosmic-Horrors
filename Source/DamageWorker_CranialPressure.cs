@@ -22,7 +22,7 @@ namespace CosmicHorror
 
         private DamageWorker.DamageResult ApplyToPawn(DamageInfo dinfo, Pawn pawn)
         {
-            DamageResult result = DamageResult.MakeNew();
+            DamageResult result = new DamageResult();
             if (dinfo.Amount <= 0)
             {
                 return result;
@@ -33,7 +33,7 @@ namespace CosmicHorror
             }
             Map mapHeld = pawn.MapHeld;
             bool spawnedOrAnyParentSpawned = pawn.SpawnedOrAnyParentSpawned;
-            BodyPartRecord consciousnessSource = pawn.def.race.body.AllParts.FirstOrDefault((BodyPartRecord x) => x.def == BodyPartDefOf.Brain || x.def.tags.Contains("ConsciousnessSource"));
+            BodyPartRecord consciousnessSource = pawn.def.race.body.AllParts.FirstOrDefault((BodyPartRecord x) => x.def == BodyPartDefOf.Brain || x.def.tags.Contains(BodyPartTagDefOf.ConsciousnessSource));
             if (consciousnessSource != null)
             {
                 Hediff pressure = pawn.health.hediffSet.GetFirstHediffOfDef(MonsterDefOf.ROM_IntracranialPressure);

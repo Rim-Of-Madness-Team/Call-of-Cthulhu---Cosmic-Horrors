@@ -8,14 +8,14 @@ namespace CosmicHorror
     internal class IncidentWorker_DarkYoung : IncidentWorker
     {
 
-        protected override bool CanFireNowSub(IIncidentTarget target)
+        protected override bool CanFireNowSub(IncidentParms parms)
         {
-            Map map = (Map)target;
+            Map map = (Map)parms.target;
             if (GenDate.DaysPassed < (ModInfo.cosmicHorrorRaidDelay + this.def.earliestDay))
             {
                 return false;
             }
-            return base.CanFireNowSub(target);
+            return base.CanFireNowSub(parms);
         }
 
         protected override bool TryExecuteWorker(IncidentParms parms)

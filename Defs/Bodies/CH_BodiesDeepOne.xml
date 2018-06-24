@@ -25,24 +25,6 @@
           </groups>
         </li>
         <li>
-          <def>LeftClavicle</def>
-          <coverage>0.005</coverage>
-          <height>Top</height>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
-          <def>RightClavicle</def>
-          <coverage>0.005</coverage>
-          <height>Top</height>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
           <def>Sternum</def>
           <coverage>0.005</coverage>
           <depth>Inside</depth>
@@ -51,96 +33,8 @@
           </groups>
         </li>
         <li>
-          <def>Rib</def>
-          <coverage>0.001</coverage>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
-          <def>Rib</def>
-          <coverage>0.001</coverage>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
-          <def>Rib</def>
-          <coverage>0.001</coverage>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
-          <def>Rib</def>
-          <coverage>0.001</coverage>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
-          <def>Rib</def>
-          <coverage>0.001</coverage>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
-          <def>Rib</def>
-          <coverage>0.001</coverage>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
-          <def>Rib</def>
-          <coverage>0.001</coverage>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
-          <def>Rib</def>
-          <coverage>0.001</coverage>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
-          <def>Rib</def>
-          <coverage>0.001</coverage>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
-          <def>Rib</def>
-          <coverage>0.001</coverage>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
-          <def>Rib</def>
-          <coverage>0.001</coverage>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
-          <def>Rib</def>
-          <coverage>0.001</coverage>
+          <def>Ribcage</def>
+          <coverage>0.012</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -180,7 +74,8 @@
           </groups>
         </li>
         <li>
-          <def>LeftLung</def>
+          <def>Lung</def>
+<customLabel>left lung</customLabel>
           <coverage>0.03</coverage>
           <depth>Inside</depth>
           <groups>
@@ -188,7 +83,8 @@
           </groups>
         </li>
         <li>
-          <def>RightLung</def>
+          <def>Lung</def>
+<customLabel>right lung</customLabel>
           <coverage>0.03</coverage>
           <depth>Inside</depth>
           <groups>
@@ -196,7 +92,8 @@
           </groups>
         </li>
         <li>
-          <def>LeftKidney</def>
+          <def>Kidney</def>
+<customLabel>left kidney</customLabel>
           <coverage>0.03</coverage>
           <depth>Inside</depth>
           <groups>
@@ -204,7 +101,8 @@
           </groups>
         </li>
         <li>
-          <def>RightKidney</def>
+          <def>Kidney</def>
+<customLabel>right kidney</customLabel>
           <coverage>0.03</coverage>
           <depth>Inside</depth>
           <groups>
@@ -256,7 +154,8 @@
                   </parts>
                 </li>
                 <li>
-                  <def>LeftEye</def>
+                  <def>Eye</def>
+<customLabel>left eye</customLabel>
                   <coverage>0.04</coverage>
                   <groups>
                     <li>FullHead</li>
@@ -264,7 +163,8 @@
                   </groups>
                 </li>
                 <li>
-                  <def>RightEye</def>
+                  <def>Eye</def>
+<customLabel>right eye</customLabel>
                   <coverage>0.04</coverage>
                   <groups>
                     <li>FullHead</li>
@@ -323,21 +223,24 @@
           </parts>
         </li>
         <li>
-          <def>LeftShoulder</def>
+          <def>Shoulder</def>
+<customLabel>left shoulder</customLabel>
           <coverage>0.1</coverage>
           <groups>
             <li>Shoulders</li>
           </groups>
           <parts>
             <li>
-              <def>LeftArm</def>
+              <def>Arm</def>
+<customLabel>left arm</customLabel>
               <coverage>0.95</coverage>
               <groups>
                 <li>Arms</li>
               </groups>
               <parts>
                 <li>
-                  <def>LeftHumerus</def>
+                  <def>Humerus</def>
+<customLabel>left humerus</customLabel>
                   <coverage>0.1</coverage>
                   <depth>Inside</depth>
                   <groups>
@@ -345,7 +248,8 @@
                   </groups>
                 </li>
                 <li>
-                  <def>LeftRadius</def>
+                  <def>Radius</def>
+<customLabel>left radius</customLabel>
                   <coverage>0.1</coverage>
                   <depth>Inside</depth>
                   <groups>
@@ -358,6 +262,7 @@
                   <height>Bottom</height>
                   <groups>
                     <li>ROM_LeftClaws</li>
+                    <li>Hands</li>
                   </groups>
                 </li>
               </parts>
@@ -365,21 +270,24 @@
           </parts>
         </li>
         <li>
-          <def>RightShoulder</def>
+          <def>Shoulder</def>
+<customLabel>right shoulder</customLabel>
           <coverage>0.1</coverage>
           <groups>
             <li>Shoulders</li>
           </groups>
           <parts>
             <li>
-              <def>RightArm</def>
+              <def>Arm</def>
+<customLabel>right arm</customLabel>
               <coverage>0.95</coverage>
               <groups>
                 <li>Arms</li>
               </groups>
               <parts>
                 <li>
-                  <def>RightHumerus</def>
+                  <def>Humerus</def>
+<customLabel>right humerus</customLabel>
                   <coverage>0.1</coverage>
                   <depth>Inside</depth>
                   <groups>
@@ -387,7 +295,8 @@
                   </groups>
                 </li>
                 <li>
-                  <def>RightRadius</def>
+                  <def>Radius</def>
+<customLabel>right radius</customLabel>
                   <coverage>0.1</coverage>
                   <depth>Inside</depth>
                   <groups>
@@ -400,6 +309,7 @@
                   <height>Bottom</height>
                   <groups>
                     <li>ROM_RightClaws</li>
+                    <li>Hands</li>
                   </groups>
                 </li>
               </parts>
@@ -407,7 +317,8 @@
           </parts>
         </li>
         <li>
-          <def>LeftLeg</def>
+          <def>Leg</def>
+<customLabel>left leg</customLabel>
           <coverage>0.1</coverage>
           <height>Bottom</height>
           <groups>
@@ -415,7 +326,8 @@
           </groups>
           <parts>
             <li>
-              <def>LeftFemur</def>
+              <def>Femur</def>
+<customLabel>left femur</customLabel>
               <coverage>0.1</coverage>
               <depth>Inside</depth>
               <groups>
@@ -423,7 +335,8 @@
               </groups>
             </li>
             <li>
-              <def>LeftTibia</def>
+              <def>Tibia</def>
+<customLabel>left tibia</customLabel>
               <coverage>0.1</coverage>
               <depth>Inside</depth>
               <groups>
@@ -440,7 +353,8 @@
           </parts>
         </li>
         <li>
-          <def>RightLeg</def>
+          <def>Leg</def>
+<customLabel>right leg</customLabel>
           <coverage>0.1</coverage>
           <height>Bottom</height>
           <groups>
@@ -448,7 +362,8 @@
           </groups>
           <parts>
             <li>
-              <def>RightFemur</def>
+              <def>Femur</def>
+<customLabel>right femur</customLabel>
               <coverage>0.1</coverage>
               <depth>Inside</depth>
               <groups>
@@ -456,7 +371,8 @@
               </groups>
             </li>
             <li>
-              <def>RightTibia</def>
+              <def>Tibia</def>
+<customLabel>right tibia</customLabel>
               <coverage>0.1</coverage>
               <depth>Inside</depth>
               <groups>

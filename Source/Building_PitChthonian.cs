@@ -355,7 +355,7 @@ namespace CosmicHorror
                     }
                     //Find.WorldPawns.PassToWorld(pawn, PawnDiscardDecideMode.Discard);
                 }
-                if (this.Map == Find.VisibleMap)
+                if (this.Map == Find.CurrentMap)
                 {
                     SoundDef.Named("Pawn_ROM_Chthonian_Scream").PlayOneShotOnCamera();
                 }
@@ -572,10 +572,10 @@ namespace CosmicHorror
             TryReturnChthonian();
         }
 
-        public override void PreApplyDamage(DamageInfo dinfo, out bool absorbed)
+        public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {
 
-            base.PreApplyDamage(dinfo, out absorbed);
+            base.PreApplyDamage(ref dinfo, out absorbed);
             if (!this.isActive)
             {
                 return;
@@ -680,7 +680,7 @@ namespace CosmicHorror
                         action = new Action(this.ProcessInput),
                         defaultLabel = "CommandCancelConstructionLabel".Translate(),
                         defaultDesc = "CommandCancelPitSacrificeDesc".Translate(),
-                        hotKey = KeyBindingDefOf.DesignatorCancel,
+                        hotKey = KeyBindingDefOf.Designator_Cancel,
                         icon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel", true)
                     };
                     yield return command_Cancel;
@@ -707,7 +707,7 @@ namespace CosmicHorror
                     action = new Action(this.TryCancelFillHole),
                     defaultLabel = "CommandCancelConstructionLabel".Translate(),
                     defaultDesc = "CommandCancelFillHoleDesc".Translate(),
-                    hotKey = KeyBindingDefOf.DesignatorCancel,
+                    hotKey = KeyBindingDefOf.Designator_Cancel,
                     icon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel", true)
                 };
                 yield return command_Cancel;

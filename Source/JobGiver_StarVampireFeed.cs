@@ -33,7 +33,7 @@ namespace CosmicHorror
         protected override Job TryGiveJob(Pawn pawn)
         {
             if (pawn.Downed || pawn.Dead || !pawn.Spawned) return null;
-            if (pawn.TryGetAttackVerb() == null)
+            if (pawn.TryGetAttackVerb(null) == null)
             {
                 return null;
             }

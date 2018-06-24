@@ -65,10 +65,10 @@
 	</PawnKindDef>
 
 	<!-- RACE DEFS -->
-	<ThingDef ParentName="BaseCosmicHorrorRace">
+	<ThingDef ParentName="BaseCosmicHorrorRaceInit">
 		<defName>ROM_DarkYoung</defName>
 		<label>Dark Young</label>
-		<description>A tree-like being, whose hooved roots carries an enormous black mass of branched tentacles, writhing around drooling mouths. They are the spawn of Shub-niggurath, the Black Goat with a Thousand Young and master of the woods. They act in its stead and come to worshippers in dark forests to accept sacrifice and reverence.  </description>
+		<description>A tree-like being, whose hooved roots carries an enormous black mass of branched tentacles, writhing around drooling mouths. They are the spawn of Shub-niggurath, the Black Goat with a Thousand Young and master of the woods. They act in its stead and come to worshippers in dark forests to accept sacrifice and reverence.</description>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<ComfyTemperatureMin>-65</ComfyTemperatureMin>
@@ -123,22 +123,18 @@
 			<milkAmount>13</milkAmount>
 		  </li>
 		  <li Class="CompProperties_Shearable">
-			<woolDef>ROM_DarkYoung_Leather</woolDef>
+			<woolDef>CH_Leather_DarkYoung</woolDef>
 			<shearIntervalDays>25</shearIntervalDays>
 			<woolAmount>100</woolAmount>
 		  </li>
-	      <li Class="CompLumbering.CompProperties_Lumbering">
-		    <secondsPerStep>1.15</secondsPerStep>
-		    <secondsBetweenSteps>0.5</secondsBetweenSteps>
-	      </li>
 		</comps>
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
 			<packAnimal>true</packAnimal>
 			<body>ROM_DarkYoungBody</body>
-			<thinkTreeMain>ROM_DarkYoung</thinkTreeMain>
-			<thinkTreeConstant>ROM_DarkYoungConstant</thinkTreeConstant>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<thinkTreeConstant>AnimalConstant</thinkTreeConstant>
 			<nameGenerator>HPLovecraft_NamerAuthorMale</nameGenerator>
 			<baseBodySize>3.5</baseBodySize>
 			<baseHungerRate>3.0</baseHungerRate>
@@ -147,21 +143,23 @@
 			<gestationPeriodDays>80</gestationPeriodDays>
 			<wildness>0.885</wildness>
 			<lifeExpectancy>1200</lifeExpectancy>
-			<trainableIntelligence>Advanced</trainableIntelligence>
+			<trainability>Advanced</trainability>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.025</manhunterOnTameFailChance>
+			<!--
 			<leatherColor>(47,34,75)</leatherColor>
 			<leatherLabel>dark young barkskin</leatherLabel>
 			<leatherCommonalityFactor>0.01</leatherCommonalityFactor>
 			<leatherStatFactors>
 				<ArmorRating_Sharp>2.5</ArmorRating_Sharp>
 				<ArmorRating_Blunt>3.5</ArmorRating_Blunt>
-				<ArmorRating_Heat>1.0</ArmorRating_Heat>
-				<ArmorRating_Electric>4.0</ArmorRating_Electric>
+				<ArmorRating_Heat>4.0</ArmorRating_Heat>
 				<Insulation_Cold>0.65</Insulation_Cold>
 				<Insulation_Heat>0.65</Insulation_Heat>
 			</leatherStatFactors>
 			<leatherMarketValueFactor>7.5</leatherMarketValueFactor>
+			-->
+	        <leatherDef>CH_Leather_DarkYoung</leatherDef>
 			<lifeStageAges>
 				<li>
 					<def>ROM_Spawn</def>

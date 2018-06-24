@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-  <ThingDef Name="HorrorBuildingBase" Abstract="True">
-    <category>Building</category>
-    <thingClass>Building</thingClass>
-    <soundImpactDefault>BulletImpactGround</soundImpactDefault>
-    <selectable>true</selectable>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <repairEffect>Repair</repairEffect>
-    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <filthLeaving>BuildingRubble</filthLeaving>
-  </ThingDef>
-
-
-  <ThingDef ParentName="HorrorBuildingBase" Name="HorrorShipPartBase" Abstract="True">
+  <ThingDef ParentName="BuildingBase" Name="HorrorShipPartBase" Abstract="True">
     <altitudeLayer>Building</altitudeLayer>
     <pathCost>150</pathCost>
     <blockWind>false</blockWind>

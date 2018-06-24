@@ -2,16 +2,12 @@
 
 <Defs>
 
-  <HediffDef Name="InjuryBase" Abstract="True">
-    <hediffClass>Hediff_Injury</hediffClass>
-    <displayWound>true</displayWound>
-	<tendable>true</tendable>
-  </HediffDef>
-
   <HediffDef ParentName="InjuryBase">
     <defName>ROM_Exsanguination</defName>
     <label>vampiric</label>
+	<hediffClass>HediffWithComps</hediffClass>
     <displayWound>false</displayWound>
+	    <tendable>true</tendable>
     <comps>
       <li Class="HediffCompProperties_TendDuration">
         <labelTendedWell>bandaged</labelTendedWell>
@@ -24,7 +20,7 @@
     </comps>
     <injuryProps>
       <painPerSeverity>0.0125</painPerSeverity>
-      <averagePainPerSeverityOld>0.00625</averagePainPerSeverityOld>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
       <bleedRate>0.1</bleedRate>
       <canMerge>true</canMerge>
       <destroyedLabel>sucked out</destroyedLabel>

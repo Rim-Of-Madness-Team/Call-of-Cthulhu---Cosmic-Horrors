@@ -97,7 +97,8 @@
           </parts>
         </li>
         <li>
-          <def>FrontLeftInsectLeg</def>
+          <def>InsectLeg</def>
+<customLabel>front left leg</customLabel>
           <coverage>0.06</coverage>
           <height>Bottom</height>
 		  <groups>
@@ -105,7 +106,8 @@
 		  </groups>				  
         </li>
         <li>
-          <def>FrontRightInsectLeg</def>
+          <def>InsectLeg</def>
+<customLabel>front right leg</customLabel>
           <coverage>0.06</coverage>
           <height>Bottom</height>
 		  <groups>
@@ -113,7 +115,8 @@
 		  </groups>			  
         </li>
         <li>
-          <def>MiddleLeftInsectLeg</def>
+          <def>InsectLeg</def>
+<customLabel>middle left leg</customLabel>
           <coverage>0.06</coverage>
           <height>Bottom</height>
 		  <groups>
@@ -121,7 +124,8 @@
 		  </groups>	
         </li>
         <li>
-          <def>MiddleRightInsectLeg</def>
+          <def>InsectLeg</def>
+<customLabel>middle right leg</customLabel>
           <coverage>0.06</coverage>
           <height>Bottom</height>
 		  <groups>
@@ -129,7 +133,8 @@
 		  </groups>	
         </li>
         <li>
-          <def>RearLeftInsectLeg</def>
+          <def>InsectLeg</def>
+<customLabel>rear left leg</customLabel>
           <coverage>0.06</coverage>
           <height>Bottom</height>
 		  <groups>
@@ -137,7 +142,8 @@
 		  </groups>	
         </li>
         <li>
-          <def>RearRightInsectLeg</def>
+          <def>InsectLeg</def>
+<customLabel>rear right leg</customLabel>
           <coverage>0.06</coverage>
           <height>Bottom</height>
 		  <groups>

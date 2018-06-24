@@ -132,9 +132,9 @@ namespace CosmicHorror
         }
         #endregion Invisibility
         
-        public override void PreApplyDamage(DamageInfo dinfo, out bool absorbed)
+        public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {
-            base.PreApplyDamage(dinfo, out absorbed);
+            base.PreApplyDamage(ref dinfo, out absorbed);
             ResolveInvisibility(dinfo, absorbed, out absorbed);
 
             if (dinfo.Instigator != null)
@@ -273,7 +273,7 @@ namespace CosmicHorror
             if (this.IsInvisible)
             {
                 this.IsInvisible = false;
-                MoteMaker.ThrowAirPuffUp(Gen.TrueCenter(this), this.MapHeld);
+                MoteMaker.ThrowAirPuffUp(GenThing.TrueCenter(this), this.MapHeld);
             }
             return;
         }
@@ -333,7 +333,7 @@ namespace CosmicHorror
         {
             try
             {
-                if (this.StoringBuilding() == null && target.RaceProps.Humanlike)
+                if (this.StoringThing() == null && target.RaceProps.Humanlike)
                 {
                     Thought_MemoryObservation thought_MemoryObservation;
                     thought_MemoryObservation = (Thought_MemoryObservation)ThoughtMaker.MakeThought(DefDatabase<ThoughtDef>.GetNamed("Observed" + this.def.ToString()));
@@ -358,7 +358,7 @@ namespace CosmicHorror
                 ///This area gives the thought for witnessing a cosmic horror.
                 if (this == null) return;
                 if (!ourBody.Spawned) return;
-                if (ourBody.StoringBuilding() == null)
+                if (ourBody.StoringThing() == null)
                 {
                     ThoughtDef defToImplement = DefDatabase<ThoughtDef>.GetNamedSilentFail("Observed" + this.def.ToString());
                     if (defToImplement == null) return;

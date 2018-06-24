@@ -8,7 +8,7 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
+  </ComponentIndustrial>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="CosmicHorrorPawn_StarVampire.cs" pinned="false" current-in-tab="true">
@@ -275,7 +275,7 @@
         </entry>
       </file>
     </leaf>
-  </component>
+  </ComponentIndustrial>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/IncidentWorker_StarVampireAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JobGiver_StarVampireFeed.cs" root0="FORCE_HIGHLIGHTING" />
@@ -285,7 +285,7 @@
     <setting file="file://$PROJECT_DIR$/CosmicHorrorPawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JobDriver_FillChthonianPit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ModInfo.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
+  </ComponentIndustrial>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -295,19 +295,19 @@
         <option value="$PROJECT_DIR$/CosmicHorrorPawn_StarVampire.cs" />
       </list>
     </option>
-  </component>
+  </ComponentIndustrial>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
+  </ComponentIndustrial>
   <component name="ProjectFrameBounds">
     <option name="x" value="322" />
     <option name="y" value="190" />
     <option name="width" value="1467" />
     <option name="height" value="798" />
-  </component>
+  </ComponentIndustrial>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
       <flattenPackages />
@@ -343,11 +343,11 @@
       </pane>
       <pane id="Scratches" />
     </panes>
-  </component>
+  </ComponentIndustrial>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../RimworldModReleaseTool.exe" />
-  </component>
+  </ComponentIndustrial>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -359,7 +359,7 @@
         </RuleState>
       </list>
     </option>
-  </component>
+  </ComponentIndustrial>
   <component name="RunManager" selected=".NET Executable.Deployer">
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" />
     <configuration name="Deployer" type="RunExe" factoryName=".NET Executable">
@@ -375,10 +375,10 @@
       <item index="0" class="java.lang.String" itemvalue=".NET Executable.Deployer" />
       <item index="1" class="java.lang.String" itemvalue="Unity Debug.Attach to Unity Editor" />
     </list>
-  </component>
+  </ComponentIndustrial>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
-  </component>
+  </ComponentIndustrial>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="25a5a588-b017-4f16-9e1c-e6345502e6f6" name="Default" comment="" />
@@ -391,13 +391,13 @@
       <workItem from="1524747922921" duration="609000" />
       <workItem from="1524748713565" duration="1005000" />
       <workItem from="1524749806979" duration="6713000" />
-      <workItem from="1525277072959" duration="692000" />
+      <workItem from="1525277072959" duration="1949000" />
     </task>
     <servers />
-  </component>
+  </ComponentIndustrial>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11816000" />
-  </component>
+    <option name="totallyTimeSpent" value="13073000" />
+  </ComponentIndustrial>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -406,7 +406,7 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
-  </component>
+  </ComponentIndustrial>
   <component name="ToolWindowManager">
     <frame x="322" y="190" width="1467" height="798" extended-state="0" />
     <layout>
@@ -433,17 +433,17 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
+  </ComponentIndustrial>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
+  </ComponentIndustrial>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
+  </ComponentIndustrial>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
-  </component>
+  </ComponentIndustrial>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CosmicHorrorPawn_StarVampire.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -1680,5 +1680,5 @@
         </state>
       </provider>
     </entry>
-  </component>
+  </ComponentIndustrial>
 </project>

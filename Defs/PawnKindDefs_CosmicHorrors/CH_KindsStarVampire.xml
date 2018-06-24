@@ -2,14 +2,6 @@
 <Defs>
   <!-- STAR VAMPIRE -->
   <!-- KIND DEFS -->
-  <PawnKindDef Name="StarVampire" Abstract="True">
-    <bodyGraphicData>
-      <shaderType>Cutout</shaderType>
-    </bodyGraphicData>
-    <dessicatedBodyGraphicData>
-      <shaderType>Cutout</shaderType>
-    </dessicatedBodyGraphicData>
-  </PawnKindDef>
   <PawnKindDef>
     <defName>ROM_StarVampire</defName>
     <label>Star Vampire</label>
@@ -74,7 +66,7 @@
       <max>0</max>
     </apparelMoney>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-    <apparelAllowHeadwearChance>0</apparelAllowHeadwearChance>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <forceNormalGearQuality>false</forceNormalGearQuality>
   </PawnKindDef>
@@ -108,7 +100,7 @@
       </li>
     </comps>
   </ThingDef>
-  <ThingDef ParentName="BaseCosmicHorrorRace">
+  <ThingDef ParentName="BaseCosmicHorrorRaceInit">
     <defName>ROM_StarVampire</defName>
     <label>Star Vampire</label>
     <thingClass>CosmicHorror.CosmicHorrorPawn_StarVampire</thingClass>
@@ -160,7 +152,7 @@
       </li>
     </tools>
     <race>
-      <bloodDef>FilthBlood</bloodDef>
+      <bloodDef>Filth_Blood</bloodDef>
       <hasGenders>false</hasGenders>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>ROM_StarVampire</thinkTreeMain>
@@ -168,18 +160,20 @@
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.8</baseHealthScale>
-      <leatherColor>(176,39,39)</leatherColor>
+	  <!--
+	        <leatherColor>(176,39,39)</leatherColor>
 	  <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
       <leatherLabel>star vampire leather</leatherLabel>
       <leatherStatFactors>
         <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
         <ArmorRating_Blunt>1.5</ArmorRating_Blunt>
-        <ArmorRating_Heat>1.7</ArmorRating_Heat>
-        <ArmorRating_Electric>4.0</ArmorRating_Electric>
+        <ArmorRating_Heat>4.0</ArmorRating_Heat>
         <Insulation_Cold>1.1</Insulation_Cold>
         <Insulation_Heat>1.1</Insulation_Heat>
       </leatherStatFactors>
       <leatherMarketValueFactor>5</leatherMarketValueFactor>
+	  -->
+	  <leatherDef>CH_Leather_StarVampire</leatherDef>
       <lifeExpectancy>1200</lifeExpectancy>
       <lifeStageAges>
         <li>

@@ -2,7 +2,7 @@
 <Defs>
 
 
-  <DamageDef ParentName="LocalInjuryBase">
+  <DamageDef>
     <defName>ROM_BluntMonstrous</defName>
     <label>blunt</label>
     <workerClass>DamageWorker_Blunt</workerClass>
@@ -14,31 +14,21 @@
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Blunt</impactSoundType>
     <armorCategory>Blunt</armorCategory>
-    <bluntInnerHitFrequency>0.4</bluntInnerHitFrequency>
-    <bluntInnerHitConverted>
+    <bluntInnerHitChance>0.4</bluntInnerHitChance>
+    <bluntInnerHitDamageFractionToConvert>
       <min>0.1</min>
       <max>0.2</max>
-    </bluntInnerHitConverted>
-    <bluntInnerHitAdded>
+    </bluntInnerHitDamageFractionToConvert>
+    <bluntInnerHitDamageFractionToAdd>
       <min>0.2</min>
       <max>0.35</max>
-    </bluntInnerHitAdded>
+    </bluntInnerHitDamageFractionToAdd>
   </DamageDef>
 
   <ToolCapacityDef>
     <defName>ROM_BluntMonstrous</defName>
     <label>smashing</label>
   </ToolCapacityDef>
-  
-  <ManeuverDef>
-    <defName>ROM_BluntMonstrous</defName>
-    <requiredCapacity>ROM_BluntMonstrous</requiredCapacity>
-    <verb>
-      <verbClass>Verb_MeleeAttack</verbClass>
-      <meleeDamageDef>ROM_BluntMonstrous</meleeDamageDef>
-    </verb>
-    <combatLogRules>ROM_Maneuver_BluntMonstrous</combatLogRules>
-  </ManeuverDef>
   
   <RulePackDef>
     <defName>ROM_Maneuver_BluntMonstrous_Damage</defName>

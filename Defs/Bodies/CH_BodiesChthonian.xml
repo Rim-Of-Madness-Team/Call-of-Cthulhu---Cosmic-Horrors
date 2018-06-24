@@ -98,7 +98,8 @@
               </parts>
             </li>
             <li>
-              <def>LeftEye</def>
+              <def>Eye</def>
+<customLabel>left eye</customLabel>
               <coverage>0.04</coverage>
               <groups>
                 <li>FullHead</li>
@@ -106,7 +107,8 @@
               </groups>
             </li>
             <li>
-              <def>RightEye</def>
+              <def>Eye</def>
+<customLabel>right eye</customLabel>
               <coverage>0.04</coverage>
               <groups>
                 <li>FullHead</li>

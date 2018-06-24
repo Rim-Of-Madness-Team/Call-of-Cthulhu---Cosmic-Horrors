@@ -10,9 +10,9 @@ namespace CosmicHorror
 
         protected virtual int CountToSpawn => 1;
 
-        protected override bool CanFireNowSub(IIncidentTarget target)
+        protected override bool CanFireNowSub(IncidentParms parms)
         {
-            Map map = (Map)target;
+            Map map = (Map)parms.target;
             if (GenDate.DaysPassed < (ModInfo.cosmicHorrorRaidDelay + this.def.earliestDay))
             {
                 return false;
@@ -59,7 +59,7 @@ namespace CosmicHorror
                
                 cell = intVec;
              
-                if (map == Find.VisibleMap)
+                if (map == Find.CurrentMap)
                 {
                     Find.CameraDriver.shaker.DoShake(1f);
                 }

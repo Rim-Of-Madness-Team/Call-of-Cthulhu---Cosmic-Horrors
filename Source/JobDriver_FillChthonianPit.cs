@@ -48,7 +48,7 @@ namespace CosmicHorror
                 defaultDuration = 5000
             };
             chantingTime.WithProgressBarToilDelay(AltarIndex, false, -0.5f);
-            chantingTime.PlaySustainerOrSound(() => SoundDefOf.Interact_ClearSnow);
+            chantingTime.PlaySustainerOrSound(() => SoundDefOf.Interact_CleanFilth);
             chantingTime.initAction = delegate
             {
                 this.customString = "FillChthonianPitFilling".Translate();

@@ -2,7 +2,7 @@
 <Defs>
 
   
-  <DamageDef ParentName="LocalInjuryBase">
+  <DamageDef>
     <defName>ROM_Exsanguination</defName>
     <label>exsanguination</label>
     <externalViolence>true</externalViolence>	
@@ -11,29 +11,20 @@
     <deathMessage>{0} has died from exsanguination.</deathMessage>
     <hediff>ROM_Exsanguination</hediff>
     <impactSoundType>Electric</impactSoundType>
-    <armorCategory>Electric</armorCategory>
+    <armorCategory>Heat</armorCategory>
     <additionalHediffs>
       <li>
         <hediff>BloodLoss</hediff>
         <severityPerDamageDealt>0.0175</severityPerDamageDealt>
       </li>
     </additionalHediffs>	
+	<workerClass>DamageWorker_AddInjury</workerClass>
   </DamageDef>
   
     <ToolCapacityDef>
     <defName>ROM_Exsanguination</defName>
     <label>smashing</label>
   </ToolCapacityDef>
-  
-  <ManeuverDef>
-    <defName>ROM_Exsanguination</defName>
-    <requiredCapacity>ROM_Exsanguination</requiredCapacity>
-    <verb>
-      <verbClass>Verb_MeleeAttack</verbClass>
-      <meleeDamageDef>ROM_Exsanguination</meleeDamageDef>
-    </verb>
-    <combatLogRules>ROM_Maneuver_Exsanguination</combatLogRules>
-  </ManeuverDef>
   
     <RulePackDef>
     <defName>ROM_Maneuver_Exsanguination_Damage</defName>

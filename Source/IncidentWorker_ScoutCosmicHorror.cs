@@ -11,14 +11,14 @@ using Verse.AI.Group;
 
 namespace CosmicHorror
 {
-    public class IncidentWorker_StarVampireAttack : IncidentWorker
+    public class IncidentWorker_ScoutCosmicHorror : IncidentWorker
     {
-        private CosmicHorrorPawn iwVampire;   //The Star Vampire Pawn
-        private ThingDef iwDef;           //For the custom Spawner from JecsTools
-        private Faction iwFac;                //The Star Vampire Faction
-        private IntVec3 iwLoc;                //The Star Vampire location
-        private SoundDef iwWarn;              //The Star Vampire Warning Noise
-        private Lord lord;                    //The Star Vampire AI manager
+        private CosmicHorrorPawn iwScout;   //The  Pawn
+        private ThingDef iwDef;               //For the custom Spawner from JecsTools
+        private Faction iwFac;                //The  Faction
+        private IntVec3 iwLoc;                //The  location
+        private SoundDef iwWarn;              //The  Warning Noise
+        private Lord lord;                    //The  AI manager
 
         protected override bool CanFireNowSub(IncidentParms parms)
         {
@@ -39,7 +39,7 @@ namespace CosmicHorror
             //Initialize variables.
             this.iwDef        = MonsterDefOf.ROM_StarVampireSpawner;
             this.iwWarn       = MonsterDefOf.Pawn_ROM_StarVampire_Warning;
-            this.iwVampire    = null; //iwPawn as CosmicHorrorPawn;
+            this.iwScout      = null; //iwPawn as CosmicHorrorPawn;
             this.iwLoc        = CellFinder.RandomClosewalkCellNear(parms.spawnCenter, (Map)parms.target, 8);
 
             //In-case there's something silly happening...
@@ -48,14 +48,14 @@ namespace CosmicHorror
                 this.iwFac = Find.FactionManager.FirstFactionOfDef(FactionDefOf.AncientsHostile);
             }
 
-            //Slow down time
-            Find.TickManager.slower.SignalForceNormalSpeed();
-            //Play a sound.
-            this.iwWarn.PlayOneShotOnCamera();
-            //Show the warning message.
-            Messages.Message("StarVampireIncidentMessage".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, (Map)parms.target), MessageTypeDefOf.SituationResolved);
-            //Spawn the Star Vampire.
-            SpawnStarVampires(parms);
+            //Normally, we would slow down time and play a message, but we won't.
+            //Why do you ask? Simply put, this creates a far more tense situation of discovering the scout.
+            
+            //Find.TickManager.slower.SignalForceNormalSpeed();
+            //this.iwWarn.PlayOneShotOnCamera();
+            //Messages.Message("StarVampireIncidentMessage".Translate(), new RimWorld.Planet.GlobalTargetInfo(IntVec3.Invalid, (Map)parms.target), MessageTypeDefOf.SituationResolved);
+            
+            SpawnScout(parms);
             return true;
         }
 
@@ -81,12 +81,12 @@ namespace CosmicHorror
         }
 
         /// <summary>
-        /// Finds the best number of Star Vampires
+        /// Finds the best number of s
         /// to spawn. Then spawns them according
         /// to a previously resolved location.
         /// </summary>
         /// <param name="parms"></param>
-        protected void SpawnStarVampires(IncidentParms parms)
+        protected void SpawnScout(IncidentParms parms)
         {
             Map iwMap = (Map)parms.target;
 

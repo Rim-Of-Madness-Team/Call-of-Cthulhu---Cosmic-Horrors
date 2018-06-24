@@ -12,7 +12,7 @@ namespace CosmicHorror
             Pawn instigator = dinfo.Instigator as Pawn;
             Pawn target = victim as Pawn;
             Map map = victim.Map;
-            DamageWorker.DamageResult result = DamageWorker.DamageResult.MakeNew();
+            DamageWorker.DamageResult result = new DamageWorker.DamageResult();
             if (JecsTools.GrappleUtility.TryGrapple(instigator, target))
             {
                 JecsTools.GrappleUtility.ApplyGrappleEffect(instigator, target, 300);

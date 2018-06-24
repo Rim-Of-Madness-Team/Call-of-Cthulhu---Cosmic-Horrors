@@ -19,7 +19,7 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseFilth">
-    <defName>ROM_FilthBloodCosmicHorror</defName>
+    <defName>ROM_Filth_BloodCosmicHorror</defName>
     <label>vile blood</label>
     <statBases>
       <Beauty>-100</Beauty>
@@ -37,7 +37,7 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseFilth">
-    <defName>ROM_FilthBloodShoggoth</defName>
+    <defName>ROM_Filth_BloodShoggoth</defName>
     <label>protoplasm</label>
     <statBases>
       <Beauty>-100</Beauty>
@@ -56,7 +56,7 @@
 
 
   <ThingDef ParentName="BaseFilth">
-    <defName>ROM_FilthBloodMiGo</defName>
+    <defName>ROM_Filth_BloodMiGo</defName>
     <label>fungus</label>
     <statBases>
       <Beauty>-100</Beauty>
@@ -75,7 +75,7 @@
 
 
   <ThingDef ParentName="BaseFilth">
-    <defName>ROM_FilthBloodDeepOne</defName>
+    <defName>ROM_Filth_BloodDeepOne</defName>
     <label>slime</label>
     <statBases>
       <Beauty>-100</Beauty>

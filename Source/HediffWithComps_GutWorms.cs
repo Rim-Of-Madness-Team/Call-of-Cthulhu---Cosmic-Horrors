@@ -58,7 +58,7 @@ namespace CosmicHorror
             }
             Messages.Message("ChthonianLarvaSpawned".Translate(new object[]
             {
-                this.pawn.NameStringShort
+                this.pawn.Name.ToStringShort
             }), MessageTypeDefOf.PositiveEvent);
         }
 

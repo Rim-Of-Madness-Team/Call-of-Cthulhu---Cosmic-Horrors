@@ -4,15 +4,6 @@
   <!-- KIND DEFS -->
 
   <!-- ADULT CHTHONIAN -->
-  <PawnKindDef Name="ROM_Chthonian" Abstract="True">
-    <bodyGraphicData>
-      <shaderType>Cutout</shaderType>
-    </bodyGraphicData>
-    <dessicatedBodyGraphicData>
-      <shaderType>Cutout</shaderType>
-    </dessicatedBodyGraphicData>
-  </PawnKindDef>
-
   <PawnKindDef>
     <defName>ROM_Chthonian</defName>
     <label>Chthonian</label>
@@ -57,7 +48,7 @@
     </lifeStages>
   </PawnKindDef>
   <!-- RACE DEFS -->
-  <ThingDef ParentName="BaseCosmicHorrorRace">
+  <ThingDef ParentName="BaseCosmicHorrorRaceInit">
     <defName>ROM_Chthonian</defName>
     <label>Chthonian</label>
     <description>Chthonians are powerful burrowers which can live for more than a thousand years, and are protective of their young. It is said that a chanting sound accompanies every chthonian, and that by such they can be detected while underground and unseen.</description>
@@ -113,9 +104,11 @@
 	  <baseHungerRate>4.5</baseHungerRate>
       <baseHealthScale>13.0</baseHealthScale>
       <foodType>OmnivoreAnimal, AnimalProduct</foodType>
-      <bloodDef>ROM_FilthBloodDeepOne</bloodDef>
+      <bloodDef>ROM_Filth_BloodDeepOne</bloodDef>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>ROM_CosmicHorror</thinkTreeMain>
+	  <leatherDef>CH_Leather_Chthonian</leatherDef>
+	  <!-- Removed from 1.0
       <leatherColor>(78,60,61)</leatherColor>
       <leatherInsulation>1.35</leatherInsulation>
       <leatherLabel>chthonian chitin</leatherLabel>
@@ -125,9 +118,9 @@
         <ArmorRating_Sharp>3.4</ArmorRating_Sharp>
         <ArmorRating_Blunt>3.9</ArmorRating_Blunt>
         <ArmorRating_Heat>4.0</ArmorRating_Heat>
-        <ArmorRating_Electric>4.2</ArmorRating_Electric>
       </leatherStatFactors>
-      <trainableIntelligence>Advanced</trainableIntelligence>
+	  -->
+      <trainability>Advanced</trainability>
       <gestationPeriodDays>100</gestationPeriodDays>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.035</manhunterOnTameFailChance>
@@ -182,16 +175,6 @@
   </ThingDef>
 
   <!-- CHTHONIAN LARVA -->
-  <PawnKindDef Name="ROM_ChthonianLarva" Abstract="True">
-    <bodyGraphicData>
-      <shaderType>Cutout</shaderType>
-    </bodyGraphicData>
-    <dessicatedBodyGraphicData>
-      <shaderType>Cutout</shaderType>
-    </dessicatedBodyGraphicData>
-  </PawnKindDef>
-
-
   <PawnKindDef>
     <defName>ROM_ChthonianLarva</defName>
     <label>Chthonian larva</label>
@@ -215,7 +198,7 @@
     </lifeStages>
   </PawnKindDef>
 
-  <ThingDef ParentName="BaseCosmicHorrorRace">
+  <ThingDef ParentName="BaseCosmicHorrorRaceInit">
     <defName>ROM_ChthonianLarva</defName>
     <label>Chthonian Larva</label>
     <description>Chthonians are powerful burrowers which can live for more than a thousand years, and are protective of their young. It is said that a chanting sound accompanies every chthonian, and that by such they can be detected while underground and unseen.</description>
@@ -264,12 +247,12 @@
 	  <baseHungerRate>2.5</baseHungerRate>
       <baseHealthScale>3.0</baseHealthScale>
       <foodType>OmnivoreAnimal, AnimalProduct</foodType>
-      <bloodDef>ROM_FilthBloodDeepOne</bloodDef>
+      <bloodDef>ROM_Filth_BloodDeepOne</bloodDef>
       <intelligence>Animal</intelligence>
 	  <useLeatherFrom>ROM_Chthonian</useLeatherFrom>
       <thinkTreeMain>Animal</thinkTreeMain>
       <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
-      <trainableIntelligence>Advanced</trainableIntelligence>
+      <trainability>Advanced</trainability>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.035</manhunterOnTameFailChance>
       <wildness>0.95</wildness>

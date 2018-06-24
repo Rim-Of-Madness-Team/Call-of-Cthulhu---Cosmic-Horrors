@@ -3,32 +3,20 @@ using System.Linq;
 using Verse;
 using RimWorld;
 using System.Text;
+using UnityEngine;
 using Verse.AI.Group;
 using Verse.AI;
 
 namespace CosmicHorror
 {
-    public class CosmicHorrorFaction
-    {
-        public string DefName { get; set; }
-        public float Weight { get; set; }
-
-
-        public CosmicHorrorFaction(string newName, float newWeight)
-        {
-            this.DefName = newName;
-            this.Weight = newWeight;
-        }
-    }
-
-
     public class IncidentWorker_RaidCosmicHorrors : IncidentWorker_Raid
     {
         public FactionDef attackingFaction = null;
 
         public bool IsCosmicHorrorFaction(Faction f)
         {
-            List<string> factions = new List<string> {
+            List<string> factions = new List<string>
+            {
                 "ROM_StarSpawn",
                 "ROM_Shoggoth",
                 "ROM_MiGo",
@@ -44,37 +32,7 @@ namespace CosmicHorror
             return false;
         }
 
-        public FactionDef ResolveHorrorFaction(float points)
-        {
-            List<CosmicHorrorFaction> factionList = new List<CosmicHorrorFaction>
-            {
-                new CosmicHorrorFaction("ROM_DeepOne", 4)
-            };
-            if (points > 1400f) factionList.Add(new CosmicHorrorFaction("ROM_StarSpawn", 1));
-            if (points > 700f) factionList.Add(new CosmicHorrorFaction("ROM_Shoggoth", 2));
-            if (points > 350f) factionList.Add(new CosmicHorrorFaction("ROM_MiGo", 4));
-            CosmicHorrorFaction f = GenCollection.RandomElementByWeight<CosmicHorrorFaction>(factionList, GetWeight);
-            Faction resolvedFaction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named(f.DefName));
 
-            //This is a special case.
-            //If the player has the Cults mod.
-            //If they are working with Dagon.
-            //Then let's do something different...
-            if (Cthulhu.Utility.IsCultsLoaded() && f.DefName == "ROM_DeepOne")
-            {
-                if (resolvedFaction.RelationWith(Faction.OfPlayer, false).hostile == false)
-                {
-                    //Do MiGo instead.
-                    Cthulhu.Utility.DebugReport("Cosmic Horror Raid Report: Special Cult Case Handled");
-                    resolvedFaction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("ROM_MiGo"));
-                }
-            }
-            this.attackingFaction = resolvedFaction.def;
-            Cthulhu.Utility.DebugReport("Cosmic Horror Raid Report: " + this.attackingFaction.ToString() + "selected");
-            return FactionDef.Named(this.attackingFaction.defName);
-        }
-
-        public static float GetWeight(CosmicHorrorFaction f) => f.Weight;
 
         private enum RaidTypes
         {
@@ -97,22 +55,23 @@ namespace CosmicHorror
             return text;
         }
 
-        protected override string GetRelatedPawnsInfoLetterText(IncidentParms parms) => Translator.Translate(this.attackingFaction.LabelCap + "" + "CosmicHorrorRaid".Translate(), new object[]
+        protected override string GetRelatedPawnsInfoLetterText(IncidentParms parms) => Translator.Translate(
+            this.attackingFaction.LabelCap + "" + "CosmicHorrorRaid".Translate(), new object[]
             {
                 parms.faction.def.pawnsPlural
             });
 
-        protected override bool CanFireNowSub(IIncidentTarget target)
+        protected override bool CanFireNowSub(IncidentParms parms)
         {
-            Map map = (Map)target;
+            Map map = (Map) parms.target;
             Cthulhu.Utility.DebugReport("Cosmic Horror Raid Report: Tried to start event.");
-            if (!base.CanFireNowSub(target))
+            if (!base.CanFireNowSub(parms))
             {
                 Cthulhu.Utility.DebugReport("Cosmic Horror Raid Report: Failed due to base CanFireNow process");
                 return false;
             }
 
-            if (GenDate.DaysPassed < ( ModInfo.cosmicHorrorRaidDelay + this.def.earliestDay))
+            if (GenDate.DaysPassed < (ModInfo.cosmicHorrorRaidDelay + this.def.earliestDay))
             {
                 return false;
             }
@@ -138,121 +97,156 @@ namespace CosmicHorror
                 return true;
             }
             return false;
-
         }
 
         protected override string GetLetterLabel(IncidentParms parms) => parms.raidStrategy.letterLabelEnemy;
 
         protected override LetterDef GetLetterDef() => LetterDefOf.ThreatBig;
 
-        protected override void ResolveRaidStrategy(IncidentParms parms)
+        protected override void ResolveRaidStrategy(IncidentParms parms, PawnGroupKindDef groupKind)
         {
-            if (parms.raidStrategy != null)
+            if (parms.raidStrategy == null)
             {
-                return;
+                Map map = (Map)parms.target;
+                if (!(from d in DefDatabase<RaidStrategyDef>.AllDefs
+                    where d.Worker.CanUseWith(parms, groupKind) && (parms.raidArrivalMode != null || (d.arriveModes != null && d.arriveModes.Any((PawnsArrivalModeDef x) => x.Worker.CanUseWith(parms))))
+                    select d).TryRandomElementByWeight((RaidStrategyDef d) => d.Worker.SelectionWeight(map, parms.points), out parms.raidStrategy))
+                {
+                    Log.Error(string.Concat(new object[]
+                    {
+                        "No raid stategy for ",
+                        parms.faction,
+                        " with points ",
+                        parms.points,
+                        ", groupKind=",
+                        groupKind,
+                        "\nparms=",
+                        parms
+                    }), false);
+                    if (!Prefs.DevMode)
+                    {
+                        parms.raidStrategy = RaidStrategyDefOf.ImmediateAttack;
+                    }
+                }
             }
-            parms.raidStrategy = RaidStrategyDefOf.ImmediateAttack;
         }
 
         protected override void ResolveRaidPoints(IncidentParms parms)
         {
-            //parms.points = StorytellerCthulhu.Utility.DefaultParmsNow(Find.Storyteller.def, RimWorld.IncidentCategory.ThreatBig).points;
-            if (parms.points > 0f)
-            {
-                return;
-            }
-            parms.points = Rand.Range(70, 350);
+           parms.points = StorytellerUtility.DefaultThreatPointsNow(parms.target);
         }
 
         protected override bool TryResolveRaidFaction(IncidentParms parms)
         {
-            parms.faction = Find.FactionManager.FirstFactionOfDef(ResolveHorrorFaction(parms.points));
+            parms.faction = Find.World.GetComponent<FactionTracker>().ResolveHorrorFactionByIncidentPoints(parms.points);
             return parms.faction != null;
         }
 
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
-            Map map = (Map)parms.target;
+            Map map = (Map) parms.target;
 
             Cthulhu.Utility.DebugReport("Cosmic Horror Raid Report: Trying execution");
             this.ResolveRaidPoints(parms);
+            bool result = false;
             if (!this.TryResolveRaidFaction(parms))
             {
                 Cthulhu.Utility.DebugReport("Cosmic Horror Raid Report: Failed to resolve faction");
-                return false;
-            }
-            this.ResolveRaidStrategy(parms);
-            this.ResolveRaidArriveMode(parms);
-            this.ResolveRaidSpawnCenter(parms);
-            IncidentParmsUtility.AdjustPointsForGroupArrivalParams(parms);
-            PawnGroupMakerParms defaultPawnGroupMakerParms = IncidentParmsUtility.GetDefaultPawnGroupMakerParms(parms);
-
-            List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(PawnGroupKindDefOf.Normal, defaultPawnGroupMakerParms).ToList<Pawn>();
-            if (list.Count == 0)
-            {
-                Cthulhu.Utility.ErrorReport("Got no pawns spawning raid from parms " + parms);
-                return false;
-            }
-            TargetInfo target = TargetInfo.Invalid;
-            if (parms.raidArrivalMode == PawnsArriveMode.CenterDrop || parms.raidArrivalMode == PawnsArriveMode.EdgeDrop)
-            {
-                DropPodUtility.DropThingsNear(parms.spawnCenter, map, list.Cast<Thing>(), parms.raidPodOpenDelay, false, true, true);
-                target = new TargetInfo(parms.spawnCenter, map);
+                result = false;
             }
             else
             {
-                foreach (Pawn arg_B3_0 in list)
+                PawnGroupKindDef combat = PawnGroupKindDefOf.Combat;
+                this.ResolveRaidStrategy(parms, PawnGroupKindDefOf.Combat);
+                this.ResolveRaidArriveMode(parms);
+                if (!parms.raidArrivalMode.Worker.TryResolveRaidSpawnCenter(parms))
                 {
-                    IntVec3 intVec = CellFinder.RandomClosewalkCellNear(parms.spawnCenter, map, 8);
-                    GenSpawn.Spawn(arg_B3_0, intVec, map);
-                    target = arg_B3_0;
+                    result = false;
+                }
+                else
+                {
+                    parms.points *= parms.raidArrivalMode.pointsFactor;
+                    parms.points *= parms.raidStrategy.pointsFactor;
+                    parms.points = Mathf.Max(parms.points,
+                        parms.raidStrategy.Worker.MinimumPoints(parms.faction, combat) * 1.05f);
+
+                    PawnGroupMakerParms defaultPawnGroupMakerParms =
+                        IncidentParmsUtility.GetDefaultPawnGroupMakerParms(combat, parms);
+
+                    List<Pawn> list = PawnGroupMakerUtility
+                        .GeneratePawns(defaultPawnGroupMakerParms, true).ToList<Pawn>();
+                    if (list.Count == 0)
+                    {
+                        Cthulhu.Utility.ErrorReport("Got no pawns spawning raid from parms " + parms);
+                        result = false;
+                    }
+                    parms.raidArrivalMode.Worker.Arrive(list, parms);
+
+                    StringBuilder stringBuilder = new StringBuilder();
+                    stringBuilder.AppendLine("Points = " + parms.points.ToString("F0"));
+                    foreach (Pawn current2 in list)
+                    {
+                        string str = (current2.equipment == null || current2.equipment.Primary == null)
+                            ? "unarmed"
+                            : current2.equipment.Primary.LabelCap;
+                        stringBuilder.AppendLine(current2.KindLabel + " - " + str);
+                    }
+                    string letterLabel = this.GetLetterLabel(parms);
+                    string letterText = this.GetLetterText(parms, list);
+                    string lalalal = this.GetRelatedPawnsInfoLetterText(parms);
+                    PawnRelationUtility.Notify_PawnsSeenByPlayer_Letter(list, ref letterLabel, ref letterText,
+                        this.GetRelatedPawnsInfoLetterText(parms), true, true);
+                    List<TargetInfo> list2 = new List<TargetInfo>();
+                    if (parms.pawnGroups != null)
+                    {
+                        List<List<Pawn>> list3 = IncidentParmsUtility.SplitIntoGroups(list, parms.pawnGroups);
+                        List<Pawn> list4 = list3.MaxBy((List<Pawn> x) => x.Count);
+                        if (list4.Any<Pawn>())
+                        {
+                            list2.Add(list4[0]);
+                        }
+                        for (int i = 0; i < list3.Count; i++)
+                        {
+                            if (list3[i] != list4)
+                            {
+                                if (list3[i].Any<Pawn>())
+                                {
+                                    list2.Add(list3[i][0]);
+                                }
+                            }
+                        }
+                    }
+                    else if (list.Any<Pawn>())
+                    {
+                        list2.Add(list[0]);
+                    }
+                    Find.LetterStack.ReceiveLetter(letterLabel, letterText, this.GetLetterDef(), list2, parms.faction, stringBuilder.ToString());
+                    if (this.GetLetterDef() == LetterDefOf.ThreatBig)
+                    {
+                        TaleRecorder.RecordTale(TaleDefOf.RaidArrived, new object[0]);
+                    }
+                    parms.raidStrategy.Worker.MakeLords(parms, list);
+                    AvoidGridMaker.RegenerateAvoidGridsFor(parms.faction, map);
+                    LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
+                    if (!PlayerKnowledgeDatabase.IsComplete(ConceptDefOf.ShieldBelts))
+                    {
+                        for (int j = 0; j < list.Count; j++)
+                        {
+                            Pawn pawn2 = list[j];
+                            if (pawn2.apparel.WornApparel.Any((Apparel ap) => ap is ShieldBelt))
+                            {
+                                LessonAutoActivator.TeachOpportunity(ConceptDefOf.ShieldBelts, OpportunityType.Critical);
+                                break;
+                            }
+                        }
+                    }
+                    result = true;
                 }
             }
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("Points = " + parms.points.ToString("F0"));
-            foreach (Pawn current2 in list)
-            {
-                string str = (current2.equipment == null || current2.equipment.Primary == null) ? "unarmed" : current2.equipment.Primary.LabelCap;
-                stringBuilder.AppendLine(current2.KindLabel + " - " + str);
-            }
-            string letterLabel = this.GetLetterLabel(parms);
-            string letterText = this.GetLetterText(parms, list);
-            string lalalal = this.GetRelatedPawnsInfoLetterText(parms);
-            PawnRelationUtility.Notify_PawnsSeenByPlayer(list, out lalalal, true);
-            Find.LetterStack.ReceiveLetter(letterLabel, letterText, this.GetLetterDef(), target, stringBuilder.ToString());
-            if (this.GetLetterDef() == LetterDefOf.ThreatSmall)
-            {
-                TaleRecorder.RecordTale(TaleDefOf.RaidArrived, new object[0]);
-            }
-            Lord lord = LordMaker.MakeNewLord(parms.faction, parms.raidStrategy.Worker.MakeLordJob(parms, map), map, list);
-            AvoidGridMaker.RegenerateAvoidGridsFor(parms.faction, map);
-            LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
-            //if (!PlayerKnowledgeDatabase.IsComplete(ConceptDefOf.PersonalShields))
-            //{
-            //    for (int i = 0; i < list.Count; i++)
-            //    {
-            //        Pawn pawn = list[i];
-            //        if (pawn.apparel.WornApparel.Any((Apparel ap) => ap is PersonalShield))
-            //        {
-            //            LessonAutoActivator.TeachOpportunity(ConceptDefOf.PersonalShields, OpportunityType.Critical);
-            //            break;
-            //        }
-            //    }
-            //}
-            if (DebugViewSettings.drawStealDebug && parms.faction.HostileTo(Faction.OfPlayer))
-            {
-                Log.Message(string.Concat(new object[]
-                {
-                        "Market value threshold to start stealing: ",
-                        StealAIUtility.StartStealingMarketValueThreshold(lord),
-                        " (colony wealth = ",
-                        map.wealthWatcher.WealthTotal,
-                        ")"
-                }));
-            }
-            return true;
+            return result;
         }
 
-        protected override void ResolveRaidArriveMode(IncidentParms parms) => parms.raidArrivalMode = PawnsArriveMode.EdgeWalkIn;
+        protected override void ResolveRaidArriveMode(IncidentParms parms) =>
+            parms.raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn;
     }
 }

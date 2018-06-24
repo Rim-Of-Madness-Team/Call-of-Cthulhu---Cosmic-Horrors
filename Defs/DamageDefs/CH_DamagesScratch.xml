@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <DamageDef ParentName="LocalInjuryBase">
+  <DamageDef>
     <defName>ROM_ScratchMonstrous</defName>
     <label>monstrous claw</label>
     <workerClass>DamageWorker_Cut</workerClass>
@@ -30,16 +30,6 @@
     <label>clawing</label>
   </ToolCapacityDef>
 
-  
-  <ManeuverDef>
-    <defName>ROM_ScratchMonstrous</defName>
-    <requiredCapacity>ROM_ScratchMonstrous</requiredCapacity>
-    <verb>
-      <verbClass>Verb_MeleeAttack</verbClass>
-      <meleeDamageDef>ROM_ScratchMonstrous</meleeDamageDef>
-    </verb>
-    <combatLogRules>ROM_Maneuver_ScratchMonstrous</combatLogRules>
-  </ManeuverDef>
   
     <RulePackDef>
     <defName>ROM_ColorfulVocabulary</defName>

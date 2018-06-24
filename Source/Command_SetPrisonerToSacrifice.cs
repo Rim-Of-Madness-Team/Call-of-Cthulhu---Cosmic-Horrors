@@ -75,7 +75,7 @@ namespace CosmicHorror
             {
                 this.settables.Add(this.settable);
             }
-            Map map = Find.VisibleMap;
+            Map map = Find.CurrentMap;
             foreach (Pawn current in map.mapPawns.PrisonersOfColonySpawned)
             {
                 if (!current.Dead)

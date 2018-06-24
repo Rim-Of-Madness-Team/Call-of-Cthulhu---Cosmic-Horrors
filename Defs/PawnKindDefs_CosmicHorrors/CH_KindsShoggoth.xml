@@ -2,14 +2,6 @@
 <Defs>
   <!-- SHOGGOTH -->
   <!-- KIND DEFS -->
-  <PawnKindDef Name="ROM_Shoggoth" Abstract="True">
-    <bodyGraphicData>
-      <shaderType>Cutout</shaderType>
-    </bodyGraphicData>
-    <dessicatedBodyGraphicData>
-      <shaderType>Cutout</shaderType>
-    </dessicatedBodyGraphicData>
-  </PawnKindDef>
   <PawnKindDef>
     <defName>ROM_Shoggoth</defName>
     <label>Shoggoth</label>
@@ -61,7 +53,7 @@
     </lifeStages>
   </PawnKindDef>
   <!-- RACE DEFS-->
-  <ThingDef ParentName="BaseCosmicHorrorRace">
+  <ThingDef ParentName="BaseCosmicHorrorRaceInit">
     <defName>ROM_Shoggoth</defName>
     <label>shoggoth</label>
     <description>Large and oily masses that shift and change shape according to their needs. Eyes, mouth and tentacles appear, then just as swifty, are reabsorbed into the luminescent black protoplasm. They are reluctant servants to those that are willing to risk their rebellious nature.</description>
@@ -70,6 +62,7 @@
       <MoveSpeed>1.5</MoveSpeed>
       <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+	  <LeatherAmount>0</LeatherAmount>
     </statBases>
 	<tools>
       <li>
@@ -118,13 +111,12 @@
 	  </li>
 	</comps>
     <race>
-      <bloodDef>ROM_FilthBloodShoggoth</bloodDef>
+      <bloodDef>ROM_Filth_BloodShoggoth</bloodDef>
       <hasGenders>false</hasGenders>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>ROM_CosmicHorror</thinkTreeMain>
       <body>ROM_ShoggothBody</body>
-      <leatherColor>(58,96,136)</leatherColor>      
-	  <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
+	  <useLeatherFrom>Bear_Grizzly</useLeatherFrom>
       <baseBodySize>3.0</baseBodySize>
       <baseHealthScale>2.0</baseHealthScale>
       <lifeExpectancy>1200</lifeExpectancy>

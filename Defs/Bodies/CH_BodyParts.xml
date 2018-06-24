@@ -64,7 +64,7 @@
     <label>left claw</label>
     <hitPoints>20</hitPoints>
     <frostbiteVulnerability>0.5</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbSegment</li>
@@ -76,7 +76,7 @@
     <label>right claw</label>
     <hitPoints>20</hitPoints>
     <frostbiteVulnerability>0.5</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbSegment</li>
@@ -96,7 +96,7 @@
     <label>left flipper</label>
     <hitPoints>20</hitPoints>
     <frostbiteVulnerability>0.5</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
     <tags>
       <li>MovingLimbSegment</li>
@@ -108,7 +108,7 @@
     <label>right flipper</label>
     <hitPoints>20</hitPoints>
     <frostbiteVulnerability>0.5</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
     <tags>
       <li>MovingLimbSegment</li>
@@ -118,8 +118,9 @@
   <BodyPartDef>
     <defName>ROM_Leg</defName>
     <label>leg</label>
+	<frostbiteVulnerability>0.01</frostbiteVulnerability>
     <hitPoints>30</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
     <tags>
       <li>MovingLimbCore</li>
@@ -130,7 +131,7 @@
     <defName>ROM_LegFirst</defName>
     <label>leg (first)</label>
     <hitPoints>30</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
     <tags>
       <li>MovingLimbCore</li>
@@ -141,7 +142,7 @@
     <defName>ROM_LegSecond</defName>
     <label>leg (second)</label>
     <hitPoints>30</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
     <tags>
       <li>MovingLimbCore</li>
@@ -152,7 +153,7 @@
     <defName>ROM_LegThird</defName>
     <label>leg (third)</label>
     <hitPoints>30</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
     <tags>
       <li>MovingLimbCore</li>
@@ -172,9 +173,9 @@
     <label>hoof</label>
     <hitPoints>10</hitPoints>
     <frostbiteVulnerability>6</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
-    <isAlive>false</isAlive>
+    <alive>false</alive>
     <tags>
       <li>MovingLimbSegment</li>
     </tags>
@@ -195,7 +196,7 @@
     <label>dorsal fin</label>
     <hitPoints>7</hitPoints>
     <frostbiteVulnerability>0.6</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
   </BodyPartDef>
 
@@ -212,7 +213,7 @@
     <label>tentacle</label>
     <hitPoints>7</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ManipulationLimbCore</li>
@@ -259,7 +260,7 @@
     <label>tentacle</label>
     <hitPoints>7</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
     <tags>
       <li>MovingLimbCore</li>
@@ -271,7 +272,7 @@
     <defName>ROM_LeftWing</defName>
     <label>left wing</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
     <tags>
       <li>MovingLimbSegment</li>
@@ -282,7 +283,7 @@
     <defName>ROM_RightWing</defName>
     <label>right wing</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
     <tags>
       <li>MovingLimbSegment</li>
@@ -301,7 +302,7 @@
     <defName>ROM_MawHuge</defName>
     <label>massive maw</label>
     <hitPoints>40</hitPoints>
-    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
     <tags>
       <li>EatingSource</li>
@@ -313,7 +314,7 @@
     <defName>ROM_Maw</defName>
     <label>large maw</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
     <tags>
       <li>EatingSource</li>
@@ -378,9 +379,8 @@
     <defName>ROM_Eye</defName>
     <label>eye</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>1</permanentInjuryBaseChance>
     <skinCovered>false</skinCovered>
-    <useDestroyedOutLabel>true</useDestroyedOutLabel>
     <beautyRelated>true</beautyRelated>
     <tags>
       <li>SightSource</li>
@@ -450,9 +450,8 @@
     <defName>ROM_Feeler</defName>
     <label>feeler</label>
     <hitPoints>5</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>1</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
-    <useDestroyedOutLabel>true</useDestroyedOutLabel>
     <beautyRelated>true</beautyRelated>
     <tags>
       <li>SightSource</li>
@@ -464,7 +463,7 @@
     <defName>ROM_Internal_LeftEar</defName>
     <label>internal left ear</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>0.024</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.024</permanentInjuryBaseChance>
     <skinCovered>false</skinCovered>
     <beautyRelated>true</beautyRelated>
     <tags>
@@ -476,7 +475,7 @@
     <defName>ROM_Internal_RightEar</defName>
     <label>internal left ear</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>0.024</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.024</permanentInjuryBaseChance>
     <skinCovered>false</skinCovered>
     <beautyRelated>true</beautyRelated>
     <tags>
@@ -488,7 +487,7 @@
     <defName>ROM_Nostril</defName>
     <label>nostril</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0</permanentInjuryBaseChance>
     <skinCovered>false</skinCovered>
   </BodyPartDef>
 
@@ -505,7 +504,7 @@
     <label>flight organ</label>
     <hitPoints>40</hitPoints>
     <frostbiteVulnerability>0.5</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>false</skinCovered>
     <tags>
       <li>MovingLimbCore</li>
@@ -517,7 +516,7 @@
     <label>gills</label>
     <hitPoints>7</hitPoints>
     <frostbiteVulnerability>8</frostbiteVulnerability>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
     <tags>
       <li>BreathingPathway</li>
@@ -528,7 +527,7 @@
     <defName>ROM_ShapeshiftingOrgan</defName>
     <label>shapeshifting organ</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>1</permanentInjuryBaseChance>
     <skinCovered>false</skinCovered>
     <tags>
       <li>HearingSource</li>
@@ -545,15 +544,15 @@
       <li>ManipulationLimbCore</li>
       <li>TalkingSource</li>
     </tags>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
 
   <BodyPartDef>
     <defName>ROM_Kidney</defName>
     <label>kidney</label>
     <hitPoints>20</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
-    <bleedingRateMultiplier>1.3</bleedingRateMultiplier>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
+    <bleedRate>1.3</bleedRate>
     <skinCovered>false</skinCovered>
     <tags>
       <li>BloodFiltrationKidney</li>
@@ -565,8 +564,8 @@
     <defName>ROM_KidneySecond</defName>
     <label>kidney (second)</label>
     <hitPoints>20</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
-    <bleedingRateMultiplier>1.3</bleedingRateMultiplier>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
+    <bleedRate>1.3</bleedRate>
     <skinCovered>false</skinCovered>
     <tags>
       <li>BloodFiltrationKidney</li>
@@ -578,8 +577,8 @@
     <defName>ROM_Lung</defName>
     <label>lung</label>
     <hitPoints>20</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
-    <bleedingRateMultiplier>1.3</bleedingRateMultiplier>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
+    <bleedRate>1.3</bleedRate>
     <skinCovered>false</skinCovered>
     <tags>
       <li>BreathingSource</li>
@@ -591,8 +590,8 @@
     <defName>ROM_LungSecond</defName>
     <label>lung (second)</label>
     <hitPoints>20</hitPoints>
-    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
-    <bleedingRateMultiplier>1.3</bleedingRateMultiplier>
+    <permanentInjuryBaseChance>0.08</permanentInjuryBaseChance>
+    <bleedRate>1.3</bleedRate>
     <skinCovered>false</skinCovered>
     <tags>
       <li>BreathingSource</li>
@@ -604,10 +603,11 @@
     <defName>ROM_Sucker</defName>
     <label>sucker</label>
     <hitPoints>5</hitPoints>
+    <bleedRate>0</bleedRate>
     <frostbiteVulnerability>2</frostbiteVulnerability>
-    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0</permanentInjuryBaseChance>
     <skinCovered>false</skinCovered>
-    <isSolid>true</isSolid>
+    <solid>true</solid>
     <beautyRelated>true</beautyRelated>
     <tags>
       <li>EatingSource</li>
@@ -618,7 +618,7 @@
     <defName>ROM_SporeHead</defName>
     <label>spore structure</label>
     <hitPoints>30</hitPoints>
-    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0</permanentInjuryBaseChance>
     <tags>
       <li>SightSource</li>
       <li>HearingSource</li>
@@ -638,9 +638,9 @@
     <defName>ROM_PsionicLobe</defName>
     <label>psionic cortex</label>
     <hitPoints>20</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>1</permanentInjuryBaseChance>
     <skinCovered>false</skinCovered>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
     <tags>
       <li>ConsciousnessSource</li>
       <li>TalkingSource</li>
@@ -653,9 +653,9 @@
     <defName>ROM_FrontalLobe</defName>
     <label>frontal lobe</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>1</permanentInjuryBaseChance>
     <skinCovered>false</skinCovered>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
     <tags>
       <li>ConsciousnessSource</li>
       <li>TalkingSource</li>
@@ -666,9 +666,9 @@
     <defName>ROM_ParietalLobe</defName>
     <label>parietal lobe</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>1</permanentInjuryBaseChance>
     <skinCovered>false</skinCovered>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
     <tags>
       <li>ConsciousnessSource</li>
     </tags>
@@ -678,38 +678,38 @@
     <defName>ROM_OccipitalLobe</defName>
     <label>occipital lobe</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>1</permanentInjuryBaseChance>
     <skinCovered>false</skinCovered>
     <tags>
       <li>ConsciousnessSource</li>
     </tags>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
 
   <BodyPartDef>
     <defName>ROM_TemporalLobe</defName>
     <label>temporal lobe</label>
     <hitPoints>10</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>1</permanentInjuryBaseChance>
     <skinCovered>false</skinCovered>
     <tags>
       <li>ConsciousnessSource</li>
       <li>TalkingSource</li>
       <li>HearingSource</li>
     </tags>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
 
   <BodyPartDef>
     <defName>ROM_BrainStem</defName>
     <label>brain stem</label>
     <hitPoints>30</hitPoints>
-    <oldInjuryBaseChance>1</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>1</permanentInjuryBaseChance>
     <skinCovered>false</skinCovered>
     <tags>
       <li>ConsciousnessSource</li>
     </tags>
-    <dontSuggestAmputation>true</dontSuggestAmputation>
+    <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
 
   <!--
@@ -724,10 +724,11 @@
     <defName>ROM_ChthonianFirstRing</defName>
     <label>first body ring</label>
     <hitPoints>100</hitPoints>
-    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
-    <isSolid>true</isSolid>
-    <isAlive>true</isAlive>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <alive>true</alive>
     <tags>
       <li>HearingSource</li>
       <li>MetabolismSource</li>
@@ -749,10 +750,11 @@
     <defName>ROM_ChthonianSecondRing</defName>
     <label>second body ring</label>
     <hitPoints>100</hitPoints>
-    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
-    <isSolid>true</isSolid>
-    <isAlive>true</isAlive>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <alive>true</alive>
     <tags>
       <li>HearingSource</li>
       <li>MetabolismSource</li>
@@ -774,10 +776,11 @@
     <defName>ROM_ChthonianThirdRing</defName>
     <label>third body ring</label>
     <hitPoints>100</hitPoints>
-    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
-    <isSolid>true</isSolid>
-    <isAlive>true</isAlive>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <alive>true</alive>
     <tags>
       <li>HearingSource</li>
       <li>MetabolismSource</li>
@@ -799,10 +802,11 @@
     <defName>ROM_ChthonianFourthRing</defName>
     <label>fourth body ring</label>
     <hitPoints>100</hitPoints>
-    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
-    <isSolid>true</isSolid>
-    <isAlive>true</isAlive>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <alive>true</alive>
     <tags>
       <li>HearingSource</li>
       <li>MetabolismSource</li>
@@ -824,10 +828,11 @@
     <defName>ROM_ChthonianFifthRing</defName>
     <label>fifth body ring</label>
     <hitPoints>100</hitPoints>
-    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <permanentInjuryBaseChance>0</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
-    <isSolid>true</isSolid>
-    <isAlive>true</isAlive>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <alive>true</alive>
     <tags>
       <li>HearingSource</li>
       <li>MetabolismSource</li>
@@ -849,10 +854,11 @@
     <defName>ROM_ChthonianSixthRing</defName>
     <label>sixth body ring</label>
     <hitPoints>100</hitPoints>
-    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <bleedRate>0</bleedRate>
+    <permanentInjuryBaseChance>0</permanentInjuryBaseChance>
     <skinCovered>true</skinCovered>
-    <isSolid>true</isSolid>
-    <isAlive>true</isAlive>
+    <solid>true</solid>
+    <alive>true</alive>
     <tags>
       <li>HearingSource</li>
       <li>MetabolismSource</li>

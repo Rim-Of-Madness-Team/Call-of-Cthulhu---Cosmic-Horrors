@@ -44,7 +44,7 @@ namespace CosmicHorror
         public static bool CapacityTransferables_PreFix(List<TransferableOneWay> transferables, ref float __result)
         {
             Cthulhu.Utility.DebugReport("Detour Called: CollectionMassCalc");
-            //List<ThingStackPart> tmpThingStackParts
+            //List<ThingCount> tmpThingCounts
             bool detour = false;
             for (int i = 0; i < transferables.Count; i++)
             {
@@ -55,7 +55,7 @@ namespace CosmicHorror
             }
             if (detour)
             {
-                ((List<ThingStackPart>)AccessTools.Field(typeof(CollectionsMassCalculator), "tmpThingStackParts").GetValue(null)).Clear();
+                ((List<ThingCount>)AccessTools.Field(typeof(CollectionsMassCalculator), "tmpThingCounts").GetValue(null)).Clear();
                 for (int i = 0; i < transferables.Count; i++)
                 {
                     if (transferables[i].HasAnyThing)
@@ -65,14 +65,14 @@ namespace CosmicHorror
                         {
                             TransferableUtility.TransferNoSplit(transferables[i].things, transferables[i].CountToTransfer, delegate (Thing originalThing, int toTake)
                             {
-                                ((List<ThingStackPart>)AccessTools.Field(typeof(CollectionsMassCalculator), "tmpThingStackParts").GetValue(null)).Add(new ThingStackPart(originalThing, toTake));
+                                ((List<ThingCount>)AccessTools.Field(typeof(CollectionsMassCalculator), "tmpThingCounts").GetValue(null)).Add(new ThingCount(originalThing, toTake));
 
                             }, false, false);
                         }
                     }
                 }
-                float result = CollectionsMassCalculator.Capacity(((List<ThingStackPart>)AccessTools.Field(typeof(CollectionsMassCalculator), "tmpThingStackParts").GetValue(null)));
-                ((List<ThingStackPart>)AccessTools.Field(typeof(CollectionsMassCalculator), "tmpThingStackParts").GetValue(null)).Clear();
+                float result = CollectionsMassCalculator.Capacity(((List<ThingCount>)AccessTools.Field(typeof(CollectionsMassCalculator), "tmpThingCounts").GetValue(null)));
+                ((List<ThingCount>)AccessTools.Field(typeof(CollectionsMassCalculator), "tmpThingCounts").GetValue(null)).Clear();
                 __result = result;
                 return false;
             }

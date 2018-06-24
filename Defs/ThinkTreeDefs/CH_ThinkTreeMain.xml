@@ -255,7 +255,7 @@
 						<!-- If you're a neutral guest, if you're not hurt exit the map, otherwise use a medical bed -->
 						<li Class="ThinkNode_ConditionalGuest">
 						  <subNodes>
-							<li Class="ThinkNode_ConditionalNeutralFaction">
+							<li Class="ThinkNode_ConditionalNonPlayerNonHostileFaction">
 							  <subNodes>
 								<li Class="ThinkNode_Tagger">
 								  <tagToGive>RestingForMedicalReasons</tagToGive>

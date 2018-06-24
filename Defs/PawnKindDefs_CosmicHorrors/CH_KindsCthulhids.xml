@@ -3,14 +3,6 @@
   <!-- STAR SPAWN OF CTHULHU -->
   <!-- CTHULHIDS -->
   <!-- KIND DEFS -->
-  <PawnKindDef Name="ROM_StarSpawnBase" Abstract="True">
-    <bodyGraphicData>
-      <shaderType>Cutout</shaderType>
-    </bodyGraphicData>
-    <dessicatedBodyGraphicData>
-      <shaderType>Cutout</shaderType>
-    </dessicatedBodyGraphicData>
-  </PawnKindDef>
   <PawnKindDef>
     <defName>ROM_StarSpawnOfCthulhu</defName>
     <label>Star-Spawn of Cthulhu</label>
@@ -62,10 +54,10 @@
     </lifeStages>
   </PawnKindDef>
   <!-- RACE DEFS -->
-  <ThingDef ParentName="BaseCosmicHorrorRace">
+  <ThingDef ParentName="BaseCosmicHorrorRaceInit">
     <defName>ROM_Cthulhid</defName>
     <label>cthulhid</label>
-    <description>Octopoidal humanoids, cast in in the image of great Cthulhu himself and bound to his will. They make a mockery of the human form, with a tentacled head, scaly body and vestigial bat-like wings. While insignificant in size, in comparison to their master, they stand many times taller than a man. They serve the Great Old Ones will while he remains sleeping. </description>
+    <description>Octopoidal humanoids, cast in in the image of great Cthulhu himself and bound to his will. They make a mockery of the human form, with a tentacled head, scaly body and vestigial bat-like wings. While insignificant in size, in comparison to their master, they stand many times taller than a man. They serve the Great Old Ones will while he remains sleeping.</description>
     <statBases>
       <MoveSpeed>1.5</MoveSpeed>
       <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
@@ -124,18 +116,21 @@
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>ROM_CosmicHorror</thinkTreeMain>
       <body>ROM_CthulhidBody</body>
-      <leatherColor>(54,125,54)</leatherColor>      <leatherCommonalityFactor>0.1</leatherCommonalityFactor>
+	  <!--
+      <leatherColor>(54,125,54)</leatherColor>
+      <leatherCommonalityFactor>0.1</leatherCommonalityFactor>
       <leatherLabel>star spawn skin</leatherLabel>
       <leatherStatFactors>
         <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
         <ArmorRating_Blunt>2.0</ArmorRating_Blunt>
-        <ArmorRating_Heat>1.5</ArmorRating_Heat>
-        <ArmorRating_Electric>4.0</ArmorRating_Electric>
+        <ArmorRating_Heat>4.0</ArmorRating_Heat>
         <Insulation_Cold>1.8</Insulation_Cold>
         <Insulation_Heat>1.0</Insulation_Heat>
       </leatherStatFactors>
       <leatherMarketValueFactor>3.5</leatherMarketValueFactor>
       <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
+	  -->
+	  <leatherDef>CH_Leather_Cthulhid</leatherDef>
       <baseBodySize>3.0</baseBodySize>
       <baseHealthScale>4.0</baseHealthScale>
       <lifeExpectancy>9999999</lifeExpectancy>

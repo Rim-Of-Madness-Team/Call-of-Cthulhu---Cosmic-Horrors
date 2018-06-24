@@ -4,6 +4,7 @@
     <e p="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Cosmic-Horrors\Assemblies" t="ExcludeRecursive" />
     <e p="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Cosmic-Horrors\Source" t="IncludeRecursive">
       <e p="Building_PitChthonian.cs" t="Include" />
+      <e p="CosmicHorrorFactionWeight.cs" t="Include" />
       <e p="CosmicHorrorPawn.cs" t="Include" />
       <e p="CosmicHorrorPawn_Shoggoth.cs" t="Include" />
       <e p="CosmicHorrorPawn_StarVampire.cs" t="Include" />
@@ -14,12 +15,14 @@
       <e p="CthulhuUtility.cs" t="Include" />
       <e p="DamageWorker_Constrict.cs" t="Include" />
       <e p="DamageWorker_CranialPressure.cs" t="Include" />
+      <e p="FactionTracker.cs" t="Include" />
       <e p="HarmonyCosmicHorrors.cs" t="Include" />
       <e p="HediffWithComps_GutWorms.cs" t="Include" />
       <e p="HediffWithComps_SanityLoss.cs" t="Include" />
       <e p="IncidentWorker_Cthonian.cs" t="Include" />
       <e p="IncidentWorker_DarkYoung.cs" t="Include" />
       <e p="IncidentWorker_RaidCosmicHorrors.cs" t="Include" />
+      <e p="IncidentWorker_ScoutCosmicHorror.cs" t="Include" />
       <e p="IncidentWorker_StarVampireAttack.cs" t="Include" />
       <e p="JobDriver_FillChthonianPit.cs" t="Include" />
       <e p="JobDriver_HaulSacrifice.cs" t="Include" />

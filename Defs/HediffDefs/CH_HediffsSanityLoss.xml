@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-  <HediffDef Name="DiseaseBase" Abstract="True">
-    <hediffClass>HediffWithComps</hediffClass>
-    <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
-  </HediffDef>
-
-
   <HediffDef ParentName="DiseaseBase">
     <defName>ROM_SanityLoss</defName>
 	<label>sanity loss</label>
@@ -100,7 +93,7 @@
 		</capMods>
         <mentalStateGivers>
           <li>
-            <mentalState>WanderPsychotic</mentalState>
+            <mentalState>Wander_Psychotic</mentalState>
             <mtbDays>9</mtbDays>
           </li>
         </mentalStateGivers>
@@ -136,7 +129,7 @@
 		</capMods>
         <mentalStateGivers>
           <li>
-            <mentalState>WanderPsychotic</mentalState>
+            <mentalState>Wander_Psychotic</mentalState>
             <mtbDays>5.0</mtbDays>
           </li>
         </mentalStateGivers>

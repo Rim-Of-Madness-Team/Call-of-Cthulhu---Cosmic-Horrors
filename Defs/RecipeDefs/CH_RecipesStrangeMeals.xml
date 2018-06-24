@@ -34,12 +34,12 @@
       <categories>
         <li>ROM_StrangeMeatRaw</li>
       </categories>
-	  <exceptedCategories>
+	  <disallowedCategories>
 		<li>MeatRaw</li>
-	  </exceptedCategories>
-	  <exceptedThingDefs>
-		<li>Human_Meat</li>
-	  </exceptedThingDefs>		  
+	  </disallowedCategories>
+	  <disallowedThingDefs>
+		<li>Meat_Human</li>
+	  </disallowedThingDefs>		  
     </defaultIngredientFilter>
     <workSkill>Cooking</workSkill>
 	<recipeUsers>
@@ -80,12 +80,12 @@
       <categories>
         <li>ROM_StrangeMeatRaw</li>
       </categories>
-	  <exceptedCategories>
+	  <disallowedCategories>
 		<li>MeatRaw</li>
-	  </exceptedCategories>
-	  <exceptedThingDefs>
-		<li>Human_Meat</li>
-	  </exceptedThingDefs>		  
+	  </disallowedCategories>
+	  <disallowedThingDefs>
+		<li>Meat_Human</li>
+	  </disallowedThingDefs>		  
     </defaultIngredientFilter>
     <workSkill>Cooking</workSkill>
 	<recipeUsers>
@@ -142,13 +142,13 @@
 			<li>PlantFoodRaw</li>
 			<li>AnimalProductRaw</li>
 		</categories>
-		<exceptedCategories>
+		<disallowedCategories>
 			<li>EggsFertilized</li>
 			<li>MeatRaw</li>
-		</exceptedCategories>
-		<exceptedThingDefs>
-			<li>Human_Meat</li>
-		</exceptedThingDefs>
+		</disallowedCategories>
+		<disallowedThingDefs>
+			<li>Meat_Human</li>
+		</disallowedThingDefs>
 	</defaultIngredientFilter>
 <skillRequirements>
 			<Cooking>6</Cooking>
@@ -208,13 +208,13 @@
 			<li>PlantFoodRaw</li>
 			<li>AnimalProductRaw</li>			
 		</categories>
-        <exceptedCategories>
+        <disallowedCategories>
 			<li>MeatRaw</li>
 			<li>EggsFertilized</li>
-		</exceptedCategories>
-		<exceptedThingDefs>
-			<li>Human_Meat</li>
-		</exceptedThingDefs>
+		</disallowedCategories>
+		<disallowedThingDefs>
+			<li>Meat_Human</li>
+		</disallowedThingDefs>
 	</defaultIngredientFilter>
 <skillRequirements>
 			<Cooking>10</Cooking>
@@ -275,12 +275,12 @@
       <categories>
         <li>Foods</li>
       </categories>
-      <exceptedCategories>
+      <disallowedCategories>
         <li>EggsFertilized</li>
-      </exceptedCategories>
-      <exceptedThingDefs>
+      </disallowedCategories>
+      <disallowedThingDefs>
         <li>InsectJelly</li>
-      </exceptedThingDefs>
+      </disallowedThingDefs>
     </defaultIngredientFilter>
     <workSkill>Cooking</workSkill>
 	<recipeUsers>

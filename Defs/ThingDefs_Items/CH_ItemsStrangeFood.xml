@@ -1,55 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  
-  <ThingDef Name="ROM_ResourceBase" Abstract="True">
-    <thingClass>ThingWithComps</thingClass>
-    <category>Item</category>
-    <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <useHitPoints>true</useHitPoints>
-    <selectable>true</selectable>
-    <altitudeLayer>Item</altitudeLayer>
-    <stackLimit>75</stackLimit>
-		<statBases>
-			<Beauty>-7</Beauty>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Forbiddable"/>
-		</comps>
-		<alwaysHaulable>true</alwaysHaulable>
-		<drawGUIOverlay>true</drawGUIOverlay>
-		<rotatable>false</rotatable>
-		<pathCost>15</pathCost>
-	</ThingDef>
-
-  <ThingDef Abstract="True" Name="ROM_OrganicProductBase" ParentName="ROM_ResourceBase">
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <socialPropernessMatters>true</socialPropernessMatters>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <DeteriorationRate>10</DeteriorationRate>
-			<Mass>0.03</Mass>
-    </statBases>
-    <tickerType>Rare</tickerType>
-  </ThingDef>
-
-  <ThingDef Name="ROM_RawCHMeatBase" Abstract="True" ParentName="ROM_OrganicProductBase"> 
-    <socialPropernessMatters>true</socialPropernessMatters>
-    <statBases>
-      <MaxHitPoints>50</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <DeteriorationRate>10</DeteriorationRate>
-      <Beauty>-20</Beauty>
-    </statBases>
-    <tickerType>Rare</tickerType>
-    <tradeability>Sellable</tradeability>	
-  </ThingDef>
-
-  
-  <ThingDef Name="ROM_RawCHFoodBase" Abstract="True" ParentName="ROM_RawCHMeatBase">
+  <ThingDef Name="ROM_RawCHFoodBase" Abstract="True" ParentName="OrganicProductBase">
     <label>Base strange food properties</label>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -57,10 +9,12 @@
         <rotDestroys>True</rotDestroys>
       </li>
     </comps>
+	<statBases>
+      <Nutrition>0.10</Nutrition>
+	</statBases>
     <ingestible>
       <foodType>Meat</foodType>
       <preferability>DesperateOnly</preferability>
-      <nutrition>0.10</nutrition>
       <ingestEffect>EatMeat</ingestEffect>
       <ingestSound>RawMeat_Eat</ingestSound>
 		<outcomeDoers>
@@ -75,39 +29,7 @@
     </thingCategories>
   </ThingDef>
   
-   <ThingDef Name="ROM_MealBase" Abstract="True">
-    <thingClass>ThingWithComps</thingClass>
-    <category>Item</category>
-    <useHitPoints>true</useHitPoints>
-    <selectable>true</selectable>
-    <statBases>
-      <MaxHitPoints>50</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <altitudeLayer>Item</altitudeLayer>
-    <stackLimit>10</stackLimit>
-    <tickerType>Rare</tickerType>
-    <socialPropernessMatters>true</socialPropernessMatters>
-    <thingCategories>
-      <li>FoodMeals</li>
-    </thingCategories>
-    <alwaysHaulable>true</alwaysHaulable>
-    <comps>
-      <li Class="CompProperties_Forbiddable" />
-      <li Class="CompProperties_Ingredients" />
-      <li Class="CompProperties_FoodPoisonable" />
-    </comps>
-    <pathCost>15</pathCost>
-    <resourceReadoutPriority>Last</resourceReadoutPriority>
-    <drawGUIOverlay>true</drawGUIOverlay>
-    <ingestible>
-      <foodType>Meal, Processed</foodType>
-      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
-    </ingestible>
-  </ThingDef> 
-  
-  <ThingDef ParentName="ROM_MealBase" Name="ROM_CHMealRottable" Abstract="True">
+  <ThingDef ParentName="MealRottable" Name="ROM_CHMealRottable" Abstract="True">
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>4</daysToRotStart>
@@ -138,13 +60,14 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
+	  <Mass>1</Mass>
       <DeteriorationRate>20</DeteriorationRate>
       <MarketValue>25</MarketValue>
       <WorkToMake>300</WorkToMake>
+	  <Nutrition>0.85</Nutrition>
     </statBases>
     <ingestible>
       <preferability>MealSimple</preferability>
-      <nutrition>0.85</nutrition>
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
@@ -159,13 +82,14 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
+	  <Mass>1</Mass>
       <DeteriorationRate>20</DeteriorationRate>
       <MarketValue>28</MarketValue>
       <WorkToMake>450</WorkToMake>
+	  <Nutrition>0.90</Nutrition>
     </statBases>
     <ingestible>
       <preferability>MealFine</preferability>
-      <nutrition>0.90</nutrition>
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
@@ -180,19 +104,20 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
+	  <Mass>1</Mass>
       <DeteriorationRate>20</DeteriorationRate>
       <MarketValue>40</MarketValue>
       <WorkToMake>800</WorkToMake>
+	  <Nutrition>1.00</Nutrition>
     </statBases>
     <ingestible>
       <preferability>MealLavish</preferability>
-      <nutrition>1.00</nutrition>
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
   </ThingDef>
 
-  <ThingDef ParentName="ROM_OrganicProductBase">
+  <ThingDef ParentName="OrganicProductBase">
     <defName>ROM_StrangeKibble</defName>
     <label>strange kibble</label>
     <thingCategories>
@@ -204,12 +129,13 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>1.3</MarketValue>	  
+	  <Mass>0.1</Mass>
+      <MarketValue>1.3</MarketValue>
+      <Nutrition>0.05</Nutrition>	  
     </statBases>
     <ingestible>
       <foodType>Kibble</foodType>
-      <preferability>RawBad</preferability>
-      <nutrition>0.05</nutrition>
+      <preferability>DesperateOnlyForHumanlikes</preferability>
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>RawVegetable_Eat</ingestSound>
 		<outcomeDoers>
@@ -226,13 +152,14 @@
     <defName>ROM_RawCHFood_Meat</defName>
     <label>untouchable meat</label>
     <description>Placeholder</description>
-	<canBeSpawningInventory>false</canBeSpawningInventory>
-    <tradeability>Never</tradeability>
+	 
+    <tradeability>None</tradeability>
     <graphicData>
       <texPath>Item/Resource/StrangeMeat/Cthulhid</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
+	  <Mass>1</Mass>
       <MarketValue>1.5</MarketValue>
     </statBases>
     <ingestible>
@@ -252,6 +179,7 @@ Cthulhid flesh is a putrid soupy mess of meat, more liquids than solids and exud
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
+	  <Mass>1</Mass>
       <MarketValue>1.5</MarketValue>
     </statBases>
     <ingestible>
@@ -270,6 +198,7 @@ To dine upon Deep One flesh is to experience something rigid and gelatinous simu
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
+	  <Mass>1</Mass>
       <MarketValue>1.5</MarketValue>
     </statBases>
     <ingestible>
@@ -288,6 +217,7 @@ MiGo meat is not actually meat. In actuality, it is a fungus with a meaty thickn
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
+	  <Mass>1</Mass>
       <MarketValue>1.5</MarketValue>
     </statBases>
     <ingestible>
@@ -306,6 +236,7 @@ The flesh of the Shoggoth is chewy and salty, rubbery like a mussel and imbued i
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
+	  <Mass>1</Mass>
       <MarketValue>1.5</MarketValue>
     </statBases>
     <ingestible>
@@ -324,6 +255,7 @@ Star Vampire meat's marbling ranges from an uncomfortable amount of intramuscula
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
+	  <Mass>0.3</Mass>
       <MarketValue>1.5</MarketValue>
     </statBases>
     <ingestible>
@@ -334,13 +266,13 @@ Star Vampire meat's marbling ranges from an uncomfortable amount of intramuscula
   <ThingDef ParentName="ROM_RawCHFoodBase">
     <defName>ROM_RawCHFood_DarkYoungMeat</defName>
     <label>Dark Young meat</label>
-    <description>Raw meat from the Dark Young.
-	</description>
+    <description>Raw meat from the Dark Young.</description>
     <graphicData>
       <texPath>Item/Resource/StrangeMeat/DarkYoung</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
+	  <Mass>3</Mass>
       <MarketValue>1.5</MarketValue>
     </statBases>
     <ingestible>
@@ -357,31 +289,34 @@ Star Vampire meat's marbling ranges from an uncomfortable amount of intramuscula
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
+	  <Mass>0.3</Mass>
       <MarketValue>1.7</MarketValue>
     </statBases>
     <ingestible>
       <specialThoughtDirect>AteRawFood</specialThoughtDirect>
     </ingestible>
   </ThingDef>  
-  
 
-  <ThingDef ParentName="ROM_OrganicProductBase">
+  <ThingDef ParentName="OrganicProductBase">
     <defName>ROM_DarkYoungSap</defName>
     <label>dark young sap</label>
+	<thingClass>ThingWithComps</thingClass>
     <description>Sweet sap squeezed from an orifice of one of the foul children of Shub-Niggurath.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Milk</texPath>
 	  <color>(20,40,20)</color>
+	  <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<tickerType>Rare</tickerType>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
       <MarketValue>3.2</MarketValue>
       <Mass>0.05</Mass>
+      <Nutrition>0.045</Nutrition>
 			<MaxHitPoints>70</MaxHitPoints>
     </statBases>
     <comps>
-			<li Class="CompProperties_FoodPoisoningChance">
-				<humanlikeOnly>true</humanlikeOnly>
+			<li Class="CompProperties_FoodPoisonable">
 			</li>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>22</daysToRotStart>
@@ -391,7 +326,6 @@ Star Vampire meat's marbling ranges from an uncomfortable amount of intramuscula
     <ingestible>
       <preferability>RawTasty</preferability>
       <foodType>AnimalProduct, Fluid</foodType>
-      <nutrition>0.045</nutrition>
 		<outcomeDoers>
 			<li Class="IngestionOutcomeDoer_GiveHediff">
 			  <hediffDef>ROM_SanityLoss</hediffDef>

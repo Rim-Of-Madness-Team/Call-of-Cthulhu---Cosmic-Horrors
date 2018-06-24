@@ -13,15 +13,6 @@
     <autoFlee>false</autoFlee>
     <canUseAvoidGrid>true</canUseAvoidGrid>
 	<techLevel>Animal</techLevel>
-	<startingGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </startingGoodwill>
-	<mustStartOneEnemy>true</mustStartOneEnemy>
-    <naturalColonyGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </naturalColonyGoodwill>
     <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
     <allowedArrivalTemperatureRange>
       <min>-255</min>
@@ -36,12 +27,20 @@
     <pawnsPlural>StarSpawn of Cthulhu</pawnsPlural>
     <fixedName>Sunken city of R'lyeh</fixedName>
     <pawnGroupMakers>
-	<li><kindDef>Normal</kindDef>
+	<li><kindDef>Combat</kindDef>
         <options>
 		  <ROM_StarSpawnOfCthulhu>100</ROM_StarSpawnOfCthulhu>	  
         </options>
       </li>
-    </pawnGroupMakers> 
+    </pawnGroupMakers>     
+	<permanentEnemy>true</permanentEnemy>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
   </FactionDef>
 
   <FactionDef ParentName="ROMCH_HiddenFaction">
@@ -52,12 +51,20 @@
     <fixedName>Mountains of Madness</fixedName>
     <canUseAvoidGrid>false</canUseAvoidGrid>
     <pawnGroupMakers>
-	<li><kindDef>Normal</kindDef>
+	<li><kindDef>Combat</kindDef>
         <options>
 		  <ROM_Shoggoth>100</ROM_Shoggoth>		  
         </options>
       </li>
     </pawnGroupMakers> 
+	<permanentEnemy>true</permanentEnemy>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
   </FactionDef>
 
   <FactionDef ParentName="ROMCH_HiddenFaction">
@@ -67,13 +74,21 @@
     <pawnsPlural>MiGo</pawnsPlural>
     <fixedName>Outpost of the MiGo</fixedName>
     <pawnGroupMakers>
-	<li><kindDef>Normal</kindDef>
+	<li><kindDef>Combat</kindDef>
         <options>
 		  <ROM_MiGo>250</ROM_MiGo>
 		  <ROM_MiGoCaster>100</ROM_MiGoCaster>
         </options>
       </li>
     </pawnGroupMakers> 
+    <permanentEnemy>true</permanentEnemy>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
   </FactionDef>
 
   <FactionDef ParentName="ROMCH_HiddenFaction">
@@ -83,13 +98,21 @@
     <pawnsPlural>Deep Ones</pawnsPlural>
     <fixedName>Devil Reef</fixedName>
     <pawnGroupMakers>
-	<li><kindDef>Normal</kindDef>
+	<li><kindDef>Combat</kindDef>
         <options>
 		  <ROM_DeepOne>100</ROM_DeepOne>		  
 		  <ROM_DeepOneGreat>100</ROM_DeepOneGreat>		  
         </options>
       </li>
     </pawnGroupMakers> 
+    <permanentEnemy>true</permanentEnemy>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
   </FactionDef>
   
   <FactionDef ParentName="ROMCH_HiddenFaction">
@@ -99,12 +122,20 @@
     <pawnsPlural>Star Vampires</pawnsPlural>
     <fixedName>Outer Space</fixedName>
     <pawnGroupMakers>
-	<li><kindDef>Normal</kindDef>
+	<li><kindDef>Combat</kindDef>
         <options>
 		  <ROM_StarVampire>100</ROM_StarVampire>
         </options>
       </li>
     </pawnGroupMakers> 
+    <permanentEnemy>true</permanentEnemy>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
   </FactionDef>
 
   <FactionDef ParentName="ROMCH_HiddenFaction">
@@ -114,13 +145,21 @@
     <pawnsPlural>Chthonians</pawnsPlural>
     <fixedName>Lost City of G'harne</fixedName>
     <pawnGroupMakers>
-	<li><kindDef>Normal</kindDef>
+	<li><kindDef>Combat</kindDef>
         <options>
 		  <ROM_DeepOne>100</ROM_DeepOne>		  
 		  <ROM_DeepOneGreat>100</ROM_DeepOneGreat>
         </options>
       </li>
-    </pawnGroupMakers>   
+    </pawnGroupMakers>
+    <permanentEnemy>true</permanentEnemy>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>	
   </FactionDef>
   
   
@@ -134,13 +173,21 @@
     <pawnsPlural>horrors</pawnsPlural>
     <fixedName>Unknown</fixedName>
     <pawnGroupMakers>
-	<li><kindDef>Normal</kindDef>
+	<li><kindDef>Combat</kindDef>
         <options>
 		  <ROM_DeepOne>100</ROM_DeepOne>		  
 		  <ROM_DeepOneGreat>100</ROM_DeepOneGreat>
         </options>
       </li>
     </pawnGroupMakers> 
+    <permanentEnemy>true</permanentEnemy>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
   </FactionDef>  
     
   

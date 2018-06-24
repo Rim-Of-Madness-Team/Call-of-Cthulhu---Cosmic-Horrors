@@ -10,7 +10,7 @@
     <deathMessage>{0} has died from psychic shock.</deathMessage>
     <hediff>ROM_Psionic</hediff>
     <impactSoundType>Electric</impactSoundType>
-    <armorCategory>Electric</armorCategory>
+    <armorCategory>Heat</armorCategory>
 	<workerClass>CosmicHorror.DamageWorker_CranialPressure</workerClass>
   </DamageDef>
   
@@ -19,16 +19,6 @@
     <label>psychic</label>
   </ToolCapacityDef>
 
-  <ManeuverDef>
-    <defName>ROM_Psychic</defName>
-    <requiredCapacity>ROM_Psychic</requiredCapacity>
-    <verb>
-      <verbClass>Verb_MeleeAttack</verbClass>
-      <meleeDamageDef>ROM_Psychic</meleeDamageDef>
-    </verb>
-    <combatLogRules>ROM_Maneuver_Psychic</combatLogRules>
-  </ManeuverDef>
-    
   <RulePackDef>
     <defName>ROM_Maneuver_Psychic_Damage</defName>
     <rulePack>

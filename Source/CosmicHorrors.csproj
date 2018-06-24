@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Building_PitChthonian.cs" />
+    <Compile Include="CosmicHorrorFactionWeight.cs" />
     <Compile Include="CosmicHorrorPawnExtension.cs" />
     <Compile Include="CosmicHorrorPawn_Shoggoth.cs" />
     <Compile Include="CosmicHorrorPawn_StarVampire.cs" />
@@ -66,9 +67,11 @@
     <Compile Include="CthulhuUtility.cs" />
     <Compile Include="DamageWorker_CranialPressure.cs" />
     <Compile Include="DamageWorker_Constrict.cs" />
+    <Compile Include="FactionTracker.cs" />
     <Compile Include="HarmonyCosmicHorrors.cs" />
     <Compile Include="HediffWithComps_GutWorms.cs" />
     <Compile Include="HediffWithComps_SanityLoss.cs" />
+    <Compile Include="IncidentWorker_ScoutCosmicHorror.cs" />
     <Compile Include="ModInfo.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="IncidentWorker_Cthonian.cs" />
