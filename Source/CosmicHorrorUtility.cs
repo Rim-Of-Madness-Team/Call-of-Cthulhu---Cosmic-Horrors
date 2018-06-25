@@ -21,6 +21,8 @@ namespace CosmicHorror
                 new HarmonyMethod(typeof(Utility), nameof(BestAttackTargetPrefix)), null);
             //harmony.Patch(AccessTools.Constructor(AccessTools.TypeByName("Wound"), new Type[] { typeof(Pawn) }), null, null, new HarmonyMethod(typeof(Utility), nameof(WoundConstructorTranspiler)));
             harmony.Patch(AccessTools.Method(typeof(ThingSelectionUtility), nameof(ThingSelectionUtility.SelectableByMapClick)), null, new HarmonyMethod(typeof(Utility), nameof(SelectableByMapClickPostfix)));
+            
+
         }
 
         static void SelectableByMapClickPostfix(Thing t, ref bool __result)

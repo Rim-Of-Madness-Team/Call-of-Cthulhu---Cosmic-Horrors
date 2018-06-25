@@ -157,14 +157,14 @@
 	<!--
     <verbs>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
+        <verbClass>Verb_MeleeAttackDamage</verbClass>
         <defaultCooldownTime>0.9</defaultCooldownTime>
         <meleeDamageBaseAmount>12</meleeDamageBaseAmount>
         <meleeDamageDef>Cut</meleeDamageDef>
         <linkedBodyPartsGroup>ROM_Claws</linkedBodyPartsGroup>
       </li>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
+        <verbClass>Verb_MeleeAttackDamage</verbClass>
         <defaultCooldownTime>1.5</defaultCooldownTime>
         <meleeDamageBaseAmount>20</meleeDamageBaseAmount>
         <meleeDamageDef>Bite</meleeDamageDef>
@@ -294,8 +294,8 @@
     <race>
       <bloodDef>ROM_Filth_BloodDeepOne</bloodDef>
       <intelligence>ToolUser</intelligence>
-      <thinkTreeMain>ROM_CosmicHorror</thinkTreeMain>
-	  <thinkTreeConstant>ROM_CosmicHorrorConstant</thinkTreeConstant>
+      <thinkTreeMain>Animal</thinkTreeMain>
+      <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
       <body>ROM_DeepOneBody</body>
       <baseBodySize>1.5</baseBodySize>
       <baseHealthScale>3.0</baseHealthScale>

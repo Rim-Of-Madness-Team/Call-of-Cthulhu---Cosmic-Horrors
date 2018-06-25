@@ -268,7 +268,7 @@
       </lifeStageAges>
       <soundCallIntervalRange>
         <min>5000</min>
-        <max>8000</max>
+        <max>12000</max>
       </soundCallIntervalRange>
       <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
@@ -280,7 +280,6 @@
     <recipes>
       <li>Euthanize</li>
     </recipes>
-
 	<modExtensions>
 	  <li Class = "CosmicHorror.PawnExtension">
 	    <invisible>false</invisible>

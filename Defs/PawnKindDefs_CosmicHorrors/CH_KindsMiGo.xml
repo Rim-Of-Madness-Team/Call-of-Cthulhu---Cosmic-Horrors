@@ -160,7 +160,8 @@
 			<bloodDef>ROM_Filth_BloodMiGo</bloodDef>		
 			<hasGenders>false</hasGenders>	
 			<intelligence>ToolUser</intelligence>
-			<thinkTreeMain>ROM_CosmicHorror</thinkTreeMain>
+      <thinkTreeMain>Animal</thinkTreeMain>
+      <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
 			<body>ROM_MiGoBody</body>
 			<foodType>OmnivoreAnimal, AnimalProduct</foodType>  
 	        <leatherDef>CH_Leather_MiGo</leatherDef>   

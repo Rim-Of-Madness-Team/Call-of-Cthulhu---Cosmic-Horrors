@@ -17,17 +17,30 @@ namespace CosmicHorror
         static HarmonyPatches()
         {
             HarmonyInstance harmony = HarmonyInstance.Create("rimworld.cosmic_Horrors");
+            var type = typeof(HarmonyPatches);
             harmony.Patch(AccessTools.Method(typeof(AttackTargetFinder), nameof(AttackTargetFinder.BestAttackTarget)),
-                new HarmonyMethod(typeof(HarmonyPatches), nameof(BestAttackTargetPrefix)), null);
+                new HarmonyMethod(type, nameof(BestAttackTargetPrefix)), null);
             //harmony.Patch(AccessTools.Constructor(AccessTools.TypeByName("Wound"), new Type[] { typeof(Pawn) }), null, null, new HarmonyMethod(typeof(HarmonyPatches), nameof(WoundConstructorTranspiler)));
-            harmony.Patch(AccessTools.Method(typeof(ThingSelectionUtility), nameof(ThingSelectionUtility.SelectableByMapClick)), null, new HarmonyMethod(typeof(HarmonyPatches), nameof(SelectableByMapClickPostfix)));
-            harmony.Patch(AccessTools.Method(typeof(HediffSet), "CalculatePain"), new HarmonyMethod(typeof(HarmonyPatches), "CalculatePain_PreFix"), null);
-            harmony.Patch(AccessTools.Method(AccessTools.TypeByName("RimWorld.TrashUtility"), "TrashJob"), new HarmonyMethod(typeof(HarmonyPatches), "TrashJob_PreFix"), null);
-            harmony.Patch(AccessTools.Method(typeof(CollectionsMassCalculator), "CapacityTransferables"), new HarmonyMethod(typeof(HarmonyPatches), "CapacityTransferables_PreFix"), null);
+            harmony.Patch(AccessTools.Method(typeof(ThingSelectionUtility), nameof(ThingSelectionUtility.SelectableByMapClick)), null, new HarmonyMethod(type, nameof(SelectableByMapClickPostfix)));
+            harmony.Patch(AccessTools.Method(typeof(HediffSet), "CalculatePain"), new HarmonyMethod(type, "CalculatePain_PreFix"), null);
+            harmony.Patch(AccessTools.Method(AccessTools.TypeByName("RimWorld.TrashUtility"), "TrashJob"), new HarmonyMethod(type, "TrashJob_PreFix"), null);
+            harmony.Patch(AccessTools.Method(typeof(CollectionsMassCalculator), "CapacityTransferables"), new HarmonyMethod(type, "CapacityTransferables_PreFix"), null);
             harmony.Patch(AccessTools.Method(typeof(LordToil_AssaultColony), "UpdateAllDuties"), null, 
-                new HarmonyMethod(typeof(HarmonyPatches), "UpdateAllDuties_PostFix"), null);
+                new HarmonyMethod(type, "UpdateAllDuties_PostFix"), null);
+            harmony.Patch(AccessTools.Method(typeof(PawnApparelGenerator), nameof(PawnApparelGenerator.GenerateStartingApparelFor)),
+                new HarmonyMethod(type, nameof(GenerateStartingApparelFor_PreFix)), null, null);
         }
 
+        public static bool GenerateStartingApparelFor_PreFix(Pawn pawn, PawnGenerationRequest request)
+        {
+            PawnExtension pawnEx = pawn?.def?.GetModExtension<PawnExtension>();
+            if (pawnEx != null)
+            {
+                if (!pawnEx.generateApparel) return false;
+            }
+            return true;
+        }
+        
         // RimWorld.LordToil_AssaultColony
         public static void UpdateAllDuties_PostFix(LordToil_AssaultColony __instance)
         {

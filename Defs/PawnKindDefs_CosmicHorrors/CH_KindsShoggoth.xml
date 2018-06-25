@@ -114,7 +114,8 @@
       <bloodDef>ROM_Filth_BloodShoggoth</bloodDef>
       <hasGenders>false</hasGenders>
       <intelligence>ToolUser</intelligence>
-      <thinkTreeMain>ROM_CosmicHorror</thinkTreeMain>
+      <thinkTreeMain>Animal</thinkTreeMain>
+      <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
       <body>ROM_ShoggothBody</body>
 	  <useLeatherFrom>Bear_Grizzly</useLeatherFrom>
       <baseBodySize>3.0</baseBodySize>

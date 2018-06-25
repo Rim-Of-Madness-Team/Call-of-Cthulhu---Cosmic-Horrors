@@ -68,20 +68,20 @@
     <RulePackDef>
     <defName>ROM_Maneuver_BluntMonstrous</defName>
     <include>
-	  <li>ROM_ColorfulVocabulary</li>
+	  <li>ROM_ColorfulVocabulary</li><li>Combat_Hit</li>
       <li>ROM_Maneuver_BluntMonstrous_Damage</li>
     </include>
     <rulePack>
       <rulesStrings>
         <li>woundname->wound</li>
         <li>woundname(p=0.3)->contusion</li>
-		<li>flavortextsituation(p=3)->while [ROMgazingwithinhumaneyes]</li>
-		<li>flavortextsituation(p=3)->while [ROMcarryinganexpressionofmadness]</li>
-        <li>flavortextsituation(p=2,recipient_flesh!=Mechanoid)->with [ROMbloodoozing] from the [woundname]</li>
-        <li>flavortextsituation(p=2,recipient_flesh!=Mechanoid)->with [ROMgore] [ROMexposed] from the [woundname]</li>
-        <li>flavortextconsequence(p=2,recipient_flesh!=Mechanoid)->and [ROMexposing] [ROMtheflesh] [ROMunderneath]</li>
-        <li>flavortextconsequence(p=2,recipient_flesh!=Mechanoid)->and [ROMexposing] a [ROMhorrible] [woundname]</li>
-        <li>flavortextconsequence(p=2,recipient_flesh==Mechanoid)->and exposing the machinery underneath</li>
+		<li>flavortext_situation(p=3)->while [ROMgazingwithinhumaneyes]</li>
+		<li>flavortext_situation(p=3)->while [ROMcarryinganexpressionofmadness]</li>
+        <li>flavortext_situation(p=2,recipient_flesh!=Mechanoid)->with [ROMbloodoozing] from the [woundname]</li>
+        <li>flavortext_situation(p=2,recipient_flesh!=Mechanoid)->with [ROMgore] [ROMexposed] from the [woundname]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)->and [ROMexposing] [ROMtheflesh] [ROMunderneath]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)->and [ROMexposing] a [ROMhorrible] [woundname]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh==Mechanoid)->and exposing the machinery underneath</li>
         <li>destroyed_suffix(p=2,recipient_flesh!=Mechanoid)->[to] messy [ROMstrips]</li>
         <li>destroyed_suffix(p=4)->[to] [ROMstrips]</li>
         <li>destroyed_suffix->[to] pieces</li>

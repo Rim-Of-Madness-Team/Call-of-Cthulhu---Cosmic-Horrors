@@ -10,5 +10,6 @@ namespace CosmicHorror
         public float sanityLossRate = 0.03f;
         public float sanityLossMax = 0.3f;
         public float painFactor = 1.0f;
+        public bool generateApparel = false;
     }
 }

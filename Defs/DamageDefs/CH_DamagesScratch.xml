@@ -154,25 +154,25 @@
     <rulePack>
       <rulesStrings>
         <li>damaged_inf(p=2)->maul</li>
-        <li>damaged_inf->rend</li>
+        <li>damaged_inf(deflected!=True)->rend</li>
         <li>damaged_inf->mangle</li>
-        <li>damaged_inf->mutilate</li>
-        <li>damaged_inf->dismember</li>
-        <li>damaged_inf->lacerate</li>
-        <li>damaged_inf->carve</li>
-        <li>damaged_inf->hack</li>
-        <li>damaged_inf->thrash</li>
-        <li>damaged_inf->incise</li>
+        <li>damaged_inf(deflected!=True)->mutilate</li>
+        <li>damaged_inf(deflected!=True)->dismember</li>
+        <li>damaged_inf(deflected!=True)->lacerate</li>
+        <li>damaged_inf(deflected!=True)->carve</li>
+        <li>damaged_inf(deflected!=True)->hack</li>
+        <li>damaged_inf(deflected!=True)->thrash</li>
+        <li>damaged_inf(deflected!=True)->incise</li>
 
         <li>damaged_past(p=2)->mauled</li>
-        <li>damaged_past->rended</li>
+        <li>damaged_past(deflected!=True)->rended</li>
         <li>damaged_past->mangle</li>
-        <li>damaged_past->mutilate</li>
-        <li>damaged_past->lacerated</li>
-        <li>damaged_past->carved</li>
-        <li>damaged_past->hacked</li>
-        <li>damaged_past->thrashed</li>
-        <li>damaged_past->incised</li>
+        <li>damaged_past(deflected!=True)->mutilate</li>
+        <li>damaged_past(deflected!=True)->lacerated</li>
+        <li>damaged_past(deflected!=True)->carved</li>
+        <li>damaged_past(deflected!=True)->hacked</li>
+        <li>damaged_past(deflected!=True)->thrashed</li>
+        <li>damaged_past(deflected!=True)->incised</li>
 
         <li>damaged_present->mauling</li>
         <li>damaged_present->rending</li>
@@ -202,7 +202,7 @@
     <RulePackDef>
     <defName>ROM_Maneuver_ScratchMonstrous</defName>
     <include>
-	  <li>ROM_ColorfulVocabulary</li>
+	  <li>ROM_ColorfulVocabulary</li><li>Combat_Hit</li>
       <li>ROM_Maneuver_ScratchMonstrous_Damage</li>
     </include>
     <rulePack>
@@ -210,13 +210,13 @@
         <li>woundname->wound</li>
         <li>woundname(p=0.3)->gash</li>
         <li>woundname(p=0.3)->hole</li>
-		<li>flavortextsituation(p=3)->while [ROMgazingwithinhumaneyes]</li>
-		<li>flavortextsituation(p=3)->while [ROMcarryinganexpressionofmadness]</li>
-        <li>flavortextsituation(p=2,recipient_flesh!=Mechanoid)->with [ROMbloodoozing] from the [woundname]</li>
-        <li>flavortextsituation(p=2,recipient_flesh!=Mechanoid)->with [ROMgore] [ROMexposed] from the [woundname]</li>
-        <li>flavortextconsequence(p=2,recipient_flesh!=Mechanoid)->and [ROMexposing] [ROMtheflesh] [ROMunderneath]</li>
-        <li>flavortextconsequence(p=2,recipient_flesh!=Mechanoid)->and [ROMexposing] a [ROMhorrible] [woundname]</li>
-        <li>flavortextconsequence(p=2,recipient_flesh==Mechanoid)->and exposing the machinery underneath</li>
+		<li>flavortext_situation(p=3)->while [ROMgazingwithinhumaneyes]</li>
+		<li>flavortext_situation(p=3)->while [ROMcarryinganexpressionofmadness]</li>
+        <li>flavortext_situation(p=2,recipient_flesh!=Mechanoid)->with [ROMbloodoozing] from the [woundname]</li>
+        <li>flavortext_situation(p=2,recipient_flesh!=Mechanoid)->with [ROMgore] [ROMexposed] from the [woundname]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)->and [ROMexposing] [ROMtheflesh] [ROMunderneath]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)->and [ROMexposing] a [ROMhorrible] [woundname]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh==Mechanoid)->and exposing the machinery underneath</li>
         <li>destroyed_suffix(p=2,recipient_flesh!=Mechanoid)->[to] messy [ROMstrips]</li>
         <li>destroyed_suffix(p=4)->[to] [ROMstrips]</li>
         <li>destroyed_suffix->[to] pieces</li>

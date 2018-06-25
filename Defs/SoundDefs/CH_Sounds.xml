@@ -26,6 +26,54 @@
   </SoundDef>
   
   <SoundDef>
+    <defName>Pawn_ROM_Cthulhid_Wounded</defName> 
+    <context>MapOnly</context>	
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>CosmicHorrors/Cthulhid_Wounded</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9311765</min>        
+          <max>1.045882</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Pawn_ROM_Cthulhid_Death</defName> 
+    <context>MapOnly</context>	
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>CosmicHorrors/Cthulhid_Scream</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.9311765</min>        
+          <max>1.045882</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
     <defName>Pawn_ROM_Shoggoth_Call</defName><context>MapOnly</context>  
     <eventNames />
     <subSounds>
@@ -250,7 +298,7 @@
           </li>
         </grains>      
         <volumeRange>
-          <min>20</min>        
+          <min>15</min>        
           <max>20</max>
         </volumeRange>      
         <pitchRange>
@@ -273,7 +321,7 @@
           </li>
         </grains>      
         <volumeRange>
-          <min>20</min>        
+          <min>15</min>        
           <max>20</max>
         </volumeRange>      
         <pitchRange>

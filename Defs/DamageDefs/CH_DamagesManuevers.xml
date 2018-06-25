@@ -5,7 +5,7 @@
     <defName>ROM_BluntMonstrous</defName>
     <requiredCapacity>ROM_BluntMonstrous</requiredCapacity>
     <verb>
-      <verbClass>Verb_MeleeAttack</verbClass>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
       <meleeDamageDef>ROM_BluntMonstrous</meleeDamageDef>
     </verb>
     <logEntryDef>MeleeAttack</logEntryDef>
@@ -19,7 +19,7 @@
     <defName>ROM_ConstrictMonstrous</defName>
     <requiredCapacity>ROM_ConstrictMonstrous</requiredCapacity>
     <verb>
-      <verbClass>Verb_MeleeAttack</verbClass>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
       <meleeDamageDef>ROM_ConstrictMonstrous</meleeDamageDef>
     </verb>
     <logEntryDef>MeleeAttack</logEntryDef>
@@ -33,7 +33,7 @@
     <defName>ROM_Exsanguination</defName>
     <requiredCapacity>ROM_Exsanguination</requiredCapacity>
     <verb>
-      <verbClass>Verb_MeleeAttack</verbClass>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
       <meleeDamageDef>ROM_Exsanguination</meleeDamageDef>
     </verb>
     <logEntryDef>MeleeAttack</logEntryDef>
@@ -47,7 +47,7 @@
     <defName>ROM_Psychic</defName>
     <requiredCapacity>ROM_Psychic</requiredCapacity>
     <verb>
-      <verbClass>Verb_MeleeAttack</verbClass>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
       <meleeDamageDef>ROM_Psychic</meleeDamageDef>
     </verb>
     <logEntryDef>MeleeAttack</logEntryDef>
@@ -61,7 +61,7 @@
     <defName>ROM_ScratchMonstrous</defName>
     <requiredCapacity>ROM_ScratchMonstrous</requiredCapacity>
     <verb>
-      <verbClass>Verb_MeleeAttack</verbClass>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
       <meleeDamageDef>ROM_ScratchMonstrous</meleeDamageDef>
     </verb>
     <logEntryDef>MeleeAttack</logEntryDef>

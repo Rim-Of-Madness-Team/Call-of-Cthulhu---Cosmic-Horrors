@@ -87,6 +87,13 @@ namespace CosmicHorror
                     locomotionUrgency = LocomotionUrgency.Sprint
                 };
             }
+            if (pawnTarget == null) return null;
+            if (pawnTarget.Downed)
+                return new Job(JobDefOf.AttackMelee, thing2)
+                {
+                    expiryInterval = Rand.Range(57420, 57900),
+                    locomotionUrgency = LocomotionUrgency.Sprint
+                };
             return pawnTarget.Dead
                 ? new Job(JobDefOf.Ingest, thing2)
                 {
