@@ -33,7 +33,6 @@ namespace CosmicHorror
         }
 
 
-
         private enum RaidTypes
         {
             One = 175,
@@ -55,11 +54,12 @@ namespace CosmicHorror
             return text;
         }
 
-        protected override string GetRelatedPawnsInfoLetterText(IncidentParms parms) => Translator.Translate(
-            this.attackingFaction.LabelCap + "" + "CosmicHorrorRaid".Translate(), new object[]
-            {
-                parms.faction.def.pawnsPlural
-            });
+        protected override string GetRelatedPawnsInfoLetterText(IncidentParms parms) =>
+            "LetterRelatedPawnsRaidEnemy".Translate(new object[]
+        {
+            Faction.OfPlayer.def.pawnsPlural,
+            parms.faction.def.pawnsPlural
+        });
 
         protected override bool CanFireNowSub(IncidentParms parms)
         {
@@ -107,10 +107,14 @@ namespace CosmicHorror
         {
             if (parms.raidStrategy == null)
             {
-                Map map = (Map)parms.target;
+                Map map = (Map) parms.target;
                 if (!(from d in DefDatabase<RaidStrategyDef>.AllDefs
-                    where d.Worker.CanUseWith(parms, groupKind) && (parms.raidArrivalMode != null || (d.arriveModes != null && d.arriveModes.Any((PawnsArrivalModeDef x) => x.Worker.CanUseWith(parms))))
-                    select d).TryRandomElementByWeight((RaidStrategyDef d) => d.Worker.SelectionWeight(map, parms.points), out parms.raidStrategy))
+                    where d.Worker.CanUseWith(parms, groupKind) &&
+                          (parms.raidArrivalMode != null ||
+                           (d.arriveModes != null &&
+                            d.arriveModes.Any((PawnsArrivalModeDef x) => x.Worker.CanUseWith(parms))))
+                    select d).TryRandomElementByWeight(
+                    (RaidStrategyDef d) => d.Worker.SelectionWeight(map, parms.points), out parms.raidStrategy))
                 {
                     Log.Error(string.Concat(new object[]
                     {
@@ -133,12 +137,13 @@ namespace CosmicHorror
 
         protected override void ResolveRaidPoints(IncidentParms parms)
         {
-           parms.points = StorytellerUtility.DefaultThreatPointsNow(parms.target);
+            parms.points = StorytellerUtility.DefaultThreatPointsNow(parms.target);
         }
 
         protected override bool TryResolveRaidFaction(IncidentParms parms)
         {
-            parms.faction = Find.World.GetComponent<FactionTracker>().ResolveHorrorFactionByIncidentPoints(parms.points);
+            parms.faction = Find.World.GetComponent<FactionTracker>()
+                .ResolveHorrorFactionByIncidentPoints(parms.points);
             return parms.faction != null;
         }
 
@@ -193,7 +198,7 @@ namespace CosmicHorror
                     }
                     string letterLabel = this.GetLetterLabel(parms);
                     string letterText = this.GetLetterText(parms, list);
-                    string lalalal = this.GetRelatedPawnsInfoLetterText(parms);
+                    //string lalalal = this.GetRelatedPawnsInfoLetterText(parms);
                     PawnRelationUtility.Notify_PawnsSeenByPlayer_Letter(list, ref letterLabel, ref letterText,
                         this.GetRelatedPawnsInfoLetterText(parms), true, true);
                     List<TargetInfo> list2 = new List<TargetInfo>();
@@ -220,7 +225,8 @@ namespace CosmicHorror
                     {
                         list2.Add(list[0]);
                     }
-                    Find.LetterStack.ReceiveLetter(letterLabel, letterText, this.GetLetterDef(), list2, parms.faction, stringBuilder.ToString());
+                    Find.LetterStack.ReceiveLetter(letterLabel, letterText, this.GetLetterDef(), list2, parms.faction,
+                        stringBuilder.ToString());
                     if (this.GetLetterDef() == LetterDefOf.ThreatBig)
                     {
                         TaleRecorder.RecordTale(TaleDefOf.RaidArrived, new object[0]);
@@ -235,7 +241,8 @@ namespace CosmicHorror
                             Pawn pawn2 = list[j];
                             if (pawn2.apparel.WornApparel.Any((Apparel ap) => ap is ShieldBelt))
                             {
-                                LessonAutoActivator.TeachOpportunity(ConceptDefOf.ShieldBelts, OpportunityType.Critical);
+                                LessonAutoActivator.TeachOpportunity(ConceptDefOf.ShieldBelts,
+                                    OpportunityType.Critical);
                                 break;
                             }
                         }
