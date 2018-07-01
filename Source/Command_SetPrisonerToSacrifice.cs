@@ -119,7 +119,7 @@ namespace CosmicHorror
             {
                 foreach (Pawn current in this.settable.Map.mapPawns.FreeColonistsSpawned)
                 {
-                    if (current.skills.GetSkill(SkillDefOf.Growing).Level >= plantDef.plant.sowMinSkill && !current.Downed && current.workSettings.WorkIsActive(WorkTypeDefOf.Growing))
+                    if (current.skills.GetSkill(SkillDefOf.Plants).Level >= plantDef.plant.sowMinSkill && !current.Downed && current.workSettings.WorkIsActive(WorkTypeDefOf.Growing))
                     {
                         return;
                     }

@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BuildingBase" Name="HorrorShipPartBase" Abstract="True">
-    <altitudeLayer>Building</altitudeLayer>
+    <altitudeLayer>Buildings</altitudeLayer>
     <pathCost>150</pathCost>
     <blockWind>false</blockWind>
     <passability>Impassable</passability>
