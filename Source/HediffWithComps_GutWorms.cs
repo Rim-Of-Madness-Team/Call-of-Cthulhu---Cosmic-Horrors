@@ -32,7 +32,7 @@ namespace CosmicHorror
                     this.Severity = 1f;
                     Cthulhu.Utility.DebugReport("GutWorms Triggered");
                     TrySpawningLarva();
-                    this.pawn.TakeDamage(new DamageInfo(DamageDefOf.Bite, 9999, -1f, this.pawn, this.pawn.health.hediffSet.GetBrain(), null));
+                    this.pawn.TakeDamage(new DamageInfo(DamageDefOf.Bite, 9999, 1f, -1f, this.pawn, this.pawn.health.hediffSet.GetBrain(), null));
                     this.pawn.health.RemoveHediff(this);
                 }
         }

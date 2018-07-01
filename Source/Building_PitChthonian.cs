@@ -533,7 +533,7 @@ namespace CosmicHorror
                     }
                     int amount = Rand.RangeInclusive(Mathf.RoundToInt(num2 * 0.65f), num2);
                     BodyPartRecord forceHitPart = bodyPartRecord;
-                    DamageInfo dinfo = new DamageInfo(def, amount, -1f, null, forceHitPart, null);
+                    DamageInfo dinfo = new DamageInfo(def, amount, 1f, -1f, null, forceHitPart, null);
                     dinfo.SetAllowDamagePropagation(false);
                     p.TakeDamage(dinfo);
                 }

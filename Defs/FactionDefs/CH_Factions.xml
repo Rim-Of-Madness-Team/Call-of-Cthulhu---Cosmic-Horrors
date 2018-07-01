@@ -13,7 +13,7 @@
     <autoFlee>false</autoFlee>
     <canUseAvoidGrid>true</canUseAvoidGrid>
 	<techLevel>Animal</techLevel>
-    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+    <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
     <allowedArrivalTemperatureRange>
       <min>-255</min>
       <max>255</max>
