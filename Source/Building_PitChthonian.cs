@@ -276,8 +276,8 @@ namespace CosmicHorror
             {
                 if (this.spawnedChthonian.needs != null)
                 {
-                    this.spawnedChthonian.needs.food.ForceSetLevel(0.1f);
-                    this.spawnedChthonian.needs.rest.ForceSetLevel(1f);
+                    this.spawnedChthonian.needs.food.CurLevelPercentage = 0.1f;
+                    this.spawnedChthonian.needs.rest.CurLevelPercentage = 1f; // ForceSetLevel(1f);
                 }
             }
 
