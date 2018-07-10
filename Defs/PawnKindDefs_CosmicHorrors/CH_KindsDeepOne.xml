@@ -117,6 +117,7 @@
     </statBases>
 	<tools>
 	  <li>
+	    <id>ROM_DeepOneLeftClawTool</id>
         <label>left claw</label>
         <capacities>
           <li>ROM_ScratchMonstrous</li>
@@ -126,6 +127,7 @@
         <linkedBodyPartsGroup>ROM_LeftClaws</linkedBodyPartsGroup>
       </li>
       <li>
+	    <id>ROM_DeepOneRightClawTool</id>
         <label>right claw</label>
         <capacities>
           <li>ROM_ScratchMonstrous</li>
@@ -135,6 +137,8 @@
         <linkedBodyPartsGroup>ROM_RightClaws</linkedBodyPartsGroup>
       </li>
       <li>
+	    <id>ROM_DeepOneBiteTool</id>
+		<label>teeth</label>
         <capacities>
           <li>Bite</li>
         </capacities>
@@ -143,6 +147,7 @@
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
       </li>
 	  <li>
+	    <id>ROM_DeepOneHeadTool</id>
         <label>head</label>
         <capacities>
           <li>Blunt</li>
@@ -254,6 +259,7 @@
     </statBases>
 	<tools>
 	  <li>
+	    <id>ROM_GreatDeepOneLeftClawTool</id>
         <label>left claw</label>
         <capacities>
           <li>ROM_ScratchMonstrous</li>
@@ -263,6 +269,7 @@
         <linkedBodyPartsGroup>ROM_LeftClaws</linkedBodyPartsGroup>
       </li>
       <li>
+	    <id>ROM_GreatDeepOneRightClawTool</id>
         <label>right claw</label>
         <capacities>
           <li>ROM_ScratchMonstrous</li>
@@ -272,6 +279,8 @@
         <linkedBodyPartsGroup>ROM_RightClaws</linkedBodyPartsGroup>
       </li>
       <li>
+	    <id>ROM_GreatDeepOneBiteTool</id>
+		<label>teeth</label>
         <capacities>
           <li>Bite</li>
         </capacities>
@@ -280,6 +289,7 @@
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
       </li>
 	  <li>
+	    <id>ROM_GreatDeepOneHeadTool</id>
         <label>head</label>
         <capacities>
           <li>Blunt</li>

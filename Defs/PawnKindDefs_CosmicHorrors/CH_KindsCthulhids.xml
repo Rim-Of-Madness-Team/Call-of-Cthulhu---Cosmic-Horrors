@@ -65,6 +65,7 @@
     </statBases>
 	<tools>
       <li>
+	    <id>ROM_CthulhidWingsTool</id>
         <label>wings</label>
         <capacities>
 		  <li>ROM_BluntMonstrous</li>
@@ -75,6 +76,7 @@
         <commonality>0.25</commonality>
       </li>
 	  <li>
+	    <id>ROM_CthulhidLeftClawTool</id>
         <label>left claw</label>
         <capacities>
           <li>ROM_ScratchMonstrous</li>
@@ -84,6 +86,7 @@
         <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
       </li>
 	  <li>
+	    <id>ROM_CthulhidRightClawTool</id>
         <label>right claw</label>
         <capacities>
           <li>ROM_ScratchMonstrous</li>
@@ -93,6 +96,7 @@
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
       </li>
 	  <li>
+	    <id>ROM_CthulhidMindTool</id>
         <label>overwhelming mind</label>
         <capacities>
           <li>ROM_Psychic</li>
@@ -102,6 +106,7 @@
         <linkedBodyPartsGroup>ROM_Mind</linkedBodyPartsGroup>
       </li>
 	  <li>
+	    <id>ROM_CthulhidMawTool</id>
         <label>maw</label>
         <capacities>
           <li>ToxicBite</li>

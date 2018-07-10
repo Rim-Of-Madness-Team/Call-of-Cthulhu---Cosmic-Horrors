@@ -78,6 +78,7 @@
 		</statBases>
 		<tools>
 		  <li>
+	        <id>ROM_DarkYoungHoovesTool</id>
 			<label>hooves</label>
 			<capacities>
 			  <li>ROM_BluntMonstrous</li>
@@ -88,6 +89,7 @@
 			<commonality>0.2</commonality>
 		  </li>
 		  <li>
+	        <id>ROM_DarkYoungTentaclesTool</id>
 			<label>tentacles</label>
 			<capacities>
 			  <li>ROM_BluntMonstrous</li>
@@ -97,6 +99,7 @@
 			<linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
 		  </li>
 		  <li>
+	        <id>ROM_DarkYoungCoilingTentaclesTool</id>
 			<label>coiling tentacles</label>
 			<capacities>
 			  <li>ROM_ConstrictMonstrous</li>
@@ -107,6 +110,7 @@
 			<commonality>0.25</commonality>
 		  </li>
 		  <li>
+	        <id>ROM_DarkYoungMawsTool</id>
 			<label>maws</label>
 			<capacities>
 			  <li>ToxicBite</li>

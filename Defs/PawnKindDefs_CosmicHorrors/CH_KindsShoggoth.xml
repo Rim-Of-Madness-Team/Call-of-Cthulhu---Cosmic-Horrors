@@ -66,6 +66,7 @@
     </statBases>
 	<tools>
       <li>
+	    <id>ROM_ShoggothMawsTool</id>
         <label>maws</label>
         <capacities>
           <li>ToxicBite</li>
@@ -75,6 +76,7 @@
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
       </li>
       <li>
+	    <id>ROM_ShoggothTentaclesTool</id>
         <label>tentacles</label>
         <capacities>
 		  <li>ROM_BluntMonstrous</li>
@@ -84,7 +86,8 @@
         <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
       </li>
       <li>
-        <label>right claw</label>
+	    <id>ROM_ShoggothRightClawTool</id>
+        <label>right claws</label>
         <capacities>
 		  <li>ROM_BluntMonstrous</li>
         </capacities>
@@ -94,7 +97,8 @@
         <commonality>0.25</commonality>
       </li>
       <li>
-        <label>left claw</label>
+	    <id>ROM_ShoggothLeftClawTool</id>
+        <label>left claws</label>
         <capacities>
 		  <li>ROM_BluntMonstrous</li>
         </capacities>
