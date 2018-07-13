@@ -59,7 +59,6 @@
     </statBases>
 	<tools>
       <li>
-	    <id>ROM_TentaclesTool</id>
         <label>tentacles</label>
         <capacities>
           <li>ROM_BluntMonstrous</li>
@@ -69,7 +68,6 @@
         <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
       </li>
       <li>
-	    <id>ROM_CoilingTentaclesTool</id>
         <label>coiling tentacles</label>
         <capacities>
 		  <li>ROM_ConstrictMonstrous</li>
@@ -80,7 +78,6 @@
         <commonality>0.25</commonality>
       </li>
 	  <li>
-	    <id>ROM_OverwhelmingMindTool</id>
         <label>overwhelming mind</label>
         <capacities>
           <li>ROM_Psychic</li>
@@ -90,7 +87,6 @@
         <linkedBodyPartsGroup>ROM_Mind</linkedBodyPartsGroup>
       </li>
 	  <li>
-	    <id>ROM_BodyTool</id>
         <label>body</label>
         <capacities>
           <li>ROM_BluntMonstrous</li>

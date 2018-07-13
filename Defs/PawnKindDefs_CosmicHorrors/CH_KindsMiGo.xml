@@ -128,7 +128,6 @@
 		</statBases>
 		<tools>
 		  <li>
-	         <id>ROM_MiGoLegsTool</id>
 			<label>legs</label>
 			<capacities>
 			  <li>ROM_ScratchMonstrous</li>
@@ -138,7 +137,6 @@
 			<linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
 		  </li>
 		  <li>
-	         <id>ROM_MiGoMindTool</id>
 			<label>overwhelming mind</label>
 			<capacities>
 			  <li>ROM_Psychic</li>
@@ -148,7 +146,6 @@
 			<linkedBodyPartsGroup>ROM_Mind</linkedBodyPartsGroup>
 		  </li>
 		  <li>
-	         <id>ROM_MiGoBodyTool</id>
 			<label>body</label>
 			<capacities>
 			  <li>ROM_BluntMonstrous</li>

@@ -114,7 +114,7 @@
     </statBases>
 	<tools>
       <li>
-	    <id>ROM_StarVampireNeedlesTool</id>
+	    
         <label>needles</label>
         <capacities>
           <li>ROM_ScratchMonstrous</li>
@@ -124,7 +124,7 @@
         <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
       </li>
       <li>
-	    <id>ROM_StarVampireTentaclesTool</id>
+	    
         <label>tentacles</label>
         <capacities>
           <li>ROM_BluntMonstrous</li>
@@ -134,7 +134,7 @@
         <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
       </li>
       <li>
-	    <id>ROM_StarVampireCoilingTentaclesTool</id>
+	    
         <label>coiling tentacles</label>
         <capacities>
 		  <li>ROM_ConstrictMonstrous</li>
@@ -145,7 +145,7 @@
         <commonality>0.25</commonality>
       </li>
 	  <li>
-	    <id>ROM_StarVampireTeethTool</id>
+	    
         <label>teeth</label>
         <capacities>
           <li>ROM_Exsanguination</li>

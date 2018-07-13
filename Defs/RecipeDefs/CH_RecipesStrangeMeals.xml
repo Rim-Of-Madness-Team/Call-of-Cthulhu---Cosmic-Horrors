@@ -132,9 +132,9 @@
 			<li>PlantFoodRaw</li>
 			<li>AnimalProductRaw</li>			
 		</categories>
-        <disallowedSpecialFilters>
+        <specialFiltersToDisallow>
           <li>AllowPlantFood</li>
-        </disallowedSpecialFilters>
+        </specialFiltersToDisallow>
 	</fixedIngredientFilter>
 	<defaultIngredientFilter>
 		<categories>
@@ -198,9 +198,9 @@
 			<li>PlantFoodRaw</li>
 			<li>AnimalProductRaw</li>
 		</categories>
-		<disallowedSpecialFilters>
+		<specialFiltersToDisallow>
 			<li>AllowPlantFood</li>
-		</disallowedSpecialFilters>
+		</specialFiltersToDisallow>
 	</fixedIngredientFilter>
 	<defaultIngredientFilter>
 		<categories>
