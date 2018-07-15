@@ -2,7 +2,7 @@
 <Defs>
   <!-- STAR VAMPIRE -->
   <!-- KIND DEFS -->
-  <PawnKindDef>
+  <PawnKindDef Name="ROM_StarVampireKind">
     <defName>ROM_StarVampire</defName>
     <label>Star Vampire</label>
     <race>ROM_StarVampire</race>
@@ -70,8 +70,147 @@
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <forceNormalGearQuality>false</forceNormalGearQuality>
   </PawnKindDef>
+  
+  <PawnKindDef ParentName="ROM_StarVampireKind">
+    <defName>ROM_StarVampireAlbino</defName>
+    <lifeStages Inherit="False">
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Albino</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.0</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Albino</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Albino</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.8</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Albino</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.2</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="ROM_StarVampireKind">
+    <defName>ROM_StarVampireAbberation</defName>
+    <lifeStages Inherit="False">
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Abberation</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.0</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Abberation</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Abberation</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.8</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Abberation</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.2</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="ROM_StarVampireKind">
+    <defName>ROM_StarVampireNight</defName>
+    <lifeStages Inherit="False">
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Night</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.0</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Night</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Night</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.8</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Night</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.2</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
   <!-- RACE DEFS -->
-  <ThingDef>
+  <ThingDef Name="ROM_StarVampireSpawner">
     <defName>ROM_StarVampireSpawner</defName>
     <label>Star Vampire Spawner</label>
     <thingClass>ThingWithComps</thingClass>
@@ -100,7 +239,62 @@
       </li>
     </comps>
   </ThingDef>
-  <ThingDef ParentName="BaseCosmicHorrorRaceInit">
+  
+  <ThingDef ParentName="ROM_StarVampireSpawner">
+    <defName>ROM_StarVampireSpawnerAlbino</defName>
+    <comps>
+      <li Class="CompDelayedSpawner.CompProperties_DelayedSpawner">
+        <spawnList>
+          <li>
+            <pawnKind>ROM_StarVampireAlbino</pawnKind>
+            <faction>ROM_StarVampire</faction>
+          </li>
+        </spawnList>
+        <tickRate>60</tickRate>
+        <ticksUntilSpawning>35</ticksUntilSpawning>
+        <spawnsOnce>true</spawnsOnce>
+        <destroyAfterSpawn>true</destroyAfterSpawn>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="ROM_StarVampireSpawner">
+    <defName>ROM_StarVampireSpawnerAbberation</defName>
+    <comps>
+      <li Class="CompDelayedSpawner.CompProperties_DelayedSpawner">
+        <spawnList>
+          <li>
+            <pawnKind>ROM_StarVampireAbberation</pawnKind>
+            <faction>ROM_StarVampire</faction>
+          </li>
+        </spawnList>
+        <tickRate>60</tickRate>
+        <ticksUntilSpawning>35</ticksUntilSpawning>
+        <spawnsOnce>true</spawnsOnce>
+        <destroyAfterSpawn>true</destroyAfterSpawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="ROM_StarVampireSpawner">
+    <defName>ROM_StarVampireSpawnerNight</defName>
+    <comps>
+      <li Class="CompDelayedSpawner.CompProperties_DelayedSpawner">
+        <spawnList>
+          <li>
+            <pawnKind>ROM_StarVampireNight</pawnKind>
+            <faction>ROM_StarVampire</faction>
+          </li>
+        </spawnList>
+        <tickRate>60</tickRate>
+        <ticksUntilSpawning>35</ticksUntilSpawning>
+        <spawnsOnce>true</spawnsOnce>
+        <destroyAfterSpawn>true</destroyAfterSpawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  <ThingDef Name="ROM_StarVampire" ParentName="BaseCosmicHorrorRaceInit">
     <defName>ROM_StarVampire</defName>
     <label>Star Vampire</label>
     <thingClass>CosmicHorror.CosmicHorrorPawn_StarVampire</thingClass>
@@ -119,7 +313,7 @@
         <capacities>
           <li>ROM_ScratchMonstrous</li>
         </capacities>
-        <power>10</power>
+        <power>20</power>
         <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
       </li>
@@ -129,7 +323,7 @@
         <capacities>
           <li>ROM_BluntMonstrous</li>
         </capacities>
-        <power>10</power>
+        <power>20</power>
         <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
       </li>
@@ -139,7 +333,7 @@
         <capacities>
 		  <li>ROM_ConstrictMonstrous</li>
         </capacities>
-        <power>10</power>
+        <power>20</power>
         <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
         <commonality>0.25</commonality>
@@ -150,7 +344,7 @@
         <capacities>
           <li>ROM_Exsanguination</li>
         </capacities>
-        <power>7</power>
+        <power>14</power>
         <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
       </li>
@@ -162,8 +356,8 @@
       <thinkTreeMain>ROM_StarVampire</thinkTreeMain>
       <body>ROM_StarVampireBody</body>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-      <baseBodySize>1.0</baseBodySize>
-      <baseHealthScale>1.8</baseHealthScale>
+      <baseBodySize>1.5</baseBodySize>
+      <baseHealthScale>1.9</baseHealthScale>
 	  <!--
 	        <leatherColor>(176,39,39)</leatherColor>
 	  <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
@@ -224,4 +418,5 @@
 	  </li>
 	</modExtensions>
   </ThingDef>
+  
 </Defs>

@@ -35,6 +35,8 @@ namespace CosmicHorror
         public static JobDef ROM_FillChthonianPit;
 
         public static HediffDef ROM_IntracranialPressure;
-
+        public static ThingDef ROM_StarVampireSpawnerAbberation;
+        public static ThingDef ROM_StarVampireSpawnerAlbino;
+        public static ThingDef ROM_StarVampireSpawnerNight;
     }
 }

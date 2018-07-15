@@ -37,7 +37,7 @@ namespace CosmicHorror
             ResolveSpawnCenter(parms);
 
             //Initialize variables.
-            this.iwDef        = MonsterDefOf.ROM_StarVampireSpawner;
+            this.iwDef        = ResolveSpawner(parms);
             this.iwWarn       = MonsterDefOf.Pawn_ROM_StarVampire_Warning;
             this.iwVampire    = null; //iwPawn as CosmicHorrorPawn;
             this.iwLoc        = CellFinder.RandomClosewalkCellNear(parms.spawnCenter, (Map)parms.target, 8);
@@ -57,6 +57,22 @@ namespace CosmicHorror
             //Spawn the Star Vampire.
             SpawnStarVampires(parms);
             return true;
+        }
+
+        private static ThingDef ResolveSpawner(IncidentParms parms)
+        {
+            Map iwMap = (Map)parms.target;
+            var abberation = (GenCelestial.IsDaytime(GenCelestial.CelestialSunGlow(iwMap, Find.TickManager.TicksAbs)))
+                ? MonsterDefOf.ROM_StarVampireSpawnerAbberation
+                : MonsterDefOf.ROM_StarVampireSpawnerNight;
+
+            var chance = Rand.Value;
+            if (chance > 0.3)
+                return MonsterDefOf.ROM_StarVampireSpawner;   
+            else if (chance > 0.05)
+                return abberation;
+            else
+                return MonsterDefOf.ROM_StarVampireSpawnerAlbino;
         }
 
         /// <summary>
