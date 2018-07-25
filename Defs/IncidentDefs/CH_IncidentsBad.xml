@@ -5,7 +5,7 @@
   <IncidentDef>
     <defName>ROM_RaidCosmicHorrors</defName>
     <label>horror assault</label>
-    <targetTypes><li>Map_PlayerHome</li></targetTypes>
+    <targetTags><li>Map_PlayerHome</li></targetTags>
     <workerClass>CosmicHorror.IncidentWorker_RaidCosmicHorrors</workerClass>
     <baseChance>5.0</baseChance>
     <category>ThreatBig</category>
@@ -15,7 +15,7 @@
   <IncidentDef>
     <defName>ROM_StarVampireAttack</defName>
 	<label>star vampire attack</label>
-    <targetTypes><li>Map_PlayerHome</li></targetTypes>
+    <targetTags><li>Map_PlayerHome</li></targetTags>
     <workerClass>CosmicHorror.IncidentWorker_StarVampireAttack</workerClass>
     <category>ThreatBig</category>
 	<letterLabel>A chill</letterLabel>
@@ -31,7 +31,7 @@
   <IncidentDef>
     <defName>ROM_DarkYoung</defName>
     <label>dark young</label>
-    <targetTypes><li>Map_PlayerHome</li></targetTypes>
+    <targetTags><li>Map_PlayerHome</li></targetTags>
     <workerClass>CosmicHorror.IncidentWorker_DarkYoung</workerClass>
 	<category>ThreatSmall</category>
 	<earliestDay>10</earliestDay>
@@ -45,7 +45,7 @@
   <IncidentDef>
     <defName>ROM_ChthonianPit</defName>
     <label>strange sinkhole (chthonian)</label>
-    <targetTypes><li>Map_PlayerHome</li></targetTypes>
+    <targetTags><li>Map_PlayerHome</li></targetTags>
     <workerClass>CosmicHorror.IncidentWorker_PitChthonian</workerClass>
 	<earliestDay>14</earliestDay>
     <letterLabel>Strange Sinkhole</letterLabel>

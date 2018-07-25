@@ -94,7 +94,7 @@
         <power>15</power>
         <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
-        <commonality>0.25</commonality>
+        <chanceFactor>0.25</chanceFactor>
       </li>
       <li>
 	    
@@ -105,7 +105,7 @@
         <power>15</power>
         <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
-        <commonality>0.25</commonality>
+        <chanceFactor>0.25</chanceFactor>
       </li>
     </tools>
 	<comps>

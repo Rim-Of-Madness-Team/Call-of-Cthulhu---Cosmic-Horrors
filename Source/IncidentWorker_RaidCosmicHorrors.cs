@@ -56,10 +56,10 @@ namespace CosmicHorror
 
         protected override string GetRelatedPawnsInfoLetterText(IncidentParms parms) =>
             "LetterRelatedPawnsRaidEnemy".Translate(new object[]
-        {
-            Faction.OfPlayer.def.pawnsPlural,
-            parms.faction.def.pawnsPlural
-        });
+            {
+                Faction.OfPlayer.def.pawnsPlural,
+                parms.faction.def.pawnsPlural
+            });
 
         protected override bool CanFireNowSub(IncidentParms parms)
         {
@@ -170,10 +170,8 @@ namespace CosmicHorror
                 }
                 else
                 {
-                    parms.points *= parms.raidArrivalMode.pointsFactor;
-                    parms.points *= parms.raidStrategy.pointsFactor;
-                    parms.points = Mathf.Max(parms.points,
-                        parms.raidStrategy.Worker.MinimumPoints(parms.faction, combat) * 1.05f);
+                    parms.points = IncidentWorker_Raid.AdjustedRaidPoints(parms.points, parms.raidArrivalMode,
+                        parms.raidStrategy, parms.faction, combat);
 
                     PawnGroupMakerParms defaultPawnGroupMakerParms =
                         IncidentParmsUtility.GetDefaultPawnGroupMakerParms(combat, parms);

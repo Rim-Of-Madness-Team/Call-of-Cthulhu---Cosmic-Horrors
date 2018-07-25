@@ -336,7 +336,7 @@
         <power>20</power>
         <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
-        <commonality>0.25</commonality>
+        <chanceFactor>0.25</chanceFactor>
       </li>
 	  <li>
 	    

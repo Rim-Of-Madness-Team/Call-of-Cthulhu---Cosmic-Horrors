@@ -75,7 +75,7 @@
         <power>5</power>
         <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
-        <commonality>0.25</commonality>
+        <chanceFactor>0.25</chanceFactor>
       </li>
 	  <li>
         <label>overwhelming mind</label>
@@ -94,7 +94,7 @@
         <power>25</power>
         <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>ROM_BodyAttackTool</linkedBodyPartsGroup>
-        <commonality>0.33</commonality>
+        <chanceFactor>0.33</chanceFactor>
       </li>
     </tools>
     <race>
@@ -238,7 +238,7 @@
         <power>10</power>
         <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>ROM_BodyAttackTool</linkedBodyPartsGroup>
-        <commonality>0.33</commonality>
+        <chanceFactor>0.33</chanceFactor>
       </li>
     </tools>
     <race>

@@ -153,7 +153,7 @@
 			<power>10</power>
 			<cooldownTime>1.65</cooldownTime>
 			<linkedBodyPartsGroup>ROM_Wings</linkedBodyPartsGroup>
-			<commonality>0.33</commonality>
+			<chanceFactor>0.33</chanceFactor>
 		  </li>
 		</tools>
 		<race>

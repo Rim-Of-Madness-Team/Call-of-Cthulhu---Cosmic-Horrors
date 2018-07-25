@@ -85,7 +85,7 @@
 			<power>14</power>
 			<cooldownTime>1.65</cooldownTime>
 			<linkedBodyPartsGroup>ROM_Hooves</linkedBodyPartsGroup>
-			<commonality>0.2</commonality>
+			<chanceFactor>0.2</chanceFactor>
 		  </li>
 		  <li>
 			<label>tentacles</label>
@@ -104,7 +104,7 @@
 			<power>10</power>
 			<cooldownTime>1.65</cooldownTime>
 			<linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
-			<commonality>0.25</commonality>
+			<chanceFactor>0.25</chanceFactor>
 		  </li>
 		  <li>
 			<label>maws</label>
@@ -114,7 +114,7 @@
 			<power>12</power>
 			<cooldownTime>1.65</cooldownTime>
 			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			<commonality>0.33</commonality>
+			<chanceFactor>0.33</chanceFactor>
 		  </li>
 		</tools>
 		<comps>
