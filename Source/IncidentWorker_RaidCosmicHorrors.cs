@@ -227,7 +227,7 @@ namespace CosmicHorror
                         stringBuilder.ToString());
                     if (this.GetLetterDef() == LetterDefOf.ThreatBig)
                     {
-                        TaleRecorder.RecordTale(TaleDefOf.RaidArrived, new object[0]);
+                        //TaleRecorder.RecordTale(TaleDefOf. RaidArrived, new object[0]);
                     }
                     parms.raidStrategy.Worker.MakeLords(parms, list);
                     AvoidGridMaker.RegenerateAvoidGridsFor(parms.faction, map);

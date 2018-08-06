@@ -6,7 +6,7 @@
     <defName>ROM_Shoggoth</defName>
     <label>Shoggoth</label>
     <race>ROM_Shoggoth</race>
-    <combatPower>525</combatPower>
+    <combatPower>325</combatPower>
     <defaultFactionType>ROM_Shoggoth</defaultFactionType>
     <aiAvoidCover>true</aiAvoidCover>
     <lifeStages>
@@ -52,16 +52,119 @@
       </li>
     </lifeStages>
   </PawnKindDef>
+  
+    <PawnKindDef>
+    <defName>ROM_ShoggothColossal</defName>
+    <label>Shoggoth (Colossal)</label>
+    <race>ROM_ShoggothColossal</race>
+    <combatPower>525</combatPower>
+    <defaultFactionType>ROM_Shoggoth</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_ShoggothColossal</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>8</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_ShoggothColossal</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>10</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_ShoggothColossal</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>10.4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_ShoggothColossal</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>10.8</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+    <PawnKindDef>
+    <defName>ROM_ShoggothTiny</defName>
+    <label>Shoggoth (Tiny)</label>
+    <race>ROM_ShoggothTiny</race>
+    <combatPower>525</combatPower>
+    <defaultFactionType>ROM_Shoggoth</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_ShoggothTiny</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_ShoggothTiny</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_ShoggothTiny</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.6</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_ShoggothTiny</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.66</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
   <!-- RACE DEFS-->
-  <ThingDef ParentName="BaseCosmicHorrorRaceInit">
+  <ThingDef ParentName="BaseCosmicHorrorRaceInit" Name="ROM_Shoggoth">
     <defName>ROM_Shoggoth</defName>
     <label>shoggoth</label>
     <description>Large and oily masses that shift and change shape according to their needs. Eyes, mouth and tentacles appear, then just as swifty, are reabsorbed into the luminescent black protoplasm. They are reluctant servants to those that are willing to risk their rebellious nature.</description>
     <statBases>
-      <Mass>7000</Mass>		
+      <Mass>3000</Mass>		
       <MoveSpeed>1.5</MoveSpeed>
-      <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
 	  <LeatherAmount>0</LeatherAmount>
     </statBases>
 	<tools>
@@ -71,7 +174,7 @@
         <capacities>
           <li>ToxicBite</li>
         </capacities>
-        <power>10</power>
+        <power>8</power>
         <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
       </li>
@@ -81,7 +184,7 @@
         <capacities>
 		  <li>ROM_BluntMonstrous</li>
         </capacities>
-        <power>12</power>
+        <power>10</power>
         <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
       </li>
@@ -91,7 +194,7 @@
         <capacities>
 		  <li>ROM_BluntMonstrous</li>
         </capacities>
-        <power>15</power>
+        <power>13</power>
         <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
         <chanceFactor>0.25</chanceFactor>
@@ -102,17 +205,14 @@
         <capacities>
 		  <li>ROM_BluntMonstrous</li>
         </capacities>
-        <power>15</power>
+        <power>13</power>
         <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
         <chanceFactor>0.25</chanceFactor>
       </li>
     </tools>
 	<comps>
-	  <li Class="CompLumbering.CompProperties_Lumbering">
-		<secondsPerStep>1.4</secondsPerStep>
-		<secondsBetweenSteps>0.5</secondsBetweenSteps>
-	  </li>
+	  <li Class="CompBalloon.CompProperties_Balloon"></li>
 	</comps>
     <race>
       <bloodDef>ROM_Filth_BloodShoggoth</bloodDef>
@@ -155,7 +255,7 @@
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
     <butcherProducts>
-      <ROM_RawCHFood_ShoggothMeat>50</ROM_RawCHFood_ShoggothMeat>
+      <ROM_RawCHFood_ShoggothMeat>30</ROM_RawCHFood_ShoggothMeat>
     </butcherProducts>
     <recipes>
       <li>Euthanize</li>
@@ -170,4 +270,118 @@
 	  </li>
 	</modExtensions>	
   </ThingDef>
+  
+  <ThingDef ParentName="ROM_Shoggoth">
+    <defName>ROM_ShoggothColossal</defName>
+    <statBases>
+      <Mass>7000</Mass>		
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+    </statBases>
+	<tools Inherit="False">
+      <li>
+	    
+        <label>maws</label>
+        <capacities>
+          <li>ToxicBite</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      </li>
+      <li>
+	    
+        <label>tentacles</label>
+        <capacities>
+		  <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
+      </li>
+      <li>
+	    
+        <label>right claws</label>
+        <capacities>
+		  <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <chanceFactor>0.25</chanceFactor>
+      </li>
+      <li>
+	    
+        <label>left claws</label>
+        <capacities>
+		  <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>0.25</chanceFactor>
+      </li>
+    </tools>    
+	<butcherProducts Inherit="False">
+      <ROM_RawCHFood_ShoggothMeat>60</ROM_RawCHFood_ShoggothMeat>
+    </butcherProducts>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="ROM_Shoggoth">
+    <defName>ROM_ShoggothTiny</defName>
+    <statBases>
+      <Mass>30</Mass>		
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+    </statBases>
+	<tools Inherit="False">
+      <li>
+	    
+        <label>maws</label>
+        <capacities>
+          <li>ToxicBite</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      </li>
+      <li>
+	    
+        <label>tentacles</label>
+        <capacities>
+		  <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
+      </li>
+      <li>
+	    
+        <label>right claws</label>
+        <capacities>
+		  <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <chanceFactor>0.25</chanceFactor>
+      </li>
+      <li>
+	    
+        <label>left claws</label>
+        <capacities>
+		  <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>0.25</chanceFactor>
+      </li>
+    </tools>    
+	<butcherProducts Inherit="False">
+      <ROM_RawCHFood_ShoggothMeat>10</ROM_RawCHFood_ShoggothMeat>
+    </butcherProducts>
+  </ThingDef>
+  
 </Defs>

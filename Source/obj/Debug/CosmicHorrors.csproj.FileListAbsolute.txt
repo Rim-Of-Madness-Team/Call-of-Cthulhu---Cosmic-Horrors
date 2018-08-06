@@ -47,5 +47,7 @@ D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Cosmic
 D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Cosmic-Horrors\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
 D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Cosmic-Horrors\Source\obj\Debug\CosmicHorror.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Cosmic-Horrors\Assemblies\CosmicHorror.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Cosmic-Horrors\Source\obj\Debug\CosmicHorrors.csprojResolveAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Cosmic-Horrors\Source\obj\Debug\CosmicHorror.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Cosmic-Horrors\Source\obj\Debug\CosmicHorrors.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Cosmic-Horrors\Source\obj\Debug\CosmicHorrors.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Cosmic-Horrors\Source\obj\Debug\CosmicHorrors.csproj.CopyComplete
