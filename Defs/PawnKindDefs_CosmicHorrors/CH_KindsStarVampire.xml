@@ -349,6 +349,7 @@
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
       </li>
     </tools>
+	  <techLevel>Animal</techLevel>
     <race>
       <bloodDef>Filth_Blood</bloodDef>
       <hasGenders>false</hasGenders>

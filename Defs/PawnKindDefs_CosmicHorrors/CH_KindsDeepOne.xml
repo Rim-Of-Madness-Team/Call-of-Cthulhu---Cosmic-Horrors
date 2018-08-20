@@ -107,6 +107,7 @@
     <defName>ROM_DeepOne</defName>
     <label>Deep One</label>
     <description>A fish headed but frog bodied humanoid with large bulging eyes and webbed hands. They have powerful scaly bodies, designed to withstand the pressures of the ocean.</description>
+	  <techLevel>Animal</techLevel>
     <statBases>
       <Mass>200</Mass>		
       <MoveSpeed>4.6</MoveSpeed>
@@ -253,6 +254,7 @@
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
       <ComfyTemperatureMax>100</ComfyTemperatureMax>
     </statBases>
+	  <techLevel>Animal</techLevel>
 	<tools>
 	  <li>
         <label>left claw</label>

@@ -57,6 +57,7 @@
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
       <ComfyTemperatureMax>100</ComfyTemperatureMax>
     </statBases>
+	<techLevel>Animal</techLevel>
 	<tools>
       <li>
         <label>tentacles</label>

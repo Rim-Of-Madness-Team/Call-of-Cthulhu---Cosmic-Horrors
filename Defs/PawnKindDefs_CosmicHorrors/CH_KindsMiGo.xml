@@ -126,6 +126,7 @@
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 		</statBases>
+	  <techLevel>Animal</techLevel>
 		<tools>
 		  <li>
 			<label>legs</label>
@@ -215,8 +216,6 @@
 	</modExtensions>			
 	</ThingDef>
 
-
-
 	<!-- WEAPONS -->
 
 	<ThingDef ParentName="BaseBullet">
@@ -253,7 +252,7 @@
 			<RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
 		</statBases>
 		<tradeability>None</tradeability>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Neolithic</techLevel>
 		<menuHidden>True</menuHidden>
 		<destroyOnDrop>True</destroyOnDrop>
 		<weaponTags>
