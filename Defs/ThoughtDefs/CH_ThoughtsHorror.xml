@@ -58,6 +58,24 @@
 		</stages>
 	</ThoughtDef>
 	<ThoughtDef>
+		<defName>ObservedROM_ShoggothTiny</defName>
+		<thoughtClass>Thought_MemoryObservation</thoughtClass>
+		<durationDays>0.1</durationDays>
+		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+		<stackLimit>1</stackLimit>
+		<nullifyingTraits>
+		  <li>Psychopath</li>
+		  <li>Bloodlust</li>
+		</nullifyingTraits>
+		<stages>
+		  <li>
+			<label>observed Shoggoth (tiny)</label>
+			<description>What the??</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
 		<defName>ObservedROM_Shoggoth</defName>
 		<thoughtClass>Thought_MemoryObservation</thoughtClass>
 		<durationDays>0.1</durationDays>
@@ -70,6 +88,24 @@
 		<stages>
 		  <li>
 			<label>observed Shoggoth</label>
+			<description>WHAT THE??</description>
+			<baseMoodEffect>-20</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>ObservedROM_ShoggothColossal</defName>
+		<thoughtClass>Thought_MemoryObservation</thoughtClass>
+		<durationDays>0.1</durationDays>
+		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+		<stackLimit>1</stackLimit>
+		<nullifyingTraits>
+		  <li>Psychopath</li>
+		  <li>Bloodlust</li>
+		</nullifyingTraits>
+		<stages>
+		  <li>
+			<label>observed Shoggoth (Colossal)</label>
 			<description>WHAT IS THAT THING?</description>
 			<baseMoodEffect>-40</baseMoodEffect>
 		  </li>
