@@ -34,9 +34,9 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=1.0.9.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="0Harmony">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\erdelfion\Documents\modfiles\rimworld\Harmony\Harmony\bin\Release\0Harmony.dll</HintPath>
+      <HintPath>..\..\JecsTools\Assemblies\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="0JecsTools">
       <HintPath>..\..\JecsTools\Assemblies\0JecsTools.dll</HintPath>
