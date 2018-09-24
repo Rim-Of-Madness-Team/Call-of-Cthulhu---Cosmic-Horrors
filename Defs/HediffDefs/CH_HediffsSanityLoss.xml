@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <HediffDef ParentName="DiseaseBase">
+
+  <HediffDef>
     <defName>ROM_SanityLoss</defName>
 	<label>sanity loss</label>
-    <initialSeverity>0.001</initialSeverity>
     <hediffClass>CosmicHorror.HediffWithComps_SanityLoss</hediffClass> 
-    <minSeverity>0.001</minSeverity>
+    <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+    <initialSeverity>0.1</initialSeverity>
     <maxSeverity>1.0</maxSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-		<severityPerDay>-0.20</severityPerDay>
+        <severityPerDay>-0.05</severityPerDay>
       </li>
     </comps>	
     <stages>
-      <li>
-        <label>initial</label>
-		<becomeVisible>false</becomeVisible>
-      </li>
       <li>
         <label>initial</label>
 		<minSeverity>0.1</minSeverity>
@@ -42,7 +39,7 @@
 		 </capMods>
         <statOffsets>
           <MentalBreakThreshold>0.1</MentalBreakThreshold>
-        </statOffsets>		 
+        </statOffsets>		 		 
       </li>
 	  <li>
         <label>minor</label>
@@ -68,7 +65,7 @@
 		 </capMods>
         <statOffsets>
           <MentalBreakThreshold>0.25</MentalBreakThreshold>
-        </statOffsets>		 
+        </statOffsets>		 		 
       </li>
 	  <li>
 		<label>major</label>
@@ -99,7 +96,7 @@
         </mentalStateGivers>
         <statOffsets>
           <MentalBreakThreshold>0.4</MentalBreakThreshold>
-        </statOffsets>		
+        </statOffsets>		 		
 	</li>	  
 	<li>
 		<label>severe</label>
@@ -135,7 +132,7 @@
         </mentalStateGivers>
         <statOffsets>
           <MentalBreakThreshold>0.6</MentalBreakThreshold>
-        </statOffsets>		
+        </statOffsets>		 		
 	</li>
 	<li>
 		<label>extreme</label>
@@ -170,10 +167,10 @@
           </li>
         </mentalStateGivers>
         <lifeThreatening>true</lifeThreatening>
-        <deathMtbDays>10</deathMtbDays>
+        <deathMtbDays>10</deathMtbDays>		
         <statOffsets>
           <MentalBreakThreshold>0.8</MentalBreakThreshold>
-        </statOffsets>		
+        </statOffsets>		 		
 	</li>
     </stages>
   </HediffDef>

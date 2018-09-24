@@ -195,6 +195,30 @@ namespace Cthulhu
             //Cthulhu.Utility.DebugReport("We got so far.");
             return pawn;
         }
+        
+        
+        /// <summary>
+        /// This method handles the application of Sanity Loss in multiple mods.
+        /// It returns true and false depending on if it applies successfully.
+        /// </summary>
+        /// <param name="pawn"></param>
+        /// <param name="sanityLoss"></param>
+        /// <param name="sanityLossMax"></param>
+        public static bool RemoveSanityLoss(Pawn pawn)
+        {
+            bool removedSuccessfully = false;
+            if (pawn != null)
+            {
+                string sanityLossDef = (!IsCosmicHorrorsLoaded()) ? AltSanityLossDef : SanityLossDef;
+
+                var pawnSanityHediff = pawn.health.hediffSet.GetFirstHediffOfDef(DefDatabase<HediffDef>.GetNamedSilentFail(sanityLossDef));
+                if (pawnSanityHediff != null)
+                {
+                    pawn.health.RemoveHediff(pawnSanityHediff);
+                }
+            }
+            return removedSuccessfully;
+        }
 
         static public void CopyPawnRecords(Pawn pawn, Pawn newPawn)
         {

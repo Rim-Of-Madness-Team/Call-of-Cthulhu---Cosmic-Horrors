@@ -43,7 +43,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -63,6 +63,7 @@
     <Compile Include="CosmicHorrorPawnExtension.cs" />
     <Compile Include="CosmicHorrorPawn_Shoggoth.cs" />
     <Compile Include="CosmicHorrorPawn_StarVampire.cs" />
+    <Compile Include="CosmicHorrorsFloatMenuPatch.cs" />
     <Compile Include="CosmicHorrorUtility.cs" />
     <Compile Include="CthulhuUtility.cs" />
     <Compile Include="DamageWorker_CranialPressure.cs" />
