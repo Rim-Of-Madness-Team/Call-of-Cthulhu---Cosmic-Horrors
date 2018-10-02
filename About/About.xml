@@ -3,7 +3,7 @@
   <name>Call of Cthulhu - Cosmic Horrors</name>
   <author>Jecrell</author>
   <targetVersion>0.19.0</targetVersion>
-  <description>1.19.0.2 (09-25-2018)
+  <description>1.19.0.3 (10-03-2018)
 
 This mod recreates the minor races of H.P. Lovecraft's weird fiction mythos in RimWorld. They behave the same as hostile factions that raid colonies such as mechanoids or insectoids. They are deadlier, however.
 
@@ -34,5 +34,19 @@ This mod recreates the minor races of H.P. Lovecraft's weird fiction mythos in R
           drynyn (Writer)
           spoonshortage (Artist)
 
-Want to contribute? Get in touch with us in the workshop or Ludeon forums.</description>
+Want to contribute? Get in touch with us in the workshop or Ludeon forums.
+
+Thank you to my Patrons for supporting me in my efforts. Without you, none of this would be possible.
+
+These are the most excellent rim dwellers who support me: 
+Brachiaraidos, Cory Bonifay, CrankyPeanut, E_T, Finwej, Jan Koutsky, Jonathan, K. Bolden, Kiya Nicoll, Matt Harris, Paul Fenwick, Toc Anastar, Grendalloffen, Martin K. Bonde, Harvey Mclellan, Shane M. aka ShotgunFace, Bentley Alsup, Eric Idema, MasterScootie, GoSu, Josh McCabe, spook, Clifford Campbell, J, Michael Paugh, John Kanady, Luis Figueroa, Midgeman, Nate Haug, Richard Paul, SilentWeirdo, Audrin Navarro, Calhoun Cattell, Михаил Юрченко, Nemuri Hime, Calum, Keith Thoma, Dick Jones, Patrick, Tim Stillson, Nathan Getman, Sharp Spook, Emily Shaw, Populous25, Steven James, Zalson, Mark, Marcus Sireanu, Drachken, Nicholas Bateman, Baron Xot, Justin Andres, Luis Salvatierra, Christopher, TinyFloatingTurtle, George Chong Chuang Ming, John Boehr, Oliver White, roxxploxx, Robin Hager, That Guy, Allic, Karol Rybak, Austin Harbert, Yewty, Evan Hwang, Ryan Brock, Jonathan Holzinger, MC, Alexander, Alex Mederer, Kevin Reagan, Toss Antilles, Chelsea Archambeau, Aron Glasser, Dan Winn, Fredric Sundberg, Sarah Banks, ted stevens
+
+========================
+Changelog
+========================
+1.19.0.3 (10-03-2018)
+========================
+Cosmic horrors are no longer affected by sand in eyes and other terrain hediff effects
+
+</description>
 </ModMetaData>

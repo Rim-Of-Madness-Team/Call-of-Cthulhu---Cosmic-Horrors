@@ -1,0 +1,4 @@
+1.19.0.3 (10-03-2018)
+========================
+Cosmic horrors are no longer affected by sand in eyes and other terrain hediff effects
+

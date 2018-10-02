@@ -173,9 +173,25 @@ namespace CosmicHorror
             {
                 this.Reveal();
             }
+
+            HandleFluPlagueImmunity();
             ResolveSpecialEffects();
             DownedCheck();
             ResolveBleeding();
+        }
+
+        private void HandleFluPlagueImmunity()
+        {
+            if (Find.TickManager.TicksGame % 100 == 0)
+            {
+                health.hediffSet.hediffs.RemoveAll(x => x.def == HediffDef.Named("Animal_Flu") ||
+                                                        x.def == HediffDef.Named("Animal_Plague") ||
+                                                        x.def == HediffDef.Named("SandInEyes") ||
+                                                        x.def == HediffDef.Named("MudInEyes") ||
+                                                        x.def == HediffDef.Named("GravelInEyes") ||
+                                                        x.def == HediffDef.Named("WaterInEyes") ||
+                                                        x.def == HediffDef.Named("DirtInEyes"));
+            }
         }
 
         public void ResolveBleeding()
