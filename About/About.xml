@@ -3,7 +3,7 @@
   <name>Call of Cthulhu - Cosmic Horrors</name>
   <author>Jecrell</author>
   <targetVersion>0.19.0</targetVersion>
-  <description>1.19.0.3 (10-03-2018)
+  <description>1.19.0.4 (10-03-2018)
 
 This mod recreates the minor races of H.P. Lovecraft's weird fiction mythos in RimWorld. They behave the same as hostile factions that raid colonies such as mechanoids or insectoids. They are deadlier, however.
 
@@ -44,6 +44,10 @@ Brachiaraidos, Cory Bonifay, CrankyPeanut, E_T, Finwej, Jan Koutsky, Jonathan, K
 ========================
 Changelog
 ========================
+1.19.0.4 (10-03-2018)
+========================
+Fixes tradeability problems with cosmic horrors. Disables trade tags for CHs as well.
+
 1.19.0.3 (10-03-2018)
 ========================
 Cosmic horrors are no longer affected by sand in eyes and other terrain hediff effects

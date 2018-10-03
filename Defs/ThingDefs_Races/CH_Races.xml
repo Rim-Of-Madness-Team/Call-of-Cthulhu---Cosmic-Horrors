@@ -3,6 +3,7 @@
 
   <ThingDef ParentName="BasePawn" Name="BaseCosmicHorrorRaceInit" Abstract="True">  
     <thingClass>CosmicHorror.CosmicHorrorPawn</thingClass>
+    <tradeability>None</tradeability>
     <statBases>
       <Mass>250</Mass>	
       <PsychicSensitivity>0</PsychicSensitivity>

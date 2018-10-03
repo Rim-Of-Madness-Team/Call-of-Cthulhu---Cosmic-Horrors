@@ -203,7 +203,8 @@
     <defName>ROM_ChthonianLarva</defName>
     <label>Chthonian Larva</label>
     <description>Chthonians are powerful burrowers which can live for more than a thousand years, and are protective of their young. It is said that a chanting sound accompanies every chthonian, and that by such they can be detected while underground and unseen.</description>
-    <statBases>
+    <tradeability>None</tradeability>
+	<statBases>
       <MoveSpeed>4.4</MoveSpeed>
       <MarketValue>1400</MarketValue>
       <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
