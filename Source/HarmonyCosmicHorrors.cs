@@ -20,6 +20,8 @@ namespace CosmicHorror
             var type = typeof(HarmonyPatches);
             harmony.Patch(AccessTools.Method(typeof(AttackTargetFinder), nameof(AttackTargetFinder.BestAttackTarget)),
                 new HarmonyMethod(type, nameof(BestAttackTargetPrefix)), null);
+            harmony.Patch(AccessTools.Method(typeof(JobDriver_PredatorHunt), "CheckWarnPlayer"),
+                new HarmonyMethod(type, nameof(CheckWarnPlayer_Prefix)), null);
             //harmony.Patch(AccessTools.Constructor(AccessTools.TypeByName("Wound"), new Type[] { typeof(Pawn) }), null, null, new HarmonyMethod(typeof(HarmonyPatches), nameof(WoundConstructorTranspiler)));
             harmony.Patch(AccessTools.Method(typeof(ThingSelectionUtility), nameof(ThingSelectionUtility.SelectableByMapClick)), null, new HarmonyMethod(type, nameof(SelectableByMapClickPostfix)));
             harmony.Patch(AccessTools.Method(typeof(HediffSet), "CalculatePain"), new HarmonyMethod(type, "CalculatePain_PreFix"), null);
@@ -29,6 +31,19 @@ namespace CosmicHorror
                 new HarmonyMethod(type, "UpdateAllDuties_PostFix"), null);
             harmony.Patch(AccessTools.Method(typeof(PawnApparelGenerator), nameof(PawnApparelGenerator.GenerateStartingApparelFor)),
                 new HarmonyMethod(type, nameof(GenerateStartingApparelFor_PreFix)), null, null);
+        }
+
+        //JobDriver_PredatorHunt
+        public static bool CheckWarnPlayer_Prefix(JobDriver_PredatorHunt __instance)
+        {
+            if (__instance?.pawn?.def != null &&
+                __instance.pawn.def.HasModExtension<CosmicHorror.PawnExtension>()
+                && !__instance.pawn.def.GetModExtension<CosmicHorror.PawnExtension>().huntAlert)
+            {
+                Traverse.Create(__instance).Field("notifiedPlayerAttacking").SetValue(true);
+                return false;
+            }
+            return true;
         }
 
         public static bool GenerateStartingApparelFor_PreFix(Pawn pawn, PawnGenerationRequest request)

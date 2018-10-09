@@ -17,6 +17,7 @@
     <race>
       <bloodDef>ROM_Filth_BloodCosmicHorror</bloodDef>
       <foodType>None</foodType>
+	  <trainability>None</trainability>
 	  <fleshType>ROM_StrangeFlesh</fleshType>
       <useMeatFrom>Bear_Grizzly</useMeatFrom>	  
       <manhunterOnDamageChance>1</manhunterOnDamageChance>

@@ -416,6 +416,7 @@
 		<regenInterval>0</regenInterval>
 		<sanityLossRate>0.04</sanityLossRate>
 		<painFactor>0.5</painFactor>
+		<huntAlert>false</huntAlert>
 	  </li>
 	</modExtensions>
   </ThingDef>

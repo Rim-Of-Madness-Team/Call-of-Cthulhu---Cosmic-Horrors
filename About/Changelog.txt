@@ -1,3 +1,7 @@
+1.19.0.5 (10-09-2018)
+========================
+Star vampires no longer show when they are hunting someone. This change should help improve tension for the arrival of star vampires.
+
 1.19.0.4 (10-03-2018)
 ========================
 Fixes tradeability problems with cosmic horrors. Disables trade tags for CHs as well.
