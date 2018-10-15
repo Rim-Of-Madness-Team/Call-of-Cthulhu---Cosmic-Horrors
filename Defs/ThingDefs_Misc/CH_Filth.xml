@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-  <ThingDef Name="BaseFilth" Abstract="True">
-    <thingClass>Filth</thingClass>
-    <category>Filth</category>
-    <altitudeLayer>Filth</altitudeLayer>
-    <useHitPoints>false</useHitPoints>
-    <drawerType>MapMeshOnly</drawerType>
-    <graphicData>
-      <shaderType>Transparent</shaderType>
-      <graphicClass>Graphic_Cluster</graphicClass>
-    </graphicData>
-    <statBases>
-      <Beauty>-15</Beauty>
-      <Cleanliness>-5</Cleanliness>
-    </statBases>
-  </ThingDef>
-
   <ThingDef ParentName="BaseFilth">
     <defName>ROM_Filth_BloodCosmicHorror</defName>
     <label>vile blood</label>

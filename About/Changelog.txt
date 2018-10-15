@@ -1,3 +1,7 @@
+1.19.0.6 (10-16-2018)
+========================
+Removes abstracts for BaseFilth
+
 1.19.0.5 (10-09-2018)
 ========================
 Star vampires no longer show when they are hunting someone. This change should help improve tension for the arrival of star vampires.
