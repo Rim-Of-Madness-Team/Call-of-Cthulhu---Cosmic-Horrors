@@ -230,7 +230,6 @@ namespace CosmicHorror
                         //TaleRecorder.RecordTale(TaleDefOf. RaidArrived, new object[0]);
                     }
                     parms.raidStrategy.Worker.MakeLords(parms, list);
-                    AvoidGridMaker.RegenerateAvoidGridsFor(parms.faction, map);
                     LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
                     if (!PlayerKnowledgeDatabase.IsComplete(ConceptDefOf.ShieldBelts))
                     {

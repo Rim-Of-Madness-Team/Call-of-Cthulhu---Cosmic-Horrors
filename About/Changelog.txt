@@ -1,3 +1,11 @@
+1.20.0.1 (10-18-2018)
+========================
+Fixes Manifest.xml file as it has a glaring issue misidentifying the mod.
+
+1.20.0.0 (10-18-2018)
+========================
+Made adjustments for the initial release for Cosmic Horrors in RimWorld 1.0.
+
 1.19.0.6 (10-16-2018)
 ========================
 Removes abstracts for BaseFilth
