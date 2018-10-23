@@ -1,3 +1,7 @@
+1.20.0.2 (10-23-2018)
+========================
+Updated Korean language by MisulOpja
+
 1.20.0.1 (10-18-2018)
 ========================
 Fixes Manifest.xml file as it has a glaring issue misidentifying the mod.

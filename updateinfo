@@ -3,14 +3,14 @@
 ==============================
 
 Call of Cthulhu - Cosmic Horrors Update
-v1.20.0.0 (10-18-2018)
+v1.20.0.1 (10-18-2018)
 ====================
 
-Made adjustments for the initial release for Cosmic Horrors in RimWorld 1.0.
+Fixes Manifest.xml file as it has a glaring issue misidentifying the mod.
 --------------------
 
 Download now on...
-- Patreon: https://www.patreon.com/posts/cosmic-horrors-0-21060828
+- Patreon: https://www.patreon.com/posts/22140966
 - GitHub: https://github.com/Rim-Of-Madness-Team/Call-of-Cthulhu---Cosmic-Horrors
 - Steam: https://steamcommunity.com/sharedfiles/filedetails/?id=765890823
 Discuss the mod on...
@@ -25,12 +25,12 @@ Discuss the mod on...
 [img width=260]https://raw.githubusercontent.com/Rim-Of-Madness-Team/Call-of-Cthulhu---Cosmic-Horrors/master/About/Preview.png[/img]
 [hr]
 [b]Call of Cthulhu - Cosmic Horrors
-Version: 1.20.0.0
+Version: 1.20.0.1
 Updated: 10-18-2018
-Description: [color=orange]Made adjustments for the initial release for Cosmic Horrors in RimWorld 1.0.[/color]
+Description: [color=orange]Fixes Manifest.xml file as it has a glaring issue misidentifying the mod.[/color]
 [hr]
 [b]Download now on...[/b]
-[url=https://www.patreon.com/posts/cosmic-horrors-0-21060828]Patreon[/url]
+[url=https://www.patreon.com/posts/22140966]Patreon[/url]
 [url=https://github.com/Rim-Of-Madness-Team/Call-of-Cthulhu---Cosmic-Horrors]GitHub[/url]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=765890823]Steam[/url]
 [b]Discuss the mod on...[/b]
