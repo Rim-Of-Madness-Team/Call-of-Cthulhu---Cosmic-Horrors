@@ -3,7 +3,7 @@
   <name>Call of Cthulhu - Cosmic Horrors</name>
   <author>Jecrell</author>
   <targetVersion>1.0.2059</targetVersion>
-  <description>1.20.0.2 (10-23-2018)
+  <description>1.20.0.3 (10-27-2018)
 
 This mod recreates the minor races of H.P. Lovecraft's weird fiction mythos in RimWorld. They behave the same as hostile factions that raid colonies such as mechanoids or insectoids. They are deadlier, however.
 
@@ -44,6 +44,10 @@ Maaxar, Shibby Says, TheJagermeister, Cory Bonifay, Kiya Nicoll, Matt Harris, Pa
 ========================
 Changelog
 ========================
+1.20.0.3 (10-27-2018)
+========================
+Sanity loss no longer recovers at a rate of 5 percent per day, but 15 percent.
+
 1.20.0.2 (10-23-2018)
 ========================
 Updated Korean language by MisulOpja
