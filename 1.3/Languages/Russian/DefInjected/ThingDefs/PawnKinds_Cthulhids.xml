@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_StarSpawnOfCthulhu.label>Порождение Ктулху</ROM_StarSpawnOfCthulhu.label>
+  <ROM_StarSpawnOfCthulhu.description>Ктулхоиды</ROM_StarSpawnOfCthulhu.description>
+  <ROM_Cthulhid.label>Ктулхоид</ROM_Cthulhid.label>
+  <ROM_Cthulhid.description>Потомки великого Ктулху. Они выглядят как пародия на человека с головами в щупальцах, чешуйчатыми телами и крыльями летучей мыши. Размер различается, но в несколько раз больше, чем у обычных людей. В то время как Ктулху спит, они будут служить великим старцам.</ROM_Cthulhid.description>
+  <ROM_Cthulhid.race.leatherLabel>Звёздная губчатая кожа</ROM_Cthulhid.race.leatherLabel>
+  <ROM_Cthulhid_Leather.label>кожа ктулхоида</ROM_Cthulhid_Leather.label>
+</LanguageData>

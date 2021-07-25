@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_MiGo.label>Ми-го - грон</ROM_MiGo.label>
+  <ROM_MiGo.description>Насекомообразный гриб с обширными перепончатыми крыльями, многочисленными сегментированными конечностями и короткой антенной на голове. Они обладают пытливым умом и ищут мозги меньших видов для дальнейшего понимания. Они, как известно, ищут планеты, содержащие минералы, которых нет в их собственных мирах.</ROM_MiGo.description>
+  <ROM_MiGo_Leather.label>кожа Ми-Го</ROM_MiGo_Leather.label>
+  <ROM_Bullet_MiGoCastingWeapon.label>заряд для ромбоэдрической энерго-пушки</ROM_Bullet_MiGoCastingWeapon.label>
+  <ROM_MiGoCastingWeapon.label>Ромбоэдрическая энерго-пушка</ROM_MiGoCastingWeapon.label>
+  <ROM_MiGoCastingWeapon.description>Таинственный ромбовидный кристаллический артефакт.</ROM_MiGoCastingWeapon.description>
+  <ROM_MiGoCaster.label>Ми-го - гастер</ROM_MiGoCaster.label>
+</LanguageData>

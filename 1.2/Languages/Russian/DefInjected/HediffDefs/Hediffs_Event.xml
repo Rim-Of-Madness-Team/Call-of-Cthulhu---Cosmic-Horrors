@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_GutWorms.label>Паразитический червь</ROM_GutWorms.label>
+  <ROM_GutWorms.stages.0.label>начальный - скрытый</ROM_GutWorms.stages.0.label>
+  <ROM_GutWorms.stages.1.label>начальный</ROM_GutWorms.stages.1.label>
+  <ROM_GutWorms.stages.2.label>лёгкий</ROM_GutWorms.stages.2.label>
+  <ROM_GutWorms.stages.3.label>средний</ROM_GutWorms.stages.3.label>
+  <ROM_GutWorms.stages.4.label>серьёзный</ROM_GutWorms.stages.4.label>
+  <ROM_GutWorms.stages.5.label>критический</ROM_GutWorms.stages.5.label>
+</LanguageData>

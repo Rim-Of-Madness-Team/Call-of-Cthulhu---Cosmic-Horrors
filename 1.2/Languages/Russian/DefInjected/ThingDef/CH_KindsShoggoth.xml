@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- RACE DEFS -->
+  <ROM_Shoggoth.label>шоггот</ROM_Shoggoth.label>
+  <ROM_Shoggoth.description>Большие маслянистые образования, которые меняют форму в зависимости от потребностей. Они могут быстро отрастить глаза, рот и щупальца, которые затем также быстро поглощаются люминесцентной черной протоплазмой. Они неохотно служат тем, кто готов рискнуть и связаться с их бунтарским нравом.</ROM_Shoggoth.description>
+  <ROM_Shoggoth.tools.0.label>пасти</ROM_Shoggoth.tools.0.label>
+  <ROM_Shoggoth.tools.1.label>щупальца</ROM_Shoggoth.tools.1.label>
+  <ROM_Shoggoth.tools.2.label>правые лапы</ROM_Shoggoth.tools.2.label>
+  <ROM_Shoggoth.tools.3.label>левые лапы</ROM_Shoggoth.tools.3.label>
+  <ROM_ShoggothColossal.label>шоггот-колосс</ROM_ShoggothColossal.label>
+  <ROM_ShoggothColossal.description>Большие маслянистые образования, которые меняют форму в зависимости от потребностей. Они могут быстро отрастить глаза, рот и щупальца, которые затем также быстро поглощаются люминесцентной черной протоплазмой. Они неохотно служат тем, кто готов рискнуть и связаться с их бунтарским нравом.</ROM_ShoggothColossal.description>
+  <ROM_ShoggothColossal.tools.0.label>пасти</ROM_ShoggothColossal.tools.0.label>
+  <ROM_ShoggothColossal.tools.1.label>щупальца</ROM_ShoggothColossal.tools.1.label>
+  <ROM_ShoggothColossal.tools.2.label>правые лапы</ROM_ShoggothColossal.tools.2.label>
+  <ROM_ShoggothColossal.tools.3.label>левые лапы</ROM_ShoggothColossal.tools.3.label>
+  <ROM_ShoggothColossal.tools.4.label>пасти</ROM_ShoggothColossal.tools.4.label>
+  <ROM_ShoggothColossal.tools.5.label>щупальца</ROM_ShoggothColossal.tools.5.label>
+  <ROM_ShoggothColossal.tools.6.label>правые лапы</ROM_ShoggothColossal.tools.6.label>
+  <ROM_ShoggothColossal.tools.7.label>левые лапы</ROM_ShoggothColossal.tools.7.label>
+  <ROM_ShoggothTiny.label>шоггот-кроха</ROM_ShoggothTiny.label>
+  <ROM_ShoggothTiny.description>Большие маслянистые образования, которые меняют форму в зависимости от потребностей. Они могут быстро отрастить глаза, рот и щупальца, которые затем также быстро поглощаются люминесцентной черной протоплазмой. Они неохотно служат тем, кто готов рискнуть и связаться с их бунтарским нравом.</ROM_ShoggothTiny.description>
+  <ROM_ShoggothTiny.tools.0.label>пасти</ROM_ShoggothTiny.tools.0.label>
+  <ROM_ShoggothTiny.tools.1.label>щупальца</ROM_ShoggothTiny.tools.1.label>
+  <ROM_ShoggothTiny.tools.2.label>правые лапы</ROM_ShoggothTiny.tools.2.label>
+  <ROM_ShoggothTiny.tools.3.label>левые лапы</ROM_ShoggothTiny.tools.3.label>
+  <ROM_ShoggothTiny.tools.4.label>пасти</ROM_ShoggothTiny.tools.4.label>
+  <ROM_ShoggothTiny.tools.5.label>щупальца</ROM_ShoggothTiny.tools.5.label>
+  <ROM_ShoggothTiny.tools.6.label>правые лапы</ROM_ShoggothTiny.tools.6.label>
+  <ROM_ShoggothTiny.tools.7.label>левые лапы</ROM_ShoggothTiny.tools.7.label>
+</LanguageData>

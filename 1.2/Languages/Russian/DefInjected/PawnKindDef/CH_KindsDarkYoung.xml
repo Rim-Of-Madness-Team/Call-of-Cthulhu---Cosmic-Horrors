@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- PAWN KIND DEFS -->
+  <ROM_DarkYoung.label>темная молодь</ROM_DarkYoung.label>
+  <ROM_DarkYoung.labelPlural>темная молодь</ROM_DarkYoung.labelPlural>
+  <ROM_DarkYoung.lifeStages.0.label>отродье темной молоди</ROM_DarkYoung.lifeStages.0.label>
+  <ROM_DarkYoung.lifeStages.0.labelPlural>отродья темной молоди</ROM_DarkYoung.lifeStages.0.labelPlural>
+  <ROM_DarkYoung.lifeStages.0.labelMale>отродье темной молоди</ROM_DarkYoung.lifeStages.0.labelMale>
+  <ROM_DarkYoung.lifeStages.0.labelMalePlural>отродья темной молоди</ROM_DarkYoung.lifeStages.0.labelMalePlural>
+  <ROM_DarkYoung.lifeStages.0.labelFemale>отродье темной молоди</ROM_DarkYoung.lifeStages.0.labelFemale>
+  <ROM_DarkYoung.lifeStages.0.labelFemalePlural>отродья темной молоди</ROM_DarkYoung.lifeStages.0.labelFemalePlural>
+  <ROM_DarkYoung.lifeStages.1.label>растущая темная молодь</ROM_DarkYoung.lifeStages.1.label>
+  <ROM_DarkYoung.lifeStages.1.labelPlural>растущая темная молодь</ROM_DarkYoung.lifeStages.1.labelPlural>
+  <ROM_DarkYoung.lifeStages.1.labelMale>растущая темная молодь</ROM_DarkYoung.lifeStages.1.labelMale>
+  <ROM_DarkYoung.lifeStages.1.labelMalePlural>растущая темная молодь</ROM_DarkYoung.lifeStages.1.labelMalePlural>
+  <ROM_DarkYoung.lifeStages.1.labelFemale>растущая темная молодь</ROM_DarkYoung.lifeStages.1.labelFemale>
+  <ROM_DarkYoung.lifeStages.1.labelFemalePlural>растущая темная молодь</ROM_DarkYoung.lifeStages.1.labelFemalePlural>
+  <ROM_DarkYoung.lifeStages.2.label>темная молодь</ROM_DarkYoung.lifeStages.2.label>
+  <ROM_DarkYoung.lifeStages.2.labelPlural>темная молодь</ROM_DarkYoung.lifeStages.2.labelPlural>
+  <ROM_DarkYoung.lifeStages.2.labelMale>темная молодь</ROM_DarkYoung.lifeStages.2.labelMale>
+  <ROM_DarkYoung.lifeStages.2.labelMalePlural>темная молодь</ROM_DarkYoung.lifeStages.2.labelMalePlural>
+  <ROM_DarkYoung.lifeStages.2.labelFemale>темная молодь</ROM_DarkYoung.lifeStages.2.labelFemale>
+  <ROM_DarkYoung.lifeStages.2.labelFemalePlural>темная молодь</ROM_DarkYoung.lifeStages.2.labelFemalePlural>
+  <ROM_DarkYoung.lifeStages.3.label>темная молодь</ROM_DarkYoung.lifeStages.3.label>
+  <ROM_DarkYoung.lifeStages.3.labelPlural>темная молодь</ROM_DarkYoung.lifeStages.3.labelPlural>
+  <ROM_DarkYoung.lifeStages.3.labelMale>темная молодь</ROM_DarkYoung.lifeStages.3.labelMale>
+  <ROM_DarkYoung.lifeStages.3.labelMalePlural>темная молодь</ROM_DarkYoung.lifeStages.3.labelMalePlural>
+  <ROM_DarkYoung.lifeStages.3.labelFemale>темная молодь</ROM_DarkYoung.lifeStages.3.labelFemale>
+  <ROM_DarkYoung.lifeStages.3.labelFemalePlural>темная молодь</ROM_DarkYoung.lifeStages.3.labelFemalePlural>
+  <ROM_DarkYoung.labelMale>темная молодь</ROM_DarkYoung.labelMale>
+  <ROM_DarkYoung.labelMalePlural>темная молодь</ROM_DarkYoung.labelMalePlural>
+  <ROM_DarkYoung.labelFemale>темная молодь</ROM_DarkYoung.labelFemale>
+  <ROM_DarkYoung.labelFemalePlural>темная молодь</ROM_DarkYoung.labelFemalePlural>
+</LanguageData>

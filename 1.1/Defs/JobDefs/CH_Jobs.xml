@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--============= Item hauling ===============-->
+  <JobDef>
+    <defName>ROM_HaulChthonianSacrifice</defName>
+    <driverClass>CosmicHorror.JobDriver_HaulSacrifice</driverClass>
+    <reportString>sacrificing TargetB.</reportString>
+    <joyDuration>1600</joyDuration>
+    <joyGainRate>2</joyGainRate>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <joyMaxParticipants>20</joyMaxParticipants>
+  </JobDef>
+  <JobDef>
+    <defName>ROM_FillChthonianPit</defName>
+    <driverClass>CosmicHorror.JobDriver_FillChthonianPit</driverClass>
+    <reportString>filling pit.</reportString>
+    <joyDuration>1600</joyDuration>
+    <joyGainRate>2</joyGainRate>
+    <joyMaxParticipants>20</joyMaxParticipants>
+  </JobDef>
+</Defs>

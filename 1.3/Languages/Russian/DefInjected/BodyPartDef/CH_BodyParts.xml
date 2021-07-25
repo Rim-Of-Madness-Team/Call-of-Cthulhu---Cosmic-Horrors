@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- ██████ ██       █████  ██     ██ ███████
+  ██      ██      ██   ██ ██     ██ ██
+  ██      ██      ███████ ██  █  ██ ███████
+  ██      ██      ██   ██ ██ ███ ██      ██
+   ██████ ███████ ██   ██  ███ ███  ███████ -->
+  <ROM_LeftClaw.label>левый коготь</ROM_LeftClaw.label>
+  <ROM_RightClaw.label>правый коготь</ROM_RightClaw.label>
+  <!-- ██      ███████  ██████  ███████
+  ██      ██      ██       ██
+  ██      █████   ██   ███ ███████
+  ██      ██      ██    ██      ██
+  ███████ ███████  ██████  ███████ -->
+  <ROM_LeftFlipper.label>левый плавник</ROM_LeftFlipper.label>
+  <ROM_RightFlipper.label>правый плавник</ROM_RightFlipper.label>
+  <ROM_Leg.label>лапа</ROM_Leg.label>
+  <ROM_LegFirst.label>первая лапа</ROM_LegFirst.label>
+  <ROM_LegSecond.label>вторая лапа</ROM_LegSecond.label>
+  <ROM_LegThird.label>третья лапа</ROM_LegThird.label>
+  <!-- ██   ██  ██████   ██████  ██    ██ ███████ ███████
+  ██   ██ ██    ██ ██    ██ ██    ██ ██      ██
+  ███████ ██    ██ ██    ██ ██    ██ █████   ███████
+  ██   ██ ██    ██ ██    ██  ██  ██  ██           ██
+  ██   ██  ██████   ██████    ████   ███████ ███████ -->
+  <ROM_Hoof.label>копыто</ROM_Hoof.label>
+  <ROM_HoofSecond.label>первое копыто</ROM_HoofSecond.label>
+  <ROM_HoofThird.label>третье копыто</ROM_HoofThird.label>
+  <ROM_DorsalFin.label>спинной плавник</ROM_DorsalFin.label>
+  <!-- ████████ ███████ ███    ██ ████████
+     ██    ██      ████   ██    ██
+     ██    █████   ██ ██  ██    ██
+     ██    ██      ██  ██ ██    ██
+     ██    ███████ ██   ████    ██ -->
+  <ROM_Tentacle.label>щупальце</ROM_Tentacle.label>
+  <ROM_TentacleFirst.label>первое щупальце</ROM_TentacleFirst.label>
+  <ROM_TentacleSecond.label>второе щупальце</ROM_TentacleSecond.label>
+  <ROM_TentacleThird.label>третье щупальце</ROM_TentacleThird.label>
+  <ROM_TentacleFourth.label>четвертое щупальце</ROM_TentacleFourth.label>
+  <ROM_TentacleFifth.label>пятое щупальце</ROM_TentacleFifth.label>
+  <ROM_TentacleSixth.label>шестое щупальце</ROM_TentacleSixth.label>
+  <ROM_TentacleSeventh.label>седьмое щупальце</ROM_TentacleSeventh.label>
+  <ROM_TentacleFlight.label>летающее щупальце</ROM_TentacleFlight.label>
+  <ROM_LeftWing.label>левое крыло</ROM_LeftWing.label>
+  <ROM_RightWing.label>правое крыло</ROM_RightWing.label>
+  <!-- ███    ███  █████  ██     ██
+  ████  ████ ██   ██ ██     ██
+  ██ ████ ██ ███████ ██  █  ██
+  ██  ██  ██ ██   ██ ██ ███ ██
+  ██      ██ ██   ██  ███ ███ -->
+  <ROM_MawHuge.label>массивная пасть</ROM_MawHuge.label>
+  <ROM_Maw.label>большая пасть</ROM_Maw.label>
+  <ROM_MawSecond.label>зубастая пасть</ROM_MawSecond.label>
+  <ROM_MawThird.label>выступающая пасть</ROM_MawThird.label>
+  <ROM_MawFourth.label>внутренняя пасть</ROM_MawFourth.label>
+  <ROM_MawFifth.label>беззубая пасть</ROM_MawFifth.label>
+  <ROM_MawSixth.label>искаженная пасть</ROM_MawSixth.label>
+  <ROM_MawSeventh.label>ножницеобразная пасть</ROM_MawSeventh.label>
+  <ROM_MawEighth.label>удлиненная пасть</ROM_MawEighth.label>
+  <ROM_MawNinth.label>кривая пасть</ROM_MawNinth.label>
+  <ROM_MawTenth.label>безкосная пасть</ROM_MawTenth.label>
+  <!-- ███████ ██    ██ ███████ ███████
+    ██       ██  ██  ██      ██
+    █████     ████   █████   ███████
+    ██         ██    ██           ██
+    ███████    ██    ███████ ███████ -->
+  <ROM_Eye.label>глаз</ROM_Eye.label>
+  <ROM_EyeSecond.label>искаженный глаз</ROM_EyeSecond.label>
+  <ROM_EyeThird.label>глаз с двойным зрачком</ROM_EyeThird.label>
+  <ROM_EyeFourth.label>утопленный глаз</ROM_EyeFourth.label>
+  <ROM_EyeFifth.label>выпуклый глаз</ROM_EyeFifth.label>
+  <ROM_EyeSixth.label>налитый кровью глаз</ROM_EyeSixth.label>
+  <ROM_EyeSeventh.label>повелевающий глаз</ROM_EyeSeventh.label>
+  <ROM_EyeEighth.label>дергающийся глаз</ROM_EyeEighth.label>
+  <ROM_EyeNinth.label>чрезмерно развитый глаз</ROM_EyeNinth.label>
+  <ROM_EyeTenth.label>разделенный глаз</ROM_EyeTenth.label>
+  <!-- ███████ ███████ ███    ██ ███████
+  ██      ██      ████   ██ ██
+  ███████ █████   ██ ██  ██ ███████
+       ██ ██      ██  ██ ██      ██
+  ███████ ███████ ██   ████ ███████ -->
+  <ROM_Feeler.label>усик-щуп</ROM_Feeler.label>
+  <ROM_Internal_LeftEar.label>внутреннее левое ухо</ROM_Internal_LeftEar.label>
+  <ROM_Internal_RightEar.label>внутреннее правое ухо</ROM_Internal_RightEar.label>
+  <ROM_Nostril.label>ноздри</ROM_Nostril.label>
+  <!-- ██████  ██████   ██████  ███████
+  ██    ██ ██   ██ ██       ██
+  ██    ██ ██████  ██   ███ ███████
+  ██    ██ ██   ██ ██    ██      ██
+   ██████  ██   ██  ██████  ███████ -->
+  <ROM_FlightOrgan.label>орган управления полетом</ROM_FlightOrgan.label>
+  <ROM_Gills.label>жабры</ROM_Gills.label>
+  <ROM_ShapeshiftingOrgan.label>орган управления формой</ROM_ShapeshiftingOrgan.label>
+  <ROM_Kidney.label>почки</ROM_Kidney.label>
+  <ROM_KidneySecond.label>вторые почки</ROM_KidneySecond.label>
+  <ROM_Lung.label>легкие</ROM_Lung.label>
+  <ROM_LungSecond.label>вторые легкие</ROM_LungSecond.label>
+  <ROM_Sucker.label>присоска</ROM_Sucker.label>
+  <ROM_SporeHead.label>голова споры</ROM_SporeHead.label>
+  <!-- ██████  ██████   █████  ██ ███    ██
+  ██   ██ ██   ██ ██   ██ ██ ████   ██
+  ██████  ██████  ███████ ██ ██ ██  ██
+  ██   ██ ██   ██ ██   ██ ██ ██  ██ ██
+  ██████  ██   ██ ██   ██ ██ ██   ████ -->
+  <ROM_PsionicLobe.label>экстрасенсорная кора мозга</ROM_PsionicLobe.label>
+  <ROM_FrontalLobe.label>лобная доля мозга</ROM_FrontalLobe.label>
+  <ROM_ParietalLobe.label>париетальная доля мозга</ROM_ParietalLobe.label>
+  <ROM_OccipitalLobe.label>затылочная доля мозга</ROM_OccipitalLobe.label>
+  <ROM_TemporalLobe.label>височная доля мозга</ROM_TemporalLobe.label>
+  <ROM_BrainStem.label>мозговой ствол</ROM_BrainStem.label>
+  <!-- ██     ██  ██████  ██████  ███    ███
+  ██     ██ ██    ██ ██   ██ ████  ████
+  ██  █  ██ ██    ██ ██████  ██ ████ ██
+  ██ ███ ██ ██    ██ ██   ██ ██  ██  ██
+   ███ ███   ██████  ██   ██ ██      ██ -->
+  <ROM_ChthonianFirstRing.label>первое кольцо тела</ROM_ChthonianFirstRing.label>
+  <ROM_ChthonianSecondRing.label>второе кольцо тела</ROM_ChthonianSecondRing.label>
+  <ROM_ChthonianThirdRing.label>третье кольцо тела</ROM_ChthonianThirdRing.label>
+  <ROM_ChthonianFourthRing.label>четвертое кольцо тела</ROM_ChthonianFourthRing.label>
+  <ROM_ChthonianFifthRing.label>пятое кольцо тела</ROM_ChthonianFifthRing.label>
+  <ROM_ChthonianSixthRing.label>шестое кольцо тела</ROM_ChthonianSixthRing.label>
+</LanguageData>

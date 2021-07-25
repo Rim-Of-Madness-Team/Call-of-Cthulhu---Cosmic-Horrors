@@ -1,0 +1,30 @@
+This mod recreates the minor races of H.P. Lovecraft's weird fiction mythos in RimWorld. They behave the same as hostile factions that raid colonies such as mechanoids or insectoids. They are deadlier, however.
+
+	Currently Included Monsters:
+	   *Star-Spawn of Cthulhu
+	   *Shoggoths
+	   *Mi-Go
+	   *Deep Ones
+	   *Star Vampire
+	   *Dark Young
+	   *Chthonian
+
+	Incidents:
+	   *Monster Raids
+	   *Dark Young Herd
+	   *Invisible Star Vampire Attack
+	   *Chthonian Pit
+
+	Notes:
+	Each monster has its own unique anatomical skeletons, organs, and body parts. Some special powers were given to psionic beasts.
+	Each monster has special sound effects.
+        Some monsters have special alternate versions that appear rarely.
+	More creatures will be added in updates in the future.
+	Since I am one person, I can't attest to how balanced the monsters are, and I am definitely looking for feedback from player experiences. Let me know how they are in your game.
+	
+	Contributors:
+          Junkyard Joe (Writer)
+          drynyn (Writer)
+          spoonshortage (Artist)
+
+Want to contribute? Get in touch with us in the workshop or Ludeon forums.

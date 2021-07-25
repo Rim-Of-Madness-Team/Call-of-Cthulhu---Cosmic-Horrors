@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase" Name="HorrorShipPartBase" Abstract="True">
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>150</pathCost>
+    <blockWind>false</blockWind>
+    <passability>Impassable</passability>
+    <fillPercent>0.90</fillPercent>
+    <size>(5,5)</size>
+    <statBases>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>-100</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <drawerType>MapMeshOnly</drawerType>
+    <repairEffect>ConstructDirt</repairEffect>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <building>
+      <repairable>false</repairable>
+      <claimable>false</claimable>
+      <soundAmbient>Pawn_ROM_Chthonian_Pit</soundAmbient>
+      <roofCollapseDamageMultiplier>0.2</roofCollapseDamageMultiplier>
+    </building>
+  </ThingDef>
+  <ThingDef ParentName="HorrorShipPartBase">
+    <defName>ROM_PitChthonian</defName>
+    <label>strange sinkhole</label>
+    <description>A massive tunnel that burrows deep beneath the earth. A strange chanting can be heard from within.</description>
+    <thingClass>CosmicHorror.Building_PitChthonian</thingClass>
+    <graphicData>
+      <texPath>Pawn/CosmicHorrors/CallOfCthulhu_Chthonian_pit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(6,6)</drawSize>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+  </ThingDef>
+</Defs>

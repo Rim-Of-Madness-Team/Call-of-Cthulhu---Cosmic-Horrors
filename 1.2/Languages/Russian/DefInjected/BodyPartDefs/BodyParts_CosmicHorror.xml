@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_LeftClaw.label>Левый коготь</ROM_LeftClaw.label>
+  <ROM_RightClaw.label>Правый коготь</ROM_RightClaw.label>
+  <ROM_LeftFlipper.label>Левый плавник</ROM_LeftFlipper.label>
+  <ROM_RightFlipper.label>Правый плавник</ROM_RightFlipper.label>
+  <ROM_Leg.label>Лапа</ROM_Leg.label>
+  <ROM_Hoof.label>Копыто</ROM_Hoof.label>
+  <ROM_Gills.label>Жабры</ROM_Gills.label>
+  <ROM_DorsalFin.label>Спинной плавник</ROM_DorsalFin.label>
+  <ROM_Tentacle.label>щупальце</ROM_Tentacle.label>
+  <ROM_TentacleFlight.label>Летающее щупальце</ROM_TentacleFlight.label>
+  <ROM_LeftWing.label>Левое крыло</ROM_LeftWing.label>
+  <ROM_RightWing.label>Правое крыло</ROM_RightWing.label>
+  <ROM_Nostril.label>Ноздри</ROM_Nostril.label>
+  <ROM_Internal_LeftEar.label>Левое вспомогательное ухо</ROM_Internal_LeftEar.label>
+  <ROM_Internal_RightEar.label>Правое вспомогательное ухо</ROM_Internal_RightEar.label>
+  <ROM_Maw.label>Пасть</ROM_Maw.label>
+  <ROM_MawHuge.label>Огромная пасть</ROM_MawHuge.label>
+  <ROM_ShapeshiftingOrgan.label>Орган изменения формы</ROM_ShapeshiftingOrgan.label>
+  <ROM_Kidney.label>почки</ROM_Kidney.label>
+  <ROM_Lung.label>легкие</ROM_Lung.label>
+  <ROM_Eye.label>глаз</ROM_Eye.label>
+  <ROM_Feeler.label>усик-щуп</ROM_Feeler.label>
+  <ROM_SporeHead.label>Голова споры</ROM_SporeHead.label>
+  <ROM_Sucker.label>Присоска</ROM_Sucker.label>
+  <ROM_PsionicLobe.label>Экстрасенсорная кора мозга</ROM_PsionicLobe.label>
+  <ROM_FrontalLobe.label>Лобная доля мозга</ROM_FrontalLobe.label>
+  <ROM_ParietalLobe.label>Париетальная доля мозга</ROM_ParietalLobe.label>
+  <ROM_OccipitalLobe.label>Затылочная доля мозга</ROM_OccipitalLobe.label>
+  <ROM_TemporalLobe.label>Височная доля мозга</ROM_TemporalLobe.label>
+  <ROM_BrainStem.label>мозговой ствол</ROM_BrainStem.label>
+  <ROM_FlightOrgan.label>Орган полёта</ROM_FlightOrgan.label>
+  <ROM_ChthonianFirstRing.label>Хтоническое 1-е кольцо</ROM_ChthonianFirstRing.label>
+  <ROM_ChthonianSecondRing.label>Хтоническое 2-е кольцо</ROM_ChthonianSecondRing.label>
+  <ROM_ChthonianThirdRing.label>Хтоническое 3-е кольцо</ROM_ChthonianThirdRing.label>
+  <ROM_ChthonianFourthRing.label>Хтоническое 4-е кольцо</ROM_ChthonianFourthRing.label>
+  <ROM_ChthonianFifthRing.label>Хтоническое 5-е кольцо</ROM_ChthonianFifthRing.label>
+  <ROM_ChthonianSixthRing.label>Хтоническое 6-е кольцо</ROM_ChthonianSixthRing.label>
+</LanguageData>

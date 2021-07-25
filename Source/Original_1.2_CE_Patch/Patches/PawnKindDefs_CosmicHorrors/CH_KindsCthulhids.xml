@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationAddModExtension">
+        <xpath>*/ThingDef[defName="ROM_Cthulhid"]</xpath>
+        <value>
+          <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>Humanoid</bodyShape>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="ROM_Cthulhid"]/statBases</xpath>
+        <value>
+          <MeleeDodgeChance>0.08</MeleeDodgeChance>
+          <MeleeCritChance>0.45</MeleeCritChance>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="ROM_Cthulhid"]/tools</xpath>
+        <value>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>wings</label>
+              <capacities>
+                <li>ROM_BluntMonstrous</li>
+              </capacities>
+              <power>15</power>
+              <cooldownTime>1.65</cooldownTime>
+              <linkedBodyPartsGroup>ROM_Wings</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>12.6</armorPenetrationBlunt>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>left claw</label>
+              <capacities>
+                <li>ROM_ScratchMonstrous</li>
+              </capacities>
+              <power>30</power>
+              <cooldownTime>1.65</cooldownTime>
+              <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+              <armorPenetrationSharp>12</armorPenetrationSharp>
+              <armorPenetrationBlunt>25.6</armorPenetrationBlunt>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>right claw</label>
+              <capacities>
+                <li>ROM_ScratchMonstrous</li>
+              </capacities>
+              <power>30</power>
+              <cooldownTime>1.65</cooldownTime>
+              <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+              <armorPenetrationSharp>12</armorPenetrationSharp>
+              <armorPenetrationBlunt>25.6</armorPenetrationBlunt>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>overwhelming mind</label>
+              <capacities>
+                <li>ROM_Psychic</li>
+              </capacities>
+              <power>60</power>
+              <cooldownTime>1.65</cooldownTime>
+              <linkedBodyPartsGroup>ROM_Mind</linkedBodyPartsGroup>
+              <armorPenetrationSharp>42</armorPenetrationSharp>
+              <armorPenetrationBlunt>65.6</armorPenetrationBlunt>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>maw</label>
+              <capacities>
+                <li>ToxicBite</li>
+              </capacities>
+              <power>20</power>
+              <cooldownTime>1.55</cooldownTime>
+              <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+              <armorPenetrationSharp>2</armorPenetrationSharp>
+              <armorPenetrationBlunt>5.6</armorPenetrationBlunt>
+            </li>
+          </tools>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

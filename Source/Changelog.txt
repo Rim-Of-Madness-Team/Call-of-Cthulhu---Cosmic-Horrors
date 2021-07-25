@@ -1,0 +1,32 @@
+1.20.0.3 (10-27-2018)
+========================
+Sanity loss no longer recovers at a rate of 5 percent per day, but 15 percent.
+
+1.20.0.2 (10-23-2018)
+========================
+Updated Korean language by MisulOpja
+
+1.20.0.1 (10-18-2018)
+========================
+Fixes Manifest.xml file as it has a glaring issue misidentifying the mod.
+
+1.20.0.0 (10-18-2018)
+========================
+Made adjustments for the initial release for Cosmic Horrors in RimWorld 1.0.
+
+1.19.0.6 (10-16-2018)
+========================
+Removes abstracts for BaseFilth
+
+1.19.0.5 (10-09-2018)
+========================
+Star vampires no longer show when they are hunting someone. This change should help improve tension for the arrival of star vampires.
+
+1.19.0.4 (10-03-2018)
+========================
+Fixes tradeability problems with cosmic horrors. Disables trade tags for CHs as well.
+
+1.19.0.3 (10-03-2018)
+========================
+Cosmic horrors are no longer affected by sand in eyes and other terrain hediff effects
+

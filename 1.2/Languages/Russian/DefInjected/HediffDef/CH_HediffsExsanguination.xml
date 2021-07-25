@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Exsanguination.label>вампирический укус</ROM_Exsanguination.label>
+  <ROM_Exsanguination.description>Рана от укуса звездного вампира.</ROM_Exsanguination.description>
+  <ROM_Exsanguination.comps.0.labelTendedWell>перевязан</ROM_Exsanguination.comps.0.labelTendedWell>
+  <ROM_Exsanguination.comps.0.labelTendedWellInner>зашит</ROM_Exsanguination.comps.0.labelTendedWellInner>
+  <ROM_Exsanguination.comps.0.labelSolidTendedWell>зашит и перевязан</ROM_Exsanguination.comps.0.labelSolidTendedWell>
+  <ROM_Exsanguination.injuryProps.destroyedLabel>высосано</ROM_Exsanguination.injuryProps.destroyedLabel>
+</LanguageData>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- RACE DEFS -->
+  <ROM_StarVampireSpawner.label>звездный вампир</ROM_StarVampireSpawner.label>
+  <ROM_StarVampireSpawnerAlbino.label>звездный вампир</ROM_StarVampireSpawnerAlbino.label>
+  <ROM_StarVampireSpawnerAbberation.label>звездный вампир</ROM_StarVampireSpawnerAbberation.label>
+  <ROM_StarVampireSpawnerNight.label>звездный вампир</ROM_StarVampireSpawnerNight.label>
+  <ROM_StarVampire.label>звездный вампир</ROM_StarVampire.label>
+  <ROM_StarVampire.description>Звездный вампир невидим, пока не начнет кормиться - выпитая кровь медленно раскрывает его раздутую форму, посколько вены наполняются ей. Его мерзкая пасть окружена щупальцами, на каждом из них есть когти или голодные присоски. Звездный вампир спускается со звезд, чтобы покормиться и возвращается обратно с хихикающим смехом.</ROM_StarVampire.description>
+  <ROM_StarVampire.tools.0.label>иглы</ROM_StarVampire.tools.0.label>
+  <ROM_StarVampire.tools.1.label>щупальца</ROM_StarVampire.tools.1.label>
+  <ROM_StarVampire.tools.2.label>свернутые щупальца</ROM_StarVampire.tools.2.label>
+  <ROM_StarVampire.tools.3.label>зубы</ROM_StarVampire.tools.3.label>
+</LanguageData>

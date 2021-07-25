@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_BluntMonstrous.label>직격타</ROM_BluntMonstrous.label>
+  <ROM_BluntMonstrous.deathMessage>{0}(은)는 박살나며 사망했습니다.</ROM_BluntMonstrous.deathMessage>
+</LanguageData>

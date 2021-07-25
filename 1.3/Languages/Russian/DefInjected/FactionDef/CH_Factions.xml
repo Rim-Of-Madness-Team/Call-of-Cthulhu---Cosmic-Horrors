@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_StarSpawn.label>ктулхуиды</ROM_StarSpawn.label>
+  <ROM_StarSpawn.description>Раса, порожденная одним из Древних, Ктулху, который покоится в глубине вод под Р'льехом, дожидаясь своего часа.</ROM_StarSpawn.description>
+  <ROM_StarSpawn.fixedName>Затонувший город Р'льех</ROM_StarSpawn.fixedName>
+  <ROM_StarSpawn.pawnsPlural>ктулхуиды</ROM_StarSpawn.pawnsPlural>
+  <ROM_Shoggoth.label>шогготы</ROM_Shoggoth.label>
+  <ROM_Shoggoth.description>Шогготы - это гигантские аморфные протоплазматические сущности, способные по желанию изменять форму, отращивать новые конечности, органы, рты и щупальца.</ROM_Shoggoth.description>
+  <ROM_Shoggoth.fixedName>Горы Безумия</ROM_Shoggoth.fixedName>
+  <ROM_Shoggoth.pawnsPlural>шогготы</ROM_Shoggoth.pawnsPlural>
+  <ROM_MiGo.label>ми-го</ROM_MiGo.label>
+  <ROM_MiGo.description>Ми-го это летающие безголовые грибовидные пришельцы с панцирем. Имеют внеземные познания и способности в области хирургии мозга. Ми-го способны к полету, а это значит, что они смогут избежать ловушек!</ROM_MiGo.description>
+  <ROM_MiGo.fixedName>Колония ми-го</ROM_MiGo.fixedName>
+  <ROM_MiGo.pawnsPlural>ми-Го</ROM_MiGo.pawnsPlural>
+  <ROM_DeepOne.label>глубоководные</ROM_DeepOne.label>
+  <ROM_DeepOne.description>Глубоководные - это чудовищные гибриды гуманоида, рыбы и лягушки. Они разрывают свою добычу когтями, прежде чем откусить ей голову с помощью массивных челюстей.</ROM_DeepOne.description>
+  <ROM_DeepOne.fixedName>Риф Дьявола</ROM_DeepOne.fixedName>
+  <ROM_DeepOne.pawnsPlural>глубоководные</ROM_DeepOne.pawnsPlural>
+  <ROM_StarVampire.label>звездные вампиры</ROM_StarVampire.label>
+  <ROM_StarVampire.description>Звездные вампиры - это твари обитающие в открытом космосе. Большую часть времени они находятся в состоянии невидимости, становясь видимыми только во время и после еды. Принимают цвет жидкости, которая была ими поглощена. Звездные вампиры питаются только жидкой пищей, например, высасывая всю жидкость из тела своей добычи. Их мельчайшие присоски и когти позволяют им без труда схватить и обескровить свою жертву.</ROM_StarVampire.description>
+  <ROM_StarVampire.fixedName>Глубокий космос</ROM_StarVampire.fixedName>
+  <ROM_StarVampire.pawnsPlural>звездные вампиры</ROM_StarVampire.pawnsPlural>
+  <ROM_Chthonian.label>хтонианцы</ROM_Chthonian.label>
+  <ROM_Chthonian.description>Хтонианцы это огромные существа с удлиненным червеобразным телом, покрытым слизью. Несмотря на то, что они похожи на кальмаров, хтонианцы обитают на суше и не любят воду. Эти существа роют норы своими мощными телами и могут жить более тысячи лет. Заботятся о своем потомстве. Говорят, что появление хтонианца сопровождается пением, и с его помощью они могут быть обнаружены, даже будучи скрытыми под землей.\n\nГлавный хтонианец - это гигантский Шудде Мьелл, самый большой и злобный из этой расы, которому поклоняются все остальные.</ROM_Chthonian.description>
+  <ROM_Chthonian.fixedName>Затерянный город Г'Харн</ROM_Chthonian.fixedName>
+  <ROM_Chthonian.pawnsPlural>хтонианцы</ROM_Chthonian.pawnsPlural>
+  <!-- Cosmic Horror Player Sightable Faction -->
+  <ROM_CosmicHorrors.label>Космические ужасы</ROM_CosmicHorrors.label>
+  <ROM_CosmicHorrors.description>Существа вне времени и пространства, стремящиеся очистить Вселенную от человечества.</ROM_CosmicHorrors.description>
+  <ROM_CosmicHorrors.fixedName>Неизвестно</ROM_CosmicHorrors.fixedName>
+  <ROM_CosmicHorrors.pawnsPlural>Ужасы</ROM_CosmicHorrors.pawnsPlural>
+</LanguageData>

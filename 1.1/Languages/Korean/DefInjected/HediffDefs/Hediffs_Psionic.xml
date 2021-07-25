@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Psionic.label>사이오닉</ROM_Psionic.label>
+  <ROM_Psionic.comps.0.labelTendedWell>붕대를 감음</ROM_Psionic.comps.0.labelTendedWell>
+  <ROM_Psionic.comps.0.labelTendedWellInner>봉합 함</ROM_Psionic.comps.0.labelTendedWellInner>
+  <ROM_Psionic.comps.0.labelSolidTendedWell>결합 함</ROM_Psionic.comps.0.labelSolidTendedWell>
+  <ROM_Psionic.injuryProps.destroyedLabel>함몰 됨</ROM_Psionic.injuryProps.destroyedLabel>
+  <ROM_IntracranialPressure.label>두개 내압</ROM_IntracranialPressure.label>
+  <ROM_IntracranialPressure.stages.0.label>초기-감춰짐</ROM_IntracranialPressure.stages.0.label>
+  <ROM_IntracranialPressure.stages.1.label>초기</ROM_IntracranialPressure.stages.1.label>
+  <ROM_IntracranialPressure.stages.2.label>가벼움</ROM_IntracranialPressure.stages.2.label>
+  <ROM_IntracranialPressure.stages.3.label>보통</ROM_IntracranialPressure.stages.3.label>
+  <ROM_IntracranialPressure.stages.4.label>심각함</ROM_IntracranialPressure.stages.4.label>
+  <ROM_IntracranialPressure.stages.5.label>극심함</ROM_IntracranialPressure.stages.5.label>
+</LanguageData>

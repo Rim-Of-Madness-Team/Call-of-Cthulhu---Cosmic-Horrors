@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Exsanguination.label>출혈</ROM_Exsanguination.label>
+  <ROM_Exsanguination.deathMessage>{0}(은)는 과다 출혈로 사망했습니다.</ROM_Exsanguination.deathMessage>
+</LanguageData>

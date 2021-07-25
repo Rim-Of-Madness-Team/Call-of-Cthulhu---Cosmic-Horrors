@@ -1,235 +1,243 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
-
   <Operation Class="PatchOperationSequence">
-	<success>Always</success>
-	<operations>
-	  <!--This ensures the patch will only be applied IF Giddy-Up is loaded-->
-	  <li Class="JecsTools.PatchOperationModLoaded">
-	    <modName>A Dog Said...</modName>
-	  </li>
-	<li Class="PatchOperationAdd">
-		<xpath>/RecipeDefs/RecipeDef[@Name='LegBaseAnimal']/appliedOnFixedBodyParts</xpath>
-		<value>
-			<li>ROM_LegFirst</li>
-			<li>ROM_LegSecond</li>
-			<li>ROM_LegThird</li>
-		</value>
-	</li>
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallBionicAnimalStomach surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicAnimalStomach"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-		</value>
-	</li>
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallBionicAnimalKidney surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicAnimalKidney"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-		</value>
-	</li>
-	<li Class="PatchOperationAdd">
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicAnimalKidney"]/appliedOnFixedBodyParts</xpath>
-		<value>
-			<li>ROM_Kidney</li>
-			<li>ROM_KidneySecond</li>
-		</value>
-	</li>
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallBionicAnimalLiver surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicAnimalLiver"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-
-		</value>
-	</li>
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallBionicAnimalLung surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicAnimalLung"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-		</value>
-	</li>
-	<li Class="PatchOperationAdd">
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicAnimalLung"]/appliedOnFixedBodyParts</xpath>
-		<value>
-			<li>ROM_Lung</li>
-		</value>
-	</li>
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallBionicAnimalHeart surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicAnimalHeart"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-
-		</value>
-	</li>
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallAnimalBrainStimulator surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallAnimalBrainStimulator"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-
-		</value>
-	</li>
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallSpineAnimalBionic surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallSpineAnimalBionic"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-
-		</value>
-	</li>
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallSpineAnimalSimple surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallSpineAnimalSimple"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-
-		</value>
-	</li>
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallJawAnimalBionic surgery <recipeUsers> -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallJawAnimalBionic"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-
-		</value>
-	</li>
-	<li Class="PatchOperationAdd">
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallJawAnimalBionic"]/appliedOnFixedBodyParts</xpath>
-		<value>
-			<li>ROM_Maw</li>
-			<li>ROM_MawSecond</li>
-			<li>ROM_MawThird</li>
-			<li>ROM_MawFourth</li>
-			<li>ROM_MawFifth</li>
-			<li>ROM_MawSixth</li>
-			<li>ROM_MawSeventh</li>
-			<li>ROM_MawEighth</li>
-			<li>ROM_MawNinth</li>
-		</value>
-	</li>
-
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallJawAnimalSimple surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallJawAnimalSimple"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-
-		</value>
-	</li>
-	<li Class="PatchOperationAdd">
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallJawAnimalBionic"]/appliedOnFixedBodyParts</xpath>
-		<value>
-			<li>ROM_Maw</li>
-			<li>ROM_MawSecond</li>
-			<li>ROM_MawThird</li>
-			<li>ROM_MawFourth</li>
-			<li>ROM_MawFifth</li>
-			<li>ROM_MawSixth</li>
-			<li>ROM_MawSeventh</li>
-			<li>ROM_MawEighth</li>
-			<li>ROM_MawNinth</li>
-		</value>
-	</li>
-
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallNoseAnimalSimple surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallNoseAnimalSimple"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-		</value>
-	</li>
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallBionicEyeAnimal surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicEyeAnimal"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-		</value>
-	</li>
-	<li Class="PatchOperationAdd">
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicEyeAnimal"]/appliedOnFixedBodyParts</xpath>
-		<value>
-			<li>ROM_Eye</li>
-			<li>ROM_EyeSecond</li>
-			<li>ROM_EyeThird</li>
-			<li>ROM_EyeFourth</li>
-			<li>ROM_EyeFifth</li>
-			<li>ROM_EyeSixth</li>
-			<li>ROM_EyeSeventh</li>
-			<li>ROM_EyeEighth</li>
-			<li>ROM_EyeNinth</li>
-			<li>ROM_EyeTenth</li>
-		</value>
-	</li>
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallEarAnimalSimple surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallEarAnimalSimple"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-		</value>
-	</li>
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallEarAnimalBionic surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallEarAnimalBionic"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-
-		</value>
-	</li>
-<!-- Leg installing recipes == should be most animals -->
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallPegLegAnimal surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallPegLegAnimal"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-		</value>
-	</li>
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallSimpleProstheticLegAnimalsurgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallSimpleProstheticLegAnimal"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-		</value>
-	</li>
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallBionicLegAnimal surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicLegAnimal"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-		</value>
-	</li>
-<!-- Arm installing recipes == Only for animal with arms -->
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallSimpleProstheticArmAnimal surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallSimpleProstheticArmAnimal"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-		</value>
-	</li>
-	<li Class="PatchOperationAdd">
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallSimpleProstheticArmAnimal"]/appliedOnFixedBodyParts</xpath>
-		<value>
-			<li>ROM_TentacleFirst</li>
-			<li>ROM_TentacleSecond</li>
-			<li>ROM_TentacleThird</li>
-			<li>ROM_TentacleFourth</li>
-			<li>ROM_TentacleFifth</li>
-			<li>ROM_TentacleSixth</li>
-			<li>ROM_TentacleSeventh</li>
-		</value>
-	</li>
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallBionicArmAnimal surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicArmAnimal"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-		</value>
-	</li>
-	<li Class="PatchOperationAdd">
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicArmAnimal"]/appliedOnFixedBodyParts</xpath>
-		<value>
-			<li>ROM_TentacleFirst</li>
-			<li>ROM_TentacleSecond</li>
-			<li>ROM_TentacleThird</li>
-			<li>ROM_TentacleFourth</li>
-			<li>ROM_TentacleFifth</li>
-			<li>ROM_TentacleSixth</li>
-			<li>ROM_TentacleSeventh</li>
-		</value>
-	</li>
-<!-- Tail installing recipe == Only for animal with tail-->
-	<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallSimpleProstheticTailAnimal surgery <recipeUsers>" -->
-		<xpath>/RecipeDefs/RecipeDef[defName = "InstallSimpleProstheticTailAnimal"]/recipeUsers</xpath>
-		<value>
-			<li>ROM_DarkYoung</li>
-		</value>
-	</li>
-	</operations>
+    <success>Always</success>
+    <operations>
+      <!--This ensures the patch will only be applied IF Giddy-Up is loaded-->
+      <li Class="JecsTools.PatchOperationModLoaded">
+        <modName>A Dog Said...</modName>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/RecipeDefs/RecipeDef[@Name='LegBaseAnimal']/appliedOnFixedBodyParts</xpath>
+        <value>
+          <li>ROM_LegFirst</li>
+          <li>ROM_LegSecond</li>
+          <li>ROM_LegThird</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallBionicAnimalStomach surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicAnimalStomach"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallBionicAnimalKidney surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicAnimalKidney"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicAnimalKidney"]/appliedOnFixedBodyParts</xpath>
+        <value>
+          <li>ROM_Kidney</li>
+          <li>ROM_KidneySecond</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallBionicAnimalLiver surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicAnimalLiver"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallBionicAnimalLung surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicAnimalLung"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicAnimalLung"]/appliedOnFixedBodyParts</xpath>
+        <value>
+          <li>ROM_Lung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallBionicAnimalHeart surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicAnimalHeart"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallAnimalBrainStimulator surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallAnimalBrainStimulator"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallSpineAnimalBionic surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallSpineAnimalBionic"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallSpineAnimalSimple surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallSpineAnimalSimple"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallJawAnimalBionic surgery <recipeUsers> -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallJawAnimalBionic"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallJawAnimalBionic"]/appliedOnFixedBodyParts</xpath>
+        <value>
+          <li>ROM_Maw</li>
+          <li>ROM_MawSecond</li>
+          <li>ROM_MawThird</li>
+          <li>ROM_MawFourth</li>
+          <li>ROM_MawFifth</li>
+          <li>ROM_MawSixth</li>
+          <li>ROM_MawSeventh</li>
+          <li>ROM_MawEighth</li>
+          <li>ROM_MawNinth</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallJawAnimalSimple surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallJawAnimalSimple"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallJawAnimalBionic"]/appliedOnFixedBodyParts</xpath>
+        <value>
+          <li>ROM_Maw</li>
+          <li>ROM_MawSecond</li>
+          <li>ROM_MawThird</li>
+          <li>ROM_MawFourth</li>
+          <li>ROM_MawFifth</li>
+          <li>ROM_MawSixth</li>
+          <li>ROM_MawSeventh</li>
+          <li>ROM_MawEighth</li>
+          <li>ROM_MawNinth</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallNoseAnimalSimple surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallNoseAnimalSimple"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallBionicEyeAnimal surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicEyeAnimal"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicEyeAnimal"]/appliedOnFixedBodyParts</xpath>
+        <value>
+          <li>ROM_Eye</li>
+          <li>ROM_EyeSecond</li>
+          <li>ROM_EyeThird</li>
+          <li>ROM_EyeFourth</li>
+          <li>ROM_EyeFifth</li>
+          <li>ROM_EyeSixth</li>
+          <li>ROM_EyeSeventh</li>
+          <li>ROM_EyeEighth</li>
+          <li>ROM_EyeNinth</li>
+          <li>ROM_EyeTenth</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallEarAnimalSimple surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallEarAnimalSimple"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallEarAnimalBionic surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallEarAnimalBionic"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <!-- Leg installing recipes == should be most animals -->
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallPegLegAnimal surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallPegLegAnimal"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallSimpleProstheticLegAnimalsurgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallSimpleProstheticLegAnimal"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallBionicLegAnimal surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicLegAnimal"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <!-- Arm installing recipes == Only for animal with arms -->
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallSimpleProstheticArmAnimal surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallSimpleProstheticArmAnimal"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallSimpleProstheticArmAnimal"]/appliedOnFixedBodyParts</xpath>
+        <value>
+          <li>ROM_TentacleFirst</li>
+          <li>ROM_TentacleSecond</li>
+          <li>ROM_TentacleThird</li>
+          <li>ROM_TentacleFourth</li>
+          <li>ROM_TentacleFifth</li>
+          <li>ROM_TentacleSixth</li>
+          <li>ROM_TentacleSeventh</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallBionicArmAnimal surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicArmAnimal"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallBionicArmAnimal"]/appliedOnFixedBodyParts</xpath>
+        <value>
+          <li>ROM_TentacleFirst</li>
+          <li>ROM_TentacleSecond</li>
+          <li>ROM_TentacleThird</li>
+          <li>ROM_TentacleFourth</li>
+          <li>ROM_TentacleFifth</li>
+          <li>ROM_TentacleSixth</li>
+          <li>ROM_TentacleSeventh</li>
+        </value>
+      </li>
+      <!-- Tail installing recipe == Only for animal with tail-->
+      <li Class="PatchOperationAdd">
+        <!-- "Inserting animal defNames into InstallSimpleProstheticTailAnimal surgery <recipeUsers>" -->
+        <xpath>/RecipeDefs/RecipeDef[defName = "InstallSimpleProstheticTailAnimal"]/recipeUsers</xpath>
+        <value>
+          <li>ROM_DarkYoung</li>
+        </value>
+      </li>
+    </operations>
   </Operation>
 </Patch>

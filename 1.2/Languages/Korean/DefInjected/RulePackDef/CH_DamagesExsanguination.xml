@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.0>damaged_inf(p=2)-&gt;drain</ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.0>
+  <ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.1>damaged_inf-&gt;suck</ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.1>
+  <ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.2>damaged_inf-&gt;siphon</ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.2>
+  <ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.3>damaged_past(p=2)-&gt;drained</ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.3>
+  <ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.4>damaged_past-&gt;sucked</ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.4>
+  <ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.5>damaged_past-&gt;siphoned</ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.5>
+  <ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.6>damaged_present-&gt;draining</ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.6>
+  <ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.7>damaged_present-&gt;sucking</ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.7>
+  <ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.8>damaged_present-&gt;siphoning</ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.8>
+  <ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.9>destroyed_past-&gt;drained dry</ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.9>
+  <ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.10>destroyed_present-&gt;draining dry</ROM_Maneuver_Exsanguination_Damage.rulePack.rulesStrings.10>
+  <ROM_Maneuver_Exsanguination.rulePack.rulesStrings.0>woundname-&gt;wound</ROM_Maneuver_Exsanguination.rulePack.rulesStrings.0>
+  <ROM_Maneuver_Exsanguination.rulePack.rulesStrings.1>flavortext_situation(p=3)-&gt;while [ROMgazingwithinhumaneyes]</ROM_Maneuver_Exsanguination.rulePack.rulesStrings.1>
+  <ROM_Maneuver_Exsanguination.rulePack.rulesStrings.2>flavortext_situation(p=3)-&gt;while [ROMcarryinganexpressionofmadness]</ROM_Maneuver_Exsanguination.rulePack.rulesStrings.2>
+  <ROM_Maneuver_Exsanguination.rulePack.rulesStrings.3>flavortext_situation(p=2,recipient_flesh!=Mechanoid)-&gt;with [ROMbloodoozing] from the [woundname]</ROM_Maneuver_Exsanguination.rulePack.rulesStrings.3>
+  <ROM_Maneuver_Exsanguination.rulePack.rulesStrings.4>flavortext_situation(p=2,recipient_flesh!=Mechanoid)-&gt;with [ROMgore] [ROMexposed] from the [woundname]</ROM_Maneuver_Exsanguination.rulePack.rulesStrings.4>
+  <ROM_Maneuver_Exsanguination.rulePack.rulesStrings.5>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)-&gt;and [ROMexposing] [ROMtheflesh] [ROMunderneath]</ROM_Maneuver_Exsanguination.rulePack.rulesStrings.5>
+  <ROM_Maneuver_Exsanguination.rulePack.rulesStrings.6>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)-&gt;and [ROMexposing] a [ROMhorrible] [woundname]</ROM_Maneuver_Exsanguination.rulePack.rulesStrings.6>
+  <ROM_Maneuver_Exsanguination.rulePack.rulesStrings.7>flavortext_consequence(p=2,recipient_flesh==Mechanoid)-&gt;and exposing the machinery underneath</ROM_Maneuver_Exsanguination.rulePack.rulesStrings.7>
+  <ROM_Maneuver_Exsanguination.rulePack.rulesStrings.8>destroyed_suffix(p=2,recipient_flesh!=Mechanoid)-&gt;[to] messy [ROMstrips]</ROM_Maneuver_Exsanguination.rulePack.rulesStrings.8>
+  <ROM_Maneuver_Exsanguination.rulePack.rulesStrings.9>destroyed_suffix(p=4)-&gt;[to] [ROMstrips]</ROM_Maneuver_Exsanguination.rulePack.rulesStrings.9>
+  <ROM_Maneuver_Exsanguination.rulePack.rulesStrings.10>destroyed_suffix-&gt;[to] pieces</ROM_Maneuver_Exsanguination.rulePack.rulesStrings.10>
+  <ROM_Maneuver_Exsanguination.rulePack.rulesStrings.11>destroyed_suffix-&gt;[to] fragments</ROM_Maneuver_Exsanguination.rulePack.rulesStrings.11>
+  <ROM_Maneuver_Exsanguination.rulePack.rulesStrings.12>destroyed_suffix(recipient_flesh!=Mechanoid)-&gt;[to] a pile of gore</ROM_Maneuver_Exsanguination.rulePack.rulesStrings.12>
+</LanguageData>

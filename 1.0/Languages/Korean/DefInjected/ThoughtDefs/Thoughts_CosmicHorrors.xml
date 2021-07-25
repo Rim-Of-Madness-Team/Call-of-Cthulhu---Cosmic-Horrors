@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ObservedROM_DeepOne.stages.0.label>딥 원을 목격함</ObservedROM_DeepOne.stages.0.label>
+  <ObservedROM_DeepOne.stages.0.description>저게 뭐야?!</ObservedROM_DeepOne.stages.0.description>
+  <ObservedROM_DeepOneGreat.stages.0.label>그레이트 딥 원을 목격함</ObservedROM_DeepOneGreat.stages.0.label>
+  <ObservedROM_DeepOneGreat.stages.0.description>저게 뭐야?!</ObservedROM_DeepOneGreat.stages.0.description>
+  <ObservedROM_MiGo.stages.0.label>미고 목격</ObservedROM_MiGo.stages.0.label>
+  <ObservedROM_MiGo.stages.0.description>저게 뭐야?!</ObservedROM_MiGo.stages.0.description>
+  <ObservedROM_Shoggoth.stages.0.label>쇼고스 목격</ObservedROM_Shoggoth.stages.0.label>
+  <ObservedROM_Shoggoth.stages.0.description>저게 뭐야?!</ObservedROM_Shoggoth.stages.0.description>
+  <ObservedROM_StarVampire.stages.0.label>스타 뱀파이어 목격</ObservedROM_StarVampire.stages.0.label>
+  <ObservedROM_StarVampire.stages.0.description>저게 뭐야?!</ObservedROM_StarVampire.stages.0.description>
+  <ObservedROM_Cthulhid.stages.0.label>크툴루의 스타-스폰 목격</ObservedROM_Cthulhid.stages.0.label>
+  <ObservedROM_Cthulhid.stages.0.description>저게 뭐야?!</ObservedROM_Cthulhid.stages.0.description>
+  <ObservedROM_DarkYoung.stages.0.label>다크 영 목격</ObservedROM_DarkYoung.stages.0.label>
+  <ObservedROM_DarkYoung.stages.0.description>그들은... 그들은 진짜일까?</ObservedROM_DarkYoung.stages.0.description>
+  <ObservedROM_ChthonianLarva.stages.0.label>크토니안 유충 목격</ObservedROM_ChthonianLarva.stages.0.label>
+  <ObservedROM_ChthonianLarva.stages.0.description>이것보다 더 두려운 것이 있을까?</ObservedROM_ChthonianLarva.stages.0.description>
+  <ObservedROM_Chthonian.stages.0.label>observed Chthonian</ObservedROM_Chthonian.stages.0.label>
+  <ObservedROM_Chthonian.stages.0.description>이건 현실이 아니야.</ObservedROM_Chthonian.stages.0.description>
+  <ROM_SanityLoss.stages.0.label>긴장함-감춰짐</ROM_SanityLoss.stages.0.label>
+  <ROM_SanityLoss.stages.0.description>나타나지 말아야 합니다.</ROM_SanityLoss.stages.0.description>
+  <ROM_SanityLoss.stages.1.label>긴장함</ROM_SanityLoss.stages.1.label>
+  <ROM_SanityLoss.stages.1.description>뭔가 잘못 됬어.</ROM_SanityLoss.stages.1.description>
+  <ROM_SanityLoss.stages.2.label>불안함</ROM_SanityLoss.stages.2.label>
+  <ROM_SanityLoss.stages.2.description>근본부터 잘못된 존재들이 있어.</ROM_SanityLoss.stages.2.description>
+  <ROM_SanityLoss.stages.3.label>편집증</ROM_SanityLoss.stages.3.label>
+  <ROM_SanityLoss.stages.3.description>나는 여기서 나가야 해.</ROM_SanityLoss.stages.3.description>
+  <ROM_SanityLoss.stages.4.label>미쳤음</ROM_SanityLoss.stages.4.label>
+  <ROM_SanityLoss.stages.4.description>Iä! Iä!</ROM_SanityLoss.stages.4.description>
+  <ROM_SanityLoss.stages.5.label>정신 나감</ROM_SanityLoss.stages.5.label>
+  <ROM_SanityLoss.stages.5.description>mglw'nafh fhthagn-ngah cf'ayak 'vulgtmm vugtlag'n</ROM_SanityLoss.stages.5.description>
+  <ROM_SawMonster.stages.0.label>괴물울 목격함</ROM_SawMonster.stages.0.label>
+  <ROM_SawMonster.stages.0.description>내가 본 것을 뭐라 말 할 수 없어.</ROM_SawMonster.stages.0.description>
+</LanguageData>

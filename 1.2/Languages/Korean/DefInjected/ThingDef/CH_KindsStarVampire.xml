@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_StarVampireSpawner.label>스타-뱀파이어 스포너</ROM_StarVampireSpawner.label>
+  <ROM_StarVampireSpawnerAlbino.label>스타-뱀파이어 스포너</ROM_StarVampireSpawnerAlbino.label>
+  <ROM_StarVampireSpawnerAbberation.label>스타-뱀파이어 스포너</ROM_StarVampireSpawnerAbberation.label>
+  <ROM_StarVampireSpawnerNight.label>스타-뱀파이어 스포너</ROM_StarVampireSpawnerNight.label>
+  <ROM_StarVampire.label>스타 뱀파이어</ROM_StarVampire.label>
+  <ROM_StarVampire.description>그것은 식사를 시작하기 전 까지 보이지 않습니다. 먹이의 피가 그들의 혈관에 채워지면서 천천히 형태가 드러납니다. 그의 역겨운 위장은 촉수로 에워쌓여 있으며, 별들로부터 내려와 먹이를 조롱합니다.</ROM_StarVampire.description>
+  <ROM_StarVampire.tools.0.label>송곳니</ROM_StarVampire.tools.0.label>
+  <ROM_StarVampire.tools.1.label>촉수</ROM_StarVampire.tools.1.label>
+  <ROM_StarVampire.tools.2.label>휘감긴 촉수</ROM_StarVampire.tools.2.label>
+  <ROM_StarVampire.tools.3.label>이빨</ROM_StarVampire.tools.3.label>
+  <!-- No Leather: Butcher Products -->
+  <!-- Meat Amount: 0 -->
+  <ROM_StarVampire_Corpse.label>스타-뱀파이어 시체</ROM_StarVampire_Corpse.label>
+  <ROM_StarVampire_Corpse.description>스타-뱀파이어 시체</ROM_StarVampire_Corpse.description>
+</LanguageData>

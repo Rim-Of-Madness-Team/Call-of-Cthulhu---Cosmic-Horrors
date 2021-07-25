@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="ROM_RawCHFoodBase" Abstract="True" ParentName="OrganicProductBase">
+    <label>Base strange food properties</label>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>4</daysToRotStart>
+        <rotDestroys>True</rotDestroys>
+      </li>
+    </comps>
+    <statBases>
+      <Nutrition>0.10</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Meat</foodType>
+      <preferability>DesperateOnly</preferability>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>ROM_SanityLoss</hediffDef>
+          <severity>0.25</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <thingCategories>
+      <li>ROM_StrangeMeatRaw</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="MealRottable" Name="ROM_CHMealRottable" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>4</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>ROM_SanityLoss</hediffDef>
+          <severity>0.2</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <tradeability>Sellable</tradeability>
+  </ThingDef>
+  <!--=================== Strange Food ===============-->
+  <ThingDef ParentName="ROM_CHMealRottable">
+    <defName>ROM_StrangeMealSimple</defName>
+    <label>strange simple meal</label>
+    <description>A simple meal quickly cooked from a few... odd ingredients.</description>
+    <graphicData>
+      <texPath>Item/Resource/StrangeMeal/StrangeMealSimple</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>1</Mass>
+      <DeteriorationRate>20</DeteriorationRate>
+      <MarketValue>25</MarketValue>
+      <WorkToMake>300</WorkToMake>
+      <Nutrition>0.85</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="ROM_CHMealRottable">
+    <defName>ROM_StrangeMealFine</defName>
+    <label>strange fine meal</label>
+    <description>A complex dish assembled with care from a wide selection of... odd ingredients.</description>
+    <graphicData>
+      <texPath>Item/Resource/StrangeMeal/StrangeMealFine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>1</Mass>
+      <DeteriorationRate>20</DeteriorationRate>
+      <MarketValue>28</MarketValue>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.90</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="ROM_CHMealRottable">
+    <defName>ROM_StrangeMealLavish</defName>
+    <label>strange lavish meal</label>
+    <description>A... masterpiece? of the culinary... arts?, this meal nourishes the body, mind, and... soul?</description>
+    <graphicData>
+      <texPath>Item/Resource/StrangeMeal/StrangeMealLavish</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>1</Mass>
+      <DeteriorationRate>20</DeteriorationRate>
+      <MarketValue>40</MarketValue>
+      <WorkToMake>800</WorkToMake>
+      <Nutrition>1.00</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>ROM_StrangeKibble</defName>
+    <label>strange kibble</label>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <description>Kibble animal feed made from mixed plants and... meat?</description>
+    <graphicData>
+      <texPath>Item/Resource/StrangeMeal/StrangeKibble</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.1</Mass>
+      <MarketValue>1.3</MarketValue>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Kibble</foodType>
+      <preferability>DesperateOnlyForHumanlikes</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>ROM_SanityLoss</hediffDef>
+          <severity>0.5</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="ROM_RawCHFoodBase">
+    <defName>ROM_RawCHFood_Meat</defName>
+    <label>untouchable meat</label>
+    <description>Placeholder</description>
+    <tradeability>None</tradeability>
+    <graphicData>
+      <texPath>Item/Resource/StrangeMeat/Cthulhid</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>1</Mass>
+      <MarketValue>1.5</MarketValue>
+    </statBases>
+    <ingestible>
+      <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="ROM_RawCHFoodBase">
+    <defName>ROM_RawCHFood_CthulhidMeat</defName>
+    <label>cthulhid meat</label>
+    <description>Raw meat from a Star-Spawn of Cthulhu.
+	
+Cthulhid flesh is a putrid soupy mess of meat, more liquids than solids and exuding an odor that would make vat grown soldiers gag in revulsion. Cthulhid meat tastes of coffee which has fermented for months in a tin of moldy tobacco. When consumed, any meal containing Cthulhid meat will create deep, bottomless feelings of regret. Most of these feelings are directly tied to the actual taste of the meal.</description>
+    <graphicData>
+      <texPath>Item/Resource/StrangeMeat/Cthulhid</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>1</Mass>
+      <MarketValue>1.5</MarketValue>
+    </statBases>
+    <ingestible>
+      <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="ROM_RawCHFoodBase">
+    <defName>ROM_RawCHFood_DeepOneMeat</defName>
+    <label>Deep One meat</label>
+    <description>Raw meat from a Deep One.
+	
+To dine upon Deep One flesh is to experience something rigid and gelatinous simultaneously, as if ingesting rotting softshell crabs dipped in petroleum oils. When consumed, Deep One flesh will cause vague feelings of terror and unease.</description>
+    <graphicData>
+      <texPath>Item/Resource/StrangeMeat/DeepOne</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>1</Mass>
+      <MarketValue>1.5</MarketValue>
+    </statBases>
+    <ingestible>
+      <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="ROM_RawCHFoodBase">
+    <defName>ROM_RawCHFood_MiGoMeat</defName>
+    <label>MiGo meat</label>
+    <description>Raw meat from a MiGo.
+	
+MiGo meat is not actually meat. In actuality, it is a fungus with a meaty thickness, spongy consistency, and raw insect taste that exudes oil from pulpy fibers. Many intrepid diners describe the experience as "reminiscent of a particularly boring lecture on biology." Repeat diners have reported suffering from nightmares of distant planetscapes dotted with disembodied brains in clear canisters, luring the dreamer to join them and experience wonders most profound.</description>
+    <graphicData>
+      <texPath>Item/Resource/StrangeMeat/MiGo</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>1</Mass>
+      <MarketValue>1.5</MarketValue>
+    </statBases>
+    <ingestible>
+      <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="ROM_RawCHFoodBase">
+    <defName>ROM_RawCHFood_ShoggothMeat</defName>
+    <label>Shoggoth meat</label>
+    <description>Raw meat from a Shoggoth.
+	
+The flesh of the Shoggoth is chewy and salty, rubbery like a mussel and imbued in the salty brine of the oceans in which they slither and shamble. The taste is incredibly fishy, soaked in a bodily fluid with the consistency of slime. If this ooze is purged, the taste is noticeably cleaner, but will still taste of mussels. If enough Shoggoth meat is consumed, the diner experiences the sound of lapping water from all sides, as well as the sensation of vision from all angles.</description>
+    <graphicData>
+      <texPath>Item/Resource/StrangeMeat/Shoggoth</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>1</Mass>
+      <MarketValue>1.5</MarketValue>
+    </statBases>
+    <ingestible>
+      <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="ROM_RawCHFoodBase">
+    <defName>ROM_RawCHFood_StarVampireMeat</defName>
+    <label>Star Vampire meat</label>
+    <description>Raw meat from a Star Vampire.
+	
+Star Vampire meat's marbling ranges from an uncomfortable amount of intramuscular fat to an obscene helping of it. If one can pick their way around the fat, the actual Star Vampire meat tastes of iron and licorice, and if cooked without the fat cut away, the marbling melts in the heat to sweeten the meat and add a savory flavor. Such fine dining comes with a price. After supping the delicacy, diners are often seen sprinting and screaming from their tables, proclaiming visions of blood streaming from the walls, cupboards, and the eyes of their friends and loved ones.</description>
+    <graphicData>
+      <texPath>Item/Resource/StrangeMeat/StarVampire</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.3</Mass>
+      <MarketValue>1.5</MarketValue>
+    </statBases>
+    <ingestible>
+      <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="ROM_RawCHFoodBase">
+    <defName>ROM_RawCHFood_DarkYoungMeat</defName>
+    <label>Dark Young meat</label>
+    <description>Raw meat from the Dark Young.</description>
+    <graphicData>
+      <texPath>Item/Resource/StrangeMeat/DarkYoung</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>3</Mass>
+      <MarketValue>1.5</MarketValue>
+    </statBases>
+    <ingestible>
+      <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="ROM_RawCHFoodBase">
+    <defName>ROM_RawCHFood_ChthonianMeat</defName>
+    <label>Chthonian strips</label>
+    <description>Raw meat strips from a Chthonian.</description>
+    <graphicData>
+      <texPath>Item/Resource/StrangeMeat/Chthonian</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.3</Mass>
+      <MarketValue>1.7</MarketValue>
+    </statBases>
+    <ingestible>
+      <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>ROM_DarkYoungSap</defName>
+    <label>dark young sap</label>
+    <thingClass>ThingWithComps</thingClass>
+    <description>Sweet sap squeezed from an orifice of one of the foul children of Shub-Niggurath.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Milk</texPath>
+      <color>(20,40,20)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Rare</tickerType>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>3.2</MarketValue>
+      <Mass>0.05</Mass>
+      <Nutrition>0.045</Nutrition>
+      <MaxHitPoints>70</MaxHitPoints>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_FoodPoisonable">
+      </li>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>22</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <foodType>AnimalProduct, Fluid</foodType>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>ROM_SanityLoss</hediffDef>
+          <severity>0.05</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+  </ThingDef>
+</Defs>

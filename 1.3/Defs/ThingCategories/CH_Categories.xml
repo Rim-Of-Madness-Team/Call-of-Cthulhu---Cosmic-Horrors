@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>ROM_StrangeMeatRaw</defName>
+    <label>raw strange meat</label>
+    <parent>Foods</parent>
+    <iconPath>Ui/Icons/ThingCategories/StrangeMeatRaw/ROM_StrangeMeatRaw</iconPath>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>ROM_CosmicHorrorCorpses</defName>
+    <label>monstrous corpses</label>
+    <parent>Corpses</parent>
+  </ThingCategoryDef>
+</Defs>

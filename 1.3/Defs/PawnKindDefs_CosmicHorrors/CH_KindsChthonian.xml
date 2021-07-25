@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Chthonian -->
+  <!-- KIND DEFS -->
+  <!-- ADULT CHTHONIAN -->
+  <PawnKindDef>
+    <defName>ROM_Chthonian</defName>
+    <label>Chthonian</label>
+    <race>ROM_Chthonian</race>
+    <combatPower>1000</combatPower>
+    <defaultFactionType>ROM_Chthonian</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_Chthonian</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>7.0</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.6, 0.4)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_Chthonian</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>7.5</drawSize>
+          <shadowData>
+            <volume>(1, 0.8, 0.5)</volume>
+            <offset>(0,0,-0.5)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_Chthonian</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>8.1</drawSize>
+          <shadowData>
+            <volume>(1, 0.8, 0.5)</volume>
+            <offset>(0,0,-0.5)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  <!-- RACE DEFS -->
+  <ThingDef ParentName="BaseCosmicHorrorRaceInit">
+    <defName>ROM_Chthonian</defName>
+    <label>Chthonian</label>
+    <description>Chthonians are powerful burrowers which can live for more than a thousand years, and are protective of their young. It is said that a chanting sound accompanies every chthonian, and that by such they can be detected while underground and unseen.</description>
+    <statBases>
+      <MoveSpeed>5.7</MoveSpeed>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>100</ComfyTemperatureMax>
+    </statBases>
+    <techLevel>Animal</techLevel>
+    <tools>
+      <li>
+        <label>tentacles</label>
+        <capacities>
+          <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>coiling tentacles</label>
+        <capacities>
+          <li>ROM_ConstrictMonstrous</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
+        <chanceFactor>0.25</chanceFactor>
+      </li>
+      <li>
+        <label>overwhelming mind</label>
+        <capacities>
+          <li>ROM_Psychic</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_Mind</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>body</label>
+        <capacities>
+          <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_BodyAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.33</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>ROM_ChthonianBody</body>
+      <herdAnimal>false</herdAnimal>
+      <baseBodySize>3.5</baseBodySize>
+      <baseHungerRate>4.5</baseHungerRate>
+      <baseHealthScale>13.0</baseHealthScale>
+      <foodType>OmnivoreAnimal, AnimalProduct</foodType>
+      <bloodDef>ROM_Filth_BloodDeepOne</bloodDef>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>ROM_CosmicHorror</thinkTreeMain>
+      <leatherDef>CH_Leather_Chthonian</leatherDef>
+      <!-- Removed from 1.0
+      <leatherColor>(78,60,61)</leatherColor>
+      <leatherInsulation>1.35</leatherInsulation>
+      <leatherLabel>chthonian chitin</leatherLabel>
+      <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
+      <leatherMarketValueFactor>8</leatherMarketValueFactor>
+      <leatherStatFactors>
+        <ArmorRating_Sharp>3.4</ArmorRating_Sharp>
+        <ArmorRating_Blunt>3.9</ArmorRating_Blunt>
+        <ArmorRating_Heat>4.0</ArmorRating_Heat>
+      </leatherStatFactors>
+	  -->
+      <trainability>Advanced</trainability>
+      <gestationPeriodDays>100</gestationPeriodDays>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.035</manhunterOnTameFailChance>
+      <wildness>0.989</wildness>
+      <lifeExpectancy>2500</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>ROM_FullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_ROM_Chthonian_Wounded</soundWounded>
+          <soundDeath>Pawn_ROM_Chthonian_Death</soundDeath>
+          <soundCall>Pawn_ROM_Chthonian_Call</soundCall>
+        </li>
+        <li>
+          <def>ROM_Ancient</def>
+          <minAge>500</minAge>
+          <soundWounded>Pawn_ROM_Chthonian_Wounded</soundWounded>
+          <soundDeath>Pawn_ROM_Chthonian_Death</soundDeath>
+          <soundCall>Pawn_ROM_Chthonian_Call</soundCall>
+        </li>
+        <li>
+          <def>ROM_Eldritch</def>
+          <minAge>2000</minAge>
+          <soundWounded>Pawn_ROM_Chthonian_Wounded</soundWounded>
+          <soundDeath>Pawn_ROM_Chthonian_Death</soundDeath>
+          <soundCall>Pawn_ROM_Chthonian_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>
+        <min>5000</min>
+        <max>8000</max>
+      </soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <ROM_RawCHFood_ChthonianMeat>60</ROM_RawCHFood_ChthonianMeat>
+    </butcherProducts>
+    <recipes>
+      <li>Euthanize</li>
+    </recipes>
+    <modExtensions>
+      <li Class="CosmicHorror.PawnExtension">
+        <invisible>false</invisible>
+        <regenRate>0.0</regenRate>
+        <regenInterval>0</regenInterval>
+        <sanityLossRate>0.04</sanityLossRate>
+        <painFactor>0.3</painFactor>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!-- CHTHONIAN LARVA -->
+  <PawnKindDef>
+    <defName>ROM_ChthonianLarva</defName>
+    <label>Chthonian larva</label>
+    <race>ROM_ChthonianLarva</race>
+    <combatPower>70</combatPower>
+    <defaultFactionType>ROM_Chthonian</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <lifeStages>
+      <li>
+        <label>chthonian larva</label>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_ChthonianLarva</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.0</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  <ThingDef ParentName="BaseCosmicHorrorRaceInit">
+    <defName>ROM_ChthonianLarva</defName>
+    <label>Chthonian Larva</label>
+    <description>Chthonians are powerful burrowers which can live for more than a thousand years, and are protective of their young. It is said that a chanting sound accompanies every chthonian, and that by such they can be detected while underground and unseen.</description>
+    <tradeability>None</tradeability>
+    <statBases>
+      <MoveSpeed>4.4</MoveSpeed>
+      <MarketValue>1400</MarketValue>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>100</ComfyTemperatureMax>
+    </statBases>
+    <tools>
+      <li>
+        <label>tentacles</label>
+        <capacities>
+          <li>ROM_BluntMonstrous</li>
+          <li>ROM_ConstrictMonstrous</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_Tentacles</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>overwhelming mind</label>
+        <capacities>
+          <li>ROM_Psychic</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_Mind</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>body</label>
+        <capacities>
+          <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_BodyAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.33</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>ROM_ChthonianBody</body>
+      <baseBodySize>1.2</baseBodySize>
+      <baseHungerRate>2.5</baseHungerRate>
+      <baseHealthScale>3.0</baseHealthScale>
+      <foodType>OmnivoreAnimal, AnimalProduct</foodType>
+      <bloodDef>ROM_Filth_BloodDeepOne</bloodDef>
+      <intelligence>Animal</intelligence>
+      <useLeatherFrom>ROM_Chthonian</useLeatherFrom>
+      <thinkTreeMain>Animal</thinkTreeMain>
+      <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+      <trainability>Advanced</trainability>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.035</manhunterOnTameFailChance>
+      <wildness>0.95</wildness>
+      <lifeExpectancy>2500</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>ROM_Spawn</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_ROM_Chthonian_Wounded</soundWounded>
+          <soundDeath>Pawn_ROM_Chthonian_Death</soundDeath>
+          <soundCall>Pawn_ROM_Chthonian_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>
+        <min>5000</min>
+        <max>12000</max>
+      </soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <ROM_RawCHFood_ChthonianMeat>20</ROM_RawCHFood_ChthonianMeat>
+    </butcherProducts>
+    <recipes>
+      <li>Euthanize</li>
+    </recipes>
+    <modExtensions>
+      <li Class="CosmicHorror.PawnExtension">
+        <invisible>false</invisible>
+        <regenRate>0.0</regenRate>
+        <regenInterval>0</regenInterval>
+        <sanityLossRate>0.04</sanityLossRate>
+        <painFactor>0.3</painFactor>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.0>damaged_inf(p=2)-&gt;psiblast</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.0>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.1>damaged_inf-&gt;psiburst</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.1>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.2>damaged_inf-&gt;psipulse</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.2>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.3>damaged_inf-&gt;psishock</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.3>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.4>damaged_past(p=2)-&gt;psiblasted</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.4>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.5>damaged_past-&gt;psiburst</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.5>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.6>damaged_past-&gt;psipulsed</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.6>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.7>damaged_past-&gt;psishocked</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.7>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.8>damaged_present-&gt;psiblasting</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.8>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.9>damaged_present-&gt;psibursting</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.9>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.10>damaged_present-&gt;psipulsing</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.10>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.11>damaged_present-&gt;psishocking</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.11>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.12>destroyed_past-&gt;psiblasted apart</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.12>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.13>destroyed_past-&gt;psiburst apart</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.13>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.14>destroyed_past-&gt;psishocked</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.14>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.15>destroyed_past-&gt;psipulsed</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.15>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.16>destroyed_present-&gt;psiblasting</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.16>
+  <ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.17>destroyed_present-&gt;psibursting</ROM_Maneuver_Psychic_Damage.rulePack.rulesStrings.17>
+  <ROM_Maneuver_Psychic.rulePack.rulesStrings.0>woundname-&gt;wound</ROM_Maneuver_Psychic.rulePack.rulesStrings.0>
+  <ROM_Maneuver_Psychic.rulePack.rulesStrings.1>flavortext_situation(p=3)-&gt;while [ROMgazingwithinhumaneyes]</ROM_Maneuver_Psychic.rulePack.rulesStrings.1>
+  <ROM_Maneuver_Psychic.rulePack.rulesStrings.2>flavortext_situation(p=3)-&gt;while [ROMcarryinganexpressionofmadness]</ROM_Maneuver_Psychic.rulePack.rulesStrings.2>
+  <ROM_Maneuver_Psychic.rulePack.rulesStrings.3>flavortext_situation(p=2,recipient_flesh!=Mechanoid)-&gt;with [ROMbloodoozing] from the [woundname]</ROM_Maneuver_Psychic.rulePack.rulesStrings.3>
+  <ROM_Maneuver_Psychic.rulePack.rulesStrings.4>flavortext_situation(p=2,recipient_flesh!=Mechanoid)-&gt;with [ROMgore] [ROMexposed] from the [woundname]</ROM_Maneuver_Psychic.rulePack.rulesStrings.4>
+  <ROM_Maneuver_Psychic.rulePack.rulesStrings.5>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)-&gt;and [ROMexposing] [ROMtheflesh] [ROMunderneath]</ROM_Maneuver_Psychic.rulePack.rulesStrings.5>
+  <ROM_Maneuver_Psychic.rulePack.rulesStrings.6>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)-&gt;and [ROMexposing] a [ROMhorrible] [woundname]</ROM_Maneuver_Psychic.rulePack.rulesStrings.6>
+  <ROM_Maneuver_Psychic.rulePack.rulesStrings.7>flavortext_consequence(p=2,recipient_flesh==Mechanoid)-&gt;and exposing the machinery underneath</ROM_Maneuver_Psychic.rulePack.rulesStrings.7>
+  <ROM_Maneuver_Psychic.rulePack.rulesStrings.8>destroyed_suffix(p=2,recipient_flesh!=Mechanoid)-&gt;[to] messy [ROMstrips]</ROM_Maneuver_Psychic.rulePack.rulesStrings.8>
+  <ROM_Maneuver_Psychic.rulePack.rulesStrings.9>destroyed_suffix(p=4)-&gt;[to] [ROMstrips]</ROM_Maneuver_Psychic.rulePack.rulesStrings.9>
+  <ROM_Maneuver_Psychic.rulePack.rulesStrings.10>destroyed_suffix-&gt;[to] pieces</ROM_Maneuver_Psychic.rulePack.rulesStrings.10>
+  <ROM_Maneuver_Psychic.rulePack.rulesStrings.11>destroyed_suffix-&gt;[to] fragments</ROM_Maneuver_Psychic.rulePack.rulesStrings.11>
+  <ROM_Maneuver_Psychic.rulePack.rulesStrings.12>destroyed_suffix(recipient_flesh!=Mechanoid)-&gt;[to] a pile of gore</ROM_Maneuver_Psychic.rulePack.rulesStrings.12>
+</LanguageData>

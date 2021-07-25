@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <ROM_ConstrictMonstrous.label>일그러짐</ROM_ConstrictMonstrous.label>
-  <ROM_ConstrictMonstrous.deathMessage>{0}(은)는 일그러지며 사망했습니다.</ROM_ConstrictMonstrous.deathMessage>
-
-</LanguageData>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- 9/25/18 -->
+  <ROM_TradeSanityForMadness>Нервный срыв (восстанавливает рассудок)</ROM_TradeSanityForMadness>
+  <ROM_TradedSanityLossForMadness>{0} Поддался нервному срыву, однако это восстановило его рассудок.</ROM_TradedSanityLossForMadness>
+  <ROM_TradedSanityLossForMadnessFailed>{0} не смог отвлечься. Попробовать снова?</ROM_TradedSanityLossForMadnessFailed>
+  <!-- Cosmic Horror V1.5.3 -->
+  <CallOfCthulhuCosmicHorror>Call of Cthulhu - Cosmic Horrors</CallOfCthulhuCosmicHorror>
+  <cosmicHorrorEventsDelayObject>Задержать нашествия монстров на это количество дней</cosmicHorrorEventsDelayObject>
+  <cosmicHorrorEventsDelayObjectDesc>Эта настройка позволяет задерживать события с набегами космических тварей на X дней.</cosmicHorrorEventsDelayObjectDesc>
+  <!-- Cosmic Horror Raid Incident -->
+  <CosmicHorrorRaid>Нашествие монстров</CosmicHorrorRaid>
+  <CosmicHorrorRaidIncidentDesc>Ваших колонистов преследует что-то не из этого мира.</CosmicHorrorRaidIncidentDesc>
+  <!-- Star Vampire Incident -->
+  <StarVampireIncidentMessage>Вдалеке слышен дьявольский хохот - мерзкий и бесчеловечный. Что-то приближается!</StarVampireIncidentMessage>
+  <!-- Star Vampire Incident #2 -->
+  <StarVampireIncidentMessage2>Нечеловеческий хохот слышен уже близко. Приготовьтесь быстро!</StarVampireIncidentMessage2>
+  <!-- Dark Young Incident -->
+  <DarkYoungIncidentLabel>Странные твари</DarkYoungIncidentLabel>
+  <DarkYoungIncidentDesc>Несколько причудливых и омерзительных существ прибыли.</DarkYoungIncidentDesc>
+  <!-- Chthonian Pit -->
+  <DiscoveredDaysAgo>Обнаружена {0} дней назад</DiscoveredDaysAgo>
+  <CausingSanityLoss>Вызывает потерю здравомыслия.</CausingSanityLoss>
+  <NotCausingSanityLoss>Неактивна</NotCausingSanityLoss>
+  <!-- Chthonian Pit Buttons -->
+  <CommandPitSacrifice>Принести в жертву пленника</CommandPitSacrifice>
+  <CommandPitSacrificeDesc>Бросить пленника в яму и надеяться, что это удовлетворит монстра внутри.</CommandPitSacrificeDesc>
+  <NoPrisoners>Нет пленников, доступных для жертвоприношения.</NoPrisoners>
+  <CommandCancelPitSacrificeDesc>Отменить жертвоприношение и отправить всех по своим делам.</CommandCancelPitSacrificeDesc>
+  <PitSacrificeCancelled>Жертвоприношение отменено.</PitSacrificeCancelled>
+  <CommandFillHole>Закопать яму</CommandFillHole>
+  <CommandFillHoleActiveDesc>Случайный колонист попытается закопать яму. ВНИМАНИЕ - яма сейчас активна и КРАЙНЕ не рекомендуется браться за лопату!</CommandFillHoleActiveDesc>
+  <CommandFillHoleDesc>Случайный колонист попытается закопать яму.</CommandFillHoleDesc>
+  <ChthonianLarvaSpawned>Личинка выползла из черепа {0}.</ChthonianLarvaSpawned>
+  <!-- JobDriver_HaulSacrifice -->
+  <ChthonianPitSacrificeGathering>Сбор на ритуал жертвоприношения.</ChthonianPitSacrificeGathering>
+  <ChthonianPitSacrificeDropping>Подготовка к жертвоприношению {0}.</ChthonianPitSacrificeDropping>
+  <ChthonianPitSacrificeFinished>Завершение ритуала жертвоприношения.</ChthonianPitSacrificeFinished>
+  <!-- JobDriver_FillChthonianPit -->
+  <FillChthonianPitGoing>Идет к яме</FillChthonianPitGoing>
+  <FillChthonianPitFilling>Закапывает яму</FillChthonianPitFilling>
+  <FillChthonianPitFinshed>Завершает закапывание ямы</FillChthonianPitFinshed>
+  <!-- Chthonian Pit Messages -->
+  <ChthonianPitActivityStarted>Яма стала активной.</ChthonianPitActivityStarted>
+  <ChthonianPitActivityStopped>Яма прекратила активность.</ChthonianPitActivityStopped>
+  <CriesFromBelow>{0} слышит человеческие крики внизу {1} закапывая яму.</CriesFromBelow>
+  <ChthonianSacrificeReturnedLabel>Жертва возвращена</ChthonianSacrificeReturnedLabel>
+  <ChthonianSacrificeReturnedDesc>Удивительно, но наша жертва вернулась из ямы без серьезных повреждений.</ChthonianSacrificeReturnedDesc>
+</LanguageData>

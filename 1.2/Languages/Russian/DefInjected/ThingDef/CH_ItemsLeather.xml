@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- MiGo -->
+  <CH_Leather_MiGo.label>материя из ми-го</CH_Leather_MiGo.label>
+  <CH_Leather_MiGo.description>Вещество, извлеченное из внешней оболочки ми-го. Представляет собой форму материи, которая не встречается в естественных условиях нашего мира.</CH_Leather_MiGo.description>
+  <!-- Chthonian -->
+  <CH_Leather_Chthonian.label>хитин хтонианца</CH_Leather_Chthonian.label>
+  <CH_Leather_Chthonian.description>Вычищенный хитин хтонианца. Хороший материал для изготовления одежды и сумок.</CH_Leather_Chthonian.description>
+  <!-- Cthulhid -->
+  <CH_Leather_Cthulhid.label>кожа ктулхуида</CH_Leather_Cthulhid.label>
+  <CH_Leather_Cthulhid.description>Дубленая, высушенная и вычищенная кожа ктулхуида. Хороший материал для изготовления одежды и сумок.</CH_Leather_Cthulhid.description>
+  <!-- Dark Young -->
+  <CH_Leather_DarkYoung.label>кора темной молоди</CH_Leather_DarkYoung.label>
+  <CH_Leather_DarkYoung.description>Дубленая, высушенная и вычищенная кора темной молоди. Хороший материал для изготовления одежды и сумок.</CH_Leather_DarkYoung.description>
+  <!-- Deep One -->
+  <CH_Leather_DeepOne.label>шкура глубоководного</CH_Leather_DeepOne.label>
+  <CH_Leather_DeepOne.description>Дубленая, высушенная и вычищенная шкура глубоководного. Хороший материал для изготовления одежды и сумок.</CH_Leather_DeepOne.description>
+  <!-- Star Vampire -->
+  <CH_Leather_StarVampire.label>кожа звездного вампира</CH_Leather_StarVampire.label>
+  <CH_Leather_StarVampire.description>Дубленая, высушенная и вычищенная кожа звездного вампира. Хороший материал для изготовления одежды и сумок.</CH_Leather_StarVampire.description>
+</LanguageData>

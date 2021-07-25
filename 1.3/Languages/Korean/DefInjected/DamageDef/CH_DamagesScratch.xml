@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_ScratchMonstrous.label>흉측한 발톱</ROM_ScratchMonstrous.label>
+  <ROM_ScratchMonstrous.deathMessage>{0}(은)는 발톱에 찢겨 사망했습니다.</ROM_ScratchMonstrous.deathMessage>
+</LanguageData>

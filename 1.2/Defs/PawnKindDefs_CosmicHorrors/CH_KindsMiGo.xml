@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- MIGO -->
+  <!-- KIND DEFS -->
+  <PawnKindDef>
+    <defName>ROM_MiGo</defName>
+    <label>MiGo Drone</label>
+    <race>ROM_MiGo</race>
+    <combatPower>80</combatPower>
+    <defaultFactionType>ROM_MiGo</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.0</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.2</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <modExtensions>
+      <li Class="CompExtraSounds.DefModExtension_ExtraSounds">
+        <soundHitPawn>Pawn_ROM_MiGo_Attack</soundHitPawn>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef>
+    <defName>ROM_MiGoCaster</defName>
+    <label>MiGo Caster</label>
+    <race>ROM_MiGo</race>
+    <combatPower>315</combatPower>
+    <defaultFactionType>ROM_MiGo</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.0</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.2</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/CosmicHorrors/CallOfCthulhu_MiGo</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.4</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>
+      <min>5000</min>
+      <max>5000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MiGoGunLow</li>
+    </weaponTags>
+    <modExtensions>
+      <li Class="CompExtraSounds.DefModExtension_ExtraSounds">
+        <soundHitPawn>Pawn_ROM_MiGo_Attack</soundHitPawn>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <!-- RACE DEFS -->
+  <ThingDef ParentName="BaseCosmicHorrorRaceInit">
+    <defName>ROM_MiGo</defName>
+    <label>MiGo</label>
+    <description>An insectile fungus with vast membranous wings, numerous segmented limbs and a forest of stubby antenna for a head. They are of an inquisitive mind and seek the brains of lesser species to further their understanding. They are known to search out planets that contain minerals their own worlds lack.</description>
+    <statBases>
+      <Mass>70</Mass>
+      <MoveSpeed>5.0</MoveSpeed>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+    </statBases>
+    <techLevel>Animal</techLevel>
+    <tools>
+      <li>
+        <label>legs</label>
+        <capacities>
+          <li>ROM_ScratchMonstrous</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>0.55</cooldownTime>
+        <linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>overwhelming mind</label>
+        <capacities>
+          <li>ROM_Psychic</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_Mind</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>body</label>
+        <capacities>
+          <li>ROM_BluntMonstrous</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>ROM_Wings</linkedBodyPartsGroup>
+        <chanceFactor>0.33</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <bloodDef>ROM_Filth_BloodMiGo</bloodDef>
+      <hasGenders>false</hasGenders>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Animal</thinkTreeMain>
+      <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+      <body>ROM_MiGoBody</body>
+      <foodType>OmnivoreAnimal, AnimalProduct</foodType>
+      <leatherDef>CH_Leather_MiGo</leatherDef>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>0.8</baseHealthScale>
+      <lifeExpectancy>1200</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>ROM_Spawn</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>ROM_FullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_ROM_MiGo_Wounded</soundWounded>
+          <soundDeath>Pawn_ROM_MiGo_Death</soundDeath>
+          <soundCall>Pawn_ROM_MiGo_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+        <li>
+          <def>ROM_Ancient</def>
+          <minAge>500</minAge>
+        </li>
+        <li>
+          <def>ROM_Eldritch</def>
+          <minAge>1000</minAge>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>
+        <min>1000</min>
+        <max>2000</max>
+      </soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <ROM_RawCHFood_MiGoMeat>30</ROM_RawCHFood_MiGoMeat>
+    </butcherProducts>
+    <recipes>
+      <li>Euthanize</li>
+    </recipes>
+    <modExtensions>
+      <li Class="CosmicHorror.PawnExtension">
+        <invisible>false</invisible>
+        <regenRate>0.0</regenRate>
+        <regenInterval>0</regenInterval>
+        <sanityLossRate>0.008</sanityLossRate>
+        <painFactor>1</painFactor>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!-- WEAPONS -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>ROM_Bullet_MiGoCastingWeapon</defName>
+    <label>Rhombohedral Energy blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Charge_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(10,10)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>27</damageAmountBase>
+      <speed>120</speed>
+      <flyOverhead>false</flyOverhead>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseGun">
+    <defName>ROM_MiGoCastingWeapon</defName>
+    <label>Rhombohedral Energy Weapon</label>
+    <description>Mysterious diamond-shaped crystalline artifact.</description>
+    <graphicData>
+      <texPath>Item/Weapon/MiGoCasterWeapon</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>10</Mass>
+      <MarketValue>2500</MarketValue>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.88</AccuracyLong>
+      <RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
+    </statBases>
+    <tradeability>None</tradeability>
+    <techLevel>Neolithic</techLevel>
+    <menuHidden>True</menuHidden>
+    <destroyOnDrop>True</destroyOnDrop>
+    <weaponTags>
+      <li>MiGoGunLow</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ROM_Bullet_MiGoCastingWeapon</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>40</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>18</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

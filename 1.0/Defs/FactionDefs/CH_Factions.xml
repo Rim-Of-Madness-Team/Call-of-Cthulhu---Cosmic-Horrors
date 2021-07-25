@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef Name="ROMCH_HiddenFaction" Abstract="True">
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 0)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <humanlikeFaction>false</humanlikeFaction>
+    <hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>true</canUseAvoidGrid>
+    <techLevel>Animal</techLevel>
+    <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
+    <allowedArrivalTemperatureRange>
+      <min>-255</min>
+      <max>255</max>
+    </allowedArrivalTemperatureRange>
+  </FactionDef>
+  <FactionDef ParentName="ROMCH_HiddenFaction">
+    <defName>ROM_StarSpawn</defName>
+    <label>StarSpawn of Cthulhu</label>
+    <description>A race birthed from the Old One, Cthulhu, laying dead and dreaming at the bottom of the sunken city of R'lyeh.</description>
+    <pawnsPlural>StarSpawn of Cthulhu</pawnsPlural>
+    <fixedName>Sunken city of R'lyeh</fixedName>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ROM_StarSpawnOfCthulhu>100</ROM_StarSpawnOfCthulhu>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <permanentEnemy>true</permanentEnemy>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+  </FactionDef>
+  <FactionDef ParentName="ROMCH_HiddenFaction">
+    <defName>ROM_Shoggoth</defName>
+    <label>Shoggoths</label>
+    <description>Shoggoths are gigantic amorphous protoplasmic entities capable of shapeshifting new limbs, organs, mouths, and tentacles at will.</description>
+    <pawnsPlural>Shoggoths</pawnsPlural>
+    <fixedName>Mountains of Madness</fixedName>
+    <canUseAvoidGrid>false</canUseAvoidGrid>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ROM_Shoggoth>100</ROM_Shoggoth>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <permanentEnemy>true</permanentEnemy>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+  </FactionDef>
+  <FactionDef ParentName="ROMCH_HiddenFaction">
+    <defName>ROM_MiGo</defName>
+    <label>MiGo Outpost</label>
+    <description>MiGo are flying headless carapace-wrapped fungoid aliens that specialize in extraterrestrial brain surgery. Beware that flying enemies will avoid traps!</description>
+    <pawnsPlural>MiGo</pawnsPlural>
+    <fixedName>Outpost of the MiGo</fixedName>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ROM_MiGo>250</ROM_MiGo>
+          <ROM_MiGoCaster>100</ROM_MiGoCaster>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <permanentEnemy>true</permanentEnemy>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+  </FactionDef>
+  <FactionDef ParentName="ROMCH_HiddenFaction">
+    <defName>ROM_DeepOne</defName>
+    <label>Deep Ones</label>
+    <description>Deep Ones are humanoid-fish-frog hybrid monstrosities that like to claw their prey before biting their heads off using massive jaws.</description>
+    <pawnsPlural>Deep Ones</pawnsPlural>
+    <fixedName>Devil Reef</fixedName>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ROM_DeepOne>100</ROM_DeepOne>
+          <ROM_DeepOneGreat>100</ROM_DeepOneGreat>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <permanentEnemy>true</permanentEnemy>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+  </FactionDef>
+  <FactionDef ParentName="ROMCH_HiddenFaction">
+    <defName>ROM_StarVampire</defName>
+    <label>Star Vampires</label>
+    <description>...</description>
+    <pawnsPlural>Star Vampires</pawnsPlural>
+    <fixedName>Outer Space</fixedName>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ROM_StarVampire>100</ROM_StarVampire>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <permanentEnemy>true</permanentEnemy>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+  </FactionDef>
+  <FactionDef ParentName="ROMCH_HiddenFaction">
+    <defName>ROM_Chthonian</defName>
+    <label>Chthonian</label>
+    <description>Chthonians are described as resembling immense squids, with elongated worm-like bodies coated with slime. Despite their squid-like appearance, chthonians are actually land-dwellers and are even harmed by water. Chthonians are powerful burrowers which can live for more than a thousand years, and are protective of their young. It is said that a chanting sound accompanies every chthonian, and that by such they can be detected while underground and unseen.\n\nThe most important individual chthonian is the gigantic Shudde M'ell, which is worshiped by the rest, the largest and most malignant of this dread race. It is featured prominently in the aforementioned novel.</description>
+    <pawnsPlural>Chthonians</pawnsPlural>
+    <fixedName>Lost City of G'harne</fixedName>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ROM_DeepOne>100</ROM_DeepOne>
+          <ROM_DeepOneGreat>100</ROM_DeepOneGreat>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <permanentEnemy>true</permanentEnemy>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+  </FactionDef>
+  <!-- Cosmic Horror Player Sightable Faction -->
+  <FactionDef ParentName="ROMCH_HiddenFaction">
+    <defName>ROM_CosmicHorrors</defName>
+    <label>Cosmic Horrors</label>
+    <description>Creatures out of time and space bent on purging mankind from the universe.</description>
+    <pawnsPlural>horrors</pawnsPlural>
+    <fixedName>Unknown</fixedName>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ROM_DeepOne>100</ROM_DeepOne>
+          <ROM_DeepOneGreat>100</ROM_DeepOneGreat>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <permanentEnemy>true</permanentEnemy>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+  </FactionDef>
+</Defs>

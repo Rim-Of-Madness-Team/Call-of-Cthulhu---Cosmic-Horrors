@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- RACE DEFS -->
+  <ROM_DeepOne.label>глубоководный</ROM_DeepOne.label>
+  <ROM_DeepOne.description>Гуманоид с головой рыбы, телом лягушки, большими выпученными глазами и перепончатыми руками. У них мощные чешуйчатые тела, способные выдерживать давление океана.</ROM_DeepOne.description>
+  <ROM_DeepOne.tools.0.label>левая лапа</ROM_DeepOne.tools.0.label>
+  <ROM_DeepOne.tools.1.label>правая лапа</ROM_DeepOne.tools.1.label>
+  <ROM_DeepOne.tools.2.label>зубы</ROM_DeepOne.tools.2.label>
+  <ROM_DeepOne.tools.3.label>голова</ROM_DeepOne.tools.3.label>
+  <ROM_DeepOneGreat.label>великий глубоководный</ROM_DeepOneGreat.label>
+  <ROM_DeepOneGreat.description>Гуманоид с огромной головой рыбы, телом лягушки, большими выпученными глазами, острыми плавниками и перепончатыми руками. У них мощные чешуйчатые тела, способные выдерживать давление океана.</ROM_DeepOneGreat.description>
+  <ROM_DeepOneGreat.tools.0.label>левая лапа</ROM_DeepOneGreat.tools.0.label>
+  <ROM_DeepOneGreat.tools.1.label>правая лапа</ROM_DeepOneGreat.tools.1.label>
+  <ROM_DeepOneGreat.tools.2.label>зубы</ROM_DeepOneGreat.tools.2.label>
+  <ROM_DeepOneGreat.tools.3.label>голова</ROM_DeepOneGreat.tools.3.label>
+</LanguageData>

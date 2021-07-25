@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Strange Food -->
+  <ROM_StrangeMealSimple.label>странное простое блюдо</ROM_StrangeMealSimple.label>
+  <ROM_StrangeMealSimple.description>Простое блюдо, на скорую руку сделанное из...странных ингредиентов.</ROM_StrangeMealSimple.description>
+  <ROM_StrangeMealFine.label>странное вкусное блюдо</ROM_StrangeMealFine.label>
+  <ROM_StrangeMealFine.description>Сложное блюдо, тщательно собранное из широкого ассортимента...странных ингредиентов.</ROM_StrangeMealFine.description>
+  <ROM_StrangeMealLavish.label>странное шикарное блюдо</ROM_StrangeMealLavish.label>
+  <ROM_StrangeMealLavish.description>Шедевр...кулинарного искусства...Это блюдо питает тело, разум и...душу.</ROM_StrangeMealLavish.description>
+  <ROM_StrangeKibble.label>странный комбикорм</ROM_StrangeKibble.label>
+  <ROM_StrangeKibble.description>Комбикорм для животных, сделанный из смеси растений и....мяса.</ROM_StrangeKibble.description>
+  <ROM_RawCHFood_Meat.label>неприкасаемое мясо</ROM_RawCHFood_Meat.label>
+  <ROM_RawCHFood_Meat.description>Мерзкое на вид мясо чудовища.</ROM_RawCHFood_Meat.description>
+  <ROM_RawCHFood_CthulhidMeat.label>мясо ктулхуида</ROM_RawCHFood_CthulhidMeat.label>
+  <ROM_RawCHFood_CthulhidMeat.description>Сырое мясо ктулхуида.
+	
+Плоть ктулхуида - это гнилостный, жидковатый комок мяса, которые источает мерзкий, непереносимый запах. Ктулхуидское мясо имеет вкус кофе, который месяцами бродил в жестяной банке с заплесневевшим табаком. При употреблении блюд с этим мясом появится бездонное чувство сожаления. В основном это будет связано со вкусом этих блюд.</ROM_RawCHFood_CthulhidMeat.description>
+  <ROM_RawCHFood_DeepOneMeat.label>мясо глубоководного</ROM_RawCHFood_DeepOneMeat.label>
+  <ROM_RawCHFood_DeepOneMeat.description>Сырое мясо глубоководного.
+	
+Пообедать плотью глубоководного - значит съесть что-то жесткое и студенистое одновременно. Как если бы вы проглотили крабов с мягким панцирем, обмакнутых в нефть. При употреблении этого мяса появится чувство ужаса и беспокойства.</ROM_RawCHFood_DeepOneMeat.description>
+  <ROM_RawCHFood_MiGoMeat.label>мясо ми-го</ROM_RawCHFood_MiGoMeat.label>
+  <ROM_RawCHFood_MiGoMeat.description>Сырое мясо ми-го.
+	
+Мясо миго на самом деле не является мясом. Это мясистый гриб с губчатой структурой и вкусом насекомых, сочащийся маслом из мясистых волокон. Многие дегустаторы описывают опыт поедания этого гриба, как "напоминающий особенно скучную лекцию по биологии". Те же, кто едят его постоянно, сообщают, что страдают ночными кошмарами, в которых видят далекие неземные пейзажи, усеянные бестелесными мозгами в прозрачных контейнерах. Сновидец приглашается присоединиться к ним и испытать невероятные чудеса.</ROM_RawCHFood_MiGoMeat.description>
+  <ROM_RawCHFood_ShoggothMeat.label>мясо шоггота</ROM_RawCHFood_ShoggothMeat.label>
+  <ROM_RawCHFood_ShoggothMeat.description>Сырое мясо шоггота.
+	
+Мясо шоггота жесткое, соленое, эластичное и напоминает мидий, пропитанных соленой морской водой, в которой они трепещут. Вкус сильно отдает рыбой, пропитанной какой-то слизью. Если удалить слизь, то вкус станет заметно лучше, но привкус рыбы останется. Если съесть достаточно мяса шоггота, то звук плещушейся со всех сторон воды будет преследовать едока, а также появится ощущения зрения во все стороны и углы сразу.</ROM_RawCHFood_ShoggothMeat.description>
+  <ROM_RawCHFood_StarVampireMeat.label>мясо звездного вампира</ROM_RawCHFood_StarVampireMeat.label>
+  <ROM_RawCHFood_StarVampireMeat.description>Сырое мясо звездного вампира.
+	
+Мраморность мяса звездного вампира варьируется от некомфортного количества внутримышечного жира до совершенно непристойной его доли. Если кто-то сможет обойти жир и добраться до мяса, то он почувствует вкус железа и лакрицы, а если мяса приготовить без удаления жира, то жир расплавится и придаст мясу сладость и пикантный аромат. Однако за такую изысканную кухню приходится платить особенную цену. Отведавшие такого мяса часто бегают и кричат, сообщая о видениях крови, текущей из стен, шкафов и глаз своих друзей и близких.</ROM_RawCHFood_StarVampireMeat.description>
+  <ROM_RawCHFood_DarkYoungMeat.label>мясо темной молоди</ROM_RawCHFood_DarkYoungMeat.label>
+  <ROM_RawCHFood_DarkYoungMeat.description>Сырое мясо темной молоди. Напоминает говядину, сотню лет пролежавшую в дупле дерева.</ROM_RawCHFood_DarkYoungMeat.description>
+  <ROM_RawCHFood_ChthonianMeat.label>мясо хтонианца</ROM_RawCHFood_ChthonianMeat.label>
+  <ROM_RawCHFood_ChthonianMeat.description>Сырые мясные полоски хтонианца. Жесткие и отвратительные на вкус.</ROM_RawCHFood_ChthonianMeat.description>
+  <ROM_DarkYoungSap.label>сок темной молоди</ROM_DarkYoungSap.label>
+  <ROM_DarkYoungSap.description>Сладкий сок, выжат из отверстий одного из мерзких отродий Шаб-Ниггурата.</ROM_DarkYoungSap.description>
+</LanguageData>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BasePawn" Name="BaseCosmicHorrorRaceInit" Abstract="True">
+    <thingClass>CosmicHorror.CosmicHorrorPawn</thingClass>
+    <tradeability>None</tradeability>
+    <statBases>
+      <Mass>250</Mass>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <ToxicSensitivity>0</ToxicSensitivity>
+      <Flammability>2.0</Flammability>
+      <ComfyTemperatureMin>-950</ComfyTemperatureMin>
+      <ComfyTemperatureMax>950</ComfyTemperatureMax>
+      <MeatAmount>0</MeatAmount>
+      <LeatherAmount>37.5</LeatherAmount>
+    </statBases>
+    <race>
+      <bloodDef>ROM_Filth_BloodCosmicHorror</bloodDef>
+      <foodType>None</foodType>
+      <trainability>None</trainability>
+      <fleshType>ROM_StrangeFlesh</fleshType>
+      <useMeatFrom>Bear_Grizzly</useMeatFrom>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+      <needsRest>true</needsRest>
+      <hasGenders>true</hasGenders>
+      <hediffGiverSets>
+        <li>ROM_CosmicHorrorStandard</li>
+      </hediffGiverSets>
+    </race>
+    <recipes>
+      <li>ExciseCarcinoma</li>
+      <li>AdministerMechSerumHealer</li>
+      <li>RemoveBodyPart</li>
+      <li>Euthanize</li>
+      <li>Anesthetize</li>
+    </recipes>
+    <!--modExtensions>
+	  <li Class="CosmicHorror.PawnExtension">
+      <invisible>false</invisible>
+      <regenRate>0.0</regenRate>
+      <regenInterval>0</regenInterval>
+      <sanityLossRate>0.03</sanityLossRate>
+      <sanityLossMax>0.3</sanityLossMax>		
+	  </li>
+	</modExtensions-->
+  </ThingDef>
+</Defs>

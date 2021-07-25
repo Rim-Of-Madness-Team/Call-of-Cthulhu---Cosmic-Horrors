@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- KIND DEFS -->
+  <ROM_StarSpawnOfCthulhu.label>ктулхуид</ROM_StarSpawnOfCthulhu.label>
+  <ROM_StarSpawnOfCthulhu.labelPlural>ктулхуиды</ROM_StarSpawnOfCthulhu.labelPlural>
+  <ROM_StarSpawnOfCthulhu.lifeStages.0.label>отродье ктулхуида</ROM_StarSpawnOfCthulhu.lifeStages.0.label>
+  <ROM_StarSpawnOfCthulhu.lifeStages.0.labelPlural>отродья ктулхуида</ROM_StarSpawnOfCthulhu.lifeStages.0.labelPlural>
+  <ROM_StarSpawnOfCthulhu.lifeStages.0.labelMale>отродье ктулхуида</ROM_StarSpawnOfCthulhu.lifeStages.0.labelMale>
+  <ROM_StarSpawnOfCthulhu.lifeStages.0.labelMalePlural>отродья ктулхуида</ROM_StarSpawnOfCthulhu.lifeStages.0.labelMalePlural>
+  <ROM_StarSpawnOfCthulhu.lifeStages.0.labelFemale>отродье ктулхуида</ROM_StarSpawnOfCthulhu.lifeStages.0.labelFemale>
+  <ROM_StarSpawnOfCthulhu.lifeStages.0.labelFemalePlural>отродья ктулхуида</ROM_StarSpawnOfCthulhu.lifeStages.0.labelFemalePlural>
+  <ROM_StarSpawnOfCthulhu.lifeStages.1.label>младой ктулхуид</ROM_StarSpawnOfCthulhu.lifeStages.1.label>
+  <ROM_StarSpawnOfCthulhu.lifeStages.1.labelPlural>младые ктулхуиды</ROM_StarSpawnOfCthulhu.lifeStages.1.labelPlural>
+  <ROM_StarSpawnOfCthulhu.lifeStages.1.labelMale>младой ктулхуид</ROM_StarSpawnOfCthulhu.lifeStages.1.labelMale>
+  <ROM_StarSpawnOfCthulhu.lifeStages.1.labelMalePlural>младые ктулхуиды</ROM_StarSpawnOfCthulhu.lifeStages.1.labelMalePlural>
+  <ROM_StarSpawnOfCthulhu.lifeStages.1.labelFemale>младой ктулхуид</ROM_StarSpawnOfCthulhu.lifeStages.1.labelFemale>
+  <ROM_StarSpawnOfCthulhu.lifeStages.1.labelFemalePlural>младые ктулхуиды</ROM_StarSpawnOfCthulhu.lifeStages.1.labelFemalePlural>
+  <ROM_StarSpawnOfCthulhu.lifeStages.2.label>ктулхуид</ROM_StarSpawnOfCthulhu.lifeStages.2.label>
+  <ROM_StarSpawnOfCthulhu.lifeStages.2.labelPlural>ктулхуиды</ROM_StarSpawnOfCthulhu.lifeStages.2.labelPlural>
+  <ROM_StarSpawnOfCthulhu.lifeStages.2.labelMale>ктулхуид</ROM_StarSpawnOfCthulhu.lifeStages.2.labelMale>
+  <ROM_StarSpawnOfCthulhu.lifeStages.2.labelMalePlural>ктулхуиды</ROM_StarSpawnOfCthulhu.lifeStages.2.labelMalePlural>
+  <ROM_StarSpawnOfCthulhu.lifeStages.2.labelFemale>ктулхуид</ROM_StarSpawnOfCthulhu.lifeStages.2.labelFemale>
+  <ROM_StarSpawnOfCthulhu.lifeStages.2.labelFemalePlural>ктулхуиды</ROM_StarSpawnOfCthulhu.lifeStages.2.labelFemalePlural>
+  <ROM_StarSpawnOfCthulhu.lifeStages.3.label>ктулхуид</ROM_StarSpawnOfCthulhu.lifeStages.3.label>
+  <ROM_StarSpawnOfCthulhu.lifeStages.3.labelPlural>ктулхуиды</ROM_StarSpawnOfCthulhu.lifeStages.3.labelPlural>
+  <ROM_StarSpawnOfCthulhu.lifeStages.3.labelMale>ктулхуид</ROM_StarSpawnOfCthulhu.lifeStages.3.labelMale>
+  <ROM_StarSpawnOfCthulhu.lifeStages.3.labelMalePlural>ктулхуиды</ROM_StarSpawnOfCthulhu.lifeStages.3.labelMalePlural>
+  <ROM_StarSpawnOfCthulhu.lifeStages.3.labelFemale>ктулхуид</ROM_StarSpawnOfCthulhu.lifeStages.3.labelFemale>
+  <ROM_StarSpawnOfCthulhu.lifeStages.3.labelFemalePlural>ктулхуиды</ROM_StarSpawnOfCthulhu.lifeStages.3.labelFemalePlural>
+  <ROM_StarSpawnOfCthulhu.labelMale>ктулхуид</ROM_StarSpawnOfCthulhu.labelMale>
+  <ROM_StarSpawnOfCthulhu.labelMalePlural>ктулхуиды</ROM_StarSpawnOfCthulhu.labelMalePlural>
+  <ROM_StarSpawnOfCthulhu.labelFemale>ктулхуид</ROM_StarSpawnOfCthulhu.labelFemale>
+  <ROM_StarSpawnOfCthulhu.labelFemalePlural>ктулхуиды</ROM_StarSpawnOfCthulhu.labelFemalePlural>
+</LanguageData>

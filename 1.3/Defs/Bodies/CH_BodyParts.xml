@@ -1,0 +1,788 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+   ██████  ██████   ██████  ██    ██ ██████  ███████
+  ██       ██   ██ ██    ██ ██    ██ ██   ██ ██
+  ██   ███ ██████  ██    ██ ██    ██ ██████  ███████
+  ██    ██ ██   ██ ██    ██ ██    ██ ██           ██
+   ██████  ██   ██  ██████   ██████  ██      ███████
+ -->
+  <BodyPartGroupDef>
+    <defName>ROM_BodyAttackTool</defName>
+    <label>body</label>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>ROM_Wings</defName>
+    <label>both wings</label>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>ROM_Claws</defName>
+    <label>claws</label>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>ROM_LeftClaws</defName>
+    <label>left claw</label>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>ROM_RightClaws</defName>
+    <label>right claw</label>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>ROM_Hooves</defName>
+    <label>hooves</label>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>ROM_Tentacles</defName>
+    <label>mass of tentacles</label>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>ROM_Mind</defName>
+    <label>overwhelming mind</label>
+  </BodyPartGroupDef>
+  <!--
+   ██████ ██       █████  ██     ██ ███████
+  ██      ██      ██   ██ ██     ██ ██
+  ██      ██      ███████ ██  █  ██ ███████
+  ██      ██      ██   ██ ██ ███ ██      ██
+   ██████ ███████ ██   ██  ███ ███  ███████
+ -->
+  <BodyPartDef>
+    <defName>ROM_LeftClaw</defName>
+    <label>left claw</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>0.5</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_RightClaw</defName>
+    <label>right claw</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>0.5</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+  <!--
+  ██      ███████  ██████  ███████
+  ██      ██      ██       ██
+  ██      █████   ██   ███ ███████
+  ██      ██      ██    ██      ██
+  ███████ ███████  ██████  ███████
+-->
+  <BodyPartDef>
+    <defName>ROM_LeftFlipper</defName>
+    <label>left flipper</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>0.5</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_RightFlipper</defName>
+    <label>right flipper</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>0.5</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_Leg</defName>
+    <label>leg</label>
+    <frostbiteVulnerability>0.01</frostbiteVulnerability>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_LegFirst</defName>
+    <label>leg (first)</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_LegSecond</defName>
+    <label>leg (second)</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_LegThird</defName>
+    <label>leg (third)</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  <!--
+  ██   ██  ██████   ██████  ██    ██ ███████ ███████
+  ██   ██ ██    ██ ██    ██ ██    ██ ██      ██
+  ███████ ██    ██ ██    ██ ██    ██ █████   ███████
+  ██   ██ ██    ██ ██    ██  ██  ██  ██           ██
+  ██   ██  ██████   ██████    ████   ███████ ███████
+-->
+  <BodyPartDef Name="ROM_Hoof">
+    <defName>ROM_Hoof</defName>
+    <label>hoof</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>6</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <alive>false</alive>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Hoof">
+    <defName>ROM_HoofSecond</defName>
+    <label>hoof (second)</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Hoof">
+    <defName>ROM_HoofThird</defName>
+    <label>hoof (third)</label>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_DorsalFin</defName>
+    <label>dorsal fin</label>
+    <hitPoints>7</hitPoints>
+    <frostbiteVulnerability>0.6</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+  </BodyPartDef>
+  <!--
+  ████████ ███████ ███    ██ ████████
+     ██    ██      ████   ██    ██
+     ██    █████   ██ ██  ██    ██
+     ██    ██      ██  ██ ██    ██
+     ██    ███████ ██   ████    ██
+  -->
+  <BodyPartDef Name="ROM_Tentacle">
+    <defName>ROM_Tentacle</defName>
+    <label>tentacle</label>
+    <hitPoints>7</hitPoints>
+    <frostbiteVulnerability>8</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Tentacle">
+    <defName>ROM_TentacleFirst</defName>
+    <label>tentacle (first)</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Tentacle">
+    <defName>ROM_TentacleSecond</defName>
+    <label>tentacle (second)</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Tentacle">
+    <defName>ROM_TentacleThird</defName>
+    <label>tentacle (third)</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Tentacle">
+    <defName>ROM_TentacleFourth</defName>
+    <label>tentacle (fourth)</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Tentacle">
+    <defName>ROM_TentacleFifth</defName>
+    <label>tentacle (fifth)</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Tentacle">
+    <defName>ROM_TentacleSixth</defName>
+    <label>tentacle (sixth)</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Tentacle">
+    <defName>ROM_TentacleSeventh</defName>
+    <label>tentacle (seventh)</label>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_TentacleFlight</defName>
+    <label>tentacle</label>
+    <hitPoints>7</hitPoints>
+    <frostbiteVulnerability>8</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_LeftWing</defName>
+    <label>left wing</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_RightWing</defName>
+    <label>right wing</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+  <!--
+  ███    ███  █████  ██     ██
+  ████  ████ ██   ██ ██     ██
+  ██ ████ ██ ███████ ██  █  ██
+  ██  ██  ██ ██   ██ ██ ███ ██
+  ██      ██ ██   ██  ███ ███
+-->
+  <BodyPartDef>
+    <defName>ROM_MawHuge</defName>
+    <label>massive maw</label>
+    <hitPoints>40</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>EatingSource</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef Name="ROM_Maw">
+    <defName>ROM_Maw</defName>
+    <label>large maw</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>EatingSource</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Maw">
+    <defName>ROM_MawSecond</defName>
+    <label>zipper-shaped maw</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Maw">
+    <defName>ROM_MawThird</defName>
+    <label>overbite maw</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Maw">
+    <defName>ROM_MawFourth</defName>
+    <label>underbite maw</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Maw">
+    <defName>ROM_MawFifth</defName>
+    <label>toothless maw</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Maw">
+    <defName>ROM_MawSixth</defName>
+    <label>malformed maw</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Maw">
+    <defName>ROM_MawSeventh</defName>
+    <label>scissor-shaped maw</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Maw">
+    <defName>ROM_MawEighth</defName>
+    <label>elongated maw</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Maw">
+    <defName>ROM_MawNinth</defName>
+    <label>crooked maw</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Maw">
+    <defName>ROM_MawTenth</defName>
+    <label>gumless maw</label>
+  </BodyPartDef>
+  <!--
+    ███████ ██    ██ ███████ ███████
+    ██       ██  ██  ██      ██
+    █████     ████   █████   ███████
+    ██         ██    ██           ██
+    ███████    ██    ███████ ███████
+  -->
+  <BodyPartDef Name="ROM_Eye">
+    <defName>ROM_Eye</defName>
+    <label>eye</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+    <hitChanceFactors>
+      <li>
+        <key>Blunt</key>
+        <value>0</value>
+      </li>
+    </hitChanceFactors>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Eye">
+    <defName>ROM_EyeSecond</defName>
+    <label>malformed eye</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Eye">
+    <defName>ROM_EyeThird</defName>
+    <label>pupula duplex eye</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Eye">
+    <defName>ROM_EyeFourth</defName>
+    <label>recessed eye</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Eye">
+    <defName>ROM_EyeFifth</defName>
+    <label>bulbous eye</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Eye">
+    <defName>ROM_EyeSixth</defName>
+    <label>bloodshot eye</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Eye">
+    <defName>ROM_EyeSeventh</defName>
+    <label>dominant eye</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Eye">
+    <defName>ROM_EyeEighth</defName>
+    <label>rapid-movement eye</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Eye">
+    <defName>ROM_EyeNinth</defName>
+    <label>over-developed eye</label>
+  </BodyPartDef>
+  <BodyPartDef ParentName="ROM_Eye">
+    <defName>ROM_EyeTenth</defName>
+    <label>split eye</label>
+  </BodyPartDef>
+  <!--
+  ███████ ███████ ███    ██ ███████
+  ██      ██      ████   ██ ██
+  ███████ █████   ██ ██  ██ ███████
+       ██ ██      ██  ██ ██      ██
+  ███████ ███████ ██   ████ ███████
+-->
+  <BodyPartDef>
+    <defName>ROM_Feeler</defName>
+    <label>feeler</label>
+    <hitPoints>5</hitPoints>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+      <li>HearingSource</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_Internal_LeftEar</defName>
+    <label>internal left ear</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0.024</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>HearingSource</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_Internal_RightEar</defName>
+    <label>internal left ear</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0.024</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>HearingSource</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_Nostril</defName>
+    <label>nostril</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+  </BodyPartDef>
+  <!--
+   ██████  ██████   ██████  ███████
+  ██    ██ ██   ██ ██       ██
+  ██    ██ ██████  ██   ███ ███████
+  ██    ██ ██   ██ ██    ██      ██
+   ██████  ██   ██  ██████  ███████
+ -->
+  <BodyPartDef>
+    <defName>ROM_FlightOrgan</defName>
+    <label>flight organ</label>
+    <hitPoints>40</hitPoints>
+    <frostbiteVulnerability>0.5</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_Gills</defName>
+    <label>gills</label>
+    <hitPoints>7</hitPoints>
+    <frostbiteVulnerability>8</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>BreathingPathway</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_ShapeshiftingOrgan</defName>
+    <label>shapeshifting organ</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>HearingSource</li>
+      <li>MetabolismSource</li>
+      <li>BreathingSource</li>
+      <li>BloodFiltrationSource</li>
+      <li>BloodFiltrationLiver</li>
+      <li>BloodFiltrationKidney</li>
+      <li>EatingPathway</li>
+      <li>BloodPumpingSource</li>
+      <li>ConsciousnessSource</li>
+      <li>SightSource</li>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+      <li>TalkingSource</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_Kidney</defName>
+    <label>kidney</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <bleedRate>1.3</bleedRate>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>BloodFiltrationKidney</li>
+    </tags>
+    <spawnThingOnRemoved>Kidney</spawnThingOnRemoved>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_KidneySecond</defName>
+    <label>kidney (second)</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <bleedRate>1.3</bleedRate>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>BloodFiltrationKidney</li>
+    </tags>
+    <spawnThingOnRemoved>Kidney</spawnThingOnRemoved>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_Lung</defName>
+    <label>lung</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <bleedRate>1.3</bleedRate>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>BreathingSource</li>
+    </tags>
+    <spawnThingOnRemoved>Lung</spawnThingOnRemoved>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_LungSecond</defName>
+    <label>lung (second)</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+    <bleedRate>1.3</bleedRate>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>BreathingSource</li>
+    </tags>
+    <spawnThingOnRemoved>Lung</spawnThingOnRemoved>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_Sucker</defName>
+    <label>sucker</label>
+    <hitPoints>5</hitPoints>
+    <bleedRate>0</bleedRate>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>EatingSource</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_SporeHead</defName>
+    <label>spore structure</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <tags>
+      <li>SightSource</li>
+      <li>HearingSource</li>
+    </tags>
+    <skinCovered>false</skinCovered>
+  </BodyPartDef>
+  <!--
+  ██████  ██████   █████  ██ ███    ██
+  ██   ██ ██   ██ ██   ██ ██ ████   ██
+  ██████  ██████  ███████ ██ ██ ██  ██
+  ██   ██ ██   ██ ██   ██ ██ ██  ██ ██
+  ██████  ██   ██ ██   ██ ██ ██   ████
+-->
+  <BodyPartDef>
+    <defName>ROM_PsionicLobe</defName>
+    <label>psionic cortex</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <tags>
+      <li>ConsciousnessSource</li>
+      <li>TalkingSource</li>
+      <li>HearingSource</li>
+      <li>SightSource</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_FrontalLobe</defName>
+    <label>frontal lobe</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <tags>
+      <li>ConsciousnessSource</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_ParietalLobe</defName>
+    <label>parietal lobe</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <tags>
+      <li>ConsciousnessSource</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_OccipitalLobe</defName>
+    <label>occipital lobe</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>ConsciousnessSource</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_TemporalLobe</defName>
+    <label>temporal lobe</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>ConsciousnessSource</li>
+      <li>TalkingSource</li>
+      <li>HearingSource</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_BrainStem</defName>
+    <label>brain stem</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>1</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>ConsciousnessSource</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+  <!--
+  ██     ██  ██████  ██████  ███    ███
+  ██     ██ ██    ██ ██   ██ ████  ████
+  ██  █  ██ ██    ██ ██████  ██ ████ ██
+  ██ ███ ██ ██    ██ ██   ██ ██  ██  ██
+   ███ ███   ██████  ██   ██ ██      ██
+ -->
+  <BodyPartDef>
+    <defName>ROM_ChthonianFirstRing</defName>
+    <label>first body ring</label>
+    <hitPoints>100</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <alive>true</alive>
+    <tags>
+      <li>HearingSource</li>
+      <li>MetabolismSource</li>
+      <li>BreathingSource</li>
+      <li>BloodFiltrationLiver</li>
+      <li>BloodFiltrationKidney</li>
+      <li>EatingSource</li>
+      <li>BloodPumpingSource</li>
+      <li>ConsciousnessSource</li>
+      <li>SightSource</li>
+      <li>HearingSource</li>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_ChthonianSecondRing</defName>
+    <label>second body ring</label>
+    <hitPoints>100</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <alive>true</alive>
+    <tags>
+      <li>HearingSource</li>
+      <li>MetabolismSource</li>
+      <li>BreathingSource</li>
+      <li>BloodFiltrationLiver</li>
+      <li>BloodFiltrationKidney</li>
+      <li>EatingSource</li>
+      <li>BloodPumpingSource</li>
+      <li>ConsciousnessSource</li>
+      <li>SightSource</li>
+      <li>HearingSource</li>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_ChthonianThirdRing</defName>
+    <label>third body ring</label>
+    <hitPoints>100</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <alive>true</alive>
+    <tags>
+      <li>HearingSource</li>
+      <li>MetabolismSource</li>
+      <li>BreathingSource</li>
+      <li>BloodFiltrationLiver</li>
+      <li>BloodFiltrationKidney</li>
+      <li>EatingSource</li>
+      <li>BloodPumpingSource</li>
+      <li>ConsciousnessSource</li>
+      <li>SightSource</li>
+      <li>HearingSource</li>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_ChthonianFourthRing</defName>
+    <label>fourth body ring</label>
+    <hitPoints>100</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <alive>true</alive>
+    <tags>
+      <li>HearingSource</li>
+      <li>MetabolismSource</li>
+      <li>BreathingSource</li>
+      <li>BloodFiltrationLiver</li>
+      <li>BloodFiltrationKidney</li>
+      <li>EatingSource</li>
+      <li>BloodPumpingSource</li>
+      <li>ConsciousnessSource</li>
+      <li>SightSource</li>
+      <li>HearingSource</li>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_ChthonianFifthRing</defName>
+    <label>fifth body ring</label>
+    <hitPoints>100</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <bleedRate>0</bleedRate>
+    <solid>true</solid>
+    <alive>true</alive>
+    <tags>
+      <li>HearingSource</li>
+      <li>MetabolismSource</li>
+      <li>BreathingSource</li>
+      <li>BloodFiltrationLiver</li>
+      <li>BloodFiltrationKidney</li>
+      <li>EatingSource</li>
+      <li>BloodPumpingSource</li>
+      <li>ConsciousnessSource</li>
+      <li>SightSource</li>
+      <li>HearingSource</li>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>ROM_ChthonianSixthRing</defName>
+    <label>sixth body ring</label>
+    <hitPoints>100</hitPoints>
+    <bleedRate>0</bleedRate>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <solid>true</solid>
+    <alive>true</alive>
+    <tags>
+      <li>HearingSource</li>
+      <li>MetabolismSource</li>
+      <li>BreathingSource</li>
+      <li>BloodFiltrationLiver</li>
+      <li>BloodFiltrationKidney</li>
+      <li>EatingSource</li>
+      <li>BloodPumpingSource</li>
+      <li>ConsciousnessSource</li>
+      <li>SightSource</li>
+      <li>HearingSource</li>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+</Defs>

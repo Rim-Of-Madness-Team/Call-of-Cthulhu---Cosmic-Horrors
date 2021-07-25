@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- RACE DEFS -->
+  <ROM_Cthulhid.label>ктулхуид</ROM_Cthulhid.label>
+  <ROM_Cthulhid.description>Восьминогие гуманоиды, воплощенные в образе самого великого Ктулху и связанные с его разумом. Они словно насмешка над человеческим видом - с щупальцами на голове, чешуйчатым телом и рудиментарными крыльями летучей мыши. Несмотря на то, что они значительно меньше по размеру своего хозяина, они во много раз выше человека. Служат воле Великого Древного, пока он спит.</ROM_Cthulhid.description>
+  <ROM_Cthulhid.tools.0.label>крылья</ROM_Cthulhid.tools.0.label>
+  <ROM_Cthulhid.tools.1.label>левая лапа</ROM_Cthulhid.tools.1.label>
+  <ROM_Cthulhid.tools.2.label>правая лапа</ROM_Cthulhid.tools.2.label>
+  <ROM_Cthulhid.tools.3.label>орган ментального подавления</ROM_Cthulhid.tools.3.label>
+  <ROM_Cthulhid.tools.4.label>пасть</ROM_Cthulhid.tools.4.label>
+</LanguageData>

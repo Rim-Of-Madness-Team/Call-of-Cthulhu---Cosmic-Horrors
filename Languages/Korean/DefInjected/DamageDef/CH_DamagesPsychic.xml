@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <ROM_Psychic.label>정신 공격</ROM_Psychic.label>
-  <ROM_Psychic.deathMessage>{0}(은)는 정신 공격을 버티지 못하고 사망했습니다.</ROM_Psychic.deathMessage>
-
-</LanguageData>

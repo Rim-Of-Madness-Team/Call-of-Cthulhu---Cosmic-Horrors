@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Psychic.label>психическая атака</ROM_Psychic.label>
+  <ROM_Psychic.deathMessage>{0} {0_gender ? умер : умерла : умерло} от психического шока.</ROM_Psychic.deathMessage>
+</LanguageData>

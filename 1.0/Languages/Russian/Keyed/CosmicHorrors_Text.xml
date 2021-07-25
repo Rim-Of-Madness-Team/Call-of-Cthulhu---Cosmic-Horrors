@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Cosmic Horror V1.5.3 -->
+  <CallOfCthulhuCosmicHorror>Зов Ктулху - Космические ужасы</CallOfCthulhuCosmicHorror>
+  <cosmicHorrorEventsDelayObject>Задерживать нашествие монстров на несколько дней</cosmicHorrorEventsDelayObject>
+  <cosmicHorrorEventsDelayObjectDesc>Этот параметр будет задерживать пришествие космических ужасов на х дней.</cosmicHorrorEventsDelayObjectDesc>
+  <!-- Cosmic Horror Raid Incident -->
+  <CosmicHorrorRaid>Нашествие монстров</CosmicHorrorRaid>
+  <CosmicHorrorRaidIncidentDesc>Что-то потустороннее преследует ваших колонистов.</CosmicHorrorRaidIncidentDesc>
+  <!-- Star Vampire Incident -->
+  <StarVampireIncidentMessage>Вдалеке слышен дьявольский хохот, мерзкий и бесчеловечный. Что-то надвигается.</StarVampireIncidentMessage>
+  <!-- Star Vampire Incident #2 -->
+  <StarVampireIncidentMessage2>Нечеловеческй ужасный хохот приближается. Подготовьтесь быстро!</StarVampireIncidentMessage2>
+  <!-- Dark Young Incident -->
+  <DarkYoungIncidentLabel>Странные чудовища</DarkYoungIncidentLabel>
+  <DarkYoungIncidentDesc>Прибыло несколько причудливых тварей.</DarkYoungIncidentDesc>
+  <!-- Chthonian Pit -->
+  <DiscoveredDaysAgo>Открыто {0} дней назад</DiscoveredDaysAgo>
+  <CausingSanityLoss>Активно вызывает потерю здравомыслия.</CausingSanityLoss>
+  <NotCausingSanityLoss>Неактивно</NotCausingSanityLoss>
+  <!-- Chthonian Pit Buttons -->
+  <CommandPitSacrifice>Жертвоприношение заключённого</CommandPitSacrifice>
+  <CommandPitSacrificeDesc>Бросьте заключенного в яму, чтобы надежно удовлетворить монстра.</CommandPitSacrificeDesc>
+  <NoPrisoners>нет жертвы</NoPrisoners>
+  <CommandCancelPitSacrificeDesc>Нет заключенных, доступных для жертвоприношения.</CommandCancelPitSacrificeDesc>
+  <PitSacrificeCancelled>Жертвоприношение отменено.</PitSacrificeCancelled>
+  <CommandFillHole>Заполнить яму</CommandFillHole>
+  <CommandFillHoleActiveDesc>Случайный колонист попытается заполнить яму. ПРИМЕЧАНИЕ. Яма в настоящее время активна, и это СИЛЬНО не рекомендуется!</CommandFillHoleActiveDesc>
+  <CommandFillHoleDesc>Случайный колонист попытается заполнить яму.</CommandFillHoleDesc>
+  <ChthonianLarvaSpawned>Личинка прорвалась из черепа {0}.</ChthonianLarvaSpawned>
+  <!-- JobDriver_HaulSacrifice -->
+  <ChthonianPitSacrificeGathering>Сбор жертвоприношений</ChthonianPitSacrificeGathering>
+  <ChthonianPitSacrificeDropping>Подготовка к потере {0}</ChthonianPitSacrificeDropping>
+  <ChthonianPitSacrificeFinished>Завершение жертвоприношения.</ChthonianPitSacrificeFinished>
+  <!-- JobDriver_FillChthonianPit -->
+  <FillChthonianPitGoing>Переход в яму</FillChthonianPitGoing>
+  <FillChthonianPitFilling>Заполнение ямы</FillChthonianPitFilling>
+  <FillChthonianPitFinshed>Завершение заполнения ямы</FillChthonianPitFinshed>
+  <!-- Chthonian Pit Messages -->
+  <ChthonianPitActivityStarted>Яма активизировалась.</ChthonianPitActivityStarted>
+  <ChthonianPitActivityStopped>Яма прекратила всю деятельность.</ChthonianPitActivityStopped>
+  <CriesFromBelow>{0} может слышать человеческие крики снизу, как {1} лопаты в яме.</CriesFromBelow>
+  <ChthonianSacrificeReturnedLabel>Жертва возвращена</ChthonianSacrificeReturnedLabel>
+  <ChthonianSacrificeReturnedDesc>Удивительно, но наша жертва вернулась из ямы без серьёзных повреждений.</ChthonianSacrificeReturnedDesc>
+</LanguageData>

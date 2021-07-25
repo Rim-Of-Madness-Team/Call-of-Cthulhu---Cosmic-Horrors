@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>HPLovecraft_NamerAuthorMale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[authormale]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>authormale</keyword>
+          <path>NameBanks/Names_PoetsAuthorsArtists_Male</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>HPLovecraft_NamerAuthorFemale</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[authorfemale]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>authorfemale</keyword>
+          <path>NameBanks/Names_PoetsAuthorsArtists_Female</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+</Defs>

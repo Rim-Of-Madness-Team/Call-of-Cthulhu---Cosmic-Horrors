@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_DeepOne.label>Глубоководный</ROM_DeepOne.label>
+  <ROM_DeepOne.description>Это гуманоидная рыба с большими выпученными глазами и перепонкой. У них сильное чешуйчатое тело, достаточно развитое, чтобы противостоять давлению моря.</ROM_DeepOne.description>
+  <ROM_DeepOne.race.leatherLabel>Жёсткая кожа</ROM_DeepOne.race.leatherLabel>
+  <ROM_DeepOne_Leather.label>Кожа Глубоководного</ROM_DeepOne_Leather.label>
+  <ROM_DeepOneGreat.label>Великий Глубоководный</ROM_DeepOneGreat.label>
+  <ROM_DeepOneGreat.description>Это гуманоидная рыба с большими выпученными глазами и перепонкой. У них сильное чешуйчатое тело, достаточно развитое, чтобы противостоять давлению моря. Она крупнее обычного Глубоководного.</ROM_DeepOneGreat.description>
+  <ROM_DeepOneGreat.race.leatherLabel>Тяжёлая жёсткая кожа</ROM_DeepOneGreat.race.leatherLabel>
+  <ROM_DeepOneGreat_Leather.label>Кожа Великого Глубоководного</ROM_DeepOneGreat_Leather.label>
+</LanguageData>

@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- KIND DEFS -->
+  <ROM_StarVampire.label>звездный вампир</ROM_StarVampire.label>
+  <ROM_StarVampire.labelPlural>звездные вампиры</ROM_StarVampire.labelPlural>
+  <ROM_StarVampire.lifeStages.0.label>отродье звездного вампира</ROM_StarVampire.lifeStages.0.label>
+  <ROM_StarVampire.lifeStages.0.labelPlural>отродья звездного вампира</ROM_StarVampire.lifeStages.0.labelPlural>
+  <ROM_StarVampire.lifeStages.0.labelMale>отродье звездного вампира</ROM_StarVampire.lifeStages.0.labelMale>
+  <ROM_StarVampire.lifeStages.0.labelMalePlural>отродья звездного вампира</ROM_StarVampire.lifeStages.0.labelMalePlural>
+  <ROM_StarVampire.lifeStages.0.labelFemale>отродье звездного вампира</ROM_StarVampire.lifeStages.0.labelFemale>
+  <ROM_StarVampire.lifeStages.0.labelFemalePlural>отродья звездного вампира</ROM_StarVampire.lifeStages.0.labelFemalePlural>
+  <ROM_StarVampire.lifeStages.1.label>младой звездный вампир</ROM_StarVampire.lifeStages.1.label>
+  <ROM_StarVampire.lifeStages.1.labelPlural>младые звездные вампиры</ROM_StarVampire.lifeStages.1.labelPlural>
+  <ROM_StarVampire.lifeStages.1.labelMale>младой звездный вампир</ROM_StarVampire.lifeStages.1.labelMale>
+  <ROM_StarVampire.lifeStages.1.labelMalePlural>младые звездные вампиры</ROM_StarVampire.lifeStages.1.labelMalePlural>
+  <ROM_StarVampire.lifeStages.1.labelFemale>младой звездный вампир</ROM_StarVampire.lifeStages.1.labelFemale>
+  <ROM_StarVampire.lifeStages.1.labelFemalePlural>младые звездные вампиры</ROM_StarVampire.lifeStages.1.labelFemalePlural>
+  <ROM_StarVampire.lifeStages.2.label>звездный вампир</ROM_StarVampire.lifeStages.2.label>
+  <ROM_StarVampire.lifeStages.2.labelPlural>звездные вампиры</ROM_StarVampire.lifeStages.2.labelPlural>
+  <ROM_StarVampire.lifeStages.2.labelMale>звездный вампир</ROM_StarVampire.lifeStages.2.labelMale>
+  <ROM_StarVampire.lifeStages.2.labelMalePlural>звездные вампиры</ROM_StarVampire.lifeStages.2.labelMalePlural>
+  <ROM_StarVampire.lifeStages.2.labelFemale>звездный вампир</ROM_StarVampire.lifeStages.2.labelFemale>
+  <ROM_StarVampire.lifeStages.2.labelFemalePlural>звездные вампиры</ROM_StarVampire.lifeStages.2.labelFemalePlural>
+  <ROM_StarVampire.lifeStages.3.label>звездный вампир</ROM_StarVampire.lifeStages.3.label>
+  <ROM_StarVampire.lifeStages.3.labelPlural>звездные вампиры</ROM_StarVampire.lifeStages.3.labelPlural>
+  <ROM_StarVampire.lifeStages.3.labelMale>звездный вампир</ROM_StarVampire.lifeStages.3.labelMale>
+  <ROM_StarVampire.lifeStages.3.labelMalePlural>звездные вампиры</ROM_StarVampire.lifeStages.3.labelMalePlural>
+  <ROM_StarVampire.lifeStages.3.labelFemale>звездный вампир</ROM_StarVampire.lifeStages.3.labelFemale>
+  <ROM_StarVampire.lifeStages.3.labelFemalePlural>звездные вампиры</ROM_StarVampire.lifeStages.3.labelFemalePlural>
+  <ROM_StarVampire.labelMale>звездный вампир</ROM_StarVampire.labelMale>
+  <ROM_StarVampire.labelMalePlural>звездные вампиры</ROM_StarVampire.labelMalePlural>
+  <ROM_StarVampire.labelFemale>звездный вампир</ROM_StarVampire.labelFemale>
+  <ROM_StarVampire.labelFemalePlural>звездные вампиры</ROM_StarVampire.labelFemalePlural>
+  <ROM_StarVampireAlbino.label>звездный вампир</ROM_StarVampireAlbino.label>
+  <ROM_StarVampireAlbino.labelPlural>звездные вампиры</ROM_StarVampireAlbino.labelPlural>
+  <ROM_StarVampireAlbino.lifeStages.0.label>отродье звездного вампира</ROM_StarVampireAlbino.lifeStages.0.label>
+  <ROM_StarVampireAlbino.lifeStages.0.labelPlural>отродья звездного вампира</ROM_StarVampireAlbino.lifeStages.0.labelPlural>
+  <ROM_StarVampireAlbino.lifeStages.0.labelMale>отродье звездного вампира</ROM_StarVampireAlbino.lifeStages.0.labelMale>
+  <ROM_StarVampireAlbino.lifeStages.0.labelMalePlural>отродья звездного вампира</ROM_StarVampireAlbino.lifeStages.0.labelMalePlural>
+  <ROM_StarVampireAlbino.lifeStages.0.labelFemale>отродье звездного вампира</ROM_StarVampireAlbino.lifeStages.0.labelFemale>
+  <ROM_StarVampireAlbino.lifeStages.0.labelFemalePlural>отродья звездного вампира</ROM_StarVampireAlbino.lifeStages.0.labelFemalePlural>
+  <ROM_StarVampireAlbino.lifeStages.1.label>младой звездный вампир</ROM_StarVampireAlbino.lifeStages.1.label>
+  <ROM_StarVampireAlbino.lifeStages.1.labelPlural>младые звездные вампиры</ROM_StarVampireAlbino.lifeStages.1.labelPlural>
+  <ROM_StarVampireAlbino.lifeStages.1.labelMale>младой звездный вампир</ROM_StarVampireAlbino.lifeStages.1.labelMale>
+  <ROM_StarVampireAlbino.lifeStages.1.labelMalePlural>младые звездные вампиры</ROM_StarVampireAlbino.lifeStages.1.labelMalePlural>
+  <ROM_StarVampireAlbino.lifeStages.1.labelFemale>младой звездный вампир</ROM_StarVampireAlbino.lifeStages.1.labelFemale>
+  <ROM_StarVampireAlbino.lifeStages.1.labelFemalePlural>младые звездные вампиры</ROM_StarVampireAlbino.lifeStages.1.labelFemalePlural>
+  <ROM_StarVampireAlbino.lifeStages.2.label>звездный вампир</ROM_StarVampireAlbino.lifeStages.2.label>
+  <ROM_StarVampireAlbino.lifeStages.2.labelPlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.2.labelPlural>
+  <ROM_StarVampireAlbino.lifeStages.2.labelMale>звездный вампир</ROM_StarVampireAlbino.lifeStages.2.labelMale>
+  <ROM_StarVampireAlbino.lifeStages.2.labelMalePlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.2.labelMalePlural>
+  <ROM_StarVampireAlbino.lifeStages.2.labelFemale>звездный вампир</ROM_StarVampireAlbino.lifeStages.2.labelFemale>
+  <ROM_StarVampireAlbino.lifeStages.2.labelFemalePlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.2.labelFemalePlural>
+  <ROM_StarVampireAlbino.lifeStages.3.label>звездный вампир</ROM_StarVampireAlbino.lifeStages.3.label>
+  <ROM_StarVampireAlbino.lifeStages.3.labelPlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.3.labelPlural>
+  <ROM_StarVampireAlbino.lifeStages.3.labelMale>звездный вампир</ROM_StarVampireAlbino.lifeStages.3.labelMale>
+  <ROM_StarVampireAlbino.lifeStages.3.labelMalePlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.3.labelMalePlural>
+  <ROM_StarVampireAlbino.lifeStages.3.labelFemale>звездный вампир</ROM_StarVampireAlbino.lifeStages.3.labelFemale>
+  <ROM_StarVampireAlbino.lifeStages.3.labelFemalePlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.3.labelFemalePlural>
+  <ROM_StarVampireAlbino.lifeStages.4.label>звездный вампир</ROM_StarVampireAlbino.lifeStages.4.label>
+  <ROM_StarVampireAlbino.lifeStages.4.labelPlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.4.labelPlural>
+  <ROM_StarVampireAlbino.lifeStages.4.labelMale>звездный вампир</ROM_StarVampireAlbino.lifeStages.4.labelMale>
+  <ROM_StarVampireAlbino.lifeStages.4.labelMalePlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.4.labelMalePlural>
+  <ROM_StarVampireAlbino.lifeStages.4.labelFemale>звездный вампир</ROM_StarVampireAlbino.lifeStages.4.labelFemale>
+  <ROM_StarVampireAlbino.lifeStages.4.labelFemalePlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.4.labelFemalePlural>
+  <ROM_StarVampireAlbino.lifeStages.5.label>звездный вампир</ROM_StarVampireAlbino.lifeStages.5.label>
+  <ROM_StarVampireAlbino.lifeStages.5.labelPlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.5.labelPlural>
+  <ROM_StarVampireAlbino.lifeStages.5.labelMale>звездный вампир</ROM_StarVampireAlbino.lifeStages.5.labelMale>
+  <ROM_StarVampireAlbino.lifeStages.5.labelMalePlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.5.labelMalePlural>
+  <ROM_StarVampireAlbino.lifeStages.5.labelFemale>звездный вампир</ROM_StarVampireAlbino.lifeStages.5.labelFemale>
+  <ROM_StarVampireAlbino.lifeStages.5.labelFemalePlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.5.labelFemalePlural>
+  <ROM_StarVampireAlbino.lifeStages.6.label>звездный вампир</ROM_StarVampireAlbino.lifeStages.6.label>
+  <ROM_StarVampireAlbino.lifeStages.6.labelPlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.6.labelPlural>
+  <ROM_StarVampireAlbino.lifeStages.6.labelMale>звездный вампир</ROM_StarVampireAlbino.lifeStages.6.labelMale>
+  <ROM_StarVampireAlbino.lifeStages.6.labelMalePlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.6.labelMalePlural>
+  <ROM_StarVampireAlbino.lifeStages.6.labelFemale>звездный вампир</ROM_StarVampireAlbino.lifeStages.6.labelFemale>
+  <ROM_StarVampireAlbino.lifeStages.6.labelFemalePlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.6.labelFemalePlural>
+  <ROM_StarVampireAlbino.lifeStages.7.label>звездный вампир</ROM_StarVampireAlbino.lifeStages.7.label>
+  <ROM_StarVampireAlbino.lifeStages.7.labelPlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.7.labelPlural>
+  <ROM_StarVampireAlbino.lifeStages.7.labelMale>звездный вампир</ROM_StarVampireAlbino.lifeStages.7.labelMale>
+  <ROM_StarVampireAlbino.lifeStages.7.labelMalePlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.7.labelMalePlural>
+  <ROM_StarVampireAlbino.lifeStages.7.labelFemale>звездный вампир</ROM_StarVampireAlbino.lifeStages.7.labelFemale>
+  <ROM_StarVampireAlbino.lifeStages.7.labelFemalePlural>звездные вампиры</ROM_StarVampireAlbino.lifeStages.7.labelFemalePlural>
+  <ROM_StarVampireAlbino.labelMale>звездный вампир</ROM_StarVampireAlbino.labelMale>
+  <ROM_StarVampireAlbino.labelMalePlural>звездные вампиры</ROM_StarVampireAlbino.labelMalePlural>
+  <ROM_StarVampireAlbino.labelFemale>звездный вампир</ROM_StarVampireAlbino.labelFemale>
+  <ROM_StarVampireAlbino.labelFemalePlural>звездные вампиры</ROM_StarVampireAlbino.labelFemalePlural>
+  <ROM_StarVampireAbberation.label>звездный вампир</ROM_StarVampireAbberation.label>
+  <ROM_StarVampireAbberation.labelPlural>звездные вампиры</ROM_StarVampireAbberation.labelPlural>
+  <ROM_StarVampireAbberation.lifeStages.0.label>отродье звездного вампира</ROM_StarVampireAbberation.lifeStages.0.label>
+  <ROM_StarVampireAbberation.lifeStages.0.labelPlural>отродья звездного вампира</ROM_StarVampireAbberation.lifeStages.0.labelPlural>
+  <ROM_StarVampireAbberation.lifeStages.0.labelMale>отродье звездного вампира</ROM_StarVampireAbberation.lifeStages.0.labelMale>
+  <ROM_StarVampireAbberation.lifeStages.0.labelMalePlural>отродья звездного вампира</ROM_StarVampireAbberation.lifeStages.0.labelMalePlural>
+  <ROM_StarVampireAbberation.lifeStages.0.labelFemale>отродье звездного вампира</ROM_StarVampireAbberation.lifeStages.0.labelFemale>
+  <ROM_StarVampireAbberation.lifeStages.0.labelFemalePlural>отродья звездного вампира</ROM_StarVampireAbberation.lifeStages.0.labelFemalePlural>
+  <ROM_StarVampireAbberation.lifeStages.1.label>младой звездный вампир</ROM_StarVampireAbberation.lifeStages.1.label>
+  <ROM_StarVampireAbberation.lifeStages.1.labelPlural>младые звездные вампиры</ROM_StarVampireAbberation.lifeStages.1.labelPlural>
+  <ROM_StarVampireAbberation.lifeStages.1.labelMale>младой звездный вампир</ROM_StarVampireAbberation.lifeStages.1.labelMale>
+  <ROM_StarVampireAbberation.lifeStages.1.labelMalePlural>младые звездные вампиры</ROM_StarVampireAbberation.lifeStages.1.labelMalePlural>
+  <ROM_StarVampireAbberation.lifeStages.1.labelFemale>младой звездный вампир</ROM_StarVampireAbberation.lifeStages.1.labelFemale>
+  <ROM_StarVampireAbberation.lifeStages.1.labelFemalePlural>младые звездные вампиры</ROM_StarVampireAbberation.lifeStages.1.labelFemalePlural>
+  <ROM_StarVampireAbberation.lifeStages.2.label>звездный вампир</ROM_StarVampireAbberation.lifeStages.2.label>
+  <ROM_StarVampireAbberation.lifeStages.2.labelPlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.2.labelPlural>
+  <ROM_StarVampireAbberation.lifeStages.2.labelMale>звездный вампир</ROM_StarVampireAbberation.lifeStages.2.labelMale>
+  <ROM_StarVampireAbberation.lifeStages.2.labelMalePlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.2.labelMalePlural>
+  <ROM_StarVampireAbberation.lifeStages.2.labelFemale>звездный вампир</ROM_StarVampireAbberation.lifeStages.2.labelFemale>
+  <ROM_StarVampireAbberation.lifeStages.2.labelFemalePlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.2.labelFemalePlural>
+  <ROM_StarVampireAbberation.lifeStages.3.label>звездный вампир</ROM_StarVampireAbberation.lifeStages.3.label>
+  <ROM_StarVampireAbberation.lifeStages.3.labelPlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.3.labelPlural>
+  <ROM_StarVampireAbberation.lifeStages.3.labelMale>звездный вампир</ROM_StarVampireAbberation.lifeStages.3.labelMale>
+  <ROM_StarVampireAbberation.lifeStages.3.labelMalePlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.3.labelMalePlural>
+  <ROM_StarVampireAbberation.lifeStages.3.labelFemale>звездный вампир</ROM_StarVampireAbberation.lifeStages.3.labelFemale>
+  <ROM_StarVampireAbberation.lifeStages.3.labelFemalePlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.3.labelFemalePlural>
+  <ROM_StarVampireAbberation.lifeStages.4.label>звездный вампир</ROM_StarVampireAbberation.lifeStages.4.label>
+  <ROM_StarVampireAbberation.lifeStages.4.labelPlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.4.labelPlural>
+  <ROM_StarVampireAbberation.lifeStages.4.labelMale>звездный вампир</ROM_StarVampireAbberation.lifeStages.4.labelMale>
+  <ROM_StarVampireAbberation.lifeStages.4.labelMalePlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.4.labelMalePlural>
+  <ROM_StarVampireAbberation.lifeStages.4.labelFemale>звездный вампир</ROM_StarVampireAbberation.lifeStages.4.labelFemale>
+  <ROM_StarVampireAbberation.lifeStages.4.labelFemalePlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.4.labelFemalePlural>
+  <ROM_StarVampireAbberation.lifeStages.5.label>звездный вампир</ROM_StarVampireAbberation.lifeStages.5.label>
+  <ROM_StarVampireAbberation.lifeStages.5.labelPlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.5.labelPlural>
+  <ROM_StarVampireAbberation.lifeStages.5.labelMale>звездный вампир</ROM_StarVampireAbberation.lifeStages.5.labelMale>
+  <ROM_StarVampireAbberation.lifeStages.5.labelMalePlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.5.labelMalePlural>
+  <ROM_StarVampireAbberation.lifeStages.5.labelFemale>звездный вампир</ROM_StarVampireAbberation.lifeStages.5.labelFemale>
+  <ROM_StarVampireAbberation.lifeStages.5.labelFemalePlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.5.labelFemalePlural>
+  <ROM_StarVampireAbberation.lifeStages.6.label>звездный вампир</ROM_StarVampireAbberation.lifeStages.6.label>
+  <ROM_StarVampireAbberation.lifeStages.6.labelPlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.6.labelPlural>
+  <ROM_StarVampireAbberation.lifeStages.6.labelMale>звездный вампир</ROM_StarVampireAbberation.lifeStages.6.labelMale>
+  <ROM_StarVampireAbberation.lifeStages.6.labelMalePlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.6.labelMalePlural>
+  <ROM_StarVampireAbberation.lifeStages.6.labelFemale>звездный вампир</ROM_StarVampireAbberation.lifeStages.6.labelFemale>
+  <ROM_StarVampireAbberation.lifeStages.6.labelFemalePlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.6.labelFemalePlural>
+  <ROM_StarVampireAbberation.lifeStages.7.label>звездный вампир</ROM_StarVampireAbberation.lifeStages.7.label>
+  <ROM_StarVampireAbberation.lifeStages.7.labelPlural>ззвездные вампиры</ROM_StarVampireAbberation.lifeStages.7.labelPlural>
+  <ROM_StarVampireAbberation.lifeStages.7.labelMale>звездный вампир</ROM_StarVampireAbberation.lifeStages.7.labelMale>
+  <ROM_StarVampireAbberation.lifeStages.7.labelMalePlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.7.labelMalePlural>
+  <ROM_StarVampireAbberation.lifeStages.7.labelFemale>звездный вампир</ROM_StarVampireAbberation.lifeStages.7.labelFemale>
+  <ROM_StarVampireAbberation.lifeStages.7.labelFemalePlural>звездные вампиры</ROM_StarVampireAbberation.lifeStages.7.labelFemalePlural>
+  <ROM_StarVampireAbberation.labelMale>звездный вампир</ROM_StarVampireAbberation.labelMale>
+  <ROM_StarVampireAbberation.labelMalePlural>звездные вампиры</ROM_StarVampireAbberation.labelMalePlural>
+  <ROM_StarVampireAbberation.labelFemale>звездный вампир</ROM_StarVampireAbberation.labelFemale>
+  <ROM_StarVampireAbberation.labelFemalePlural>звездные вампиры</ROM_StarVampireAbberation.labelFemalePlural>
+  <ROM_StarVampireNight.label>звездный вампир</ROM_StarVampireNight.label>
+  <ROM_StarVampireNight.labelPlural>звездные вампиры</ROM_StarVampireNight.labelPlural>
+  <ROM_StarVampireNight.lifeStages.0.label>отродье звездного вампира</ROM_StarVampireNight.lifeStages.0.label>
+  <ROM_StarVampireNight.lifeStages.0.labelPlural>отродья звездного вампира</ROM_StarVampireNight.lifeStages.0.labelPlural>
+  <ROM_StarVampireNight.lifeStages.0.labelMale>отродье звездного вампира</ROM_StarVampireNight.lifeStages.0.labelMale>
+  <ROM_StarVampireNight.lifeStages.0.labelMalePlural>отродья звездного вампира</ROM_StarVampireNight.lifeStages.0.labelMalePlural>
+  <ROM_StarVampireNight.lifeStages.0.labelFemale>отродье звездного вампира</ROM_StarVampireNight.lifeStages.0.labelFemale>
+  <ROM_StarVampireNight.lifeStages.0.labelFemalePlural>отродья звездного вампира</ROM_StarVampireNight.lifeStages.0.labelFemalePlural>
+  <ROM_StarVampireNight.lifeStages.1.label>младой звездный вампир</ROM_StarVampireNight.lifeStages.1.label>
+  <ROM_StarVampireNight.lifeStages.1.labelPlural>младые звездные вампиры</ROM_StarVampireNight.lifeStages.1.labelPlural>
+  <ROM_StarVampireNight.lifeStages.1.labelMale>младой звездный вампир</ROM_StarVampireNight.lifeStages.1.labelMale>
+  <ROM_StarVampireNight.lifeStages.1.labelMalePlural>младые звездные вампиры</ROM_StarVampireNight.lifeStages.1.labelMalePlural>
+  <ROM_StarVampireNight.lifeStages.1.labelFemale>младой звездный вампир</ROM_StarVampireNight.lifeStages.1.labelFemale>
+  <ROM_StarVampireNight.lifeStages.1.labelFemalePlural>младые звездные вампиры</ROM_StarVampireNight.lifeStages.1.labelFemalePlural>
+  <ROM_StarVampireNight.lifeStages.2.label>звездный вампир</ROM_StarVampireNight.lifeStages.2.label>
+  <ROM_StarVampireNight.lifeStages.2.labelPlural>звездные вампиры</ROM_StarVampireNight.lifeStages.2.labelPlural>
+  <ROM_StarVampireNight.lifeStages.2.labelMale>звездный вампир</ROM_StarVampireNight.lifeStages.2.labelMale>
+  <ROM_StarVampireNight.lifeStages.2.labelMalePlural>звездные вампиры</ROM_StarVampireNight.lifeStages.2.labelMalePlural>
+  <ROM_StarVampireNight.lifeStages.2.labelFemale>звездный вампир</ROM_StarVampireNight.lifeStages.2.labelFemale>
+  <ROM_StarVampireNight.lifeStages.2.labelFemalePlural>звездные вампиры</ROM_StarVampireNight.lifeStages.2.labelFemalePlural>
+  <ROM_StarVampireNight.lifeStages.3.label>звездный вампир</ROM_StarVampireNight.lifeStages.3.label>
+  <ROM_StarVampireNight.lifeStages.3.labelPlural>звездные вампиры</ROM_StarVampireNight.lifeStages.3.labelPlural>
+  <ROM_StarVampireNight.lifeStages.3.labelMale>звездный вампир</ROM_StarVampireNight.lifeStages.3.labelMale>
+  <ROM_StarVampireNight.lifeStages.3.labelMalePlural>звездные вампиры</ROM_StarVampireNight.lifeStages.3.labelMalePlural>
+  <ROM_StarVampireNight.lifeStages.3.labelFemale>звездный вампир</ROM_StarVampireNight.lifeStages.3.labelFemale>
+  <ROM_StarVampireNight.lifeStages.3.labelFemalePlural>звездные вампиры</ROM_StarVampireNight.lifeStages.3.labelFemalePlural>
+  <ROM_StarVampireNight.lifeStages.4.label>звездный вампир</ROM_StarVampireNight.lifeStages.4.label>
+  <ROM_StarVampireNight.lifeStages.4.labelPlural>звездные вампиры</ROM_StarVampireNight.lifeStages.4.labelPlural>
+  <ROM_StarVampireNight.lifeStages.4.labelMale>звездный вампир</ROM_StarVampireNight.lifeStages.4.labelMale>
+  <ROM_StarVampireNight.lifeStages.4.labelMalePlural>звездные вампиры</ROM_StarVampireNight.lifeStages.4.labelMalePlural>
+  <ROM_StarVampireNight.lifeStages.4.labelFemale>звездный вампир</ROM_StarVampireNight.lifeStages.4.labelFemale>
+  <ROM_StarVampireNight.lifeStages.4.labelFemalePlural>звездные вампиры</ROM_StarVampireNight.lifeStages.4.labelFemalePlural>
+  <ROM_StarVampireNight.lifeStages.5.label>звездный вампир</ROM_StarVampireNight.lifeStages.5.label>
+  <ROM_StarVampireNight.lifeStages.5.labelPlural>звездные вампиры</ROM_StarVampireNight.lifeStages.5.labelPlural>
+  <ROM_StarVampireNight.lifeStages.5.labelMale>звездный вампир</ROM_StarVampireNight.lifeStages.5.labelMale>
+  <ROM_StarVampireNight.lifeStages.5.labelMalePlural>звездные вампиры</ROM_StarVampireNight.lifeStages.5.labelMalePlural>
+  <ROM_StarVampireNight.lifeStages.5.labelFemale>звездный вампир</ROM_StarVampireNight.lifeStages.5.labelFemale>
+  <ROM_StarVampireNight.lifeStages.5.labelFemalePlural>звездные вампиры</ROM_StarVampireNight.lifeStages.5.labelFemalePlural>
+  <ROM_StarVampireNight.lifeStages.6.label>звездный вампир</ROM_StarVampireNight.lifeStages.6.label>
+  <ROM_StarVampireNight.lifeStages.6.labelPlural>звездные вампиры</ROM_StarVampireNight.lifeStages.6.labelPlural>
+  <ROM_StarVampireNight.lifeStages.6.labelMale>звездный вампир</ROM_StarVampireNight.lifeStages.6.labelMale>
+  <ROM_StarVampireNight.lifeStages.6.labelMalePlural>звездные вампиры</ROM_StarVampireNight.lifeStages.6.labelMalePlural>
+  <ROM_StarVampireNight.lifeStages.6.labelFemale>звездный вампир</ROM_StarVampireNight.lifeStages.6.labelFemale>
+  <ROM_StarVampireNight.lifeStages.6.labelFemalePlural>звездные вампиры</ROM_StarVampireNight.lifeStages.6.labelFemalePlural>
+  <ROM_StarVampireNight.lifeStages.7.label>звездный вампир</ROM_StarVampireNight.lifeStages.7.label>
+  <ROM_StarVampireNight.lifeStages.7.labelPlural>звездные вампиры</ROM_StarVampireNight.lifeStages.7.labelPlural>
+  <ROM_StarVampireNight.lifeStages.7.labelMale>звездный вампир</ROM_StarVampireNight.lifeStages.7.labelMale>
+  <ROM_StarVampireNight.lifeStages.7.labelMalePlural>звездные вампиры</ROM_StarVampireNight.lifeStages.7.labelMalePlural>
+  <ROM_StarVampireNight.lifeStages.7.labelFemale>звездный вампир</ROM_StarVampireNight.lifeStages.7.labelFemale>
+  <ROM_StarVampireNight.lifeStages.7.labelFemalePlural>звездные вампиры</ROM_StarVampireNight.lifeStages.7.labelFemalePlural>
+  <ROM_StarVampireNight.labelMale>звездный вампир</ROM_StarVampireNight.labelMale>
+  <ROM_StarVampireNight.labelMalePlural>звездные вампиры</ROM_StarVampireNight.labelMalePlural>
+  <ROM_StarVampireNight.labelFemale>звездный вампир</ROM_StarVampireNight.labelFemale>
+  <ROM_StarVampireNight.labelFemalePlural>звездные вампиры</ROM_StarVampireNight.labelFemalePlural>
+</LanguageData>

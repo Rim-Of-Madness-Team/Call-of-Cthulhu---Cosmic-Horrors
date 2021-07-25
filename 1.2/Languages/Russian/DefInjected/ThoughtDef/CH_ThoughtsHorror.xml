@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ObservedROM_DeepOne.stages.0.label>видел глубоководного</ObservedROM_DeepOne.stages.0.label>
+  <ObservedROM_DeepOne.stages.0.description>ЧТО ЭТО ЗА ТВАРЬ?!</ObservedROM_DeepOne.stages.0.description>
+  <ObservedROM_DeepOneGreat.stages.0.label>видел великого глубоководного</ObservedROM_DeepOneGreat.stages.0.label>
+  <ObservedROM_DeepOneGreat.stages.0.description>ЧТО ЭТО ЗА ТВАРЬ?!</ObservedROM_DeepOneGreat.stages.0.description>
+  <ObservedROM_MiGo.stages.0.label>видел ми-го</ObservedROM_MiGo.stages.0.label>
+  <ObservedROM_MiGo.stages.0.description>ЧТО ЭТО ЗА ХРЕНЬ?!</ObservedROM_MiGo.stages.0.description>
+  <ObservedROM_ShoggothTiny.stages.0.label>видел шоггота-кроху</ObservedROM_ShoggothTiny.stages.0.label>
+  <ObservedROM_ShoggothTiny.stages.0.description>Что за...?</ObservedROM_ShoggothTiny.stages.0.description>
+  <ObservedROM_Shoggoth.stages.0.label>видел шоггота</ObservedROM_Shoggoth.stages.0.label>
+  <ObservedROM_Shoggoth.stages.0.description>ЧТО ЗА...?!</ObservedROM_Shoggoth.stages.0.description>
+  <ObservedROM_ShoggothColossal.stages.0.label>видел шоггота-колосса</ObservedROM_ShoggothColossal.stages.0.label>
+  <ObservedROM_ShoggothColossal.stages.0.description>ЧТО ЭТО ТАКОЕ?!</ObservedROM_ShoggothColossal.stages.0.description>
+  <ObservedROM_StarVampire.stages.0.label>видел звездного вампира</ObservedROM_StarVampire.stages.0.label>
+  <ObservedROM_StarVampire.stages.0.description>ЧТО ЭТО ЗА МЕРЗКАЯ ТВАРЬ?!</ObservedROM_StarVampire.stages.0.description>
+  <ObservedROM_Cthulhid.stages.0.label>видел ктулхуида</ObservedROM_Cthulhid.stages.0.label>
+  <ObservedROM_Cthulhid.stages.0.description>ЧТО ОНО ТАКОЕ?</ObservedROM_Cthulhid.stages.0.description>
+  <ObservedROM_DarkYoung.stages.0.label>видел темную молодь</ObservedROM_DarkYoung.stages.0.label>
+  <ObservedROM_DarkYoung.stages.0.description>Они...они вообще реальны?</ObservedROM_DarkYoung.stages.0.description>
+  <ObservedROM_ChthonianLarva.stages.0.label>видел личинку хтонианца</ObservedROM_ChthonianLarva.stages.0.label>
+  <ObservedROM_ChthonianLarva.stages.0.description>Я ожидал увидеть что-то более пугающее, чем это.</ObservedROM_ChthonianLarva.stages.0.description>
+  <ObservedROM_Chthonian.stages.0.label>видел хтонианца</ObservedROM_Chthonian.stages.0.label>
+  <ObservedROM_Chthonian.stages.0.description>ЭТО НЕ МОЖЕТ СУЩЕСТВОВАТЬ!</ObservedROM_Chthonian.stages.0.description>
+  <ROM_SanityLoss.stages.0.label>смутное беспокойство</ROM_SanityLoss.stages.0.label>
+  <ROM_SanityLoss.stages.0.description>Наверное почудилось.</ROM_SanityLoss.stages.0.description>
+  <ROM_SanityLoss.stages.1.label>временное помешательство</ROM_SanityLoss.stages.1.label>
+  <ROM_SanityLoss.stages.1.description>Что-то не так.</ROM_SanityLoss.stages.1.description>
+  <ROM_SanityLoss.stages.2.label>тревожность</ROM_SanityLoss.stages.2.label>
+  <ROM_SanityLoss.stages.2.description>Здесь что-то в корне неправильно.</ROM_SanityLoss.stages.2.description>
+  <ROM_SanityLoss.stages.3.label>параноидальность</ROM_SanityLoss.stages.3.label>
+  <ROM_SanityLoss.stages.3.description>Я должен убираться отсюда.</ROM_SanityLoss.stages.3.description>
+  <ROM_SanityLoss.stages.4.label>сумасшествие</ROM_SanityLoss.stages.4.label>
+  <ROM_SanityLoss.stages.4.description>Йа! Йа!</ROM_SanityLoss.stages.4.description>
+  <ROM_SanityLoss.stages.5.label>безумие</ROM_SanityLoss.stages.5.label>
+  <ROM_SanityLoss.stages.5.description>Мглв’нафх фхтагн-нгах кф'аяк в'улгтмм вугтлаг'н</ROM_SanityLoss.stages.5.description>
+  <ROM_SawMonster.stages.0.label>видел чудовище</ROM_SawMonster.stages.0.label>
+  <ROM_SawMonster.stages.0.description>Существо, которое я видел, просто не может существовать.</ROM_SawMonster.stages.0.description>
+</LanguageData>

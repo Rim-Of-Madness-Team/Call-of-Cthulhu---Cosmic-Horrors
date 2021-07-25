@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Chthonian.label>크토니안</ROM_Chthonian.label>
+  <ROM_Chthonian.labelPlural>크토니안</ROM_Chthonian.labelPlural>
+  <ROM_Chthonian.lifeStages.0.label>크토니안</ROM_Chthonian.lifeStages.0.label>
+  <ROM_Chthonian.lifeStages.0.labelPlural>크토니안</ROM_Chthonian.lifeStages.0.labelPlural>
+  <ROM_Chthonian.lifeStages.0.labelMale>수컷 크토니안</ROM_Chthonian.lifeStages.0.labelMale>
+  <ROM_Chthonian.lifeStages.0.labelMalePlural>수컷 크토니안</ROM_Chthonian.lifeStages.0.labelMalePlural>
+  <ROM_Chthonian.lifeStages.0.labelFemale>암컷 크토니안</ROM_Chthonian.lifeStages.0.labelFemale>
+  <ROM_Chthonian.lifeStages.0.labelFemalePlural>암컷 크토니안</ROM_Chthonian.lifeStages.0.labelFemalePlural>
+  <ROM_Chthonian.lifeStages.1.label>크토니안</ROM_Chthonian.lifeStages.1.label>
+  <ROM_Chthonian.lifeStages.1.labelPlural>크토니안</ROM_Chthonian.lifeStages.1.labelPlural>
+  <ROM_Chthonian.lifeStages.1.labelMale>수컷 크토니안</ROM_Chthonian.lifeStages.1.labelMale>
+  <ROM_Chthonian.lifeStages.1.labelMalePlural>수컷 크토니안</ROM_Chthonian.lifeStages.1.labelMalePlural>
+  <ROM_Chthonian.lifeStages.1.labelFemale>암컷 크토니안</ROM_Chthonian.lifeStages.1.labelFemale>
+  <ROM_Chthonian.lifeStages.1.labelFemalePlural>암컷 크토니안</ROM_Chthonian.lifeStages.1.labelFemalePlural>
+  <ROM_Chthonian.lifeStages.2.label>크토니안</ROM_Chthonian.lifeStages.2.label>
+  <ROM_Chthonian.lifeStages.2.labelPlural>크토니안</ROM_Chthonian.lifeStages.2.labelPlural>
+  <ROM_Chthonian.lifeStages.2.labelMale>수컷 크토니안</ROM_Chthonian.lifeStages.2.labelMale>
+  <ROM_Chthonian.lifeStages.2.labelMalePlural>수컷 크토니안</ROM_Chthonian.lifeStages.2.labelMalePlural>
+  <ROM_Chthonian.lifeStages.2.labelFemale>암컷 크토니안</ROM_Chthonian.lifeStages.2.labelFemale>
+  <ROM_Chthonian.lifeStages.2.labelFemalePlural>암컷 크토니안</ROM_Chthonian.lifeStages.2.labelFemalePlural>
+  <ROM_Chthonian.labelMale>수컷 크토니안</ROM_Chthonian.labelMale>
+  <ROM_Chthonian.labelMalePlural>수컷 크토니안</ROM_Chthonian.labelMalePlural>
+  <ROM_Chthonian.labelFemale>암컷 크토니안</ROM_Chthonian.labelFemale>
+  <ROM_Chthonian.labelFemalePlural>암컷 크토니안</ROM_Chthonian.labelFemalePlural>
+  <ROM_ChthonianLarva.label>크토니안 유충</ROM_ChthonianLarva.label>
+  <ROM_ChthonianLarva.labelPlural>크토니안 유충</ROM_ChthonianLarva.labelPlural>
+  <ROM_ChthonianLarva.lifeStages.0.label>크토니안 유충</ROM_ChthonianLarva.lifeStages.0.label>
+  <ROM_ChthonianLarva.lifeStages.0.labelPlural>크토니안 유충</ROM_ChthonianLarva.lifeStages.0.labelPlural>
+  <ROM_ChthonianLarva.lifeStages.0.labelMale>수컷 크토니안 유충</ROM_ChthonianLarva.lifeStages.0.labelMale>
+  <ROM_ChthonianLarva.lifeStages.0.labelMalePlural>수컷 크토니안 유충</ROM_ChthonianLarva.lifeStages.0.labelMalePlural>
+  <ROM_ChthonianLarva.lifeStages.0.labelFemale>암컷 크토니안 유충</ROM_ChthonianLarva.lifeStages.0.labelFemale>
+  <ROM_ChthonianLarva.lifeStages.0.labelFemalePlural>암컷 크토니안 유충</ROM_ChthonianLarva.lifeStages.0.labelFemalePlural>
+  <ROM_ChthonianLarva.labelMale>수컷 크토니안 유충</ROM_ChthonianLarva.labelMale>
+  <ROM_ChthonianLarva.labelMalePlural>수컷 크토니안 유충</ROM_ChthonianLarva.labelMalePlural>
+  <ROM_ChthonianLarva.labelFemale>암컷 크토니안 유충</ROM_ChthonianLarva.labelFemale>
+  <ROM_ChthonianLarva.labelFemalePlural>암컷 크토니안 유충</ROM_ChthonianLarva.labelFemalePlural>
+</LanguageData>
