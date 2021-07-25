@@ -28,7 +28,8 @@
     <li>jecrell.jecstools</li>
     <li>CETeam.CombatExtended</li>
   </loadAfter>
-  <description>
+  <description>1.3.0.0 (07-24-2021)
+
 *Add Lovecraftian monsters to your RimWorld experience!* There is a lingering fear that strokes the hairs on the back of the necks of your colonists. Something terrible is coming, and there is little time to prepare. Cosmic horrors are already upon us.
 	
 [h1]Features:[/h1]
@@ -97,6 +98,43 @@ NOTICE
 [/list]
 
 Have fun!
+
+Thank you to my Patrons for supporting me in my efforts. Without you, none of this would be possible.
+
+These are the most excellent rim dwellers who support me: 
+Michael Cailler, Jigsawjohn , Daniel Schott, Penelope Charli Whitman, Jerome Gonschorek, Genaeve , RainerWingel , Lea Stannard, David Silberstein, 수현 남, Matt Harris, Kiya Nicoll, Paul Fenwick, Matthew Isom, Elodie , Михаил Юрченко, Charlie Garnham, Populous25 , Landon Cash, Marcus Sireanu, Maaxar , logan sheppard-organ, TinyATuin, Don Homer, Sharp Spook, roxxploxx , Dan Jones, Kaz, Justin Andres, Alex Mederer, Justin , iknowdude00, E_T , Alexander , Ken Birdwell, Michael Cailler, Jigsawjohn , Daniel Schott, Penelope Charli Whitman, Jerome Gonschorek, Genaeve , RainerWingel , Lea Stannard, David Silberstein, 수현 남, Matt Harris, Kiya Nicoll, Paul Fenwick, Matthew Isom, Elodie , Михаил Юрченко, Charlie Garnham, Populous25 , Landon Cash, Marcus Sireanu, Maaxar , logan sheppard-organ, TinyATuin, Don Homer, Sharp Spook, roxxploxx , Dan Jones, Kaz, Justin Andres, Alex Mederer, Justin , iknowdude00, E_T , Alexander , Ken Birdwell
+
+========================
+Changelog
+========================
+1.3.0.0 (07-24-2021)
+========================
+Added RimWorld 1.3 support
+
+# Changelog for CallofCthulhuCosmicHorrors
+
+1.0.8.0 - Updated russian translation, thanks Animal Mind 
+
+
+1.0.7.0 - Some missed CE-tweaks
+
+
+1.0.6.0 - Tweaking and rebalancing CE-patch to be more inline with CE, by Red_Bunny
+
+
+1.0.5.0 - Added support for LWM Deep Storage for the strange meat, thanks Röstli
+
+
+1.0.4.0 - Additional CE support by Battlefleet Covfefe
+
+
+1.0.2.0 - Fixed some errors in the CE-patch
+
+
+1.0.1.0 - Fixed the Shoggoth texture
+
+
+1.0.0.0 - First publish
 
 </description>
 </ModMetaData>
