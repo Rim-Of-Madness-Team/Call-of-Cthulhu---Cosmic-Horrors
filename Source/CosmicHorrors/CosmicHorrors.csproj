@@ -83,12 +83,13 @@
     <Compile Include="HediffWithComps_GutWorms.cs" />
     <Compile Include="HediffWithComps_SanityLoss.cs" />
     <Compile Include="IncidentWorker_ScoutCosmicHorror.cs" />
+    <Compile Include="IncidentWorker_StarVampireAttack.cs" />
+    <Compile Include="MapComponent_StarVampireTracker.cs" />
     <Compile Include="ModInfo.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="IncidentWorker_Cthonian.cs" />
     <Compile Include="IncidentWorker_DarkYoung.cs" />
     <Compile Include="IncidentWorker_RaidCosmicHorrors.cs" />
-    <Compile Include="IncidentWorker_StarVampireAttack.cs" />
     <Compile Include="JobDriver_FillChthonianPit.cs" />
     <Compile Include="JobDriver_HaulSacrifice.cs" />
     <Compile Include="JobGiver_StarVampireFeed.cs" />
