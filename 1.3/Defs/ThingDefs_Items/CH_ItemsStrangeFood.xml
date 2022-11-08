@@ -282,7 +282,7 @@ Star Vampire meat's marbling ranges from an uncomfortable amount of intramuscula
     <thingClass>ThingWithComps</thingClass>
     <description>Sweet sap squeezed from an orifice of one of the foul children of Shub-Niggurath.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Milk</texPath>
+      <texPath>Things/Item/Resource/RawCHFood_DarkYoungSap</texPath>
       <color>(20,40,20)</color>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>

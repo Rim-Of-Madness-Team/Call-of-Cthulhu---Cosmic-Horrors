@@ -3,10 +3,10 @@
 ==============================
 
 Call of Cthulhu - Cosmic Horrors Update
-v1.3.0.1 (07-25-2021)
+v1.3.0.2 (08-01-2021)
 ====================
 
-Readded Combat Extended support from mlie. Added short warning message for first time experiencing sanity loss.
+Fixes a bug where the Star Vampire would not spawn appropriately after the delay.
 --------------------
 
 Download now on...
@@ -25,9 +25,9 @@ Discuss the mod on...
 [img width=260]https://raw.githubusercontent.com/Rim-Of-Madness-Team/Call-of-Cthulhu---Cosmic-Horrors/master/About/Preview.png[/img]
 [hr]
 [b]Call of Cthulhu - Cosmic Horrors
-Version: 1.3.0.1
-Updated: 07-25-2021
-Description: [color=orange]Readded Combat Extended support from mlie. Added short warning message for first time experiencing sanity loss.[/color]
+Version: 1.3.0.2
+Updated: 08-01-2021
+Description: [color=orange]Fixes a bug where the Star Vampire would not spawn appropriately after the delay.[/color]
 [hr]
 [b]Download now on...[/b]
 [url=https://www.patreon.com/posts/54083407/]Patreon[/url]
