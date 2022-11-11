@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- ADULT CHTHONIAN -->
+  <ROM_Chthonian.label>хтонианец</ROM_Chthonian.label>
+  <ROM_Chthonian.labelPlural>хтонианцы</ROM_Chthonian.labelPlural>
+  <ROM_Chthonian.lifeStages.0.label>отродье хтонианца</ROM_Chthonian.lifeStages.0.label>
+  <ROM_Chthonian.lifeStages.0.labelPlural>отродья хтонианца</ROM_Chthonian.lifeStages.0.labelPlural>
+  <ROM_Chthonian.lifeStages.0.labelMale>отродье хтонианца</ROM_Chthonian.lifeStages.0.labelMale>
+  <ROM_Chthonian.lifeStages.0.labelMalePlural>отродья хтонианца</ROM_Chthonian.lifeStages.0.labelMalePlural>
+  <ROM_Chthonian.lifeStages.0.labelFemale>отродье хтонианца</ROM_Chthonian.lifeStages.0.labelFemale>
+  <ROM_Chthonian.lifeStages.0.labelFemalePlural>отродья хтонианца</ROM_Chthonian.lifeStages.0.labelFemalePlural>
+  <ROM_Chthonian.lifeStages.1.label>младой хтонианец</ROM_Chthonian.lifeStages.1.label>
+  <ROM_Chthonian.lifeStages.1.labelPlural>младые хтонианцы</ROM_Chthonian.lifeStages.1.labelPlural>
+  <ROM_Chthonian.lifeStages.1.labelMale>младой хтонианец</ROM_Chthonian.lifeStages.1.labelMale>
+  <ROM_Chthonian.lifeStages.1.labelMalePlural>младые хтонианцы</ROM_Chthonian.lifeStages.1.labelMalePlural>
+  <ROM_Chthonian.lifeStages.1.labelFemale>младой хтонианец</ROM_Chthonian.lifeStages.1.labelFemale>
+  <ROM_Chthonian.lifeStages.1.labelFemalePlural>младые хтонианцы</ROM_Chthonian.lifeStages.1.labelFemalePlural>
+  <ROM_Chthonian.lifeStages.2.label>хтонианец</ROM_Chthonian.lifeStages.2.label>
+  <ROM_Chthonian.lifeStages.2.labelPlural>хтонианцы</ROM_Chthonian.lifeStages.2.labelPlural>
+  <ROM_Chthonian.lifeStages.2.labelMale>хтонианец</ROM_Chthonian.lifeStages.2.labelMale>
+  <ROM_Chthonian.lifeStages.2.labelMalePlural>хтонианцы</ROM_Chthonian.lifeStages.2.labelMalePlural>
+  <ROM_Chthonian.lifeStages.2.labelFemale>хтонианец</ROM_Chthonian.lifeStages.2.labelFemale>
+  <ROM_Chthonian.lifeStages.2.labelFemalePlural>хтонианцы</ROM_Chthonian.lifeStages.2.labelFemalePlural>
+  <ROM_Chthonian.labelMale>хтонианец</ROM_Chthonian.labelMale>
+  <ROM_Chthonian.labelMalePlural>хтонианцы</ROM_Chthonian.labelMalePlural>
+  <ROM_Chthonian.labelFemale>хтонианец</ROM_Chthonian.labelFemale>
+  <ROM_Chthonian.labelFemalePlural>хтонианцы</ROM_Chthonian.labelFemalePlural>
+  <!-- CHTHONIAN LARVA -->
+  <ROM_ChthonianLarva.label>личинка хтонианца</ROM_ChthonianLarva.label>
+  <ROM_ChthonianLarva.labelPlural>личинки хтонианца</ROM_ChthonianLarva.labelPlural>
+  <ROM_ChthonianLarva.lifeStages.0.label>личинка хтонианца</ROM_ChthonianLarva.lifeStages.0.label>
+  <ROM_ChthonianLarva.lifeStages.0.labelPlural>личинки хтонианца</ROM_ChthonianLarva.lifeStages.0.labelPlural>
+  <ROM_ChthonianLarva.lifeStages.0.labelMale>личинка хтонианца</ROM_ChthonianLarva.lifeStages.0.labelMale>
+  <ROM_ChthonianLarva.lifeStages.0.labelMalePlural>личинки хтонианца</ROM_ChthonianLarva.lifeStages.0.labelMalePlural>
+  <ROM_ChthonianLarva.lifeStages.0.labelFemale>личинка хтонианца</ROM_ChthonianLarva.lifeStages.0.labelFemale>
+  <ROM_ChthonianLarva.lifeStages.0.labelFemalePlural>личинки хтонианца</ROM_ChthonianLarva.lifeStages.0.labelFemalePlural>
+  <ROM_ChthonianLarva.labelMale>личинка хтонианца</ROM_ChthonianLarva.labelMale>
+  <ROM_ChthonianLarva.labelMalePlural>личинки хтонианца</ROM_ChthonianLarva.labelMalePlural>
+  <ROM_ChthonianLarva.labelFemale>личинка хтонианца</ROM_ChthonianLarva.labelFemale>
+  <ROM_ChthonianLarva.labelFemalePlural>личинки хтонианца</ROM_ChthonianLarva.labelFemalePlural>
+</LanguageData>

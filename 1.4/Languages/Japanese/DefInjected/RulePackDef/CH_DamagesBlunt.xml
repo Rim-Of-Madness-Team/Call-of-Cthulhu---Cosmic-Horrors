@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.0>damaged_inf(p=2)->叩きつける</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.0>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.1>damaged_inf->粉砕する</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.1>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.2>damaged_inf->すり潰す</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.2>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.3>damaged_inf->殴りつける</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.3>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.4>damaged_inf->衝突する</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.4>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.5>damaged_inf->ぶつかり合う</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.5>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.6>damaged_past(p=2)->叩きつけた</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.6>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.7>damaged_past->粉砕した</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.7>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.8>damaged_past->すり潰した</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.8>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.9>damaged_past->殴りつけた</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.9>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.10>damaged_past->衝突した</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.10>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.11>damaged_past->ぶつかり合った</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.11>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.12>damaged_present->叩きつけている</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.12>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.13>damaged_present->粉砕している</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.13>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.14>damaged_present->すり潰している</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.14>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.15>damaged_present->殴りつけている</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.15>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.16>damaged_present->衝突している</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.16>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.17>damaged_present->ぶつかり合っている</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.17>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.18>destroyed_past->押し潰した</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.18>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.19>destroyed_past->霧散した</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.19>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.20>destroyed_past->粉みじんにした</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.20>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.21>destroyed_present->押し潰している</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.21>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.22>destroyed_present->霧散している</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.22>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.23>destroyed_present->粉々にしている</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.23>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.0>woundname->傷口</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.0>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.1>woundname(p=0.3)->打撲傷</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.1>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.2>flavortext_situation(p=3)->[ROMgazingwithinhumaneyes]間に</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.2>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.3>flavortext_situation(p=3)->[ROMcarryinganexpressionofmadness]間に</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.3>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.4>flavortext_situation(p=2,recipient_flesh!=Mechanoid)->[woundname]から[ROMbloodoozing]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.4>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.5>flavortext_situation(p=2,recipient_flesh!=Mechanoid)->[woundname]から[ROMgore][ROMexposed]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.5>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.6>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)->[ROMtheflesh][ROMunderneath][ROMexposing]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.6>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.7>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)->[ROMhorrible][woundname]を[ROMexposing]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.7>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.8>flavortext_consequence(p=2,recipient_flesh==Mechanoid)->内部の機械を露出している</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.8>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.9>destroyed_suffix(p=2,recipient_flesh!=Mechanoid)->バラバラの[ROMstrips][to]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.9>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.10>destroyed_suffix(p=4)->[ROMstrips][to]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.10>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.11>destroyed_suffix->破片[to]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.11>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.12>destroyed_suffix->断片[to]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.12>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.13>destroyed_suffix(recipient_flesh!=Mechanoid)->血の海[to]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.13>
+</LanguageData>

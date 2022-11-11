@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_ShoggothBody.label>ショゴスの構造</ROM_ShoggothBody.label>
+  <ROM_ShoggothBody.corePart.parts.25.customLabel>左肩</ROM_ShoggothBody.corePart.parts.25.customLabel>
+  <ROM_ShoggothBody.corePart.parts.25.parts.0.customLabel>左腕</ROM_ShoggothBody.corePart.parts.25.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.customLabel>左手</ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.0.customLabel>左小指</ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.1.customLabel>左薬指</ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.1.customLabel>
+  <ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.2.customLabel>左中指</ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.2.customLabel>
+  <ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.3.customLabel>左人差し指</ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.3.customLabel>
+  <ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.4.customLabel>左親指</ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.4.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.customLabel>右肩</ROM_ShoggothBody.corePart.parts.26.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.parts.0.customLabel>右腕</ROM_ShoggothBody.corePart.parts.26.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.customLabel>右手</ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.0.customLabel>右小指</ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.1.customLabel>右薬指</ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.1.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.2.customLabel>右中指</ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.2.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.3.customLabel>右人差し指</ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.3.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.4.customLabel>右親指</ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.4.customLabel>
+  <ROM_ShoggothBody.corePart.parts.27.customLabel>前左脚</ROM_ShoggothBody.corePart.parts.27.customLabel>
+  <ROM_ShoggothBody.corePart.parts.27.parts.0.customLabel>前左足</ROM_ShoggothBody.corePart.parts.27.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.28.customLabel>前右脚</ROM_ShoggothBody.corePart.parts.28.customLabel>
+  <ROM_ShoggothBody.corePart.parts.28.parts.0.customLabel>前右足</ROM_ShoggothBody.corePart.parts.28.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.29.customLabel>後左脚</ROM_ShoggothBody.corePart.parts.29.customLabel>
+  <ROM_ShoggothBody.corePart.parts.29.parts.0.customLabel>後左足</ROM_ShoggothBody.corePart.parts.29.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.30.customLabel>後右脚</ROM_ShoggothBody.corePart.parts.30.customLabel>
+  <ROM_ShoggothBody.corePart.parts.30.parts.0.customLabel>後右足</ROM_ShoggothBody.corePart.parts.30.parts.0.customLabel>
+</LanguageData>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_MiGoBody.label>ミ＝ゴの構造</ROM_MiGoBody.label>
+  <ROM_MiGoBody.corePart.parts.5.customLabel>左前脚</ROM_MiGoBody.corePart.parts.5.customLabel>
+  <ROM_MiGoBody.corePart.parts.6.customLabel>右前脚</ROM_MiGoBody.corePart.parts.6.customLabel>
+  <ROM_MiGoBody.corePart.parts.7.customLabel>左中前脚</ROM_MiGoBody.corePart.parts.7.customLabel>
+  <ROM_MiGoBody.corePart.parts.8.customLabel>右中前脚</ROM_MiGoBody.corePart.parts.8.customLabel>
+  <ROM_MiGoBody.corePart.parts.9.customLabel>左後脚</ROM_MiGoBody.corePart.parts.9.customLabel>
+  <ROM_MiGoBody.corePart.parts.10.customLabel>右後脚</ROM_MiGoBody.corePart.parts.10.customLabel>
+</LanguageData>

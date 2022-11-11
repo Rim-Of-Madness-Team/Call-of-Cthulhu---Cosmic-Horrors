@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_DeepOne.label>深きもの</ROM_DeepOne.label>
+  <ROM_DeepOne.description>魚の頭を持ち、体はカエルのヒューマノイド。大きな隆起した目と水かきのあるの手をもつ。彼らは深海の圧力に耐えられるように設計された強力な体と鱗とを持っています。</ROM_DeepOne.description>
+  <ROM_DeepOne.tools.0.label>左爪</ROM_DeepOne.tools.0.label>
+  <ROM_DeepOne.tools.1.label>右爪</ROM_DeepOne.tools.1.label>
+  <ROM_DeepOne.tools.2.label>歯</ROM_DeepOne.tools.2.label>
+  <ROM_DeepOne.tools.3.label>頭</ROM_DeepOne.tools.3.label>
+  <ROM_DeepOneGreat.label>偉大なる深きもの</ROM_DeepOneGreat.label>
+  <ROM_DeepOneGreat.description>魚の頭を持ち、体はカエルのヒューマノイド。大きな隆起した目と水かきのあるの手をもつ。彼らは深海の圧力に耐えられるように設計された強力な体と鱗とを持っています。</ROM_DeepOneGreat.description>
+  <ROM_DeepOneGreat.tools.0.label>左爪</ROM_DeepOneGreat.tools.0.label>
+  <ROM_DeepOneGreat.tools.1.label>右爪</ROM_DeepOneGreat.tools.1.label>
+  <ROM_DeepOneGreat.tools.2.label>歯</ROM_DeepOneGreat.tools.2.label>
+  <ROM_DeepOneGreat.tools.3.label>頭</ROM_DeepOneGreat.tools.3.label>
+</LanguageData>

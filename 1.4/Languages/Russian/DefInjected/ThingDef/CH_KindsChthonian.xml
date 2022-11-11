@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- RACE DEFS -->
+  <ROM_Chthonian.label>хтонианец</ROM_Chthonian.label>
+  <ROM_Chthonian.description>Хтонианцы - это огромные существа, которые роют норы своими мощными телами и могут жить более тысячи лет. Заботятся о своем потомстве. Говорят, что появление хтонианца сопровождается пением, и с его помощью они могут быть обнаружены, даже будучи скрытыми под землей.</ROM_Chthonian.description>
+  <ROM_Chthonian.tools.0.label>щупальца</ROM_Chthonian.tools.0.label>
+  <ROM_Chthonian.tools.1.label>свернутые щупальца</ROM_Chthonian.tools.1.label>
+  <ROM_Chthonian.tools.2.label>орган ментального подавления</ROM_Chthonian.tools.2.label>
+  <ROM_Chthonian.tools.3.label>тело</ROM_Chthonian.tools.3.label>
+  <!-- CHTHONIAN LARVA -->
+  <ROM_ChthonianLarva.label>личинка хтонианца</ROM_ChthonianLarva.label>
+  <ROM_ChthonianLarva.description>Хтонианцы - это огромные существа, которые роют норы своими мощными телами и могут жить более тысячи лет. Заботятся о своем потомстве. Говорят, что появление хтонианца сопровождается пением, и с его помощью они могут быть обнаружены, даже будучи скрытыми под землей..</ROM_ChthonianLarva.description>
+  <ROM_ChthonianLarva.tools.0.label>щупальца</ROM_ChthonianLarva.tools.0.label>
+  <ROM_ChthonianLarva.tools.1.label>орган ментального подавления</ROM_ChthonianLarva.tools.1.label>
+  <ROM_ChthonianLarva.tools.2.label>тело</ROM_ChthonianLarva.tools.2.label>
+</LanguageData>

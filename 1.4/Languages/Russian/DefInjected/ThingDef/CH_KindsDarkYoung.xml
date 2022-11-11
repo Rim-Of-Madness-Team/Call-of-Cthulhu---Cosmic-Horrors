@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- RACE DEFS -->
+  <ROM_DarkYoung.label>темная молодь</ROM_DarkYoung.label>
+  <ROM_DarkYoung.description>Древовидное существо, чьи корни оканчиваются копытами, а выше начинается огромная массая разветвленных щупалец, извивающихся вокруг слюнявых пастей. Они порождения Шуб-Ниггурата, Черного Козла с тысячей младых и Хозяина леса. Темная молодь действует от его имени и приходит к прихожанам в темных лесах, чтобы принять жертвы и почтение.</ROM_DarkYoung.description>
+  <ROM_DarkYoung.tools.0.label>копыта</ROM_DarkYoung.tools.0.label>
+  <ROM_DarkYoung.tools.1.label>щупальца</ROM_DarkYoung.tools.1.label>
+  <ROM_DarkYoung.tools.2.label>свернутые щупальца</ROM_DarkYoung.tools.2.label>
+  <ROM_DarkYoung.tools.3.label>пасти</ROM_DarkYoung.tools.3.label>
+</LanguageData>

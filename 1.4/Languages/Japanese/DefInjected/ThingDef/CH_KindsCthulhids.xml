@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Cthulhid.label>クトゥルフの落とし子</ROM_Cthulhid.label>
+  <ROM_Cthulhid.description>クトゥルフの偉大な恣意を割り当てられ、クトゥルフに縛られたタコのような人間。彼らは、触手のついた頭、鱗のあるボディ、形骸化されたコウモリの羽根、そして人間の体を持っています。大きさは大した問題ではありませんが、彼の主人と彼自身とを成人男性と比べると成人男性の何倍もの大きさをもっています。彼らは寝ている間も偉大な旧支配者たちに奉仕します。</ROM_Cthulhid.description>
+  <ROM_Cthulhid.tools.0.label>翼</ROM_Cthulhid.tools.0.label>
+  <ROM_Cthulhid.tools.1.label>左爪</ROM_Cthulhid.tools.1.label>
+  <ROM_Cthulhid.tools.2.label>右爪</ROM_Cthulhid.tools.2.label>
+  <ROM_Cthulhid.tools.3.label>圧倒的な精神</ROM_Cthulhid.tools.3.label>
+  <ROM_Cthulhid.tools.4.label>口</ROM_Cthulhid.tools.4.label>
+</LanguageData>

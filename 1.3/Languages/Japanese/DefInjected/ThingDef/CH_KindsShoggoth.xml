@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Shoggoth.label>ショゴス</ROM_Shoggoth.label>
+  <ROM_Shoggoth.description>巨大で油にまみれた凡俗な体は彼らの要望に従いその容貌を変ずる。目、口そして触手はただのごまかしとして存在しており、不要な際には発光性黒色原形質に再吸収される。彼らは、反抗的な性質を持つ人々に対して、彼らの支配者であることを嫌う。</ROM_Shoggoth.description>
+  <ROM_Shoggoth.tools.0.label>口</ROM_Shoggoth.tools.0.label>
+  <ROM_Shoggoth.tools.1.label>触手</ROM_Shoggoth.tools.1.label>
+  <ROM_Shoggoth.tools.2.label>右爪</ROM_Shoggoth.tools.2.label>
+  <ROM_Shoggoth.tools.3.label>左爪</ROM_Shoggoth.tools.3.label>
+  <ROM_ShoggothColossal.label>ショゴス</ROM_ShoggothColossal.label>
+  <ROM_ShoggothColossal.description>巨大で油にまみれた凡俗な体は彼らの要望に従いその容貌を変ずる。目、口そして触手はただのごまかしとして存在しており、不要な際には発光性黒色原形質に再吸収される。彼らは、反抗的な性質を持つ人々に対して、彼らの支配者であることを嫌う。nature.</ROM_ShoggothColossal.description>
+  <ROM_ShoggothColossal.tools.0.label>口</ROM_ShoggothColossal.tools.0.label>
+  <ROM_ShoggothColossal.tools.1.label>触手</ROM_ShoggothColossal.tools.1.label>
+  <ROM_ShoggothColossal.tools.2.label>右爪</ROM_ShoggothColossal.tools.2.label>
+  <ROM_ShoggothColossal.tools.3.label>左爪</ROM_ShoggothColossal.tools.3.label>
+  <ROM_ShoggothColossal.tools.4.label>口</ROM_ShoggothColossal.tools.4.label>
+  <ROM_ShoggothColossal.tools.5.label>触手</ROM_ShoggothColossal.tools.5.label>
+  <ROM_ShoggothColossal.tools.6.label>右爪</ROM_ShoggothColossal.tools.6.label>
+  <ROM_ShoggothColossal.tools.7.label>左爪</ROM_ShoggothColossal.tools.7.label>
+  <ROM_ShoggothTiny.label>ショゴス</ROM_ShoggothTiny.label>
+  <ROM_ShoggothTiny.description>巨大で油にまみれた凡俗な体は彼らの要望に従いその容貌を変ずる。目、口そして触手はただのごまかしとして存在しており、不要な際には発光性黒色原形質に再吸収される。彼らは、反抗的な性質を持つ人々に対して、彼らの支配者であることを嫌う。nature.</ROM_ShoggothTiny.description>
+  <ROM_ShoggothTiny.tools.0.label>口</ROM_ShoggothTiny.tools.0.label>
+  <ROM_ShoggothTiny.tools.1.label>触手</ROM_ShoggothTiny.tools.1.label>
+  <ROM_ShoggothTiny.tools.2.label>右爪</ROM_ShoggothTiny.tools.2.label>
+  <ROM_ShoggothTiny.tools.3.label>左爪</ROM_ShoggothTiny.tools.3.label>
+  <ROM_ShoggothTiny.tools.4.label>口</ROM_ShoggothTiny.tools.4.label>
+  <ROM_ShoggothTiny.tools.5.label>触手</ROM_ShoggothTiny.tools.5.label>
+  <ROM_ShoggothTiny.tools.6.label>右爪</ROM_ShoggothTiny.tools.6.label>
+  <ROM_ShoggothTiny.tools.7.label>左爪</ROM_ShoggothTiny.tools.7.label>
+</LanguageData>

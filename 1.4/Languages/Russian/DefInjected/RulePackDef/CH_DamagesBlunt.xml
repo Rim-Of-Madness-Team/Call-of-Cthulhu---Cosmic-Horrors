@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.0>damaged_inf(p=2)-&gt;дробить</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.0>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.1>damaged_inf-&gt;размозжить</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.1>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.2>damaged_inf-&gt;вмазать</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.2>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.3>damaged_inf-&gt;колотить</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.3>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.4>damaged_inf-&gt;врезать</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.4>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.5>damaged_inf-&gt;толкнуть</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.5>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.6>damaged_past(p=2)-&gt;раздробил</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.6>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.7>damaged_past-&gt;размозжил</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.7>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.8>damaged_past-&gt;вмазал</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.8>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.9>damaged_past-&gt;поколотил</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.9>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.10>damaged_past-&gt;врезал</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.10>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.11>damaged_past-&gt;толкнул</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.11>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.12>damaged_present-&gt;дробит</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.12>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.13>damaged_present-&gt;размозжает</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.13>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.14>damaged_present-&gt;вмазывает</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.14>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.15>damaged_present-&gt;колотит</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.15>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.16>damaged_present-&gt;врезает</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.16>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.17>damaged_present-&gt;толкает</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.17>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.18>destroyed_past-&gt;сплющен</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.18>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.19>destroyed_past-&gt;уничтожен</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.19>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.20>destroyed_past-&gt;стерт в порошок</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.20>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.21>destroyed_present-&gt;сплющивается</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.21>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.22>destroyed_present-&gt;уничтожается</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.22>
+  <ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.23>destroyed_present-&gt;стирается в порошок</ROM_Maneuver_BluntMonstrous_Damage.rulePack.rulesStrings.23>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.0>woundname-&gt;рана</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.0>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.1>woundname(p=0.3)-&gt;контузия</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.1>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.2>flavortext_situation(p=3)-&gt;в то время как [ROMgazingwithinhumaneyes]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.2>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.3>flavortext_situation(p=3)-&gt;в то время как [ROMcarryinganexpressionofmadness]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.3>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.4>flavortext_situation(p=2,recipient_flesh!=Mechanoid)-&gt;с [ROMbloodoozing] из [woundname]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.4>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.5>flavortext_situation(p=2,recipient_flesh!=Mechanoid)-&gt;с [ROMgore] [ROMexposed] из [woundname]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.5>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.6>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)-&gt;и [ROMexposing] [ROMtheflesh] [ROMunderneath]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.6>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.7>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)-&gt;и [ROMexposing] [ROMhorrible] [woundname]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.7>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.8>flavortext_consequence(p=2,recipient_flesh==Mechanoid)-&gt;и обнажая оборудование под ним</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.8>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.9>destroyed_suffix(p=2,recipient_flesh!=Mechanoid)-&gt;[to] грязный [ROMstrips]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.9>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.10>destroyed_suffix(p=4)-&gt;[to] [ROMstrips]</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.10>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.11>destroyed_suffix-&gt;[to] части</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.11>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.12>destroyed_suffix-&gt;[to] фрагменты</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.12>
+  <ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.13>destroyed_suffix(recipient_flesh!=Mechanoid)-&gt;[to] лужа крови</ROM_Maneuver_BluntMonstrous.rulePack.rulesStrings.13>
+</LanguageData>

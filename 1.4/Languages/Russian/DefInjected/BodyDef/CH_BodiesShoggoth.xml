@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- 6 ROM_Tentacles, 8 eyes, 3 arms, 4 legs, 3 mouths, 8 shapeshifting organs? -->
+  <ROM_ShoggothBody.label>анатомия шоггота</ROM_ShoggothBody.label>
+  <ROM_ShoggothBody.corePart.parts.25.customLabel>левое плечо</ROM_ShoggothBody.corePart.parts.25.customLabel>
+  <ROM_ShoggothBody.corePart.parts.25.parts.0.customLabel>левая рука</ROM_ShoggothBody.corePart.parts.25.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.customLabel>левая ладонь</ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.0.customLabel>мизинец левой руки</ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.1.customLabel>безымянный палец левой руки</ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.1.customLabel>
+  <ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.2.customLabel>средний палец левой руки</ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.2.customLabel>
+  <ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.3.customLabel>указательный палец левой руки</ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.3.customLabel>
+  <ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.4.customLabel>большой палец левой руки</ROM_ShoggothBody.corePart.parts.25.parts.0.parts.0.parts.4.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.customLabel>правое плечо</ROM_ShoggothBody.corePart.parts.26.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.parts.0.customLabel>правая рука</ROM_ShoggothBody.corePart.parts.26.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.customLabel>правая ладонь</ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.0.customLabel>мизинец правой руки</ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.1.customLabel>безымянный палец правой руки</ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.1.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.2.customLabel>средний палец правой руки</ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.2.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.3.customLabel>указательный палец правой руки</ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.3.customLabel>
+  <ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.4.customLabel>большой палец правой руки</ROM_ShoggothBody.corePart.parts.26.parts.0.parts.0.parts.4.customLabel>
+  <ROM_ShoggothBody.corePart.parts.27.customLabel>передняя левая нога</ROM_ShoggothBody.corePart.parts.27.customLabel>
+  <ROM_ShoggothBody.corePart.parts.27.parts.0.customLabel>передняя левая лапа</ROM_ShoggothBody.corePart.parts.27.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.28.customLabel>передняя правая нога</ROM_ShoggothBody.corePart.parts.28.customLabel>
+  <ROM_ShoggothBody.corePart.parts.28.parts.0.customLabel>передняя правая лапа</ROM_ShoggothBody.corePart.parts.28.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.29.customLabel>задняя левая нога</ROM_ShoggothBody.corePart.parts.29.customLabel>
+  <ROM_ShoggothBody.corePart.parts.29.parts.0.customLabel>задняя левая лапа</ROM_ShoggothBody.corePart.parts.29.parts.0.customLabel>
+  <ROM_ShoggothBody.corePart.parts.30.customLabel>задняя правая нога</ROM_ShoggothBody.corePart.parts.30.customLabel>
+  <ROM_ShoggothBody.corePart.parts.30.parts.0.customLabel>задняя правая лапа</ROM_ShoggothBody.corePart.parts.30.parts.0.customLabel>
+</LanguageData>

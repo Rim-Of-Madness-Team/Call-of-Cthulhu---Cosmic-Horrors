@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_SanityLoss.label>正気度の喪失</ROM_SanityLoss.label>
+  <ROM_SanityLoss.stages.0.label>初期状態</ROM_SanityLoss.stages.0.label>
+  <ROM_SanityLoss.stages.1.label>軽度</ROM_SanityLoss.stages.1.label>
+  <ROM_SanityLoss.stages.2.label>重度</ROM_SanityLoss.stages.2.label>
+  <ROM_SanityLoss.stages.3.label>深刻</ROM_SanityLoss.stages.3.label>
+  <ROM_SanityLoss.stages.4.label>極度</ROM_SanityLoss.stages.4.label>
+</LanguageData>

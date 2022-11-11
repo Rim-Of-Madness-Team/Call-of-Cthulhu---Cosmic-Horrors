@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>ROM_AteStrangeMeatAsIngredient</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>0.5</durationDays>
+    <stackedEffectMultiplier>0.25</stackedEffectMultiplier>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Cannibal</li>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>cooked strange meat</label>
+        <description>I can feel some kind of strange heaviness in my stomach. Something is wrong. Maybe it's something I ate?</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>ROM_AteStrangeMeatDirect</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1.0</durationDays>
+    <stackedEffectMultiplier>0.25</stackedEffectMultiplier>
+    <stackLimit>3</stackLimit>
+    <nullifyingTraits>
+      <li>Cannibal</li>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>raw strange meat</label>
+        <description>I ate it. I ate it. Why? I can't think straight. Why did I eat it?</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

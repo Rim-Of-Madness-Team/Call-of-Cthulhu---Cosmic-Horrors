@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- 2 Wings, Spore structure, Psionic brain, 6 legs -->
+  <ROM_MiGoBody.label>анатомия ми-го</ROM_MiGoBody.label>
+  <ROM_MiGoBody.corePart.parts.5.customLabel>передняя левая нога</ROM_MiGoBody.corePart.parts.5.customLabel>
+  <ROM_MiGoBody.corePart.parts.6.customLabel>передняя правая нога</ROM_MiGoBody.corePart.parts.6.customLabel>
+  <ROM_MiGoBody.corePart.parts.7.customLabel>средняя левая нога</ROM_MiGoBody.corePart.parts.7.customLabel>
+  <ROM_MiGoBody.corePart.parts.8.customLabel>средняя правая нога</ROM_MiGoBody.corePart.parts.8.customLabel>
+  <ROM_MiGoBody.corePart.parts.9.customLabel>задняя левая нога</ROM_MiGoBody.corePart.parts.9.customLabel>
+  <ROM_MiGoBody.corePart.parts.10.customLabel>задняя правая нога</ROM_MiGoBody.corePart.parts.10.customLabel>
+</LanguageData>

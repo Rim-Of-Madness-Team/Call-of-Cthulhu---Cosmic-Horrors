@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Corpse_ROM_Chthonian.label>труп хтонианца</Corpse_ROM_Chthonian.label>
+  <Corpse_ROM_Chthonian.description>Мертвый хтонианец.</Corpse_ROM_Chthonian.description>
+  <Corpse_ROM_ChthonianLarva.label>труп личинки хтонианца</Corpse_ROM_ChthonianLarva.label>
+  <Corpse_ROM_ChthonianLarva.description>Мертвая личинка хтонианца.</Corpse_ROM_ChthonianLarva.description>
+  <Corpse_ROM_Cthulhid.label>труп ктулхуида</Corpse_ROM_Cthulhid.label>
+  <Corpse_ROM_Cthulhid.description>Мертвый ктулхуид.</Corpse_ROM_Cthulhid.description>
+  <Corpse_ROM_DarkYoung.label>труп темной молоди</Corpse_ROM_DarkYoung.label>
+  <Corpse_ROM_DarkYoung.description>Мертвая темная молодь.</Corpse_ROM_DarkYoung.description>
+  <Corpse_ROM_DeepOne.label>труп глубоководного</Corpse_ROM_DeepOne.label>
+  <Corpse_ROM_DeepOne.description>Мертвый глубоководный.</Corpse_ROM_DeepOne.description>
+  <Corpse_ROM_DeepOneGreat.label>труп великого глубоководного</Corpse_ROM_DeepOneGreat.label>
+  <Corpse_ROM_DeepOneGreat.description>Мертвый великий глубоководный.</Corpse_ROM_DeepOneGreat.description>
+  <Corpse_ROM_MiGo.label>труп ми-го</Corpse_ROM_MiGo.label>
+  <Corpse_ROM_MiGo.description>Мертвый ми-го.</Corpse_ROM_MiGo.description>
+  <Corpse_ROM_Shoggoth.label>труп шоггота</Corpse_ROM_Shoggoth.label>
+  <Corpse_ROM_Shoggoth.description>Мертвый шоггот.</Corpse_ROM_Shoggoth.description>
+  <Corpse_ROM_ShoggothColossal.label>труп шоггота-колосса</Corpse_ROM_ShoggothColossal.label>
+  <Corpse_ROM_ShoggothColossal.description>Мертвый шоггот-колосс.</Corpse_ROM_ShoggothColossal.description>
+  <Corpse_ROM_ShoggothTiny.label>труп шоггота-крохи</Corpse_ROM_ShoggothTiny.label>
+  <Corpse_ROM_ShoggothTiny.description>Мертвый шоггот-кроха.</Corpse_ROM_ShoggothTiny.description>
+  <Corpse_ROM_StarVampireSpawner.label>труп звездного вампира</Corpse_ROM_StarVampireSpawner.label>
+  <Corpse_ROM_StarVampireSpawner.description>Мертвый звездный вампир.</Corpse_ROM_StarVampireSpawner.description>
+  <Corpse_ROM_StarVampire.label>труп звездного вампира</Corpse_ROM_StarVampire.label>
+  <Corpse_ROM_StarVampire.description>Мертвый звездный вампир.</Corpse_ROM_StarVampire.description>
+</LanguageData>

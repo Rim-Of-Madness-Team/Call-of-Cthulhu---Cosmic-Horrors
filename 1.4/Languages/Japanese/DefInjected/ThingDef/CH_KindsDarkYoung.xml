@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_DarkYoung.label>黒き仔山羊</ROM_DarkYoung.label>
+  <ROM_DarkYoung.description>樹木のようなものです。その根は枝分かれした触手の先に巨大な黒い塊を持ちます。口を垂らすことを苦しめます。彼らはシュブ=ニグラスの眷属です。シュブ=ニグラスは千匹の仔を孕みし森の黒山羊、そして黒き豊穣の女神であり、彼らはシュブ=ニグラスの代わりに行動し、暗い森の中の崇拝者の犠牲と敬意とを受け入れるようになりました。</ROM_DarkYoung.description>
+  <ROM_DarkYoung.tools.0.label>蹄</ROM_DarkYoung.tools.0.label>
+  <ROM_DarkYoung.tools.1.label>触手</ROM_DarkYoung.tools.1.label>
+  <ROM_DarkYoung.tools.2.label>コイル状の触手</ROM_DarkYoung.tools.2.label>
+  <ROM_DarkYoung.tools.3.label>口</ROM_DarkYoung.tools.3.label>
+</LanguageData>

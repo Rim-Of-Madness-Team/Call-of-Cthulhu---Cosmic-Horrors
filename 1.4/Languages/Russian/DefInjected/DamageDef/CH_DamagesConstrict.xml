@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_ConstrictMonstrous.label>сдавливание</ROM_ConstrictMonstrous.label>
+  <ROM_ConstrictMonstrous.deathMessage>{0} {0_gender ? был раздавлен : была раздавлена : было раздавлено}.</ROM_ConstrictMonstrous.deathMessage>
+</LanguageData>

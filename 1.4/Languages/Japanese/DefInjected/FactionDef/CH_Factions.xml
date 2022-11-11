@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_StarSpawn.label>クトゥルフの星の落し子</ROM_StarSpawn.label>
+  <ROM_StarSpawn.description>旧支配者が産み落とした名もなき落し子たち。クトゥルフは、海底に沈んだ都市ルルイエで眠りながら夢を見ている。</ROM_StarSpawn.description>
+  <ROM_StarSpawn.fixedName>沈没都市ルルイエ</ROM_StarSpawn.fixedName>
+  <ROM_StarSpawn.pawnsPlural>クトゥルフの星の落し子</ROM_StarSpawn.pawnsPlural>
+  <ROM_Shoggoth.label>ショゴス</ROM_Shoggoth.label>
+  <ROM_Shoggoth.description>ショゴスは自らの意思で新しい手足、器官、口、触手を形作ることができ、なんにでも変身できる巨大な不定形の原形質体生物である。</ROM_Shoggoth.description>
+  <ROM_Shoggoth.fixedName>狂気の山脈</ROM_Shoggoth.fixedName>
+  <ROM_Shoggoth.pawnsPlural>ショゴス</ROM_Shoggoth.pawnsPlural>
+  <ROM_MiGo.label>ミ＝ゴの前哨基地</ROM_MiGo.label>
+  <ROM_MiGo.description>ミ＝ゴは脳外科手術に特化した頭のない甲羅で包まれた菌類のようなエイリアンを飛ばしている。飛ぶ敵がトラップに当たらないことに注意してください！</ROM_MiGo.description>
+  <ROM_MiGo.fixedName>ミ＝ゴの前哨基地</ROM_MiGo.fixedName>
+  <ROM_MiGo.pawnsPlural>ミ＝ゴ</ROM_MiGo.pawnsPlural>
+  <ROM_DeepOne.label>深きものども</ROM_DeepOne.label>
+  <ROM_DeepOne.description>深きものどもは人間、魚、カエル、の交雑種のようにみえます。ですが実際は人類よりも長い歴史を持っています。醜い外見をしており群れを成します。その巨大な顎で頭を噛みきるのが好きです。</ROM_DeepOne.description>
+  <ROM_DeepOne.fixedName>デビルリーフ</ROM_DeepOne.fixedName>
+  <ROM_DeepOne.pawnsPlural>深きものども</ROM_DeepOne.pawnsPlural>
+  <ROM_StarVampire.label>星の精</ROM_StarVampire.label>
+  <ROM_StarVampire.description>………</ROM_StarVampire.description>
+  <ROM_StarVampire.fixedName>宇宙</ROM_StarVampire.fixedName>
+  <ROM_StarVampire.pawnsPlural>星の精</ROM_StarVampire.pawnsPlural>
+  <ROM_Chthonian.label>クトーニアン</ROM_Chthonian.label>
+  <ROM_Chthonian.description>クトーニアンは、細長い虫のような体をしていて、その身は粘液で覆われた巨大なイカと似ているとも説明されています。彼らはイカのような外観であるにもかかわらず、陸棲しており水によってさえ害されさえもします。クトーニアンは、1000年以上生きることができます。そして人間を操る呪文を使います。詠唱は地中にいる間も人間に影響を及ぼすこともあります。\n\n最も重要クトーニアンは偉大なシュド＝メルです。おそろしいクトーニアンの中で最も悪質な彼の邪悪さは上述の小説において最も顕著に特徴付けられる。</ROM_Chthonian.description>
+  <ROM_Chthonian.fixedName>地底都市グ＝ハーン</ROM_Chthonian.fixedName>
+  <ROM_Chthonian.pawnsPlural>クトーニアン</ROM_Chthonian.pawnsPlural>
+  <ROM_CosmicHorrors.label>宇宙的恐怖</ROM_CosmicHorrors.label>
+  <ROM_CosmicHorrors.description>人類を宇宙から粛正することに固執している時間と空間的な束縛から解き放たれた宇宙的創造物。</ROM_CosmicHorrors.description>
+  <ROM_CosmicHorrors.fixedName>未知</ROM_CosmicHorrors.fixedName>
+  <ROM_CosmicHorrors.pawnsPlural>恐怖</ROM_CosmicHorrors.pawnsPlural>
+</LanguageData>

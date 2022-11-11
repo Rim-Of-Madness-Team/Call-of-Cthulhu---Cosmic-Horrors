@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Item hauling -->
+  <ROM_HaulChthonianSacrifice.reportString>приносит в жертву TargetB.</ROM_HaulChthonianSacrifice.reportString>
+  <ROM_FillChthonianPit.reportString>закапывает яму.</ROM_FillChthonianPit.reportString>
+</LanguageData>

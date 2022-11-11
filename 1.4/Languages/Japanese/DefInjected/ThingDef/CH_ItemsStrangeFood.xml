@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_StrangeMealSimple.label>名状しがたい簡単な食事のようなもの</ROM_StrangeMealSimple.label>
+  <ROM_StrangeMealSimple.description>素早く調理された簡単な食事。……少々風変わりな素材を使っていますが。</ROM_StrangeMealSimple.description>
+  <ROM_StrangeMealFine.label>名状しがたい手の込んだ料理のようなもの</ROM_StrangeMealFine.label>
+  <ROM_StrangeMealFine.description>食材を幅広く選んで作った複雑な料理。……少々風変わりな素材を使っていますが。</ROM_StrangeMealFine.description>
+  <ROM_StrangeMealLavish.label>名状しがたい贅沢な食事のようなもの</ROM_StrangeMealLavish.label>
+  <ROM_StrangeMealLavish.description>傑作 ...傑作のような？ 料理の...芸術？ この食事は体、心、そして魂に栄養を与えるもの？</ROM_StrangeMealLavish.description>
+  <ROM_StrangeKibble.label>名状しがたいペットフードのようなもの</ROM_StrangeKibble.label>
+  <ROM_StrangeKibble.description>植物といつくかの風変わりな……肉？ をつかって作られたペットフード。</ROM_StrangeKibble.description>
+  <ROM_RawCHFood_Meat.label>触れ得ざる肉</ROM_RawCHFood_Meat.label>
+  <ROM_RawCHFood_Meat.description>確かにわかりそうだ。だが、わからない。</ROM_RawCHFood_Meat.description>
+  <ROM_RawCHFood_CthulhidMeat.label>クトゥルフの肉</ROM_RawCHFood_CthulhidMeat.label>
+  <ROM_RawCHFood_CthulhidMeat.description>クトゥルフの星の落とし子からとれた生の肉。この肉は味わい深い腐った肉のような混乱物で、固形物よりも液体が多く屈強な兵士でも嫌悪感を隠せません。黴びたタバコの煙の中で何ヵ月も燻し、そして醗酵したコーヒーのような味。この肉を含む食事は、人間の心の深く、根底にある後悔の気持ちを引きずり出します。これらの感情のほとんどは、食事の味から率直に抱いた感情です。</ROM_RawCHFood_CthulhidMeat.description>
+  <ROM_RawCHFood_DeepOneMeat.label>深きものの肉</ROM_RawCHFood_DeepOneMeat.label>
+  <ROM_RawCHFood_DeepOneMeat.description>深きものからとれた生の肉。ふかきものの肉は、油の中にある腐敗した軟弱なカニを食べるときのように肉と一緒に硬いゼラチン質のものの食感を味わえます。この肉を使った食事を食べると深い恐怖と不安を感じることになります。</ROM_RawCHFood_DeepOneMeat.description>
+  <ROM_RawCHFood_MiGoMeat.label>ミ＝ゴの肉</ROM_RawCHFood_MiGoMeat.label>
+  <ROM_RawCHFood_MiGoMeat.description>ミ＝ゴからとれた生の肉。ミ＝ゴ肉は厳密に言えば肉ではない。実際には分厚く肉厚な菌類であり、果実の繊維から油を取り除いたスポンジのようなものです。多くの学者は、「生物学の中でも特に退屈な講義を彷彿とさせるような経験をしている」と述べている。これは、夢のように見えて実際には夢の中にある脳が、夢の中にある脳のように見えており、それが夢のように見えても本当のところ夢の中にあることは、それの実、夢の中にいる宇宙の惑星のようなものである。</ROM_RawCHFood_MiGoMeat.description>
+  <ROM_RawCHFood_ShoggothMeat.label>ショゴスの肉</ROM_RawCHFood_ShoggothMeat.label>
+  <ROM_RawCHFood_ShoggothMeat.description>ショゴスからとれた生の肉。ショゴスの肉はモチモチしていて、海水のような塩味で、ゴムのようなかみ応えです。味は魚介類のそれですが、海水が染み込んでおり、粘りのある体液が染み込んでいます。この体液を取り除くと味がよくになりますが、イガイガした感じを体験できます。この肉を使った食事を食べたものは、視野角が広がり、さらに辺り一面で水が跳ねるような音が聞こえるという体験をすることになるでしょう。</ROM_RawCHFood_ShoggothMeat.description>
+  <ROM_RawCHFood_StarVampireMeat.label>星の精の肉</ROM_RawCHFood_StarVampireMeat.label>
+  <ROM_RawCHFood_StarVampireMeat.description>星の精の肉からとれた生の肉。星の精の肉は、不快な量の大理石のような白さを持った脂肪と筋肉から卑猥な部位に至るまでのその全てです。脂肪を切り取りその周りを食べると鉄と甘草の味がします。脂肪も一緒に調理すれば、大理石のような脂肪は熱で溶けることで肉を甘くし風味の良い味になります。こちらの方法を使った食事には高い値が付いています。繊細な食事を食べた者は、テーブルからいきなり走り出して叫び、壁や食器棚、友人や愛する人の目からの血が流れる幻覚を見ます。</ROM_RawCHFood_StarVampireMeat.description>
+  <ROM_RawCHFood_DarkYoungMeat.label>黒き仔山羊の肉</ROM_RawCHFood_DarkYoungMeat.label>
+  <ROM_RawCHFood_DarkYoungMeat.description>黒き仔山羊からとれた生肉。</ROM_RawCHFood_DarkYoungMeat.description>
+  <ROM_RawCHFood_ChthonianMeat.label>クトーニアンの断片</ROM_RawCHFood_ChthonianMeat.label>
+  <ROM_RawCHFood_ChthonianMeat.description>クトーニアンからむしり取った生の肉。</ROM_RawCHFood_ChthonianMeat.description>
+  <ROM_DarkYoungSap.label>黒き仔山羊の樹液</ROM_DarkYoungSap.label>
+  <ROM_DarkYoungSap.description>この甘い汁はシュブ=ニ=グラスの穢れた子供の口から圧搾された。</ROM_DarkYoungSap.description>
+</LanguageData>

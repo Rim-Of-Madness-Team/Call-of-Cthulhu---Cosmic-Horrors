@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.0>damaged_inf(p=2)-&gt;сжимать</ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.0>
+  <ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.1>damaged_inf-&gt;выжимать</ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.1>
+  <ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.2>damaged_past(p=2)-&gt;сжал</ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.2>
+  <ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.3>damaged_past-&gt;выжал</ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.3>
+  <ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.4>damaged_present-&gt;сжимает</ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.4>
+  <ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.5>damaged_present-&gt;выжимает</ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.5>
+  <ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.6>destroyed_past-&gt;сокрушен</ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.6>
+  <ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.7>destroyed_past-&gt;уничтожен</ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.7>
+  <ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.8>destroyed_past-&gt;стерт в порошок</ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.8>
+  <ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.9>destroyed_present-&gt;сокрушается</ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.9>
+  <ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.10>destroyed_present-&gt;уничтожается</ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.10>
+  <ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.11>destroyed_present-&gt;стирается в порошок</ROM_Maneuver_ConstrictMonstrous_Damage.rulePack.rulesStrings.11>
+  <ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.0>woundname-&gt;рана</ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.0>
+  <ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.1>woundname(p=0.3)-&gt;контузия</ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.1>
+  <ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.2>flavortext_situation(p=3)-&gt;в то время как [ROMgazingwithinhumaneyes]</ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.2>
+  <ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.3>flavortext_situation(p=3)-&gt;в то время как [ROMcarryinganexpressionofmadness]</ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.3>
+  <ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.4>flavortext_situation(p=2,recipient_flesh!=Mechanoid)-&gt;с [ROMbloodoozing] из [woundname]</ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.4>
+  <ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.5>flavortext_situation(p=2,recipient_flesh!=Mechanoid)-&gt;с [ROMgore] [ROMexposed] из [woundname]</ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.5>
+  <ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.6>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)-&gt;и [ROMexposing] [ROMtheflesh] [ROMunderneath]</ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.6>
+  <ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.7>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)-&gt;и [ROMexposing] [ROMhorrible] [woundname]</ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.7>
+  <ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.8>flavortext_consequence(p=2,recipient_flesh==Mechanoid)-&gt;и обнажая оборудование под ним</ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.8>
+  <ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.9>destroyed_suffix(p=2,recipient_flesh!=Mechanoid)-&gt;[to] грязный [ROMstrips]</ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.9>
+  <ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.10>destroyed_suffix(p=4)-&gt;[to] [ROMstrips]</ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.10>
+  <ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.11>destroyed_suffix-&gt;[to] части</ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.11>
+  <ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.12>destroyed_suffix-&gt;[to] фрагменты</ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.12>
+  <ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.13>destroyed_suffix(recipient_flesh!=Mechanoid)-&gt;[to] лужа крови</ROM_Maneuver_ConstrictMonstrous.rulePack.rulesStrings.13>
+</LanguageData>

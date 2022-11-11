@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_MiGo.label>ミ＝ゴ</ROM_MiGo.label>
+  <ROM_MiGo.description>巨大な膜状の翼、多数の体節に分かれた四肢、頭にずんぐりしたアンテナの森林を持つ昆虫菌。彼らは好奇心がつよく、より理解し易い種族の脳を求めます。彼らは、世界に欠けている鉱物を含む惑星を探し出すことができます。</ROM_MiGo.description>
+  <ROM_MiGo.tools.0.label>脚</ROM_MiGo.tools.0.label>
+  <ROM_MiGo.tools.1.label>圧倒的な精神</ROM_MiGo.tools.1.label>
+  <ROM_MiGo.tools.2.label>体</ROM_MiGo.tools.2.label>
+  <ROM_Bullet_MiGoCastingWeapon.label>菱面体晶エネルギー放射</ROM_Bullet_MiGoCastingWeapon.label>
+  <ROM_MiGoCastingWeapon.label>菱面体晶エネルギー兵器</ROM_MiGoCastingWeapon.label>
+  <ROM_MiGoCastingWeapon.description>不思議なダイヤモンド形結晶のアーティファクト。</ROM_MiGoCastingWeapon.description>
+</LanguageData>

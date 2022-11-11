@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- ██████  ██████   ██████  ██    ██ ██████  ███████
+  ██       ██   ██ ██    ██ ██    ██ ██   ██ ██
+  ██   ███ ██████  ██    ██ ██    ██ ██████  ███████
+  ██    ██ ██   ██ ██    ██ ██    ██ ██           ██
+   ██████  ██   ██  ██████   ██████  ██      ███████ -->
+  <ROM_BodyAttackTool.label>тело</ROM_BodyAttackTool.label>
+  <ROM_Wings.label>крылья</ROM_Wings.label>
+  <ROM_Claws.label>когти</ROM_Claws.label>
+  <ROM_LeftClaws.label>левый коготь</ROM_LeftClaws.label>
+  <ROM_RightClaws.label>правый коготь</ROM_RightClaws.label>
+  <ROM_Hooves.label>копыта</ROM_Hooves.label>
+  <ROM_Tentacles.label>массив щупалец</ROM_Tentacles.label>
+  <ROM_Mind.label>орган ментального подавления</ROM_Mind.label>
+</LanguageData>

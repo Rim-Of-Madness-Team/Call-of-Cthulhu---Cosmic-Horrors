@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Psychic.label>精神的攻撃</ROM_Psychic.label>
+  <ROM_Psychic.deathMessage>{0} は精神的苦痛から死に至った。</ROM_Psychic.deathMessage>
+</LanguageData>
