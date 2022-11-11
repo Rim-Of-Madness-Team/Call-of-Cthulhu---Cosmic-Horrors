@@ -1,6 +1,6 @@
 1.4.0.0 (11-11-2022)
 ========================
-Updated for RimWorld 1.4; Many bug fixes; New sprite graphics thanks to Elseud
+Updated for RimWorld 1.4; New sprite graphics by Elseud; Many bug fixes
 
 1.3.0.2 (08-01-2021)
 ========================
