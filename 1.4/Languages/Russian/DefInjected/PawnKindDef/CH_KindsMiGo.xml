@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- KIND DEFS -->
+  <ROM_MiGo.label>трутень ми-го</ROM_MiGo.label>
+  <ROM_MiGo.labelPlural>трутни ми-го</ROM_MiGo.labelPlural>
+  <ROM_MiGo.lifeStages.0.label>отродье трутней ми-го</ROM_MiGo.lifeStages.0.label>
+  <ROM_MiGo.lifeStages.0.labelPlural>отродья трутней ми-го</ROM_MiGo.lifeStages.0.labelPlural>
+  <ROM_MiGo.lifeStages.0.labelMale>отродье трутней ми-го</ROM_MiGo.lifeStages.0.labelMale>
+  <ROM_MiGo.lifeStages.0.labelMalePlural>отродья трутней ми-го</ROM_MiGo.lifeStages.0.labelMalePlural>
+  <ROM_MiGo.lifeStages.0.labelFemale>отродье трутней ми-го</ROM_MiGo.lifeStages.0.labelFemale>
+  <ROM_MiGo.lifeStages.0.labelFemalePlural>отродья трутней ми-го</ROM_MiGo.lifeStages.0.labelFemalePlural>
+  <ROM_MiGo.lifeStages.1.label>младой трутень ми-го</ROM_MiGo.lifeStages.1.label>
+  <ROM_MiGo.lifeStages.1.labelPlural>младые трутни ми-го</ROM_MiGo.lifeStages.1.labelPlural>
+  <ROM_MiGo.lifeStages.1.labelMale>младой трутень ми-го</ROM_MiGo.lifeStages.1.labelMale>
+  <ROM_MiGo.lifeStages.1.labelMalePlural>младые трутни ми-го</ROM_MiGo.lifeStages.1.labelMalePlural>
+  <ROM_MiGo.lifeStages.1.labelFemale>младой трутень ми-го</ROM_MiGo.lifeStages.1.labelFemale>
+  <ROM_MiGo.lifeStages.1.labelFemalePlural>младые трутни ми-го</ROM_MiGo.lifeStages.1.labelFemalePlural>
+  <ROM_MiGo.lifeStages.2.label>трутень ми-го</ROM_MiGo.lifeStages.2.label>
+  <ROM_MiGo.lifeStages.2.labelPlural>трутни ми-го</ROM_MiGo.lifeStages.2.labelPlural>
+  <ROM_MiGo.lifeStages.2.labelMale>трутень ми-го</ROM_MiGo.lifeStages.2.labelMale>
+  <ROM_MiGo.lifeStages.2.labelMalePlural>трутни ми-го</ROM_MiGo.lifeStages.2.labelMalePlural>
+  <ROM_MiGo.lifeStages.2.labelFemale>трутень ми-го</ROM_MiGo.lifeStages.2.labelFemale>
+  <ROM_MiGo.lifeStages.2.labelFemalePlural>трутни ми-го</ROM_MiGo.lifeStages.2.labelFemalePlural>
+  <ROM_MiGo.lifeStages.3.label>трутень ми-го</ROM_MiGo.lifeStages.3.label>
+  <ROM_MiGo.lifeStages.3.labelPlural>трутни ми-го</ROM_MiGo.lifeStages.3.labelPlural>
+  <ROM_MiGo.lifeStages.3.labelMale>трутень ми-го</ROM_MiGo.lifeStages.3.labelMale>
+  <ROM_MiGo.lifeStages.3.labelMalePlural>трутни ми-го</ROM_MiGo.lifeStages.3.labelMalePlural>
+  <ROM_MiGo.lifeStages.3.labelFemale>трутень ми-го</ROM_MiGo.lifeStages.3.labelFemale>
+  <ROM_MiGo.lifeStages.3.labelFemalePlural>трутни ми-го</ROM_MiGo.lifeStages.3.labelFemalePlural>
+  <ROM_MiGo.labelMale>трутень ми-го</ROM_MiGo.labelMale>
+  <ROM_MiGo.labelMalePlural>трутни ми-го</ROM_MiGo.labelMalePlural>
+  <ROM_MiGo.labelFemale>трутень ми-го</ROM_MiGo.labelFemale>
+  <ROM_MiGo.labelFemalePlural>трутни ми-го</ROM_MiGo.labelFemalePlural>
+  <ROM_MiGoCaster.label>заклинатель ми-го</ROM_MiGoCaster.label>
+  <ROM_MiGoCaster.labelPlural>заклинатели ми-го</ROM_MiGoCaster.labelPlural>
+  <ROM_MiGoCaster.lifeStages.0.label>отродье заклинателя ми-го</ROM_MiGoCaster.lifeStages.0.label>
+  <ROM_MiGoCaster.lifeStages.0.labelPlural>отродья заклинателя ми-го</ROM_MiGoCaster.lifeStages.0.labelPlural>
+  <ROM_MiGoCaster.lifeStages.0.labelMale>отродье заклинателя ми-го</ROM_MiGoCaster.lifeStages.0.labelMale>
+  <ROM_MiGoCaster.lifeStages.0.labelMalePlural>отродья заклинателя ми-го</ROM_MiGoCaster.lifeStages.0.labelMalePlural>
+  <ROM_MiGoCaster.lifeStages.0.labelFemale>отродье заклинателя ми-го</ROM_MiGoCaster.lifeStages.0.labelFemale>
+  <ROM_MiGoCaster.lifeStages.0.labelFemalePlural>отродья заклинателя ми-го</ROM_MiGoCaster.lifeStages.0.labelFemalePlural>
+  <ROM_MiGoCaster.lifeStages.1.label>младой заклинатель ми-го</ROM_MiGoCaster.lifeStages.1.label>
+  <ROM_MiGoCaster.lifeStages.1.labelPlural>младые заклинатели ми-го</ROM_MiGoCaster.lifeStages.1.labelPlural>
+  <ROM_MiGoCaster.lifeStages.1.labelMale>младой заклинатель ми-го</ROM_MiGoCaster.lifeStages.1.labelMale>
+  <ROM_MiGoCaster.lifeStages.1.labelMalePlural>младые заклинатели ми-го</ROM_MiGoCaster.lifeStages.1.labelMalePlural>
+  <ROM_MiGoCaster.lifeStages.1.labelFemale>младой заклинатель ми-го</ROM_MiGoCaster.lifeStages.1.labelFemale>
+  <ROM_MiGoCaster.lifeStages.1.labelFemalePlural>младые заклинатели ми-го</ROM_MiGoCaster.lifeStages.1.labelFemalePlural>
+  <ROM_MiGoCaster.lifeStages.2.label>заклинатель ми-го</ROM_MiGoCaster.lifeStages.2.label>
+  <ROM_MiGoCaster.lifeStages.2.labelPlural>заклинатели ми-го</ROM_MiGoCaster.lifeStages.2.labelPlural>
+  <ROM_MiGoCaster.lifeStages.2.labelMale>заклинатель ми-го</ROM_MiGoCaster.lifeStages.2.labelMale>
+  <ROM_MiGoCaster.lifeStages.2.labelMalePlural>заклинатели ми-го</ROM_MiGoCaster.lifeStages.2.labelMalePlural>
+  <ROM_MiGoCaster.lifeStages.2.labelFemale>заклинатель ми-го</ROM_MiGoCaster.lifeStages.2.labelFemale>
+  <ROM_MiGoCaster.lifeStages.2.labelFemalePlural>заклинатели ми-го</ROM_MiGoCaster.lifeStages.2.labelFemalePlural>
+  <ROM_MiGoCaster.lifeStages.3.label>заклинатель ми-го</ROM_MiGoCaster.lifeStages.3.label>
+  <ROM_MiGoCaster.lifeStages.3.labelPlural>заклинатели ми-го</ROM_MiGoCaster.lifeStages.3.labelPlural>
+  <ROM_MiGoCaster.lifeStages.3.labelMale>заклинатель ми-го</ROM_MiGoCaster.lifeStages.3.labelMale>
+  <ROM_MiGoCaster.lifeStages.3.labelMalePlural>заклинатели ми-го</ROM_MiGoCaster.lifeStages.3.labelMalePlural>
+  <ROM_MiGoCaster.lifeStages.3.labelFemale>заклинатель ми-го</ROM_MiGoCaster.lifeStages.3.labelFemale>
+  <ROM_MiGoCaster.lifeStages.3.labelFemalePlural>заклинатели ми-го</ROM_MiGoCaster.lifeStages.3.labelFemalePlural>
+  <ROM_MiGoCaster.labelMale>заклинатель ми-го</ROM_MiGoCaster.labelMale>
+  <ROM_MiGoCaster.labelMalePlural>заклинатели ми-го</ROM_MiGoCaster.labelMalePlural>
+  <ROM_MiGoCaster.labelFemale>заклинатель ми-го</ROM_MiGoCaster.labelFemale>
+  <ROM_MiGoCaster.labelFemalePlural>заклинатели ми-го</ROM_MiGoCaster.labelFemalePlural>
+</LanguageData>

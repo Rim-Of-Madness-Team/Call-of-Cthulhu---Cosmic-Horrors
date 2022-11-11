@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_GutWorms.label>奇怪な寄生虫</ROM_GutWorms.label>
+  <ROM_GutWorms.stages.0.label>緊張(隠れた兆候)</ROM_GutWorms.stages.0.label>
+  <ROM_GutWorms.stages.1.label>初期状態</ROM_GutWorms.stages.1.label>
+  <ROM_GutWorms.stages.2.label>軽度</ROM_GutWorms.stages.2.label>
+  <ROM_GutWorms.stages.3.label>重度</ROM_GutWorms.stages.3.label>
+  <ROM_GutWorms.stages.4.label>深刻</ROM_GutWorms.stages.4.label>
+  <ROM_GutWorms.stages.5.label>極度</ROM_GutWorms.stages.5.label>
+</LanguageData>

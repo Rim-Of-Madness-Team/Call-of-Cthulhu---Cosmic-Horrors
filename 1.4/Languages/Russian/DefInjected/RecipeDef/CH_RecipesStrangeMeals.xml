@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_CookStrangeMealSimple.label>приготовить странное простое блюдо</ROM_CookStrangeMealSimple.label>
+  <ROM_CookStrangeMealSimple.description>Приготовить обычное....блюдо.</ROM_CookStrangeMealSimple.description>
+  <ROM_CookStrangeMealSimple.jobString>Готовит странное простое блюдо.</ROM_CookStrangeMealSimple.jobString>
+  <ROM_CookStrangeMealSimpleCampfire.label>приготовить странное простое блюдо</ROM_CookStrangeMealSimpleCampfire.label>
+  <ROM_CookStrangeMealSimpleCampfire.jobString>Готовит странное простое блюдо.</ROM_CookStrangeMealSimpleCampfire.jobString>
+  <ROM_CookStrangeMealFine.label>приготовить странное вкусное блюдо</ROM_CookStrangeMealFine.label>
+  <ROM_CookStrangeMealFine.description>Приготовить сложную еду из комбинации различных...ингредиентов.</ROM_CookStrangeMealFine.description>
+  <ROM_CookStrangeMealFine.jobString>Готовит странное вкусное блюдо.</ROM_CookStrangeMealFine.jobString>
+  <ROM_CookStrangeMealLavish.label>приготовить странное шикарное блюдо</ROM_CookStrangeMealLavish.label>
+  <ROM_CookStrangeMealLavish.description>Приготовить очень сложную еду из комбинации....сырого мяса и...сырых ингредиентов.</ROM_CookStrangeMealLavish.description>
+  <ROM_CookStrangeMealLavish.jobString>Готовит странное шикарное блюдо.</ROM_CookStrangeMealLavish.jobString>
+  <ROM_MakeStrangeKibble.label>сделать странный комбикорм</ROM_MakeStrangeKibble.label>
+  <ROM_MakeStrangeKibble.description>Сделать комбикорм для животных из странного мяса и растений.</ROM_MakeStrangeKibble.description>
+  <ROM_MakeStrangeKibble.jobString>Делает странный комбикорм.</ROM_MakeStrangeKibble.jobString>
+  <ROM_BurnStrangeMeat.label>сжечь странное мясо (1)</ROM_BurnStrangeMeat.label>
+  <ROM_BurnStrangeMeat.description>Сжечь странное мясо, чтобы полностью избавиться от него.</ROM_BurnStrangeMeat.description>
+  <ROM_BurnStrangeMeat.jobString>Сжигает странное мясо.</ROM_BurnStrangeMeat.jobString>
+  <ROM_BurnStrangeMeat25.label>сжечь странное мясо (25)</ROM_BurnStrangeMeat25.label>
+  <ROM_BurnStrangeMeat25.description>Сжечь странное мясо, чтобы полностью избавиться от него.</ROM_BurnStrangeMeat25.description>
+  <ROM_BurnStrangeMeat25.jobString>Сжигает странное мясо.</ROM_BurnStrangeMeat25.jobString>
+  <ROM_BurnStrangeMeat75.label>сжечь странное мясо (75)</ROM_BurnStrangeMeat75.label>
+  <ROM_BurnStrangeMeat75.description>Сжечь странное мясо, чтобы полностью избавиться от него.</ROM_BurnStrangeMeat75.description>
+  <ROM_BurnStrangeMeat75.jobString>Сжигает странное мясо.</ROM_BurnStrangeMeat75.jobString>
+</LanguageData>

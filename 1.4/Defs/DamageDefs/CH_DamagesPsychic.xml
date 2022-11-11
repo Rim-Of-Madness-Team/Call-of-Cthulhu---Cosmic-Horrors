@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef>
+    <defName>ROM_Psychic</defName>
+    <label>pscychic attack</label>
+    <externalViolence>false</externalViolence>
+    <makesBlood>false</makesBlood>
+    <harmsHealth>false</harmsHealth>
+    <deathMessage>{0} has died from psychic shock.</deathMessage>
+    <hediff>ROM_Psionic</hediff>
+    <impactSoundType>Electric</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <workerClass>CosmicHorror.DamageWorker_CranialPressure</workerClass>
+  </DamageDef>
+  <ToolCapacityDef>
+    <defName>ROM_Psychic</defName>
+    <label>psychic</label>
+  </ToolCapacityDef>
+  <RulePackDef>
+    <defName>ROM_Maneuver_Psychic_Damage</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>damaged_inf(p=2)-&gt;psiblast</li>
+        <li>damaged_inf-&gt;psiburst</li>
+        <li>damaged_inf-&gt;psipulse</li>
+        <li>damaged_inf-&gt;psishock</li>
+        <li>damaged_past(p=2)-&gt;psiblasted</li>
+        <li>damaged_past-&gt;psiburst</li>
+        <li>damaged_past-&gt;psipulsed</li>
+        <li>damaged_past-&gt;psishocked</li>
+        <li>damaged_present-&gt;psiblasting</li>
+        <li>damaged_present-&gt;psibursting</li>
+        <li>damaged_present-&gt;psipulsing</li>
+        <li>damaged_present-&gt;psishocking</li>
+        <li>destroyed_past-&gt;psiblasted apart</li>
+        <li>destroyed_past-&gt;psiburst apart</li>
+        <li>destroyed_past-&gt;psishocked</li>
+        <li>destroyed_past-&gt;psipulsed</li>
+        <li>destroyed_present-&gt;psiblasting</li>
+        <li>destroyed_present-&gt;psibursting</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ROM_Maneuver_Psychic</defName>
+    <include>
+      <li>ROM_ColorfulVocabulary</li>
+      <li>Combat_Hit</li>
+      <li>ROM_Maneuver_Psychic_Damage</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>woundname-&gt;wound</li>
+        <li>flavortext_situation(p=3)-&gt;while [ROMgazingwithinhumaneyes]</li>
+        <li>flavortext_situation(p=3)-&gt;while [ROMcarryinganexpressionofmadness]</li>
+        <li>flavortext_situation(p=2,recipient_flesh!=Mechanoid)-&gt;with [ROMbloodoozing] from the [woundname]</li>
+        <li>flavortext_situation(p=2,recipient_flesh!=Mechanoid)-&gt;with [ROMgore] [ROMexposed] from the [woundname]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)-&gt;and [ROMexposing] [ROMtheflesh] [ROMunderneath]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)-&gt;and [ROMexposing] a [ROMhorrible] [woundname]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh==Mechanoid)-&gt;and exposing the machinery underneath</li>
+        <li>destroyed_suffix(p=2,recipient_flesh!=Mechanoid)-&gt;[to] messy [ROMstrips]</li>
+        <li>destroyed_suffix(p=4)-&gt;[to] [ROMstrips]</li>
+        <li>destroyed_suffix-&gt;[to] pieces</li>
+        <li>destroyed_suffix-&gt;[to] fragments</li>
+        <li>destroyed_suffix(recipient_flesh!=Mechanoid)-&gt;[to] a pile of gore</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

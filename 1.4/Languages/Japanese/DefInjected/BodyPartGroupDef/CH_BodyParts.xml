@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_BodyAttackTool.label>体</ROM_BodyAttackTool.label>
+  <ROM_Wings.label>両翼</ROM_Wings.label>
+  <ROM_Claws.label>爪</ROM_Claws.label>
+  <ROM_LeftClaws.label>左爪</ROM_LeftClaws.label>
+  <ROM_RightClaws.label>右爪</ROM_RightClaws.label>
+  <ROM_Hooves.label>蹄</ROM_Hooves.label>
+  <ROM_Tentacles.label>触手の質量</ROM_Tentacles.label>
+  <ROM_Mind.label>圧倒的な精神</ROM_Mind.label>
+</LanguageData>

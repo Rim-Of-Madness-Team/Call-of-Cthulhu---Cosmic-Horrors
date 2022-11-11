@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- 11/11/22-->
+  <ROMCH_FillingPit>{0} 深い穴を埋めようとしています。</ROMCH_FillingPit>
+  <ROMCH_CancellingFillingNoColonist>入植者は利用できません。</ROMCH_CancellingFillingNoColonist>
+  <ROMCH_CancellingFilling>深い穴埋めを止める。 {0}</ROMCH_CancellingFilling>
+  <ROMCH_CancellingSacrifice>犠牲を止める。 {0}</ROMCH_CancellingSacrifice>
+  <ROMCH_CancellingSacrificePitUnavailable>深い穴は利用できません。</ROMCH_CancellingSacrificePitUnavailable>
+  <ROMCH_CancellingSacrificeExecutionerUnavailable>死刑執行人は利用できません。</ROMCH_CancellingSacrificeExecutionerUnavailable>
+  <ROMCH_CancellingSacrificeSacrificeUnavailable>犠牲({0})は利用できません。</ROMCH_CancellingSacrificeSacrificeUnavailable>
+  <ROMCH_SacrificeStarting>犠牲が始まる。</ROMCH_SacrificeStarting>
+  <!-- 7/24/21 -->
+  <ROMCH_SanityLossBegun>{0} は正気を失い始めています。</ROMCH_SanityLossBegun>
+  <ROM_TradeSanityForMadness>発狂(SAN値を完全に失った)</ROM_TradeSanityForMadness>
+  <ROM_TradedSanityLossForMadness>0}の精神的な休憩が終わった。これはSAN値（正気）を回復させた。</ROM_TradedSanityLossForMadness>
+  <ROM_TradedSanityLossForMadnessFailed>{0}の精神的な休憩は失敗に終わった。再び試みますか？</ROM_TradedSanityLossForMadnessFailed>
+  <CallOfCthulhuCosmicHorror>Call of Cthulhu - Cosmic Horrors</CallOfCthulhuCosmicHorror>
+  <cosmicHorrorEventsDelayObject>この数日間、モンスターイベントの遅らせます。</cosmicHorrorEventsDelayObject>
+  <cosmicHorrorEventsDelayObjectDesc>この設定により、宇宙的恐怖をもたらす事件は何日も遅れてやってくることになります。</cosmicHorrorEventsDelayObjectDesc>
+  <CosmicHorrorRaid>敵襲</CosmicHorrorRaid>
+  <CosmicHorrorRaidIncidentDesc>なにか別世界の住人があなたのコロニストをつけ狙っています。</CosmicHorrorRaidIncidentDesc>
+  <StarVampireIncidentMessage>遠くからクスクスと嘲笑するような人のものではないな笑い声が聞こえます。何かが来ている。</StarVampireIncidentMessage>
+  <StarVampireIncidentMessage2>また、クスクスとふざけるような人のものではない笑い声が聞こえます。すぐに準備をするべきだ。</StarVampireIncidentMessage2>
+  <DarkYoungIncidentLabel>奇妙な獣</DarkYoungIncidentLabel>
+  <DarkYoungIncidentDesc>いくつかの尋常ではない姿をした形容しがたい生き物が到着しました。</DarkYoungIncidentDesc>
+  <DiscoveredDaysAgo>{0} 日前に発見されました。</DiscoveredDaysAgo>
+  <CausingSanityLoss>SAN値の減少が頻繁に引き起こされます。</CausingSanityLoss>
+  <NotCausingSanityLoss>不活性</NotCausingSanityLoss>
+  <CommandPitSacrifice>囚人を捧げる</CommandPitSacrifice>
+  <CommandPitSacrificeDesc>怪物を満足させるため、囚人を穴に投じる。</CommandPitSacrificeDesc>
+  <NoPrisoners>捧げられる囚人がいない。</NoPrisoners>
+  <CommandCancelPitSacrificeDesc>捧げ物を穴に投じるのをやめさせる。そして彼らをそれぞれの仕事に戻す。</CommandCancelPitSacrificeDesc>
+  <PitSacrificeCancelled>生け贄はキャンセルされた。</PitSacrificeCancelled>
+  <CommandFillHole>満杯の穴</CommandFillHole>
+  <CommandFillHoleActiveDesc>ランダムなコロニストが穴をふさごうとしています。注意：たしかに穴は活性状態にありますが、それをふさごうとするのは推奨できません！</CommandFillHoleActiveDesc>
+  <CommandFillHoleDesc>ランダムなコロニストが穴をふさごうとしています。</CommandFillHoleDesc>
+  <ChthonianLarvaSpawned>幼虫は {0} の頭蓋骨を突き破った。</ChthonianLarvaSpawned>
+  <ChthonianPitSacrificeGathering>生け贄を集める</ChthonianPitSacrificeGathering>
+  <ChthonianPitSacrificeDropping>{0} を落とす準備をしています。</ChthonianPitSacrificeDropping>
+  <ChthonianPitSacrificeFinished>生け贄を捧げる工程が終了した。</ChthonianPitSacrificeFinished>
+  <FillChthonianPitGoing>穴へ向かっている</FillChthonianPitGoing>
+  <FillChthonianPitFilling>穴を埋めている</FillChthonianPitFilling>
+  <FillChthonianPitFinshed>穴を埋め終わった</FillChthonianPitFinshed>
+  <ChthonianPitActivityStarted>穴が活動しようとしています。</ChthonianPitActivityStarted>
+  <ChthonianPitActivityStopped>穴が全ての活動を停止しました。</ChthonianPitActivityStopped>
+  <CriesFromBelow>{0} は穴の中にショベルをもって飛び込んでいった {1} の叫び声を聞きました。</CriesFromBelow>
+  <ChthonianSacrificeReturnedLabel>生け贄が返された。</ChthonianSacrificeReturnedLabel>
+  <ChthonianSacrificeReturnedDesc>穴に捧げたはずの私たちのいけにえは、奇妙なことにほとんど変化が見られません。</ChthonianSacrificeReturnedDesc>
+</LanguageData>

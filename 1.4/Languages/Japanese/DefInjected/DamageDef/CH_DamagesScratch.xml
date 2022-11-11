@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_ScratchMonstrous.label>巨大な爪</ROM_ScratchMonstrous.label>
+  <ROM_ScratchMonstrous.deathMessage>{0} は引き裂かれて死に至った。</ROM_ScratchMonstrous.deathMessage>
+</LanguageData>

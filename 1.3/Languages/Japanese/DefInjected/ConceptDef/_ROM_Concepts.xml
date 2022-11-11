@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_SanityLossConcept.label>正気度の喪失</ROM_SanityLossConcept.label>
+  <ROM_SanityLossConcept.helpText>このクトゥルフシリーズが関連したMODにおいて、宇宙的恐怖や外宇宙の恐怖と接したとき、あなたの精神の健全性が失われることがあります。正気（SAN値）を健全な状態に保つためにできる方法は３つあります……。\n1. ただ長い時間待つことでSAN値を回復させる。それか\n2. キャラクターを右クリックし、精神的な犠牲を払いSAN値を回復する。あるいは\n3. 書き物机やタイプライターで本を書く、あるいは日記を書くことで精神的動揺を和らげる方法です。\n\nノート: タイプライターと書き物机は RimWriter mod で利用できます。</ROM_SanityLossConcept.helpText>
+</LanguageData>

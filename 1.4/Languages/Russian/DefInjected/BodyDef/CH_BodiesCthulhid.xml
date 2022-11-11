@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- 2 Hearts, 2 Wings, 4 Tentacles, internal ears -->
+  <ROM_CthulhidBody.label>анатомия ктулхуида</ROM_CthulhidBody.label>
+  <ROM_CthulhidBody.corePart.parts.7.customLabel>левое легкое</ROM_CthulhidBody.corePart.parts.7.customLabel>
+  <ROM_CthulhidBody.corePart.parts.8.customLabel>правое легкое</ROM_CthulhidBody.corePart.parts.8.customLabel>
+  <ROM_CthulhidBody.corePart.parts.9.customLabel>левая почка</ROM_CthulhidBody.corePart.parts.9.customLabel>
+  <ROM_CthulhidBody.corePart.parts.10.customLabel>правая почка</ROM_CthulhidBody.corePart.parts.10.customLabel>
+  <ROM_CthulhidBody.corePart.parts.12.parts.0.parts.1.customLabel>левый глаз</ROM_CthulhidBody.corePart.parts.12.parts.0.parts.1.customLabel>
+  <ROM_CthulhidBody.corePart.parts.12.parts.0.parts.2.customLabel>правый глаз</ROM_CthulhidBody.corePart.parts.12.parts.0.parts.2.customLabel>
+  <ROM_CthulhidBody.corePart.parts.15.customLabel>левое плечо</ROM_CthulhidBody.corePart.parts.15.customLabel>
+  <ROM_CthulhidBody.corePart.parts.15.parts.0.customLabel>левая рука</ROM_CthulhidBody.corePart.parts.15.parts.0.customLabel>
+  <ROM_CthulhidBody.corePart.parts.15.parts.0.parts.0.customLabel>левая плечевая кость</ROM_CthulhidBody.corePart.parts.15.parts.0.parts.0.customLabel>
+  <ROM_CthulhidBody.corePart.parts.15.parts.0.parts.1.customLabel>левый локоть</ROM_CthulhidBody.corePart.parts.15.parts.0.parts.1.customLabel>
+  <ROM_CthulhidBody.corePart.parts.15.parts.0.parts.2.customLabel>левая ладонь</ROM_CthulhidBody.corePart.parts.15.parts.0.parts.2.customLabel>
+  <ROM_CthulhidBody.corePart.parts.15.parts.0.parts.2.parts.0.customLabel>мизинец левой руки</ROM_CthulhidBody.corePart.parts.15.parts.0.parts.2.parts.0.customLabel>
+  <ROM_CthulhidBody.corePart.parts.15.parts.0.parts.2.parts.1.customLabel>безымянный палец левой руки</ROM_CthulhidBody.corePart.parts.15.parts.0.parts.2.parts.1.customLabel>
+  <ROM_CthulhidBody.corePart.parts.15.parts.0.parts.2.parts.2.customLabel>средний палец левой руки</ROM_CthulhidBody.corePart.parts.15.parts.0.parts.2.parts.2.customLabel>
+  <ROM_CthulhidBody.corePart.parts.15.parts.0.parts.2.parts.3.customLabel>указательный палец левой руки</ROM_CthulhidBody.corePart.parts.15.parts.0.parts.2.parts.3.customLabel>
+  <ROM_CthulhidBody.corePart.parts.15.parts.0.parts.2.parts.4.customLabel>большой палец левой руки</ROM_CthulhidBody.corePart.parts.15.parts.0.parts.2.parts.4.customLabel>
+  <ROM_CthulhidBody.corePart.parts.16.customLabel>правое плечо</ROM_CthulhidBody.corePart.parts.16.customLabel>
+  <ROM_CthulhidBody.corePart.parts.16.parts.0.customLabel>правая рука</ROM_CthulhidBody.corePart.parts.16.parts.0.customLabel>
+  <ROM_CthulhidBody.corePart.parts.16.parts.0.parts.0.customLabel>правая плечевая кость</ROM_CthulhidBody.corePart.parts.16.parts.0.parts.0.customLabel>
+  <ROM_CthulhidBody.corePart.parts.16.parts.0.parts.1.customLabel>правый локоть</ROM_CthulhidBody.corePart.parts.16.parts.0.parts.1.customLabel>
+  <ROM_CthulhidBody.corePart.parts.16.parts.0.parts.2.customLabel>правая ладонь</ROM_CthulhidBody.corePart.parts.16.parts.0.parts.2.customLabel>
+  <ROM_CthulhidBody.corePart.parts.16.parts.0.parts.2.parts.0.customLabel>мизинец правой руки</ROM_CthulhidBody.corePart.parts.16.parts.0.parts.2.parts.0.customLabel>
+  <ROM_CthulhidBody.corePart.parts.16.parts.0.parts.2.parts.1.customLabel>безымянный палец правой руки</ROM_CthulhidBody.corePart.parts.16.parts.0.parts.2.parts.1.customLabel>
+  <ROM_CthulhidBody.corePart.parts.16.parts.0.parts.2.parts.2.customLabel>средний палец правой руки</ROM_CthulhidBody.corePart.parts.16.parts.0.parts.2.parts.2.customLabel>
+  <ROM_CthulhidBody.corePart.parts.16.parts.0.parts.2.parts.3.customLabel>указательный палец правой руки</ROM_CthulhidBody.corePart.parts.16.parts.0.parts.2.parts.3.customLabel>
+  <ROM_CthulhidBody.corePart.parts.16.parts.0.parts.2.parts.4.customLabel>большой палец правой руки</ROM_CthulhidBody.corePart.parts.16.parts.0.parts.2.parts.4.customLabel>
+  <ROM_CthulhidBody.corePart.parts.17.customLabel>левая нога</ROM_CthulhidBody.corePart.parts.17.customLabel>
+  <ROM_CthulhidBody.corePart.parts.17.parts.0.customLabel>левая бедренная кость</ROM_CthulhidBody.corePart.parts.17.parts.0.customLabel>
+  <ROM_CthulhidBody.corePart.parts.17.parts.1.customLabel>левая большая берцовая кость</ROM_CthulhidBody.corePart.parts.17.parts.1.customLabel>
+  <ROM_CthulhidBody.corePart.parts.17.parts.2.customLabel>левая ступня</ROM_CthulhidBody.corePart.parts.17.parts.2.customLabel>
+  <ROM_CthulhidBody.corePart.parts.17.parts.2.parts.0.customLabel>мизинец левой ноги</ROM_CthulhidBody.corePart.parts.17.parts.2.parts.0.customLabel>
+  <ROM_CthulhidBody.corePart.parts.17.parts.2.parts.1.customLabel>безымянный палец левой ноги</ROM_CthulhidBody.corePart.parts.17.parts.2.parts.1.customLabel>
+  <ROM_CthulhidBody.corePart.parts.17.parts.2.parts.2.customLabel>средний палец левой ноги</ROM_CthulhidBody.corePart.parts.17.parts.2.parts.2.customLabel>
+  <ROM_CthulhidBody.corePart.parts.17.parts.2.parts.3.customLabel>указательный палец левой ноги</ROM_CthulhidBody.corePart.parts.17.parts.2.parts.3.customLabel>
+  <ROM_CthulhidBody.corePart.parts.17.parts.2.parts.4.customLabel>большой палец левой ноги</ROM_CthulhidBody.corePart.parts.17.parts.2.parts.4.customLabel>
+  <ROM_CthulhidBody.corePart.parts.18.customLabel>правая нога</ROM_CthulhidBody.corePart.parts.18.customLabel>
+  <ROM_CthulhidBody.corePart.parts.18.parts.0.customLabel>правая бедренная кость</ROM_CthulhidBody.corePart.parts.18.parts.0.customLabel>
+  <ROM_CthulhidBody.corePart.parts.18.parts.1.customLabel>правая большая берцовая кость</ROM_CthulhidBody.corePart.parts.18.parts.1.customLabel>
+  <ROM_CthulhidBody.corePart.parts.18.parts.2.customLabel>правая ступня</ROM_CthulhidBody.corePart.parts.18.parts.2.customLabel>
+  <ROM_CthulhidBody.corePart.parts.18.parts.2.parts.0.customLabel>мизинец правой ноги</ROM_CthulhidBody.corePart.parts.18.parts.2.parts.0.customLabel>
+  <ROM_CthulhidBody.corePart.parts.18.parts.2.parts.1.customLabel>безымянный палец правой ноги</ROM_CthulhidBody.corePart.parts.18.parts.2.parts.1.customLabel>
+  <ROM_CthulhidBody.corePart.parts.18.parts.2.parts.2.customLabel>средний палец правой ноги</ROM_CthulhidBody.corePart.parts.18.parts.2.parts.2.customLabel>
+  <ROM_CthulhidBody.corePart.parts.18.parts.2.parts.3.customLabel>указательный палец правой ноги</ROM_CthulhidBody.corePart.parts.18.parts.2.parts.3.customLabel>
+  <ROM_CthulhidBody.corePart.parts.18.parts.2.parts.4.customLabel>большой палец правой ноги</ROM_CthulhidBody.corePart.parts.18.parts.2.parts.4.customLabel>
+</LanguageData>

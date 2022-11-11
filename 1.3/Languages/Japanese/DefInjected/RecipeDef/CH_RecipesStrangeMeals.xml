@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_CookStrangeMealSimple.label>名状しがたい簡単な食事のようなものを作る</ROM_CookStrangeMealSimple.label>
+  <ROM_CookStrangeMealSimple.description>作っているのは……簡単な食事？</ROM_CookStrangeMealSimple.description>
+  <ROM_CookStrangeMealSimple.jobString>簡単な食事を作っている。</ROM_CookStrangeMealSimple.jobString>
+  <ROM_CookStrangeMealSimpleCampfire.label>名状しがたい簡単な食事</ROM_CookStrangeMealSimpleCampfire.label>
+  <ROM_CookStrangeMealSimpleCampfire.jobString>簡単な食事を作っている。</ROM_CookStrangeMealSimpleCampfire.jobString>
+  <ROM_CookStrangeMealFine.label>名状しがたい手の込んだ食事のようなものを作る</ROM_CookStrangeMealFine.label>
+  <ROM_CookStrangeMealFine.description>原材料の組み合わせからやや複雑な食事を調理する...？</ROM_CookStrangeMealFine.description>
+  <ROM_CookStrangeMealFine.jobString>手の込んだ食事を作っている。</ROM_CookStrangeMealFine.jobString>
+  <ROM_CookStrangeMealLavish.label>名状しがたい贅沢な食事のようなものを作る</ROM_CookStrangeMealLavish.label>
+  <ROM_CookStrangeMealLavish.description>生の肉と生の植物成分の組み合わせから非常に複雑な食事を調理する...？</ROM_CookStrangeMealLavish.description>
+  <ROM_CookStrangeMealLavish.jobString>贅沢な食事を作っている。</ROM_CookStrangeMealLavish.jobString>
+  <ROM_MakeStrangeKibble.label>名状しがたいペットフードのようなものを作る</ROM_MakeStrangeKibble.label>
+  <ROM_MakeStrangeKibble.description>奇妙な肉や植物を使ってペットフードをつくろう。</ROM_MakeStrangeKibble.description>
+  <ROM_MakeStrangeKibble.jobString>ペットフードを作っている。</ROM_MakeStrangeKibble.jobString>
+  <ROM_BurnStrangeMeat.label>名状しがたい肉のようなものを焼く(1)</ROM_BurnStrangeMeat.label>
+  <ROM_BurnStrangeMeat.description>名状しがたい肉のようなものを焼いて、破壊し尽くす。</ROM_BurnStrangeMeat.description>
+  <ROM_BurnStrangeMeat.jobString>名状しがたい肉のようなものを焼いている。</ROM_BurnStrangeMeat.jobString>
+  <ROM_BurnStrangeMeat25.label>名状しがたい肉のようなものを焼く(25)</ROM_BurnStrangeMeat25.label>
+  <ROM_BurnStrangeMeat25.description>名状しがたい肉のようなものを焼いて、破壊し尽くす。</ROM_BurnStrangeMeat25.description>
+  <ROM_BurnStrangeMeat25.jobString>名状しがたい肉のようなものを焼いている。</ROM_BurnStrangeMeat25.jobString>
+  <ROM_BurnStrangeMeat75.label>名状しがたい肉のようなものを焼く(75)</ROM_BurnStrangeMeat75.label>
+  <ROM_BurnStrangeMeat75.description>名状しがたい肉のようなものを焼いて、破壊し尽くす。</ROM_BurnStrangeMeat75.description>
+  <ROM_BurnStrangeMeat75.jobString>名状しがたい肉のようなものを焼いている。</ROM_BurnStrangeMeat75.jobString>
+</LanguageData>

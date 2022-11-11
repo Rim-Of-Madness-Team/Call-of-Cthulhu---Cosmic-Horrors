@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- KIND DEFS -->
+  <ROM_Shoggoth.label>шоггот</ROM_Shoggoth.label>
+  <ROM_Shoggoth.labelPlural>шогготы</ROM_Shoggoth.labelPlural>
+  <ROM_Shoggoth.lifeStages.0.label>отродье шоггота</ROM_Shoggoth.lifeStages.0.label>
+  <ROM_Shoggoth.lifeStages.0.labelPlural>отродья шоггота</ROM_Shoggoth.lifeStages.0.labelPlural>
+  <ROM_Shoggoth.lifeStages.0.labelMale>отродье шоггота</ROM_Shoggoth.lifeStages.0.labelMale>
+  <ROM_Shoggoth.lifeStages.0.labelMalePlural>отродья шоггота</ROM_Shoggoth.lifeStages.0.labelMalePlural>
+  <ROM_Shoggoth.lifeStages.0.labelFemale>отродье шоггота</ROM_Shoggoth.lifeStages.0.labelFemale>
+  <ROM_Shoggoth.lifeStages.0.labelFemalePlural>отродья шоггота</ROM_Shoggoth.lifeStages.0.labelFemalePlural>
+  <ROM_Shoggoth.lifeStages.1.label>младой шоггот</ROM_Shoggoth.lifeStages.1.label>
+  <ROM_Shoggoth.lifeStages.1.labelPlural>младые шогготы</ROM_Shoggoth.lifeStages.1.labelPlural>
+  <ROM_Shoggoth.lifeStages.1.labelMale>младой шоггот</ROM_Shoggoth.lifeStages.1.labelMale>
+  <ROM_Shoggoth.lifeStages.1.labelMalePlural>младые шогготы</ROM_Shoggoth.lifeStages.1.labelMalePlural>
+  <ROM_Shoggoth.lifeStages.1.labelFemale>младой шоггот</ROM_Shoggoth.lifeStages.1.labelFemale>
+  <ROM_Shoggoth.lifeStages.1.labelFemalePlural>младые шогготы</ROM_Shoggoth.lifeStages.1.labelFemalePlural>
+  <ROM_Shoggoth.lifeStages.2.label>шоггот</ROM_Shoggoth.lifeStages.2.label>
+  <ROM_Shoggoth.lifeStages.2.labelPlural>шогготы</ROM_Shoggoth.lifeStages.2.labelPlural>
+  <ROM_Shoggoth.lifeStages.2.labelMale>шоггот</ROM_Shoggoth.lifeStages.2.labelMale>
+  <ROM_Shoggoth.lifeStages.2.labelMalePlural>шогготы</ROM_Shoggoth.lifeStages.2.labelMalePlural>
+  <ROM_Shoggoth.lifeStages.2.labelFemale>шоггот</ROM_Shoggoth.lifeStages.2.labelFemale>
+  <ROM_Shoggoth.lifeStages.2.labelFemalePlural>шогготы</ROM_Shoggoth.lifeStages.2.labelFemalePlural>
+  <ROM_Shoggoth.lifeStages.3.label>шоггот</ROM_Shoggoth.lifeStages.3.label>
+  <ROM_Shoggoth.lifeStages.3.labelPlural>шогготы</ROM_Shoggoth.lifeStages.3.labelPlural>
+  <ROM_Shoggoth.lifeStages.3.labelMale>шоггот</ROM_Shoggoth.lifeStages.3.labelMale>
+  <ROM_Shoggoth.lifeStages.3.labelMalePlural>шогготы</ROM_Shoggoth.lifeStages.3.labelMalePlural>
+  <ROM_Shoggoth.lifeStages.3.labelFemale>шоггот</ROM_Shoggoth.lifeStages.3.labelFemale>
+  <ROM_Shoggoth.lifeStages.3.labelFemalePlural>шогготы</ROM_Shoggoth.lifeStages.3.labelFemalePlural>
+  <ROM_Shoggoth.labelMale>шоггот</ROM_Shoggoth.labelMale>
+  <ROM_Shoggoth.labelMalePlural>шогготы</ROM_Shoggoth.labelMalePlural>
+  <ROM_Shoggoth.labelFemale>шоггот</ROM_Shoggoth.labelFemale>
+  <ROM_Shoggoth.labelFemalePlural>шогготы</ROM_Shoggoth.labelFemalePlural>
+  <ROM_ShoggothColossal.label>шоггот-колосс</ROM_ShoggothColossal.label>
+  <ROM_ShoggothColossal.labelPlural>шогготы-колоссы</ROM_ShoggothColossal.labelPlural>
+  <ROM_ShoggothColossal.lifeStages.0.label>отродье шоггота-колосса</ROM_ShoggothColossal.lifeStages.0.label>
+  <ROM_ShoggothColossal.lifeStages.0.labelPlural>отродья шоггота-колосса</ROM_ShoggothColossal.lifeStages.0.labelPlural>
+  <ROM_ShoggothColossal.lifeStages.0.labelMale>отродье шоггота-колосса</ROM_ShoggothColossal.lifeStages.0.labelMale>
+  <ROM_ShoggothColossal.lifeStages.0.labelMalePlural>отродья шоггота-колосса</ROM_ShoggothColossal.lifeStages.0.labelMalePlural>
+  <ROM_ShoggothColossal.lifeStages.0.labelFemale>отродье шоггота-колосса</ROM_ShoggothColossal.lifeStages.0.labelFemale>
+  <ROM_ShoggothColossal.lifeStages.0.labelFemalePlural>отродья шоггота-колосса</ROM_ShoggothColossal.lifeStages.0.labelFemalePlural>
+  <ROM_ShoggothColossal.lifeStages.1.label>шоггот-колосс</ROM_ShoggothColossal.lifeStages.1.label>
+  <ROM_ShoggothColossal.lifeStages.1.labelPlural>шогготы-колоссы</ROM_ShoggothColossal.lifeStages.1.labelPlural>
+  <ROM_ShoggothColossal.lifeStages.1.labelMale>шоггот-колосс</ROM_ShoggothColossal.lifeStages.1.labelMale>
+  <ROM_ShoggothColossal.lifeStages.1.labelMalePlural>шогготы-колоссы</ROM_ShoggothColossal.lifeStages.1.labelMalePlural>
+  <ROM_ShoggothColossal.lifeStages.1.labelFemale>шоггот-колосс</ROM_ShoggothColossal.lifeStages.1.labelFemale>
+  <ROM_ShoggothColossal.lifeStages.1.labelFemalePlural>шогготы-колоссы</ROM_ShoggothColossal.lifeStages.1.labelFemalePlural>
+  <ROM_ShoggothColossal.lifeStages.2.label>шоггот-колосс</ROM_ShoggothColossal.lifeStages.2.label>
+  <ROM_ShoggothColossal.lifeStages.2.labelPlural>шогготы-колоссы</ROM_ShoggothColossal.lifeStages.2.labelPlural>
+  <ROM_ShoggothColossal.lifeStages.2.labelMale>шоггот-колосс</ROM_ShoggothColossal.lifeStages.2.labelMale>
+  <ROM_ShoggothColossal.lifeStages.2.labelMalePlural>шогготы-колоссы</ROM_ShoggothColossal.lifeStages.2.labelMalePlural>
+  <ROM_ShoggothColossal.lifeStages.2.labelFemale>шоггот-колосс</ROM_ShoggothColossal.lifeStages.2.labelFemale>
+  <ROM_ShoggothColossal.lifeStages.2.labelFemalePlural>шогготы-колоссы</ROM_ShoggothColossal.lifeStages.2.labelFemalePlural>
+  <ROM_ShoggothColossal.lifeStages.3.label>шоггот-колосс</ROM_ShoggothColossal.lifeStages.3.label>
+  <ROM_ShoggothColossal.lifeStages.3.labelPlural>шогготы-колоссы</ROM_ShoggothColossal.lifeStages.3.labelPlural>
+  <ROM_ShoggothColossal.lifeStages.3.labelMale>шоггот-колосс</ROM_ShoggothColossal.lifeStages.3.labelMale>
+  <ROM_ShoggothColossal.lifeStages.3.labelMalePlural>шогготы-колоссы</ROM_ShoggothColossal.lifeStages.3.labelMalePlural>
+  <ROM_ShoggothColossal.lifeStages.3.labelFemale>шоггот-колосс</ROM_ShoggothColossal.lifeStages.3.labelFemale>
+  <ROM_ShoggothColossal.lifeStages.3.labelFemalePlural>шогготы-колоссы</ROM_ShoggothColossal.lifeStages.3.labelFemalePlural>
+  <ROM_ShoggothColossal.labelMale>шоггот-колосс</ROM_ShoggothColossal.labelMale>
+  <ROM_ShoggothColossal.labelMalePlural>шогготы-колоссы</ROM_ShoggothColossal.labelMalePlural>
+  <ROM_ShoggothColossal.labelFemale>шоггот-колосс</ROM_ShoggothColossal.labelFemale>
+  <ROM_ShoggothColossal.labelFemalePlural>шогготы-колоссы</ROM_ShoggothColossal.labelFemalePlural>
+  <ROM_ShoggothTiny.label>шоггот-кроха</ROM_ShoggothTiny.label>
+  <ROM_ShoggothTiny.labelPlural>шогготы-крохи</ROM_ShoggothTiny.labelPlural>
+  <ROM_ShoggothTiny.lifeStages.0.label>отродье шоггота-крохи</ROM_ShoggothTiny.lifeStages.0.label>
+  <ROM_ShoggothTiny.lifeStages.0.labelPlural>отродья шоггота-крохи</ROM_ShoggothTiny.lifeStages.0.labelPlural>
+  <ROM_ShoggothTiny.lifeStages.0.labelMale>отродье шоггота-крохи</ROM_ShoggothTiny.lifeStages.0.labelMale>
+  <ROM_ShoggothTiny.lifeStages.0.labelMalePlural>отродья шоггота-крохи</ROM_ShoggothTiny.lifeStages.0.labelMalePlural>
+  <ROM_ShoggothTiny.lifeStages.0.labelFemale>отродье шоггота-крохи</ROM_ShoggothTiny.lifeStages.0.labelFemale>
+  <ROM_ShoggothTiny.lifeStages.0.labelFemalePlural>отродья шоггота-крохи</ROM_ShoggothTiny.lifeStages.0.labelFemalePlural>
+  <ROM_ShoggothTiny.lifeStages.1.label>младой шоггот-кроха</ROM_ShoggothTiny.lifeStages.1.label>
+  <ROM_ShoggothTiny.lifeStages.1.labelPlural>&gt;младые шогготы-крохи</ROM_ShoggothTiny.lifeStages.1.labelPlural>
+  <ROM_ShoggothTiny.lifeStages.1.labelMale>&gt;младой шоггот-кроха</ROM_ShoggothTiny.lifeStages.1.labelMale>
+  <ROM_ShoggothTiny.lifeStages.1.labelMalePlural>младые шогготы-крохи</ROM_ShoggothTiny.lifeStages.1.labelMalePlural>
+  <ROM_ShoggothTiny.lifeStages.1.labelFemale>&gt;младой шоггот-кроха</ROM_ShoggothTiny.lifeStages.1.labelFemale>
+  <ROM_ShoggothTiny.lifeStages.1.labelFemalePlural>&gt;младые шогготы-крохи</ROM_ShoggothTiny.lifeStages.1.labelFemalePlural>
+  <ROM_ShoggothTiny.lifeStages.2.label>шоггот-кроха</ROM_ShoggothTiny.lifeStages.2.label>
+  <ROM_ShoggothTiny.lifeStages.2.labelPlural>шогготы-крохи</ROM_ShoggothTiny.lifeStages.2.labelPlural>
+  <ROM_ShoggothTiny.lifeStages.2.labelMale>шоггот-кроха</ROM_ShoggothTiny.lifeStages.2.labelMale>
+  <ROM_ShoggothTiny.lifeStages.2.labelMalePlural>шогготы-крохи</ROM_ShoggothTiny.lifeStages.2.labelMalePlural>
+  <ROM_ShoggothTiny.lifeStages.2.labelFemale>шоггот-кроха</ROM_ShoggothTiny.lifeStages.2.labelFemale>
+  <ROM_ShoggothTiny.lifeStages.2.labelFemalePlural>шогготы-крохи</ROM_ShoggothTiny.lifeStages.2.labelFemalePlural>
+  <ROM_ShoggothTiny.lifeStages.3.label>шоггот-кроха</ROM_ShoggothTiny.lifeStages.3.label>
+  <ROM_ShoggothTiny.lifeStages.3.labelPlural>шогготы-крохи</ROM_ShoggothTiny.lifeStages.3.labelPlural>
+  <ROM_ShoggothTiny.lifeStages.3.labelMale>шоггот-кроха</ROM_ShoggothTiny.lifeStages.3.labelMale>
+  <ROM_ShoggothTiny.lifeStages.3.labelMalePlural>шогготы-крохи</ROM_ShoggothTiny.lifeStages.3.labelMalePlural>
+  <ROM_ShoggothTiny.lifeStages.3.labelFemale>шоггот-кроха</ROM_ShoggothTiny.lifeStages.3.labelFemale>
+  <ROM_ShoggothTiny.lifeStages.3.labelFemalePlural>шогготы-крохи</ROM_ShoggothTiny.lifeStages.3.labelFemalePlural>
+  <ROM_ShoggothTiny.labelMale>шоггот-кроха</ROM_ShoggothTiny.labelMale>
+  <ROM_ShoggothTiny.labelMalePlural>шогготы-крохи</ROM_ShoggothTiny.labelMalePlural>
+  <ROM_ShoggothTiny.labelFemale>шоггот-кроха</ROM_ShoggothTiny.labelFemale>
+  <ROM_ShoggothTiny.labelFemalePlural>шогготы-крохи</ROM_ShoggothTiny.labelFemalePlural>
+</LanguageData>

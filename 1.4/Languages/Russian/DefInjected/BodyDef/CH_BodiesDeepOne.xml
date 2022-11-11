@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- 2 claws, 2 flippers -->
+  <ROM_DeepOneBody.label>анатомия глубоководного</ROM_DeepOneBody.label>
+  <ROM_DeepOneBody.corePart.parts.7.customLabel>левое легкое</ROM_DeepOneBody.corePart.parts.7.customLabel>
+  <ROM_DeepOneBody.corePart.parts.8.customLabel>правое легкое</ROM_DeepOneBody.corePart.parts.8.customLabel>
+  <ROM_DeepOneBody.corePart.parts.9.customLabel>левая почка</ROM_DeepOneBody.corePart.parts.9.customLabel>
+  <ROM_DeepOneBody.corePart.parts.10.customLabel>правая почка</ROM_DeepOneBody.corePart.parts.10.customLabel>
+  <ROM_DeepOneBody.corePart.parts.12.parts.0.parts.1.customLabel>левый глаз</ROM_DeepOneBody.corePart.parts.12.parts.0.parts.1.customLabel>
+  <ROM_DeepOneBody.corePart.parts.12.parts.0.parts.2.customLabel>правый глаз</ROM_DeepOneBody.corePart.parts.12.parts.0.parts.2.customLabel>
+  <ROM_DeepOneBody.corePart.parts.13.customLabel>левое плечо</ROM_DeepOneBody.corePart.parts.13.customLabel>
+  <ROM_DeepOneBody.corePart.parts.13.parts.0.customLabel>левая рука</ROM_DeepOneBody.corePart.parts.13.parts.0.customLabel>
+  <ROM_DeepOneBody.corePart.parts.13.parts.0.parts.0.customLabel>левая плечевая кость</ROM_DeepOneBody.corePart.parts.13.parts.0.parts.0.customLabel>
+  <ROM_DeepOneBody.corePart.parts.13.parts.0.parts.1.customLabel>левый локоть</ROM_DeepOneBody.corePart.parts.13.parts.0.parts.1.customLabel>
+  <ROM_DeepOneBody.corePart.parts.14.customLabel>правое плечо</ROM_DeepOneBody.corePart.parts.14.customLabel>
+  <ROM_DeepOneBody.corePart.parts.14.parts.0.customLabel>правая рука</ROM_DeepOneBody.corePart.parts.14.parts.0.customLabel>
+  <ROM_DeepOneBody.corePart.parts.14.parts.0.parts.0.customLabel>правая плечевая кость</ROM_DeepOneBody.corePart.parts.14.parts.0.parts.0.customLabel>
+  <ROM_DeepOneBody.corePart.parts.14.parts.0.parts.1.customLabel>правый локоть</ROM_DeepOneBody.corePart.parts.14.parts.0.parts.1.customLabel>
+  <ROM_DeepOneBody.corePart.parts.15.customLabel>левая нога</ROM_DeepOneBody.corePart.parts.15.customLabel>
+  <ROM_DeepOneBody.corePart.parts.15.parts.0.customLabel>левая бедренная кость</ROM_DeepOneBody.corePart.parts.15.parts.0.customLabel>
+  <ROM_DeepOneBody.corePart.parts.15.parts.1.customLabel>левая большая берцовая кость</ROM_DeepOneBody.corePart.parts.15.parts.1.customLabel>
+  <ROM_DeepOneBody.corePart.parts.16.customLabel>правая нога</ROM_DeepOneBody.corePart.parts.16.customLabel>
+  <ROM_DeepOneBody.corePart.parts.16.parts.0.customLabel>правая бедренная кость</ROM_DeepOneBody.corePart.parts.16.parts.0.customLabel>
+  <ROM_DeepOneBody.corePart.parts.16.parts.1.customLabel>правая большая берцовая кость</ROM_DeepOneBody.corePart.parts.16.parts.1.customLabel>
+</LanguageData>

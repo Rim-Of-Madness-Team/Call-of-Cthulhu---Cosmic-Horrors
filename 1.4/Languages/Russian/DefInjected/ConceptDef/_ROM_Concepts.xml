@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Concepts taught through the learning readout, with no opportunity needed -->
+  <ROM_SanityLossConcept.label>Потеря рассудка</ROM_SanityLossConcept.label>
+  <ROM_SanityLossConcept.helpText>В серии модов Call of Cthulhu вы можете столкнуться с потерей рассудка, когда подвергнетесь космическим ужасам или другим потусторонним вещам. Чтобы вылечить рассудок можно:
+\n1. Подождать долгое время и рассудок восстановится сам
+\n2. Кликнуть по персонажу правой кнопкой мыши и восстановить рассудок ценой нервного срыва
+\n3. Писать книги или вести журнал за писательским столом или пишущей машинкой, чтобы успокоить рассудок.
+\n\nПримечание: писательские столы и пишушие машинки доступны в моде RimWriter.</ROM_SanityLossConcept.helpText>
+</LanguageData>

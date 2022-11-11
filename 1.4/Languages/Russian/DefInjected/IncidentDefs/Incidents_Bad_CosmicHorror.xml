@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_RaidCosmicHorrors.label>Набег космических ужасов</ROM_RaidCosmicHorrors.label>
+  <ROM_StarVampireAttack.label>Атака космических вампиров</ROM_StarVampireAttack.label>
+  <ROM_StarVampireAttack.letterLabel>могильный холод</ROM_StarVampireAttack.letterLabel>
+  <ROM_StarVampireAttack.letterText>Земля источает напряжённое безмолвие. Нечто приближается.</ROM_StarVampireAttack.letterText>
+  <ROM_DarkYoung.label>Тёмная молодь</ROM_DarkYoung.label>
+  <ROM_ChthonianPit.label>Странная воронка (хтоническая яма)</ROM_ChthonianPit.label>
+  <ROM_ChthonianPit.letterLabel>Необычная карстовая воронка</ROM_ChthonianPit.letterLabel>
+  <ROM_ChthonianPit.letterText>Появилась огромная воронка возле вашего поселения.\n\nГигантский зверь пытается зачерпнуть ваши мысли пальцами, которые не видят вашего поселения.\n\nОна требует жертву. Кормите или быстро уничтожте это.</ROM_ChthonianPit.letterText>
+</LanguageData>

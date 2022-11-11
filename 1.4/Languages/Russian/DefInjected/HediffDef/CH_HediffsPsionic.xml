@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Psionic.label>психическая перегрузка</ROM_Psionic.label>
+  <ROM_Psionic.description>Деструктивное воздействие на мозговые ткани с помощью паранормальных сил.</ROM_Psionic.description>
+  <ROM_Psionic.comps.0.labelTendedWell>зафиксировано</ROM_Psionic.comps.0.labelTendedWell>
+  <ROM_Psionic.comps.0.labelTendedWellInner>обезболено</ROM_Psionic.comps.0.labelTendedWellInner>
+  <ROM_Psionic.comps.0.labelSolidTendedWell>нормализовано</ROM_Psionic.comps.0.labelSolidTendedWell>
+  <ROM_Psionic.injuryProps.destroyedLabel>взорван</ROM_Psionic.injuryProps.destroyedLabel>
+  <ROM_IntracranialPressure.label>внутричерепное давление</ROM_IntracranialPressure.label>
+  <ROM_IntracranialPressure.description>Повышение внутричерепного давления с помощью паранормальных сил.</ROM_IntracranialPressure.description>
+  <ROM_IntracranialPressure.stages.0.label>скрытое</ROM_IntracranialPressure.stages.0.label>
+  <ROM_IntracranialPressure.stages.1.label>начальное</ROM_IntracranialPressure.stages.1.label>
+  <ROM_IntracranialPressure.stages.2.label>слабое</ROM_IntracranialPressure.stages.2.label>
+  <ROM_IntracranialPressure.stages.3.label>среднее</ROM_IntracranialPressure.stages.3.label>
+  <ROM_IntracranialPressure.stages.4.label>серьзеное</ROM_IntracranialPressure.stages.4.label>
+  <ROM_IntracranialPressure.stages.5.label>критическое</ROM_IntracranialPressure.stages.5.label>
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_RaidCosmicHorrors.label>恐怖の襲撃</ROM_RaidCosmicHorrors.label>
+  <ROM_StarVampireAttack.label>星の精の襲撃</ROM_StarVampireAttack.label>
+  <ROM_StarVampireAttack.letterText>不気味な落ち着いた雰囲気がこの土地に満ちあふれている。何かが来ている。</ROM_StarVampireAttack.letterText>
+  <ROM_StarVampireAttack.letterLabel>寒気</ROM_StarVampireAttack.letterLabel>
+  <ROM_DarkYoung.label>黒き仔山羊</ROM_DarkYoung.label>
+  <ROM_ChthonianPit.label>未知の陥没穴(クトーニアン）</ROM_ChthonianPit.label>
+  <ROM_ChthonianPit.letterText>あなたのコロニーの近くに大規模な陥没穴が口を開いています。\n\n巨大な獣が地中に潜み、見えない指であなたのコロニストの心を掌握します。\n\n犠牲を伴う覚悟が必要です。そこに捧げ物を送り続けるのか、破壊するかしてください。</ROM_ChthonianPit.letterText>
+  <ROM_ChthonianPit.letterLabel>未知の陥没穴</ROM_ChthonianPit.letterLabel>
+</LanguageData>

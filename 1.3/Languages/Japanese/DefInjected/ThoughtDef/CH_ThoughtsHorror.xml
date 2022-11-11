@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ObservedROM_DeepOne.stages.0.label>深きものを観察した。</ObservedROM_DeepOne.stages.0.label>
+  <ObservedROM_DeepOne.stages.0.description>あれはいったいなんなんだ！？</ObservedROM_DeepOne.stages.0.description>
+  <ObservedROM_DeepOneGreat.stages.0.label>偉大なる深きものを観察した。</ObservedROM_DeepOneGreat.stages.0.label>
+  <ObservedROM_DeepOneGreat.stages.0.description>あれはいったいなんなんだ！？</ObservedROM_DeepOneGreat.stages.0.description>
+  <ObservedROM_MiGo.stages.0.label>ミ＝ゴを観察した。</ObservedROM_MiGo.stages.0.label>
+  <ObservedROM_MiGo.stages.0.description>あれはいったいなんなんだ！？</ObservedROM_MiGo.stages.0.description>
+  <ObservedROM_ShoggothTiny.stages.0.label>ショゴス(小型)を観察した。</ObservedROM_ShoggothTiny.stages.0.label>
+  <ObservedROM_ShoggothTiny.stages.0.description>こいつはいったい……？？</ObservedROM_ShoggothTiny.stages.0.description>
+  <ObservedROM_Shoggoth.stages.0.label>ショゴスを観察した。</ObservedROM_Shoggoth.stages.0.label>
+  <ObservedROM_Shoggoth.stages.0.description>こいつはいったい……？？</ObservedROM_Shoggoth.stages.0.description>
+  <ObservedROM_ShoggothColossal.stages.0.label>ショゴス(巨大)を観察した。</ObservedROM_ShoggothColossal.stages.0.label>
+  <ObservedROM_ShoggothColossal.stages.0.description>あれはいったいなんなんだ！？</ObservedROM_ShoggothColossal.stages.0.description>
+  <ObservedROM_StarVampire.stages.0.label>星の精を観察した。</ObservedROM_StarVampire.stages.0.label>
+  <ObservedROM_StarVampire.stages.0.description>あれはいったいなんなんだ！？</ObservedROM_StarVampire.stages.0.description>
+  <ObservedROM_Cthulhid.stages.0.label>クトゥルフの落とし子を観察した。</ObservedROM_Cthulhid.stages.0.label>
+  <ObservedROM_Cthulhid.stages.0.description>あれはいったいなんなんだ！？</ObservedROM_Cthulhid.stages.0.description>
+  <ObservedROM_DarkYoung.stages.0.label>黒き仔山羊を観察した。</ObservedROM_DarkYoung.stages.0.label>
+  <ObservedROM_DarkYoung.stages.0.description>あいつらは……あいつらは本物か！？</ObservedROM_DarkYoung.stages.0.description>
+  <ObservedROM_ChthonianLarva.stages.0.label>クトーニアンの幼虫を観察した。</ObservedROM_ChthonianLarva.stages.0.label>
+  <ObservedROM_ChthonianLarva.stages.0.description>こいつなんかよりもっと恐ろしいものを想像していた。</ObservedROM_ChthonianLarva.stages.0.description>
+  <ObservedROM_Chthonian.stages.0.label>クトーニアンを観察した。</ObservedROM_Chthonian.stages.0.label>
+  <ObservedROM_Chthonian.stages.0.description>こんなことありえない</ObservedROM_Chthonian.stages.0.description>
+  <ROM_SanityLoss.stages.0.label>緊張(隠れた兆候)</ROM_SanityLoss.stages.0.label>
+  <ROM_SanityLoss.stages.0.description>姿を見せてはならない。</ROM_SanityLoss.stages.0.description>
+  <ROM_SanityLoss.stages.1.label>緊張</ROM_SanityLoss.stages.1.label>
+  <ROM_SanityLoss.stages.1.description>こいつはよくない。</ROM_SanityLoss.stages.1.description>
+  <ROM_SanityLoss.stages.2.label>不安</ROM_SanityLoss.stages.2.label>
+  <ROM_SanityLoss.stages.2.description>ここには本質的な間違いがある。</ROM_SanityLoss.stages.2.description>
+  <ROM_SanityLoss.stages.3.label>妄想</ROM_SanityLoss.stages.3.label>
+  <ROM_SanityLoss.stages.3.description>ここから出て行きたい。</ROM_SanityLoss.stages.3.description>
+  <ROM_SanityLoss.stages.4.label>発狂しつつある</ROM_SanityLoss.stages.4.label>
+  <ROM_SanityLoss.stages.4.description>いあ！ いあ！</ROM_SanityLoss.stages.4.description>
+  <ROM_SanityLoss.stages.5.label>発狂</ROM_SanityLoss.stages.5.label>
+  <ROM_SanityLoss.stages.5.description>ふんぐるい むぐるうなふ くとぅるう るるいえ うがふなぐる ふたぐん</ROM_SanityLoss.stages.5.description>
+  <ROM_SawMonster.stages.0.label>怪物を見た</ROM_SawMonster.stages.0.label>
+  <ROM_SawMonster.stages.0.description>あんなもの簡単には忘れられない。</ROM_SawMonster.stages.0.description>
+</LanguageData>

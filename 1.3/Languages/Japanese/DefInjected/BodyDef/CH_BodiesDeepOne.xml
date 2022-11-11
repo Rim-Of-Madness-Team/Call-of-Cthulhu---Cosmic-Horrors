@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_DeepOneBody.label>深きものの構造</ROM_DeepOneBody.label>
+  <ROM_DeepOneBody.corePart.parts.7.customLabel>左肺</ROM_DeepOneBody.corePart.parts.7.customLabel>
+  <ROM_DeepOneBody.corePart.parts.8.customLabel>右肺</ROM_DeepOneBody.corePart.parts.8.customLabel>
+  <ROM_DeepOneBody.corePart.parts.9.customLabel>左腎</ROM_DeepOneBody.corePart.parts.9.customLabel>
+  <ROM_DeepOneBody.corePart.parts.10.customLabel>右腎</ROM_DeepOneBody.corePart.parts.10.customLabel>
+  <ROM_DeepOneBody.corePart.parts.12.parts.0.parts.1.customLabel>左目</ROM_DeepOneBody.corePart.parts.12.parts.0.parts.1.customLabel>
+  <ROM_DeepOneBody.corePart.parts.12.parts.0.parts.2.customLabel>右目</ROM_DeepOneBody.corePart.parts.12.parts.0.parts.2.customLabel>
+  <ROM_DeepOneBody.corePart.parts.13.customLabel>左肩</ROM_DeepOneBody.corePart.parts.13.customLabel>
+  <ROM_DeepOneBody.corePart.parts.13.parts.0.customLabel>左腕</ROM_DeepOneBody.corePart.parts.13.parts.0.customLabel>
+  <ROM_DeepOneBody.corePart.parts.13.parts.0.parts.0.customLabel>左上腕骨</ROM_DeepOneBody.corePart.parts.13.parts.0.parts.0.customLabel>
+  <ROM_DeepOneBody.corePart.parts.13.parts.0.parts.1.customLabel>左橈骨</ROM_DeepOneBody.corePart.parts.13.parts.0.parts.1.customLabel>
+  <ROM_DeepOneBody.corePart.parts.14.customLabel>右肩</ROM_DeepOneBody.corePart.parts.14.customLabel>
+  <ROM_DeepOneBody.corePart.parts.14.parts.0.customLabel>右腕</ROM_DeepOneBody.corePart.parts.14.parts.0.customLabel>
+  <ROM_DeepOneBody.corePart.parts.14.parts.0.parts.0.customLabel>右上腕骨</ROM_DeepOneBody.corePart.parts.14.parts.0.parts.0.customLabel>
+  <ROM_DeepOneBody.corePart.parts.14.parts.0.parts.1.customLabel>右橈骨</ROM_DeepOneBody.corePart.parts.14.parts.0.parts.1.customLabel>
+  <ROM_DeepOneBody.corePart.parts.15.customLabel>左脚</ROM_DeepOneBody.corePart.parts.15.customLabel>
+  <ROM_DeepOneBody.corePart.parts.15.parts.0.customLabel>左大腿骨</ROM_DeepOneBody.corePart.parts.15.parts.0.customLabel>
+  <ROM_DeepOneBody.corePart.parts.15.parts.1.customLabel>左脛骨</ROM_DeepOneBody.corePart.parts.15.parts.1.customLabel>
+  <ROM_DeepOneBody.corePart.parts.16.customLabel>右脚</ROM_DeepOneBody.corePart.parts.16.customLabel>
+  <ROM_DeepOneBody.corePart.parts.16.parts.0.customLabel>右大腿骨</ROM_DeepOneBody.corePart.parts.16.parts.0.customLabel>
+  <ROM_DeepOneBody.corePart.parts.16.parts.1.customLabel>右脛骨</ROM_DeepOneBody.corePart.parts.16.parts.1.customLabel>
+</LanguageData>

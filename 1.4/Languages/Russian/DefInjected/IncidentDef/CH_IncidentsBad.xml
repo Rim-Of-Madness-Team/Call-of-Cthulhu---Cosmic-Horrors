@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_RaidCosmicHorrors.label>вторжение кошмаров</ROM_RaidCosmicHorrors.label>
+  <ROM_StarVampireAttack.label>атака звездного вампира</ROM_StarVampireAttack.label>
+  <ROM_StarVampireAttack.letterText>Жуткая тишина повисла в воздухе. Что-то нехорошее приближается.</ROM_StarVampireAttack.letterText>
+  <ROM_StarVampireAttack.letterLabel>могильный холод</ROM_StarVampireAttack.letterLabel>
+  <ROM_DarkYoung.label>темная молодь</ROM_DarkYoung.label>
+  <ROM_ChthonianPit.label>странная воронка</ROM_ChthonianPit.label>
+  <ROM_ChthonianPit.letterText>Рядом с вашей колонией образовалась огромная воронка в земле.\n\nГромадная тварь обитает в ней, мучая разум ваших колонистах невидимыми пальцами.\n\nОна требует жертвы. Накормите тварь или уничтожьте.</ROM_ChthonianPit.letterText>
+  <ROM_ChthonianPit.letterLabel>Необычная карстовая воронка</ROM_ChthonianPit.letterLabel>
+</LanguageData>

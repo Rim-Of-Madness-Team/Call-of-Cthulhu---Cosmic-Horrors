@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_StarSpawn.label>Порождения Ктулху</ROM_StarSpawn.label>
+  <ROM_StarSpawn.description>Это потомок древнего Ктулху, из мёртвого разрушенного города Лиллеус.</ROM_StarSpawn.description>
+  <ROM_StarSpawn.pawnsPlural>Порождения Ктулху</ROM_StarSpawn.pawnsPlural>
+  <ROM_StarSpawn.fixedName>Затонувший город Лиллеус</ROM_StarSpawn.fixedName>
+  <ROM_Shoggoth.label>Шоггот</ROM_Shoggoth.label>
+  <ROM_Shoggoth.description>Шоггот имеет гигантское нижнее тело, которое может свободно трансформировать конечности, органы, рты и щупальца.</ROM_Shoggoth.description>
+  <ROM_Shoggoth.pawnsPlural>Шогготы</ROM_Shoggoth.pawnsPlural>
+  <ROM_Shoggoth.fixedName>Хребты безумия</ROM_Shoggoth.fixedName>
+  <ROM_MiGo.label>Ми-го</ROM_MiGo.label>
+  <ROM_MiGo.description>Ми-го - это голый моллюск, специализирующийся на чужой хирургии головного мозга, поэтому будьте осторожны, т.к. они могут избежать ловушек.</ROM_MiGo.description>
+  <ROM_MiGo.pawnsPlural>Ми-го</ROM_MiGo.pawnsPlural>
+  <ROM_MiGo.fixedName>Планета Юггот</ROM_MiGo.fixedName>
+  <ROM_DeepOne.label>Глубоководный</ROM_DeepOne.label>
+  <ROM_DeepOne.description>Глубоководные любят присосаться к голове, прежде чем укусят.</ROM_DeepOne.description>
+  <ROM_DeepOne.pawnsPlural>Глубоководные</ROM_DeepOne.pawnsPlural>
+  <ROM_DeepOne.fixedName>Риф дьявола</ROM_DeepOne.fixedName>
+  <ROM_StarVampire.label>Звёздный вампир</ROM_StarVampire.label>
+  <ROM_StarVampire.description>Хватает когтями добычу и, присасываясь, пьёт кровь жертвы.</ROM_StarVampire.description>
+  <ROM_StarVampire.pawnsPlural>Звёздные вампиры</ROM_StarVampire.pawnsPlural>
+  <ROM_StarVampire.fixedName>Космос</ROM_StarVampire.fixedName>
+  <ROM_Chthonian.label>Хтонианин</ROM_Chthonian.label>
+  <ROM_Chthonian.description>Хтониане изображаются как гигантский кальмар, похожий на кашу, покрытую тонкой раковиной. Несмотря на свой вид кальмара, они живут на суше и имеют тела, поврежденные водой. Они могут жить более тысячи лет и защищать своих молодых. Их звук имеет уникальный тон для каждого человека и, как известно, он общается в глубоком подземном режиме, используя его. Мы поклоняемся гигантскому Шудде М'елл .</ROM_Chthonian.description>
+  <ROM_Chthonian.pawnsPlural>Хтониане</ROM_Chthonian.pawnsPlural>
+  <ROM_Chthonian.fixedName>Затерянный город Хана</ROM_Chthonian.fixedName>
+  <ROM_CosmicHorrors.label>Космический ужас</ROM_CosmicHorrors.label>
+  <ROM_CosmicHorrors.description>Он пытается удалить людей из космоса, но ему не хватает времени и пространства.</ROM_CosmicHorrors.description>
+  <ROM_CosmicHorrors.pawnsPlural>Космические ужасы</ROM_CosmicHorrors.pawnsPlural>
+  <ROM_CosmicHorrors.fixedName>Неизвестность</ROM_CosmicHorrors.fixedName>
+</LanguageData>

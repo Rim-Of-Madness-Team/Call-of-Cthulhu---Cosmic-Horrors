@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Chthonian.label>クトーニアン</ROM_Chthonian.label>
+  <ROM_Chthonian.labelPlural>クトーニアンの群れ</ROM_Chthonian.labelPlural>
+  <ROM_Chthonian.lifeStages.0.label>クトーニアン</ROM_Chthonian.lifeStages.0.label>
+  <ROM_Chthonian.lifeStages.0.labelPlural>クトーニアン</ROM_Chthonian.lifeStages.0.labelPlural>
+  <ROM_Chthonian.lifeStages.0.labelMale>クトーニアン</ROM_Chthonian.lifeStages.0.labelMale>
+  <ROM_Chthonian.lifeStages.0.labelMalePlural>クトーニアンの群れ</ROM_Chthonian.lifeStages.0.labelMalePlural>
+  <ROM_Chthonian.lifeStages.0.labelFemale>クトーニアン</ROM_Chthonian.lifeStages.0.labelFemale>
+  <ROM_Chthonian.lifeStages.0.labelFemalePlural>クトーニアンの群れ</ROM_Chthonian.lifeStages.0.labelFemalePlural>
+  <ROM_Chthonian.lifeStages.1.label>クトーニアン</ROM_Chthonian.lifeStages.1.label>
+  <ROM_Chthonian.lifeStages.1.labelPlural>クトーニアン</ROM_Chthonian.lifeStages.1.labelPlural>
+  <ROM_Chthonian.lifeStages.1.labelMale>クトーニアン</ROM_Chthonian.lifeStages.1.labelMale>
+  <ROM_Chthonian.lifeStages.1.labelMalePlural>クトーニアンの群れ</ROM_Chthonian.lifeStages.1.labelMalePlural>
+  <ROM_Chthonian.lifeStages.1.labelFemale>クトーニアン</ROM_Chthonian.lifeStages.1.labelFemale>
+  <ROM_Chthonian.lifeStages.1.labelFemalePlural>クトーニアンの群れ</ROM_Chthonian.lifeStages.1.labelFemalePlural>
+  <ROM_Chthonian.lifeStages.2.label>クトーニアン</ROM_Chthonian.lifeStages.2.label>
+  <ROM_Chthonian.lifeStages.2.labelPlural>クトーニアン</ROM_Chthonian.lifeStages.2.labelPlural>
+  <ROM_Chthonian.lifeStages.2.labelMale>クトーニアン</ROM_Chthonian.lifeStages.2.labelMale>
+  <ROM_Chthonian.lifeStages.2.labelMalePlural>クトーニアンの群れ</ROM_Chthonian.lifeStages.2.labelMalePlural>
+  <ROM_Chthonian.lifeStages.2.labelFemale>クトーニアン</ROM_Chthonian.lifeStages.2.labelFemale>
+  <ROM_Chthonian.lifeStages.2.labelFemalePlural>クトーニアンの群れ</ROM_Chthonian.lifeStages.2.labelFemalePlural>
+  <ROM_Chthonian.labelMale>クトーニアン</ROM_Chthonian.labelMale>
+  <ROM_Chthonian.labelMalePlural>クトーニアンの群れ</ROM_Chthonian.labelMalePlural>
+  <ROM_Chthonian.labelFemale>クトーニアン</ROM_Chthonian.labelFemale>
+  <ROM_Chthonian.labelFemalePlural>クトーニアンの群れ</ROM_Chthonian.labelFemalePlural>
+  <ROM_ChthonianLarva.label>クトーニアンの幼虫</ROM_ChthonianLarva.label>
+  <ROM_ChthonianLarva.labelPlural>クトーニアンの幼虫の群れ</ROM_ChthonianLarva.labelPlural>
+  <ROM_ChthonianLarva.lifeStages.0.label>クトーニアンの幼虫</ROM_ChthonianLarva.lifeStages.0.label>
+  <ROM_ChthonianLarva.lifeStages.0.labelPlural>クトーニアンの幼虫の群れ</ROM_ChthonianLarva.lifeStages.0.labelPlural>
+  <ROM_ChthonianLarva.lifeStages.0.labelMale>クトーニアンの幼虫</ROM_ChthonianLarva.lifeStages.0.labelMale>
+  <ROM_ChthonianLarva.lifeStages.0.labelMalePlural>クトーニアンの幼虫の群れ</ROM_ChthonianLarva.lifeStages.0.labelMalePlural>
+  <ROM_ChthonianLarva.lifeStages.0.labelFemale>クトーニアンの幼虫</ROM_ChthonianLarva.lifeStages.0.labelFemale>
+  <ROM_ChthonianLarva.lifeStages.0.labelFemalePlural>クトーニアンの幼虫の群れ</ROM_ChthonianLarva.lifeStages.0.labelFemalePlural>
+  <ROM_ChthonianLarva.labelMale>クトーニアンの幼虫</ROM_ChthonianLarva.labelMale>
+  <ROM_ChthonianLarva.labelMalePlural>クトーニアンの幼虫の群れ</ROM_ChthonianLarva.labelMalePlural>
+  <ROM_ChthonianLarva.labelFemale>クトーニアンの幼虫</ROM_ChthonianLarva.labelFemale>
+  <ROM_ChthonianLarva.labelFemalePlural>クトーニアンの幼虫の群れ</ROM_ChthonianLarva.labelFemalePlural>
+</LanguageData>

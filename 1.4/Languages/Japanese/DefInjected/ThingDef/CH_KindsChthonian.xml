@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_Chthonian.label>クトーニアン</ROM_Chthonian.label>
+  <ROM_Chthonian.description>クトーニアンは、細長い虫のような体をしていて、その身は粘液で覆われた巨大なイカと似ているとも説明されています。彼らはイカのような外観であるにもかかわらず、陸棲しており水によって害されさえもします。クトーニアンは、1000年以上生きることができます。そして人間を操る呪文を使います。詠唱は地中にいる間も人間に影響を及ぼすこともあります。</ROM_Chthonian.description>
+  <ROM_Chthonian.tools.0.label>触手</ROM_Chthonian.tools.0.label>
+  <ROM_Chthonian.tools.1.label>コイル状の触手</ROM_Chthonian.tools.1.label>
+  <ROM_Chthonian.tools.2.label>圧倒的な精神</ROM_Chthonian.tools.2.label>
+  <ROM_Chthonian.tools.3.label>体</ROM_Chthonian.tools.3.label>
+  <ROM_ChthonianLarva.label>クトーニアンの幼虫</ROM_ChthonianLarva.label>
+  <ROM_ChthonianLarva.description>クトーニアンは、細長い虫のような体をしていて、その身は粘液で覆われた巨大なイカと似ているとも説明されています。彼らはイカのような外観であるにもかかわらず、陸棲しており水によって害されさえもします。クトーニアンは、1000年以上生きることができます。そして人間を操る呪文を使います。詠唱は地中にいる間も人間に影響を及ぼすこともあります。</ROM_ChthonianLarva.description>
+  <ROM_ChthonianLarva.tools.0.label>触手</ROM_ChthonianLarva.tools.0.label>
+  <ROM_ChthonianLarva.tools.1.label>圧倒的な精神</ROM_ChthonianLarva.tools.1.label>
+  <ROM_ChthonianLarva.tools.2.label>体</ROM_ChthonianLarva.tools.2.label>
+</LanguageData>

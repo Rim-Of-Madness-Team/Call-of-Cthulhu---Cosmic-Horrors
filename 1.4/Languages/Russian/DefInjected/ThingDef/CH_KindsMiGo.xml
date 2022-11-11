@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- RACE DEFS -->
+  <ROM_MiGo.label>ми-го</ROM_MiGo.label>
+  <ROM_MiGo.description>Гриб-насекомое с обширными перепончатыми крыльями, многочисленными сегментированными конечностями и множеством коротких антенн вместо головы. Они обладают пытливым умом и ищут мозги других видов для дальнейшего понимания. Известно, что они ищут также планеты, содержащие минералы, которых нет в их собственных мирах.</ROM_MiGo.description>
+  <ROM_MiGo.tools.0.label>ноги</ROM_MiGo.tools.0.label>
+  <ROM_MiGo.tools.1.label>орган ментального подавления</ROM_MiGo.tools.1.label>
+  <ROM_MiGo.tools.2.label>тело</ROM_MiGo.tools.2.label>
+  <!-- WEAPONS -->
+  <ROM_Bullet_MiGoCastingWeapon.label>ромбоэдрический энергетический бластер</ROM_Bullet_MiGoCastingWeapon.label>
+  <ROM_MiGoCastingWeapon.label>ромбоэдрическое энергетическое оружие</ROM_MiGoCastingWeapon.label>
+  <ROM_MiGoCastingWeapon.description>Загадочный кристаллический артефакт в форме ромба.</ROM_MiGoCastingWeapon.description>
+</LanguageData>

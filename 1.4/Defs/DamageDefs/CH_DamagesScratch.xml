@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef>
+    <defName>ROM_ScratchMonstrous</defName>
+    <label>monstrous claw</label>
+    <workerClass>DamageWorker_Cut</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been mauled to death.</deathMessage>
+    <hediff>Cut</hediff>
+    <hediffSkin>Cut</hediffSkin>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <cutExtraTargetsCurve>
+      <points>
+        <li>0, 0</li>
+        <li>0.6, 1</li>
+        <li>0.9, 2</li>
+        <li>1, 3</li>
+      </points>
+    </cutExtraTargetsCurve>
+    <cutCleaveBonus>1.4</cutCleaveBonus>
+  </DamageDef>
+  <ToolCapacityDef>
+    <defName>ROM_ScratchMonstrous</defName>
+    <label>clawing</label>
+  </ToolCapacityDef>
+  <RulePackDef>
+    <defName>ROM_ColorfulVocabulary</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>ROMhorrible-&gt;horrible</li>
+        <li>ROMhorrible-&gt;hideous</li>
+        <li>ROMhorrible-&gt;heinous</li>
+        <li>ROMhorrible-&gt;horrendous</li>
+        <li>ROMhorrible-&gt;horrifying</li>
+        <li>ROMhorrible-&gt;repulsive</li>
+        <li>ROMhorrible-&gt;vile</li>
+        <li>ROMexposed-&gt;exposed</li>
+        <li>ROMexposed-&gt;revealed</li>
+        <li>ROMexposed-&gt;divulged</li>
+        <li>ROMexposed-&gt;laid bare</li>
+        <li>ROMexposed-&gt;brought to light</li>
+        <li>ROMexposing-&gt;exposing</li>
+        <li>ROMexposing-&gt;revealing</li>
+        <li>ROMexposing-&gt;leaving</li>
+        <li>ROMexposing-&gt;divulging</li>
+        <li>ROMexposing-&gt;laying bare</li>
+        <li>ROMexposing-&gt;bringing to light</li>
+        <li>ROMtheflesh-&gt;the flesh</li>
+        <li>ROMtheflesh-&gt;the gore</li>
+        <li>ROMtheflesh-&gt;the innards</li>
+        <li>ROMunderneath-&gt;underneath</li>
+        <li>ROMunderneath-&gt;below</li>
+        <li>ROMunderneath-&gt;within</li>
+        <li>ROMbloodoozing-&gt;blood oozing</li>
+        <li>ROMbloodoozing-&gt;blood gushing</li>
+        <li>ROMbloodoozing-&gt;blood spewing</li>
+        <li>ROMbloodoozing-&gt;blood pooling</li>
+        <li>ROMbloodoozing-&gt;blood drooling</li>
+        <li>ROMgore-&gt;guts</li>
+        <li>ROMgore-&gt;entrails</li>
+        <li>ROMgore-&gt;viscera</li>
+        <li>ROMgore-&gt;gore</li>
+        <li>ROMgore-&gt;innards</li>
+        <li>ROMgore-&gt;internals</li>
+        <li>ROMgore-&gt;flesh</li>
+        <li>ROMstrips-&gt;strips</li>
+        <li>ROMstrips-&gt;pieces</li>
+        <li>ROMstrips-&gt;ribbons</li>
+        <li>ROMstrips-&gt;shreds</li>
+        <li>ROMgazing-&gt;gazing</li>
+        <li>ROMgazing-&gt;peering</li>
+        <li>ROMgazing-&gt;looming</li>
+        <li>ROMfury-&gt;fury</li>
+        <li>ROMfury-&gt;hunger</li>
+        <li>ROMfury-&gt;desire</li>
+        <li>ROMfury-&gt;wrath</li>
+        <li>ROMfury-&gt;rage</li>
+        <li>ROMtimeless-&gt;timeless</li>
+        <li>ROMtimeless-&gt;ancient</li>
+        <li>ROMtimeless-&gt;eldritch</li>
+        <li>ROMtimeless-&gt;eldritch</li>
+        <li>ROMunspeakable-&gt;unspeakable</li>
+        <li>ROMunspeakable-&gt;unutterable</li>
+        <li>ROMunspeakable-&gt;nameless</li>
+        <li>ROMunspeakable-&gt;hellish</li>
+        <li>ROMunspeakable-&gt;inhuman</li>
+        <!-- CARRYING ITS EXPRESSION -->
+        <!-- carrying an expression of madness-->
+        <li>ROMcarryinganexpressionofmadness-&gt;[ROMcarrying] [ROManexpression] [ROMofmadness]</li>
+        <li>ROMcarrying-&gt;carrying</li>
+        <li>ROMcarrying-&gt;freighted with</li>
+        <li>ROMcarrying-&gt;laden with</li>
+        <li>ROMcarrying-&gt;imbued with</li>
+        <li>ROMcarrying-&gt;wielding</li>
+        <li>ROManexpression-&gt;an expression</li>
+        <li>ROManexpression-&gt;a visage</li>
+        <li>ROManexpression-&gt;a stare</li>
+        <li>ROManexpression-&gt;a gaze</li>
+        <li>ROManexpression-&gt;a look</li>
+        <li>ROMofmadness-&gt;of [ROMmadness]</li>
+        <li>ROMofmadness-&gt;that is betwixt the real and unreal</li>
+        <li>ROMofmadness-&gt;that reminds [recipient_objective] of  [ROMthesmallnessoftheirexistence]</li>
+        <li>ROMmadness-&gt;madness</li>
+        <li>ROMmadness-&gt;insanity</li>
+        <li>ROMmadness-&gt;derangement</li>
+        <li>ROMthesmallnessoftheirexistence-&gt;the smallness of [recipient_possessive] existence</li>
+        <li>ROMthesmallnessoftheirexistence-&gt;[recipient_possessive] feeble mortality</li>
+        <li>ROMthesmallnessoftheirexistence-&gt;[recipient_possessive] candle before oblivion</li>
+        <!-- CASTING ITS GAZE -->
+        <!-- gazing with eldritch eyes like lanterns from the deep abyss -->
+        <li>ROMgazingwithinhumaneyes-&gt;[ROMgazing] with [ROMtimeless] eyes like [ROMlanterns] from [ROMthedeepabyss]</li>
+        <li>ROMgazingwithinhumaneyes-&gt;[ROMgazing] with [ROMunspeakable] hideousness</li>
+        <li>ROMgazingwithinhumaneyes-&gt;[ROMgazing] with maniacal force and [ROMfury]</li>
+        <li>ROMgazingwithinhumaneyes-&gt;[ROMgazing] with luminous, expanded eyes</li>
+        <li>ROMgazingwithinhumaneyes-&gt;[ROMgazing] with a [ROMunspeakable], [ROMtimeless] [ROMfury]</li>
+        <li>ROMlanterns-&gt;hellish phosphorescence</li>
+        <li>ROMlanterns-&gt;lanterns</li>
+        <li>ROMthedeepabyss-&gt;the deep abyss</li>
+        <li>ROMthedeepabyss-&gt;beyond understanding</li>
+        <li>ROMthedeepabyss-&gt;outside known reality</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ROM_Maneuver_ScratchMonstrous_Damage</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>damaged_inf(p=2)-&gt;maul</li>
+        <li>damaged_inf(deflected!=True)-&gt;rend</li>
+        <li>damaged_inf-&gt;mangle</li>
+        <li>damaged_inf(deflected!=True)-&gt;mutilate</li>
+        <li>damaged_inf(deflected!=True)-&gt;dismember</li>
+        <li>damaged_inf(deflected!=True)-&gt;lacerate</li>
+        <li>damaged_inf(deflected!=True)-&gt;carve</li>
+        <li>damaged_inf(deflected!=True)-&gt;hack</li>
+        <li>damaged_inf(deflected!=True)-&gt;thrash</li>
+        <li>damaged_inf(deflected!=True)-&gt;incise</li>
+        <li>damaged_past(p=2)-&gt;mauled</li>
+        <li>damaged_past(deflected!=True)-&gt;rended</li>
+        <li>damaged_past-&gt;mangle</li>
+        <li>damaged_past(deflected!=True)-&gt;mutilate</li>
+        <li>damaged_past(deflected!=True)-&gt;lacerated</li>
+        <li>damaged_past(deflected!=True)-&gt;carved</li>
+        <li>damaged_past(deflected!=True)-&gt;hacked</li>
+        <li>damaged_past(deflected!=True)-&gt;thrashed</li>
+        <li>damaged_past(deflected!=True)-&gt;incised</li>
+        <li>damaged_present-&gt;mauling</li>
+        <li>damaged_present-&gt;rending</li>
+        <li>damaged_present-&gt;mutilating</li>
+        <li>damaged_present-&gt;mangling</li>
+        <li>damaged_present-&gt;lacerating</li>
+        <li>damaged_present-&gt;carving</li>
+        <li>damaged_present-&gt;hacking</li>
+        <li>damaged_present-&gt;thrashing</li>
+        <li>damaged_present-&gt;incising</li>
+        <li>destroyed_past-&gt;hacked</li>
+        <li>destroyed_past-&gt;mutilated</li>
+        <li>destroyed_past-&gt;thrashed</li>
+        <li>destroyed_past-&gt;mangled</li>
+        <li>destroyed_past-&gt;shredded</li>
+        <li>destroyed_past-&gt;ripped</li>
+        <li>destroyed_present-&gt;mutilating</li>
+        <li>destroyed_present-&gt;lacerating</li>
+        <li>destroyed_present-&gt;tearing off</li>
+        <li>destroyed_present-&gt;shredding</li>
+        <li>destroyed_present-&gt;ripping</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ROM_Maneuver_ScratchMonstrous</defName>
+    <include>
+      <li>ROM_ColorfulVocabulary</li>
+      <li>Combat_Hit</li>
+      <li>ROM_Maneuver_ScratchMonstrous_Damage</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>woundname-&gt;wound</li>
+        <li>woundname(p=0.3)-&gt;gash</li>
+        <li>woundname(p=0.3)-&gt;hole</li>
+        <li>flavortext_situation(p=3)-&gt;while [ROMgazingwithinhumaneyes]</li>
+        <li>flavortext_situation(p=3)-&gt;while [ROMcarryinganexpressionofmadness]</li>
+        <li>flavortext_situation(p=2,recipient_flesh!=Mechanoid)-&gt;with [ROMbloodoozing] from the [woundname]</li>
+        <li>flavortext_situation(p=2,recipient_flesh!=Mechanoid)-&gt;with [ROMgore] [ROMexposed] from the [woundname]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)-&gt;and [ROMexposing] [ROMtheflesh] [ROMunderneath]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh!=Mechanoid)-&gt;and [ROMexposing] a [ROMhorrible] [woundname]</li>
+        <li>flavortext_consequence(p=2,recipient_flesh==Mechanoid)-&gt;and exposing the machinery underneath</li>
+        <li>destroyed_suffix(p=2,recipient_flesh!=Mechanoid)-&gt;[to] messy [ROMstrips]</li>
+        <li>destroyed_suffix(p=4)-&gt;[to] [ROMstrips]</li>
+        <li>destroyed_suffix-&gt;[to] pieces</li>
+        <li>destroyed_suffix-&gt;[to] fragments</li>
+        <li>destroyed_suffix(recipient_flesh!=Mechanoid)-&gt;[to] a pile of gore</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>
