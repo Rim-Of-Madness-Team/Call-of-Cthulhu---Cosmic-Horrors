@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <FleshTypeDef Name="CosmicHorrorFleshBase">
+  <FleshTypeDef>
     <defName>ROM_StrangeFlesh</defName>
     <ateDirect>ROM_AteStrangeMeatAsIngredient</ateDirect>
     <ateAsIngredient>ROM_AteStrangeMeatDirect</ateAsIngredient>
@@ -14,24 +14,6 @@
       </li>
       <li>
         <texture>Things/Pawn/Wounds/WoundFleshC</texture>
-      </li>
-    </genericWounds>
-  </FleshTypeDef>
-
-  <FleshTypeDef ParentName="CosmicHorrorFleshBase">
-    <defName>ROM_DarkYoungFlesh</defName>
-    <genericWounds>
-      <li>
-        <texture>Things/Pawn/Wounds/WoundA</texture>
-        <color>20, 18, 23</color>
-      </li>
-      <li>
-        <texture>Things/Pawn/Wounds/WoundB</texture>
-        <color>20, 18, 23</color>
-      </li>
-      <li>
-        <texture>Things/Pawn/Wounds/WoundC</texture>
-        <color>20, 18, 23</color>
       </li>
     </genericWounds>
   </FleshTypeDef>

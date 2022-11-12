@@ -14,7 +14,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_DeepOne</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.4</drawSize>
+          <drawSize>1.8</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -24,7 +24,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_DeepOne</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.42</drawSize>
+          <drawSize>2.0</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -34,7 +34,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_DeepOne</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.44</drawSize>
+          <drawSize>2.2</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>

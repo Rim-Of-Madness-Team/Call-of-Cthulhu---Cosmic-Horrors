@@ -14,7 +14,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>5</drawSize>
+          <drawSize>2.0</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -24,7 +24,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>5.4</drawSize>
+          <drawSize>2.4</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -34,7 +34,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>5.8</drawSize>
+          <drawSize>2.8</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -44,7 +44,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>6</drawSize>
+          <drawSize>3.2</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -77,7 +77,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Albino</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>5</drawSize>
+          <drawSize>2.0</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -87,7 +87,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Albino</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>5.4</drawSize>
+          <drawSize>2.4</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -97,7 +97,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Albino</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>5.8</drawSize>
+          <drawSize>2.8</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -107,7 +107,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Albino</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>6</drawSize>
+          <drawSize>3.2</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -122,7 +122,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Abberation</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>5.0</drawSize>
+          <drawSize>2.0</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -132,7 +132,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Abberation</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>5.4</drawSize>
+          <drawSize>2.4</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -142,7 +142,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Abberation</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>5.8</drawSize>
+          <drawSize>2.8</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -152,7 +152,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Abberation</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>6</drawSize>
+          <drawSize>3.2</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -167,7 +167,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Night</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>5</drawSize>
+          <drawSize>2.0</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -177,7 +177,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Night</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>5.4</drawSize>
+          <drawSize>2.4</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -187,7 +187,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Night</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>5.8</drawSize>
+          <drawSize>2.8</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -197,7 +197,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_StarVampires_Night</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>6</drawSize>
+          <drawSize>3.2</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>

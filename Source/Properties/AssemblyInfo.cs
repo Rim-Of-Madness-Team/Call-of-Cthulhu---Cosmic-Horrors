@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration(configuration: "")]
 [assembly: AssemblyCompany(company: "Rim Of Madness")]
 [assembly: AssemblyProduct(product: "Horrors")]
-[assembly: AssemblyCopyright(copyright: "Copyright ©  2016-2017 (Jecrell)")]
+[assembly: AssemblyCopyright(copyright: "Copyright ©  2016-2022 (Jecrell)")]
 [assembly: AssemblyTrademark(trademark: "")]
 [assembly: AssemblyCulture(culture: "")]
 

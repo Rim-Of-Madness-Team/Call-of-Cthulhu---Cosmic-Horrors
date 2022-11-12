@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!-- 11/11/22-->
-  <ROMCH_FillingPit>{0} 深い穴を埋めようとしています。</ROMCH_FillingPit>
-  <ROMCH_CancellingFillingNoColonist>入植者は利用できません。</ROMCH_CancellingFillingNoColonist>
-  <ROMCH_CancellingFilling>深い穴埋めを止める。 {0}</ROMCH_CancellingFilling>
-  <ROMCH_CancellingSacrifice>犠牲を止める。 {0}</ROMCH_CancellingSacrifice>
-  <ROMCH_CancellingSacrificePitUnavailable>深い穴は利用できません。</ROMCH_CancellingSacrificePitUnavailable>
-  <ROMCH_CancellingSacrificeExecutionerUnavailable>死刑執行人は利用できません。</ROMCH_CancellingSacrificeExecutionerUnavailable>
-  <ROMCH_CancellingSacrificeSacrificeUnavailable>犠牲({0})は利用できません。</ROMCH_CancellingSacrificeSacrificeUnavailable>
-  <ROMCH_SacrificeStarting>犠牲が始まる。</ROMCH_SacrificeStarting>
-  <!-- 7/24/21 -->
-  <ROMCH_SanityLossBegun>{0} は正気を失い始めています。</ROMCH_SanityLossBegun>
   <ROM_TradeSanityForMadness>発狂(SAN値を完全に失った)</ROM_TradeSanityForMadness>
   <ROM_TradedSanityLossForMadness>0}の精神的な休憩が終わった。これはSAN値（正気）を回復させた。</ROM_TradedSanityLossForMadness>
   <ROM_TradedSanityLossForMadnessFailed>{0}の精神的な休憩は失敗に終わった。再び試みますか？</ROM_TradedSanityLossForMadnessFailed>

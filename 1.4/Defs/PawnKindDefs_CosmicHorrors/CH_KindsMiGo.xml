@@ -255,6 +255,10 @@
     </statBases>
     <tradeability>None</tradeability>
     <techLevel>Neolithic</techLevel>
+    <smeltProducts>
+      <BlocksSlate>30</BlocksSlate>
+      <Steel>5</Steel>
+    </smeltProducts>
     <!-- Removed in 1.3 <menuHidden>True</menuHidden> -->
     <destroyOnDrop>False</destroyOnDrop>
     <weaponTags>

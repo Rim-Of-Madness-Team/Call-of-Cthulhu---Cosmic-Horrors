@@ -30,6 +30,7 @@ namespace CosmicHorror
             //jobGiver_StarVampireFeed.showedMessage = this.showedMessage;
             return jobGiver_StarVampireFeed;
         }
+        
 
         protected override Job TryGiveJob(Pawn pawn)
         {
@@ -74,7 +75,6 @@ namespace CosmicHorror
                     return false;
                 return true;
             }
-
             var thing2 = GenClosest.ClosestThingReachable(root: pawn.Position,
                 map: pawn.MapHeld,
                 thingReq: ThingRequest.ForGroup(@group: ThingRequestGroup.Pawn),
@@ -86,7 +86,7 @@ namespace CosmicHorror
                 maxDistance: notRaidingAttackRange,
                 validator: Predicate2);
             var pawnTarget = thing2 as Pawn;
-            //if (thing2 == null) return null;
+            if (thing2 == null) return null;
 
             Thing thing3;
             using (var path = pawn.Map.pathFinder.FindPath(start: pawn.Position,
@@ -110,27 +110,33 @@ namespace CosmicHorror
                 };
             }
 
-            if (pawnTarget == null) return null;
-            if (pawnTarget.Downed)
-                return new Job(def: JobDefOf.AttackMelee, targetA: thing2)
+
+            if (pawnTarget != null)
+            {
+                if (pawnTarget.Downed)
+                    return new Job(def: JobDefOf.AttackMelee, targetA: thing2)
+                    {
+                        expiryInterval = Rand.Range(min: 57420, max: 57900),
+                        locomotionUrgency = LocomotionUrgency.Sprint
+                    };
+                if (pawnTarget.Dead)
                 {
-                    expiryInterval = Rand.Range(min: 57420, max: 57900),
-                    locomotionUrgency = LocomotionUrgency.Sprint
-                };
-            return pawnTarget.Dead
-                ? new Job(def: JobDefOf.Ingest, targetA: thing2)
-                {
-                    //maxNumMeleeAttacks = 1,
-                    expiryInterval = Rand.Range(min: 57420, max: 57900),
-                    locomotionUrgency = LocomotionUrgency.Sprint
+                    return new Job(def: JobDefOf.Ingest, targetA: thing2)
+                    {
+                        //maxNumMeleeAttacks = 1,
+                        expiryInterval = Rand.Range(min: 57420, max: 57900),
+                        locomotionUrgency = LocomotionUrgency.Sprint
+                    };
                 }
-                : new Job(def: JobDefOf.PredatorHunt, targetA: thing2)
+                return new Job(def: JobDefOf.AttackMelee, targetA: thing2)
                 {
                     //maxNumMeleeAttacks = 1,
                     expiryInterval = Rand.Range(min: 57420, max: 57900),
                     locomotionUrgency = LocomotionUrgency.Sprint,
                     killIncappedTarget = true
                 };
+            }
+            return null;
 
             //if (pawnSelf.canReveal()) { pawnSelf.Reveal(); }
             //pawnSelf.Hide();

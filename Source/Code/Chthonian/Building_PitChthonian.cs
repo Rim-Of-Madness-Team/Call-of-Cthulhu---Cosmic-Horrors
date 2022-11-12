@@ -556,7 +556,8 @@ namespace CosmicHorror
             }
 
             HediffSet hediffSet = p.health.hediffSet;
-            p.health.forceDowned = true;
+            p.health.forceDowned = true; //1.4 only
+            //p.health.forceIncap = true; //1.3 and earlier
             int num = 0;
             while (num < 300 && !p.Downed &&
                    HittablePartsViolence(bodyModel: hediffSet).Any<BodyPartRecord>())
@@ -598,7 +599,8 @@ namespace CosmicHorror
                 Log.Error(text: stringBuilder.ToString());
             }
 
-            p.health.forceDowned = false;
+            p.health.forceDowned = false; //1.4 only
+            //p.health.forceIncap = false; //1.3 and earlier
         }
 
 

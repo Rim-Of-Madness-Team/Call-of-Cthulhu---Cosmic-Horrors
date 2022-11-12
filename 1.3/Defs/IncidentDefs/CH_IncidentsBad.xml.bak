@@ -10,7 +10,6 @@
     <baseChance>5.0</baseChance>
     <category>ThreatBig</category>
     <pointsScaleable>true</pointsScaleable>
-    <tale>CH_CosmicHorrorRaid</tale>
   </IncidentDef>
   <IncidentDef>
     <defName>ROM_StarVampireAttack</defName>

@@ -50,12 +50,13 @@ namespace CosmicHorror
                 allowFogged: false,
                 extraValidator: null);
             parms.points = IncidentWorker_Raid.AdjustedRaidPoints(
-                points: parms.points,
-                raidArrivalMode: parms.raidArrivalMode,
-                raidStrategy: parms.raidStrategy,
-                faction: parms.faction,
-                groupKind: PawnGroupKindDefOf.Combat,
-                ageRestriction: null);
+                points: parms.points
+                ,raidArrivalMode: parms.raidArrivalMode
+                ,raidStrategy: parms.raidStrategy
+                ,faction: parms.faction
+                ,groupKind: PawnGroupKindDefOf.Combat
+                //,ageRestriction: null //1.4 only
+                );
             list = parms.raidStrategy.Worker.SpawnThreats(parms: parms);
             if (list == null)
             {

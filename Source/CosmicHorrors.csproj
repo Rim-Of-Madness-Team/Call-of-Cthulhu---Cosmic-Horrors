@@ -4,5 +4,7 @@
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
         <DebugType>None</DebugType>
+        <Configurations>RW1.4;RW1.4Unstable;RW1.3</Configurations>
+        <Platforms>AnyCPU</Platforms>
     </PropertyGroup>
 </Project>
