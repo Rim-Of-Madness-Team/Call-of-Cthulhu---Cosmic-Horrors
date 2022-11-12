@@ -134,8 +134,6 @@
       <predator>true</predator>
       <packAnimal>true</packAnimal>
       <body>ROM_DarkYoungBody</body>
-      <fleshType>ROM_DarkYoungFlesh</fleshType>
-      <bloodDef>ROM_Filth_BloodDarkYoung</bloodDef>
       <thinkTreeMain>Animal</thinkTreeMain>
       <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
       <nameGenerator>HPLovecraft_NamerAuthorMale</nameGenerator>

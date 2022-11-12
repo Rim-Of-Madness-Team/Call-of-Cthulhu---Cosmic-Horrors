@@ -29,7 +29,7 @@
     <li>jecrell.jecstools</li>
     <li>CETeam.CombatExtended</li>
   </loadAfter>
-  <description>1.4.0.0 (11-11-2022)
+  <description>1.4.0.1 (11-12-2022)
 
 *Add Lovecraftian monsters to your RimWorld experience!* There is a lingering fear that strokes the hairs on the back of the necks of your colonists. Something terrible is coming, and there is little time to prepare. Cosmic horrors are already upon us.
 	
@@ -108,6 +108,10 @@ Darcilyn Lynds (darci.andel), Luke Salinas, RainerWingel , Noisy Koi, Lea Stanna
 ========================
 Changelog
 ========================
+1.4.0.1 (11-12-2022)
+========================
+Fixed 1.3 texture pathing; Fixed smelting products error message; Star Vampires no longer flee
+
 1.4.0.0 (11-11-2022)
 ========================
 Updated for RimWorld 1.4; New sprite graphics by Elseud; Many bug fixes

@@ -1,16 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <!-- 11/11/22-->
-  <ROMCH_FillingPit>{0}(은)는 구덩이를 채울 것입니다.</ROMCH_FillingPit>
-  <ROMCH_CancellingFillingNoColonist>콜로니스트를 사용할 수 없습니다.</ROMCH_CancellingFillingNoColonist>
-  <ROMCH_CancellingFilling>구덩이 채우기 취소. {0}</ROMCH_CancellingFilling>
-  <ROMCH_CancellingSacrifice>희생 취소. {0}</ROMCH_CancellingSacrifice>
-  <ROMCH_CancellingSacrificePitUnavailable>구덩이를 사용할 수 없습니다.</ROMCH_CancellingSacrificePitUnavailable>
-  <ROMCH_CancellingSacrificeExecutionerUnavailable>집행자를 사용할 수 없습니다.</ROMCH_CancellingSacrificeExecutionerUnavailable>
-  <ROMCH_CancellingSacrificeSacrificeUnavailable>희생, {0}(은)는 사용할 수 없습니다 .</ROMCH_CancellingSacrificeSacrificeUnavailable>
-  <ROMCH_SacrificeStarting>희생이 시작된다.</ROMCH_SacrificeStarting>
-  <!-- 7/24/21 -->
-  <ROMCH_SanityLossBegun>{0}(은)는 이성을 잃기 시작했다.</ROMCH_SanityLossBegun>
   <!-- 9/25/18 -->
   <ROM_TradeSanityForMadness>미침 (정신 붕괴 제거됨)</ROM_TradeSanityForMadness>
   <ROM_TradedSanityLossForMadness>{0}(은)는 상태 이상으로 쓰러졌지만, 정신이 회복되었습니다.</ROM_TradedSanityLossForMadness>

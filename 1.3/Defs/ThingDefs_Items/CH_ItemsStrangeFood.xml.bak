@@ -50,8 +50,8 @@
     <label>strange simple meal</label>
     <description>A simple meal quickly cooked from a few... odd ingredients.</description>
     <graphicData>
-      <texPath>Item/Resource/StrangeMeal/Simple</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Item/Resource/StrangeMeal/StrangeMealSimple</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
       <Mass>1</Mass>
@@ -71,8 +71,8 @@
     <label>strange fine meal</label>
     <description>A complex dish assembled with care from a wide selection of... odd ingredients.</description>
     <graphicData>
-      <texPath>Item/Resource/StrangeMeal/Fine</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Item/Resource/StrangeMeal/StrangeMealFine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
       <Mass>1</Mass>
@@ -92,8 +92,8 @@
     <label>strange lavish meal</label>
     <description>A... masterpiece? of the culinary... arts?, this meal nourishes the body, mind, and... soul?</description>
     <graphicData>
-      <texPath>Item/Resource/StrangeMeal/Lavish</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Item/Resource/StrangeMeal/StrangeMealLavish</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
       <Mass>1</Mass>
@@ -282,7 +282,7 @@ Star Vampire meat's marbling ranges from an uncomfortable amount of intramuscula
     <thingClass>ThingWithComps</thingClass>
     <description>Sweet sap squeezed from an orifice of one of the foul children of Shub-Niggurath.</description>
     <graphicData>
-      <texPath>Item/Resource/RawCHFood_DarkYoungSap</texPath>
+      <texPath>Things/Item/Resource/RawCHFood_DarkYoungSap</texPath>
       <color>(20,40,20)</color>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>

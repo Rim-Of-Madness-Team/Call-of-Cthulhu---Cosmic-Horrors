@@ -15,7 +15,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_Chthonian</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>14.0</drawSize>
+          <drawSize>7.0</drawSize>
           <shadowData>
             <volume>(0.7, 0.6, 0.4)</volume>
             <offset>(0,0,-0.25)</offset>
@@ -26,7 +26,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_Chthonian</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>15</drawSize>
+          <drawSize>7.5</drawSize>
           <shadowData>
             <volume>(1, 0.8, 0.5)</volume>
             <offset>(0,0,-0.5)</offset>
@@ -37,7 +37,7 @@
         <bodyGraphicData>
           <texPath>Pawn/CosmicHorrors/CallOfCthulhu_Chthonian</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>16.2</drawSize>
+          <drawSize>8.1</drawSize>
           <shadowData>
             <volume>(1, 0.8, 0.5)</volume>
             <offset>(0,0,-0.5)</offset>

@@ -84,7 +84,7 @@ namespace CosmicHorror
                         colonistRelationChanceFactor: 0f,
                         forceAddFreeWarmLayerIfNeeded: false,
                         allowGay: false,
-                        allowPregnant: false,
+                        // allowPregnant: false, //1.4 only
                         allowFood: false,
                         allowAddictions: false,
                         inhabitant: false,
@@ -110,8 +110,8 @@ namespace CosmicHorror
                         fixedIdeo: null,
                         forceNoIdeo: false,
                         forceNoBackstory: false,
-                        forbidAnyTitle: false,
-                        forceDead: false
+                        forbidAnyTitle: false
+                        //forceDead: false 1.4 only
                     )
                 );
                 GenSpawn.Spawn(newThing: pawn,
